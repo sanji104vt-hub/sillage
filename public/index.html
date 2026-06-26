@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sillage（シヤージュ）｜香りで選ぶメンズ香水比較</title>
+<meta name="description" content="香調・シーン・季節から探すメンズ香水比較。プチプラからメゾンまで横断。フレグランスホイールで自分の残り香を選ぶ。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;1,6..96,400;1,6..96,500&family=Cormorant:ital,wght@0,400;0,500;1,400;1,500&family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:#0d0e10;color:#e9e7e3;
+    font-family:"Zen Kaku Gothic New","Noto Sans JP",system-ui,sans-serif;
+    line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px clamp(16px,4vw,48px);border-bottom:1px solid #2c2d31;
+    position:sticky;top:0;z-index:50;background:rgba(13,14,16,.84);backdrop-filter:blur(10px);
+  }
+  .brand{display:flex;align-items:baseline;gap:11px}
+  .brand .logo{font-family:"Bodoni Moda",serif;font-weight:500;font-size:27px;letter-spacing:2px;color:#e9e7e3}
+  .brand .kana{font-size:10.5px;letter-spacing:4px;color:#8c8c92}
+  .pr-tag{font-size:10.5px;letter-spacing:1.5px;color:#8c8c92;border:1px solid #2c2d31;border-radius:999px;padding:3px 11px}
+
+  /* ---------- hero ---------- */
+  .hero{
+    position:relative;display:grid;grid-template-columns:1.02fr .98fr;gap:24px;align-items:center;
+    padding:clamp(28px,5vw,68px) clamp(16px,4vw,48px) clamp(8px,2vw,24px);max-width:1240px;margin:0 auto;
+  }
+  .hero-copy .eyebrow{font-family:"Cormorant",serif;font-style:italic;font-size:18px;color:#b6b3ab;letter-spacing:1px;margin-bottom:16px}
+  .hero-copy h1{
+    font-family:"Shippori Mincho",serif;font-weight:600;
+    font-size:clamp(31px,4.4vw,53px);line-height:1.32;color:#fff;letter-spacing:3px;margin-bottom:20px;
+  }
+  .hero-copy h1 .mark{color:#c4889c}
+  .hero-copy p{color:#a8a8ae;font-size:15px;max-width:31ch;margin-bottom:28px}
+  .hero-cta{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:"Cormorant",serif;font-size:17px;font-style:italic;letter-spacing:.5px;color:#e9e7e3;
+    border-bottom:1px solid #c4c6cc;padding-bottom:3px;cursor:pointer;background:none;border-top:none;border-left:none;border-right:none;
+  }
+  .hero-cta:hover{gap:14px;transition:gap .2s}
+
+  /* ---------- wheel ---------- */
+  .wheel-wrap{position:relative;display:flex;justify-content:center;align-items:center}
+  .wheel{width:min(460px,86vw);height:auto;overflow:visible}
+  .seg-face{cursor:pointer;fill-opacity:.09;stroke:#26272b;stroke-width:1;transition:fill-opacity .35s, opacity .35s}
+  .seg-hit{cursor:pointer;fill:transparent}
+  .sector.dim .seg-face{opacity:.32}
+  .sector.dim .ficon{opacity:.28}
+  .sector.dim .wname{opacity:.3}
+  .sector:hover .seg-face{fill-opacity:.2}
+  .sector:hover .ficon{stroke-opacity:.95}
+  .sector:hover .wname{fill:#e9e7e3}
+  .sector.active .seg-face{fill-opacity:.26;stroke:#3f4045}
+  .sector.active .ficon{stroke-opacity:1}
+  .sector.active .wname{fill:#fff}
+  .ficon{fill:none;stroke-opacity:.55;stroke-width:1.15;stroke-linecap:round;stroke-linejoin:round;pointer-events:none;transition:stroke-opacity .35s, opacity .35s}
+  .wname{font-family:"Cormorant",serif;font-style:italic;font-size:8.5px;letter-spacing:2px;fill:#9a9a9f;pointer-events:none;transition:fill .35s, opacity .35s}
+  .wnum{font-family:"Bodoni Moda",serif;font-size:7.5px;letter-spacing:1px;fill:#54555b;pointer-events:none}
+  .hub-ring{fill:none;stroke:#2c2d31;stroke-width:1}
+  .hub-main{text-anchor:middle;pointer-events:none}
+  .hub-sub{text-anchor:middle;pointer-events:none;font-family:"Cormorant",serif;font-style:italic;font-size:8.5px;letter-spacing:3px;fill:#7e7f86}
+  .wheel-hint{text-align:center;font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#8c8c92;letter-spacing:1px;margin-top:10px}
+
+  /* ---------- filter rail ---------- */
+  .filters{
+    max-width:1240px;margin:10px auto 0;padding:18px clamp(16px,4vw,48px);
+    border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31;
+    display:flex;flex-wrap:wrap;gap:22px 34px;align-items:flex-start;
+  }
+  .fgroup{display:flex;flex-direction:column;gap:9px}
+  .fgroup .glabel{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#8c8c92;letter-spacing:.5px}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{
+    font-size:12.5px;padding:5px 13px;border-radius:999px;cursor:pointer;
+    border:1px solid #2c2d31;background:transparent;color:#e9e7e3;
+    font-family:"Zen Kaku Gothic New",sans-serif;letter-spacing:.3px;transition:all .18s;
+  }
+  .chip:hover{border-color:#aeb0b6}
+  .chip.on{background:#c4c6cc;color:#15151a;border-color:#c4c6cc}
+  .reset{
+    margin-left:auto;align-self:center;font-family:"Cormorant",serif;font-style:italic;font-size:14px;
+    color:#8c8c92;background:none;border:none;cursor:pointer;letter-spacing:.5px;text-decoration:underline;text-underline-offset:3px;
+  }
+  .reset:hover{color:#e9e7e3}
+
+  /* ---------- results ---------- */
+  .results-head{
+    max-width:1240px;margin:26px auto 0;padding:0 clamp(16px,4vw,48px);
+    display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+  }
+  .results-head .count{font-family:"Bodoni Moda",serif;font-size:16px;color:#e9e7e3}
+  .results-head .count b{font-weight:600}
+  .active-fam{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#8c8c92;letter-spacing:.5px}
+
+  .grid{
+    max-width:1240px;margin:18px auto 0;padding:0 clamp(16px,4vw,48px) 40px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:20px;
+  }
+  .card{
+    background:#191a1d;border:1px solid #2c2d31;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;
+    transition:transform .2s, box-shadow .2s, border-color .2s;animation:rise .45s ease both;
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -18px rgba(0,0,0,.7);border-color:#3a3b40}
+  .flacon{height:152px;position:relative;display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
+  .flacon .bottle{
+    width:58px;height:96px;border-radius:5px 5px 3px 3px;position:relative;margin-bottom:18px;
+    box-shadow:0 10px 22px -10px rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.14);
+  }
+  .flacon .bottle::before{
+    content:"";position:absolute;top:-12px;left:50%;transform:translateX(-50%);
+    width:18px;height:12px;background:#101013;border-radius:2px 2px 0 0;border:1px solid rgba(255,255,255,.12);
+  }
+  .flacon .bottle::after{
+    content:"";position:absolute;top:14px;left:8px;width:12px;height:46px;
+    background:linear-gradient(180deg,rgba(255,255,255,.4),transparent);border-radius:6px;filter:blur(1px);
+  }
+  .fam-pill{
+    position:absolute;top:12px;left:12px;font-size:10.5px;letter-spacing:.6px;padding:3px 10px;border-radius:999px;
+    color:#15151a;font-family:"Shippori Mincho",serif;font-weight:500;
+  }
+  .gender-pill{
+    position:absolute;top:12px;right:12px;font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:999px;
+    background:rgba(255,255,255,.08);color:#c4c6cc;border:1px solid #2c2d31;
+  }
+  .card-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .brandname{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;text-transform:uppercase}
+  .pname{font-family:"Shippori Mincho",serif;font-weight:500;font-size:17.5px;line-height:1.35;color:#f0eeea;letter-spacing:.5px}
+  .pyramid{display:flex;flex-direction:column;gap:3px;font-size:11.5px;color:#8c8c92}
+  .pyramid .row{display:flex;gap:8px}
+  .pyramid .lv{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#aeb0b6;min-width:40px}
+  .meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:1px}
+  .tag{font-size:10.5px;color:#8c8c92;border:1px solid #2c2d31;border-radius:3px;padding:2px 7px;letter-spacing:.3px}
+  .verdict{font-size:12.5px;line-height:1.65;color:#d9d7d2;border-left:2px solid #c4c6cc;padding-left:11px;margin-top:2px}
+  .verdict .vlabel{display:block;font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#aeb0b6;margin-bottom:3px;letter-spacing:.5px}
+  .card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid #2c2d31}
+  .price{font-family:"Bodoni Moda",serif;font-size:15px;color:#e9e7e3}
+  .price .tier{font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;color:#8c8c92;letter-spacing:1px;display:block}
+  .buy{
+    font-family:"Cormorant",serif;font-style:italic;font-size:15px;letter-spacing:.5px;color:#e9e7e3;
+    border:1px solid #c4c6cc;border-radius:999px;padding:5px 16px;text-decoration:none;transition:all .18s;
+  }
+  .buy:hover{background:#c4c6cc;color:#15151a;border-color:#c4c6cc}
+  .empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:#8c8c92}
+  .empty .big{font-family:"Shippori Mincho",serif;font-size:19px;color:#e9e7e3;margin-bottom:8px}
+
+  /* ---------- footer ---------- */
+  footer{background:#141517;color:#cfcdca;margin-top:30px;padding:44px clamp(16px,4vw,48px) 30px;border-top:1px solid #2c2d31}
+  .foot-inner{max-width:1240px;margin:0 auto}
+  footer .flogo{font-family:"Bodoni Moda",serif;font-size:25px;letter-spacing:2px;color:#e9e7e3}
+  footer .disc{font-size:12px;line-height:1.85;color:#8c8c92;max-width:62ch;margin-top:14px}
+  footer .links{display:flex;gap:18px;flex-wrap:wrap;margin-top:18px;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
+  footer .links a{color:#aeb0b6;text-decoration:none;border-bottom:1px solid transparent}
+  footer .links a:hover{border-color:#c4c6cc}
+  footer .copy{font-size:11px;color:#67676d;margin-top:22px;letter-spacing:.5px}
+
+
+  /* ---------- family guide ---------- */
+  .section-head{max-width:1240px;margin:64px auto 0;padding:0 clamp(16px,4vw,48px)}
+  .section-head .kick{font-family:"Cormorant",serif;font-style:italic;font-size:16px;color:#8c8c92;letter-spacing:1px}
+  .section-head h2{font-family:"Bodoni Moda",serif;font-weight:500;font-size:clamp(22px,3vw,32px);letter-spacing:1px;color:#f0eeea;margin-top:4px}
+  .guide-grid{max-width:1240px;margin:26px auto 0;padding:0 clamp(16px,4vw,48px);
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+  .gcard{background:#191a1d;border:1px solid #2c2d31;border-radius:4px;padding:20px 20px 18px;
+    display:flex;flex-direction:column;gap:11px;cursor:pointer;transition:border-color .2s,transform .2s}
+  .gcard:hover{border-color:#3a3b40;transform:translateY(-2px)}
+  .gcard .ghead{display:flex;align-items:center;gap:13px}
+  .gcard .gicon{width:40px;height:40px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .gcard .gnum{font-family:"Bodoni Moda",serif;font-size:11px;color:#54555b;letter-spacing:1px}
+  .gcard .gja{font-family:"Shippori Mincho",serif;font-weight:600;font-size:17px;color:#f0eeea;letter-spacing:1px}
+  .gcard .gen{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:2px}
+  .gcard .gdesc{font-size:12.5px;line-height:1.7;color:#a8a8ae}
+  .gcard .gmore{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#aeb0b6;letter-spacing:.5px;margin-top:2px}
+
+  /* ---------- columns ---------- */
+  .col-grid{max-width:1240px;margin:26px auto 0;padding:0 clamp(16px,4vw,48px) 10px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+  .colcard{background:#191a1d;border:1px solid #2c2d31;border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+  .colcard .ctop{padding:22px 22px 0}
+  .colcard .ctag{font-family:"Bodoni Moda",serif;font-size:10px;letter-spacing:2.5px;color:#8c8c92}
+  .colcard .ctitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:20px;line-height:1.4;color:#f0eeea;margin-top:9px;letter-spacing:.5px}
+  .colcard .clead{font-size:13px;line-height:1.75;color:#a8a8ae;margin-top:11px}
+  .colcard .cbody{font-size:13px;line-height:1.95;color:#cfcdca;padding:0 22px;max-height:0;overflow:hidden;transition:max-height .45s ease,padding .45s ease}
+  .colcard.open .cbody{max-height:760px;padding:14px 22px 4px}
+  .colcard .cbody p{margin-bottom:11px}
+  .colcard .ctoggle{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#aeb0b6;letter-spacing:.5px;
+    background:none;border:none;cursor:pointer;padding:16px 22px 20px;text-align:left;border-top:1px solid #2c2d31;margin-top:14px;transition:color .2s}
+  .colcard .ctoggle:hover{color:#fff}
+
+  @media(max-width:820px){
+    .hero{grid-template-columns:1fr;text-align:center}
+    .hero-copy p{margin-left:auto;margin-right:auto}
+    .wheel-wrap{order:-1}.filters{gap:18px 24px}.reset{margin-left:0}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><span class="logo">Sillage</span><span class="kana">シヤージュ</span></div>
+  <span class="pr-tag">PR・アフィリエイト広告を含みます</span>
+</header>
+
+<section class="hero">
+  <div class="hero-copy">
+    <p class="eyebrow">— the trail a scent leaves behind</p>
+    <h1>香りは、見えない。<br>だから<span class="mark">色</span>で選ぶ。</h1>
+    <p>プチプラからメゾンまで。香調・シーン・季節から、自分の残り香を見つけるメンズ香水ガイド。</p>
+    <button class="hero-cta" onclick="document.querySelector('.filters').scrollIntoView({behavior:'smooth'})">explore the wheel →</button>
+  </div>
+  <div class="wheel-wrap">
+    <svg class="wheel" viewBox="0 0 300 300" role="img" aria-label="フレグランスホイール">
+      <g id="wheelRoot"></g>
+      <circle class="hub-ring" cx="150" cy="150" r="60"/>
+      <circle cx="150" cy="150" r="56" fill="#0d0e10"/>
+      <text id="hubMain" class="hub-main" x="150" y="150"></text>
+      <text id="hubSub"  class="hub-sub"  x="150" y="165"></text>
+    </svg>
+  </div>
+</section>
+<p class="wheel-hint">tap a family to filter ／ 香りの系統で絞り込む</p>
+
+<div class="section-head">
+  <p class="kick">— ten families</p>
+  <h2>香りの系統を知る</h2>
+</div>
+<section class="guide-grid" id="guideGrid"></section>
+
+
+<section class="filters">
+  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
+  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
+  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
+  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
+  <button class="reset" id="resetBtn">reset all</button>
+</section>
+
+<div class="results-head">
+  <span class="count"><b id="resCount">0</b> fragrances</span>
+  <span class="active-fam" id="activeFam"></span>
+</div>
+
+<main class="grid" id="grid"></main>
+
+
+<div class="section-head">
+  <p class="kick">— reading</p>
+  <h2>香りを選ぶための読み物</h2>
+</div>
+<section class="col-grid" id="colGrid"></section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="flogo">Sillage</div>
+    <p class="disc">
+      当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。掲載の香調（トップ・ミドル・ラスト）やブランド情報は各メーカーの公開情報をもとに整理したものです。「Sillageの見立て」は香調構成にもとづく当サイト独自の編集コメントであり、第三者のレビューや感想を転載・引用したものではありません。価格・在庫・仕様は変動するため、購入前に各販売ページで最新情報をご確認ください。
+    </p>
+    <div class="links"><a href="#">運営者情報</a><a href="#">香りの読み方ガイド</a><a href="#">プライバシーポリシー</a><a href="#">お問い合わせ</a></div>
+    <p class="copy">© 2026 Sillage — 香りで選ぶメンズ香水比較</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- families + scent line-art icons (24x24, centered at 12,12) ---------- */
+const ICONS = {
+  citrus:`<circle cx="12" cy="12" r="8"/><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="6.3" y1="6.3" x2="17.7" y2="17.7"/><line x1="17.7" y1="6.3" x2="6.3" y2="17.7"/><circle cx="12" cy="12" r="1.4"/>`,
+  aromatic:`<line x1="12" y1="3" x2="12" y2="21"/><path d="M12 8 C 15 7, 17 8, 18 6"/><path d="M12 12 C 9 11, 7 12, 6 10"/><path d="M12 16 C 15 15, 17 16, 18 14"/>`,
+  floral:`<circle cx="12" cy="12" r="2.3"/><ellipse cx="12" cy="6.2" rx="2.3" ry="3.6"/><ellipse cx="12" cy="6.2" rx="2.3" ry="3.6" transform="rotate(72 12 12)"/><ellipse cx="12" cy="6.2" rx="2.3" ry="3.6" transform="rotate(144 12 12)"/><ellipse cx="12" cy="6.2" rx="2.3" ry="3.6" transform="rotate(216 12 12)"/><ellipse cx="12" cy="6.2" rx="2.3" ry="3.6" transform="rotate(288 12 12)"/>`,
+  fruity:`<circle cx="11" cy="14" r="6"/><path d="M13 8 C 15 4, 18 4, 19 5 C 18 8, 15 9, 13 8 Z"/><line x1="12.5" y1="9" x2="11.5" y2="11.5"/>`,
+  gourmand:`<path d="M9 3 C 6 8, 6 16, 9 21 C 12 16, 12 8, 9 3 Z"/><path d="M15 3 C 12 8, 12 16, 15 21 C 18 16, 18 8, 15 3 Z"/>`,
+  amber:`<path d="M12 3 C 7 10, 8 20, 12 20 C 16 20, 17 10, 12 3 Z"/><path d="M12 9 C 10.5 12, 11 16, 12 16.5"/>`,
+  woody:`<path d="M3.5 13 a8.5 8.5 0 0 1 17 0"/><path d="M6.5 13 a5.5 5.5 0 0 1 11 0"/><path d="M9.5 13 a2.5 2.5 0 0 1 5 0"/><line x1="12" y1="13" x2="12" y2="20"/>`,
+  chypre:`<path d="M12 3 C 6 7, 6 16, 12 21 C 18 16, 18 7, 12 3 Z"/><line x1="12" y1="6" x2="12" y2="19"/><path d="M12 10 L 8.5 8"/><path d="M12 10 L 15.5 8"/><path d="M12 14 L 8.5 12.5"/><path d="M12 14 L 15.5 12.5"/>`,
+  musk:`<path d="M12 12 m-1 0 a1 1 0 1 1 2 0.4 a3 3 0 1 1 -5 -1 a5.4 5.4 0 1 1 9.5 2.5 a7.8 7.8 0 1 1 -13 -3"/>`,
+  aquatic:`<path d="M3 9 q3 -3 6 0 t6 0 t6 0"/><path d="M3 14 q3 -3 6 0 t6 0 t6 0"/><path d="M3 19 q3 -3 6 0 t6 0 t6 0"/>`,
+};
+const FAMILIES = [
+  {key:"citrus", ja:"シトラス", en:"CITRUS", color:"#c9b558", desc:"レモンやベルガモットが弾ける、最も明るく清潔感のある系統。日中や夏、香水入門に向き、誰からも好かれやすい。"},
+  {key:"aromatic", ja:"アロマティック", en:"AROMATIC", color:"#93a384", desc:"ラベンダーやハーブを核にした伝統的な清潔感。フゼアとも呼ばれ、石けんのような安心感でビジネスの定番。"},
+  {key:"floral", ja:"フローラル", en:"FLORAL", color:"#c4889c", desc:"花束のような華やかさ。レディースに多いが、すみれやネロリを使った中性的なものはメンズにも馴染む。"},
+  {key:"fruity", ja:"フルーティ", en:"FRUITY", color:"#d18a64", desc:"りんごやベリーなど果実の甘酸っぱさ。親しみやすく華やかで、デートや若い世代に好まれる。"},
+  {key:"gourmand", ja:"グルマン", en:"GOURMAND", color:"#ba8a57", desc:"バニラやキャラメル、コーヒーを思わせる甘い系統。秋冬や、距離の近い夜の場面で魅力を放つ。"},
+  {key:"amber", ja:"アンバー", en:"AMBER", color:"#c98c42", desc:"樹脂やスパイスの温かく官能的な甘さ。オリエンタルとも呼ばれ、冬やフォーマルで強い存在感を出す。"},
+  {key:"woody", ja:"ウッディ", en:"WOODY", color:"#927152", desc:"サンダルウッドやシダーなど乾いた木の香り。落ち着きと品格があり、大人のメンズに最も外さない。"},
+  {key:"chypre", ja:"シプレ", en:"CHYPRE", color:"#7f8d5a", desc:"ベルガモットとオークモスの対比が生む、ほろ苦く知的な系統。クラシックで個性が際立つ。"},
+  {key:"musk", ja:"ムスク", en:"MUSK", color:"#a59cb4", desc:"肌のぬくもりのような清潔で官能的な残り香。軽く万人受けし、素肌っぽい自然な香りづけに。"},
+  {key:"aquatic", ja:"アクアティック", en:"AQUATIC", color:"#6c98ad", desc:"海風や水を思わせる透明感のある清涼系。夏やスポーツ、ビジネスで爽やかに香らせたいときに。"},
+];
+const FAM = Object.fromEntries(FAMILIES.map(f=>[f.key,f]));
+
+/* ---------- sample data (brand & notes = public info; verdict = our own editorial) ---------- */
+const PERFUMES = [
+  {brand:"Jo Malone", name:"ライムバジル & マンダリン", gender:"unisex", family:"citrus", top:"ライム・マンダリン", mid:"バジル", last:"アンバーウッド", seasons:["spring", "summer"], scenes:["business", "daily"], priceTier:"high", price:"¥15,000前後", verdict:"ハーバルなバジルでシトラスに陰影を。重ねづけ前提の軽さでオフィスでも主張しすぎない。"},
+  {brand:"Acqua di Parma", name:"コロニア", gender:"unisex", family:"citrus", top:"レモン・ベルガモット", mid:"ラベンダー・ローズマリー", last:"パチョリ・サンダルウッド", seasons:["spring", "summer"], scenes:["business", "formal"], priceTier:"high", price:"¥18,000前後", verdict:"イタリアの伝統コロン。柑橘の明るさを上品な木で支える、清潔感の規範のような一本。"},
+  {brand:"Dior", name:"オー ソバージュ", gender:"men", family:"citrus", top:"レモン・バジル", mid:"ローズマリー・ジャスミン", last:"ベチバー・オークモス", seasons:["spring", "summer"], scenes:["business", "daily"], priceTier:"high", price:"¥13,000前後", verdict:"1966年の名作。シトラスにハーブと苔の渋みを通した、時代を超える紳士の清涼感。"},
+  {brand:"Hermès", name:"オー ド パンプルムース ローズ", gender:"unisex", family:"citrus", top:"グレープフルーツ", mid:"ローズ", last:"ベチバー", seasons:["spring", "summer"], scenes:["daily", "business"], priceTier:"high", price:"¥17,000前後", verdict:"グレープフルーツの苦味とローズの軽さ。みずみずしく中性的で、肩の力が抜けた洗練。"},
+  {brand:"4711", name:"オーデコロン", gender:"unisex", family:"citrus", top:"レモン・ベルガモット", mid:"ネロリ・ローズ", last:"ムスク", seasons:["summer"], scenes:["daily", "sports"], priceTier:"petit", price:"¥1,200前後", verdict:"200年以上続く原点のシトラス。持続は短いが、その潔さこそ夏に惜しみなく使える理由。"},
+  {brand:"Atelier Cologne", name:"オランジュ サングィン", gender:"unisex", family:"citrus", top:"ブラッドオレンジ", mid:"ジャスミン", last:"サンダルウッド", seasons:["spring", "summer"], scenes:["daily", "date"], priceTier:"high", price:"¥20,000前後", verdict:"果汁したたるブラッドオレンジ。甘さと苦味のバランスがよく、シトラスの中でも色気がある。"},
+  {brand:"Guerlain", name:"オー インペリアル", gender:"unisex", family:"citrus", top:"レモン・ベルガモット", mid:"ネロリ", last:"ローズ・ベチバー", seasons:["spring", "summer"], scenes:["formal", "daily"], priceTier:"high", price:"¥16,000前後", verdict:"皇后のために生まれた歴史的コロン。気品ある柑橘で、フォーマルにも軽やかに寄り添う。"},
+  {brand:"無印良品", name:"オードトワレ シトラス", gender:"unisex", family:"citrus", top:"オレンジ・レモン", mid:"グレープフルーツ", last:"ライム", seasons:["summer", "spring"], scenes:["daily", "sports"], priceTier:"petit", price:"¥1,990前後", verdict:"果汁そのままの直球シトラス。香水然としない素朴さで、職場でも気を遣わせない普段使い。"},
+  {brand:"Dolce&Gabbana", name:"ライト ブルー プールオム", gender:"men", family:"citrus", top:"グレープフルーツ・ベルガモット", mid:"ジュニパー・ローズウッド", last:"ムスク・オークモス", seasons:["summer", "spring"], scenes:["daily", "date"], priceTier:"mid", price:"¥7,000前後", verdict:"地中海の昼下がりのような爽やかさ。万人受けする軽さで、夏の定番として根強い人気。"},
+  {brand:"Hermès", name:"オー ドランジュ ヴェルト", gender:"unisex", family:"citrus", top:"オレンジ・レモン・マンダリン", mid:"ミント・ブラックカラント", last:"オークモス・パチョリ", seasons:["summer", "spring"], scenes:["daily", "business"], priceTier:"high", price:"¥16,000前後", verdict:"エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。"},
+  {brand:"Dior", name:"ソヴァージュ EDT", gender:"men", family:"aromatic", top:"ベルガモット", mid:"シチュアンペッパー", last:"アンブロキサン", seasons:["spring", "autumn"], scenes:["business", "date"], priceTier:"high", price:"¥12,000前後", verdict:"清涼なベルガモットから乾いたアンブロキサンへ。万人受けと存在感を両立する、迷ったときの基準点。"},
+  {brand:"CK", name:"CK one", gender:"unisex", family:"aromatic", top:"ベルガモット・カルダモン", mid:"ジャスミン・スミレ", last:"ムスク・シダー", seasons:["spring", "summer"], scenes:["daily", "sports"], priceTier:"petit", price:"¥2,500前後", verdict:"ユニセックスの先駆け。軽く中性的で、香水入門の外さない最初の一本として今も現役。"},
+  {brand:"Montblanc", name:"レジェンド", gender:"men", family:"aromatic", top:"ラベンダー・ベルガモット", mid:"アップル・ローズ", last:"オークモス・トンカ", seasons:["spring", "autumn"], scenes:["business", "date"], priceTier:"mid", price:"¥6,500前後", verdict:"清潔感と甘さの黄金比。クセがなく好感度が高い、コスパに優れた万能フゼア。"},
+  {brand:"Azzaro", name:"プール オム", gender:"men", family:"aromatic", top:"アニス・バジル・ラベンダー", mid:"プチグレン・ベチバー", last:"レザー・オークモス", seasons:["autumn", "spring"], scenes:["business", "formal"], priceTier:"mid", price:"¥4,500前後", verdict:"1978年のクラシックフゼア。男性的な厚みと清潔感を併せ持つ、王道の大人の香り。"},
+  {brand:"Chanel", name:"アリュール オム スポーツ", gender:"men", family:"aromatic", top:"オレンジ・アルデヒド", mid:"シダー・ペッパー", last:"トンカ・アンバー", seasons:["spring", "summer"], scenes:["business", "sports"], priceTier:"high", price:"¥13,000前後", verdict:"爽快さの中に上質な温もり。スポーティでありながら品があり、オンオフ問わず使える。"},
+  {brand:"Paco Rabanne", name:"プール オム", gender:"men", family:"aromatic", top:"ローズマリー・ベルガモット", mid:"カーネーション・セージ", last:"トンカ・オークモス", seasons:["autumn", "spring"], scenes:["business", "daily"], priceTier:"mid", price:"¥4,000前後", verdict:"ハーブの効いた正統派フゼア。香水黎明期の骨格を残す、堅実で外さない一本。"},
+  {brand:"Nautica", name:"ヴォヤージュ", gender:"men", family:"aromatic", top:"アップル・水生ノート", mid:"ミモザ・ロータス", last:"シダー・ムスク", seasons:["summer", "spring"], scenes:["daily", "sports"], priceTier:"petit", price:"¥2,000前後", verdict:"爽やかなグリーンと水生ノート。驚きの低価格で、最初の一本として選ばれ続ける定番。"},
+  {brand:"Brut", name:"クラシック", gender:"men", family:"aromatic", top:"シトラス・アニス", mid:"ラベンダー・ゼラニウム", last:"ムスク・サンダルウッド", seasons:["autumn", "spring"], scenes:["daily"], priceTier:"petit", price:"¥1,500前後", verdict:"1964年から続く昔ながらのフゼア。レトロで飾らない清潔感が、かえって今は新鮮。"},
+  {brand:"Guerlain", name:"ヴェチバー", gender:"men", family:"aromatic", top:"レモン・ベルガモット", mid:"ベチバー・ペッパー", last:"トンカ・タバコ", seasons:["autumn", "spring"], scenes:["business", "formal"], priceTier:"high", price:"¥16,000前後", verdict:"土と草の根の渋み。知的で落ち着いた香りで、大人の男のための名作と評される。"},
+  {brand:"YSL", name:"Y メン オーデパルファン", gender:"men", family:"aromatic", top:"ベルガモット・ジンジャー", mid:"セージ・ゼラニウム", last:"アンバーウッド・トンカ", seasons:["spring", "autumn"], scenes:["business", "date"], priceTier:"high", price:"¥13,000前後", verdict:"フレッシュさと甘い余韻の対比。清潔感と色気を両立し、近年のメンズ人気を牽引する一本。"},
+  {brand:"Chanel", name:"エゴイスト プラチナム", gender:"men", family:"aromatic", top:"ラベンダー・ローズマリー", mid:"ゼラニウム・プチグレン", last:"アンバー・シダー", seasons:["spring", "autumn"], scenes:["business", "formal"], priceTier:"high", price:"¥14,000前後", verdict:"清涼なラベンダーから温かい木へ。端正で品があり、知的な紳士像を描く90年代の名作。"},
+  {brand:"Gucci", name:"ギルティ プールオム", gender:"men", family:"aromatic", top:"レモン・ラベンダー", mid:"オレンジブロッサム・ネロリ", last:"パチョリ・シダー", seasons:["spring", "summer"], scenes:["date", "daily"], priceTier:"mid", price:"¥9,000前後", verdict:"明るい柑橘とフローラルの軽やかさ。華やかで親しみやすく、デートにも普段使いにも。"},
+  {brand:"Dior", name:"ソヴァージュ EDP", gender:"men", family:"aromatic", top:"カラブリアンベルガモット", mid:"ラベンダー・シーソルト・スターアニス", last:"アンブロキサン・シダー", seasons:["autumn", "spring"], scenes:["date", "business"], priceTier:"high", price:"¥15,000前後", verdict:"EDTより甘くまろやか。塩気とラベンダーが奥行きを生み、昼も夜も使える万能版。"},
+  {brand:"Calvin Klein", name:"エタニティ フォーメン", gender:"men", family:"aromatic", top:"ラベンダー・マンダリン", mid:"セージ・バジル", last:"サンダルウッド・ムスク", seasons:["spring", "autumn"], scenes:["business", "daily"], priceTier:"petit", price:"¥3,000前後", verdict:"ラベンダーとハーブの清潔感。落ち着いた大人のフゼアで、コスパよく長く使える定番。"},
+  {brand:"YSL", name:"リブレ オーデパルファン", gender:"women", family:"floral", top:"ラベンダー・マンダリン", mid:"オレンジブロッサム・ジャスミン", last:"バニラ・ムスク", seasons:["spring", "autumn"], scenes:["date", "business"], priceTier:"high", price:"¥14,000前後", verdict:"ラベンダーで締めた現代的フローラル。甘さに芯があり、日常から少し背伸びした場まで橋渡しする。"},
+  {brand:"Chanel", name:"チャンス オー タンドゥル", gender:"women", family:"floral", top:"グレープフルーツ・クインス", mid:"ジャスミン・ヒヤシンス", last:"ホワイトムスク・シダー", seasons:["spring", "summer"], scenes:["date", "daily"], priceTier:"high", price:"¥15,000前後", verdict:"みずみずしく可憐なフルーティフローラル。明るく親しみやすい、若々しい魅力の定番。"},
+  {brand:"Dior", name:"ジャドール", gender:"women", family:"floral", top:"ベルガモット・マンダリン", mid:"イランイラン・ローズ・ジャスミン", last:"ムスク・バニラ", seasons:["spring", "autumn"], scenes:["formal", "date"], priceTier:"high", price:"¥16,000前後", verdict:"豪奢な花束をまとう王道フローラル。フェミニンの象徴として揺るがない地位を持つ。"},
+  {brand:"Gucci", name:"ブルーム", gender:"women", family:"floral", top:"チュベローズ・ジャスミン", mid:"ロサンゲルス・オレンジブロッサム", last:"サンダルウッド・ムスク", seasons:["spring", "summer"], scenes:["date", "daily"], priceTier:"high", price:"¥13,000前後", verdict:"白い花が咲き乱れる濃密なフローラル。瑞々しくも官能的で、存在感のある華やかさ。"},
+  {brand:"Jo Malone", name:"イングリッシュ ペアー & フリージア", gender:"unisex", family:"floral", top:"洋ナシ", mid:"フリージア・ローズ", last:"パチョリ・ムスク", seasons:["spring", "autumn"], scenes:["daily", "date"], priceTier:"high", price:"¥15,000前後", verdict:"熟した洋ナシと白い花。フルーティで上品なフローラルは、性別を問わず使いやすい。"},
+  {brand:"Marc Jacobs", name:"デイジー", gender:"women", family:"floral", top:"ストロベリー・バイオレットリーフ", mid:"ジャスミン・ガーデニア", last:"ムスク・ホワイトウッド", seasons:["spring", "summer"], scenes:["daily", "date"], priceTier:"mid", price:"¥9,000前後", verdict:"花瓶のようなボトルが象徴的。みずみずしく爽やかな白い花で、若々しい清楚さを描く。"},
+  {brand:"Jo Malone", name:"ピオニー & ブラッシュ スエード", gender:"unisex", family:"floral", top:"レッドアップル", mid:"ピオニー", last:"スエード", seasons:["spring", "summer"], scenes:["date", "daily"], priceTier:"high", price:"¥15,000前後", verdict:"咲きほこる芍薬にスエードの陰影。華やかさと落ち着きが同居し、性別を問わず使える。"},
+  {brand:"Versace", name:"エロス EDT", gender:"men", family:"fruity", top:"ミント・グリーンアップル・レモン", mid:"トンカ・ゼラニウム・アンブロキサン", last:"バニラ・シダー", seasons:["summer", "spring"], scenes:["date", "daily"], priceTier:"mid", price:"¥6,000前後", verdict:"青リンゴとミントの甘い清涼感。わかりやすく華やかで、若い世代のデート向け定番のコスパ枠。"},
+  {brand:"Versace", name:"ディラン ブルー", gender:"men", family:"fruity", top:"ベルガモット・水生ノート", mid:"フィグ・ペッパー", last:"ムスク・インセンス", seasons:["summer", "spring"], scenes:["date", "daily"], priceTier:"mid", price:"¥6,500前後", verdict:"フィグとアクアの瑞々しさ。爽やかさに甘さを乗せた、近年のメンズ人気作。"},
+  {brand:"Azzaro", name:"クローム", gender:"men", family:"fruity", top:"パイナップル・ローズマリー", mid:"ジャスミン・シクラメン", last:"ムスク・シダー", seasons:["summer", "spring"], scenes:["daily", "sports"], priceTier:"mid", price:"¥4,500前後", verdict:"パイナップルの明るいフレッシュさ。清潔で親しみやすく、コスパのよい夏の常備品。"},
+  {brand:"Tom Ford", name:"トバコ バニラ", gender:"unisex", family:"gourmand", top:"タバコリーフ・スパイス", mid:"トンカ・カカオ", last:"バニラ・ドライフルーツ", seasons:["winter"], scenes:["date", "formal"], priceTier:"high", price:"¥30,000前後", verdict:"甘い葉巻と蜂蜜の濃厚な温度感。拡散が強く一滴で十分。冬の夜、距離の近い場面で印象を残す。"},
+  {brand:"Mugler", name:"エンジェル", gender:"women", family:"gourmand", top:"ベルガモット・トロピカル", mid:"ハニー・キャラメル", last:"パチョリ・チョコレート", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"high", price:"¥15,000前後", verdict:"綿菓子とパチョリの衝撃。グルマン香水の発明者であり、好き嫌いを超えて歴史を変えた一本。"},
+  {brand:"Thierry Mugler", name:"A*MEN", gender:"men", family:"gourmand", top:"ラベンダー・ミント", mid:"コーヒー・キャラメル", last:"パチョリ・タール", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"mid", price:"¥9,000前後", verdict:"コーヒーとキャラメルの男性的グルマン。甘く力強く、寒い夜に濃厚な余韻を残す。"},
+  {brand:"Jean Paul Gaultier", name:"ル マル", gender:"men", family:"gourmand", top:"ミント・ラベンダー", mid:"オレンジブロッサム・シナモン", last:"バニラ・トンカ", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"mid", price:"¥8,000前後", verdict:"ミントとバニラの清潔な甘さ。トルソー型ボトルの象徴的存在で、色気のある定番。"},
+  {brand:"Giorgio Armani", name:"ストロンガー ウィズ ユー", gender:"men", family:"gourmand", top:"カルダモン・ピンクペッパー", mid:"セージ・栗", last:"バニラ・アンバー", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"mid", price:"¥9,000前後", verdict:"栗とバニラの温かい甘さ。親しみやすく好感度が高い、デート向けの近年の人気作。"},
+  {brand:"Viktor&Rolf", name:"スパイスボム エクストリーム", gender:"men", family:"gourmand", top:"タバコ", mid:"シナモン・サフラン", last:"バニラ・タバコ", seasons:["winter"], scenes:["date", "formal"], priceTier:"mid", price:"¥10,000前後", verdict:"オリジナルをより甘く濃密に。タバコとバニラの大人の甘さで、冬の夜に深い印象を残す。"},
+  {brand:"Prada", name:"キャンディ", gender:"women", family:"gourmand", top:"キャラメル・ベンゾイン", mid:"ムスク", last:"バニラ", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"high", price:"¥13,000前後", verdict:"とろけるキャラメルの甘さ。フェミニンで愛らしく、グルマン好きの定番として支持される。"},
+  {brand:"Carolina Herrera", name:"バッドボーイ", gender:"men", family:"gourmand", top:"ベルガモット・ブラックペッパー", mid:"セージ・シダー", last:"ココア・トンカ", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"mid", price:"¥8,000前後", verdict:"稲妻型ボトルのスパイシーグルマン。ココアとトンカの甘さで、遊び心ある色気を演出。"},
+  {brand:"YSL", name:"ブラック オピウム", gender:"women", family:"gourmand", top:"ピンクペッパー・オレンジ", mid:"コーヒー・ジャスミン", last:"バニラ・パチョリ", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"high", price:"¥14,000前後", verdict:"コーヒーとバニラの中毒性ある甘さ。夜が似合う、官能的でモダンなレディースの定番。"},
+  {brand:"Parfums de Marly", name:"レイトン", gender:"men", family:"gourmand", top:"アップル・ベルガモット・マンダリン", mid:"ラベンダー・すみれ・ゼラニウム", last:"バニラ・サンダルウッド・ペッパー", seasons:["autumn", "winter"], scenes:["date", "formal"], priceTier:"high", price:"¥38,000前後", verdict:"りんごとバニラの上品な甘さ。華やかで高級感があり、ニッチ入門としても人気が高い。"},
+  {brand:"Maison Margiela", name:"レプリカ ジャズクラブ", gender:"unisex", family:"amber", top:"ピンクペッパー・レモン", mid:"ラム・クラリセージ", last:"タバコ・バニラ", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"high", price:"¥16,000前後", verdict:"ラムとタバコの甘い燻し。夜のバーの記憶を再現する系統で、秋冬のオフの装いに馴染む。"},
+  {brand:"Dior", name:"ソヴァージュ エリクシール", gender:"men", family:"amber", top:"シナモン・カルダモン・ナツメグ", mid:"ラベンダー", last:"アンバー・リコリス", seasons:["winter", "autumn"], scenes:["date", "formal"], priceTier:"high", price:"¥18,000前後", verdict:"ソヴァージュの濃縮版。スパイスと甘さが凝縮され、冬の夜に圧倒的な存在感を放つ。"},
+  {brand:"Paco Rabanne", name:"1 ミリオン", gender:"men", family:"amber", top:"グレープフルーツ・ミント", mid:"ローズ・シナモン", last:"レザー・アンバー", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"mid", price:"¥7,000前後", verdict:"金塊型ボトルの華やかな甘さ。わかりやすく目立つ、若い世代の夜遊び向け定番。"},
+  {brand:"Bvlgari", name:"マン イン ブラック", gender:"men", family:"amber", top:"ラム・スパイス", mid:"レザー・チュベローズ", last:"トンカ・アンバー", seasons:["winter", "autumn"], scenes:["date", "formal"], priceTier:"high", price:"¥12,000前後", verdict:"ラムとレザーの男性的な官能。甘く重厚で、大人の夜にふさわしい色気をまとう。"},
+  {brand:"YSL", name:"ラ ニュイ ドゥ ロム", gender:"men", family:"amber", top:"カルダモン", mid:"ラベンダー・ベルガモット", last:"シダー・ベチバー", seasons:["autumn", "winter"], scenes:["date", "formal"], priceTier:"high", price:"¥13,000前後", verdict:"カルダモンの効いたエレガントなスパイシー。隙のない洗練で、デートの鉄板とされる。"},
+  {brand:"Viktor&Rolf", name:"スパイスボム", gender:"men", family:"amber", top:"ベルガモット・グレープフルーツ", mid:"シナモン・レザー", last:"タバコ・ベチバー", seasons:["winter", "autumn"], scenes:["date", "daily"], priceTier:"mid", price:"¥9,000前後", verdict:"手榴弾型ボトルの爆発的スパイス。温かく刺激的で、寒い季節に強く印象を残す。"},
+  {brand:"Dolce&Gabbana", name:"ザ ワン フォー メン", gender:"men", family:"amber", top:"グレープフルーツ・バジル", mid:"カルダモン・ジンジャー", last:"タバコ・アンバー", seasons:["autumn", "winter"], scenes:["business", "date"], priceTier:"mid", price:"¥8,000前後", verdict:"スパイスとタバコの温かみ。フォーマルにもデートにも効く、品のある甘さが魅力。"},
+  {brand:"Azzaro", name:"ワンテッド", gender:"men", family:"amber", top:"ジンジャー・レモン", mid:"カルダモン・サフラン", last:"トンカ・ベチバー", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"mid", price:"¥6,500前後", verdict:"ジンジャーとトンカの心地よい甘辛さ。親しみやすく華やかで、デートに使いやすい。"},
+  {brand:"Maison Francis Kurkdjian", name:"バカラ ルージュ 540", gender:"unisex", family:"amber", top:"サフラン・ジャスミン", mid:"アンバーウッド・シダー", last:"ファーレザー・オークモス", seasons:["autumn", "winter"], scenes:["date", "formal"], priceTier:"high", price:"¥35,000前後", verdict:"世界的に話題のニッチ香水。甘く鉱物的な唯一無二の香りで、強い拡散と存在感を放つ。"},
+  {brand:"Versace", name:"エロス フレイム", gender:"men", family:"amber", top:"マンダリン・レモン・ブラックペッパー", mid:"ローズ・ゼラニウム・ローズマリー", last:"トンカ・バニラ・サンダルウッド", seasons:["autumn", "winter"], scenes:["date", "daily"], priceTier:"mid", price:"¥7,000前後", verdict:"エロスをより温かくスパイシーに。甘さに深みが増し、秋冬の夜のデートに映える。"},
+  {brand:"Chanel", name:"ブルー ドゥ シャネル EDP", gender:"men", family:"woody", top:"グレープフルーツ・レモン・ミント", mid:"ジンジャー・ジャスミン", last:"サンダルウッド・シダー", seasons:["autumn", "winter"], scenes:["business", "formal"], priceTier:"high", price:"¥15,000前後", verdict:"清涼なトップから乾いた白檀へ落ちる正統派ウッディ。スーツに最も外さない、社会人の一本目。"},
+  {brand:"Tom Ford", name:"オード ウッド", gender:"unisex", family:"woody", top:"ローズウッド・カルダモン", mid:"ウード・サンダルウッド", last:"バニラ・アンバー", seasons:["autumn", "winter"], scenes:["formal", "date"], priceTier:"high", price:"¥28,000前後", verdict:"ウードを上品に飼いならした名作。スモーキーで甘く、夜の特別な装いに深みを与える。"},
+  {brand:"Hermès", name:"テール ド エルメス", gender:"men", family:"woody", top:"オレンジ・グレープフルーツ", mid:"ペッパー・ゼラニウム", last:"ベチバー・シダー", seasons:["autumn", "spring"], scenes:["business", "formal"], priceTier:"high", price:"¥17,000前後", verdict:"柑橘から鉱物的なベチバーへ。乾いた大地を思わせる、知性と品格のモダンクラシック。"},
+  {brand:"Dior", name:"ファーレンハイト", gender:"men", family:"woody", top:"マンダリン・サンザシ", mid:"すみれ・ナツメグ", last:"レザー・ベチバー", seasons:["autumn", "winter"], scenes:["formal", "date"], priceTier:"high", price:"¥14,000前後", verdict:"すみれとガソリンを思わせる唯一無二の構築美。好みは分かれるが忘れられない個性派。"},
+  {brand:"Creed", name:"アバントゥス", gender:"men", family:"woody", top:"パイナップル・ベルガモット", mid:"バーチ・ジャスミン", last:"ムスク・オークモス", seasons:["spring", "autumn"], scenes:["business", "formal"], priceTier:"high", price:"¥45,000前後", verdict:"フルーティな出だしから煙る白樺へ。成功者の香りと称される、現代の伝説的一本。"},
+  {brand:"Giorgio Armani", name:"アルマーニ コード", gender:"men", family:"woody", top:"ベルガモット・レモン", mid:"オリーブブロッサム・アニス", last:"レザー・トンカ", seasons:["autumn", "winter"], scenes:["date", "formal"], priceTier:"mid", price:"¥9,000前後", verdict:"甘く温かいウッディ・スパイシー。夜とデートに強い、色気のあるシグネチャー。"},
+  {brand:"Le Labo", name:"サンタル 33", gender:"unisex", family:"woody", top:"カルダモン・アイリス", mid:"バイオレット・アンブロックス", last:"サンダルウッド・レザー", seasons:["autumn", "winter"], scenes:["daily", "formal"], priceTier:"high", price:"¥30,000前後", verdict:"乾いた白檀とレザーの中性的な煙。唯一無二の存在感で、性別を超えて支持される。"},
+  {brand:"Diptyque", name:"タムダオ", gender:"unisex", family:"woody", top:"サイプレス・ローズ", mid:"サンダルウッド・シダー", last:"アンバー・ムスク", seasons:["autumn", "winter"], scenes:["daily", "formal"], priceTier:"high", price:"¥22,000前後", verdict:"クリーミーな白檀を主役にした静謐な香り。瞑想的で、知的な落ち着きをまとわせる。"},
+  {brand:"Byredo", name:"ジプシー ウォーター", gender:"unisex", family:"woody", top:"ベルガモット・ペッパー", mid:"パイン・インセンス", last:"サンダルウッド・バニラ", seasons:["autumn", "spring"], scenes:["daily", "date"], priceTier:"high", price:"¥25,000前後", verdict:"焚き火と松、ほのかなバニラ。自由で都会的なボヘミアンの香りとして人気が高い。"},
+  {brand:"Dunhill", name:"アイコン", gender:"men", family:"woody", top:"ネロリ・ベルガモット", mid:"ラベンダー・ゼラニウム", last:"ベチバー・レザー", seasons:["autumn", "winter"], scenes:["business", "formal"], priceTier:"mid", price:"¥8,000前後", verdict:"英国紳士的なレザー・ウッディ。重厚すぎず、ビジネスの装いに格を添える。"},
+  {brand:"Prada", name:"ルオム", gender:"men", family:"woody", top:"ネロリ・カルダモン", mid:"アイリス・ゼラニウム", last:"アンバー・パチョリ", seasons:["autumn", "spring"], scenes:["business", "formal"], priceTier:"high", price:"¥13,000前後", verdict:"アイリスの上品なパウダリーさ。控えめで洗練され、清潔感のある大人の余裕を演出する。"},
+  {brand:"John Varvatos", name:"アーティザン", gender:"men", family:"woody", top:"クレメンタイン・バジル", mid:"シダー・タバコ", last:"アンバー・スエード", seasons:["autumn", "spring"], scenes:["date", "daily"], priceTier:"mid", price:"¥6,000前後", verdict:"柑橘と乾いた木のバランスがよい隠れた良作。価格以上の満足感で根強いファンを持つ。"},
+  {brand:"Montblanc", name:"エクスプローラー", gender:"men", family:"woody", top:"ベルガモット・ピンクペッパー", mid:"ベチバー", last:"パチョリ・レザー", seasons:["autumn", "winter"], scenes:["business", "daily"], priceTier:"mid", price:"¥6,500前後", verdict:"アバントゥスを思わせる構成をコスパよく。爽やかさと土っぽさのバランスが秀逸。"},
+  {brand:"Jo Malone", name:"ウッドセージ & シーソルト", gender:"unisex", family:"woody", top:"アンブレットシード", mid:"セージ", last:"シーソルト", seasons:["spring", "summer"], scenes:["daily", "business"], priceTier:"high", price:"¥15,000前後", verdict:"海辺の崖を思わせるミネラル感。ミニマルで中性的、重ねづけの土台にも向く人気作。"},
+  {brand:"Hugo Boss", name:"ボス ボトルド", gender:"men", family:"woody", top:"アップル・ベルガモット", mid:"シナモン・ゼラニウム", last:"サンダルウッド・ベチバー", seasons:["autumn", "winter"], scenes:["business", "daily"], priceTier:"mid", price:"¥5,500前後", verdict:"りんごとシナモンの温かみ。ビジネスマンの定番として長年支持される、堅実な一本。"},
+  {brand:"Dior", name:"ディオール オム", gender:"men", family:"woody", top:"カラブリアンベルガモット", mid:"アイリス・カカオ", last:"ベチバー・レザー", seasons:["autumn", "winter"], scenes:["formal", "date"], priceTier:"high", price:"¥14,000前後", verdict:"アイリスのパウダリーな上品さ。洗練と色気を兼ね、大人の余裕を静かに語る。"},
+  {brand:"Givenchy", name:"ジェントルマン ブシ", gender:"men", family:"woody", top:"ペア・カルダモン", mid:"アイリス・ラベンダー", last:"レザー・パチョリ", seasons:["autumn", "winter"], scenes:["business", "date"], priceTier:"mid", price:"¥9,000前後", verdict:"洋ナシとアイリスの甘さに、レザーの芯。優雅さと男性らしさを両立した現代の紳士像。"},
+  {brand:"Tom Ford", name:"ブラック オーキッド", gender:"unisex", family:"chypre", top:"トリュフ・ブラックカラント", mid:"オーキッド・スパイス", last:"パチョリ・ヴェチバー", seasons:["winter", "autumn"], scenes:["formal", "date"], priceTier:"high", price:"¥20,000前後", verdict:"土と黒い花の濃密なシプレ。拡散が強く一滴で十分。冬の夜、印象を残したい場面の切り札。"},
+  {brand:"Aramis", name:"アラミス", gender:"men", family:"chypre", top:"ベルガモット・シナモン", mid:"パチョリ・レザー", last:"オークモス・ベチバー", seasons:["autumn", "winter"], scenes:["formal", "business"], priceTier:"mid", price:"¥5,000前後", verdict:"1965年の重厚なレザー・シプレ。古典的な男臭さがあり、貫禄を求める大人に。"},
+  {brand:"Chanel", name:"プール ムッシュ", gender:"men", family:"chypre", top:"レモン・ベルガモット", mid:"バジル・ジンジャー", last:"ベチバー・オークモス", seasons:["autumn", "spring"], scenes:["formal", "business"], priceTier:"high", price:"¥14,000前後", verdict:"シャネル唯一のメンズ古典。シトラス・シプレの端正な構築で、知的な紳士像を描く。"},
+  {brand:"YSL", name:"クロス", gender:"men", family:"chypre", top:"アルデヒド・ベルガモット", mid:"ゼラニウム・パチョリ", last:"レザー・ムスク", seasons:["autumn", "winter"], scenes:["date", "formal"], priceTier:"high", price:"¥12,000前後", verdict:"アニマリックで官能的な伝説。好みは激しく分かれるが、ハマれば代えがきかない名作。"},
+  {brand:"Guerlain", name:"ミツコ", gender:"women", family:"chypre", top:"ベルガモット・ピーチ", mid:"ジャスミン・ローズ", last:"オークモス・スパイス", seasons:["autumn", "winter"], scenes:["formal", "date"], priceTier:"high", price:"¥18,000前後", verdict:"桃と苔の対比が生む憂いの香り。1919年から愛される、シプレの完成形と称される傑作。"},
+  {brand:"Chanel", name:"アンテウス", gender:"men", family:"chypre", top:"レモン・プチグレン・タイム", mid:"カストリウム・パチョリ・ローズ", last:"レザー・オークモス", seasons:["autumn", "winter"], scenes:["formal", "date"], priceTier:"high", price:"¥14,000前後", verdict:"レザーと苔の重厚な古典。野性的で官能的な、貫禄ある大人の男のためのシプレ。"},
+  {brand:"SHIRO", name:"サボン オードパルファン", gender:"unisex", family:"musk", top:"アルデヒド・ベルガモット", mid:"ローズ・ミュゲ", last:"ムスク・アンバー", seasons:["spring", "summer"], scenes:["daily", "business"], priceTier:"mid", price:"¥4,700前後", verdict:"清潔感の代名詞。石けんの輪郭をムスクで柔らかく包む、誰の隣でも安全牌になる王道。"},
+  {brand:"Narciso Rodriguez", name:"フォー ハー", gender:"women", family:"musk", top:"オレンジブロッサム", mid:"ムスク・アンバー", last:"パチョリ・バニラ", seasons:["spring", "autumn"], scenes:["date", "daily"], priceTier:"high", price:"¥12,000前後", verdict:"上質なムスクの官能。肌に溶けるような色気で、世界的に支持されるムスクの代表作。"},
+  {brand:"Le Labo", name:"アナザー 13", gender:"unisex", family:"musk", top:"アンブロックス・アルデヒド", mid:"ジャスミン", last:"アンバー・ムスク", seasons:["spring", "summer"], scenes:["daily", "business"], priceTier:"high", price:"¥30,000前後", verdict:"透明感のあるクリーンムスク。性別も季節も選ばず、現代的な抜け感を肌にまとわせる。"},
+  {brand:"Maison Margiela", name:"レイジー サンデー モーニング", gender:"unisex", family:"musk", top:"アルデヒド・洋ナシ", mid:"アイリス・ローズ", last:"ムスク・パチョリ", seasons:["spring", "summer"], scenes:["daily"], priceTier:"high", price:"¥16,000前後", verdict:"洗いたてのシーツのような清潔感。穏やかで安心感があり、休日の素肌に寄り添う。"},
+  {brand:"Narciso Rodriguez", name:"フォー ヒム", gender:"men", family:"musk", top:"バイオレットリーフ", mid:"ムスク", last:"アンバー・パチョリ", seasons:["spring", "autumn"], scenes:["business", "date"], priceTier:"high", price:"¥11,000前後", verdict:"すみれの葉とムスクの上品な男性版。控えめながら奥行きがあり、知的な清潔感を放つ。"},
+  {brand:"Glossier", name:"ユー", gender:"unisex", family:"musk", top:"ピンクペッパー", mid:"アイリス", last:"アンブレットムスク", seasons:["spring", "summer"], scenes:["daily", "date"], priceTier:"mid", price:"¥9,000前後", verdict:"肌の匂いを増幅するようなスキンムスク。つける人ごとに変わる、親密で個人的な香り。"},
+  {brand:"Bvlgari", name:"ブルガリ プールオム", gender:"men", family:"musk", top:"ダージリンティー・ベルガモット", mid:"シダー・ペッパー", last:"ムスク・トンカ", seasons:["spring", "summer"], scenes:["business", "daily"], priceTier:"mid", price:"¥6,000前後", verdict:"紅茶のような透明感と清潔感。クセがなく上品で、ビジネスでもっとも外さない万能種。"},
+  {brand:"Aesop", name:"タシット", gender:"unisex", family:"aquatic", top:"バジル・ユズ", mid:"ヴェチバー", last:"クローブ", seasons:["summer", "spring"], scenes:["business", "daily"], priceTier:"high", price:"¥17,000前後", verdict:"柚子と海風のグリーン。生っぽい清涼感で、香りで涼を演出したい蒸し暑い日に効く。"},
+  {brand:"Davidoff", name:"クール ウォーター", gender:"men", family:"aquatic", top:"ミント・ラベンダー", mid:"サンダルウッド・ネロリ", last:"ムスク・シダー", seasons:["summer", "spring"], scenes:["daily", "sports"], priceTier:"petit", price:"¥2,500前後", verdict:"1988年のマリン香水の元祖。清涼で爽やか、低価格ながら今なお色褪せない定番。"},
+  {brand:"Giorgio Armani", name:"アクア ディ ジオ", gender:"men", family:"aquatic", top:"マリンノート・ベルガモット", mid:"ローズマリー・ジャスミン", last:"パチョリ・ムスク", seasons:["summer", "spring"], scenes:["business", "sports"], priceTier:"high", price:"¥11,000前後", verdict:"海そのものを思わせる透明感。爽やかさの代名詞で、夏のメンズ香水の絶対王者。"},
+  {brand:"Issey Miyake", name:"ロードゥ イッセイ プールオム", gender:"men", family:"aquatic", top:"ユズ・ベルガモット", mid:"シナモン・サフラン", last:"ベチバー・サンダルウッド", seasons:["summer", "spring"], scenes:["business", "daily"], priceTier:"mid", price:"¥5,500前後", verdict:"水のように澄んだ柑橘とスパイス。清潔で控えめ、ビジネスシーンで好感度が高い。"},
+  {brand:"Paco Rabanne", name:"インヴィクタス", gender:"men", family:"aquatic", top:"グレープフルーツ・マリンノート", mid:"ベイリーフ・ジャスミン", last:"アンバーグリス・オークモス", seasons:["summer", "spring"], scenes:["sports", "daily"], priceTier:"mid", price:"¥7,000前後", verdict:"トロフィー型ボトルの爽快マリン。スポーティで力強く、アクティブな印象を与える。"},
+  {brand:"Bvlgari", name:"アクア プールオム", gender:"men", family:"aquatic", top:"マンダリン", mid:"ポシドニア海藻", last:"サンタリウム・アンバー", seasons:["summer", "spring"], scenes:["business", "sports"], priceTier:"mid", price:"¥8,000前後", verdict:"海藻のミネラル感が独特の塩気を生む。爽やかさに深みがあり、夏でも安っぽくならない。"},
+  {brand:"Versace", name:"プールオム", gender:"men", family:"aquatic", top:"レモン・ネロリ", mid:"ゼラニウム・チュベローズ", last:"シダー・ムスク", seasons:["summer", "spring"], scenes:["daily", "date"], priceTier:"mid", price:"¥6,000前後", verdict:"地中海的な明るいフレッシュさ。軽やかで親しみやすく、日常使いに気負いがない。"},
+  {brand:"Acqua di Parma", name:"ブルー メディテラネオ アランチャ", gender:"unisex", family:"aquatic", top:"オレンジ・シトロン", mid:"カルダモン", last:"サンダルウッド・ムスク", seasons:["summer", "spring"], scenes:["daily", "date"], priceTier:"high", price:"¥16,000前後", verdict:"地中海の青を閉じ込めた爽やかさ。柑橘とウッディの均衡が上質な軽さを生む。"},
+];
+
+const GENDER={men:"メンズ",women:"レディース",unisex:"ユニセックス"};
+const SCENE={business:"ビジネス",date:"デート",formal:"フォーマル",daily:"デイリー",sports:"スポーツ"};
+const SEASON={spring:"春",summer:"夏",autumn:"秋",winter:"冬"};
+const PRICE={petit:"プチプラ",mid:"ミドル",high:"ハイブランド"};
+const state={family:null,scene:null,season:null,gender:null,price:null};
+
+/* ---------- geometry ---------- */
+const SVGNS="http://www.w3.org/2000/svg";
+const CX=150,CY=150,R_O=128,R_I=62,R_ICON=86,R_NAME=116,R_NUM=140;
+function polar(r,aDeg){const a=(aDeg-90)*Math.PI/180;return[CX+r*Math.cos(a),CY+r*Math.sin(a)];}
+function arc(rO,rI,a0,a1){
+  const[xo0,yo0]=polar(rO,a0),[xo1,yo1]=polar(rO,a1),[xi1,yi1]=polar(rI,a1),[xi0,yi0]=polar(rI,a0);
+  const big=a1-a0>180?1:0;
+  return`M${xo0} ${yo0} A${rO} ${rO} 0 ${big} 1 ${xo1} ${yo1} L${xi1} ${yi1} A${rI} ${rI} 0 ${big} 0 ${xi0} ${yi0} Z`;
+}
+function el(tag,attrs,html){const e=document.createElementNS(SVGNS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(html!=null)e.innerHTML=html;return e;}
+
+/* ---------- build wheel ---------- */
+function buildWheel(){
+  const root=document.getElementById("wheelRoot");
+  const n=FAMILIES.length,step=360/n;
+  FAMILIES.forEach((f,i)=>{
+    const a0=i*step,a1=(i+1)*step,mid=(a0+a1)/2;
+    const g=el("g",{class:"sector","data-fam":f.key});
+    g.style.cursor="pointer";
+    g.addEventListener("click",()=>toggleFamily(f.key));
+    g.addEventListener("mouseenter",()=>setHub(f.key));
+    g.addEventListener("mouseleave",()=>setHub(state.family));
+
+    // faint colored sector face
+    g.appendChild(el("path",{d:arc(R_O,R_I,a0,a1),fill:f.color,class:"seg-face"}));
+
+    // scent line-art icon, centered on sector
+    const[ix,iy]=polar(R_ICON,mid);
+    const ic=el("g",{class:"ficon",stroke:f.color,
+      transform:`translate(${ix.toFixed(2)} ${iy.toFixed(2)}) scale(0.92) translate(-12 -12)`}, ICONS[f.key]);
+    g.appendChild(ic);
+
+    // english family name along the arc (outer band)
+    let na0=a0,na1=a1,sweep=1;
+    if(mid>90&&mid<270){na0=a1;na1=a0;sweep=0;}
+    const[nx0,ny0]=polar(R_NAME,na0),[nx1,ny1]=polar(R_NAME,na1);
+    const big=Math.abs(na1-na0)>180?1:0,pid="nm"+i;
+    g.appendChild(el("path",{id:pid,d:`M${nx0} ${ny0} A${R_NAME} ${R_NAME} 0 ${big} ${sweep} ${nx1} ${ny1}`,fill:"none"}));
+    const nt=el("text",{class:"wname"});
+    const ntp=el("textPath",{startOffset:"50%"}); ntp.setAttribute("text-anchor","middle");
+    ntp.setAttribute("href","#"+pid); ntp.setAttributeNS("http://www.w3.org/1999/xlink","xlink:href","#"+pid);
+    ntp.textContent=f.en; nt.appendChild(ntp); g.appendChild(nt);
+
+    // index number, horizontal, outermost
+    const[numx,numy]=polar(R_NUM,mid);
+    g.appendChild(el("text",{class:"wnum",x:numx.toFixed(2),y:(numy+2.5).toFixed(2),"text-anchor":"middle"},
+      String(i+1).padStart(2,"0")));
+
+    root.appendChild(g);
+  });
+  setHub(null);
+}
+function setHub(famKey){
+  const main=document.getElementById("hubMain"),sub=document.getElementById("hubSub");
+  if(famKey){
+    const f=FAM[famKey];
+    main.textContent=f.ja;
+    main.setAttribute("style",'font-family:"Shippori Mincho",serif;font-weight:600;font-size:14px;letter-spacing:1px;fill:#f2f0ec');
+    sub.textContent=f.en;
+  }else{
+    main.textContent="Sillage";
+    main.setAttribute("style",'font-family:"Bodoni Moda",serif;font-style:italic;font-weight:500;font-size:18px;letter-spacing:1px;fill:#f0eeea');
+    sub.textContent="FRAGRANCE WHEEL";
+  }
+}
+function toggleFamily(k){state.family=state.family===k?null:k;render();}
+
+/* ---------- chips ---------- */
+function buildChips(id,map,field){
+  const box=document.getElementById(id);
+  Object.entries(map).forEach(([val,label])=>{
+    const b=document.createElement("button");
+    b.className="chip";b.textContent=label;b.dataset.val=val;
+    b.onclick=()=>{state[field]=state[field]===val?null:val;render();};
+    box.appendChild(b);
+  });
+}
+
+/* ---------- render ---------- */
+function matches(p){
+  if(state.family&&p.family!==state.family)return false;
+  if(state.scene&&!p.scenes.includes(state.scene))return false;
+  if(state.season&&!p.seasons.includes(state.season))return false;
+  if(state.gender&&p.gender!==state.gender)return false;
+  if(state.price&&p.priceTier!==state.price)return false;
+  return true;
+}
+function card(p){
+  const f=FAM[p.family];const c=f.color;
+  return`
+  <article class="card">
+    <div class="flacon" style="background:radial-gradient(120% 90% at 50% 122%,${c}33,transparent 70%)">
+      <span class="fam-pill" style="background:${c}">${f.ja}</span>
+      <span class="gender-pill">${GENDER[p.gender]}</span>
+      <div class="bottle" style="background:linear-gradient(165deg,${c}d9,${c}6b)"></div>
+    </div>
+    <div class="card-body">
+      <span class="brandname">${p.brand}</span>
+      <h3 class="pname">${p.name}</h3>
+      <div class="pyramid">
+        <div class="row"><span class="lv">Top</span><span>${p.top}</span></div>
+        <div class="row"><span class="lv">Mid</span><span>${p.mid}</span></div>
+        <div class="row"><span class="lv">Last</span><span>${p.last}</span></div>
+      </div>
+      <div class="meta">
+        ${p.seasons.map(s=>`<span class="tag">${SEASON[s]}</span>`).join("")}
+        ${p.scenes.map(s=>`<span class="tag">${SCENE[s]}</span>`).join("")}
+      </div>
+      <p class="verdict" style="border-left-color:${c}"><span class="vlabel">Sillage の見立て</span>${p.verdict}</p>
+      <div class="card-foot">
+        <span class="price">${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
+        <a class="buy" href="#" rel="nofollow sponsored">最安を見る</a>
+      </div>
+    </div>
+  </article>`;
+}
+function render(){
+  document.querySelectorAll(".sector").forEach(s=>{
+    const k=s.getAttribute("data-fam");
+    s.classList.toggle("active",k===state.family);
+    s.classList.toggle("dim",state.family&&k!==state.family);
+  });
+  setHub(state.family);
+  [["sceneChips","scene"],["seasonChips","season"],["genderChips","gender"],["priceChips","price"]]
+    .forEach(([id,field])=>document.querySelectorAll("#"+id+" .chip")
+      .forEach(c=>c.classList.toggle("on",state[field]===c.dataset.val)));
+  const list=PERFUMES.filter(matches);
+  document.getElementById("resCount").textContent=list.length;
+  document.getElementById("activeFam").textContent=state.family?FAM[state.family].ja:"";
+  const grid=document.getElementById("grid");
+  grid.innerHTML=list.length?list.map(card).join("")
+    :`<div class="empty"><div class="big">該当する香水がありません</div>条件をゆるめると見つかります。「reset all」からどうぞ。</div>`;
+  [...grid.children].forEach((el,i)=>el.style.animationDelay=(i*40)+"ms");
+}
+
+
+/* ---------- columns (original editorial) ---------- */
+const COLUMNS = [
+ {tag:"GUIDE", title:"香水のつけ方、適量という正解",
+  lead:"香水は「足りない」より「やりすぎ」で失敗する。強さの設計こそ、最初に覚えたい作法。",
+  body:["香水でまず失敗するのは、量だ。自分の鼻はすぐに香りに慣れる（順応する）ため、つけた本人ほど『弱い』と感じてしまい、つい重ねがけしてしまう。だが周囲はそうではない。基本は、オードトワレで1〜2プッシュ、濃度の高いオードパルファンなら1プッシュで十分だと考えておきたい。",
+   "つける位置は、体温が高く香りが立ちのぼる場所——手首、首筋の少し下、胸元が定番だ。ただしビジネスや満員電車を想定するなら、あえて足首や腰など下半身につけ、香りをふんわり上らせる方が上品にまとまる。こすり合わせると分子が壊れて香りが変わるため、手首は自然に乾かすこと。",
+   "シーンで強さを変えるのも大人の流儀。オフィスや会食では『すれ違ってほのかに香る』程度、プライベートのデートでは『距離が近づいて気づく』程度が心地よい。香りすぎたと思ったら、無香料の保湿クリームを上から重ねると角が取れる。最後に、つけてから外出までは10分ほど置くと、アルコールが飛んで本来の香りで出かけられる。"]},
+ {tag:"BASICS", title:"トップ・ミドル・ラストの読み方",
+  lead:"ひとつの香水は、時間とともに三幕で表情を変える。香調ピラミッドが読めると、選び方が変わる。",
+  body:["香水の香りは一定ではない。揮発の速い順に、トップノート（つけて数分〜10分）、ミドルノート（30分〜2時間)、ラストノート（数時間後〜)へと移り変わる。この三層構造を『香調ピラミッド』と呼ぶ。店頭でムエットに吹いた瞬間の香りはトップでしかなく、本当の印象はミドルからラストで決まる。",
+   "トップは第一印象を担う華やかなパート。シトラスやハーブなど軽い香料が置かれることが多い。ミドルは香水の『顔』で、フローラルやスパイスなどそのフレグランスの個性が現れる。ラストは肌に残る土台で、ウッディやムスク、バニラなど重く長く続く香料が支える。残り香（シヤージュ）の印象は、ほぼここで決まる。",
+   "だから試香では、つけてすぐ判断せず、最低でも数時間は肌で追ってほしい。本サイトの各商品カードにはこの三層を明記している。トップが好みでも、ラストが好みと違えば長くは愛用できない。逆に、トップが地味でもラストに惹かれる香りは、長く付き合える一本になりやすい。"]},
+ {tag:"MEN'S", title:"ビジネスで外さない香りの条件",
+  lead:"仕事の場で問われるのは、強さではなく節度。清潔感を最短で手に入れる選び方。",
+  body:["ビジネスシーンの香りは、自己主張ではなく配慮で選ぶ。原則は三つ。ひとつ、香調は清潔感のある系統——シトラス、アロマティック（フゼア)、軽いウッディ、ムスクが無難。甘いグルマンや濃厚なアンバーは魅力的だが、日中のオフィスでは重く感じられやすい。",
+   "ふたつ、濃度と量を抑える。オードトワレを1プッシュ、もしくは肌にごく近い距離でだけ香る『パーソナルスペース内』の強さに留める。会議室や商談の密室で香りが充満するのは、能力評価とは別のところで印象を損なう。香りは、相手が近づいたときに『清潔な人だ』と感じる程度がちょうどいい。",
+   "みっつ、季節に合わせる。夏は涼しげなアクアティックやシトラスで爽やかに、冬は乾いたウッディで落ち着いた品格を。迷うなら、ブルー ドゥ シャネルやアクア ディ ジオのような『万人が清潔だと感じる』定番から始めるのが安全だ。香りで個性を出すのは、信頼を得てからでも遅くない。"]},
+];
+
+function buildGuide(){
+  const box=document.getElementById("guideGrid");
+  FAMILIES.forEach((f,i)=>{
+    const c=document.createElement("div");
+    c.className="gcard";
+    c.innerHTML=`
+      <div class="ghead">
+        <span class="gicon" style="background:${f.color}1f">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="${f.color}" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">${ICONS[f.key]}</svg>
+        </span>
+        <div>
+          <div class="gnum">${String(i+1).padStart(2,"0")} ／ <span class="gen">${f.en}</span></div>
+          <div class="gja">${f.ja}</div>
+        </div>
+      </div>
+      <p class="gdesc">${f.desc}</p>
+      <span class="gmore">この香りの香水を見る →</span>`;
+    c.onclick=()=>{
+      state.family=f.key; render();
+      document.querySelector(".filters").scrollIntoView({behavior:"smooth"});
+    };
+    box.appendChild(c);
+  });
+}
+
+function buildColumns(){
+  const box=document.getElementById("colGrid");
+  COLUMNS.forEach(col=>{
+    const c=document.createElement("article");
+    c.className="colcard";
+    c.innerHTML=`
+      <div class="ctop">
+        <span class="ctag">${col.tag}</span>
+        <h3 class="ctitle">${col.title}</h3>
+        <p class="clead">${col.lead}</p>
+      </div>
+      <div class="cbody">${col.body.map(p=>`<p>${p}</p>`).join("")}</div>
+      <button class="ctoggle">続きを読む ＋</button>`;
+    const btn=c.querySelector(".ctoggle");
+    btn.onclick=()=>{
+      const open=c.classList.toggle("open");
+      btn.textContent=open?"閉じる －":"続きを読む ＋";
+    };
+    box.appendChild(c);
+  });
+}
+
+/* ---------- init ---------- */
+buildWheel();
+buildGuide();
+buildColumns();
+buildChips("sceneChips",SCENE,"scene");
+buildChips("seasonChips",SEASON,"season");
+buildChips("genderChips",GENDER,"gender");
+buildChips("priceChips",PRICE,"price");
+document.getElementById("resetBtn").onclick=()=>{Object.keys(state).forEach(k=>state[k]=null);render();};
+render();
+</script>
+</body>
+</html>
