@@ -111,10 +111,7 @@
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
   .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -18px rgba(0,0,0,.7);border-color:#3a3b40}
   .flacon{height:200px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fafaf7}
-  .flacon .photo{
-    max-width:88%;max-height:170px;width:auto;height:auto;object-fit:contain;
-    filter:drop-shadow(0 10px 22px rgba(0,0,0,.18));
-  }
+  .flacon .photo{max-width:88%;max-height:170px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(0,0,0,.18))}
   .flacon.no-photo{height:152px;background:transparent;align-items:flex-end}
   .flacon .bottle{
     width:58px;height:96px;border-radius:5px 5px 3px 3px;position:relative;margin-bottom:18px;
@@ -418,6 +415,110 @@
   .fav-panel.show{display:block}
   .empty-fav{text-align:center;padding:60px 20px;color:#8c8c92;font-family:"Cormorant",serif;font-style:italic;font-size:16px}
 
+
+  /* ---------- compare articles ---------- */
+  .cmp-grid{max-width:1240px;margin:24px auto 0;padding:0 clamp(16px,4vw,48px) 10px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(330px,1fr));gap:18px}
+  .cmpcard{background:#191a1d;border:1px solid #2c2d31;border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+  .cmpcard .cmp-head{padding:22px 22px 0;position:relative}
+  .cmpcard .vs{position:absolute;top:18px;right:22px;font-family:"Bodoni Moda",serif;font-style:italic;
+    font-size:13px;color:#8c8c92;letter-spacing:2px}
+  .cmpcard .ctag{font-family:"Bodoni Moda",serif;font-size:10px;letter-spacing:2.5px;color:#8c8c92}
+  .cmpcard .ctitle{font-family:"Shippori Mincho",serif;font-weight:600;font-size:19px;line-height:1.4;color:#f0eeea;margin-top:9px;letter-spacing:.5px}
+  .cmpcard .pair{display:flex;gap:8px;margin-top:12px}
+  .cmpcard .pair span{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:1.5px;color:#aeb0b6;
+    border:1px solid #2c2d31;border-radius:999px;padding:3px 11px}
+  .cmpcard .clead{font-size:13px;line-height:1.75;color:#a8a8ae;margin-top:14px}
+  .cmpcard .cbody{font-size:13px;line-height:1.95;color:#cfcdca;padding:0 22px;max-height:0;overflow:hidden;transition:max-height .45s ease,padding .45s ease}
+  .cmpcard.open .cbody{max-height:2400px;padding:14px 22px 4px}
+  .cmpcard .cbody p{margin-bottom:11px}
+  .cmpcard .cnav{padding:16px 22px 22px;border-top:1px solid #2c2d31;margin-top:14px;display:none}
+  .cmpcard.open .cnav{display:block}
+  .cmpcard .cnav-label{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px;margin-bottom:10px;display:block}
+  .cmpcard .cnav-chips{display:flex;flex-wrap:wrap;gap:6px}
+  .cmpcard .cnav-chips button{font-size:11.5px;padding:4px 11px;border-radius:999px;border:1px solid #2c2d31;
+    background:transparent;color:#e9e7e3;cursor:pointer;font-family:"Bodoni Moda",serif;letter-spacing:1px;transition:all .18s}
+  .cmpcard .cnav-chips button:hover{border-color:#aeb0b6}
+  .cmpcard .ctoggle{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#aeb0b6;letter-spacing:.5px;
+    background:none;border:none;cursor:pointer;padding:16px 22px 20px;text-align:left;border-top:1px solid #2c2d31;margin-top:14px;transition:color .2s}
+  .cmpcard.open .ctoggle{border-top:none;margin-top:0;padding-top:10px}
+  .cmpcard .ctoggle:hover{color:#fff}
+
+  /* ---------- diagnosis quiz ---------- */
+  .quiz-wrap{max-width:1240px;margin:24px auto 0;padding:0 clamp(16px,4vw,48px)}
+  .quiz-card{background:#191a1d;border:1px solid #2c2d31;border-radius:4px;padding:36px clamp(20px,4vw,40px);position:relative;overflow:hidden}
+  .quiz-card::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;
+    background:linear-gradient(90deg,transparent,#c9b558,#c4889c,#6c98ad,transparent)}
+  .quiz-step{display:none}
+  .quiz-step.active{display:block;animation:fadeIn .35s ease}
+  .quiz-prog{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2.5px;color:#8c8c92;margin-bottom:14px}
+  .quiz-q{font-family:"Shippori Mincho",serif;font-weight:600;font-size:clamp(20px,3vw,26px);color:#fff;letter-spacing:.5px;line-height:1.5;margin-bottom:24px}
+  .quiz-opts{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px}
+  .quiz-opt{background:#0d0e10;border:1px solid #2c2d31;border-radius:4px;padding:18px 18px;cursor:pointer;
+    transition:all .18s;text-align:left}
+  .quiz-opt:hover{border-color:#aeb0b6;transform:translateY(-2px)}
+  .quiz-opt .ojp{font-family:"Shippori Mincho",serif;font-size:15px;color:#f0eeea;display:block;margin-bottom:4px}
+  .quiz-opt .oen{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px}
+  .quiz-result{display:none}
+  .quiz-result.show{display:block;animation:fadeIn .5s ease}
+  .quiz-result h3{font-family:"Cormorant",serif;font-style:italic;font-weight:500;font-size:18px;color:#aeb0b6;letter-spacing:1px;margin-bottom:6px}
+  .quiz-result .rname{font-family:"Bodoni Moda",serif;font-weight:500;font-size:clamp(32px,5vw,48px);color:#fff;letter-spacing:2px;margin-bottom:8px}
+  .quiz-result .rmeta{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#aeb0b6;letter-spacing:.5px;margin-bottom:18px}
+  .quiz-result .rdesc{font-size:14px;line-height:1.9;color:#cfcdca;max-width:54ch;margin-bottom:24px}
+  .quiz-altlist{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:8px}
+  .quiz-alt{background:#0d0e10;border:1px solid #2c2d31;border-radius:4px;padding:13px 15px;cursor:pointer;transition:border-color .2s}
+  .quiz-alt:hover{border-color:#aeb0b6}
+  .quiz-alt .aname{font-family:"Bodoni Moda",serif;font-size:14px;color:#f0eeea;letter-spacing:1px}
+  .quiz-alt .ascore{font-family:"Cormorant",serif;font-style:italic;font-size:12px;color:#8c8c92;letter-spacing:.5px;margin-top:3px}
+  .quiz-restart{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#8c8c92;
+    background:none;border:none;cursor:pointer;margin-top:20px;letter-spacing:.5px;text-decoration:underline;text-underline-offset:3px}
+  .quiz-restart:hover{color:#fff}
+  .quiz-result .show-result-btn{display:inline-block;margin-top:14px;
+    font-family:"Cormorant",serif;font-style:italic;font-size:15px;letter-spacing:.5px;color:#fff;
+    border:1px solid #c4c6cc;border-radius:999px;padding:7px 22px;cursor:pointer;background:transparent;transition:all .18s}
+  .quiz-result .show-result-btn:hover{background:#c4c6cc;color:#15151a}
+
+  /* ---------- mega timeline ---------- */
+  .mtl-wrap{max-width:1240px;margin:24px auto 0;padding:0 clamp(16px,4vw,48px)}
+  .mtl-controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:18px}
+  .mtl-controls .mlabel{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#8c8c92;letter-spacing:.5px;margin-right:6px}
+  .mtl-controls .chip{font-size:12px;padding:4px 12px}
+  .mtl{background:#0a0b0d;border:1px solid #2c2d31;border-radius:4px;padding:20px 0;position:relative}
+  .mtl-decades{display:flex;border-bottom:1px solid #2c2d31;padding:0 22px 14px;gap:0;font-family:"Bodoni Moda",serif;
+    font-size:11px;color:#54555b;letter-spacing:1px;justify-content:space-between}
+  .mtl-decades span{flex:1;text-align:center}
+  .mtl-decades span.active{color:#fff}
+  .mtl-events{padding:20px 0 10px;max-height:520px;overflow-y:auto}
+  .mtl-events::-webkit-scrollbar{width:6px}
+  .mtl-events::-webkit-scrollbar-track{background:transparent}
+  .mtl-events::-webkit-scrollbar-thumb{background:#2c2d31;border-radius:3px}
+  .mtl-year-block{padding:0 22px 14px;position:relative}
+  .mtl-year-block .yhead{display:flex;align-items:baseline;gap:14px;margin-bottom:10px;position:sticky;top:0;
+    background:linear-gradient(180deg,#0a0b0d 70%,transparent);padding:6px 0;z-index:2}
+  .mtl-year-block .yhead .yn{font-family:"Bodoni Moda",serif;font-size:22px;color:#fff;letter-spacing:1.5px;min-width:60px}
+  .mtl-year-block .yhead .yc{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px}
+  .mtl-events-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:8px;margin-left:74px}
+  .mev{background:#141517;border:1px solid #2c2d31;border-radius:3px;padding:10px 12px;cursor:pointer;
+    transition:border-color .15s,transform .15s;display:flex;flex-direction:column;gap:4px;position:relative}
+  .mev:hover{border-color:#aeb0b6;transform:translateY(-1px)}
+  .mev .mt{font-family:"Cormorant",serif;font-style:italic;font-size:11px;color:#8c8c92;letter-spacing:1px;text-transform:uppercase}
+  .mev .mn{font-family:"Shippori Mincho",serif;font-size:13px;color:#f0eeea;line-height:1.4}
+  .mev .mb{font-family:"Bodoni Moda",serif;font-size:10.5px;color:#9a9a9f;letter-spacing:1.5px;text-transform:uppercase}
+  .mev.found{border-left:2px solid #c9b558}
+  .mev.found .mt{color:#c9b558}
+
+  /* ---------- brand network (inside fullscreen) ---------- */
+  .fp-network{margin-top:60px}
+  .fp-network h3{font-family:"Bodoni Moda",serif;font-size:24px;color:#fff;letter-spacing:1.5px;margin-bottom:6px}
+  .fp-network .ksub{font-family:"Cormorant",serif;font-style:italic;font-size:15px;color:#8c8c92;margin-bottom:24px}
+  .fp-net-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+  .fp-net-col h5{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#aeb0b6;letter-spacing:1px;margin-bottom:11px}
+  .fp-net-col .bnchip{display:block;background:#141517;border:1px solid #2c2d31;border-radius:3px;padding:9px 13px;
+    margin-bottom:6px;cursor:pointer;transition:border-color .15s,transform .15s}
+  .fp-net-col .bnchip:hover{border-color:#aeb0b6;transform:translateX(3px)}
+  .fp-net-col .bnchip .bnn{font-family:"Bodoni Moda",serif;font-size:13px;color:#f0eeea;letter-spacing:1px}
+  .fp-net-col .bnchip .bnm{font-family:"Cormorant",serif;font-style:italic;font-size:12px;color:#8c8c92;display:block;margin-top:2px}
+
   @media(max-width:820px){
     .hero{grid-template-columns:1fr;text-align:center}
     .hero-copy p{margin-left:auto;margin-right:auto}
@@ -479,6 +580,15 @@
 <section class="guide-grid" id="guideGrid"></section>
 
 
+
+<div class="section-head">
+  <p class="kick">— diagnosis</p>
+  <h2>あなたに合うブランド診断</h2>
+</div>
+<section class="quiz-wrap">
+  <div class="quiz-card" id="quizCard"></div>
+</section>
+
 <section class="filters">
   <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
   <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
@@ -497,10 +607,19 @@
 
 
 <div class="section-head">
-  <p class="kick">— timeline</p>
-  <h2>香水の年表で読む</h2>
+  <p class="kick">— interactive timeline</p>
+  <h2>香水の年表</h2>
 </div>
-<section class="tl-wrap"><div class="tl" id="tl"></div></section>
+<section class="mtl-wrap">
+  <div class="mtl-controls">
+    <span class="mlabel">フィルタ</span>
+    <div class="chips" id="mtlFilterChips"></div>
+  </div>
+  <div class="mtl">
+    <div class="mtl-decades" id="mtlDecades"></div>
+    <div class="mtl-events" id="mtl"></div>
+  </div>
+</section>
 
 <div class="section-head">
   <p class="kick">— brands</p>
@@ -528,6 +647,13 @@
 <section class="col-grid" id="colGrid"></section>
 
 <div class="modal-back" id="brandModal"><div class="modal" id="brandModalInner"></div></div>
+
+<div class="section-head">
+  <p class="kick">— compare</p>
+  <h2>ブランド比較・選び方</h2>
+</div>
+<section class="cmp-grid" id="cmpGrid"></section>
+
 <footer>
   <div class="foot-inner">
     <div class="flogo">Sillage</div>
@@ -577,32 +703,32 @@ const PERFUMES = [
   {"brand":"Atelier Cologne","name":"オランジュ サングィン","gender":"unisex","family":"citrus","top":"ブラッドオレンジ","mid":"ジャスミン","last":"サンダルウッド","seasons":["spring","summer"],"scenes":["daily","date"],"priceTier":"high","price":"¥20,000前後","releaseYear":2010,"verdict":"果汁したたるブラッドオレンジ。甘さと苦味のバランスがよく、シトラスの中でも色気がある。"},
   {"brand":"Guerlain","name":"オー インペリアル","gender":"unisex","family":"citrus","top":"レモン・ベルガモット","mid":"ネロリ","last":"ローズ・ベチバー","seasons":["spring","summer"],"scenes":["formal","daily"],"priceTier":"high","price":"¥16,000前後","releaseYear":1853,"verdict":"皇后のために生まれた歴史的コロン。気品ある柑橘で、フォーマルにも軽やかに寄り添う。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00u4tbn.k90d61d0.g00u4tbn.k90d7ab4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2023093037%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frareu%2Fi%2F10008561%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12666829/imgrc0180140454.jpg?_ex=512x512"},
   {"brand":"無印良品","name":"オードトワレ シトラス","gender":"unisex","family":"citrus","top":"オレンジ・レモン","mid":"グレープフルーツ","last":"ライム","seasons":["summer","spring"],"scenes":["daily","sports"],"priceTier":"petit","price":"¥1,990前後","verdict":"果汁そのままの直球シトラス。香水然としない素朴さで、職場でも気を遣わせない普段使い。"},
-  {"brand":"Dolce&Gabbana","name":"ライト ブルー プールオム","gender":"men","family":"citrus","top":"グレープフルーツ・ベルガモット","mid":"ジュニパー・ローズウッド","last":"ムスク・オークモス","seasons":["summer","spring"],"scenes":["daily","date"],"priceTier":"mid","price":"¥7,000前後","releaseYear":2007,"verdict":"地中海の昼下がりのような爽やかさ。万人受けする軽さで、夏の定番として根強い人気。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F1082458%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10013577%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/58/1082458_1.jpg?_ex=512x512"},
-  {"brand":"Hermès","name":"オー ドランジュ ヴェルト","gender":"unisex","family":"citrus","top":"オレンジ・レモン・マンダリン","mid":"ミント・ブラックカラント","last":"オークモス・パチョリ","seasons":["summer","spring"],"scenes":["daily","business"],"priceTier":"high","price":"¥16,000前後","releaseYear":1979,"verdict":"エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00u0isn.k90d63fb.g00u0isn.k90d7eb4/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoscora%2F30118%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcoscora%2Fi%2F10000814%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/03011640105.jpg?_ex=512x512"},
+  {"brand":"Dolce&Gabbana","name":"ライト ブルー プールオム","gender":"men","family":"citrus","top":"グレープフルーツ・ベルガモット","mid":"ジュニパー・ローズウッド","last":"ムスク・オークモス","seasons":["summer","spring"],"scenes":["daily","date"],"priceTier":"mid","price":"¥7,000前後","releaseYear":2007,"verdict":"地中海の昼下がりのような爽やかさ。万人受けする軽さで、夏の定番として根強い人気。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ukqcn.k90d68a4.g00ukqcn.k90d7fad/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautyfactory-belmo%2Ffr3423478516861%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautyfactory-belmo%2Fi%2F10002580%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img008/fr3423478516861.jpg?_ex=512x512"},
+  {"brand":"Hermès","name":"オー ドランジュ ヴェルト","gender":"unisex","family":"citrus","top":"オレンジ・レモン・マンダリン","mid":"ミント・ブラックカラント","last":"オークモス・パチョリ","seasons":["summer","spring"],"scenes":["daily","business"],"priceTier":"high","price":"¥16,000前後","releaseYear":1979,"verdict":"エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00qpprn.k90d6752.g00qpprn.k90d7e38/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbenavi%2Fer0004sm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbenavi%2Fi%2F10038061%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/benavi/cabinet/04/er0004sm_1.jpg?_ex=512x512"},
   {"brand":"Dior","name":"ソヴァージュ EDT","gender":"men","family":"aromatic","top":"ベルガモット","mid":"シチュアンペッパー","last":"アンブロキサン","seasons":["spring","autumn"],"scenes":["business","date"],"priceTier":"high","price":"¥12,000前後","releaseYear":2015,"verdict":"清涼なベルガモットから乾いたアンブロキサンへ。万人受けと存在感を両立する、迷ったときの基準点。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00r2fjn.k90d6872.g00r2fjn.k90d7745/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fblanc-lapin%2Fdir3f0000042%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fblanc-lapin%2Fi%2F10127819%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/blanc-lapin/cabinet/item/dir/dir3f0000042sku.jpg?_ex=512x512"},
   {"brand":"CK","name":"CK one","gender":"unisex","family":"aromatic","top":"ベルガモット・カルダモン","mid":"ジャスミン・スミレ","last":"ムスク・シダー","seasons":["spring","summer"],"scenes":["daily","sports"],"priceTier":"petit","price":"¥2,500前後","releaseYear":1994,"verdict":"ユニセックスの先駆け。軽く中性的で、香水入門の外さない最初の一本として今も現役。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ujqnn.k90d6c46.g00ujqnn.k90d76d1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Ffragrance-u%2Fca-oneetsp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Ffragrance-u%2Fi%2F10000444%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/fragrance-u/cabinet/13121356/ck.jpg?_ex=512x512"},
-  {"brand":"Montblanc","name":"レジェンド","gender":"men","family":"aromatic","top":"ラベンダー・ベルガモット","mid":"アップル・ローズ","last":"オークモス・トンカ","seasons":["spring","autumn"],"scenes":["business","date"],"priceTier":"mid","price":"¥6,500前後","releaseYear":2011,"verdict":"清潔感と甘さの黄金比。クセがなく好感度が高い、コスパに優れた万能フゼア。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-mon007-100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10008750%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/mon007-100_1.jpg?_ex=512x512"},
-  {"brand":"Azzaro","name":"プール オム","gender":"men","family":"aromatic","top":"アニス・バジル・ラベンダー","mid":"プチグレン・ベチバー","last":"レザー・オークモス","seasons":["autumn","spring"],"scenes":["business","formal"],"priceTier":"mid","price":"¥4,500前後","releaseYear":1978,"verdict":"1978年のクラシックフゼア。男性的な厚みと清潔感を併せ持つ、王道の大人の香り。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F1021975%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10013275%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/75/1021975_1.jpg?_ex=512x512"},
+  {"brand":"Montblanc","name":"レジェンド","gender":"men","family":"aromatic","top":"ラベンダー・ベルガモット","mid":"アップル・ローズ","last":"オークモス・トンカ","seasons":["spring","autumn"],"scenes":["business","date"],"priceTier":"mid","price":"¥6,500前後","releaseYear":2011,"verdict":"清潔感と甘さの黄金比。クセがなく好感度が高い、コスパに優れた万能フゼア。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-mon007-030%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10007872%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/30/mon007-030_1.jpg?_ex=512x512"},
+  {"brand":"Azzaro","name":"プール オム","gender":"men","family":"aromatic","top":"アニス・バジル・ラベンダー","mid":"プチグレン・ベチバー","last":"レザー・オークモス","seasons":["autumn","spring"],"scenes":["business","formal"],"priceTier":"mid","price":"¥4,500前後","releaseYear":1978,"verdict":"1978年のクラシックフゼア。男性的な厚みと清潔感を併せ持つ、王道の大人の香り。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rbw6n.k90d6fcb.g00rbw6n.k90d7a2a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2Fazr002%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faquabouquet%2Fi%2F10071622%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/05330103/azr002.jpg?_ex=512x512"},
   {"brand":"Chanel","name":"アリュール オム スポーツ","gender":"men","family":"aromatic","top":"オレンジ・アルデヒド","mid":"シダー・ペッパー","last":"トンカ・アンバー","seasons":["spring","summer"],"scenes":["business","sports"],"priceTier":"high","price":"¥13,000前後","releaseYear":2004,"verdict":"爽快さの中に上質な温もり。スポーティでありながら品があり、オンオフ問わず使える。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fcha008-150%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10000705%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/50_2/cha008-150_1.jpg?_ex=512x512"},
   {"brand":"Paco Rabanne","name":"プール オム","gender":"men","family":"aromatic","top":"ローズマリー・ベルガモット","mid":"カーネーション・セージ","last":"トンカ・オークモス","seasons":["autumn","spring"],"scenes":["business","daily"],"priceTier":"mid","price":"¥4,000前後","releaseYear":1973,"verdict":"ハーブの効いた正統派フゼア。香水黎明期の骨格を残す、堅実で外さない一本。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00t5c4n.k90d68f1.g00t5c4n.k90d7d3e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fpr-pacorabannepourhommedt-100ml%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdiogreco%2Fi%2F10005147%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/07718351/compass1611907526.jpg?_ex=512x512"},
   {"brand":"Nautica","name":"ヴォヤージュ","gender":"men","family":"aromatic","top":"アップル・水生ノート","mid":"ミモザ・ロータス","last":"シダー・ムスク","seasons":["summer","spring"],"scenes":["daily","sports"],"priceTier":"petit","price":"¥2,000前後","releaseYear":2006,"verdict":"爽やかなグリーンと水生ノート。驚きの低価格で、最初の一本として選ばれ続ける定番。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fnau1041%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10051356%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/41/nau1041_1.jpg?_ex=512x512"},
   {"brand":"Brut","name":"クラシック","gender":"men","family":"aromatic","top":"シトラス・アニス","mid":"ラベンダー・ゼラニウム","last":"ムスク・サンダルウッド","seasons":["autumn","spring"],"scenes":["daily"],"priceTier":"petit","price":"¥1,500前後","releaseYear":1964,"verdict":"1964年から続く昔ながらのフゼア。レトロで飾らない清潔感が、かえって今は新鮮。"},
   {"brand":"Guerlain","name":"ヴェチバー","gender":"men","family":"aromatic","top":"レモン・ベルガモット","mid":"ベチバー・ペッパー","last":"トンカ・タバコ","seasons":["autumn","spring"],"scenes":["business","formal"],"priceTier":"high","price":"¥16,000前後","releaseYear":1959,"verdict":"土と草の根の渋み。知的で落ち着いた香りで、大人の男のための名作と評される。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pti0n.k90d63ce.g00pti0n.k90d7455/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3346470146846%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbelmo%2Fi%2F11963749%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img035/fr3346470146846.jpg?_ex=512x512"},
   {"brand":"YSL","name":"Y メン オーデパルファン","gender":"men","family":"aromatic","top":"ベルガモット・ジンジャー","mid":"セージ・ゼラニウム","last":"アンバーウッド・トンカ","seasons":["spring","autumn"],"scenes":["business","date"],"priceTier":"high","price":"¥13,000前後","releaseYear":2018,"verdict":"フレッシュさと甘い余韻の対比。清潔感と色気を両立し、近年のメンズ人気を牽引する一本。"},
-  {"brand":"Chanel","name":"エゴイスト プラチナム","gender":"men","family":"aromatic","top":"ラベンダー・ローズマリー","mid":"ゼラニウム・プチグレン","last":"アンバー・シダー","seasons":["spring","autumn"],"scenes":["business","formal"],"priceTier":"high","price":"¥14,000前後","releaseYear":1993,"verdict":"清涼なラベンダーから温かい木へ。端正で品があり、知的な紳士像を描く90年代の名作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00uiwln.k90d69e5.g00uiwln.k90d77ce/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fedozakura%2F30130217%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fedozakura%2Fi%2F10001024%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_gold/edozakura/itemimage/01/30130217.jpg?_ex=512x512"},
+  {"brand":"Chanel","name":"エゴイスト プラチナム","gender":"men","family":"aromatic","top":"ラベンダー・ローズマリー","mid":"ゼラニウム・プチグレン","last":"アンバー・シダー","seasons":["spring","autumn"],"scenes":["business","formal"],"priceTier":"high","price":"¥14,000前後","releaseYear":1993,"verdict":"清涼なラベンダーから温かい木へ。端正で品があり、知的な紳士像を描く90年代の名作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rbw6n.k90d6fcb.g00rbw6n.k90d7a2a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2Fcha00320%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faquabouquet%2Fi%2F10008181%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/2/imgrc0092232221.jpg?_ex=512x512"},
   {"brand":"Gucci","name":"ギルティ プールオム","gender":"men","family":"aromatic","top":"レモン・ラベンダー","mid":"オレンジブロッサム・ネロリ","last":"パチョリ・シダー","seasons":["spring","summer"],"scenes":["date","daily"],"priceTier":"mid","price":"¥9,000前後","releaseYear":2009,"verdict":"明るい柑橘とフローラルの軽やかさ。華やかで親しみやすく、デートにも普段使いにも。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-guc016-050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10003462%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/50_2/guc016-050_1.jpg?_ex=512x512"},
   {"brand":"Dior","name":"ソヴァージュ EDP","gender":"men","family":"aromatic","top":"カラブリアンベルガモット","mid":"ラベンダー・シーソルト・スターアニス","last":"アンブロキサン・シダー","seasons":["autumn","spring"],"scenes":["date","business"],"priceTier":"high","price":"¥15,000前後","releaseYear":2018,"verdict":"EDTより甘くまろやか。塩気とラベンダーが奥行きを生み、昼も夜も使える万能版。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pl3fn.k90d6b94.g00pl3fn.k90d70c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10047089%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10048660%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth006/cd100_060.jpg?_ex=512x512"},
   {"brand":"Calvin Klein","name":"エタニティ フォーメン","gender":"men","family":"aromatic","top":"ラベンダー・マンダリン","mid":"セージ・バジル","last":"サンダルウッド・ムスク","seasons":["spring","autumn"],"scenes":["business","daily"],"priceTier":"petit","price":"¥3,000前後","releaseYear":1989,"verdict":"ラベンダーとハーブの清潔感。落ち着いた大人のフゼアで、コスパよく長く使える定番。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F571691%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10010631%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/91/571691_1.jpg?_ex=512x512"},
   {"brand":"YSL","name":"リブレ オーデパルファン","gender":"women","family":"floral","top":"ラベンダー・マンダリン","mid":"オレンジブロッサム・ジャスミン","last":"バニラ・ムスク","seasons":["spring","autumn"],"scenes":["date","business"],"priceTier":"high","price":"¥14,000前後","releaseYear":2019,"verdict":"ラベンダーで締めた現代的フローラル。甘さに芯があり、日常から少し背伸びした場まで橋渡しする。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00trifn.k90d6615.g00trifn.k90d7885/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fmimori%2F3614272648401%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fmimori%2Fi%2F10007916%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/mimori/cabinet/point4/3614272648401.jpg?_ex=512x512"},
-  {"brand":"Chanel","name":"チャンス オー タンドゥル","gender":"women","family":"floral","top":"グレープフルーツ・クインス","mid":"ジャスミン・ヒヤシンス","last":"ホワイトムスク・シダー","seasons":["spring","summer"],"scenes":["date","daily"],"priceTier":"high","price":"¥15,000前後","releaseYear":2010,"verdict":"みずみずしく可憐なフルーティフローラル。明るく親しみやすい、若々しい魅力の定番。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00svf6n.k90d68b6.g00svf6n.k90d7eab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrilliantworld%2Fchanel-chance-edp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrilliantworld%2Fi%2F10001495%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/brilliantworld/cabinet/12817030/imgrc0121543316.jpg?_ex=512x512"},
+  {"brand":"Chanel","name":"チャンス オー タンドゥル","gender":"women","family":"floral","top":"グレープフルーツ・クインス","mid":"ジャスミン・ヒヤシンス","last":"ホワイトムスク・シダー","seasons":["spring","summer"],"scenes":["date","daily"],"priceTier":"high","price":"¥15,000前後","releaseYear":2010,"verdict":"みずみずしく可憐なフルーティフローラル。明るく親しみやすい、若々しい魅力の定番。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00svf6n.k90d68b6.g00svf6n.k90d7eab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrilliantworld%2Fchanel-chance-edp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrilliantworld%2Fi%2F10001495%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/brilliantworld/cabinet/pointopr26/chanceedp.jpg?_ex=512x512"},
   {"brand":"Dior","name":"ジャドール","gender":"women","family":"floral","top":"ベルガモット・マンダリン","mid":"イランイラン・ローズ・ジャスミン","last":"ムスク・バニラ","seasons":["spring","autumn"],"scenes":["formal","date"],"priceTier":"high","price":"¥16,000前後","releaseYear":1999,"verdict":"豪奢な花束をまとう王道フローラル。フェミニンの象徴として揺るがない地位を持つ。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pl3fn.k90d6b94.g00pl3fn.k90d70c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F1516362%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10016597%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/ikou_20090929_005/img10395007936.jpg?_ex=512x512"},
   {"brand":"Gucci","name":"ブルーム","gender":"women","family":"floral","top":"チュベローズ・ジャスミン","mid":"ロサンゲルス・オレンジブロッサム","last":"サンダルウッド・ムスク","seasons":["spring","summer"],"scenes":["date","daily"],"priceTier":"high","price":"¥13,000前後","releaseYear":2017,"verdict":"白い花が咲き乱れる濃密なフローラル。瑞々しくも官能的で、存在感のある華やかさ。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-guc044-100%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10004377%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/guc044-100_1.jpg?_ex=512x512"},
   {"brand":"Jo Malone","name":"イングリッシュ ペアー & フリージア","gender":"unisex","family":"floral","top":"洋ナシ","mid":"フリージア・ローズ","last":"パチョリ・ムスク","seasons":["spring","autumn"],"scenes":["daily","date"],"priceTier":"high","price":"¥15,000前後","releaseYear":2010,"verdict":"熟した洋ナシと白い花。フルーティで上品なフローラルは、性別を問わず使いやすい。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00sw7hn.k90d6e3d.g00sw7hn.k90d72dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F12553l26k01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjomalone%2Fi%2F10000819%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item3/12553l26k01_new_2026.jpg?_ex=512x512"},
-  {"brand":"Marc Jacobs","name":"デイジー","gender":"women","family":"floral","top":"ストロベリー・バイオレットリーフ","mid":"ジャスミン・ガーデニア","last":"ムスク・ホワイトウッド","seasons":["spring","summer"],"scenes":["daily","date"],"priceTier":"mid","price":"¥9,000前後","releaseYear":2007,"verdict":"花瓶のようなボトルが象徴的。みずみずしく爽やかな白い花で、若々しい清楚さを描く。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F5000547_1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10037514%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/marc_daisy100.jpg?_ex=512x512"},
+  {"brand":"Marc Jacobs","name":"デイジー","gender":"women","family":"floral","top":"ストロベリー・バイオレットリーフ","mid":"ジャスミン・ガーデニア","last":"ムスク・ホワイトウッド","seasons":["spring","summer"],"scenes":["daily","date"],"priceTier":"mid","price":"¥9,000前後","releaseYear":2007,"verdict":"花瓶のようなボトルが象徴的。みずみずしく爽やかな白い花で、若々しい清楚さを描く。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F5000547_1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10037514%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/product/fr_images/marc_daisy100.jpg?_ex=512x512"},
   {"brand":"Jo Malone","name":"ピオニー & ブラッシュ スエード","gender":"unisex","family":"floral","top":"レッドアップル","mid":"ピオニー","last":"スエード","seasons":["spring","summer"],"scenes":["date","daily"],"priceTier":"high","price":"¥15,000前後","releaseYear":2013,"verdict":"咲きほこる芍薬にスエードの陰影。華やかさと落ち着きが同居し、性別を問わず使える。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00sw7hn.k90d6e3d.g00sw7hn.k90d72dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F27028l3ae01%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjomalone%2Fi%2F10000040%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item2/27028l3ae01_newb.jpg?_ex=512x512"},
-  {"brand":"Versace","name":"エロス EDT","gender":"men","family":"fruity","top":"ミント・グリーンアップル・レモン","mid":"トンカ・ゼラニウム・アンブロキサン","last":"バニラ・シダー","seasons":["summer","spring"],"scenes":["date","daily"],"priceTier":"mid","price":"¥6,000前後","releaseYear":2012,"verdict":"青リンゴとミントの甘い清涼感。わかりやすく華やかで、若い世代のデート向け定番のコスパ枠。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Ftver1019%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10039163%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/19/tver1019_1.jpg?_ex=512x512"},
+  {"brand":"Versace","name":"エロス EDT","gender":"men","family":"fruity","top":"ミント・グリーンアップル・レモン","mid":"トンカ・ゼラニウム・アンブロキサン","last":"バニラ・シダー","seasons":["summer","spring"],"scenes":["date","daily"],"priceTier":"mid","price":"¥6,000前後","releaseYear":2012,"verdict":"青リンゴとミントの甘い清涼感。わかりやすく華やかで、若い世代のデート向け定番のコスパ枠。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fver1191%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10037076%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/91/ver1191_1.jpg?_ex=512x512"},
   {"brand":"Versace","name":"ディラン ブルー","gender":"men","family":"fruity","top":"ベルガモット・水生ノート","mid":"フィグ・ペッパー","last":"ムスク・インセンス","seasons":["summer","spring"],"scenes":["date","daily"],"priceTier":"mid","price":"¥6,500前後","releaseYear":2017,"verdict":"フィグとアクアの瑞々しさ。爽やかさに甘さを乗せた、近年のメンズ人気作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fver1321-sale%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10048333%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/01c/ver1321-sale_1.jpg?_ex=512x512"},
-  {"brand":"Azzaro","name":"クローム","gender":"men","family":"fruity","top":"パイナップル・ローズマリー","mid":"ジャスミン・シクラメン","last":"ムスク・シダー","seasons":["summer","spring"],"scenes":["daily","sports"],"priceTier":"mid","price":"¥4,500前後","releaseYear":1996,"verdict":"パイナップルの明るいフレッシュさ。清潔で親しみやすく、コスパのよい夏の常備品。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10012736%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10012736%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/rank_10012736.jpg?_ex=512x512"},
+  {"brand":"Azzaro","name":"クローム","gender":"men","family":"fruity","top":"パイナップル・ローズマリー","mid":"ジャスミン・シクラメン","last":"ムスク・シダー","seasons":["summer","spring"],"scenes":["daily","sports"],"priceTier":"mid","price":"¥4,500前後","releaseYear":1996,"verdict":"パイナップルの明るいフレッシュさ。清潔で親しみやすく、コスパのよい夏の常備品。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F0003020409%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10078225%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04133661/3351500020409_cp.jpg?_ex=512x512"},
   {"brand":"Tom Ford","name":"トバコ バニラ","gender":"unisex","family":"gourmand","top":"タバコリーフ・スパイス","mid":"トンカ・カカオ","last":"バニラ・ドライフルーツ","seasons":["winter"],"scenes":["date","formal"],"priceTier":"high","price":"¥30,000前後","releaseYear":2007,"verdict":"甘い葉巻と蜂蜜の濃厚な温度感。拡散が強く一滴で十分。冬の夜、距離の近い場面で印象を残す。"},
   {"brand":"Mugler","name":"エンジェル","gender":"women","family":"gourmand","top":"ベルガモット・トロピカル","mid":"ハニー・キャラメル","last":"パチョリ・チョコレート","seasons":["winter","autumn"],"scenes":["date","daily"],"priceTier":"high","price":"¥15,000前後","releaseYear":1992,"verdict":"綿菓子とパチョリの衝撃。グルマン香水の発明者であり、好き嫌いを超えて歴史を変えた一本。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F575062%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10011339%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/62/575062_1.jpg?_ex=512x512"},
   {"brand":"Thierry Mugler","name":"A*MEN","gender":"men","family":"gourmand","top":"ラベンダー・ミント","mid":"コーヒー・キャラメル","last":"パチョリ・タール","seasons":["winter","autumn"],"scenes":["date","daily"],"priceTier":"mid","price":"¥9,000前後","releaseYear":1996,"verdict":"コーヒーとキャラメルの男性的グルマン。甘く力強く、寒い夜に濃厚な余韻を残す。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00t5c4n.k90d68f1.g00t5c4n.k90d7d3e/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fmugler-amencologne-edt%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdiogreco%2Fi%2F10046635%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/10409905/compass1708670327.jpg?_ex=512x512"},
@@ -623,7 +749,7 @@ const PERFUMES = [
   {"brand":"Azzaro","name":"ワンテッド","gender":"men","family":"amber","top":"ジンジャー・レモン","mid":"カルダモン・サフラン","last":"トンカ・ベチバー","seasons":["autumn","winter"],"scenes":["date","daily"],"priceTier":"mid","price":"¥6,500前後","releaseYear":2016,"verdict":"ジンジャーとトンカの心地よい甘辛さ。親しみやすく華やかで、デートに使いやすい。"},
   {"brand":"Maison Francis Kurkdjian","name":"バカラ ルージュ 540","gender":"unisex","family":"amber","top":"サフラン・ジャスミン","mid":"アンバーウッド・シダー","last":"ファーレザー・オークモス","seasons":["autumn","winter"],"scenes":["date","formal"],"priceTier":"high","price":"¥35,000前後","releaseYear":2014,"verdict":"世界的に話題のニッチ香水。甘く鉱物的な唯一無二の香りで、強い拡散と存在感を放つ。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fmai005-200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10007724%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00/mai005-200_1.jpg?_ex=512x512"},
   {"brand":"Versace","name":"エロス フレイム","gender":"men","family":"amber","top":"マンダリン・レモン・ブラックペッパー","mid":"ローズ・ゼラニウム・ローズマリー","last":"トンカ・バニラ・サンダルウッド","seasons":["autumn","winter"],"scenes":["date","daily"],"priceTier":"mid","price":"¥7,000前後","releaseYear":2018,"verdict":"エロスをより温かくスパイシーに。甘さに深みが増し、秋冬の夜のデートに映える。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fver1333%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10049546%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/33/ver1333_1.jpg?_ex=512x512"},
-  {"brand":"Chanel","name":"ブルー ドゥ シャネル EDP","gender":"men","family":"woody","top":"グレープフルーツ・レモン・ミント","mid":"ジンジャー・ジャスミン","last":"サンダルウッド・シダー","seasons":["autumn","winter"],"scenes":["business","formal"],"priceTier":"high","price":"¥15,000前後","releaseYear":2014,"verdict":"清涼なトップから乾いた白檀へ落ちる正統派ウッディ。スーツに最も外さない、社会人の一本目。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fcha1533%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10044361%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/33/cha1533_1.jpg?_ex=512x512"},
+  {"brand":"Chanel","name":"ブルー ドゥ シャネル EDP","gender":"men","family":"woody","top":"グレープフルーツ・レモン・ミント","mid":"ジンジャー・ジャスミン","last":"サンダルウッド・シダー","seasons":["autumn","winter"],"scenes":["business","formal"],"priceTier":"high","price":"¥15,000前後","releaseYear":2014,"verdict":"清涼なトップから乾いた白檀へ落ちる正統派ウッディ。スーツに最も外さない、社会人の一本目。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00svf6n.k90d68b6.g00svf6n.k90d7eab/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrilliantworld%2Fchanel-blue-edp%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrilliantworld%2Fi%2F10001493%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/brilliantworld/cabinet/pointopr26/bluedo-edp-00.jpg?_ex=512x512"},
   {"brand":"Tom Ford","name":"オード ウッド","gender":"unisex","family":"woody","top":"ローズウッド・カルダモン","mid":"ウード・サンダルウッド","last":"バニラ・アンバー","seasons":["autumn","winter"],"scenes":["formal","date"],"priceTier":"high","price":"¥28,000前後","releaseYear":2007,"verdict":"ウードを上品に飼いならした名作。スモーキーで甘く、夜の特別な装いに深みを与える。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F1059081924%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10079438%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04133661/1059081924-2_cp.jpg?_ex=512x512"},
   {"brand":"Hermès","name":"テール ド エルメス","gender":"men","family":"woody","top":"オレンジ・グレープフルーツ","mid":"ペッパー・ゼラニウム","last":"ベチバー・シダー","seasons":["autumn","spring"],"scenes":["business","formal"],"priceTier":"high","price":"¥17,000前後","releaseYear":2006,"verdict":"柑橘から鉱物的なベチバーへ。乾いた大地を思わせる、知性と品格のモダンクラシック。"},
   {"brand":"Dior","name":"ファーレンハイト","gender":"men","family":"woody","top":"マンダリン・サンザシ","mid":"すみれ・ナツメグ","last":"レザー・ベチバー","seasons":["autumn","winter"],"scenes":["formal","date"],"priceTier":"high","price":"¥14,000前後","releaseYear":1988,"verdict":"すみれとガソリンを思わせる唯一無二の構築美。好みは分かれるが忘れられない個性派。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3348900012219%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10050667%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241102/0061012219-1_cp.jpg?_ex=512x512"},
@@ -638,10 +764,10 @@ const PERFUMES = [
   {"brand":"Montblanc","name":"エクスプローラー","gender":"men","family":"woody","top":"ベルガモット・ピンクペッパー","mid":"ベチバー","last":"パチョリ・レザー","seasons":["autumn","winter"],"scenes":["business","daily"],"priceTier":"mid","price":"¥6,500前後","releaseYear":2019,"verdict":"アバントゥスを思わせる構成をコスパよく。爽やかさと土っぽさのバランスが秀逸。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00r2fjn.k90d6872.g00r2fjn.k90d7745/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fblanc-lapin%2Fmob1m0000009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fblanc-lapin%2Fi%2F10162421%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/blanc-lapin/cabinet/item/mob/mob1m0000009.jpg?_ex=512x512"},
   {"brand":"Jo Malone","name":"ウッドセージ & シーソルト","gender":"unisex","family":"woody","top":"アンブレットシード","mid":"セージ","last":"シーソルト","seasons":["spring","summer"],"scenes":["daily","business"],"priceTier":"high","price":"¥15,000前後","releaseYear":2014,"verdict":"海辺の崖を思わせるミネラル感。ミニマルで中性的、重ねづけの土台にも向く人気作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00sw7hn.k90d6e3d.g00sw7hn.k90d72dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F32241l41601%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjomalone%2Fi%2F10000825%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item3/32241l41601_2026logo.jpg?_ex=512x512"},
   {"brand":"Hugo Boss","name":"ボス ボトルド","gender":"men","family":"woody","top":"アップル・ベルガモット","mid":"シナモン・ゼラニウム","last":"サンダルウッド・ベチバー","seasons":["autumn","winter"],"scenes":["business","daily"],"priceTier":"mid","price":"¥5,500前後","releaseYear":1998,"verdict":"りんごとシナモンの温かみ。ビジネスマンの定番として長年支持される、堅実な一本。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rf2sn.k90d6927.g00rf2sn.k90d73ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fhug-021%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbesba%2Fi%2F10011639%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/besba/cabinet/s4/hug-021.jpg?_ex=512x512"},
-  {"brand":"Dior","name":"ディオール オム","gender":"men","family":"woody","top":"カラブリアンベルガモット","mid":"アイリス・カカオ","last":"ベチバー・レザー","seasons":["autumn","winter"],"scenes":["formal","date"],"priceTier":"high","price":"¥14,000前後","releaseYear":2005,"verdict":"アイリスのパウダリーな上品さ。洗練と色気を兼ね、大人の余裕を静かに語る。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rbw6n.k90d6fcb.g00rbw6n.k90d7a2a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2Fchrt05585%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Faquabouquet%2Fi%2F10055264%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/a04/chrt05585.jpg?_ex=512x512"},
+  {"brand":"Dior","name":"ディオール オム","gender":"men","family":"woody","top":"カラブリアンベルガモット","mid":"アイリス・カカオ","last":"ベチバー・レザー","seasons":["autumn","winter"],"scenes":["formal","date"],"priceTier":"high","price":"¥14,000前後","releaseYear":2005,"verdict":"アイリスのパウダリーな上品さ。洗練と色気を兼ね、大人の余裕を静かに語る。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3348901126342%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10048884%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/0061126342_cp.jpg?_ex=512x512"},
   {"brand":"Givenchy","name":"ジェントルマン ブシ","gender":"men","family":"woody","top":"ペア・カルダモン","mid":"アイリス・ラベンダー","last":"レザー・パチョリ","seasons":["autumn","winter"],"scenes":["business","date"],"priceTier":"mid","price":"¥9,000前後","releaseYear":2020,"verdict":"洋ナシとアイリスの甘さに、レザーの芯。優雅さと男性らしさを両立した現代の紳士像。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00un4mn.k90d6881.g00un4mn.k90d7aed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fluxs%2F13800912004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fluxs%2Fi%2F10015560%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/luxs/cabinet/20250203003000002/13800912004-1.jpg?_ex=512x512"},
   {"brand":"Tom Ford","name":"ブラック オーキッド","gender":"unisex","family":"chypre","top":"トリュフ・ブラックカラント","mid":"オーキッド・スパイス","last":"パチョリ・ヴェチバー","seasons":["winter","autumn"],"scenes":["formal","date"],"priceTier":"high","price":"¥20,000前後","releaseYear":2006,"verdict":"土と黒い花の濃密なシプレ。拡散が強く一滴で十分。冬の夜、印象を残したい場面の切り札。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F1059000055%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10078769%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/1059000055-1_cp.jpg?_ex=512x512"},
-  {"brand":"Aramis","name":"アラミス","gender":"men","family":"chypre","top":"ベルガモット・シナモン","mid":"パチョリ・レザー","last":"オークモス・ベチバー","seasons":["autumn","winter"],"scenes":["formal","business"],"priceTier":"mid","price":"¥5,000前後","releaseYear":1965,"verdict":"1965年の重厚なレザー・シプレ。古典的な男臭さがあり、貫禄を求める大人に。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10029084%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10029084%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_01/5000443.jpg?_ex=512x512"},
+  {"brand":"Aramis","name":"アラミス","gender":"men","family":"chypre","top":"ベルガモット・シナモン","mid":"パチョリ・レザー","last":"オークモス・ベチバー","seasons":["autumn","winter"],"scenes":["formal","business"],"priceTier":"mid","price":"¥5,000前後","releaseYear":1965,"verdict":"1965年の重厚なレザー・シプレ。古典的な男臭さがあり、貫禄を求める大人に。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F1080332%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10013563%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/32/1080332_1.jpg?_ex=512x512"},
   {"brand":"Chanel","name":"プール ムッシュ","gender":"men","family":"chypre","top":"レモン・ベルガモット","mid":"バジル・ジンジャー","last":"ベチバー・オークモス","seasons":["autumn","spring"],"scenes":["formal","business"],"priceTier":"high","price":"¥14,000前後","releaseYear":1955,"verdict":"シャネル唯一のメンズ古典。シトラス・シプレの端正な構築で、知的な紳士像を描く。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fcha050-075%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10017523%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/75/cha050-075_1.jpg?_ex=512x512"},
   {"brand":"YSL","name":"クロス","gender":"men","family":"chypre","top":"アルデヒド・ベルガモット","mid":"ゼラニウム・パチョリ","last":"レザー・ムスク","seasons":["autumn","winter"],"scenes":["date","formal"],"priceTier":"high","price":"¥12,000前後","releaseYear":1981,"verdict":"アニマリックで官能的な伝説。好みは激しく分かれるが、ハマれば代えがきかない名作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rv9hn.k90d606b.g00rv9hn.k90d794d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrandacross%2F158715%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrandacross%2Fi%2F10012153%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/brandacross/cabinet/across9/158715.jpg?_ex=512x512"},
   {"brand":"Guerlain","name":"ミツコ","gender":"women","family":"chypre","top":"ベルガモット・ピーチ","mid":"ジャスミン・ローズ","last":"オークモス・スパイス","seasons":["autumn","winter"],"scenes":["formal","date"],"priceTier":"high","price":"¥18,000前後","releaseYear":1919,"verdict":"桃と苔の対比が生む憂いの香り。1919年から愛される、シプレの完成形と称される傑作。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00txi5n.k90d68cf.g00txi5n.k90d7a43/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhline-international%2F372656%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhline-international%2Fi%2F10048258%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2015_11/img372656.jpg?_ex=512x512"},
@@ -652,7 +778,7 @@ const PERFUMES = [
   {"brand":"Maison Margiela","name":"レイジー サンデー モーニング","gender":"unisex","family":"musk","top":"アルデヒド・洋ナシ","mid":"アイリス・ローズ","last":"ムスク・パチョリ","seasons":["spring","summer"],"scenes":["daily"],"priceTier":"high","price":"¥16,000前後","releaseYear":2012,"verdict":"洗いたてのシーツのような清潔感。穏やかで安心感があり、休日の素肌に寄り添う。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00snpon.k90d69e1.g00snpon.k90d7baa/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmediva%2F3605521932464%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmediva%2Fi%2F10007191%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosmediva/cabinet/skuimage/topimage/maison.jpg?_ex=512x512"},
   {"brand":"Narciso Rodriguez","name":"フォー ヒム","gender":"men","family":"musk","top":"バイオレットリーフ","mid":"ムスク","last":"アンバー・パチョリ","seasons":["spring","autumn"],"scenes":["business","date"],"priceTier":"high","price":"¥11,000前後","releaseYear":2007,"verdict":"すみれの葉とムスクの上品な男性版。控えめながら奥行きがあり、知的な清潔感を放つ。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00txi5n.k90d68cf.g00txi5n.k90d7a43/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fhline-international%2F762566%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fhline-international%2Fi%2F10050717%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2025_11/img762566.jpg?_ex=512x512"},
   {"brand":"Glossier","name":"ユー","gender":"unisex","family":"musk","top":"ピンクペッパー","mid":"アイリス","last":"アンブレットムスク","seasons":["spring","summer"],"scenes":["daily","date"],"priceTier":"mid","price":"¥9,000前後","releaseYear":2017,"verdict":"肌の匂いを増幅するようなスキンムスク。つける人ごとに変わる、親密で個人的な香り。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00rsgyn.k90d6eeb.g00rsgyn.k90d7777/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famericana%2Fjm0000398%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Famericana%2Fi%2F10045978%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/americana/cabinet/joanne/joa3/glossieryou1.jpg?_ex=512x512"},
-  {"brand":"Bvlgari","name":"ブルガリ プールオム","gender":"men","family":"musk","top":"ダージリンティー・ベルガモット","mid":"シダー・ペッパー","last":"ムスク・トンカ","seasons":["spring","summer"],"scenes":["business","daily"],"priceTier":"mid","price":"¥6,000前後","releaseYear":1996,"verdict":"紅茶のような透明感と清潔感。クセがなく上品で、ビジネスでもっとも外さない万能種。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10034995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10034995%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/rank_10034995.jpg?_ex=512x512"},
+  {"brand":"Bvlgari","name":"ブルガリ プールオム","gender":"men","family":"musk","top":"ダージリンティー・ベルガモット","mid":"シダー・ペッパー","last":"ムスク・トンカ","seasons":["spring","summer"],"scenes":["business","daily"],"priceTier":"mid","price":"¥6,000前後","releaseYear":1996,"verdict":"紅茶のような透明感と清潔感。クセがなく上品で、ビジネスでもっとも外さない万能種。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10034995%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10034995%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/ranking_top2/rank_10034995.jpg?_ex=512x512"},
   {"brand":"Aesop","name":"タシット","gender":"unisex","family":"aquatic","top":"バジル・ユズ","mid":"ヴェチバー","last":"クローブ","seasons":["summer","spring"],"scenes":["business","daily"],"priceTier":"high","price":"¥17,000前後","verdict":"柚子と海風のグリーン。生っぽい清涼感で、香りで涼を演出したい蒸し暑い日に効く。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00s3q0n.k90d68a5.g00s3q0n.k90d785c/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosme-venus%2F9319944006568%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosme-venus%2Fi%2F10007554%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/cosme-venus/cabinet/skuimage/topimage/9319944006568-set.jpg?_ex=512x512"},
   {"brand":"Davidoff","name":"クール ウォーター","gender":"men","family":"aquatic","top":"ミント・ラベンダー","mid":"サンダルウッド・ネロリ","last":"ムスク・シダー","seasons":["summer","spring"],"scenes":["daily","sports"],"priceTier":"petit","price":"¥2,500前後","releaseYear":1988,"verdict":"1988年のマリン香水の元祖。清涼で爽やか、低価格ながら今なお色褪せない定番。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-dav002-200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10003698%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/dav002-200_1.jpg?_ex=512x512"},
   {"brand":"Giorgio Armani","name":"アクア ディ ジオ","gender":"men","family":"aquatic","top":"マリンノート・ベルガモット","mid":"ローズマリー・ジャスミン","last":"パチョリ・ムスク","seasons":["summer","spring"],"scenes":["business","sports"],"priceTier":"high","price":"¥11,000前後","releaseYear":1996,"verdict":"海そのものを思わせる透明感。爽やかさの代名詞で、夏のメンズ香水の絶対王者。","rakuten":"https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F924377%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10012567%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c","img":"https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/77/924377_1.jpg?_ex=512x512"},
@@ -1019,7 +1145,10 @@ function buildBrandTools(){
     if(v==="all")b.classList.add("on");
     b.onclick=()=>{brandState.tier=v;
       tierBox.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===b));
-      renderBrands();attachHearts();};
+      renderBrands();attachHearts();
+renderQuiz();
+buildMegaTimeline();
+buildCompares();};
     tierBox.appendChild(b);
   });
   const sortBox=document.getElementById("brandSortChips");
@@ -1357,12 +1486,374 @@ function initParticles(){
 const _origRender=render;
 render=function(){_origRender();attachHearts();};
 
+
+/* ============================================================
+   1) DIAGNOSIS QUIZ
+   ============================================================ */
+const QUIZ = [
+  {q:"香水をまとう、いちばん多い場面は？", opts:[
+    {jp:"オフィス・会議",en:"business",  w:{tier:{luxury:1,midrange:2}, fam:{aromatic:2,woody:2,citrus:1,musk:1}}},
+    {jp:"デート・夜",   en:"date & night",w:{tier:{luxury:2,niche:2},   fam:{amber:2,gourmand:2,woody:1,chypre:1}}},
+    {jp:"普段使い・日中",en:"daily",      w:{tier:{midrange:2,petit:1}, fam:{citrus:2,musk:2,aromatic:1}}},
+    {jp:"特別なフォーマル",en:"formal",   w:{tier:{luxury:2,niche:1},   fam:{woody:2,chypre:2,amber:1}}},
+  ]},
+  {q:"好む季節は？", opts:[
+    {jp:"春・夏",en:"spring/summer",w:{fam:{citrus:2,aquatic:2,aromatic:1,musk:1}}},
+    {jp:"秋・冬",en:"autumn/winter",w:{fam:{woody:2,amber:2,gourmand:1,chypre:1}}},
+    {jp:"一年中",en:"all year",     w:{fam:{musk:1,woody:1,aromatic:1,citrus:1}}},
+  ]},
+  {q:"香りの強さの理想は？", opts:[
+    {jp:"そっと纏う、肌に寄り添う",en:"subtle",w:{fam:{musk:3,citrus:2,aromatic:1}}},
+    {jp:"適度に香る、ほどよく",en:"balanced",  w:{fam:{woody:2,aromatic:2,floral:1,fruity:1}}},
+    {jp:"印象を残す、濃密に",  en:"intense",  w:{fam:{amber:3,gourmand:2,chypre:2}}},
+  ]},
+  {q:"あなたの好む世界観は？", opts:[
+    {jp:"古典的・伝統的",en:"classic",w:{tier:{luxury:3},country:{FR:2,IT:1,UK:1}}},
+    {jp:"モダン・洗練",  en:"modern", w:{tier:{niche:2,luxury:1},country:{US:2,FR:1,SE:1}}},
+    {jp:"前衛・個性的",  en:"avant-garde",w:{tier:{niche:3}}},
+    {jp:"親しみやすい",  en:"approachable",w:{tier:{midrange:2,petit:2}}},
+  ]},
+  {q:"予算感は？", opts:[
+    {jp:"3,000円以下のプチプラ",en:"under ¥3,000", w:{tier:{petit:3}}},
+    {jp:"5,000〜10,000円のミドル",en:"¥5,000–10,000", w:{tier:{midrange:3,luxury:1}}},
+    {jp:"15,000〜25,000円のラグジュアリー",en:"¥15,000–25,000", w:{tier:{luxury:3}}},
+    {jp:"こだわるなら30,000円〜",en:"¥30,000+", w:{tier:{niche:3,luxury:2}}},
+  ]},
+];
+
+const quizState = {step:0, weights:{tier:{},fam:{},country:{}}};
+
+function renderQuiz(){
+  const card=document.getElementById("quizCard");
+  if(quizState.step>=QUIZ.length){return showQuizResult();}
+  const q=QUIZ[quizState.step];
+  card.innerHTML=`
+    <div class="quiz-step active">
+      <p class="quiz-prog">QUESTION ${String(quizState.step+1).padStart(2,"0")} / ${String(QUIZ.length).padStart(2,"0")}</p>
+      <h3 class="quiz-q">${q.q}</h3>
+      <div class="quiz-opts">
+        ${q.opts.map((o,i)=>`<button class="quiz-opt" data-i="${i}"><span class="ojp">${o.jp}</span><span class="oen">— ${o.en}</span></button>`).join("")}
+      </div>
+    </div>`;
+  card.querySelectorAll(".quiz-opt").forEach(b=>{
+    b.onclick=()=>{
+      const o=q.opts[Number(b.dataset.i)];
+      const w=o.w||{};
+      ["tier","fam","country"].forEach(k=>{
+        if(w[k])Object.entries(w[k]).forEach(([key,val])=>{
+          quizState.weights[k][key]=(quizState.weights[k][key]||0)+val;
+        });
+      });
+      quizState.step++;renderQuiz();
+    };
+  });
+}
+
+function showQuizResult(){
+  const card=document.getElementById("quizCard");
+  // score brands
+  const scores=BRANDS.map(b=>{
+    const s=brandStats(b.name);
+    if(!s.count)return null;
+    let score=0;
+    score+=quizState.weights.tier[b.tier]||0;
+    score+=(quizState.weights.country[b.country]||0)*0.6;
+    // family match
+    s.fams.forEach(f=>{
+      const k=Object.keys(FAM).find(k=>FAM[k].color===f.color);
+      score+=(quizState.weights.fam[k]||0)*f.weight*0.4;
+    });
+    return {b,score:Math.round(score*10)/10,s};
+  }).filter(Boolean).sort((a,b)=>b.score-a.score);
+
+  const top=scores[0], alts=scores.slice(1,5);
+  card.innerHTML=`
+    <div class="quiz-result show">
+      <h3>あなたに合いそうなブランド</h3>
+      <div class="rname">${top.b.name}</div>
+      <p class="rmeta">${top.b.country} ／ est. ${top.b.founded} ／ ${tierLabel(top.b.tier)}</p>
+      <p class="rdesc">${top.b.desc}</p>
+      <button class="show-result-btn" id="quizGoTop">${top.b.name} を見る →</button>
+      <div style="margin-top:36px">
+        <h3 style="font-family:'Cormorant',serif;font-style:italic;font-weight:500;font-size:16px;color:#aeb0b6;letter-spacing:.5px;margin-bottom:12px">候補となる他のブランド</h3>
+        <div class="quiz-altlist">
+          ${alts.map(a=>`<div class="quiz-alt" data-bn="${a.b.name}">
+            <div class="aname">${a.b.name}</div>
+            <div class="ascore">${a.b.country} ／ ${a.s.count} fragrances</div>
+          </div>`).join("")}
+        </div>
+      </div>
+      <button class="quiz-restart" id="quizRestart">もう一度診断する</button>
+      <p style="font-size:11.5px;color:#67676d;margin-top:18px;line-height:1.7">本診断は、回答内容と本サイト掲載ブランドの公開情報をもとにした目安の提案です。実際の好みは試香で確かめてください。</p>
+    </div>`;
+  card.querySelector("#quizGoTop").onclick=()=>openBrandModal(top.b);
+  card.querySelectorAll(".quiz-alt").forEach(el=>{
+    el.onclick=()=>{const b=BRANDS.find(x=>x.name===el.dataset.bn);if(b)openBrandModal(b);};
+  });
+  card.querySelector("#quizRestart").onclick=()=>{
+    quizState.step=0;quizState.weights={tier:{},fam:{},country:{}};renderQuiz();
+  };
+}
+
+/* ============================================================
+   2) MEGA INTERACTIVE TIMELINE
+   ============================================================ */
+const mtlState={filter:"all"};
+function buildMegaTimeline(){
+  // build event list: brand foundings + product releases
+  const evs=[];
+  BRANDS.forEach(b=>{
+    if(!b.founded)return;
+    const stats=brandStats(b.name);
+    if(stats.count===0)return; // only show brands we cover
+    evs.push({year:Number(b.founded),type:"founding",brand:b.name,name:b.name+" 創業",country:b.country});
+  });
+  PERFUMES.filter(p=>p.releaseYear).forEach(p=>{
+    evs.push({year:p.releaseYear,type:"release",brand:p.brand,name:p.name,family:p.family,perfume:p});
+  });
+  // filter chips
+  const fbox=document.getElementById("mtlFilterChips");
+  [["all","すべて"],["release","発売作品のみ"],["founding","ブランド創業のみ"],["since2000","2000年以降"],["before2000","1999年以前"]].forEach(([v,l])=>{
+    const b=document.createElement("button");b.className="chip";b.textContent=l;
+    if(v==="all")b.classList.add("on");
+    b.onclick=()=>{mtlState.filter=v;
+      fbox.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===b));
+      renderMtl(evs);};
+    fbox.appendChild(b);
+  });
+  renderMtl(evs);
+}
+function renderMtl(evs){
+  let list=evs.slice();
+  if(mtlState.filter==="release")list=list.filter(e=>e.type==="release");
+  else if(mtlState.filter==="founding")list=list.filter(e=>e.type==="founding");
+  else if(mtlState.filter==="since2000")list=list.filter(e=>e.year>=2000);
+  else if(mtlState.filter==="before2000")list=list.filter(e=>e.year<2000);
+  list.sort((a,b)=>b.year-a.year);
+  // decades indicator
+  const decadeBox=document.getElementById("mtlDecades");
+  const years=list.map(e=>e.year);
+  const minY=Math.min(...years), maxY=Math.max(...years);
+  const decades=[];
+  for(let d=Math.floor(minY/10)*10; d<=Math.ceil(maxY/10)*10; d+=10) decades.push(d);
+  decadeBox.innerHTML=decades.map(d=>`<span>${d}s</span>`).join("");
+  // grouped
+  const byYear={};
+  list.forEach(e=>{(byYear[e.year]=byYear[e.year]||[]).push(e)});
+  const sortedYears=Object.keys(byYear).map(Number).sort((a,b)=>b-a);
+  const root=document.getElementById("mtl");
+  root.innerHTML=sortedYears.map(y=>{
+    const items=byYear[y];
+    return `<div class="mtl-year-block">
+      <div class="yhead"><span class="yn">${y}</span><span class="yc">${items.length} event${items.length>1?"s":""}</span></div>
+      <div class="mtl-events-list">
+        ${items.map(e=>{
+          if(e.type==="founding"){
+            return `<div class="mev found" data-bn="${e.brand}">
+              <span class="mt">founding</span>
+              <span class="mn">${e.brand} 創業</span>
+              <span class="mb">${e.country}</span>
+            </div>`;
+          }else{
+            const f=FAM[e.family];
+            return `<div class="mev" data-perf="${e.brand}|${e.name}" style="border-left:2px solid ${f.color}">
+              <span class="mt" style="color:${f.color}">${f.ja}</span>
+              <span class="mn">${e.name}</span>
+              <span class="mb">${e.brand}</span>
+            </div>`;
+          }
+        }).join("")}
+      </div>
+    </div>`;
+  }).join("");
+  root.querySelectorAll("[data-bn]").forEach(el=>{
+    el.onclick=()=>{const b=BRANDS.find(x=>x.name===el.dataset.bn);if(b)openBrandModal(b);};
+  });
+  root.querySelectorAll("[data-perf]").forEach(el=>{
+    el.onclick=()=>{
+      const [br,nm]=el.dataset.perf.split("|");
+      const p=PERFUMES.find(x=>x.brand===br&&x.name===nm);
+      if(p){state.family=p.family;render();
+        document.querySelector(".filters").scrollIntoView({behavior:"smooth"});}
+    };
+  });
+}
+
+/* ============================================================
+   3) COMPARE ARTICLES
+   ============================================================ */
+const COMPARES = [
+  {tag:"COMPARE", a:"Chanel", b:"Dior",
+   title:"シャネルとディオール、パリ二大メゾンの違い",
+   lead:"ともにパリのオートクチュール出身。香水ではどちらも王道とされるが、性格は対照的。",
+   body:[
+    "シャネルは1910年、ガブリエル・シャネルが帽子店から始めたブランド。1921年のN°5で「抽象的なアルデヒドを核とした近代香水」を発明し、現代フレグランスの規範を作った。一貫して引き算の美学があり、メンズのブルー ドゥ シャネルやアンテウスにも、ノートをぎりぎりまで削いだ端正さがある。",
+    "一方ディオールは1947年、戦後ファッションを変えたクリスチャン・ディオールが立ち上げた。香水ではミス ディオール(1947)から始まり、ファーレンハイト(1988)、ディオール オム(2005)、ソヴァージュ(2015)と、時代ごとに大胆な解釈を世に出してきた。劇的で、わかりやすく目を引く構築美が共通項。",
+    "選び分けるなら、礼節や端正さで攻めたいときはシャネル、自分を一段押し出したいときはディオール、と整理できる。価格帯はほぼ同等、どちらも長く付き合える伝統メゾンであることは間違いない。",
+   ],
+   related:["Hermès","YSL","Guerlain"]},
+
+  {tag:"COMPARE", a:"Le Labo", b:"Jo Malone",
+   title:"ル ラボとジョー マローン、現代ニッチの2大スター",
+   lead:"両者とも、香水文化に「軽さと重ねづけ」を持ち込んだブランド。アプローチは異なる。",
+   body:[
+    "ジョー マローンは1994年ロンドン創業。シングルノートに近いシンプルさと、複数の香水を重ねる「コロン カクテル」の文化を広めた。ライムバジル & マンダリン(1999)、イングリッシュ ペアー & フリージア(2010)、ウッドセージ & シーソルト(2014)など、すべて「ひと言で言える香り」が個性。英国式の上品さと日常性の両立が魅力。",
+    "ル ラボは2006年ニューヨーク創業。サンタル33(2011)で「性別を越えた抽象的なウッディ」を打ち立て、ニッチ香水の新基準を作った。フォントだけのラベル、製造日と名前の手書き、店舗での量り売りなど、世界観全体がブランドの一部になっている。",
+    "ジョー マローンは「贈り物にも使える、開かれた上品さ」、ル ラボは「個人的で、所有の儀式感がある」。どちらも初めてのニッチ入門に向くが、世界観の好みで選ぶといい。",
+   ],
+   related:["Byredo","Diptyque","Maison Margiela"]},
+
+  {tag:"COMPARE", a:"Tom Ford", b:"Creed",
+   title:"トム フォードとクリード、高級メンズの頂点を比較",
+   lead:"どちらも高級メンズ香水の代名詞。だが歴史も路線も大きく違う。",
+   body:[
+    "クリードはもともとロンドンの歴史ある調香一族が源流とされ、現在はフランス拠点。アバントゥス(2010)が世界的なステータス香水となり、「成功者の香り」と称されるまでになった。フルーティなパイナップルから樺の煙へ落ちる構築は、模倣不可能と言われる。",
+    "トム フォードは2005年、元グッチのクリエイティブディレクターが立ち上げた新興ラグジュアリー。ブラック オーキッド(2006)、トバコ バニラ(2007)、オード ウッド(2007)など、官能的で大胆なグルマン・ウッディを連発し、香水コレクションを一気に確立した。",
+    "クリードは「古典の重み」、トム フォードは「現代の濃度」。前者は静かな自信を、後者は明確な押し出しを求める人に向く。価格帯はトム フォードがやや幅広く、クリードは一律で高い。",
+   ],
+   related:["Maison Francis Kurkdjian","Parfums de Marly","Dior"]},
+
+  {tag:"COMPARE", a:"Aesop", b:"Diptyque",
+   title:"アエソップとディプティック、ナチュラル系ニッチの本流",
+   lead:"植物的・アート寄りで似ているようで、実は系譜が違う2つの老舗ニッチ。",
+   body:[
+    "ディプティックは1961年、パリの3人の創業者がセレクトショップとして始めた。アーティストや文化人と関わりながらキャンドルとオードトワレを展開し、タムダオ(2003)など瞑想的で文学的な香りが知られる。アートとしての香りという立ち位置を一貫している。",
+    "アエソップは1987年、オーストラリア・メルボルン創業。スキンケアから出発した経緯もあり、植物原料と化学への深いこだわりが特徴。タシット(2015)はユズとバジル、ベチバーで「香りで涼を演出する」という発想を体現している。",
+    "ディプティックは「世界観の演出」、アエソップは「素材への信仰」。どちらもパッケージから世界観が一貫しており、空間や生活に置きたくなる類のブランド。香りの強さは両者とも控えめで、ニッチ入門に最適。",
+   ],
+   related:["Le Labo","Byredo","Hermès"]},
+
+  {tag:"COMPARE", a:"Maison Margiela", b:"Byredo",
+   title:"マルジェラとバイレード、モダンニッチの新世代",
+   lead:"2000年代以降に台頭したニッチ。コンセプトはどちらも文学的だが、温度が違う。",
+   body:[
+    "マルジェラのレプリカ コレクションは2012年から始まった。各香水に「ジャズクラブ」「レイジー サンデー モーニング」のような場面の名前が付けられ、特定の記憶や情景を香りで再現するという、極めてコンセプチュアルな試み。SNSで「香りでストーリーが浮かぶ」と話題になり、若い世代のニッチ入門の代名詞となった。",
+    "バイレードは2006年ストックホルム創業。ジプシー ウォーター(2008)に代表される、文学的で北欧的なミニマリズム。ベルやアン、ベン・ゴーラムによる詩的なネーミングと、グレーや白を基調にしたパッケージ設計が、都市的な知性層に支持されている。",
+    "マルジェラは「物語の引き金」、バイレードは「静かな佇まい」。前者は若い世代やSNS世代に響き、後者は内省的なファンを掴む。価格帯は近く、どちらも香水好きの2本目以降にふさわしい。",
+   ],
+   related:["Le Labo","Diptyque","Jo Malone"]},
+
+  {tag:"COMPARE", a:"Hermès", b:"Acqua di Parma",
+   title:"エルメスとアクア ディ パルマ、老舗の上品さの違い",
+   lead:"ともに100年超のヨーロッパ老舗。だが「品の出方」が違う。",
+   body:[
+    "エルメスは1837年、パリの馬具工房から始まった。香水部門にも一流の調香師が関わり、テール ド エルメス(2006)はベチバーの鉱物的な乾きで「大地」を主題化した名作。気品があり、押し出すよりも余韻で語るタイプの香り。",
+    "アクア ディ パルマは1916年、イタリア・パルマで創業。代表作コロニアは100年以上ほぼ変わらないレシピで愛され続け、シチリアンレモンを使った地中海的な明るさが核。エルメスより親しみやすく、軽やかさで上品さを伝える。",
+    "エルメスは「フランスの内省的な品格」、アクア ディ パルマは「イタリアの陽性の上品さ」。ビジネスや会食でフォーマルに使うならどちらも安全だが、佇まいで選ぶならエルメス、明るさで選ぶならアクア ディ パルマ。",
+   ],
+   related:["Guerlain","Chanel","Jo Malone"]},
+
+  {tag:"COMPARE", a:"Bvlgari", b:"Versace",
+   title:"ブルガリとヴェルサーチ、イタリア二大ブランドの香水比較",
+   lead:"どちらもイタリア生まれの高級ブランド。香水の性格は全く異なる。",
+   body:[
+    "ブルガリは1884年ローマのジュエラー創業。香水ではブルガリ プールオム(1996)、アクア プールオム(2005)など、清潔感と透明感を重視した端正な路線。日本人にも非常に馴染みやすく、ビジネスで使える定番として根強い人気を持つ。",
+    "ヴェルサーチは1978年ミラノ創業。エロス(2012)に代表される、わかりやすく華やかで官能的な路線。青リンゴとミントのフレッシュ感に温かい甘さを乗せた構成は、特に若い世代のデート向け定番として強い。",
+    "ブルガリは「控えめな上品さ」、ヴェルサーチは「華やかな押し出し」。同じイタリアでも、ローマの古典 vs ミラノの煌びやかさという対比そのものが香りに現れている。",
+   ],
+   related:["Dolce&Gabbana","Giorgio Armani","Acqua di Parma"]},
+
+  {tag:"FOCUS", a:"Maison Margiela", b:"",
+   title:"なぜマルジェラのレプリカは人気なのか",
+   lead:"ニッチ香水を一般層まで広げた、現代の現象としてのレプリカ コレクション。",
+   body:[
+    "マルジェラのレプリカが他のニッチと違うのは、香水のネーミング自体が「物語の入口」になっている点だ。ジャズクラブ、レイジー サンデー モーニング、ビーチウォーク、レインドロップス オン ア グリーンハウス——名前を聞いただけで情景が浮かぶように設計されている。",
+    "香り自体も、その情景を裏切らない具体性で組まれている。ジャズクラブにはラムとタバコの煙、レイジー サンデー モーニングには洗いたてのシーツを思わせる清潔なムスクとアイリスの粉っぽさ。香水を「コンセプチュアル・アート」として体験できる稀有なコレクション。",
+    "SNSで「この香水がぴったり」と紹介しやすく、贈り物としても説明しやすい。価格帯も初〜中級ニッチの範囲で、若い世代のニッチ入門としても機能している。ニッチが大衆化した象徴的なブランドと言える。",
+   ],
+   related:["Le Labo","Byredo","Diptyque"]},
+];
+
+function buildCompares(){
+  const box=document.getElementById("cmpGrid");
+  COMPARES.forEach(c=>{
+    const card=document.createElement("article");card.className="cmpcard";
+    card.innerHTML=`
+      <div class="cmp-head">
+        ${c.b?'<span class="vs">vs</span>':''}
+        <span class="ctag">${c.tag}</span>
+        <h3 class="ctitle">${c.title}</h3>
+        <div class="pair">
+          <span>${c.a}</span>
+          ${c.b?`<span>${c.b}</span>`:''}
+        </div>
+        <p class="clead">${c.lead}</p>
+      </div>
+      <div class="cbody">${c.body.map(p=>`<p>${p}</p>`).join("")}</div>
+      <div class="cnav">
+        <span class="cnav-label">この記事に登場するブランド ／ 関連ブランド</span>
+        <div class="cnav-chips">
+          ${[c.a,c.b,...c.related].filter(Boolean).map(n=>`<button data-bn="${n}">${n}</button>`).join("")}
+        </div>
+      </div>
+      <button class="ctoggle">続きを読む ＋</button>`;
+    const btn=card.querySelector(".ctoggle");
+    btn.onclick=()=>{
+      const open=card.classList.toggle("open");
+      btn.textContent=open?"閉じる －":"続きを読む ＋";
+    };
+    card.querySelectorAll(".cnav-chips button").forEach(b=>{
+      b.onclick=()=>{const br=BRANDS.find(x=>x.name===b.dataset.bn);if(br)openBrandModal(br);};
+    });
+    box.appendChild(card);
+  });
+}
+
+/* ============================================================
+   4) BRAND NETWORK (injected into brand modal)
+   ============================================================ */
+function brandNetwork(b){
+  const all=BRANDS.filter(x=>x.name!==b.name && brandStats(x.name).count>0);
+  // same country
+  const sameCountry=all.filter(x=>x.country===b.country).slice(0,4);
+  // same tier
+  const sameTier=all.filter(x=>x.tier===b.tier && x.country!==b.country).slice(0,4);
+  // same era (founded within ±15 years)
+  const sameEra=all.filter(x=>Math.abs((x.founded||0)-(b.founded||0))<=15 && x.country!==b.country && x.tier!==b.tier).slice(0,4);
+  // shared dominant family
+  const myFams=new Set(brandStats(b.name).fams.map(f=>Object.keys(FAM).find(k=>FAM[k].color===f.color)));
+  const sharedFam=all.filter(x=>{
+    const xf=new Set(brandStats(x.name).fams.map(f=>Object.keys(FAM).find(k=>FAM[k].color===f.color)));
+    return [...myFams].some(k=>xf.has(k));
+  }).filter(x=>!sameCountry.includes(x)).slice(0,4);
+
+  function group(title,sub,arr){
+    if(!arr.length)return "";
+    return `<div class="fp-net-col"><h5>${title}<span style="font-family:'Cormorant',serif;font-style:italic;font-size:12px;color:#67676d;margin-left:6px">${sub}</span></h5>
+      ${arr.map(x=>`<div class="bnchip" data-bn="${x.name}"><span class="bnn">${x.name}</span><span class="bnm">${x.country} ／ est. ${x.founded}</span></div>`).join("")}</div>`;
+  }
+  return `<div class="fp-network">
+    <h3>関連ブランドマップ</h3>
+    <p class="ksub">同じ国・同じ世代・同じ価格帯・近い香調のブランド</p>
+    <div class="fp-net-groups">
+      ${group("同じ国","same country",sameCountry)}
+      ${group("同じ価格帯","same tier",sameTier)}
+      ${group("同じ世代","±15 years",sameEra)}
+      ${group("似た香調","shared family",sharedFam)}
+    </div>
+  </div>`;
+}
+
+/* patch openBrandModal to append network */
+const _origOpenBrandModal=openBrandModal;
+openBrandModal=function(b){
+  _origOpenBrandModal(b);
+  const m=document.getElementById("brandModalInner");
+  // 挿入: fp-note の直前にネットワークを差し込む
+  const note=m.querySelector(".fp-note");
+  if(note){
+    note.insertAdjacentHTML("beforebegin", brandNetwork(b));
+    m.querySelectorAll(".fp-network .bnchip").forEach(el=>{
+      el.onclick=()=>{const bb=BRANDS.find(x=>x.name===el.dataset.bn);if(bb){closeBrandModal();setTimeout(()=>openBrandModal(bb),250);}};
+    });
+  }
+};
+
 /* ---------- init ---------- */
 favLoad();updateFavCount();
 buildWheel();
 initScrolly();
 initParticles();
-buildTimeline();
 buildRanking();
 buildBrandTools();
 renderBrands();
