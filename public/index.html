@@ -1518,7 +1518,7 @@ function openBrandModal(b){
         <h2 class="fpname">${b.name}</h2>
         <p class="fpest">${tierLabel(b.tier)}</p>
         <div class="fpstrip">${strip}</div>
-        <a class="fp-fullpage-link" href="/brand-${slugifyBrand(b.name)}.html" style="display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.5px;color:#c9b558;text-decoration:none;border-bottom:1px solid #c9b558;padding-bottom:2px">${b.name}の特集ページを見る →</a>
+        <a class="fp-fullpage-link" href="/brand-${slugifyBrand(b.name)}" style="display:inline-block;margin-top:14px;font-size:12px;letter-spacing:.5px;color:#c9b558;text-decoration:none;border-bottom:1px solid #c9b558;padding-bottom:2px">${b.name}の特集ページを見る →</a>
       </div>
     </div>
     <div class="fp-body">
@@ -2208,7 +2208,7 @@ function addArticleLinks(){
     if(!slug||card.querySelector(".permalink"))return;
     const a=document.createElement("a");
     a.className="permalink";
-    a.href="/"+slug+".html";
+    a.href="/"+slug;
     a.textContent="記事ページで読む ↗";
     a.style.cssText="display:inline-block;font-family:'Cormorant',serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px;padding:0 22px 14px;text-decoration:none";
     a.onmouseenter=()=>a.style.color="#fff";
