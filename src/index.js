@@ -29,6 +29,13 @@ export default {
       return env.ASSETS.fetch(new Request(u, request));
     }
 
+    const mi = path.match(/^\/items\/([A-Za-z0-9][A-Za-z0-9-]*)\/?$/);
+    if (mi) {
+      const u = new URL(request.url);
+      u.pathname = `/items/${mi[1]}.html`;
+      return env.ASSETS.fetch(new Request(u, request));
+    }
+
     return env.ASSETS.fetch(request);
   },
 };

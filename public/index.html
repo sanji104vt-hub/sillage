@@ -173,6 +173,8 @@
     border:1px solid #c4c6cc;border-radius:999px;padding:5px 16px;text-decoration:none;transition:all .18s;
   }
   .buy:hover{background:#c4c6cc;color:#15151a;border-color:#c4c6cc}
+  .item-link{display:block;margin-top:10px;text-align:center;font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px;text-decoration:none;padding:6px 0;transition:color .18s}
+  .item-link:hover{color:#c9b558}
   .empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:#8c8c92}
   .empty .big{font-family:"Shippori Mincho",serif;font-size:19px;color:#e9e7e3;margin-bottom:8px}
 
@@ -1069,6 +1071,8 @@ function matches(p){
   if(state.price&&p.priceTier!==state.price)return false;
   return true;
 }
+const ITEM_SLUGS=["jo-malone-1","acqua-di-parma-1","dior-1","hermes-1","4711-1","atelier-cologne-1","guerlain-1","muji-1","dolce-gabbana-1","hermes-2","dior-2","ck-1","montblanc-1","azzaro-1","chanel-1","paco-rabanne-1","nautica-1","brut-1","guerlain-2","ysl-1","chanel-2","gucci-1","dior-3","calvin-klein-1","ysl-2","chanel-3","dior-4","gucci-2","jo-malone-2","marc-jacobs-1","jo-malone-3","versace-1","versace-2","azzaro-2","tom-ford-1","mugler-1","thierry-mugler-1","jean-paul-gaultier-1","giorgio-armani-1","viktor-rolf-1","prada-1","carolina-herrera-1","ysl-3","parfums-de-marly-1","maison-margiela-1","dior-5","paco-rabanne-2","bvlgari-1","ysl-4","viktor-rolf-2","dolce-gabbana-2","azzaro-3","maison-francis-kurkdjian-1","versace-3","chanel-4","tom-ford-2","hermes-3","dior-6","creed-1","giorgio-armani-2","le-labo-1","diptyque-1","byredo-1","dunhill-1","prada-2","john-varvatos-1","montblanc-2","jo-malone-4","hugo-boss-1","dior-7","givenchy-1","tom-ford-3","aramis-1","chanel-5","ysl-5","guerlain-3","chanel-6","shiro-1","narciso-rodriguez-1","le-labo-2","maison-margiela-2","narciso-rodriguez-2","glossier-1","bvlgari-2","aesop-1","davidoff-1","giorgio-armani-3","issey-miyake-1","paco-rabanne-3","bvlgari-3","versace-4","acqua-di-parma-2"];
+PERFUMES.forEach((p,i)=>{ if(!p.slug) p.slug=ITEM_SLUGS[i]; });
 function card(p){
   const f=FAM[p.family];const c=f.color;
   const visual = p.img
@@ -1102,6 +1106,7 @@ function card(p){
         <span class="price">${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
         <a class="buy" href="${buyHref}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
       </div>
+      ${p.slug?`<a class="item-link" href="/items/${p.slug}">詳細ページで見る →</a>`:""}
     </div>
   </article>`;
 }
