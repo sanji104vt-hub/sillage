@@ -623,8 +623,14 @@
     footer .links a, .gcard, .gcard .gmore, .permalink,
     .fp-fullpage-link, .bcard, .colcard .ctoggle, .quiz-restart,
     .mtl-decades span, .brand-link, .brand-chip{
-      min-height:44px; display:inline-flex; align-items:center;
+      min-height:44px; min-width:44px; display:inline-flex; align-items:center; justify-content:center;
     }
+    /* ♥ お気に入りボタン: 32px → 44px */
+    .heart{width:44px !important; height:44px !important}
+    .heart svg{width:18px; height:18px}
+    /* カード端の♥は少し内側寄せ */
+    .card .heart{top:8px; right:8px}
+    .bcard .heart{top:8px; right:44px}
     /* 小さめだったピル系はpadding増で44px相当 */
     .fam-pill, .gender-pill, .tag, .fpitem .ipill, .modal .mp .mpfam,
     .tlcard .tfam, .cmpcard .ctag, .colcard .ctag{
