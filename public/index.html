@@ -126,19 +126,29 @@
 
   .grid{
     max-width:1240px;margin:18px auto 0;padding:0 clamp(16px,4vw,48px) 40px;
-    display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:20px;
+    display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:26px;
   }
   .card{
-    background:#191a1d;border:1px solid #2c2d31;border-radius:4px;overflow:hidden;display:flex;flex-direction:column;
-    transition:transform .2s, box-shadow .2s, border-color .2s;animation:rise .45s ease both;
+    --family:#aeb0b6;isolation:isolate;background:linear-gradient(180deg,#1b1c20 0%,#17181b 100%);
+    border:1px solid #303137;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;
+    box-shadow:0 18px 46px -34px rgba(0,0,0,.92);transition:transform .25s,box-shadow .25s,border-color .25s;
+    animation:rise .45s ease both;
   }
+  .card::before{content:"";position:absolute;z-index:2;top:0;left:0;right:0;height:3px;background:var(--family)}
   @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
-  .card:hover{transform:translateY(-3px);box-shadow:0 16px 34px -18px rgba(0,0,0,.7);border-color:#3a3b40}
-  .flacon{height:200px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fafaf7}
-  .flacon .photo{max-width:88%;max-height:170px;width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(0,0,0,.18))}
-  .flacon.no-photo{height:152px;background:transparent;align-items:flex-end}
+  .card:hover{transform:translateY(-5px);box-shadow:0 24px 58px -30px rgba(0,0,0,.9);border-color:#484950}
+  .flacon{height:250px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;
+    background:linear-gradient(145deg,#fbfaf6 0%,#efede7 100%)}
+  .flacon::before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;background:var(--family);
+    opacity:.12;filter:blur(38px);transform:translateY(14px)}
+  .flacon::after{content:"";position:absolute;left:13%;right:13%;bottom:17px;height:20px;border-radius:50%;
+    background:rgba(17,18,20,.18);filter:blur(16px)}
+  .flacon .photo{position:relative;z-index:1;max-width:86%;max-height:210px;width:auto;height:auto;object-fit:contain;
+    filter:drop-shadow(0 16px 24px rgba(0,0,0,.22));transition:transform .35s ease}
+  .card:hover .flacon .photo{transform:translateY(-3px) scale(1.025)}
+  .flacon.no-photo{height:210px;background:linear-gradient(145deg,#202126,#17181b);align-items:flex-end}
   .flacon .bottle{
-    width:58px;height:96px;border-radius:5px 5px 3px 3px;position:relative;margin-bottom:18px;
+    z-index:1;width:70px;height:118px;border-radius:7px 7px 4px 4px;position:relative;margin-bottom:28px;
     box-shadow:0 10px 22px -10px rgba(0,0,0,.65);border:1px solid rgba(255,255,255,.14);
   }
   .flacon .bottle::before{
@@ -150,33 +160,48 @@
     background:linear-gradient(180deg,rgba(255,255,255,.4),transparent);border-radius:6px;filter:blur(1px);
   }
   .fam-pill{
-    position:absolute;top:12px;left:12px;font-size:10.5px;letter-spacing:.6px;padding:3px 10px;border-radius:999px;
+    z-index:2;position:absolute;top:14px;left:14px;font-size:10.5px;letter-spacing:.6px;padding:5px 11px;border-radius:999px;
     color:#15151a;font-family:"Shippori Mincho",serif;font-weight:500;
   }
   .gender-pill{
-    position:absolute;top:12px;right:12px;font-size:10px;letter-spacing:1px;padding:3px 9px;border-radius:999px;
-    background:rgba(255,255,255,.08);color:#c4c6cc;border:1px solid #2c2d31;
+    z-index:2;position:absolute;right:14px;bottom:14px;font-size:10px;letter-spacing:1px;padding:5px 10px;border-radius:999px;
+    background:rgba(13,14,16,.78);color:#e4e2de;border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(6px);
   }
-  .card-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:10px;flex:1}
-  .brandname{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;text-transform:uppercase}
-  .pname{font-family:"Shippori Mincho",serif;font-weight:500;font-size:17.5px;line-height:1.35;color:#f0eeea;letter-spacing:.5px}
-  .pyramid{display:flex;flex-direction:column;gap:3px;font-size:11.5px;color:#8c8c92}
-  .pyramid .row{display:flex;gap:8px}
-  .pyramid .lv{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#aeb0b6;min-width:40px}
-  .meta{display:flex;flex-wrap:wrap;gap:5px;margin-top:1px}
-  .tag{font-size:10.5px;color:#8c8c92;border:1px solid #2c2d31;border-radius:3px;padding:2px 7px;letter-spacing:.3px}
-  .verdict{font-size:12.5px;line-height:1.65;color:#d9d7d2;border-left:2px solid #c4c6cc;padding-left:11px;margin-top:2px}
-  .verdict .vlabel{display:block;font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#aeb0b6;margin-bottom:3px;letter-spacing:.5px}
-  .card-foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid #2c2d31}
-  .price{font-family:"Bodoni Moda",serif;font-size:15px;color:#e9e7e3}
-  .price .tier{font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;color:#8c8c92;letter-spacing:1px;display:block}
+  .card-body{padding:20px 20px 18px;display:flex;flex-direction:column;gap:15px;flex:1}
+  .product-heading{min-height:68px}
+  .brandname{display:block;font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2.4px;color:#a7a7ad;text-transform:uppercase;margin-bottom:6px}
+  .pname{font-family:"Shippori Mincho",serif;font-weight:500;font-size:19px;line-height:1.42;color:#f5f3ef;letter-spacing:.4px}
+  .product-name-link{color:inherit;text-decoration:none;text-underline-offset:4px}
+  .product-name-link:hover{text-decoration:underline;text-decoration-color:var(--family)}
+  .info-label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-family:"Zen Kaku Gothic New",sans-serif;
+    font-size:10px;font-weight:500;letter-spacing:1.2px;color:#8f9097;text-transform:uppercase}
+  .info-label::after{content:"";height:1px;flex:1;background:#303137}
+  .pyramid{display:flex;flex-direction:column;margin-top:-6px;border:1px solid #303137;border-radius:10px;overflow:hidden;
+    background:rgba(10,11,13,.28);font-size:12px;color:#cbc9c5}
+  .pyramid .row{display:grid;grid-template-columns:58px 1fr;gap:10px;align-items:center;min-height:39px;padding:7px 11px;border-bottom:1px solid #2b2c31}
+  .pyramid .row:last-child{border-bottom:none}
+  .pyramid .lv{position:relative;padding-left:12px;font-family:"Bodoni Moda",serif;font-style:normal;font-size:10px;letter-spacing:1.1px;color:#b9bac0;min-width:0;text-transform:uppercase}
+  .pyramid .lv::before{content:"";position:absolute;left:0;top:50%;width:6px;height:6px;border-radius:50%;background:currentColor;transform:translateY(-50%);box-shadow:0 0 10px currentColor}
+  .meta-wrap{display:flex;flex-direction:column;gap:8px}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:0}
+  .tag{font-size:10.5px;color:#bbb9b5;background:#202126;border:1px solid #34353a;border-radius:999px;padding:4px 9px;letter-spacing:.35px}
+  .verdict{font-size:12.5px;line-height:1.72;color:#d9d7d2;background:#121316;border-left:3px solid var(--family);border-radius:0 8px 8px 0;padding:11px 12px;margin-top:0}
+  .verdict .vlabel{display:block;font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#aeb0b6;margin-bottom:4px;letter-spacing:.5px}
+  .card-foot{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:12px;padding-top:14px;border-top:1px solid #303137}
+  .price-label{display:block;font-size:10px;color:#77787e;letter-spacing:.8px;margin-bottom:3px}
+  .price{font-family:"Bodoni Moda",serif;font-size:17px;color:#f0eeea;line-height:1.2}
+  .price .tier{font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;color:#8c8c92;letter-spacing:.8px;display:block;margin-top:4px}
+  .card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
   .buy{
-    font-family:"Cormorant",serif;font-style:italic;font-size:15px;letter-spacing:.5px;color:#e9e7e3;
-    border:1px solid #c4c6cc;border-radius:999px;padding:5px 16px;text-decoration:none;transition:all .18s;
+    display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 11px;text-align:center;
+    font-family:"Zen Kaku Gothic New",sans-serif;font-style:normal;font-size:12px;letter-spacing:.3px;color:#15151a;
+    background:#e7e4de;border:1px solid #e7e4de;border-radius:9px;text-decoration:none;transition:all .18s;
   }
-  .buy:hover{background:#c4c6cc;color:#15151a;border-color:#c4c6cc}
-  .item-link{display:block;margin-top:10px;text-align:center;font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92;letter-spacing:.5px;text-decoration:none;padding:6px 0;transition:color .18s}
-  .item-link:hover{color:#c9b558}
+  .buy:hover{background:#fff;color:#15151a;border-color:#fff}
+  .item-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-align:center;
+    font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:#e2e0dc;letter-spacing:.3px;text-decoration:none;
+    padding:8px 11px;border:1px solid #484950;border-radius:9px;transition:color .18s,border-color .18s,background .18s}
+  .item-link:hover{color:#fff;border-color:var(--family);background:#202126}
   .empty{grid-column:1/-1;text-align:center;padding:50px 20px;color:#8c8c92}
   .empty .big{font-family:"Shippori Mincho",serif;font-size:19px;color:#e9e7e3;margin-bottom:8px}
 
@@ -627,6 +652,16 @@
   }
   /* ---------- mobile a11y: 44px tap targets + 12px+ font ---------- */
   @media(max-width:768px){
+    .grid{gap:18px}
+    .card{border-radius:15px}
+    .flacon{height:226px}
+    .flacon .photo{max-height:188px}
+    .flacon.no-photo{height:196px}
+    .card-body{padding:18px 17px 17px;gap:14px}
+    .product-heading{min-height:0}
+    .pname{font-size:18px}
+    .pyramid .row{grid-template-columns:56px 1fr;min-height:42px}
+    .card-actions{gap:7px}
     /* タップ領域 44px 確保 */
     .chip, .reset, .buy, .hero-cta, .fav-btn, .quiz-opts button,
     .cmpcard .cnav-chips button, .share-btn, .share-cta, .ctoggle,
@@ -1109,26 +1144,34 @@ function card(p){
       </div>`;
   const buyHref = p.rakuten || "#";
   return`
-  <article class="card">
+  <article class="card" style="--family:${c}">
     ${visual}
     <div class="card-body">
-      <span class="brandname">${p.brand}</span>
-      <h3 class="pname">${p.name}</h3>
+      <div class="product-heading">
+        <span class="brandname">${p.brand}</span>
+        <h3 class="pname">${p.slug?`<a class="product-name-link" href="/items/${p.slug}">${p.name}</a>`:p.name}</h3>
+      </div>
+      <div class="info-label">香りの変化</div>
       <div class="pyramid">
         <div class="row"><span class="lv lv-top">Top</span><span>${p.top}</span></div>
         <div class="row"><span class="lv lv-mid">Mid</span><span>${p.mid}</span></div>
         <div class="row"><span class="lv lv-last">Last</span><span>${p.last}</span></div>
       </div>
-      <div class="meta">
-        ${p.seasons.map(s=>`<span class="tag">${SEASON[s]}</span>`).join("")}
-        ${p.scenes.map(s=>`<span class="tag">${SCENE[s]}</span>`).join("")}
+      <div class="meta-wrap">
+        <div class="info-label">似合う季節・場面</div>
+        <div class="meta">
+          ${p.seasons.map(s=>`<span class="tag">${SEASON[s]}</span>`).join("")}
+          ${p.scenes.map(s=>`<span class="tag">${SCENE[s]}</span>`).join("")}
+        </div>
       </div>
       <p class="verdict" style="border-left-color:${c}"><span class="vlabel">Sillage の見立て</span>${p.verdict}</p>
       <div class="card-foot">
-        <span class="price">${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
-        <a class="buy" href="${buyHref}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>
+        <span class="price"><span class="price-label">参考価格</span>${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
       </div>
-      ${p.slug?`<a class="item-link" href="/items/${p.slug}">詳細ページで見る →</a>`:""}
+      <div class="card-actions">
+        ${p.slug?`<a class="item-link" href="/items/${p.slug}">香りを詳しく見る</a>`:`<span></span>`}
+        <a class="buy" href="${buyHref}" target="_blank" rel="nofollow sponsored noopener">楽天で価格を見る ↗</a>
+      </div>
     </div>
   </article>`;
 }
