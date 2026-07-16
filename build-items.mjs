@@ -80,7 +80,7 @@ function pageHTML(p, related) {
   const brandSlug = BRAND_SLUG[p.brand];
   const brandLink = brandSlug ? `/brand-${brandSlug}.html` : null;
   const url = `https://sillage.asutelu.com/items/${p.slug}`;
-  const title = `${p.name} はどんな匂い？香調・持続・合うシーン｜Sillage`;
+  const title = `${p.name}（${p.brand}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
   const desc = `${p.brand}「${p.name}」の香調(トップ・ミドル・ラスト)、季節・シーン、価格帯、Sillageの見立てをまとめています。`;
 
   const breadcrumb = {
@@ -100,6 +100,7 @@ function pageHTML(p, related) {
     "category": famLabel,
     "description": p.verdict || desc,
     "url": url,
+    ...(p.img ? { "image": p.img } : {}),
   };
 
   const buyBtn = p.rakuten
@@ -116,6 +117,14 @@ function pageHTML(p, related) {
 <title>${escape(title)}</title>
 <meta name="description" content="${escape(desc)}">
 <meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-60BQRQWB5M');
+</script>
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="product">
 <meta property="og:title" content="${escape(p.name)}｜${escape(p.brand)}｜Sillage">

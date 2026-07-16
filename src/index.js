@@ -16,6 +16,27 @@ export default {
 
     const path = url.pathname;
 
+    // Canonical URL redirects: prevent duplicate indexing of physical HTML files.
+    if (path === "/index.html") {
+      const u = new URL(request.url);
+      u.pathname = "/";
+      return Response.redirect(u.toString(), 301);
+    }
+
+    const columnHtml = path.match(/^\/columns\/([A-Za-z0-9][A-Za-z0-9-]*)\.html$/);
+    if (columnHtml) {
+      const u = new URL(request.url);
+      u.pathname = `/columns/${columnHtml[1]}`;
+      return Response.redirect(u.toString(), 301);
+    }
+
+    const itemHtml = path.match(/^\/items\/([A-Za-z0-9][A-Za-z0-9-]*)\.html$/);
+    if (itemHtml) {
+      const u = new URL(request.url);
+      u.pathname = `/items/${itemHtml[1]}`;
+      return Response.redirect(u.toString(), 301);
+    }
+
     if (path === "/") {
       const u = new URL(request.url);
       u.pathname = "/index.html";
