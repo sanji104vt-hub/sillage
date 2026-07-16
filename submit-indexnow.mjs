@@ -12,13 +12,13 @@ if (!urlList.length) throw new Error("sitemap.xmlにURLがありません");
 if (urlList.some((url) => !url.startsWith(`${SITE}/`))) throw new Error("別ドメインのURLが含まれています");
 
 let keyReady = false;
-for (let attempt = 0; attempt < 5; attempt++) {
+for (let attempt = 0; attempt < 30; attempt++) {
   try {
     const response = await fetch(KEY_LOCATION, { cache: "no-store" });
     keyReady = response.ok && (await response.text()).trim() === KEY;
   } catch {}
   if (keyReady) break;
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => setTimeout(resolve, 3000));
 }
 if (!keyReady) throw new Error(`IndexNowキーを本番で確認できません: ${KEY_LOCATION}`);
 
