@@ -18,3 +18,6 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           wranglerVersion: "4.103.0"
           command: deploy
+
+      - name: Notify search engines via IndexNow
+        run: node submit-indexnow.mjs

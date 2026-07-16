@@ -195,6 +195,12 @@
   .section-head{max-width:1240px;margin:64px auto 0;padding:0 clamp(16px,4vw,48px)}
   .section-head .kick{font-family:"Cormorant",serif;font-style:italic;font-size:16px;color:#8c8c92;letter-spacing:1px}
   .section-head h2{font-family:"Bodoni Moda",serif;font-weight:500;font-size:clamp(22px,3vw,32px);letter-spacing:1px;color:#f0eeea;margin-top:4px}
+  .traffic-hub{max-width:1240px;margin:34px auto 0;padding:0 clamp(16px,4vw,48px)}
+  .traffic-hub-inner{background:#141517;border:1px solid #2c2d31;border-radius:4px;padding:22px clamp(18px,3vw,30px)}
+  .traffic-hub .traffic-label{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#8c8c92;letter-spacing:1px;margin-bottom:13px}
+  .traffic-links{display:flex;flex-wrap:wrap;gap:9px}
+  .traffic-links a{display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;border:1px solid #34353a;border-radius:999px;color:#d7d5d1;text-decoration:none;font-size:12.5px;transition:border-color .18s,color .18s}
+  .traffic-links a:hover{border-color:#c4c6cc;color:#fff}
   .guide-grid{max-width:1240px;margin:26px auto 0;padding:0 clamp(16px,4vw,48px);
     display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
   .gcard{background:#191a1d;border:1px solid #2c2d31;border-radius:4px;padding:20px 20px 18px;
@@ -714,6 +720,20 @@
   </div>
 </section>
 <p class="wheel-hint">tap a family to filter ／ 香りの系統で絞り込む</p>
+
+<nav class="traffic-hub" aria-label="目的から香水記事を選ぶ">
+  <div class="traffic-hub-inner">
+    <p class="traffic-label">popular guides ／ 目的からすぐ読む</p>
+    <div class="traffic-links">
+      <a href="/columns/business-fragrance">ビジネスで外さない香水</a>
+      <a href="/columns/how-to-wear">香水の正しいつけ方</a>
+      <a href="/columns/notes-pyramid">トップ・ミドル・ラストとは</a>
+      <a href="/columns/chanel-vs-dior">シャネルとディオールを比較</a>
+      <a href="/columns/why-margiela-replica">マルジェラのレプリカが人気な理由</a>
+      <a href="/columns/tomford-vs-creed">トム フォードとクリードを比較</a>
+    </div>
+  </div>
+</nav>
 
 <div class="section-head">
   <p class="kick">— ten families</p>
@@ -1330,11 +1350,7 @@ function buildBrandTools(){
     if(v==="all")b.classList.add("on");
     b.onclick=()=>{brandState.tier=v;
       tierBox.querySelectorAll(".chip").forEach(x=>x.classList.toggle("on",x===b));
-      renderBrands();attachHearts();
-renderQuiz();
-buildMegaTimeline();
-buildCompares();
-addArticleLinks();};
+      renderBrands();attachHearts();};
     tierBox.appendChild(b);
   });
   const sortBox=document.getElementById("brandSortChips");
@@ -2315,6 +2331,9 @@ renderQuiz();
 document.getElementById('favBtn').onclick=openFavorites;
 buildGuide();
 buildColumns();
+buildMegaTimeline();
+buildCompares();
+addArticleLinks();
 buildChips("sceneChips",SCENE,"scene");
 buildChips("seasonChips",SEASON,"season");
 buildChips("genderChips",GENDER,"gender");
