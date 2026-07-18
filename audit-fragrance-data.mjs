@@ -328,3 +328,7 @@ if (integrityErrors.length) {
   integrityErrors.forEach((error) => console.error(error));
   process.exitCode = 1;
 }
+if (process.argv.includes("--links")) {
+  const { runLinkAudit } = await import("./audit-fragrance-links.mjs");
+  await runLinkAudit();
+}

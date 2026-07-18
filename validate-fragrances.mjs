@@ -13,6 +13,13 @@ const PILOT_SLUGS = new Set([
   "muji-1", "dior-2", "ysl-2", "versace-1", "tom-ford-1",
   "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1",
 ]);
+const SECOND_BATCH_SLUGS = new Set([
+  "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
+  "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4",
+  "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3",
+  "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "purchaseLinks", "sources", "verifiedAt", "updatedAt",
@@ -58,8 +65,9 @@ validateInlineScripts("public/index.html", source);
 
 fragrances.forEach((item, index) => {
   const slug = slugs[index];
-  const isPilot = PILOT_SLUGS.has(slug);
-  if (isPilot) {
+  const isEnriched = ENRICHED_SLUGS.has(slug);
+  const isSecondBatch = SECOND_BATCH_SLUGS.has(slug);
+  if (isEnriched) {
     const concentration = item.concentration;
     if (slug !== "muji-1" && (!concentration?.value || !concentration?.label)) errors.push(`濃度の値または表示ラベルなし: ${slug}`);
     if (slug === "muji-1" && concentration !== null) errors.push(`未確認濃度がnullではない: ${slug}`);
@@ -85,10 +93,14 @@ fragrances.forEach((item, index) => {
     for (const platform of ["official", "amazon", "rakuten"]) {
       const link = item.purchaseLinks?.[platform];
       if (link !== null && (!validUrl(link?.url) || !validDate(link?.verifiedAt))) errors.push(`${platform}リンクが不正: ${slug}`);
+      if (link !== null && hasOwn(link, "type") && !["product", "search"].includes(link.type)) errors.push(`${platform}リンク種別が不正: ${slug}`);
+      if (isSecondBatch && link !== null && !["product", "search"].includes(link.type)) errors.push(`${platform}リンク種別なし: ${slug}`);
     }
     const sourceUrls = new Set();
     for (const sourceEntry of item.sources || []) {
       if (!validUrl(sourceEntry.url) || !sourceEntry.publisher || !sourceEntry.title || !validDate(sourceEntry.accessedAt)) errors.push(`情報源の必須値が不正: ${slug}`);
+      if (isSecondBatch && !["brand_official", "authorized", "retailer"].includes(sourceEntry.sourceType)) errors.push(`情報源種別が不正: ${slug}`);
+      if (isSecondBatch && !sourceEntry.market) errors.push(`情報源の市場区分なし: ${slug}`);
       if (sourceUrls.has(sourceEntry.url)) errors.push(`出典URLが重複: ${slug}`);
       sourceUrls.add(sourceEntry.url);
       for (const support of sourceEntry.supports || []) {
@@ -138,10 +150,10 @@ fragrances.forEach((item, index) => {
   if (buyLinks.some((match) => !["noopener", "noreferrer"].every((rel) => match[1].includes(rel)))) errors.push(`購入リンクrel不足: ${path}`);
   const sponsoredCount = [item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url || item.rakuten].filter(Boolean).length * 2;
   if (buyLinks.filter((match) => match[1].includes("sponsored")).length !== sponsoredCount) errors.push(`広告リンクのsponsored指定が不正: ${path}`);
-  if (isPilot && (item.sources || []).length && !html.includes('class="section sources"')) errors.push(`情報源セクションなし: ${path}`);
-  if (!isPilot && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);
-  if (isPilot && !html.includes(`情報確認日：${Number(item.verifiedAt.slice(0, 4))}年`)) errors.push(`情報確認日表示なし: ${path}`);
-  if (!isPilot && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
+  if (isEnriched && (item.sources || []).length && !html.includes('class="section sources"')) errors.push(`情報源セクションなし: ${path}`);
+  if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);
+  if (isEnriched && !html.includes(`情報確認日：${Number(item.verifiedAt.slice(0, 4))}年`)) errors.push(`情報確認日表示なし: ${path}`);
+  if (!isEnriched && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
   if (item.img && !/<img class="photo"[^>]+alt="[^"]+"/.test(html)) errors.push(`商品画像altなし: ${path}`);
   if (!item.img && !html.includes('class="product-hero no-image"')) errors.push(`画像なしレイアウト未適用: ${path}`);
 
@@ -165,6 +177,13 @@ fragrances.forEach((item, index) => {
 console.log(`商品総数: ${fragrances.length}`);
 for (const [label, count] of Object.entries(missing)) console.log(`${label}: ${count}`);
 if (fragrances.length !== 92) errors.push(`商品総数が92件ではありません: ${fragrances.length}`);
+if (SECOND_BATCH_SLUGS.size !== 20) errors.push(`第2段階の商品数が20件ではありません: ${SECOND_BATCH_SLUGS.size}`);
+const secondBatchItems = fragrances.filter((_, index) => SECOND_BATCH_SLUGS.has(slugs[index]));
+const brandCounts = new Map();
+for (const item of secondBatchItems) brandCounts.set(item.brand, (brandCounts.get(item.brand) || 0) + 1);
+if (brandCounts.size < 15) errors.push(`第2段階のブランド数が15未満です: ${brandCounts.size}`);
+if ([...brandCounts.values()].some((count) => count > 2)) errors.push("第2段階に同一ブランド3件以上があります");
+if (!secondBatchItems.some((item) => item.purchaseLinks?.rakuten) || !secondBatchItems.some((item) => !item.purchaseLinks?.rakuten)) errors.push("第2段階に楽天リンクあり・なしの両ケースがありません");
 
 if (errors.length) {
   console.error("\n検証エラー:");

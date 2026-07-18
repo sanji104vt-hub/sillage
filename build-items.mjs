@@ -137,10 +137,11 @@ function pageHTML(p, related) {
   const officialUrl = p.purchaseLinks?.official?.url || "";
   const amazonUrl = p.purchaseLinks?.amazon?.url || "";
   const rakutenUrl = p.purchaseLinks?.rakuten?.url || p.rakuten || "";
+  const purchaseLabel = (link, shop) => link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
   const purchaseButtons = [
-    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
-    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">Amazonで確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
-    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
+    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
   const sizeSummary = formatSizes(p.sizes);
