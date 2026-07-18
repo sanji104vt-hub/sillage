@@ -322,7 +322,7 @@ function renderArticle(article, all) {
 <section class="featured"><h2>関連する香水を詳しく見る</h2>${items.map(x=>`<a href="/items/${x.slug}">${esc(x.name)}の香りを見る →</a>`).join("")}</section>
 <section class="other"><h2>次に読む</h2>${others.map(x=>`<a href="/columns/${x.slug}">${esc(x.title)}</a>`).join("")}</section>
 <section class="share-tools"><p>share ／ 役立ったら共有</p><div class="share-actions"><a href="${xUrl}" target="_blank" rel="noopener">Xで共有</a><a href="${lineUrl}" target="_blank" rel="noopener">LINEで送る</a><button type="button" onclick="shareSillage(this)">リンクをコピー</button></div></section><a class="backhome" href="/">← Sillageトップへ戻る</a></main>
-<footer>当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文とグラフはブランド公開情報と香調構成をもとにしたSillage編集部の独自整理であり、香りの感じ方には個人差があります。<br><a href="/">Sillage（シヤージュ）— 香りで選ぶメンズ香水比較</a></footer>
+<footer>当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文とグラフはブランド公開情報と香調構成をもとにしたSillage編集部の独自整理であり、香りの感じ方には個人差があります。<br><a href="/">Sillage（シヤージュ）— 香調・シーン・季節から選ぶ香水ガイド</a></footer>
 <script>async function shareSillage(button){if(navigator.share){try{await navigator.share({title:document.title,url:location.href});return}catch(e){if(e&&e.name==='AbortError')return}}if(navigator.clipboard){await navigator.clipboard.writeText(location.href);button.textContent='コピーしました'}}</script></body></html>`;
 }
 

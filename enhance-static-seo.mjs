@@ -106,6 +106,11 @@ for (const path of files) {
   }
 
   if (rel.startsWith("brand-") && rel.endsWith(".html")) {
+    const previousBrandTitle = html.match(/<title>(.*?)<\/title>/s)?.[1];
+    if (previousBrandTitle?.includes("メンズ人気の系統と選び方")) {
+      const comprehensiveTitle = previousBrandTitle.replace("メンズ人気の系統と選び方", "香調・代表作の選び方");
+      html = html.replaceAll(previousBrandTitle, comprehensiveTitle);
+    }
     const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
     const title = html.match(/<title>(.*?)<\/title>/s)?.[1];
     const description = html.match(/<meta name="description" content="([^"]*)">/)?.[1];

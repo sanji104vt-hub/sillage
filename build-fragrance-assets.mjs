@@ -17,7 +17,7 @@ const familyLabels = Object.fromEntries(families.map((family) => [family.key, fa
 const itemList = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Sillage 掲載メンズ香水一覧",
+  name: "Sillage 掲載香水一覧",
   numberOfItems: document.fragrances.length,
   itemListElement: document.fragrances.map((item, index) => ({
     "@type": "ListItem",
