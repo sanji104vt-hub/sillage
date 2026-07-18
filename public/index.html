@@ -1248,6 +1248,14 @@ function initFilterShortcuts(){
     });
   });
 }
+function applyFiltersFromUrl(){
+  const params=new URLSearchParams(window.location.search);
+  const allowed={family:FAM,scene:SCENE,season:SEASON,gender:GENDER,price:PRICE};
+  Object.entries(allowed).forEach(([field,values])=>{
+    const value=params.get(field);
+    if(value&&Object.prototype.hasOwnProperty.call(values,value))state[field]=value;
+  });
+}
 
 /* ---------- render ---------- */
 function matches(p){
@@ -2540,6 +2548,7 @@ buildChips("genderChips",GENDER,"gender");
 buildChips("priceChips",PRICE,"price");
 initFilterShortcuts();
 initAnchorNavigation();
+applyFiltersFromUrl();
 document.getElementById("resetBtn").onclick=()=>{Object.keys(state).forEach(k=>state[k]=null);safeRender();};
 safeRender();
 favLoad();updateFavCount();

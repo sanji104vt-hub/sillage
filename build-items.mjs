@@ -32,6 +32,8 @@ const FAM = Object.fromEntries(FAMILIES.map(f => [f.key, f]));
 const SCENE = new Function("return " + extractLine("const SCENE="))();
 const SEASON = new Function("return " + extractLine("const SEASON="))();
 const PRICE = new Function("return " + extractLine("const PRICE="))();
+const LAST_UPDATED = "2026年7月18日";
+const PRICE_RANK = { petit: 1, mid: 2, high: 3 };
 
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
 const BRAND_SLUG = {
@@ -71,6 +73,26 @@ const itemsWithSlug = PERFUMES.map((p, idx) => {
 const escape = s => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const escapeJson = s => JSON.stringify(String(s || ""));
 
+const filterUrl = (field, value) => `/?${field}=${encodeURIComponent(value)}#fragrances`;
+
+function uniqueRelated(p, all) {
+  const result = [];
+  const append = (candidates) => candidates.forEach((candidate) => {
+    if (candidate.slug !== p.slug && !result.some((item) => item.slug === candidate.slug)) result.push(candidate);
+  });
+  append(all.filter((q) => q.brand === p.brand));
+  append(all.filter((q) => q.family === p.family));
+  append(all.filter((q) => (q.scenes || []).some((scene) => (p.scenes || []).includes(scene))));
+  return result.slice(0, 3);
+}
+
+function comparisonLabel(p, candidate) {
+  if ((PRICE_RANK[candidate.priceTier] || 0) < (PRICE_RANK[p.priceTier] || 0)) return "価格帯を抑えやすい";
+  if (!(p.scenes || []).includes("business") && (candidate.scenes || []).includes("business")) return "ビジネス向け";
+  if (!(p.scenes || []).includes("date") && (candidate.scenes || []).includes("date")) return "デート向け";
+  return "";
+}
+
 function pageHTML(p, related) {
   const famLabel = FAM[p.family]?.ja || p.family;
   const famColor = FAM[p.family]?.color || "#aeb0b6";
@@ -104,10 +126,27 @@ function pageHTML(p, related) {
   };
 
   const buyBtn = p.rakuten
-    ? `<a class="buy" href="${escape(p.rakuten)}" target="_blank" rel="nofollow sponsored noopener">楽天で見る</a>`
-    : `<a class="buy" href="/" rel="nofollow">Sillageトップへ</a>`;
-
-  const relatedLinks = related.map(r => `<a href="/items/${r.slug}"><b>${escape(r.brand)}</b> ${escape(r.name)}</a>`).join("");
+    ? `<a class="buy" href="${escape(p.rakuten)}" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>`
+    : "";
+  const notes = [
+    { key: "top", label: "つけた直後", time: "トップノートの目安", value: p.top },
+    { key: "mid", label: "30分〜数時間", time: "ミドルノートの目安", value: p.mid },
+    { key: "last", label: "数時間後", time: "ラストノートの目安", value: p.last },
+  ].filter((note) => note.value);
+  const sceneTags = (p.scenes || []).map((scene) => `<a class="tag" href="${filterUrl("scene", scene)}"><span>${escape(SCENE[scene] || scene)}</span><span class="sr-only">の香水一覧へ</span></a>`).join("");
+  const seasonTags = (p.seasons || []).map((season) => `<a class="tag" href="${filterUrl("season", season)}"><span>${escape(SEASON[season] || season)}</span><span class="sr-only">向けの香水一覧へ</span></a>`).join("");
+  const relatedCards = related.map((r) => {
+    const label = comparisonLabel(p, r);
+    const relation = r.brand === p.brand ? "同じブランド" : r.family === p.family ? "同じ香調" : "近い利用シーン";
+    return `<article class="compare-card">
+      <p class="compare-reason">${escape(relation)}</p>
+      <p class="compare-brand">${escape(r.brand)}</p>
+      <h3><a href="/items/${r.slug}">${escape(r.name)}</a></h3>
+      <dl><div><dt>香調</dt><dd>${escape(FAM[r.family]?.ja || r.family)}</dd></div><div><dt>価格帯</dt><dd>${escape(PRICE[r.priceTier] || r.priceTier || "")}</dd></div></dl>
+      ${label ? `<p class="compare-label">違い：${escape(label)}</p>` : ""}
+      <a class="detail-link" href="/items/${r.slug}">香りを詳しく見る <span aria-hidden="true">→</span></a>
+    </article>`;
+  }).join("");
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -177,6 +216,34 @@ h1{font-family:"Shippori Mincho",serif;font-weight:600;font-size:clamp(24px,4.5v
 .backhome{display:inline-block;margin-top:36px;font-family:"Cormorant",serif;font-style:italic;font-size:16px;color:#e9e7e3;border-bottom:1px solid #c4c6cc;padding-bottom:2px;text-decoration:none}
 footer{background:#141517;padding:32px clamp(16px,4vw,48px);border-top:1px solid #2c2d31;font-size:12px;color:#8c8c92;line-height:1.8}
 footer a{color:#aeb0b6}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+a:focus-visible,button:focus-visible{outline:2px solid #e9e7e3;outline-offset:4px}
+article{max-width:1060px}
+.product-hero{display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:clamp(36px,7vw,84px);align-items:center;margin-bottom:58px}
+.product-hero.no-image{grid-template-columns:minmax(0,720px);justify-content:center}
+.product-visual{min-width:0}.product-visual .photo{width:100%;max-width:420px;margin:0;background:#fafaf7;padding:clamp(18px,4vw,38px);border-radius:4px}
+.product-copy{min-width:0}.eyebrow{font-family:"Cormorant",serif;font-style:italic;font-size:13px;letter-spacing:1.2px;color:#8c8c92;margin-bottom:9px}
+.product-copy h1{font-size:clamp(28px,4.8vw,46px);line-height:1.35;overflow-wrap:anywhere}.product-copy .h1sub{margin-bottom:18px}
+.hero-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 22px;margin:24px 0 28px;padding:20px 0;border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}
+.hero-facts div{min-width:0}.hero-facts dt{font-family:"Cormorant",serif;font-style:italic;font-size:13px;color:#8c8c92}.hero-facts dd{font-size:14px;color:#e1dfda;margin-top:2px;overflow-wrap:anywhere}
+.price-note{display:block;font-size:10.5px;color:#77787e;margin-top:3px}.updated{font-size:11.5px;color:#77787e;margin-top:15px}
+.ad-note{font-size:11px;color:#8c8c92;margin:0 0 9px;line-height:1.7}.hero-actions{margin-bottom:0}
+.section{padding:42px 0;border-top:1px solid #2c2d31}.section-kicker{font-family:"Cormorant",serif;font-style:italic;color:#8c8c92;font-size:14px;letter-spacing:.7px}
+.section h2{font-family:"Shippori Mincho",serif;font-size:clamp(22px,3vw,30px);font-weight:600;letter-spacing:.5px;margin:3px 0 20px;color:#f0eeea}
+.decision{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,.8fr);gap:26px}.decision .verdict{margin:0}.decision-list{display:grid;gap:16px}
+.decision-list dt{font-family:"Cormorant",serif;font-style:italic;color:#8c8c92;font-size:13px}.decision-list dd{color:#dedbd5;font-size:14px;margin-top:3px}
+.scent-timeline{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0}.scent-timeline::before{content:"";position:absolute;top:18px;left:16.66%;right:16.66%;height:1px;background:#44454a}
+.note-stage{position:relative;padding:0 24px 0 0;min-width:0}.note-stage+.note-stage{padding-left:24px}.note-dot{position:relative;z-index:1;display:block;width:9px;height:9px;margin:14px 0 22px;border-radius:50%;background:var(--note-color);box-shadow:0 0 0 6px #0d0e10}
+.note-stage h3{font-family:"Shippori Mincho",serif;font-size:17px;color:#ece9e3}.note-time{font-size:11px;color:#77787e;margin-top:2px}.note-name{font-size:14px;color:#cfcac3;line-height:1.8;margin-top:10px}
+.timeline-note{font-size:11px;color:#77787e;margin-top:22px;line-height:1.75}
+.usage-groups{display:grid;grid-template-columns:1fr 1fr;gap:28px}.usage-group h3{font-family:"Cormorant",serif;font-style:italic;font-size:15px;font-weight:500;color:#aeb0b6;margin-bottom:10px}.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{display:inline-flex;align-items:center;min-height:42px;padding:8px 15px;border:1px solid #34353a;color:#d8d5cf;text-decoration:none;font-size:13px;transition:border-color .18s,color .18s}.tag:hover{border-color:#aeb0b6;color:#fff}
+.compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.compare-card{max-width:none;padding:22px 0 0;border-top:2px solid #34353a}.compare-reason{font-size:10.5px;letter-spacing:1.3px;color:#8c8c92;text-transform:uppercase}.compare-brand{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;margin-top:17px}.compare-card h3{font-family:"Shippori Mincho",serif;font-size:18px;line-height:1.5;margin:5px 0 16px}.compare-card h3 a{color:#f0eeea;text-decoration:none}.compare-card h3 a:hover{text-decoration:underline}
+.compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
+.journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
+@media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
+@media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
@@ -186,33 +253,76 @@ footer a{color:#aeb0b6}
 </header>
 <article>
   <p class="crumb"><a href="/">Sillage</a>${brandLink ? ` ／ <a href="${brandLink}">${escape(p.brand)}</a>` : ""} ／ ${escape(p.name)}</p>
-  <p class="brand-line">${escape(p.brand)}</p>
-  <h1>${escape(p.name)}</h1>
-  <p class="h1sub">${escape(p.brand)} — ${escape(famLabel)}</p>
-  <span class="fam-pill" style="background:${famColor}">${escape(famLabel)}</span>
-  ${p.img ? `<img class="photo" src="${escape(p.img)}" alt="${escape(p.brand)} ${escape(p.name)}" loading="lazy">` : ""}
-  <div class="pyramid">
-    <div class="row"><span class="lv lv-top">Top</span><span class="val">${escape(p.top)}</span></div>
-    <div class="row"><span class="lv lv-mid">Middle</span><span class="val">${escape(p.mid)}</span></div>
-    <div class="row"><span class="lv lv-last">Last</span><span class="val">${escape(p.last)}</span></div>
-  </div>
-  <dl class="meta-grid">
-    <dt>系統</dt><dd>${escape(famLabel)}</dd>
-    <dt>シーン</dt><dd>${escape(scenes)}</dd>
-    <dt>季節</dt><dd>${escape(seasons)}</dd>
-    <dt>価格帯</dt><dd>${escape(priceTier)}（${escape(p.price || "")}）</dd>
-    ${p.releaseYear ? `<dt>発売</dt><dd>${p.releaseYear}年</dd>` : ""}
-  </dl>
-  <p class="verdict"><span class="vlabel">Sillage の見立て</span>${escape(p.verdict || "")}</p>
-  <div class="actions">
-    ${buyBtn}
-    ${brandLink ? `<a class="brand-link" href="${brandLink}">${escape(p.brand)}の特集ページ →</a>` : ""}
-  </div>
-  <div class="related">
-    <h2>同じ ${escape(famLabel)} の香水</h2>
-    ${relatedLinks || "<p>関連香水はありません。</p>"}
-  </div>
-  <a class="backhome" href="/">← Sillage トップへ（他の香水を探す）</a>
+  <section class="product-hero${p.img ? "" : " no-image"}" aria-labelledby="product-title">
+    ${p.img ? `<div class="product-visual"><img class="photo" src="${escape(p.img)}" alt="${escape(p.brand)} ${escape(p.name)}の商品画像" fetchpriority="high"></div>` : ""}
+    <div class="product-copy">
+      <p class="eyebrow">Fragrance detail</p>
+      <p class="brand-line">${brandLink ? `<a href="${brandLink}" style="color:inherit;text-decoration:none">${escape(p.brand)}</a>` : escape(p.brand)}</p>
+      <h1 id="product-title">${escape(p.name)}</h1>
+      <p class="h1sub">${escape(p.brand)} — ${escape(famLabel)}</p>
+      <a class="fam-pill" style="background:${famColor};text-decoration:none" href="${filterUrl("family", p.family)}">${escape(famLabel)}</a>
+      <dl class="hero-facts">
+        <div><dt>香調ファミリー</dt><dd>${escape(famLabel)}</dd></div>
+        ${scenes ? `<div><dt>主な利用シーン</dt><dd>${escape(scenes)}</dd></div>` : ""}
+        ${seasons ? `<div><dt>主な季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
+        ${p.price ? `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>` : priceTier ? `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>` : ""}
+        ${p.releaseYear ? `<div><dt>発売年</dt><dd>${p.releaseYear}年</dd></div>` : ""}
+      </dl>
+      ${p.rakuten ? `<p class="ad-note">PR：購入リンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions">${buyBtn}</div>` : ""}
+      <p class="updated">最終更新日：${LAST_UPDATED}</p>
+    </div>
+  </section>
+
+  ${(p.verdict || scenes || seasons) ? `<section class="section" aria-labelledby="decision-title">
+    <p class="section-kicker">At a glance</p>
+    <h2 id="decision-title">この香水が合う人</h2>
+    <div class="decision">
+      ${p.verdict ? `<p class="verdict"><span class="vlabel">Sillage の見立て</span>${escape(p.verdict)}</p>` : ""}
+      <dl class="decision-list">
+        ${scenes ? `<div><dt>使いやすい場面</dt><dd>${escape(scenes)}</dd></div>` : ""}
+        ${seasons ? `<div><dt>似合う季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
+      </dl>
+    </div>
+  </section>` : ""}
+
+  ${notes.length ? `<section class="section" aria-labelledby="timeline-title">
+    <p class="section-kicker">Scent over time</p>
+    <h2 id="timeline-title">香りの時間変化</h2>
+    <div class="scent-timeline" aria-label="${escape(p.name)}の香りの変化">
+      ${notes.map((note, index) => `<div class="note-stage" style="--note-color:${index === 0 ? "#e9e7e3" : index === 1 ? "#c9b558" : "#c4889c"}"><span class="note-dot" aria-hidden="true"></span><h3>${note.label}</h3><p class="note-time">${note.time}</p><p class="note-name">${escape(note.value)}</p></div>`).join("")}
+    </div>
+    <p class="timeline-note">時間表記は一般的な香り方の目安です。肌質、気温、つける量によって変化の速さや感じ方は異なります。</p>
+  </section>` : ""}
+
+  ${(sceneTags || seasonTags) ? `<section class="section" aria-labelledby="usage-title">
+    <p class="section-kicker">When to wear</p>
+    <h2 id="usage-title">使用シーンと季節</h2>
+    <div class="usage-groups">
+      ${sceneTags ? `<div class="usage-group"><h3>シーンから探す</h3><div class="tags">${sceneTags}</div></div>` : ""}
+      ${seasonTags ? `<div class="usage-group"><h3>季節から探す</h3><div class="tags">${seasonTags}</div></div>` : ""}
+    </div>
+  </section>` : ""}
+
+  ${relatedCards ? `<section class="section" aria-labelledby="compare-title">
+    <p class="section-kicker">Compare</p>
+    <h2 id="compare-title">似た香水と比べる</h2>
+    <div class="compare-grid">${relatedCards}</div>
+  </section>` : ""}
+
+  <section class="section" aria-labelledby="journey-title">
+    <p class="section-kicker">Explore Sillage</p>
+    <h2 id="journey-title">香り選びをもう少し深く</h2>
+    <nav class="journey-links" aria-label="関連ページ">
+      ${brandLink ? `<a href="${brandLink}"><span>同じブランドの香水を見る</span><span aria-hidden="true">→</span></a>` : ""}
+      <a href="${filterUrl("family", p.family)}"><span>同じ香調の香水を見る</span><span aria-hidden="true">→</span></a>
+      <a href="/columns/first-fragrance"><span>初心者向け香水ガイド</span><span aria-hidden="true">→</span></a>
+      <a href="/columns/how-to-wear"><span>香水の正しいつけ方</span><span aria-hidden="true">→</span></a>
+      <a href="/columns/concentration-guide"><span>EDT・EDP・パルファムの違い</span><span aria-hidden="true">→</span></a>
+    </nav>
+  </section>
+
+  ${p.rakuten ? `<section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に価格を確認する</h2><p class="ad-note">PR：以下はアフィリエイト広告です。表示価格や在庫は販売店で最新情報をご確認ください。</p><div class="actions">${buyBtn}</div></section>` : ""}
+  <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
@@ -229,12 +339,9 @@ let totalSize = 0;
 let maxSize = 0;
 const slugMap = {}; // idx → slug for card link injection
 for (const p of itemsWithSlug) {
-  // 同family 3本(自身以外)
-  const related = itemsWithSlug
-    .filter(q => q.family === p.family && q.slug !== p.slug)
-    .sort(() => Math.random() - 0.5)  // 決定的にはならないが表示バラつき用
-    .slice(0, 3);
-  const html = pageHTML(p, related);
+  // 同ブランド → 同香調 → 共通シーンの順で、根拠のある候補を最大3本。
+  const related = uniqueRelated(p, itemsWithSlug);
+  const html = pageHTML(p, related).replace(/[ \t]+$/gm, "");
   const path = `public/items/${p.slug}.html`;
   writeFileSync(path, html);
   totalSize += html.length;

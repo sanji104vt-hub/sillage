@@ -7,7 +7,7 @@ const PUBLIC = "public";
 const SITE = "https://sillage.asutelu.com";
 const GA4_ID = "G-60BQRQWB5M";
 const ARTICLE_PUBLISHED = "2026-07-07T15:18:04+09:00";
-const ARTICLE_MODIFIED = "2026-07-16T00:00:00+09:00";
+const ARTICLE_MODIFIED = "2026-07-16T22:00:00+09:00";
 
 const SHARE_CSS = `<style data-sillage-share>
 .share-tools{margin-top:34px;padding-top:24px;border-top:1px solid #2c2d31}
@@ -187,7 +187,7 @@ for (const path of files) {
       ...data,
       datePublished: data.datePublished || ARTICLE_PUBLISHED,
       dateModified: ARTICLE_MODIFIED,
-      ...(image ? { image } : {}),
+      ...(!data.image && image ? { image } : {}),
     }));
     html = addShareTools(html, title, canonical, '<a class="backhome"');
   }
