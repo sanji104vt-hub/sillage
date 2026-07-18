@@ -1,6 +1,6 @@
 # Sillage 香水データ監査サマリー
 
-- 監査日時（日本時間）: 2026/07/18 21:41
+- 監査日時（日本時間）: 2026/07/18 22:53
 - 監査対象: data/fragrances.json と public/items の生成済み商品ページ
 - 商品総数: 92件
 - 推測補完: なし
@@ -22,8 +22,8 @@
 | 商品ID | 0 | 0.0% |
 | ブランド | 0 | 0.0% |
 | 商品名 | 0 | 0.0% |
-| 香水濃度 | 63 | 68.5% |
-| 容量 | 63 | 68.5% |
+| 香水濃度 | 35 | 38.0% |
+| 容量 | 39 | 42.4% |
 | 参考価格 | 0 | 0.0% |
 | 発売年 | 4 | 4.3% |
 | トップノート | 0 | 0.0% |
@@ -32,17 +32,17 @@
 | 香調 | 0 | 0.0% |
 | シーン | 0 | 0.0% |
 | 季節 | 0 | 0.0% |
-| おすすめする人 | 62 | 67.4% |
-| おすすめしにくい人 | 62 | 67.4% |
-| 注意点 | 74 | 80.4% |
+| おすすめする人 | 31 | 33.7% |
+| おすすめしにくい人 | 31 | 33.7% |
+| 注意点 | 71 | 77.2% |
 | 香りプロフィール数値 | 92 | 100.0% |
 | Amazonリンク | 92 | 100.0% |
 | 楽天リンク | 14 | 15.2% |
-| 公式リンク | 63 | 68.5% |
+| 公式リンク | 38 | 41.3% |
 | 関連商品 | 0 | 0.0% |
 | SEOタイトル | 0 | 0.0% |
 | SEO説明 | 0 | 0.0% |
-| 情報出典 | 63 | 68.5% |
+| 情報出典 | 35 | 38.0% |
 
 ## 欠損が少ない商品 10件
 
@@ -63,16 +63,16 @@
 
 | 商品ID | ブランド | 商品名 | 欠損数 | 欠損項目 |
 |---|---|---|---:|---|
-| atelier-cologne-1 | Atelier Cologne | オランジュ サングィン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
 | azzaro-3 | Azzaro | ワンテッド | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
-| brut-1 | Brut | クラシック | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
 | dolce-gabbana-2 | Dolce&Gabbana | ザ ワン フォー メン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
-| jean-paul-gaultier-1 | Jean Paul Gaultier | ル マル | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
 | john-varvatos-1 | John Varvatos | アーティザン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
 | paco-rabanne-2 | Paco Rabanne | 1 ミリオン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
-| parfums-de-marly-1 | Parfums de Marly | レイトン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
-| ysl-1 | YSL | Y メン オーデパルファン | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
 | ysl-4 | YSL | ラ ニュイ ドゥ ロム | 10 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、楽天リンク、公式リンク、情報出典 |
+| acqua-di-parma-2 | Acqua di Parma | ブルー メディテラネオ アランチャ | 9 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、公式リンク、情報出典 |
+| aramis-1 | Aramis | アラミス | 9 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、公式リンク、情報出典 |
+| bvlgari-2 | Bvlgari | ブルガリ プールオム | 9 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、公式リンク、情報出典 |
+| bvlgari-3 | Bvlgari | アクア プールオム | 9 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、公式リンク、情報出典 |
+| chanel-5 | Chanel | プール ムッシュ | 9 | 香水濃度、容量、おすすめする人、おすすめしにくい人、注意点、香りプロフィール数値、Amazonリンク、公式リンク、情報出典 |
 
 ## 外部リンク監査
 
@@ -93,7 +93,7 @@
 ### 公式
 
 - フィールド自体なし: 0件
-- 空文字: 63件（4711-1、atelier-cologne-1、guerlain-1、muji-1、dolce-gabbana-1、hermes-2、ck-1、montblanc-1、azzaro-1、chanel-1、paco-rabanne-1、nautica-1、brut-1、ysl-1、chanel-2、gucci-1、dior-3、calvin-klein-1、chanel-3、gucci-2、jo-malone-2、marc-jacobs-1、jo-malone-3、versace-2、azzaro-2、thierry-mugler-1、jean-paul-gaultier-1、giorgio-armani-1、viktor-rolf-1、prada-1、carolina-herrera-1、parfums-de-marly-1、dior-5、paco-rabanne-2、ysl-4、viktor-rolf-2、dolce-gabbana-2、azzaro-3、maison-francis-kurkdjian-1、versace-3、dior-6、giorgio-armani-2、le-labo-1、dunhill-1、prada-2、john-varvatos-1、montblanc-2、jo-malone-4、hugo-boss-1、dior-7、givenchy-1、aramis-1、chanel-5、ysl-5、chanel-6、narciso-rodriguez-1、narciso-rodriguez-2、glossier-1、bvlgari-2、davidoff-1、paco-rabanne-3、bvlgari-3、acqua-di-parma-2）
+- 空文字: 38件（atelier-cologne-1、muji-1、hermes-2、ck-1、paco-rabanne-1、brut-1、giorgio-armani-1、dior-5、paco-rabanne-2、ysl-4、viktor-rolf-2、dolce-gabbana-2、azzaro-3、maison-francis-kurkdjian-1、versace-3、dior-6、giorgio-armani-2、le-labo-1、dunhill-1、prada-2、john-varvatos-1、montblanc-2、jo-malone-4、hugo-boss-1、dior-7、givenchy-1、aramis-1、chanel-5、ysl-5、chanel-6、narciso-rodriguez-1、narciso-rodriguez-2、glossier-1、bvlgari-2、davidoff-1、paco-rabanne-3、bvlgari-3、acqua-di-parma-2）
 - 不正形式: 0件
 - 同一URLの重複グループ: 0組
 
@@ -114,8 +114,8 @@
 ## 最終更新日の一括固定値
 
 - 一括固定値利用: 未検出
-- 2026年7月18日: 30件
-- （更新日なし）: 62件
+- 2026年7月18日: 61件
+- （更新日なし）: 31件
 
 ## 整合性エラー
 

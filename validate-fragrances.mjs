@@ -16,7 +16,15 @@ const SECOND_BATCH_SLUGS = new Set([
   "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3",
   "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS]);
+const THIRD_BATCH_SLUGS = new Set([
+  "4711-1", "atelier-cologne-1", "guerlain-1", "dolce-gabbana-1", "hermes-2",
+  "ck-1", "montblanc-1", "azzaro-1", "chanel-1", "paco-rabanne-1",
+  "nautica-1", "brut-1", "ysl-1", "chanel-2", "gucci-1", "dior-3",
+  "calvin-klein-1", "chanel-3", "gucci-2", "jo-malone-2", "marc-jacobs-1",
+  "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1", "jean-paul-gaultier-1",
+  "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",
@@ -75,8 +83,8 @@ fragrances.forEach((item, index) => {
   const isSecondBatch = SECOND_BATCH_SLUGS.has(slug);
   if (isEnriched) {
     const concentration = item.concentration;
-    if (slug !== "muji-1" && (!concentration?.value || !concentration?.label)) errors.push(`濃度の値または表示ラベルなし: ${slug}`);
-    if (slug === "muji-1" && concentration !== null) errors.push(`未確認濃度がnullではない: ${slug}`);
+    if (concentration !== null && (!concentration?.value || !concentration?.label)) errors.push(`濃度の値または表示ラベルなし: ${slug}`);
+    if (concentration === null && (item.sources || []).some((sourceEntry) => sourceEntry.supports?.includes("concentration"))) errors.push(`濃度出典があるのに値がnull: ${slug}`);
     if (!Array.isArray(item.sizes)) errors.push(`sizesが配列ではない: ${slug}`);
     const seenVolumes = new Set();
     for (const size of item.sizes || []) {
@@ -179,6 +187,8 @@ console.log(`商品総数: ${fragrances.length}`);
 for (const [label, count] of Object.entries(missing)) console.log(`${label}: ${count}`);
 if (fragrances.length !== 92) errors.push(`商品総数が92件ではありません: ${fragrances.length}`);
 if (SECOND_BATCH_SLUGS.size !== 20) errors.push(`第2段階の商品数が20件ではありません: ${SECOND_BATCH_SLUGS.size}`);
+if (THIRD_BATCH_SLUGS.size !== 31) errors.push(`第3段階の商品数が31件ではありません: ${THIRD_BATCH_SLUGS.size}`);
+if (ENRICHED_SLUGS.size !== 61) errors.push(`補完済み商品数が61件ではありません: ${ENRICHED_SLUGS.size}`);
 const secondBatchItems = fragrances.filter((_, index) => SECOND_BATCH_SLUGS.has(slugs[index]));
 const brandCounts = new Map();
 for (const item of secondBatchItems) brandCounts.set(item.brand, (brandCounts.get(item.brand) || 0) + 1);

@@ -5,6 +5,12 @@ import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const PILOT_SLUGS = ["muji-1", "dior-2", "ysl-2", "versace-1", "tom-ford-1", "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1"];
 const SECOND_BATCH_SLUGS = ["jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2", "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4", "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3", "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4"];
+const THIRD_BATCH_SLUGS = new Set([
+  "4711-1", "atelier-cologne-1", "guerlain-1", "dolce-gabbana-1", "hermes-2", "ck-1", "montblanc-1", "azzaro-1",
+  "chanel-1", "paco-rabanne-1", "nautica-1", "brut-1", "ysl-1", "chanel-2", "gucci-1", "dior-3", "calvin-klein-1",
+  "chanel-3", "gucci-2", "jo-malone-2", "marc-jacobs-1", "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1",
+  "jean-paul-gaultier-1", "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
+]);
 const REQUEST_DELAY_MS = 450;
 const RETRY_DELAY_MS = 1600;
 const TIMEOUT_MS = 12000;
@@ -92,6 +98,7 @@ function classify(result) {
 
 export async function runLinkAudit() {
   const fragrances = loadFragrances();
+  const phase3Only = process.argv.includes("--phase3");
   const entries = [];
   fragrances.forEach((item) => {
     const slug = item.slug;
@@ -104,6 +111,10 @@ export async function runLinkAudit() {
       entries.push({ slug, brand: item.brand, name: item.name, category: "source", label: `${sourceIndex + 1}:${source.sourceType || "unspecified"}`, url: source.url ?? "", declaredType: "", expectedDomain: validUrl(source.url) ? new URL(source.url).hostname : "" });
     }
   });
+  if (phase3Only) {
+    const scoped = entries.filter((entry) => THIRD_BATCH_SLUGS.has(entry.slug));
+    entries.splice(0, entries.length, ...scoped);
+  }
   const counts = new Map();
   for (const entry of entries) counts.set(entry.url, (counts.get(entry.url) || 0) + 1);
   const rows = new Array(entries.length);
@@ -136,10 +147,13 @@ export async function runLinkAudit() {
   await Promise.all(Array.from({ length: Math.min(CONCURRENCY, entries.length) }, () => worker()));
   const headers = ["slug", "brand", "name", "category", "label", "declaredType", "detectedType", "url", "formatValid", "duplicateCount", "status", "httpStatus", "finalUrl", "redirectCount", "expectedDomain", "domainMatch", "checkedAt", "note"];
   mkdirSync("reports", { recursive: true });
-  writeFileSync("reports/fragrance-link-audit.csv", `\uFEFF${headers.join(",")}\n${rows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
+  if (!phase3Only) writeFileSync("reports/fragrance-link-audit.csv", `\uFEFF${headers.join(",")}\n${rows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
+  const thirdBatchRows = rows.filter((row) => THIRD_BATCH_SLUGS.has(row.slug));
+  writeFileSync("reports/fragrance-phase3-link-audit.csv", `\uFEFF${headers.join(",")}\n${thirdBatchRows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
   const statusCounts = Object.groupBy ? Object.entries(Object.groupBy(rows, (row) => row.status)).map(([key, values]) => `${key}=${values.length}`).join(", ") : [...new Set(rows.map((row) => row.status))].map((status) => `${status}=${rows.filter((row) => row.status === status).length}`).join(", ");
   console.log(`Link audit: ${rows.length} URLs (${statusCounts})`);
-  console.log("Generated reports/fragrance-link-audit.csv");
+  if (!phase3Only) console.log("Generated reports/fragrance-link-audit.csv");
+  console.log(`Generated reports/fragrance-phase3-link-audit.csv (${thirdBatchRows.length} URLs)`);
   return rows;
 }
 
