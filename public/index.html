@@ -1225,6 +1225,18 @@ function buildChips(id,map,field){
 }
 
 function prefersReducedMotion(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches;}
+function initAnchorNavigation(){
+  document.querySelectorAll('.hero-actions a[href^="#"],.beginner-card[href^="#"]').forEach(link=>{
+    link.addEventListener("click",event=>{
+      const hash=link.getAttribute("href"),target=document.querySelector(hash);
+      if(!target)return;
+      event.preventDefault();
+      history.pushState(null,"",hash);
+      const top=target.getBoundingClientRect().top+window.scrollY-78;
+      window.scrollTo({top,behavior:prefersReducedMotion()?"auto":"smooth"});
+    });
+  });
+}
 function initFilterShortcuts(){
   document.querySelectorAll(".filter-shortcut").forEach(button=>{
     button.addEventListener("click",()=>{
@@ -2527,6 +2539,7 @@ buildChips("seasonChips",SEASON,"season");
 buildChips("genderChips",GENDER,"gender");
 buildChips("priceChips",PRICE,"price");
 initFilterShortcuts();
+initAnchorNavigation();
 document.getElementById("resetBtn").onclick=()=>{Object.keys(state).forEach(k=>state[k]=null);safeRender();};
 safeRender();
 favLoad();updateFavCount();
