@@ -1,18 +1,15 @@
 // 92香水の個別ページ /items/{slug}.html を生成する
-// - PERFUMES 配列と BRANDS 配列を index.html から抽出
+// - 商品データは data/fragrances.json、表示ラベルは index.html から取得
 // - 同系統(family)の他香水3本を related linkに
 // - ブランドページへのリンクとBreadcrumbList JSON-LDを付与
 // - 楽天アフィリエイトURLはPERFUMESに埋め込み済みのものを使用
 // - データにない情報の創作/レビュー捏造は禁止(既存データのみ)
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const html = readFileSync("public/index.html", "utf8");
-
-// PERFUMES を抽出
-const pStart = html.indexOf("const PERFUMES = [");
-const pArr = html.slice(html.indexOf("[", pStart), html.indexOf("\n];", pStart) + 2);
-const PERFUMES = new Function("return " + pArr.replace(/,(\s*\])/g, "$1"))();
+const PERFUMES = loadFragrances();
 
 // BRANDS を抽出
 const bStart = html.indexOf("const BRANDS = [");
@@ -33,6 +30,13 @@ const SCENE = new Function("return " + extractLine("const SCENE="))();
 const SEASON = new Function("return " + extractLine("const SEASON="))();
 const PRICE = new Function("return " + extractLine("const PRICE="))();
 const PRICE_RANK = { petit: 1, mid: 2, high: 3 };
+// 第2段階で既に商品/検索ラベルを公開済みの商品。その他は移行前の「確認」表示を維持する。
+const TYPED_PURCHASE_LABEL_SLUGS = new Set([
+  "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
+  "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4", "tom-ford-2",
+  "creed-1", "diptyque-1", "byredo-1", "tom-ford-3", "le-labo-2",
+  "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4",
+]);
 
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
 const BRAND_SLUG = {
@@ -55,19 +59,7 @@ const BRAND_SLUG = {
   "Aesop": "aesop", "Davidoff": "davidoff", "Issey Miyake": "issey-miyake",
 };
 
-// 各香水のスラッグを {brand-slug}-{index-in-brand} で生成
-const brandCounter = {};
-const itemsWithSlug = PERFUMES.map((p, idx) => {
-  const bs = BRAND_SLUG[p.brand];
-  if (!bs) {
-    // ブランドページを持たないブランド(4711等)は brand を kebab 化
-    const fallback = p.brand.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "") || `item-${idx+1}`;
-    brandCounter[fallback] = (brandCounter[fallback] || 0) + 1;
-    return { ...p, slug: `${fallback}-${brandCounter[fallback]}`, idx };
-  }
-  brandCounter[bs] = (brandCounter[bs] || 0) + 1;
-  return { ...p, slug: `${bs}-${brandCounter[bs]}`, idx };
-});
+const itemsWithSlug = PERFUMES;
 
 const escape = s => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const escapeJson = s => JSON.stringify(String(s || ""));
@@ -136,8 +128,10 @@ function pageHTML(p, related) {
 
   const officialUrl = p.purchaseLinks?.official?.url || "";
   const amazonUrl = p.purchaseLinks?.amazon?.url || "";
-  const rakutenUrl = p.purchaseLinks?.rakuten?.url || p.rakuten || "";
-  const purchaseLabel = (link, shop) => link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
+  const rakutenUrl = p.purchaseLinks?.rakuten?.url || "";
+  const purchaseLabel = (link, shop) => !TYPED_PURCHASE_LABEL_SLUGS.has(p.slug)
+    ? `${shop}で確認`
+    : link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
   const purchaseButtons = [
     officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
     amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
@@ -148,7 +142,15 @@ function pageHTML(p, related) {
   const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const cautionItems = (p.cautions || []).map((item) => `<li>${escape(item)}</li>`).join("");
-  const sourceItems = (p.sources || []).map((source) => `<li><span class="source-type">${source.sourceType === "authorized" ? "正規取扱店" : source.sourceType === "retailer" ? "小売店" : "公式"}</span><a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher || source.title)} — ${escape(source.title)} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a><span class="source-date">確認日：${escape(formatDate(source.accessedAt))}</span></li>`).join("");
+  const sourceLabels = {
+    official: "公式",
+    "official-press": "公式発表",
+    "authorized-distributor": "正規取扱店",
+    "department-store": "百貨店",
+    "authorized-retailer": "正規取扱店",
+    "major-retailer": "主要販売店",
+  };
+  const sourceItems = (p.sources || []).map((source) => `<li><span class="source-type">${sourceLabels[source.sourceType] || "情報源"}</span><a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher || source.title)} — ${escape(source.title)} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a><span class="source-date">確認日：${escape(formatDate(source.accessedAt))}</span></li>`).join("");
   const notes = [
     { key: "top", label: "つけた直後", time: "トップノートの目安", value: p.top },
     { key: "mid", label: "30分〜数時間", time: "ミドルノートの目安", value: p.mid },
@@ -368,7 +370,6 @@ if (!existsSync("public/items")) mkdirSync("public/items", { recursive: true });
 
 let totalSize = 0;
 let maxSize = 0;
-const slugMap = {}; // idx → slug for card link injection
 for (const p of itemsWithSlug) {
   // 同ブランド → 同香調 → 共通シーンの順で、根拠のある候補を最大3本。
   const related = uniqueRelated(p, itemsWithSlug);
@@ -377,11 +378,7 @@ for (const p of itemsWithSlug) {
   writeFileSync(path, html);
   totalSize += html.length;
   if (html.length > maxSize) maxSize = html.length;
-  slugMap[p.idx] = p.slug;
 }
-
-// slugMap を JSON 出力(index.html への埋め込み用)
-writeFileSync("build-items-slugmap.json", JSON.stringify(itemsWithSlug.map(p => p.slug)));
 
 console.log(`Generated ${itemsWithSlug.length} item pages`);
 console.log(`Avg size: ${Math.round(totalSize / itemsWithSlug.length)} bytes`);

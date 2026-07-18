@@ -1,13 +1,9 @@
 // Sillageの代表10商品について、補完結果と出典一覧を生成する。
 // 実行: node report-pilot-enrichment.mjs
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
-const source = readFileSync("public/index.html", "utf8");
-const start = source.indexOf("const PERFUMES = [");
-const end = source.indexOf("\n];", start) + 2;
-if (start < 0 || end < 2) throw new Error("public/index.htmlからPERFUMESを取得できません");
-const fragrances = new Function(`return ${source.slice(source.indexOf("[", start), end).replace(/,(\s*\])/g, "$1")}`)();
-const slugs = JSON.parse(readFileSync("build-items-slugmap.json", "utf8"));
+const fragrances = loadFragrances();
 
 const selections = [
   ["muji-1", "必須対象。プチプラのシトラスで、楽天リンクなし・公式商品ページ未確認の欠損ケースを検証するため。"],
@@ -23,9 +19,9 @@ const selections = [
 ];
 
 const items = selections.map(([slug, reason]) => {
-  const index = slugs.indexOf(slug);
-  if (index < 0) throw new Error(`商品が見つかりません: ${slug}`);
-  return { ...fragrances[index], slug, reason };
+  const item = fragrances.find((fragrance) => fragrance.slug === slug);
+  if (!item) throw new Error(`商品が見つかりません: ${slug}`);
+  return { ...item, reason };
 });
 
 const fields = ["concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions", "profile", "purchaseLinks", "sources", "verifiedAt"];
@@ -108,8 +104,8 @@ ${sourceList}
 
 ## データ構造上の問題
 
-- 商品データが public/index.html の大きなインライン配列にあり、商品単位の差分確認とスキーマ検証が難しい構造です。
-- 商品IDが配列順と build-items-slugmap.json に依存しており、並び替え時にIDがずれる可能性があります。
+- 正規化前は商品データが public/index.html の大きなインライン配列にありましたが、現在は data/fragrances.jsonへ移行済みです。
+- 正規化前は商品IDが配列順に依存していましたが、現在は各商品内の固定slugへ移行済みです。
 - 既存の楽天URLと新しい purchaseLinks.rakuten が移行期間中は重複します。全件展開前に正規フィールドを一本化する必要があります。
 - 既存の price は文字列の概算値で、確認日・容量・出典を持ちません。確認済み価格は sizes 内へ分離しました。
 - sourceTypeは今回すべてブランド公式のため表示側で「公式」としています。正規取扱店を使う段階で列挙値を正式に定義する必要があります。

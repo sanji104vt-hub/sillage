@@ -1,7 +1,7 @@
 # Sillage 香水データ監査サマリー
 
-- 監査日時（日本時間）: 2026/07/18 21:06
-- 監査対象: public/index.html の商品配列と public/items の生成済み商品ページ
+- 監査日時（日本時間）: 2026/07/18 21:41
+- 監査対象: data/fragrances.json と public/items の生成済み商品ページ
 - 商品総数: 92件
 - 推測補完: なし
 - 商品データ・UIの変更: なし
@@ -10,7 +10,7 @@
 
 - 香水濃度・容量・おすすめ対象・注意点・プロフィール数値・外部リンク・情報出典は、専用フィールドが存在する場合だけ「あり」と判定しました。
 - 商品名に「EDT」「EDP」が含まれていても、香水濃度として推測していません。
-- 商品IDは既存の build-items-slugmap.json、関連商品・SEOタイトル・SEO説明・最終更新日は生成済み商品詳細HTMLを照合しました。
+- 商品IDは data/fragrances.json 内の固定slug、関連商品・SEOタイトル・SEO説明・最終更新日は生成済み商品詳細HTMLを照合しました。
 - 空文字、未定義、空配列、空オブジェクトを欠損として集計しました。
 - 重複説明文とノート構成は、Unicode正規化・連続空白の統一後に完全一致で判定しました。
 - 外部リンクは http/https URLとして解析でき、ホスト名が存在するかを検証しました。通信先へのアクセス確認は行っていません。
@@ -78,22 +78,22 @@
 
 ### Amazon
 
-- フィールド自体なし: 62件
-- 空文字: 30件（jo-malone-1、acqua-di-parma-1、dior-1、hermes-1、muji-1、dior-2、guerlain-2、ysl-2、dior-4、versace-1、tom-ford-1、mugler-1、ysl-3、maison-margiela-1、bvlgari-1、chanel-4、tom-ford-2、hermes-3、creed-1、diptyque-1、byredo-1、tom-ford-3、guerlain-3、shiro-1、le-labo-2、maison-margiela-2、aesop-1、giorgio-armani-3、issey-miyake-1、versace-4）
+- フィールド自体なし: 0件
+- 空文字: 92件（jo-malone-1、acqua-di-parma-1、dior-1、hermes-1、4711-1、atelier-cologne-1、guerlain-1、muji-1、dolce-gabbana-1、hermes-2、dior-2、ck-1、montblanc-1、azzaro-1、chanel-1、paco-rabanne-1、nautica-1、brut-1、guerlain-2、ysl-1、chanel-2、gucci-1、dior-3、calvin-klein-1、ysl-2、chanel-3、dior-4、gucci-2、jo-malone-2、marc-jacobs-1、jo-malone-3、versace-1、versace-2、azzaro-2、tom-ford-1、mugler-1、thierry-mugler-1、jean-paul-gaultier-1、giorgio-armani-1、viktor-rolf-1、prada-1、carolina-herrera-1、ysl-3、parfums-de-marly-1、maison-margiela-1、dior-5、paco-rabanne-2、bvlgari-1、ysl-4、viktor-rolf-2、dolce-gabbana-2、azzaro-3、maison-francis-kurkdjian-1、versace-3、chanel-4、tom-ford-2、hermes-3、dior-6、creed-1、giorgio-armani-2、le-labo-1、diptyque-1、byredo-1、dunhill-1、prada-2、john-varvatos-1、montblanc-2、jo-malone-4、hugo-boss-1、dior-7、givenchy-1、tom-ford-3、aramis-1、chanel-5、ysl-5、guerlain-3、chanel-6、shiro-1、narciso-rodriguez-1、le-labo-2、maison-margiela-2、narciso-rodriguez-2、glossier-1、bvlgari-2、aesop-1、davidoff-1、giorgio-armani-3、issey-miyake-1、paco-rabanne-3、bvlgari-3、versace-4、acqua-di-parma-2）
 - 不正形式: 0件
 - 同一URLの重複グループ: 0組
 
 ### 楽天
 
-- フィールド自体なし: 10件
-- 空文字: 4件（hermes-1、muji-1、tom-ford-1、hermes-3）
+- フィールド自体なし: 0件
+- 空文字: 14件（hermes-1、atelier-cologne-1、muji-1、brut-1、ysl-1、tom-ford-1、jean-paul-gaultier-1、parfums-de-marly-1、paco-rabanne-2、ysl-4、dolce-gabbana-2、azzaro-3、hermes-3、john-varvatos-1）
 - 不正形式: 0件
 - 同一URLの重複グループ: 0組
 
 ### 公式
 
-- フィールド自体なし: 62件
-- 空文字: 1件（muji-1）
+- フィールド自体なし: 0件
+- 空文字: 63件（4711-1、atelier-cologne-1、guerlain-1、muji-1、dolce-gabbana-1、hermes-2、ck-1、montblanc-1、azzaro-1、chanel-1、paco-rabanne-1、nautica-1、brut-1、ysl-1、chanel-2、gucci-1、dior-3、calvin-klein-1、chanel-3、gucci-2、jo-malone-2、marc-jacobs-1、jo-malone-3、versace-2、azzaro-2、thierry-mugler-1、jean-paul-gaultier-1、giorgio-armani-1、viktor-rolf-1、prada-1、carolina-herrera-1、parfums-de-marly-1、dior-5、paco-rabanne-2、ysl-4、viktor-rolf-2、dolce-gabbana-2、azzaro-3、maison-francis-kurkdjian-1、versace-3、dior-6、giorgio-armani-2、le-labo-1、dunhill-1、prada-2、john-varvatos-1、montblanc-2、jo-malone-4、hugo-boss-1、dior-7、givenchy-1、aramis-1、chanel-5、ysl-5、chanel-6、narciso-rodriguez-1、narciso-rodriguez-2、glossier-1、bvlgari-2、davidoff-1、paco-rabanne-3、bvlgari-3、acqua-di-parma-2）
 - 不正形式: 0件
 - 同一URLの重複グループ: 0組
 

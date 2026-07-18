@@ -1,28 +1,22 @@
 // 補完済み商品の購入リンクと情報源リンクを、低頻度で検査してCSVへ出力する。
 // 実行: node audit-fragrance-data.mjs --links
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const PILOT_SLUGS = ["muji-1", "dior-2", "ysl-2", "versace-1", "tom-ford-1", "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1"];
 const SECOND_BATCH_SLUGS = ["jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2", "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4", "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3", "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4"];
-const TARGET_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS]);
 const REQUEST_DELAY_MS = 450;
 const RETRY_DELAY_MS = 1600;
 const TIMEOUT_MS = 12000;
 const MAX_RETRIES = 1;
 const MAX_REDIRECTS = 8;
+const CONCURRENCY = 4;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const csv = (value) => {
   const text = String(value ?? "");
   return /[",\r\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
 };
-function parsePerfumes() {
-  const html = readFileSync("public/index.html", "utf8");
-  const start = html.indexOf("const PERFUMES = [");
-  const end = html.indexOf("\n];", start) + 2;
-  if (start < 0 || end < 2) throw new Error("PERFUMESを取得できません");
-  return new Function(`return ${html.slice(html.indexOf("[", start), end).replace(/,(\s*\])/g, "$1")}`)();
-}
 function validUrl(value) {
   try {
     const url = new URL(value);
@@ -97,12 +91,10 @@ function classify(result) {
 }
 
 export async function runLinkAudit() {
-  const fragrances = parsePerfumes();
-  const slugs = JSON.parse(readFileSync("build-items-slugmap.json", "utf8"));
+  const fragrances = loadFragrances();
   const entries = [];
-  fragrances.forEach((item, index) => {
-    const slug = slugs[index];
-    if (!TARGET_SLUGS.has(slug)) return;
+  fragrances.forEach((item) => {
+    const slug = item.slug;
     for (const platform of ["official", "amazon", "rakuten"]) {
       const link = item.purchaseLinks?.[platform];
       if (link === null || link === undefined) continue;
@@ -114,12 +106,11 @@ export async function runLinkAudit() {
   });
   const counts = new Map();
   for (const entry of entries) counts.set(entry.url, (counts.get(entry.url) || 0) + 1);
-  const rows = [];
-  for (const entry of entries) {
+  const rows = new Array(entries.length);
+  async function inspectEntry(entry) {
     const formatValid = validUrl(entry.url);
     if (!formatValid) {
-      rows.push({ ...entry, detectedType: "", formatValid: false, duplicateCount: counts.get(entry.url) || 0, status: "manual_review", httpStatus: "", finalUrl: "", redirectCount: 0, domainMatch: false, checkedAt: new Date().toISOString(), note: entry.url ? "invalid_url" : "empty_url" });
-      continue;
+      return { ...entry, detectedType: "", formatValid: false, duplicateCount: counts.get(entry.url) || 0, status: "manual_review", httpStatus: "", finalUrl: "", redirectCount: 0, domainMatch: false, checkedAt: new Date().toISOString(), note: entry.url ? "invalid_url" : "empty_url" };
     }
     const result = await inspectUrl(entry.url);
     let status = classify(result);
@@ -131,9 +122,18 @@ export async function runLinkAudit() {
     if (entry.label === "rakuten" && entry.declaredType && detectedType !== "unknown" && entry.declaredType !== detectedType) notes.push("link_type_mismatch");
     if ((counts.get(entry.url) || 0) > 1) notes.push("duplicate_url_across_fields");
     if (notes.some((note) => ["domain_mismatch", "link_type_mismatch"].includes(note)) && ["ok", "redirect"].includes(status)) status = "manual_review";
-    rows.push({ ...entry, detectedType, formatValid: true, duplicateCount: counts.get(entry.url) || 0, status, httpStatus: result.httpStatus, finalUrl: result.finalUrl, redirectCount: result.redirects.length, domainMatch, checkedAt: new Date().toISOString(), note: [result.error, ...notes].filter(Boolean).join(";") });
+    const row = { ...entry, detectedType, formatValid: true, duplicateCount: counts.get(entry.url) || 0, status, httpStatus: result.httpStatus, finalUrl: result.finalUrl, redirectCount: result.redirects.length, domainMatch, checkedAt: new Date().toISOString(), note: [result.error, ...notes].filter(Boolean).join(";") };
     await sleep(REQUEST_DELAY_MS);
+    return row;
   }
+  let nextIndex = 0;
+  async function worker() {
+    while (nextIndex < entries.length) {
+      const index = nextIndex++;
+      rows[index] = await inspectEntry(entries[index]);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(CONCURRENCY, entries.length) }, () => worker()));
   const headers = ["slug", "brand", "name", "category", "label", "declaredType", "detectedType", "url", "formatValid", "duplicateCount", "status", "httpStatus", "finalUrl", "redirectCount", "expectedDomain", "domainMatch", "checkedAt", "note"];
   mkdirSync("reports", { recursive: true });
   writeFileSync("reports/fragrance-link-audit.csv", `\uFEFF${headers.join(",")}\n${rows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");

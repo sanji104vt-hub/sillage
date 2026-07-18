@@ -1,14 +1,11 @@
 // Sillageの商品データと生成済み商品詳細ページの欠損を集計する。
 // 実行: node validate-fragrances.mjs
 import { existsSync, readFileSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const source = readFileSync("public/index.html", "utf8");
-const start = source.indexOf("const PERFUMES = [");
-const end = source.indexOf("\n];", start) + 2;
-if (start < 0 || end < 2) throw new Error("public/index.html から PERFUMES を取得できません");
-const arraySource = source.slice(source.indexOf("[", start), end).replace(/,(\s*\])/g, "$1");
-const fragrances = new Function(`return ${arraySource}`)();
-const slugs = JSON.parse(readFileSync("build-items-slugmap.json", "utf8"));
+const fragrances = loadFragrances();
+const slugs = fragrances.map((item) => item.slug);
 const PILOT_SLUGS = new Set([
   "muji-1", "dior-2", "ysl-2", "versace-1", "tom-ford-1",
   "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1",
@@ -22,7 +19,7 @@ const SECOND_BATCH_SLUGS = new Set([
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
-  "profile", "purchaseLinks", "sources", "verifiedAt", "updatedAt",
+  "profile", "sources", "verifiedAt", "updatedAt",
 ];
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const today = new Date().toISOString().slice(0, 10);
@@ -54,6 +51,7 @@ const missing = {
 };
 
 const errors = [];
+const slugSet = new Set();
 function validateInlineScripts(path, html) {
   const scripts = [...html.matchAll(/<script(?![^>]*\bsrc=)(?![^>]*type="application\/ld\+json")[^>]*>([\s\S]*?)<\/script>/g)];
   scripts.forEach((match) => {
@@ -65,6 +63,14 @@ validateInlineScripts("public/index.html", source);
 
 fragrances.forEach((item, index) => {
   const slug = slugs[index];
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug || "")) errors.push(`slugが不正: ${slug || `index ${index}`}`);
+  if (slugSet.has(slug)) errors.push(`slugが重複: ${slug}`);
+  slugSet.add(slug);
+  if (!item.purchaseLinks || !["official", "amazon", "rakuten"].every((key) => Object.hasOwn(item.purchaseLinks, key))) errors.push(`purchaseLinks構造が不正: ${slug}`);
+  for (const platform of ["official", "amazon", "rakuten"]) {
+    const link = item.purchaseLinks?.[platform];
+    if (link !== null && (!validUrl(link?.url) || !validDate(link?.verifiedAt) || !["product", "search"].includes(link?.type))) errors.push(`${platform}リンクが不正: ${slug}`);
+  }
   const isEnriched = ENRICHED_SLUGS.has(slug);
   const isSecondBatch = SECOND_BATCH_SLUGS.has(slug);
   if (isEnriched) {
@@ -89,18 +95,12 @@ fragrances.forEach((item, index) => {
     if ((item.notRecommendedFor || []).some((entry) => recommendedTexts.has(entry.text))) errors.push(`おすすめ対象と非推奨の文言が重複: ${slug}`);
     if (!Array.isArray(item.cautions) || item.cautions.length > 3) errors.push(`cautionsが配列でないか3件超: ${slug}`);
     const profileKeys = ["lightToRich", "freshToSweet", "subtleToBold", "dailyToDistinctive", "youthfulToMature"];
-    if (!item.profile || item.profile.method !== "editorial-v1" || profileKeys.some((key) => item.profile[key] !== null)) errors.push(`profileの保留構造が不正: ${slug}`);
-    for (const platform of ["official", "amazon", "rakuten"]) {
-      const link = item.purchaseLinks?.[platform];
-      if (link !== null && (!validUrl(link?.url) || !validDate(link?.verifiedAt))) errors.push(`${platform}リンクが不正: ${slug}`);
-      if (link !== null && hasOwn(link, "type") && !["product", "search"].includes(link.type)) errors.push(`${platform}リンク種別が不正: ${slug}`);
-      if (isSecondBatch && link !== null && !["product", "search"].includes(link.type)) errors.push(`${platform}リンク種別なし: ${slug}`);
-    }
+    if (!item.profile || item.profile.method !== "editorial-v1" || profileKeys.some((key) => item.profile[key] !== null && (!Number.isFinite(item.profile[key]) || item.profile[key] < 0 || item.profile[key] > 100))) errors.push(`profile構造が不正: ${slug}`);
     const sourceUrls = new Set();
     for (const sourceEntry of item.sources || []) {
       if (!validUrl(sourceEntry.url) || !sourceEntry.publisher || !sourceEntry.title || !validDate(sourceEntry.accessedAt)) errors.push(`情報源の必須値が不正: ${slug}`);
-      if (isSecondBatch && !["brand_official", "authorized", "retailer"].includes(sourceEntry.sourceType)) errors.push(`情報源種別が不正: ${slug}`);
-      if (isSecondBatch && !sourceEntry.market) errors.push(`情報源の市場区分なし: ${slug}`);
+      if (!["official", "official-press", "authorized-distributor", "department-store", "authorized-retailer", "major-retailer"].includes(sourceEntry.sourceType)) errors.push(`情報源種別が不正: ${slug}`);
+      if (!["JP", "US", "UK", "EU", "GLOBAL", "OTHER"].includes(sourceEntry.market)) errors.push(`情報源の市場区分が不正: ${slug}`);
       if (sourceUrls.has(sourceEntry.url)) errors.push(`出典URLが重複: ${slug}`);
       sourceUrls.add(sourceEntry.url);
       for (const support of sourceEntry.supports || []) {
@@ -122,7 +122,8 @@ fragrances.forEach((item, index) => {
   if (!item.last) missing["ラストノートなし"]++;
   if (!item.scenes?.length) missing["シーンなし"]++;
   if (!item.seasons?.length) missing["季節なし"]++;
-  if (!item.rakuten) missing["購入リンクなし"]++;
+  if (!Object.values(item.purchaseLinks || {}).some(Boolean)) missing["購入リンクなし"]++;
+  if (Object.hasOwn(item, "rakuten")) errors.push(`旧rakutenフィールドが残っています: ${slug}`);
 
   const path = `public/items/${slug}.html`;
   if (!slug || !existsSync(path)) {
@@ -145,10 +146,10 @@ fragrances.forEach((item, index) => {
   const compareCount = (html.match(/class="compare-card"/g) || []).length;
   if (compareCount > 3) errors.push(`類似商品が3件超: ${path}`);
   const buyLinks = [...html.matchAll(/<a class="buy[^"]*"[^>]*rel="([^"]+)"/g)];
-  const purchaseCount = [item.purchaseLinks?.official?.url, item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url || item.rakuten].filter(Boolean).length;
+  const purchaseCount = [item.purchaseLinks?.official?.url, item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url].filter(Boolean).length;
   if (buyLinks.length !== purchaseCount * 2) errors.push(`購入導線数が不正: ${path} (${buyLinks.length}/${purchaseCount * 2})`);
   if (buyLinks.some((match) => !["noopener", "noreferrer"].every((rel) => match[1].includes(rel)))) errors.push(`購入リンクrel不足: ${path}`);
-  const sponsoredCount = [item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url || item.rakuten].filter(Boolean).length * 2;
+  const sponsoredCount = [item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url].filter(Boolean).length * 2;
   if (buyLinks.filter((match) => match[1].includes("sponsored")).length !== sponsoredCount) errors.push(`広告リンクのsponsored指定が不正: ${path}`);
   if (isEnriched && (item.sources || []).length && !html.includes('class="section sources"')) errors.push(`情報源セクションなし: ${path}`);
   if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);

@@ -1,6 +1,7 @@
 // 第2段階20商品の補完結果と情報源一覧を生成する。
 // 実行: node report-phase2-enrichment.mjs
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const selections = [
   ["jo-malone-1", "高露出の定番シトラス。国内公式と楽天商品リンクを併せて検証するため"],
@@ -28,15 +29,11 @@ const selected = new Set(selections.map(([slug]) => slug));
 const domesticOfficial = new Set(["jo-malone-1", "dior-1", "hermes-1", "dior-4", "bvlgari-1", "chanel-4", "diptyque-1", "byredo-1", "le-labo-2", "maison-margiela-2", "giorgio-armani-3"]);
 const overseasOnly = new Set(["acqua-di-parma-1", "guerlain-2", "mugler-1", "ysl-3", "tom-ford-2", "creed-1", "tom-ford-3", "versace-4"]);
 const directOfficialNotFound = new Set(["giorgio-armani-3"]);
-const sourceHtml = readFileSync("public/index.html", "utf8");
-const start = sourceHtml.indexOf("const PERFUMES = [");
-const end = sourceHtml.indexOf("\n];", start) + 2;
-const perfumes = new Function(`return ${sourceHtml.slice(sourceHtml.indexOf("[", start), end).replace(/,(\s*\])/g, "$1")}`)();
-const slugs = JSON.parse(readFileSync("build-items-slugmap.json", "utf8"));
+const perfumes = loadFragrances();
 const items = selections.map(([slug, reason]) => {
-  const index = slugs.indexOf(slug);
-  if (index < 0) throw new Error(`商品が見つかりません: ${slug}`);
-  return { ...perfumes[index], slug, reason };
+  const item = perfumes.find((fragrance) => fragrance.slug === slug);
+  if (!item) throw new Error(`商品が見つかりません: ${slug}`);
+  return { ...item, reason };
 });
 if (items.length !== 20 || new Set(items.map((item) => item.brand)).size < 15) throw new Error("選定条件を満たしていません");
 const priced = items.filter((item) => item.sizes?.some((size) => size.referencePriceYen));
@@ -179,8 +176,8 @@ ${linkAuditSummary}
 
 ## 14. 作業中に発見したデータ構造上の問題
 
-- 商品IDは商品オブジェクト内ではなく build-items-slugmap.json の配列順に依存しています。並び替え時にIDがずれる危険があります。
-- 旧 rakuten フィールドと purchaseLinks.rakuten が移行期間中は重複します。全件展開前に正規フィールドを一本化する必要があります。
+- 正規化前は商品IDが配列順に依存していましたが、現在は各商品内の固定slugへ移行済みです。
+- 正規化前に重複していた旧 rakuten フィールドは廃止し、purchaseLinks.rakutenへ統一済みです。
 - 商品データが public/index.html の一行オブジェクト配列にあり、大規模更新時に不要な全件整形差分が発生しやすい構造です。
 - sourceType と market は代表10商品には未統一です。全件展開前にスキーマ互換方針が必要です。
 

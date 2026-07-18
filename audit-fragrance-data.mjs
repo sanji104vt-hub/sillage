@@ -1,11 +1,13 @@
 // Sillageの全香水データを読み取り専用で監査し、CSVとMarkdownを生成する。
 // 実行: node audit-fragrance-data.mjs
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const EXPECTED_TOTAL = 92;
 const sourcePath = "public/index.html";
 const source = readFileSync(sourcePath, "utf8");
-const slugs = JSON.parse(readFileSync("build-items-slugmap.json", "utf8"));
+const fragrances = loadFragrances();
+const slugs = fragrances.map((item) => item.slug);
 
 function extractArray(marker) {
   const start = source.indexOf(marker);
@@ -22,7 +24,6 @@ function extractObject(marker) {
   return new Function(`return ${source.slice(source.indexOf("{", start), end)}`)();
 }
 
-const fragrances = extractArray("const PERFUMES = [");
 const families = extractArray("const FAMILIES = [");
 const familyLabels = Object.fromEntries(families.map((family) => [family.key, family.ja]));
 const sceneLabels = extractObject("const SCENE=");
@@ -117,7 +118,7 @@ const rows = fragrances.map((fragrance, index) => {
 
   const links = {
     Amazon: structuredLink("amazon", ["amazon", "amazonUrl"]),
-    楽天: structuredLink("rakuten", ["rakuten", "rakutenUrl"]),
+    楽天: structuredLink("rakuten", []),
     公式: structuredLink("official", ["official", "officialUrl"]),
   };
   for (const [platform, entry] of Object.entries(links)) {
@@ -259,7 +260,7 @@ const updateLines = [...updateGroups.entries()].map(([value, ids]) => `- ${value
 const summary = `# Sillage 香水データ監査サマリー
 
 - 監査日時（日本時間）: ${generatedAt}
-- 監査対象: ${sourcePath} の商品配列と public/items の生成済み商品ページ
+- 監査対象: data/fragrances.json と public/items の生成済み商品ページ
 - 商品総数: ${fragrances.length}件
 - 推測補完: なし
 - 商品データ・UIの変更: なし
@@ -268,7 +269,7 @@ const summary = `# Sillage 香水データ監査サマリー
 
 - 香水濃度・容量・おすすめ対象・注意点・プロフィール数値・外部リンク・情報出典は、専用フィールドが存在する場合だけ「あり」と判定しました。
 - 商品名に「EDT」「EDP」が含まれていても、香水濃度として推測していません。
-- 商品IDは既存の build-items-slugmap.json、関連商品・SEOタイトル・SEO説明・最終更新日は生成済み商品詳細HTMLを照合しました。
+- 商品IDは data/fragrances.json 内の固定slug、関連商品・SEOタイトル・SEO説明・最終更新日は生成済み商品詳細HTMLを照合しました。
 - 空文字、未定義、空配列、空オブジェクトを欠損として集計しました。
 - 重複説明文とノート構成は、Unicode正規化・連続空白の統一後に完全一致で判定しました。
 - 外部リンクは http/https URLとして解析でき、ホスト名が存在するかを検証しました。通信先へのアクセス確認は行っていません。

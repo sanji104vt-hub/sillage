@@ -1,0 +1,93 @@
+﻿index,currentId,slug,brand,productName,currentDetailUrl,enrichedPhase,hasLegacyRakuten,hasPurchaseLinks
+0,jo-malone-1,jo-malone-1,Jo Malone,ライムバジル & マンダリン,/items/jo-malone-1,phase2,true,true
+1,acqua-di-parma-1,acqua-di-parma-1,Acqua di Parma,コロニア,/items/acqua-di-parma-1,phase2,true,true
+2,dior-1,dior-1,Dior,オー ソバージュ,/items/dior-1,phase2,true,true
+3,hermes-1,hermes-1,Hermès,オー ド パンプルムース ローズ,/items/hermes-1,phase2,false,true
+4,4711-1,4711-1,4711,オーデコロン,/items/4711-1,none,true,false
+5,atelier-cologne-1,atelier-cologne-1,Atelier Cologne,オランジュ サングィン,/items/atelier-cologne-1,none,false,false
+6,guerlain-1,guerlain-1,Guerlain,オー インペリアル,/items/guerlain-1,none,true,false
+7,muji-1,muji-1,無印良品,オードトワレ シトラス,/items/muji-1,pilot,false,true
+8,dolce-gabbana-1,dolce-gabbana-1,Dolce&Gabbana,ライト ブルー プールオム,/items/dolce-gabbana-1,none,true,false
+9,hermes-2,hermes-2,Hermès,オー ドランジュ ヴェルト,/items/hermes-2,none,true,false
+10,dior-2,dior-2,Dior,ソヴァージュ EDT,/items/dior-2,pilot,true,true
+11,ck-1,ck-1,CK,CK one,/items/ck-1,none,true,false
+12,montblanc-1,montblanc-1,Montblanc,レジェンド,/items/montblanc-1,none,true,false
+13,azzaro-1,azzaro-1,Azzaro,プール オム,/items/azzaro-1,none,true,false
+14,chanel-1,chanel-1,Chanel,アリュール オム スポーツ,/items/chanel-1,none,true,false
+15,paco-rabanne-1,paco-rabanne-1,Paco Rabanne,プール オム,/items/paco-rabanne-1,none,true,false
+16,nautica-1,nautica-1,Nautica,ヴォヤージュ,/items/nautica-1,none,true,false
+17,brut-1,brut-1,Brut,クラシック,/items/brut-1,none,false,false
+18,guerlain-2,guerlain-2,Guerlain,ヴェチバー,/items/guerlain-2,phase2,true,true
+19,ysl-1,ysl-1,YSL,Y メン オーデパルファン,/items/ysl-1,none,false,false
+20,chanel-2,chanel-2,Chanel,エゴイスト プラチナム,/items/chanel-2,none,true,false
+21,gucci-1,gucci-1,Gucci,ギルティ プールオム,/items/gucci-1,none,true,false
+22,dior-3,dior-3,Dior,ソヴァージュ EDP,/items/dior-3,none,true,false
+23,calvin-klein-1,calvin-klein-1,Calvin Klein,エタニティ フォーメン,/items/calvin-klein-1,none,true,false
+24,ysl-2,ysl-2,YSL,リブレ オーデパルファン,/items/ysl-2,pilot,true,true
+25,chanel-3,chanel-3,Chanel,チャンス オー タンドゥル,/items/chanel-3,none,true,false
+26,dior-4,dior-4,Dior,ジャドール,/items/dior-4,phase2,true,true
+27,gucci-2,gucci-2,Gucci,ブルーム,/items/gucci-2,none,true,false
+28,jo-malone-2,jo-malone-2,Jo Malone,イングリッシュ ペアー & フリージア,/items/jo-malone-2,none,true,false
+29,marc-jacobs-1,marc-jacobs-1,Marc Jacobs,デイジー,/items/marc-jacobs-1,none,true,false
+30,jo-malone-3,jo-malone-3,Jo Malone,ピオニー & ブラッシュ スエード,/items/jo-malone-3,none,true,false
+31,versace-1,versace-1,Versace,エロス EDT,/items/versace-1,pilot,true,true
+32,versace-2,versace-2,Versace,ディラン ブルー,/items/versace-2,none,true,false
+33,azzaro-2,azzaro-2,Azzaro,クローム,/items/azzaro-2,none,true,false
+34,tom-ford-1,tom-ford-1,Tom Ford,トバコ バニラ,/items/tom-ford-1,pilot,false,true
+35,mugler-1,mugler-1,Mugler,エンジェル,/items/mugler-1,phase2,true,true
+36,thierry-mugler-1,thierry-mugler-1,Thierry Mugler,A*MEN,/items/thierry-mugler-1,none,true,false
+37,jean-paul-gaultier-1,jean-paul-gaultier-1,Jean Paul Gaultier,ル マル,/items/jean-paul-gaultier-1,none,false,false
+38,giorgio-armani-1,giorgio-armani-1,Giorgio Armani,ストロンガー ウィズ ユー,/items/giorgio-armani-1,none,true,false
+39,viktor-rolf-1,viktor-rolf-1,Viktor&Rolf,スパイスボム エクストリーム,/items/viktor-rolf-1,none,true,false
+40,prada-1,prada-1,Prada,キャンディ,/items/prada-1,none,true,false
+41,carolina-herrera-1,carolina-herrera-1,Carolina Herrera,バッドボーイ,/items/carolina-herrera-1,none,true,false
+42,ysl-3,ysl-3,YSL,ブラック オピウム,/items/ysl-3,phase2,true,true
+43,parfums-de-marly-1,parfums-de-marly-1,Parfums de Marly,レイトン,/items/parfums-de-marly-1,none,false,false
+44,maison-margiela-1,maison-margiela-1,Maison Margiela,レプリカ ジャズクラブ,/items/maison-margiela-1,pilot,true,true
+45,dior-5,dior-5,Dior,ソヴァージュ エリクシール,/items/dior-5,none,true,false
+46,paco-rabanne-2,paco-rabanne-2,Paco Rabanne,1 ミリオン,/items/paco-rabanne-2,none,false,false
+47,bvlgari-1,bvlgari-1,Bvlgari,マン イン ブラック,/items/bvlgari-1,phase2,true,true
+48,ysl-4,ysl-4,YSL,ラ ニュイ ドゥ ロム,/items/ysl-4,none,false,false
+49,viktor-rolf-2,viktor-rolf-2,Viktor&Rolf,スパイスボム,/items/viktor-rolf-2,none,true,false
+50,dolce-gabbana-2,dolce-gabbana-2,Dolce&Gabbana,ザ ワン フォー メン,/items/dolce-gabbana-2,none,false,false
+51,azzaro-3,azzaro-3,Azzaro,ワンテッド,/items/azzaro-3,none,false,false
+52,maison-francis-kurkdjian-1,maison-francis-kurkdjian-1,Maison Francis Kurkdjian,バカラ ルージュ 540,/items/maison-francis-kurkdjian-1,none,true,false
+53,versace-3,versace-3,Versace,エロス フレイム,/items/versace-3,none,true,false
+54,chanel-4,chanel-4,Chanel,ブルー ドゥ シャネル EDP,/items/chanel-4,phase2,true,true
+55,tom-ford-2,tom-ford-2,Tom Ford,オード ウッド,/items/tom-ford-2,phase2,true,true
+56,hermes-3,hermes-3,Hermès,テール ド エルメス,/items/hermes-3,pilot,false,true
+57,dior-6,dior-6,Dior,ファーレンハイト,/items/dior-6,none,true,false
+58,creed-1,creed-1,Creed,アバントゥス,/items/creed-1,phase2,true,true
+59,giorgio-armani-2,giorgio-armani-2,Giorgio Armani,アルマーニ コード,/items/giorgio-armani-2,none,true,false
+60,le-labo-1,le-labo-1,Le Labo,サンタル 33,/items/le-labo-1,none,true,false
+61,diptyque-1,diptyque-1,Diptyque,タムダオ,/items/diptyque-1,phase2,true,true
+62,byredo-1,byredo-1,Byredo,ジプシー ウォーター,/items/byredo-1,phase2,true,true
+63,dunhill-1,dunhill-1,Dunhill,アイコン,/items/dunhill-1,none,true,false
+64,prada-2,prada-2,Prada,ルオム,/items/prada-2,none,true,false
+65,john-varvatos-1,john-varvatos-1,John Varvatos,アーティザン,/items/john-varvatos-1,none,false,false
+66,montblanc-2,montblanc-2,Montblanc,エクスプローラー,/items/montblanc-2,none,true,false
+67,jo-malone-4,jo-malone-4,Jo Malone,ウッドセージ & シーソルト,/items/jo-malone-4,none,true,false
+68,hugo-boss-1,hugo-boss-1,Hugo Boss,ボス ボトルド,/items/hugo-boss-1,none,true,false
+69,dior-7,dior-7,Dior,ディオール オム,/items/dior-7,none,true,false
+70,givenchy-1,givenchy-1,Givenchy,ジェントルマン ブシ,/items/givenchy-1,none,true,false
+71,tom-ford-3,tom-ford-3,Tom Ford,ブラック オーキッド,/items/tom-ford-3,phase2,true,true
+72,aramis-1,aramis-1,Aramis,アラミス,/items/aramis-1,none,true,false
+73,chanel-5,chanel-5,Chanel,プール ムッシュ,/items/chanel-5,none,true,false
+74,ysl-5,ysl-5,YSL,クロス,/items/ysl-5,none,true,false
+75,guerlain-3,guerlain-3,Guerlain,ミツコ,/items/guerlain-3,pilot,true,true
+76,chanel-6,chanel-6,Chanel,アンテウス,/items/chanel-6,none,true,false
+77,shiro-1,shiro-1,SHIRO,サボン オードパルファン,/items/shiro-1,pilot,true,true
+78,narciso-rodriguez-1,narciso-rodriguez-1,Narciso Rodriguez,フォー ハー,/items/narciso-rodriguez-1,none,true,false
+79,le-labo-2,le-labo-2,Le Labo,アナザー 13,/items/le-labo-2,phase2,true,true
+80,maison-margiela-2,maison-margiela-2,Maison Margiela,レイジー サンデー モーニング,/items/maison-margiela-2,phase2,true,true
+81,narciso-rodriguez-2,narciso-rodriguez-2,Narciso Rodriguez,フォー ヒム,/items/narciso-rodriguez-2,none,true,false
+82,glossier-1,glossier-1,Glossier,ユー,/items/glossier-1,none,true,false
+83,bvlgari-2,bvlgari-2,Bvlgari,ブルガリ プールオム,/items/bvlgari-2,none,true,false
+84,aesop-1,aesop-1,Aesop,タシット,/items/aesop-1,pilot,true,true
+85,davidoff-1,davidoff-1,Davidoff,クール ウォーター,/items/davidoff-1,none,true,false
+86,giorgio-armani-3,giorgio-armani-3,Giorgio Armani,アクア ディ ジオ,/items/giorgio-armani-3,phase2,true,true
+87,issey-miyake-1,issey-miyake-1,Issey Miyake,ロードゥ イッセイ プールオム,/items/issey-miyake-1,phase2,true,true
+88,paco-rabanne-3,paco-rabanne-3,Paco Rabanne,インヴィクタス,/items/paco-rabanne-3,none,true,false
+89,bvlgari-3,bvlgari-3,Bvlgari,アクア プールオム,/items/bvlgari-3,none,true,false
+90,versace-4,versace-4,Versace,プールオム,/items/versace-4,phase2,true,true
+91,acqua-di-parma-2,acqua-di-parma-2,Acqua di Parma,ブルー メディテラネオ アランチャ,/items/acqua-di-parma-2,none,true,false

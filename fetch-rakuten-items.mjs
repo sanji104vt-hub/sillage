@@ -1,6 +1,6 @@
 // 各香水のブランド+商品名で楽天市場（新API）を検索し、
 //   rakuten(アフィリエイトURL) / img(実画像)
-// を public/index.html の PERFUMES 配列に書き込む。
+// を data/fragrances.json の purchaseLinks.rakuten と img に書き込む。
 //
 // 認証情報は環境変数:
 //   RAKUTEN_APP_ID        アプリケーションID（UUID）
@@ -9,7 +9,8 @@
 //   RAKUTEN_ORIGIN        アプリ登録した「許可されたWebサイト」 (例 https://sillage.sanji-104vt.workers.dev)
 //
 // 実行: 上記4つを環境変数で渡して `node fetch-rakuten-items.mjs`
-import { readFileSync, writeFileSync } from "node:fs";
+import { writeFileSync } from "node:fs";
+import { loadFragranceData } from "./lib/fragrance-data.mjs";
 
 const APP = process.env.RAKUTEN_APP_ID;
 const KEY = process.env.RAKUTEN_ACCESS_KEY;
@@ -20,20 +21,10 @@ if (!APP || !KEY || !AFF || !ORIGIN) {
   process.exit(1);
 }
 
-const ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601";
-const FILE = "public/index.html";
-const html = readFileSync(FILE, "utf8");
-
-const startKey = "const PERFUMES = [";
-const startIdx = html.indexOf(startKey);
-const arrStart = html.indexOf("[", startIdx);
-// 配列終端は `\n];` を探す
-const closeBracket = html.indexOf("\n];", arrStart) + 1;
-const arrText = html.slice(arrStart, closeBracket + 1);
-
-// JSの相対オブジェクト記法(キーがクオートなし、末尾カンマ等)を JSON に変換せず、
-// eval ではなく `Function` で評価して安全側に。配列は値のみ。
-const products = new Function("return " + arrText.replace(/,(\s*[\]\}])/g, "$1"))();
+const ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701";
+const FILE = "data/fragrances.json";
+const document = loadFragranceData(FILE);
+const products = document.fragrances;
 
 const BRAND_FIX = {
   "YSL": "イヴサンローラン",
@@ -106,7 +97,12 @@ for (const p of products) {
   const kw = buildKeyword(p);
   const it = await search(kw);
   if (it && (it.affiliateUrl || it.itemUrl)) {
-    p.rakuten = it.affiliateUrl || it.itemUrl;
+    p.purchaseLinks ||= { official: null, amazon: null, rakuten: null };
+    p.purchaseLinks.rakuten = {
+      url: it.affiliateUrl || it.itemUrl,
+      verifiedAt: new Date().toISOString().slice(0, 10),
+      type: "product",
+    };
     const img = it.mediumImageUrls?.[0]?.imageUrl;
     if (img) p.img = bigImg(img);
     matched++;
@@ -119,8 +115,7 @@ for (const p of products) {
 }
 
 // 元のオブジェクト記法(キーなしクオート)に近い形で書き戻すと差分が大きいので JSON で書き戻し
-const newArr = "[\n" + products.map((p) => "  " + JSON.stringify(p)).join(",\n") + "\n]";
-writeFileSync(FILE, html.slice(0, arrStart) + newArr + html.slice(closeBracket + 1));
+writeFileSync(FILE, `${JSON.stringify(document, null, 2)}\n`, "utf8");
 
 console.log(`\n香水数: ${products.length} / マッチ: ${matched} / 未マッチ: ${missed.length}`);
 if (missed.length) console.log("未マッチ:", missed.join(", "));
