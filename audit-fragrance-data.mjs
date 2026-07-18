@@ -46,7 +46,7 @@ function missing(value) {
 }
 function display(value) {
   if (missing(value)) return "";
-  if (Array.isArray(value)) return value.join(" / ");
+  if (Array.isArray(value)) return value.some((item) => typeof item === "object") ? JSON.stringify(value) : value.join(" / ");
   if (typeof value === "object") return JSON.stringify(value);
   return String(value);
 }
@@ -102,12 +102,23 @@ const rows = fragrances.map((fragrance, index) => {
     : generatedRelated)];
   const seoTitle = decodeHtml(pick(fragrance, ["seoTitle"]) || itemHtml.match(/<title>(.*?)<\/title>/s)?.[1] || "");
   const seoDescription = decodeHtml(pick(fragrance, ["seoDescription"]) || itemHtml.match(/<meta name="description" content="([^"]*)">/)?.[1] || "");
-  const updated = itemHtml.match(/最終更新日：([^<]+)</)?.[1]?.trim() || "";
+  const updated = itemHtml.match(/データ更新日：([^<]+)</)?.[1]?.trim() || "";
+
+  function structuredLink(platform, legacyKeys) {
+    if (hasOwn(fragrance, "purchaseLinks") && hasOwn(fragrance.purchaseLinks || {}, platform)) {
+      const entry = fragrance.purchaseLinks[platform];
+      return { present: true, value: entry?.url ?? null, key: `purchaseLinks.${platform}` };
+    }
+    return pickWithPresence(fragrance, legacyKeys);
+  }
+  const profile = fragrance.profile;
+  const profileValues = profile && ["lightToRich", "freshToSweet", "subtleToBold", "dailyToDistinctive", "youthfulToMature"]
+    .some((key) => Number.isFinite(profile[key])) ? profile : undefined;
 
   const links = {
-    Amazon: pickWithPresence(fragrance, ["amazon", "amazonUrl"]),
-    楽天: pickWithPresence(fragrance, ["rakuten", "rakutenUrl"]),
-    公式: pickWithPresence(fragrance, ["official", "officialUrl"]),
+    Amazon: structuredLink("amazon", ["amazon", "amazonUrl"]),
+    楽天: structuredLink("rakuten", ["rakuten", "rakutenUrl"]),
+    公式: structuredLink("official", ["official", "officialUrl"]),
   };
   for (const [platform, entry] of Object.entries(links)) {
     const audit = linkAudit[platform];
@@ -130,9 +141,9 @@ const rows = fragrances.map((fragrance, index) => {
     "商品ID": id || "",
     "ブランド": fragrance.brand,
     "商品名": fragrance.name,
-    "香水濃度": pick(fragrance, ["concentration", "strength"]),
-    "容量": pick(fragrance, ["volume", "capacity", "size"]),
-    "参考価格": fragrance.price,
+    "香水濃度": fragrance.concentration?.label || pick(fragrance, ["strength"]),
+    "容量": (fragrance.sizes || []).map((size) => `${size.volumeMl}mL`),
+    "参考価格": (fragrance.sizes || []).filter((size) => size.referencePriceYen).map((size) => `${size.volumeMl}mL ${size.referencePriceYen}円`).join(" / ") || fragrance.price,
     "発売年": fragrance.releaseYear,
     "トップノート": fragrance.top,
     "ミドルノート": fragrance.mid,
@@ -140,10 +151,10 @@ const rows = fragrances.map((fragrance, index) => {
     "香調": fragrance.family ? (familyLabels[fragrance.family] || fragrance.family) : "",
     "シーン": (fragrance.scenes || []).map((scene) => sceneLabels[scene] || scene),
     "季節": (fragrance.seasons || []).map((season) => seasonLabels[season] || season),
-    "おすすめする人": pick(fragrance, ["recommendedFor", "recommendFor", "recommended"]),
-    "おすすめしにくい人": pick(fragrance, ["notRecommendedFor", "avoidFor", "notRecommended"]),
+    "おすすめする人": (fragrance.recommendedFor || []).map((entry) => entry.text),
+    "おすすめしにくい人": (fragrance.notRecommendedFor || []).map((entry) => entry.text),
     "注意点": pick(fragrance, ["cautions", "attention", "warnings"]),
-    "香りプロフィール数値": pick(fragrance, ["scentProfile", "profileScores", "scores"]),
+    "香りプロフィール数値": profileValues || pick(fragrance, ["scentProfile", "profileScores", "scores"]),
     "Amazonリンク": links.Amazon.value,
     "楽天リンク": links.楽天.value,
     "公式リンク": links.公式.value,

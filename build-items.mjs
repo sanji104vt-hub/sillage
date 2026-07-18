@@ -32,7 +32,6 @@ const FAM = Object.fromEntries(FAMILIES.map(f => [f.key, f]));
 const SCENE = new Function("return " + extractLine("const SCENE="))();
 const SEASON = new Function("return " + extractLine("const SEASON="))();
 const PRICE = new Function("return " + extractLine("const PRICE="))();
-const LAST_UPDATED = "2026年7月18日";
 const PRICE_RANK = { petit: 1, mid: 2, high: 3 };
 
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
@@ -72,6 +71,16 @@ const itemsWithSlug = PERFUMES.map((p, idx) => {
 
 const escape = s => String(s || "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 const escapeJson = s => JSON.stringify(String(s || ""));
+const formatDate = value => {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  return match ? `${match[1]}年${Number(match[2])}月${Number(match[3])}日` : String(value || "");
+};
+const formatSizes = sizes => (sizes || []).map((size) => {
+  const volume = `${Number(size.volumeMl)}mL`;
+  return size.referencePriceYen
+    ? `${volume}：参考価格 ${Number(size.referencePriceYen).toLocaleString("ja-JP")}円（税込）`
+    : volume;
+}).join(" / ");
 
 const filterUrl = (field, value) => `/?${field}=${encodeURIComponent(value)}#fragrances`;
 
@@ -125,9 +134,20 @@ function pageHTML(p, related) {
     ...(p.img ? { "image": p.img } : {}),
   };
 
-  const buyBtn = p.rakuten
-    ? `<a class="buy" href="${escape(p.rakuten)}" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>`
-    : "";
+  const officialUrl = p.purchaseLinks?.official?.url || "";
+  const amazonUrl = p.purchaseLinks?.amazon?.url || "";
+  const rakutenUrl = p.purchaseLinks?.rakuten?.url || p.rakuten || "";
+  const purchaseButtons = [
+    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
+    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">Amazonで確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+  ].filter(Boolean).join("");
+  const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
+  const sizeSummary = formatSizes(p.sizes);
+  const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
+  const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
+  const cautionItems = (p.cautions || []).map((item) => `<li>${escape(item)}</li>`).join("");
+  const sourceItems = (p.sources || []).map((source) => `<li><span class="source-type">${source.sourceType === "authorized" ? "正規取扱店" : source.sourceType === "retailer" ? "小売店" : "公式"}</span><a href="${escape(source.url)}" target="_blank" rel="noopener noreferrer">${escape(source.publisher || source.title)} — ${escape(source.title)} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a><span class="source-date">確認日：${escape(formatDate(source.accessedAt))}</span></li>`).join("");
   const notes = [
     { key: "top", label: "つけた直後", time: "トップノートの目安", value: p.top },
     { key: "mid", label: "30分〜数時間", time: "ミドルノートの目安", value: p.mid },
@@ -232,6 +252,7 @@ article{max-width:1060px}
 .section h2{font-family:"Shippori Mincho",serif;font-size:clamp(22px,3vw,30px);font-weight:600;letter-spacing:.5px;margin:3px 0 20px;color:#f0eeea}
 .decision{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,.8fr);gap:26px}.decision .verdict{margin:0}.decision-list{display:grid;gap:16px}
 .decision-list dt{font-family:"Cormorant",serif;font-style:italic;color:#8c8c92;font-size:13px}.decision-list dd{color:#dedbd5;font-size:14px;margin-top:3px}
+.decision-list ul{list-style:none;display:grid;gap:6px}.decision-list li{position:relative;padding-left:15px}.decision-list li::before{content:"";position:absolute;left:0;top:.78em;width:5px;height:1px;background:#8c8c92}
 .scent-timeline{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0}.scent-timeline::before{content:"";position:absolute;top:18px;left:16.66%;right:16.66%;height:1px;background:#44454a}
 .note-stage{position:relative;padding:0 24px 0 0;min-width:0}.note-stage+.note-stage{padding-left:24px}.note-dot{position:relative;z-index:1;display:block;width:9px;height:9px;margin:14px 0 22px;border-radius:50%;background:var(--note-color);box-shadow:0 0 0 6px #0d0e10}
 .note-stage h3{font-family:"Shippori Mincho",serif;font-size:17px;color:#ece9e3}.note-time{font-size:11px;color:#77787e;margin-top:2px}.note-name{font-size:14px;color:#cfcac3;line-height:1.8;margin-top:10px}
@@ -241,6 +262,7 @@ article{max-width:1060px}
 .compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.compare-card{max-width:none;padding:22px 0 0;border-top:2px solid #34353a}.compare-reason{font-size:10.5px;letter-spacing:1.3px;color:#8c8c92;text-transform:uppercase}.compare-brand{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;margin-top:17px}.compare-card h3{font-family:"Shippori Mincho",serif;font-size:18px;line-height:1.5;margin:5px 0 16px}.compare-card h3 a{color:#f0eeea;text-decoration:none}.compare-card h3 a:hover{text-decoration:underline}
 .compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
 .journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
+.buy-official{background:transparent;color:#e9e7e3;border:1px solid #67686e}.sources details{border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.sources summary{cursor:pointer;min-height:52px;display:flex;align-items:center;color:#d8d5cf;font-size:14px}.sources summary::marker{color:#8c8c92}.source-list{list-style:none;padding:4px 0 18px;display:grid;gap:15px}.source-list li{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:start}.source-type{font-size:10px;letter-spacing:1px;border:1px solid #3a3b40;padding:2px 7px;color:#aeb0b6}.source-list a{color:#d8d5cf;text-decoration:none;font-size:13px;overflow-wrap:anywhere}.source-list a:hover{text-decoration:underline}.source-date{grid-column:2;font-size:10.5px;color:#77787e}
 @media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
 @media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
@@ -263,13 +285,16 @@ article{max-width:1060px}
       <a class="fam-pill" style="background:${famColor};text-decoration:none" href="${filterUrl("family", p.family)}">${escape(famLabel)}</a>
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>${escape(famLabel)}</dd></div>
+        ${p.concentration?.label ? `<div><dt>香水濃度</dt><dd>${escape(p.concentration.label)}</dd></div>` : ""}
+        ${sizeSummary ? `<div><dt>容量・参考価格</dt><dd>${escape(sizeSummary)}${(p.sizes || []).some((size) => size.referencePriceYen) ? `<span class="price-note">公式確認時の税込価格。変更される場合があります</span>` : ""}</dd></div>` : ""}
         ${scenes ? `<div><dt>主な利用シーン</dt><dd>${escape(scenes)}</dd></div>` : ""}
         ${seasons ? `<div><dt>主な季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
-        ${p.price ? `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>` : priceTier ? `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>` : ""}
+        ${p.price && !(p.sizes || []).some((size) => size.referencePriceYen) ? `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>` : !p.price && priceTier ? `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>` : ""}
         ${p.releaseYear ? `<div><dt>発売年</dt><dd>${p.releaseYear}年</dd></div>` : ""}
       </dl>
-      ${p.rakuten ? `<p class="ad-note">PR：購入リンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions">${buyBtn}</div>` : ""}
-      <p class="updated">最終更新日：${LAST_UPDATED}</p>
+      ${purchaseButtons ? `${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p>` : ""}<div class="actions hero-actions">${purchaseButtons}</div>` : ""}
+      ${p.updatedAt ? `<p class="updated">データ更新日：${escape(formatDate(p.updatedAt))}</p>` : ""}
+      ${p.verifiedAt ? `<p class="updated">情報確認日：${escape(formatDate(p.verifiedAt))}</p>` : ""}
     </div>
   </section>
 
@@ -279,8 +304,11 @@ article{max-width:1060px}
     <div class="decision">
       ${p.verdict ? `<p class="verdict"><span class="vlabel">Sillage の見立て</span>${escape(p.verdict)}</p>` : ""}
       <dl class="decision-list">
+        ${recommendationItems ? `<div><dt>おすすめする人</dt><dd><ul>${recommendationItems}</ul></dd></div>` : ""}
+        ${notRecommendationItems ? `<div><dt>おすすめしにくい人</dt><dd><ul>${notRecommendationItems}</ul></dd></div>` : ""}
         ${scenes ? `<div><dt>使いやすい場面</dt><dd>${escape(scenes)}</dd></div>` : ""}
         ${seasons ? `<div><dt>似合う季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
+        ${cautionItems ? `<div><dt>商品固有の注意点</dt><dd><ul>${cautionItems}</ul></dd></div>` : ""}
       </dl>
     </div>
   </section>` : ""}
@@ -321,7 +349,9 @@ article{max-width:1060px}
     </nav>
   </section>
 
-  ${p.rakuten ? `<section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に価格を確認する</h2><p class="ad-note">PR：以下はアフィリエイト広告です。表示価格や在庫は販売店で最新情報をご確認ください。</p><div class="actions">${buyBtn}</div></section>` : ""}
+  ${sourceItems ? `<section class="section sources" aria-labelledby="sources-title"><p class="section-kicker">References</p><h2 id="sources-title">情報源</h2><details><summary>確認した情報源を表示する</summary><ul class="source-list">${sourceItems}</ul></details></section>` : ""}
+
+  ${purchaseButtons ? `<section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2>${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p>` : `<p class="ad-note">価格や在庫は公式サイトで最新情報をご確認ください。</p>`}<div class="actions">${purchaseButtons}</div></section>` : ""}
   <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>

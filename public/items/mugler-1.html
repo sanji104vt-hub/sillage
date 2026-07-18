@@ -82,6 +82,7 @@ article{max-width:1060px}
 .section h2{font-family:"Shippori Mincho",serif;font-size:clamp(22px,3vw,30px);font-weight:600;letter-spacing:.5px;margin:3px 0 20px;color:#f0eeea}
 .decision{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(220px,.8fr);gap:26px}.decision .verdict{margin:0}.decision-list{display:grid;gap:16px}
 .decision-list dt{font-family:"Cormorant",serif;font-style:italic;color:#8c8c92;font-size:13px}.decision-list dd{color:#dedbd5;font-size:14px;margin-top:3px}
+.decision-list ul{list-style:none;display:grid;gap:6px}.decision-list li{position:relative;padding-left:15px}.decision-list li::before{content:"";position:absolute;left:0;top:.78em;width:5px;height:1px;background:#8c8c92}
 .scent-timeline{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:0}.scent-timeline::before{content:"";position:absolute;top:18px;left:16.66%;right:16.66%;height:1px;background:#44454a}
 .note-stage{position:relative;padding:0 24px 0 0;min-width:0}.note-stage+.note-stage{padding-left:24px}.note-dot{position:relative;z-index:1;display:block;width:9px;height:9px;margin:14px 0 22px;border-radius:50%;background:var(--note-color);box-shadow:0 0 0 6px #0d0e10}
 .note-stage h3{font-family:"Shippori Mincho",serif;font-size:17px;color:#ece9e3}.note-time{font-size:11px;color:#77787e;margin-top:2px}.note-name{font-size:14px;color:#cfcac3;line-height:1.8;margin-top:10px}
@@ -91,20 +92,10 @@ article{max-width:1060px}
 .compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.compare-card{max-width:none;padding:22px 0 0;border-top:2px solid #34353a}.compare-reason{font-size:10.5px;letter-spacing:1.3px;color:#8c8c92;text-transform:uppercase}.compare-brand{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;margin-top:17px}.compare-card h3{font-family:"Shippori Mincho",serif;font-size:18px;line-height:1.5;margin:5px 0 16px}.compare-card h3 a{color:#f0eeea;text-decoration:none}.compare-card h3 a:hover{text-decoration:underline}
 .compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
 .journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid #ba8a57}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
+.buy-official{background:transparent;color:#e9e7e3;border:1px solid #67686e}.sources details{border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.sources summary{cursor:pointer;min-height:52px;display:flex;align-items:center;color:#d8d5cf;font-size:14px}.sources summary::marker{color:#8c8c92}.source-list{list-style:none;padding:4px 0 18px;display:grid;gap:15px}.source-list li{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:start}.source-type{font-size:10px;letter-spacing:1px;border:1px solid #3a3b40;padding:2px 7px;color:#aeb0b6}.source-list a{color:#d8d5cf;text-decoration:none;font-size:13px;overflow-wrap:anywhere}.source-list a:hover{text-decoration:underline}.source-date{grid-column:2;font-size:10.5px;color:#77787e}
 @media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
 @media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-</style>
-<style data-sillage-share>
-.share-tools{margin-top:34px;padding-top:24px;border-top:1px solid #2c2d31}
-.share-tools p{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#8c8c92;margin-bottom:12px}
-.share-actions-social{display:flex;flex-wrap:wrap;gap:9px}
-.share-actions-social a,.share-actions-social button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 17px;border:1px solid #34353a;border-radius:999px;background:transparent;color:#e9e7e3;text-decoration:none;font:500 12px/1.4 "Zen Kaku Gothic New",sans-serif;cursor:pointer}
-.share-actions-social a:hover,.share-actions-social button:hover{border-color:#c4c6cc}
-.featured-products{margin-top:34px;border-top:1px solid #2c2d31;padding-top:24px}
-.featured-products h2{font-family:"Cormorant",serif;font-style:italic;font-weight:500;font-size:18px;color:#aeb0b6;letter-spacing:.5px;margin-bottom:14px}
-.featured-products a{display:block;color:#cfcdca;text-decoration:none;font-size:13.5px;padding:10px 0;border-bottom:1px solid #1d1e21}
-.featured-products a:hover{color:#fff}
 </style>
 </head>
 <body>
@@ -124,13 +115,16 @@ article{max-width:1060px}
       <a class="fam-pill" style="background:#ba8a57;text-decoration:none" href="/?family=gourmand#fragrances">グルマン</a>
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>グルマン</dd></div>
+
+
         <div><dt>主な利用シーン</dt><dd>デート / デイリー</dd></div>
         <div><dt>主な季節</dt><dd>冬 / 秋</dd></div>
         <div><dt>参考価格</dt><dd>¥15,000前後<span class="price-note">販売店や時期により変動します</span></dd></div>
         <div><dt>発売年</dt><dd>1992年</dd></div>
       </dl>
-      <p class="ad-note">PR：購入リンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fthi002-100%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10002751%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div>
-      <p class="updated">最終更新日：2026年7月18日</p>
+      <p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fthi002-100%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10002751%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div>
+
+
     </div>
   </section>
 
@@ -140,8 +134,11 @@ article{max-width:1060px}
     <div class="decision">
       <p class="verdict"><span class="vlabel">Sillage の見立て</span>綿菓子とパチョリの衝撃。グルマン香水の発明者であり、好き嫌いを超えて歴史を変えた一本。</p>
       <dl class="decision-list">
+
+
         <div><dt>使いやすい場面</dt><dd>デート / デイリー</dd></div>
         <div><dt>似合う季節</dt><dd>冬 / 秋</dd></div>
+
       </dl>
     </div>
   </section>
@@ -203,17 +200,14 @@ article{max-width:1060px}
     </nav>
   </section>
 
-  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に価格を確認する</h2><p class="ad-note">PR：以下はアフィリエイト広告です。表示価格や在庫は販売店で最新情報をご確認ください。</p><div class="actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fthi002-100%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10002751%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div></section>
-  <section class="share-tools" aria-label="このページを共有">
-    <p>share ／ このページが役立ったら共有</p>
-    <div class="share-actions-social"><a href="https://twitter.com/intent/tweet?text=%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AB%EF%BC%88Mugler%EF%BC%89%E3%81%AF%E3%81%A9%E3%82%93%E3%81%AA%E5%8C%82%E3%81%84%EF%BC%9F%E9%A6%99%E8%AA%BF%E3%83%BB%E6%8C%81%E7%B6%9A%E3%83%BB%E5%90%88%E3%81%86%E3%82%B7%E3%83%BC%E3%83%B3%EF%BD%9CSillage&url=https%3A%2F%2Fsillage.asutelu.com%2Fitems%2Fmugler-1" target="_blank" rel="noopener">Xで共有</a><a href="https://social-plugins.line.me/lineit/share?url=https%3A%2F%2Fsillage.asutelu.com%2Fitems%2Fmugler-1" target="_blank" rel="noopener">LINEで送る</a><button type="button" onclick="shareSillage(this)">共有・リンクコピー</button></div>
-  </section>
+
+
+  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2><p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p><div class="actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fthi002-100%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10002751%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div></section>
   <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
   <a href="/">Sillage（シヤージュ）— 香りで選ぶメンズ香水比較</a>
 </footer>
-<script>async function shareSillage(button){if(navigator.share){try{await navigator.share({title:document.title,url:location.href});return}catch(error){if(error&&error.name==='AbortError')return}}if(navigator.clipboard){await navigator.clipboard.writeText(location.href);button.textContent='コピーしました'}}</script>
 </body>
 </html>
