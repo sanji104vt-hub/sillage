@@ -303,6 +303,7 @@ function renderArticle(article, all) {
   const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(canonical)}`;
   return `<!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <title>${esc(title)}</title><meta name="description" content="${esc(article.description)}"><meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q">
 <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-60BQRQWB5M');</script>
 <link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(article.description)}"><meta property="og:url" content="${canonical}">${image?`<meta property="og:image" content="${esc(image)}">`:""}<meta property="og:site_name" content="Sillage（シヤージュ）"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(article.description)}">
