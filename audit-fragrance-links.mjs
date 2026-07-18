@@ -11,6 +11,12 @@ const THIRD_BATCH_SLUGS = new Set([
   "chanel-3", "gucci-2", "jo-malone-2", "marc-jacobs-1", "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1",
   "jean-paul-gaultier-1", "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
 ]);
+const FOURTH_BATCH_SLUGS = new Set([
+  "dior-5", "paco-rabanne-2", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
+  "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "john-varvatos-1", "montblanc-2",
+  "jo-malone-4", "hugo-boss-1", "dior-7", "givenchy-1", "aramis-1", "chanel-5", "ysl-5", "chanel-6", "narciso-rodriguez-1",
+  "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
+]);
 const REQUEST_DELAY_MS = 450;
 const RETRY_DELAY_MS = 1600;
 const TIMEOUT_MS = 12000;
@@ -99,6 +105,7 @@ function classify(result) {
 export async function runLinkAudit() {
   const fragrances = loadFragrances();
   const phase3Only = process.argv.includes("--phase3");
+  const phase4Only = process.argv.includes("--phase4");
   const entries = [];
   fragrances.forEach((item) => {
     const slug = item.slug;
@@ -113,6 +120,10 @@ export async function runLinkAudit() {
   });
   if (phase3Only) {
     const scoped = entries.filter((entry) => THIRD_BATCH_SLUGS.has(entry.slug));
+    entries.splice(0, entries.length, ...scoped);
+  }
+  if (phase4Only) {
+    const scoped = entries.filter((entry) => FOURTH_BATCH_SLUGS.has(entry.slug));
     entries.splice(0, entries.length, ...scoped);
   }
   const counts = new Map();
@@ -147,13 +158,16 @@ export async function runLinkAudit() {
   await Promise.all(Array.from({ length: Math.min(CONCURRENCY, entries.length) }, () => worker()));
   const headers = ["slug", "brand", "name", "category", "label", "declaredType", "detectedType", "url", "formatValid", "duplicateCount", "status", "httpStatus", "finalUrl", "redirectCount", "expectedDomain", "domainMatch", "checkedAt", "note"];
   mkdirSync("reports", { recursive: true });
-  if (!phase3Only) writeFileSync("reports/fragrance-link-audit.csv", `\uFEFF${headers.join(",")}\n${rows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
+  if (!phase3Only && !phase4Only) writeFileSync("reports/fragrance-link-audit.csv", `\uFEFF${headers.join(",")}\n${rows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
   const thirdBatchRows = rows.filter((row) => THIRD_BATCH_SLUGS.has(row.slug));
-  writeFileSync("reports/fragrance-phase3-link-audit.csv", `\uFEFF${headers.join(",")}\n${thirdBatchRows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
+  if (!phase4Only) writeFileSync("reports/fragrance-phase3-link-audit.csv", `\uFEFF${headers.join(",")}\n${thirdBatchRows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
+  const fourthBatchRows = rows.filter((row) => FOURTH_BATCH_SLUGS.has(row.slug));
+  writeFileSync("reports/fragrance-phase4-link-audit.csv", `\uFEFF${headers.join(",")}\n${fourthBatchRows.map((row) => headers.map((header) => csv(row[header])).join(",")).join("\n")}\n`, "utf8");
   const statusCounts = Object.groupBy ? Object.entries(Object.groupBy(rows, (row) => row.status)).map(([key, values]) => `${key}=${values.length}`).join(", ") : [...new Set(rows.map((row) => row.status))].map((status) => `${status}=${rows.filter((row) => row.status === status).length}`).join(", ");
   console.log(`Link audit: ${rows.length} URLs (${statusCounts})`);
-  if (!phase3Only) console.log("Generated reports/fragrance-link-audit.csv");
-  console.log(`Generated reports/fragrance-phase3-link-audit.csv (${thirdBatchRows.length} URLs)`);
+  if (!phase3Only && !phase4Only) console.log("Generated reports/fragrance-link-audit.csv");
+  if (!phase4Only) console.log(`Generated reports/fragrance-phase3-link-audit.csv (${thirdBatchRows.length} URLs)`);
+  console.log(`Generated reports/fragrance-phase4-link-audit.csv (${fourthBatchRows.length} URLs)`);
   return rows;
 }
 

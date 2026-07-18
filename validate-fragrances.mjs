@@ -24,7 +24,13 @@ const THIRD_BATCH_SLUGS = new Set([
   "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1", "jean-paul-gaultier-1",
   "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS]);
+const FOURTH_BATCH_SLUGS = new Set([
+  "dior-5", "paco-rabanne-2", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
+  "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "john-varvatos-1", "montblanc-2",
+  "jo-malone-4", "hugo-boss-1", "dior-7", "givenchy-1", "aramis-1", "chanel-5", "ysl-5", "chanel-6", "narciso-rodriguez-1",
+  "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",
@@ -188,7 +194,8 @@ for (const [label, count] of Object.entries(missing)) console.log(`${label}: ${c
 if (fragrances.length !== 92) errors.push(`商品総数が92件ではありません: ${fragrances.length}`);
 if (SECOND_BATCH_SLUGS.size !== 20) errors.push(`第2段階の商品数が20件ではありません: ${SECOND_BATCH_SLUGS.size}`);
 if (THIRD_BATCH_SLUGS.size !== 31) errors.push(`第3段階の商品数が31件ではありません: ${THIRD_BATCH_SLUGS.size}`);
-if (ENRICHED_SLUGS.size !== 61) errors.push(`補完済み商品数が61件ではありません: ${ENRICHED_SLUGS.size}`);
+if (FOURTH_BATCH_SLUGS.size !== 31) errors.push(`第4段階の商品数が31件ではありません: ${FOURTH_BATCH_SLUGS.size}`);
+if (ENRICHED_SLUGS.size !== 92) errors.push(`補完済み商品数が92件ではありません: ${ENRICHED_SLUGS.size}`);
 const secondBatchItems = fragrances.filter((_, index) => SECOND_BATCH_SLUGS.has(slugs[index]));
 const brandCounts = new Map();
 for (const item of secondBatchItems) brandCounts.set(item.brand, (brandCounts.get(item.brand) || 0) + 1);

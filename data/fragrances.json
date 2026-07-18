@@ -4069,14 +4069,78 @@
       "verdict": "ソヴァージュの濃縮版。スパイスと甘さが凝縮され、冬の夜に圧倒的な存在感を放つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04133661/3348901567572-1_cp.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3348901567572%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10073737%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Elixir",
+        "label": "エリクシール"
+      },
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "濃密なスパイスとラベンダーを秋冬の夜に楽しみたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "フォーマルやデートで輪郭のあるアンバー香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "軽快なシトラスコロンのような控えめさを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "publisher": "Dior",
+          "title": "Sauvage Elixir",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "paco-rabanne-2",
@@ -4103,7 +4167,39 @@
         "official": null,
         "amazon": null,
         "rakuten": null
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "ミントとシナモンにレザーが重なる甘い香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の休日やデートで華やかなアンバー香を使いたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さを抑えた透明感のある香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "bvlgari-1",
@@ -4218,10 +4314,74 @@
       "releaseYear": 2009,
       "verdict": "カルダモンの効いたエレガントなスパイシー。隙のない洗練で、デートの鉄板とされる。",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": null
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "カルダモンとラベンダーの温かなスパイス感を好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートや普段使いに落ち着いた香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "明るい柑橘が長く主役になる香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html",
+          "publisher": "YSL Beauty",
+          "title": "La Nuit de L'Homme Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "viktor-rolf-2",
@@ -4246,14 +4406,74 @@
       "verdict": "手榴弾型ボトルの爆発的スパイス。温かく刺激的で、寒い季節に強く印象を残す。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/strawberrynet-beauty/cabinet/12557956/12565763/13849390605.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00t2xcn.k90d6542.g00t2xcn.k90d7130/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fstrawberrynet-beauty%2F138493%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fstrawberrynet-beauty%2Fi%2F10019158%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html"
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ペッパーとシナモンが効いた温かなスパイス香を好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやパーティーで存在感を出したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "穏やかなフローラルや石けん調を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "publisher": "Viktor&Rolf",
+          "title": "Spicebomb Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "dolce-gabbana-2",
@@ -4277,10 +4497,66 @@
       "releaseYear": 2008,
       "verdict": "スパイスとタバコの温かみ。フォーマルにもデートにも効く、品のある甘さが魅力。",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": null
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "グレープフルーツからタバコへ移る温かな香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやフォーマルで穏やかな色気を出したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "夏向けの軽いアクアティック香を探している人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true",
+          "publisher": "Dolce&Gabbana",
+          "title": "The One for Men Eau de Toilette 100ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "azzaro-3",
@@ -4304,10 +4580,78 @@
       "releaseYear": 2016,
       "verdict": "ジンジャーとトンカの心地よい甘辛さ。親しみやすく華やかで、デートに使いやすい。",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": null
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "レモンとジンジャーにトンカの甘さが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の休日やデートで快活な印象を作りたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さのない端正なウッディ香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette",
+          "publisher": "Azzaro",
+          "title": "Azzaro Wanted Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "GLOBAL",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "maison-francis-kurkdjian-1",
@@ -4332,14 +4676,72 @@
       "verdict": "世界的に話題のニッチ香水。甘く鉱物的な唯一無二の香りで、強い拡散と存在感を放つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00/mai005-200_1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fmai005-200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10007724%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+          "referencePriceYen": 52580,
+          "priceVerifiedAt": "2026-07-18"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "サフランとアンバーウッドの透明感ある甘さを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやフォーマルで個性を出したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "香り立ちを極力控えた日常香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+          "publisher": "Baccarat",
+          "title": "Baccarat Rouge 540 Eau de Parfum 70 ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "versace-3",
@@ -4364,14 +4766,78 @@
       "verdict": "エロスをより温かくスパイシーに。甘さに深みが増し、秋冬の夜のデートに映える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/c/ver1333_1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fver1333%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10049546%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html"
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "シトラスとローズにバニラが重なる温かな香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやパーティーで力強い印象を出したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さを抑えた静かなグリーン香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "publisher": "Versace",
+          "title": "Eros Flame Eau de Parfum",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "chanel-4",
@@ -4699,14 +5165,74 @@
       "verdict": "すみれとガソリンを思わせる唯一無二の構築美。好みは分かれるが忘れられない個性派。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241102/0061012219-1_cp.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3348900012219%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10050667%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードゥ トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ベルガモットからレザーへ移る個性的な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の普段使いやデートに重厚なウッディ香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘く柔らかなフローラルを中心に探している人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "publisher": "Dior",
+          "title": "ファーレンハイト オードゥ トワレ",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "creed-1",
@@ -4834,14 +5360,85 @@
       "verdict": "甘く温かいウッディ・スパイシー。夜とデートに強い、色気のあるシグネチャー。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/armanibeauty/cabinet/thumb/09663805/imgrc0089887897.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "verifiedAt": "2026-07-18",
+          "type": "search"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00u8bsn.k90d64f6.g00u8bsn.k90d7cb7/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Farmanibeauty%2Fjp-0110-arm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Farmanibeauty%2Fi%2F10000166%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/"
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/"
+        },
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/"
+        },
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/"
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "レモンとスターアニスにレザーが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやフォーマルに端正なアンバー香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "春夏向けの軽快なマリン香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "publisher": "Giorgio Armani Beauty",
+          "title": "Armani Code Fragrances",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "le-labo-1",
@@ -4866,14 +5463,78 @@
       "verdict": "乾いた白檀とレザーの中性的な煙。唯一無二の存在感で、性別を超えて支持される。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rush-mall/cabinet/point/p3/0704-0705/lelabo-004_n2.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00rs0cn.k90d6987.g00rs0cn.k90d76e3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Frush-mall%2Flelabo-004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frush-mall%2Fi%2F10019277%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オード パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "カルダモンとサンダルウッドの乾いた木質感を好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の普段使いやデートで個性的なウッディ香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "明るく甘いフルーティーフローラルを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "publisher": "LE LABO",
+          "title": "SANTAL 33",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "diptyque-1",
@@ -5093,7 +5754,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "ラベンダーとネロリにレザーが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事やフォーマルにクラシックな印象を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "軽い果実香や甘いグルマン香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "prada-2",
@@ -5118,14 +5811,70 @@
       "verdict": "アイリスの上品なパウダリーさ。控えめで洗練され、清潔感のある大人の余裕を演出する。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/ezcoshop/cabinet/strawberry/2018_11/img585029angle1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00uvszn.k90d68a0.g00uvszn.k90d739a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fezcoshop%2F585029%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fezcoshop%2Fi%2F10000026%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ネロリとアイリスの清潔感にアンバーが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事やフォーマルで端正に使いたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "強いスパイスや煙を感じる重厚香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+          "publisher": "Prada Beauty",
+          "title": "L'Homme Prada Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "GLOBAL",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "john-varvatos-1",
@@ -5149,10 +5898,62 @@
       "releaseYear": 2009,
       "verdict": "柑橘と乾いた木のバランスがよい隠れた良作。価格以上の満足感で根強いファンを持つ。",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": null
-      }
+      },
+      "concentration": null,
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "マンダリンとオレンジブロッサムの明るい柑橘香を好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏の休日や普段使いに軽快な香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "濃密なアンバーやレザーを主役に求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html",
+          "publisher": "John Varvatos",
+          "title": "Artisan 4.2 oz",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "montblanc-2",
@@ -5177,14 +5978,70 @@
       "verdict": "アバントゥスを思わせる構成をコスパよく。爽やかさと土っぽさのバランスが秀逸。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/blanc-lapin/cabinet/item/mob/mob1m0000009.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00r2fjn.k90d6872.g00r2fjn.k90d7745/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fblanc-lapin%2Fmob1m0000009%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fblanc-lapin%2Fi%2F10162421%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ベルガモットからベチバーとパチョリへ移る香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事や旅行に落ち着いたウッディ香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘いバニラや濃密な花香を主役に求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+          "publisher": "Montblanc",
+          "title": "Explorer Eau de Parfum 100 ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "jo-malone-4",
@@ -5209,14 +6066,78 @@
       "verdict": "海辺の崖を思わせるミネラル感。ミニマルで中性的、重ねづけの土台にも向く人気作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item/260704ma/32241l41601_2026logo.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00sw7hn.k90d6e3d.g00sw7hn.k90d72dc/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F32241l41601%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjomalone%2Fi%2F10000825%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Cologne",
+        "label": "コロン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "シーソルトとセージの乾いた透明感を好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏の休日や普段使いに軽やかな香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "濃厚な甘さや長い余韻を最優先する人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "publisher": "Jo Malone London",
+          "title": "ウッド セージ & シー ソルト コロン",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "hugo-boss-1",
@@ -5241,14 +6162,70 @@
       "verdict": "りんごとシナモンの温かみ。ビジネスマンの定番として長年支持される、堅実な一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/besba/cabinet/s4/hug-021.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00rf2sn.k90d6927.g00rf2sn.k90d73ba/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fhug-021%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbesba%2Fi%2F10011639%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "アップルとシナモンにバニラが重なる温かな香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の仕事や普段使いに親しみやすい香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さのないシャープなシトラス香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+          "publisher": "HUGO BOSS",
+          "title": "BOSS Bottled Eau de Toilette 100 ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "dior-7",
@@ -5273,14 +6250,74 @@
       "verdict": "アイリスのパウダリーな上品さ。洗練と色気を兼ね、大人の余裕を静かに語る。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/0061126342_cp.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pu2mn.k90d68f9.g00pu2mn.k90d7381/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3348901126342%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcosmelink%2Fi%2F10048884%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードゥ トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ベルガモットとシダーにムスクが重なる端正な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事やフォーマルで清潔感を重視したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘いグルマンや濃密なスパイス香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "publisher": "Dior",
+          "title": "ディオール オム オードゥ トワレ",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "givenchy-1",
@@ -5305,14 +6342,64 @@
       "verdict": "洋ナシとアイリスの甘さに、レザーの芯。優雅さと男性らしさを両立した現代の紳士像。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/luxs/cabinet/20250203003000002/13800912004-1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.givenchybeauty.com/us/p/gentleman-boisee-P011122.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00un4mn.k90d6881.g00un4mn.k90d7aed/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fluxs%2F13800912004%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fluxs%2Fi%2F10015560%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "ブラックペッパーとアイリスにカカオが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートやフォーマルに温かなウッディ香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "水のように軽いアクアティック香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.givenchybeauty.com/us/p/gentleman-boisee-P011122.html",
+          "publisher": "Givenchy Beauty",
+          "title": "Gentleman Society Eau de Parfum Boisée",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "tom-ford-3",
@@ -5450,7 +6537,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "シトラスからレザーとオークモスへ移る古典的な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の仕事やフォーマルで重厚感を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "透明感のある甘いフルーティー香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "chanel-5",
@@ -5475,14 +6594,70 @@
       "verdict": "シャネル唯一のメンズ古典。シトラス・シプレの端正な構築で、知的な紳士像を描く。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/26/1184426_1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pv5mn.k90d6eb3.g00pv5mn.k90d71f1/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F1184426%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuimonogatari%2Fi%2F10015068%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードゥ トワレット"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "レモンとジンジャーにベチバーが重なる端正な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事やフォーマルにクラシックな香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "濃厚なバニラや甘い果実香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+          "publisher": "CHANEL",
+          "title": "POUR MONSIEUR Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "EU",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "ysl-5",
@@ -5514,7 +6689,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "ベルガモットからハーブとレザーへ移る香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の仕事やフォーマルに骨格のある香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "柔らかな花香や甘いムスクを中心に求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "guerlain-3",
@@ -5631,14 +6838,72 @@
       "verdict": "レザーと苔の重厚な古典。野性的で官能的な、貫禄ある大人の男のためのシプレ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/rank_10002171.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00quion.k90d6868.g00quion.k90d7b95/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10002171%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fosharecafe%2Fi%2F10002171%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードゥ トワレット"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+          "referencePriceYen": 20680,
+          "priceVerifiedAt": "2026-07-18"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ベルガモットとローズにレザーが重なる重厚な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のフォーマルやデートで存在感を出したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "春夏向けの軽快なコロンを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+          "publisher": "CHANEL",
+          "title": "アンテウス オードゥ トワレット",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "shiro-1",
@@ -5760,7 +7025,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "オスマンサスとムスクにアンバーが重なる柔らかな香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋のデートや普段使いに穏やかなムスク香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "鋭いシトラスや強いスパイスを主役に求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "le-labo-2",
@@ -5985,7 +7282,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "バイオレットリーフとムスクにパチョリが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬のデートや普段使いに深いムスク香を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "明るい柑橘主体の軽い香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "glossier-1",
@@ -6010,14 +7339,66 @@
       "verdict": "肌の匂いを増幅するようなスキンムスク。つける人ごとに変わる、親密で個人的な香り。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/americana/cabinet/joanne/joa3/glossieryou1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.glossier.com/products/glossier-you",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00rsgyn.k90d6eeb.g00rsgyn.k90d7777/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Famericana%2Fjm0000398%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Famericana%2Fi%2F10045978%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.glossier.com/products/glossier-you"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ピンクペッパーとアイリスにムスクが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の普段使いやデートに肌になじむ香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "濃密なレザーやアンバーの強さを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.glossier.com/products/glossier-you",
+          "publisher": "Glossier",
+          "title": "Glossier You",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "bvlgari-2",
@@ -6042,14 +7423,72 @@
       "verdict": "紅茶のような透明感と清潔感。クセがなく上品で、ビジネスでもっとも外さない万能種。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/dreamlifejapan/cabinet/11253067/dl0007-01.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.bulgari.com/ja-jp/product/42539",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00uj2in.k90d63df.g00uj2in.k90d72df/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fdreamlifejapan%2Fdl0007-1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fdreamlifejapan%2Fi%2F10000013%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/ja-jp/product/42539",
+          "referencePriceYen": 19470,
+          "priceVerifiedAt": "2026-07-18"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ダージリンティーとペッパーにムスクが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春秋の仕事や普段使いに清潔感を重視したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "濃厚な甘さや強いスパイスの余韻を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.bulgari.com/ja-jp/product/42539",
+          "publisher": "BVLGARI",
+          "title": "ブルガリ プールオム オードトワレ 100ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "aesop-1",
@@ -6164,14 +7603,70 @@
       "verdict": "1988年のマリン香水の元祖。清涼で爽やか、低価格ながら今なお色褪せない定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/dav002-200_1.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00ss3zn.k90d6334.g00ss3zn.k90d7b5a/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-dav002-200%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10003698%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "ミントとラベンダーにオークモスが重なる爽快な香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏のスポーツや普段使いに涼しさを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘く濃密な冬向けアンバー香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+          "publisher": "Zino Davidoff",
+          "title": "Cool Water Eau de Toilette 125 ml",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "GLOBAL",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "giorgio-armani-3",
@@ -6392,7 +7887,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "グレープフルーツとマリンノートにガイアックが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏のスポーツやデートに快活な香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "静かなパウダリー香や繊細な花香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "bvlgari-3",
@@ -6424,7 +7951,39 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": null,
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "text": "マンダリンと海藻にウッディな余韻が重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏の休日やデートに海を感じる香りを選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘いバニラや濃厚なレザーを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
+      ],
+      "sources": [],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     },
     {
       "slug": "versace-4",
@@ -6557,14 +8116,78 @@
       "verdict": "地中海の青を閉じ込めた爽やかさ。柑橘とウッディの均衡が上質な軽さを生む。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/zzacp08_030.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "verifiedAt": "2026-07-18",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://hb.afl.rakuten.co.jp/hgc/g00pl3fn.k90d6b94.g00pl3fn.k90d70c3/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10048622%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10054358%2F&rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      }
+      },
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "オレンジとシトロンにサンダルウッドが重なる香りを好む人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春夏の休日やデートに明るい地中海調を選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "重いレザーや煙を感じる冬向け香水を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "publisher": "Acqua di Parma",
+          "title": "Arancia di Capri Eau de Toilette",
+          "accessedAt": "2026-07-18",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "US",
+          "sourceType": "official"
+        }
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "verifiedAt": "2026-07-18",
+      "updatedAt": "2026-07-18"
     }
   ]
 }
