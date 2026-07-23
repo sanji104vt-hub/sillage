@@ -1,4 +1,86 @@
+<div class="section-head" id="find-fragrances">
+  <p class="kick">— find your fragrance</p>
+  <h2>香調・シーン・季節から香水を探す</h2>
+  <p class="section-copy">全92件から、使う場面や季節、価格帯を組み合わせて候補を絞れます。</p>
+</div>
+
+<section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
+  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
+  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
+  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
+  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
+  <button class="reset" id="resetBtn">reset all</button>
+</section>
+
+<div class="results-head">
+  <span class="count" id="resultsSummary" aria-live="polite">全<b>92</b>件の香水</span>
+  <span class="active-fam" id="activeFam"></span>
+</div>
+
+<main class="grid" id="grid" aria-busy="false"><noscript><div class="empty"><div class="big">掲載香水は全92件です</div>絞り込みにはJavaScriptが必要です。<a href="/columns/first-fragrance">初心者向けガイド</a>からも選べます。</div></noscript></main>
+
+
+
+<section class="beginner-nav" aria-labelledby="beginnerTitle">
+  <p class="beginner-kicker">— start with your purpose</p>
+  <h2 id="beginnerTitle">はじめての香水選び</h2>
+  <p class="beginner-lead">好みがまだ分からなくても大丈夫。目的や使う場面から、あなたに合う一本を探せます。</p>
+  <div class="beginner-cards">
+    <a class="beginner-card" href="#diagnosis">
+      <span class="beginner-no" aria-hidden="true">01 ／ DIAGNOSIS</span>
+      <h3>診断から選ぶ</h3>
+      <p>いくつかの質問に答えて、相性のよいブランドや香りを探す。</p>
+      <span class="beginner-link">ブランド診断を始める →</span>
+    </a>
+    <a class="beginner-card" href="#fragrances">
+      <span class="beginner-no" aria-hidden="true">02 ／ SCENE</span>
+      <h3>使う場面から選ぶ</h3>
+      <p>仕事、デート、休日など、香水を使いたい場面から探す。</p>
+      <span class="beginner-link">シーン別に見る →</span>
+    </a>
+    <a class="beginner-card" href="/columns/first-fragrance">
+      <span class="beginner-no" aria-hidden="true">03 ／ FIRST BOTTLE</span>
+      <h3>最初の一本を知る</h3>
+      <p>香りが強すぎず、日常で使いやすい初心者向け香水を確認する。</p>
+      <span class="beginner-link">初心者向けガイドを読む →</span>
+    </a>
+  </div>
+  <div class="beginner-shortcuts" aria-labelledby="shortcutTitle">
+    <p class="shortcut-label" id="shortcutTitle">よく選ばれる条件から、すぐに絞り込む</p>
+    <div class="shortcut-list">
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="business" aria-pressed="false">ビジネス</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="date" aria-pressed="false">デート</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="daily" aria-pressed="false">普段使い</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="sports" aria-pressed="false">スポーツ</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="spring" aria-pressed="false">春向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="summer" aria-pressed="false">夏向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="autumn" aria-pressed="false">秋向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="winter" aria-pressed="false">冬向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="price" data-filter-value="petit" aria-pressed="false">プチプラ</button>
+    </div>
+  </div>
+</section>
+
 <div class="section-head" id="diagnosis">
+  <p class="kick">— diagnosis</p>
+  <h2>あなたに合うブランド診断</h2>
+</div>
+<section class="quiz-wrap">
+  <div class="quiz-card" id="quizCard"></div>
+</section>
+
+<nav class="traffic-hub" id="popular-guides" aria-label="人気の香水ガイド">
+  <div class="traffic-hub-inner">
+    <p class="traffic-label">popular guides ／ 香水選びを学ぶ</p>
+    <div class="traffic-links">
+      <a href="/columns/business-fragrance">ビジネスで外さない香水</a>
+      <a href="/columns/how-to-wear">香水の正しいつけ方</a>
+      <a href="/columns/concentration-guide">EDT・EDP・パルファムの違い</a>
+    </div>
+  </div>
+</nav>
+
+<div class="section-head" id="scent-guide">
   <p class="kick">— ten families</p>
   <h2>香りの系統を知る</h2>
 </div>
@@ -75,31 +157,6 @@
 </section>
 <!-- generated:family-items:end -->
 
-
-
-
-<div class="section-head">
-  <p class="kick">— diagnosis</p>
-  <h2>あなたに合うブランド診断</h2>
-</div>
-<section class="quiz-wrap">
-  <div class="quiz-card" id="quizCard"></div>
-</section>
-
-<section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
-  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
-  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
-  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
-  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
-  <button class="reset" id="resetBtn">reset all</button>
-</section>
-
-<div class="results-head">
-  <span class="count" id="resultsSummary" aria-live="polite">全<b>92</b>件の香水</span>
-  <span class="active-fam" id="activeFam"></span>
-</div>
-
-<main class="grid" id="grid" aria-busy="false"><noscript><div class="empty"><div class="big">掲載香水は全92件です</div>絞り込みにはJavaScriptが必要です。<a href="/columns/first-fragrance">初心者向けガイド</a>からも選べます。</div></noscript></main>
 
 
 

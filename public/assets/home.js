@@ -121,6 +121,8 @@ function buildChips(id,map,field){
 function prefersReducedMotion(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches;}
 function initAnchorNavigation(){
   document.querySelectorAll('.hero-actions a[href^="#"],.beginner-card[href^="#"]').forEach(link=>{
+    if(link.dataset.anchorBound==="true")return;
+    link.dataset.anchorBound="true";
     link.addEventListener("click",async event=>{
       const hash=link.getAttribute("href");
       let target=document.querySelector(hash);
@@ -144,6 +146,8 @@ function initAnchorNavigation(){
 }
 function initFilterShortcuts(){
   document.querySelectorAll(".filter-shortcut").forEach(button=>{
+    if(button.dataset.shortcutBound==="true")return;
+    button.dataset.shortcutBound="true";
     button.addEventListener("click",async()=>{
       const field=button.dataset.filterField,value=button.dataset.filterValue;
       if(!(field in state))return;
@@ -1463,6 +1467,8 @@ async function fetchHomeResource(url,type){
 
 function initializeDeferredHome(){
   if(deferredHomeInitialized)return;
+  initAnchorNavigation();
+  initFilterShortcuts();
   buildChips("sceneChips",SCENE,"scene");
   buildChips("seasonChips",SEASON,"season");
   buildChips("genderChips",GENDER,"gender");

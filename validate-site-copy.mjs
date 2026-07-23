@@ -40,6 +40,31 @@ if (manifest.description !== copy.description || manifest.short_name !== copy.sh
   throw new Error("manifest.webmanifest が data/site-copy.json と一致しません");
 }
 
+const deferred = readFileSync("public/partials/home-deferred.html", "utf8");
+const orderedHomeMarkers = [
+  'id="find-fragrances"',
+  'id="fragrances"',
+  'class="beginner-nav"',
+  'id="diagnosis"',
+  'id="popular-guides"',
+  'id="scent-guide"',
+  "— interactive timeline",
+  'id="brands"',
+  "— reading",
+  "— compare",
+];
+let previousIndex = -1;
+for (const marker of orderedHomeMarkers) {
+  const markerIndex = deferred.indexOf(marker);
+  if (markerIndex < 0 || markerIndex <= previousIndex) {
+    throw new Error(`ホームのセクション順が不正です: ${marker}`);
+  }
+  previousIndex = markerIndex;
+}
+if (!index.includes('href="#diagnosis">自分に合う香りを診断する</a>')) {
+  throw new Error("ヒーローの診断CTAが実際の診断セクションを指していません");
+}
+
 console.log(
   `Site copy valid: ${columnFiles.length} columns, ${Buffer.byteLength(index)} homepage bytes`,
 );
