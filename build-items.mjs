@@ -14,6 +14,8 @@ const homeScript = readFileSync("public/assets/home.js", "utf8");
 const SITE_COPY = loadSiteCopy();
 const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const PERFUMES = loadFragrances();
+const TRIAL_DATA = JSON.parse(readFileSync("data/fragrance-trials.json", "utf8"));
+const TRIALS = new Map((TRIAL_DATA.trials || []).map((trial) => [trial.slug, trial]));
 
 // BRANDS を抽出
 const BRANDS = JSON.parse(readFileSync("data/brands.json", "utf8"));
@@ -77,6 +79,11 @@ const formatSizes = sizes => (sizes || []).map((size) => {
     ? `${volume}：参考価格 ${Number(size.referencePriceYen).toLocaleString("ja-JP")}円（税込）`
     : volume;
 }).join(" / ");
+const trialMediumLabel = medium => ({
+  skin: "肌",
+  blotter: "ムエット",
+  both: "肌とムエット",
+}[medium] || medium);
 
 const filterUrl = (field, value) => `/?${field}=${encodeURIComponent(value)}#fragrances`;
 
@@ -144,7 +151,7 @@ function comparisonRows(p, candidate) {
   return rows;
 }
 
-function pageHTML(p, related, competitors) {
+function pageHTML(p, related, competitors, trial) {
   const famLabel = FAM[p.family]?.ja || p.family;
   const famColor = FAM[p.family]?.color || "#aeb0b6";
   const ogImage = familyOgpUrl(p.family);
@@ -237,6 +244,19 @@ function pageHTML(p, related, competitors) {
       <a class="detail-link" href="/items/${candidate.slug}">${escape(candidate.name)}の詳細を見る <span aria-hidden="true">→</span></a>
     </section>`;
   }).join("");
+  const trialFacts = trial ? [
+    ["試香日", formatDate(trial.testedAt)],
+    ["場所", trial.place],
+    ["方法", `${trialMediumLabel(trial.medium)} ／ ${trial.application}`],
+    ["気温", `${trial.temperatureC}℃`],
+  ] : [];
+  const trialObservations = trial ? [
+    ["30分後", trial.after30Minutes],
+    ["3時間後", trial.after3Hours],
+    ["翌日", trial.nextDay],
+    ["周囲約1m", trial.oneMeter],
+    ["服への残り方", trial.onClothing],
+  ] : [];
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -332,9 +352,10 @@ article{max-width:1060px}
 .compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.compare-card{max-width:none;padding:22px 0 0;border-top:2px solid #34353a}.compare-reason{font-size:10.5px;letter-spacing:1.3px;color:#8c8c92;text-transform:uppercase}.compare-brand{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;margin-top:17px}.compare-card h3{font-family:"Shippori Mincho",serif;font-size:18px;line-height:1.5;margin:5px 0 16px}.compare-card h3 a{color:#f0eeea;text-decoration:none}.compare-card h3 a:hover{text-decoration:underline}
 .compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
 .direct-list{display:grid;gap:42px}.direct-pair{border-top:1px solid #3a3b40;padding-top:22px}.direct-relation{font-size:11px;letter-spacing:1.1px;color:#8c8c92}.direct-title{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:center;margin:9px 0 22px;font-family:"Shippori Mincho",serif;font-size:clamp(17px,2.4vw,23px);font-weight:500;line-height:1.45}.direct-title span,.direct-title a{overflow-wrap:anywhere}.direct-title a{color:#f0eeea;text-decoration:none}.direct-title a:hover{text-decoration:underline}.direct-title i{font:italic 14px "Cormorant",serif;color:#77787e}.direct-table{width:100%;table-layout:fixed;border-collapse:collapse}.direct-table th,.direct-table td{padding:11px 12px;border-bottom:1px solid #2a2b30;text-align:left;vertical-align:top;overflow-wrap:anywhere}.direct-table thead th{font:500 12px "Shippori Mincho",serif;color:#e8e5df}.direct-table thead th:first-child{width:94px;color:#77787e}.direct-table thead small{display:block;margin-top:3px;font:11px "Zen Kaku Gothic New",sans-serif;color:#8c8c92}.direct-table tbody th{font-size:11px;color:#8c8c92}.direct-table tbody td{font-size:12.5px;line-height:1.72;color:#cfccc6}.direct-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}.direct-choice p{border-left:2px solid #55565b;padding:8px 11px;background:#141517}.direct-choice b,.direct-choice span{display:block}.direct-choice b{font-size:11px;color:#d9d6d0}.direct-choice span{font-size:11px;color:#c9b558;margin-top:3px}.compare-method{font-size:11px;color:#77787e;line-height:1.8;margin:-8px 0 24px}
+.trial-intro{max-width:720px;color:#c9c6c0;font-size:13.5px;line-height:1.9}.trial-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:20px 0 26px;padding:15px 0;border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.trial-facts div{display:flex;gap:8px}.trial-facts dt{font-size:11px;color:#77787e}.trial-facts dd{font-size:11px;color:#d7d4ce}.trial-observations{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.trial-observations div{border-top:2px solid #4e4f54;padding-top:12px;min-width:0}.trial-observations dt{font-family:"Cormorant",serif;font-style:italic;color:#a5a6ab;font-size:13px}.trial-observations dd{margin-top:7px;font-size:12.5px;color:#d8d5cf;line-height:1.8;overflow-wrap:anywhere}.trial-preference{margin-top:24px;padding-left:16px;border-left:2px solid #c9b558;color:#dedbd5;font-size:13.5px;line-height:1.9}.trial-preference b{display:block;margin-bottom:4px;font-size:10.5px;letter-spacing:1px;color:#c9b558}.trial-disclaimer{margin-top:14px;color:#77787e;font-size:10.5px;line-height:1.75}
 .journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
 .buy-official{background:transparent;color:#e9e7e3;border:1px solid #67686e}.sources details{border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.sources summary{cursor:pointer;min-height:52px;display:flex;align-items:center;color:#d8d5cf;font-size:14px}.sources summary::marker{color:#8c8c92}.source-list{list-style:none;padding:4px 0 18px;display:grid;gap:15px}.source-list li{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:start}.source-type{font-size:10px;letter-spacing:1px;border:1px solid #3a3b40;padding:2px 7px;color:#aeb0b6}.source-list a{color:#d8d5cf;text-decoration:none;font-size:13px;overflow-wrap:anywhere}.source-list a:hover{text-decoration:underline}.source-date{grid-column:2;font-size:10.5px;color:#77787e}
-@media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.direct-title{gap:9px}.direct-table th,.direct-table td{padding:9px 7px}.direct-table thead th:first-child{width:65px}.direct-choice{grid-template-columns:1fr}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
+@media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.direct-title{gap:9px}.direct-table th,.direct-table td{padding:9px 7px}.direct-table thead th:first-child{width:65px}.direct-choice{grid-template-columns:1fr}.trial-observations{grid-template-columns:1fr}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
 @media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
@@ -402,6 +423,16 @@ article{max-width:1060px}
     </div>
   </section>` : ""}
 
+  ${trial ? `<section class="section editorial-trial" aria-labelledby="editorial-trial-title">
+    <p class="section-kicker">Sillage wear test</p>
+    <h2 id="editorial-trial-title">編集部試香メモ</h2>
+    <p class="trial-intro">公開情報ではなく、Sillage編集部が記録した一条件での観察です。肌質・気温・使用量によって感じ方は変わります。</p>
+    <dl class="trial-facts">${trialFacts.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join("")}</dl>
+    <dl class="trial-observations">${trialObservations.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join("")}</dl>
+    <p class="trial-preference"><b>編集者の好み</b>${escape(trial.editorPreference)}</p>
+    <p class="trial-disclaimer">このメモはブランドの公式説明や性能保証ではありません。</p>
+  </section>` : ""}
+
   ${directComparisonCards ? `<section class="section" aria-labelledby="direct-compare-title">
     <p class="section-kicker">Direct comparison</p>
     <h2 id="direct-compare-title">近い香水との違い</h2>
@@ -449,7 +480,8 @@ for (const p of itemsWithSlug) {
   // 同ブランド → 同香調 → 共通シーンの順で、根拠のある候補を最大3本。
   const related = uniqueRelated(p, itemsWithSlug);
   const competitors = directCompetitors(p, itemsWithSlug);
-  const html = pageHTML(p, related, competitors).replace(/[ \t]+$/gm, "");
+  const trial = TRIALS.get(p.slug) || null;
+  const html = pageHTML(p, related, competitors, trial).replace(/[ \t]+$/gm, "");
   const path = `public/items/${p.slug}.html`;
   writeFileSync(path, html);
   totalSize += html.length;
