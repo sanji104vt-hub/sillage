@@ -8,24 +8,27 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
+import { loadSiteCopy } from "./lib/site-copy.mjs";
 
-const html = readFileSync("public/index.html", "utf8");
+const homeScript = readFileSync("public/assets/home.js", "utf8");
+const SITE_COPY = loadSiteCopy();
+const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const PERFUMES = loadFragrances();
 
 // BRANDS を抽出
-const bStart = html.indexOf("const BRANDS = [");
-const bArr = html.slice(html.indexOf("[", bStart), html.indexOf("\n];", bStart) + 2);
-const BRANDS = new Function("return " + bArr.replace(/,(\s*\])/g, "$1"))();
+const BRANDS = JSON.parse(readFileSync("data/brands.json", "utf8"));
 
 // FAMILIES → FAM
 function extractLine(marker) {
-  const i = html.indexOf(marker);
-  const end = html.indexOf("};", i);
-  return html.slice(html.indexOf("{", i), end + 1);
+  const i = homeScript.indexOf(marker);
+  if (i < 0) throw new Error(`${marker} が public/assets/home.js に見つかりません`);
+  const end = homeScript.indexOf("};", i);
+  return homeScript.slice(homeScript.indexOf("{", i), end + 1);
 }
-const FAMILIES_START = html.indexOf("const FAMILIES = [");
-const FAMILIES_END = html.indexOf("\n];", FAMILIES_START) + 2;
-const FAMILIES = new Function("return " + html.slice(html.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"))();
+const FAMILIES_START = homeScript.indexOf("const FAMILIES = [");
+const FAMILIES_END = homeScript.indexOf("\n];", FAMILIES_START) + 2;
+if (FAMILIES_START < 0 || FAMILIES_END < 2) throw new Error("FAMILIES が public/assets/home.js に見つかりません");
+const FAMILIES = new Function("return " + homeScript.slice(homeScript.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"))();
 const FAM = Object.fromEntries(FAMILIES.map(f => [f.key, f]));
 const SCENE = new Function("return " + extractLine("const SCENE="))();
 const SEASON = new Function("return " + extractLine("const SEASON="))();
@@ -104,7 +107,7 @@ function pageHTML(p, related) {
   const priceTier = PRICE[p.priceTier] || "";
   const brandSlug = BRAND_SLUG[p.brand];
   const brandLink = brandSlug ? `/brand-${brandSlug}.html` : null;
-  const url = `https://sillage.asutelu.com/items/${p.slug}`;
+  const url = `${SITE}/items/${p.slug}`;
   const title = `${p.name}（${p.brand}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
   const desc = `${p.brand}「${p.name}」の香調(トップ・ミドル・ラスト)、季節・シーン、価格帯、Sillageの見立てをまとめています。`;
 
@@ -112,8 +115,8 @@ function pageHTML(p, related) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Sillage", "item": "https://sillage.asutelu.com/" },
-      ...(brandLink ? [{ "@type": "ListItem", "position": 2, "name": p.brand, "item": `https://sillage.asutelu.com${brandLink}` }] : []),
+      { "@type": "ListItem", "position": 1, "name": SITE_COPY.shortName, "item": SITE_COPY.siteUrl },
+      ...(brandLink ? [{ "@type": "ListItem", "position": 2, "name": p.brand, "item": `${SITE}${brandLink}` }] : []),
       { "@type": "ListItem", "position": brandLink ? 3 : 2, "name": p.name, "item": url },
     ]
   };
@@ -196,7 +199,7 @@ function pageHTML(p, related) {
 <meta property="og:description" content="${escape(desc)}">
 <meta property="og:url" content="${url}">
 ${ogImage ? `<meta property="og:image" content="${escape(ogImage)}">` : ""}
-<meta property="og:site_name" content="Sillage（シヤージュ）">
+<meta property="og:site_name" content="${escape(SITE_COPY.siteName)}">
 <meta name="twitter:card" content="summary${ogImage ? "_large_image" : ""}">
 <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
 <script type="application/ld+json">${JSON.stringify(product)}</script>
@@ -361,7 +364,7 @@ article{max-width:1060px}
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
-  <a href="/">Sillage（シヤージュ）— 香調・シーン・季節から選ぶ香水ガイド</a>
+  <a href="/">${escape(SITE_COPY.footerLabel)}</a>
 </footer>
 </body>
 </html>`;

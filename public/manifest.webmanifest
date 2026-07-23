@@ -1,0 +1,19 @@
+{
+  "name": "Sillage（シヤージュ）｜香調・シーン・季節から選ぶ香水ガイド",
+  "short_name": "Sillage",
+  "description": "プチプラからメゾンまで。香調・シーン・季節・価格帯から、自分に合う香りを探せる総合香水ガイド。",
+  "lang": "ja",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0d0e10",
+  "theme_color": "#0d0e10",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

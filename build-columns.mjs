@@ -2,8 +2,10 @@
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
+import { loadSiteCopy } from "./lib/site-copy.mjs";
 
-const SITE = "https://sillage.asutelu.com";
+const SITE_COPY = loadSiteCopy();
+const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const OUT = join("public", "columns");
 const MODIFIED = "2026-07-16T22:00:00+09:00";
 const PUBLISHED = "2026-07-07T15:18:04+09:00";
@@ -302,8 +304,8 @@ function renderArticle(article, all) {
   const canonical = `${SITE}/columns/${article.slug}`;
   const items = article.featured.map(itemInfo);
   const image = familyOgpUrl(ARTICLE_FAMILY[article.slug]) || `${SITE}/ogp-default.png`;
-  const title = `${article.title}｜Sillage（シヤージュ）`;
-  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:"Sillage編集部"},publisher:{"@type":"Organization",name:"Sillage"},inLanguage:"ja",datePublished:PUBLISHED,dateModified:MODIFIED,...(image?{image}:{})};
+  const title = `${article.title}｜${SITE_COPY.siteName}`;
+  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:`${SITE_COPY.shortName}編集部`},publisher:{"@type":"Organization",name:SITE_COPY.shortName},inLanguage:"ja",datePublished:PUBLISHED,dateModified:MODIFIED,...(image?{image}:{})};
   const breadcrumbLd = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Sillage",item:`${SITE}/`},{"@type":"ListItem",position:2,name:article.title,item:canonical}]};
   const faqLd = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:article.faq.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))};
   const others = all.filter(x=>x.slug!==article.slug).slice(0,6);
@@ -314,9 +316,10 @@ function renderArticle(article, all) {
   return `<!DOCTYPE html>
 <html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="/manifest.webmanifest">
 <title>${esc(title)}</title><meta name="description" content="${esc(article.description)}"><meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q">
 <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-60BQRQWB5M');</script>
-<link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(article.description)}"><meta property="og:url" content="${canonical}">${image?`<meta property="og:image" content="${esc(image)}">`:""}<meta property="og:site_name" content="Sillage（シヤージュ）"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(article.description)}">
+<link rel="canonical" href="${canonical}"><meta property="og:type" content="article"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(article.description)}"><meta property="og:url" content="${canonical}">${image?`<meta property="og:image" content="${esc(image)}">`:""}<meta property="og:site_name" content="${esc(SITE_COPY.siteName)}"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(title)}"><meta name="twitter:description" content="${esc(article.description)}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Cormorant:ital,wght@0,400;1,400&family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">${JSON.stringify(articleLd)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script><script type="application/ld+json">${JSON.stringify(faqLd)}</script>
 <style>
@@ -332,7 +335,7 @@ function renderArticle(article, all) {
 <section class="featured"><h2>関連する香水を詳しく見る</h2>${items.map(x=>`<a href="/items/${x.slug}">${esc(x.name)}の香りを見る →</a>`).join("")}</section>
 <section class="other"><h2>次に読む</h2>${others.map(x=>`<a href="/columns/${x.slug}">${esc(x.title)}</a>`).join("")}</section>
 <section class="share-tools"><p>share ／ 役立ったら共有</p><div class="share-actions"><a href="${xUrl}" target="_blank" rel="noopener">Xで共有</a><a href="${lineUrl}" target="_blank" rel="noopener">LINEで送る</a><button type="button" onclick="shareSillage(this)">リンクをコピー</button></div></section><a class="backhome" href="/">← Sillageトップへ戻る</a></main>
-<footer>当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文とグラフはブランド公開情報と香調構成をもとにしたSillage編集部の独自整理であり、香りの感じ方には個人差があります。<br><a href="/">Sillage（シヤージュ）— 香調・シーン・季節から選ぶ香水ガイド</a></footer>
+<footer>当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文とグラフはブランド公開情報と香調構成をもとにしたSillage編集部の独自整理であり、香りの感じ方には個人差があります。<br><a href="/">${esc(SITE_COPY.footerLabel)}</a></footer>
 <script>async function shareSillage(button){if(navigator.share){try{await navigator.share({title:document.title,url:location.href});return}catch(e){if(e&&e.name==='AbortError')return}}if(navigator.clipboard){await navigator.clipboard.writeText(location.href);button.textContent='コピーしました'}}</script></body></html>`;
 }
 
