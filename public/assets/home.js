@@ -1561,4 +1561,7 @@ if(location.hash&&location.hash!=="#fragrance-wheel"){
     if(target)requestAnimationFrame(()=>target.scrollIntoView({behavior:"auto",block:"start"}));
   }).catch(()=>{});
 }
-if(new URLSearchParams(location.search).toString())loadDeferredHome().catch(()=>{});
+const initialFilterParams=new URLSearchParams(location.search);
+if(["family","scene","season","gender","price"].some(key=>initialFilterParams.has(key))){
+  loadDeferredHome().catch(()=>{});
+}
