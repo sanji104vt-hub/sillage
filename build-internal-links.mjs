@@ -1,6 +1,6 @@
 // フェーズ2内部リンク網:
-// - トップに <section id="brand-index"> (47ブランドタイル)
-// - トップに <section id="family-items"> (10系統 × 代表5本)
+// - 遅延読込HTMLに <section id="brand-index"> (47ブランドタイル)
+// - 遅延読込HTMLに <section id="family-items"> (10系統 × 代表5本)
 // - 各 brand-*.html 下部に「同じ系統の他ブランド」「登場記事」
 // マーカー間を毎回差し替える(冪等)。既存のGA4/GSC/楽天IDは触らない。
 
@@ -8,17 +8,18 @@ import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 
 const SITE = "https://sillage.asutelu.com";
 const INDEX = "public/index.html";
+const HOME_SCRIPT = "public/assets/home.js";
+const HOME_FRAGMENT = "public/partials/home-deferred.html";
 const COLUMNS_DIR = "public/columns";
 
 const data = JSON.parse(readFileSync("data/fragrances.json", "utf8"));
 const PERFUMES = data.fragrances || data;
 
 const html = readFileSync(INDEX, "utf8");
+const homeScript = readFileSync(HOME_SCRIPT, "utf8");
+const homeFragment = readFileSync(HOME_FRAGMENT, "utf8");
 
-// BRANDS を index.html から抽出
-const bStart = html.indexOf("const BRANDS = [");
-const bArrText = html.slice(html.indexOf("[", bStart), html.indexOf("\n];", bStart) + 2);
-const BRANDS = new Function("return " + bArrText.replace(/,(\s*\])/g, "$1"))();
+const BRANDS = JSON.parse(readFileSync("data/brands.json", "utf8"));
 
 // FAMILIES → FAM
 function extractLine(marker) {
@@ -26,10 +27,10 @@ function extractLine(marker) {
   const end = html.indexOf("};", i);
   return html.slice(html.indexOf("{", i), end + 1);
 }
-const FAMILIES_START = html.indexOf("const FAMILIES = [");
-const FAMILIES_END = html.indexOf("\n];", FAMILIES_START) + 2;
+const FAMILIES_START = homeScript.indexOf("const FAMILIES = [");
+const FAMILIES_END = homeScript.indexOf("\n];", FAMILIES_START) + 2;
 const FAMILIES = new Function(
-  "return " + html.slice(html.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"),
+  "return " + homeScript.slice(homeScript.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"),
 )();
 const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 
@@ -226,7 +227,7 @@ const END2 = "<!-- generated:family-items:end -->";
 const brandIndexBlock = `${START1}\n${buildBrandIndex()}\n${END1}`;
 const familyItemsBlock = `${START2}\n${buildFamilyItems()}\n${END2}`;
 
-let out = html;
+let out = homeFragment;
 
 // 既存マーカー間があれば差し替え、なければ挿入
 function upsert(text, start, end, block, insertAfterAnchor) {
@@ -281,15 +282,18 @@ ${CSS_START}
 }
 ${CSS_END}
 `;
-if (out.includes(CSS_START)) {
-  const s = out.indexOf(CSS_START);
-  const e = out.indexOf(CSS_END) + CSS_END.length;
-  out = out.slice(0, s) + CSS.trim() + out.slice(e);
+writeFileSync(HOME_FRAGMENT, out);
+
+let indexOut = html;
+if (indexOut.includes(CSS_START)) {
+  const s = indexOut.indexOf(CSS_START);
+  const e = indexOut.indexOf(CSS_END) + CSS_END.length;
+  indexOut = indexOut.slice(0, s) + CSS.trim() + indexOut.slice(e);
 } else {
-  out = out.replace("</style>", CSS.trim() + "\n</style>");
+  indexOut = indexOut.replace("</style>", CSS.trim() + "\n</style>");
 }
 
-writeFileSync(INDEX, out);
+writeFileSync(INDEX, indexOut);
 
 // -------- ブランドページ更新 ---------
 const brandFiles = readdirSync("public").filter((f) => /^brand-.*\.html$/.test(f));

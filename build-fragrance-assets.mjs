@@ -2,42 +2,34 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { loadFragranceData } from "./lib/fragrance-data.mjs";
 
 const document = loadFragranceData();
+const brands = JSON.parse(readFileSync("data/brands.json", "utf8"));
+
 mkdirSync("public/data", { recursive: true });
-writeFileSync(
-  "public/data/fragrances.js",
-  `/* Generated from data/fragrances.json. Do not edit directly. */\nwindow.SILLAGE_FRAGRANCE_SCHEMA_VERSION=${document.schemaVersion};\nwindow.SILLAGE_FRAGRANCES=${JSON.stringify(document.fragrances)};\n`,
-  "utf8",
-);
+writeFileSync("public/data/fragrances.json", JSON.stringify(document.fragrances), "utf8");
+writeFileSync("public/data/brands.json", JSON.stringify(brands), "utf8");
+
 const indexPath = "public/index.html";
 let indexHtml = readFileSync(indexPath, "utf8");
-const familiesStart = indexHtml.indexOf("const FAMILIES = [");
-const familiesEnd = indexHtml.indexOf("\n];", familiesStart) + 2;
-const families = new Function(`return ${indexHtml.slice(indexHtml.indexOf("[", familiesStart), familiesEnd).replace(/,(\s*\])/g, "$1")}`)();
-const familyLabels = Object.fromEntries(families.map((family) => [family.key, family.ja]));
-const itemList = {
+const collectionPage = {
   "@context": "https://schema.org",
-  "@type": "ItemList",
+  "@type": "CollectionPage",
   name: "Sillage 掲載香水一覧",
-  numberOfItems: document.fragrances.length,
-  itemListElement: document.fragrances.map((item, index) => ({
-    "@type": "ListItem",
-    position: index + 1,
-    item: {
-      "@type": "Product",
-      name: item.name,
-      brand: { "@type": "Brand", name: item.brand },
-      category: familyLabels[item.family] || item.family,
-      description: item.verdict,
-    },
-  })),
+  url: "https://sillage.asutelu.com/",
+  mainEntity: {
+    "@type": "ItemList",
+    name: "掲載香水",
+    numberOfItems: document.fragrances.length,
+  },
 };
-const scripts = [...indexHtml.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
-const itemListScript = scripts.find((match) => {
-  try { return JSON.parse(match[1])["@type"] === "ItemList"; } catch { return false; }
-});
-if (!itemListScript) throw new Error("ItemList JSON-LD not found in public/index.html");
-if (JSON.stringify(JSON.parse(itemListScript[1])) !== JSON.stringify(itemList)) {
-  indexHtml = indexHtml.replace(itemListScript[0], `<script type="application/ld+json">${JSON.stringify(itemList)}</script>`);
+const collectionPattern = /<script id="home-collection-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/;
+const collectionScript = indexHtml.match(collectionPattern);
+if (!collectionScript) throw new Error("Homepage CollectionPage JSON-LD not found.");
+if (JSON.stringify(JSON.parse(collectionScript[1])) !== JSON.stringify(collectionPage)) {
+  indexHtml = indexHtml.replace(
+    collectionScript[0],
+    `<script id="home-collection-jsonld" type="application/ld+json">${JSON.stringify(collectionPage)}</script>`,
+  );
   writeFileSync(indexPath, indexHtml, "utf8");
 }
-console.log(`Generated public/data/fragrances.js (${document.fragrances.length} fragrances).`);
+
+console.log(`Generated lazy homepage data (${document.fragrances.length} fragrances, ${brands.length} brands).`);
