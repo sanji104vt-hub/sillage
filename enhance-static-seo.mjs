@@ -2,12 +2,21 @@
 // 既存コンテンツや計測タグは削除せず、何度実行しても同じ結果になる。
 import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 import { join, relative } from "node:path";
+import { loadFragrances } from "./lib/fragrance-data.mjs";
+import { dominantFamily, familyOgpUrl } from "./lib/ogp-image.mjs";
 
 const PUBLIC = "public";
 const SITE = "https://sillage.asutelu.com";
 const GA4_ID = "G-60BQRQWB5M";
 const ARTICLE_PUBLISHED = "2026-07-07T15:18:04+09:00";
 const ARTICLE_MODIFIED = "2026-07-16T22:00:00+09:00";
+const fragrances = loadFragrances();
+const fragranceBySlug = new Map(fragrances.map((fragrance) => [fragrance.slug, fragrance]));
+const fragrancesByBrand = new Map();
+for (const fragrance of fragrances) {
+  if (!fragrancesByBrand.has(fragrance.brand)) fragrancesByBrand.set(fragrance.brand, []);
+  fragrancesByBrand.get(fragrance.brand).push(fragrance);
+}
 
 const SHARE_CSS = `<style data-sillage-share>
 .share-tools{margin-top:34px;padding-top:24px;border-top:1px solid #2c2d31}
@@ -126,9 +135,14 @@ for (const path of files) {
     }).find((data) => data?.["@type"] === "CollectionPage");
     const brand = collection?.about?.name;
     if (brand) {
-      const image = itemData.find((item) => item.brand === brand && item.image)?.image;
+      const image = familyOgpUrl(dominantFamily(fragrancesByBrand.get(brand) || []));
       if (image) {
-        html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${image}">`);
+        if (html.includes('property="og:image"')) {
+          html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${image}">`);
+        } else {
+          html = html.replace(/(<meta property="og:description" content="[^"]*">)/, `$1<meta property="og:image" content="${image}">`);
+        }
+        html = replaceJsonLd(html, (data) => data?.["@type"] === "CollectionPage", (data) => ({ ...data, image }));
       } else {
         html = html.replace(/<meta property="og:image" content="[^"]*">/, "");
         html = html.replace('<meta name="twitter:card" content="summary_large_image">', '<meta name="twitter:card" content="summary">');
@@ -149,6 +163,16 @@ for (const path of files) {
       try { return JSON.parse(m[1]); } catch { return null; }
     }).find((data) => data?.["@type"] === "Product");
     if (productBlock) {
+      const slug = rel.replace(/^items\//, "").replace(/\.html$/, "");
+      const familyImage = familyOgpUrl(fragranceBySlug.get(slug)?.family);
+      if (familyImage) {
+        if (html.includes('property="og:image"')) {
+          html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${familyImage}">`);
+        } else {
+          html = html.replace(/(<meta property="og:url" content="[^"]+">)/, `$1\n<meta property="og:image" content="${familyImage}">`);
+        }
+        html = replaceJsonLd(html, (data) => data?.["@type"] === "Product", (data) => ({ ...data, image: familyImage }));
+      }
       const uniqueTitle = `${productBlock.name}（${productBlock.brand?.name}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
       html = html.replace(/<title>.*?<\/title>/s, `<title>${uniqueTitle}</title>`);
       const image = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];

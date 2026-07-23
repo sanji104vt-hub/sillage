@@ -1,12 +1,21 @@
 // Sillageのコラム個別ページを、本文・図解・SEO情報を含む共通テンプレートから生成する。
 import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
+import { familyOgpUrl } from "./lib/ogp-image.mjs";
 
 const SITE = "https://sillage.asutelu.com";
 const OUT = join("public", "columns");
 const MODIFIED = "2026-07-16T22:00:00+09:00";
 const PUBLISHED = "2026-07-07T15:18:04+09:00";
 mkdirSync(OUT, { recursive: true });
+
+const ARTICLE_FAMILY = {
+  "business-fragrance": "aromatic",
+  "chanel-vs-dior": "aromatic",
+  "tomford-vs-creed": "woody",
+  "hermes-vs-acquadiparma": "citrus",
+  "bvlgari-vs-versace": "aquatic",
+};
 
 const brand = (name, slug) => ({ name, href: `/brand-${slug}.html` });
 const BRANDS = {
@@ -258,9 +267,10 @@ const esc = (s="") => String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").r
 function itemInfo(slug) {
   const html = readFileSync(join("public", "items", `${slug}.html`), "utf8");
   const image = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];
-  const name = html.match(/<h1>(.*?)<\/h1>/s)?.[1]?.replace(/<[^>]+>/g, "").trim();
+  const name = html.match(/<h1[^>]*>(.*?)<\/h1>/s)?.[1]?.replace(/<[^>]+>/g, "").trim();
   const brandName = html.match(/<span class="brand">(.*?)<\/span>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
     || html.match(/<p class="brand">(.*?)<\/p>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
+    || html.match(/<p class="brand-line">(.*?)<\/p>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
     || "香水";
   return { slug, image, name: name || slug, brand: brandName };
 }
@@ -291,7 +301,7 @@ function renderTable(table) {
 function renderArticle(article, all) {
   const canonical = `${SITE}/columns/${article.slug}`;
   const items = article.featured.map(itemInfo);
-  const image = items.find(x=>x.image)?.image;
+  const image = familyOgpUrl(ARTICLE_FAMILY[article.slug]) || `${SITE}/ogp-default.png`;
   const title = `${article.title}｜Sillage（シヤージュ）`;
   const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:"Sillage編集部"},publisher:{"@type":"Organization",name:"Sillage"},inLanguage:"ja",datePublished:PUBLISHED,dateModified:MODIFIED,...(image?{image}:{})};
   const breadcrumbLd = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Sillage",item:`${SITE}/`},{"@type":"ListItem",position:2,name:article.title,item:canonical}]};

@@ -7,6 +7,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
+import { familyOgpUrl } from "./lib/ogp-image.mjs";
 
 const html = readFileSync("public/index.html", "utf8");
 const PERFUMES = loadFragrances();
@@ -97,6 +98,7 @@ function comparisonLabel(p, candidate) {
 function pageHTML(p, related) {
   const famLabel = FAM[p.family]?.ja || p.family;
   const famColor = FAM[p.family]?.color || "#aeb0b6";
+  const ogImage = familyOgpUrl(p.family);
   const seasons = (p.seasons || []).map(s => SEASON[s] || s).join(" / ");
   const scenes = (p.scenes || []).map(s => SCENE[s] || s).join(" / ");
   const priceTier = PRICE[p.priceTier] || "";
@@ -123,7 +125,7 @@ function pageHTML(p, related) {
     "category": famLabel,
     "description": p.verdict || desc,
     "url": url,
-    ...(p.img ? { "image": p.img } : {}),
+    ...(ogImage ? { "image": ogImage } : {}),
   };
 
   const officialUrl = p.purchaseLinks?.official?.url || "";
@@ -193,9 +195,9 @@ function pageHTML(p, related) {
 <meta property="og:title" content="${escape(p.name)}｜${escape(p.brand)}｜Sillage">
 <meta property="og:description" content="${escape(desc)}">
 <meta property="og:url" content="${url}">
-${p.img ? `<meta property="og:image" content="${escape(p.img)}">` : ""}
+${ogImage ? `<meta property="og:image" content="${escape(ogImage)}">` : ""}
 <meta property="og:site_name" content="Sillage（シヤージュ）">
-<meta name="twitter:card" content="summary${p.img ? "_large_image" : ""}">
+<meta name="twitter:card" content="summary${ogImage ? "_large_image" : ""}">
 <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
 <script type="application/ld+json">${JSON.stringify(product)}</script>
 <style>
