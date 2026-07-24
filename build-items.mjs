@@ -465,7 +465,7 @@ article{max-width:1060px}
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
-  <a href="/">${escape(SITE_COPY.footerLabel)}</a>
+  <a href="/">${escape(SITE_COPY.footerLabel)}</a> ・ <a href="/about.html#update-policy">編集方針・更新ポリシー</a>
 </footer>
 <script>
 document.addEventListener("click",function(event){
