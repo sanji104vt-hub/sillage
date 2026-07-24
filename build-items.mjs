@@ -191,9 +191,9 @@ function pageHTML(p, related, competitors, trial) {
     ? `${shop}で確認`
     : link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
   const purchaseButtons = [
-    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
-    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
-    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
+    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="amazon" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
   const sizeSummary = formatSizes(p.sizes);
@@ -467,6 +467,22 @@ article{max-width:1060px}
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
   <a href="/">${escape(SITE_COPY.footerLabel)}</a>
 </footer>
+<script>
+document.addEventListener("click",function(event){
+  const link=event.target.closest("a[data-purchase-shop]");
+  if(!link)return;
+  const position=link.closest(".hero-actions")?"hero":"bottom";
+  if(typeof window.gtag==="function"){
+    window.gtag("event","purchase_link_click",{
+      product_id:link.dataset.productId,
+      purchase_shop:link.dataset.purchaseShop,
+      button_position:position,
+      destination_url:link.href,
+      transport_type:"beacon"
+    });
+  }
+});
+</script>
 </body>
 </html>`;
 }

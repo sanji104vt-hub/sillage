@@ -239,5 +239,21 @@ article{max-width:1060px}
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
   <a href="/">Sillage（シヤージュ） — 香調・シーン・季節から選ぶ香水ガイド</a>
 </footer>
+<script>
+document.addEventListener("click",function(event){
+  const link=event.target.closest("a[data-purchase-shop]");
+  if(!link)return;
+  const position=link.closest(".hero-actions")?"hero":"bottom";
+  if(typeof window.gtag==="function"){
+    window.gtag("event","purchase_link_click",{
+      product_id:link.dataset.productId,
+      purchase_shop:link.dataset.purchaseShop,
+      button_position:position,
+      destination_url:link.href,
+      transport_type:"beacon"
+    });
+  }
+});
+</script>
 </body>
 </html>

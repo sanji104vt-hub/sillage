@@ -124,7 +124,7 @@ article{max-width:1060px}
         <div><dt>参考価格</dt><dd>¥12,000前後<span class="price-note">販売店や時期により変動します</span></dd></div>
         <div><dt>発売年</dt><dd>1981年</dd></div>
       </dl>
-      <p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00rv9hn.k90d606b.g00rv9hn.k90d794d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrandacross%2F158715%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrandacross%2Fi%2F10012153%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div>
+      <p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00rv9hn.k90d606b.g00rv9hn.k90d794d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrandacross%2F158715%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrandacross%2Fi%2F10012153%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="ysl-5">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div>
       <p class="updated">データ更新日：2026年7月18日</p>
       <p class="updated">情報確認日：2026年7月18日</p>
     </div>
@@ -231,12 +231,28 @@ article{max-width:1060px}
 
 
 
-  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2><p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p><div class="actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00rv9hn.k90d606b.g00rv9hn.k90d794d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrandacross%2F158715%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrandacross%2Fi%2F10012153%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div></section>
+  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2><p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p><div class="actions"><a class="buy" href="https://hb.afl.rakuten.co.jp/hgc/g00rv9hn.k90d606b.g00rv9hn.k90d794d/?pc=https%3A%2F%2Fitem.rakuten.co.jp%2Fbrandacross%2F158715%2F&amp;m=http%3A%2F%2Fm.rakuten.co.jp%2Fbrandacross%2Fi%2F10012153%2F&amp;rafcid=wsc_i_is_9fdeb09f-0a42-4a33-b337-0ae38817954c" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="ysl-5">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div></section>
   <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
   <a href="/">Sillage（シヤージュ） — 香調・シーン・季節から選ぶ香水ガイド</a>
 </footer>
+<script>
+document.addEventListener("click",function(event){
+  const link=event.target.closest("a[data-purchase-shop]");
+  if(!link)return;
+  const position=link.closest(".hero-actions")?"hero":"bottom";
+  if(typeof window.gtag==="function"){
+    window.gtag("event","purchase_link_click",{
+      product_id:link.dataset.productId,
+      purchase_shop:link.dataset.purchaseShop,
+      button_position:position,
+      destination_url:link.href,
+      transport_type:"beacon"
+    });
+  }
+});
+</script>
 </body>
 </html>

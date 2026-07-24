@@ -125,7 +125,7 @@ article{max-width:1060px}
         <div><dt>参考価格</dt><dd>¥8,000前後<span class="price-note">販売店や時期により変動します</span></dd></div>
         <div><dt>発売年</dt><dd>1995年</dd></div>
       </dl>
-      <div class="actions hero-actions"><a class="buy buy-official" href="https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122" target="_blank" rel="noopener noreferrer">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div>
+      <div class="actions hero-actions"><a class="buy buy-official" href="https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="jean-paul-gaultier-1">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div>
       <p class="updated">データ更新日：2026年7月18日</p>
       <p class="updated">情報確認日：2026年7月18日</p>
     </div>
@@ -232,12 +232,28 @@ article{max-width:1060px}
 
   <section class="section sources" aria-labelledby="sources-title"><p class="section-kicker">References</p><h2 id="sources-title">情報源</h2><details><summary>確認した情報源を表示する</summary><ul class="source-list"><li><span class="source-type">公式</span><a href="https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122" target="_blank" rel="noopener noreferrer">Jean Paul Gaultier — Le Male Eau de Toilette <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a><span class="source-date">確認日：2026年7月18日</span></li></ul></details></section>
 
-  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2><p class="ad-note">価格や在庫は公式サイトで最新情報をご確認ください。</p><div class="actions"><a class="buy buy-official" href="https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122" target="_blank" rel="noopener noreferrer">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div></section>
+  <section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2><p class="ad-note">価格や在庫は公式サイトで最新情報をご確認ください。</p><div class="actions"><a class="buy buy-official" href="https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="jean-paul-gaultier-1">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a></div></section>
   <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
   <a href="/">Sillage（シヤージュ） — 香調・シーン・季節から選ぶ香水ガイド</a>
 </footer>
+<script>
+document.addEventListener("click",function(event){
+  const link=event.target.closest("a[data-purchase-shop]");
+  if(!link)return;
+  const position=link.closest(".hero-actions")?"hero":"bottom";
+  if(typeof window.gtag==="function"){
+    window.gtag("event","purchase_link_click",{
+      product_id:link.dataset.productId,
+      purchase_shop:link.dataset.purchaseShop,
+      button_position:position,
+      destination_url:link.href,
+      transport_type:"beacon"
+    });
+  }
+});
+</script>
 </body>
 </html>
