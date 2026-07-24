@@ -28,6 +28,9 @@ for (const fragrance of fragrances) {
   if ((html.match(/class="direct-table"/g) || []).length !== 2) {
     throw new Error(`${fragrance.slug}: 比較表が2件ありません`);
   }
+  if (!html.includes("閲覧中の商品と比較候補2本、合計3本")) {
+    throw new Error(`${fragrance.slug}: 購入候補3本の説明がありません`);
+  }
   if (/\b(?:undefined|null)\b/.test(html)) {
     throw new Error(`${fragrance.slug}: 欠損値の文字列が表示されています`);
   }

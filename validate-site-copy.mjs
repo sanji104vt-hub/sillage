@@ -40,6 +40,20 @@ if (manifest.description !== copy.description || manifest.short_name !== copy.sh
   throw new Error("manifest.webmanifest が data/site-copy.json と一致しません");
 }
 
+for (const path of [
+  "public/index.html",
+  "public/about.html",
+  "public/privacy.html",
+  "public/contact.html",
+  "public/guides.html",
+  "public/manifest.webmanifest",
+]) {
+  const content = readFileSync(path, "utf8");
+  for (const oldPhrase of ["メンズ香水比較", "メンズ香水ガイド", "メンズ香水情報", "メンズを中心とした"]) {
+    if (content.includes(oldPhrase)) throw new Error(`${path}: 旧共通表現「${oldPhrase}」が残っています`);
+  }
+}
+
 const deferred = readFileSync("public/partials/home-deferred.html", "utf8");
 const orderedHomeMarkers = [
   'id="find-fragrances"',

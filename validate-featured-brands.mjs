@@ -5,7 +5,9 @@ const script = readFileSync("public/assets/home.js", "utf8");
 const errors = [];
 
 if (!partial.includes("<h2>注目ブランド</h2>")) errors.push("注目ブランド見出しがありません");
-if (!partial.includes("人気・売上順位ではありません")) errors.push("選定基準の注記がありません");
+for (const criterion of ["掲載商品数", "掲載香調の種類数", "価格帯区分", "2015年以降の商品有無", "閲覧人気・売上"]) {
+  if (!partial.includes(criterion)) errors.push(`選定基準の注記が不足しています: ${criterion}`);
+}
 if (partial.includes("ブランドランキング")) errors.push("根拠が曖昧なランキング表記が残っています");
 if (!script.includes("function buildFeaturedBrands()")) errors.push("注目ブランド生成関数がありません");
 if (script.includes("function buildRanking()")) errors.push("旧ランキング関数が残っています");
