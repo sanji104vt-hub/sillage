@@ -676,8 +676,8 @@ function openFavorites(){
   });
 }
 
-/* ---------- brand score & ranking chart ---------- */
-function brandScore(b){
+/* ---------- featured brands ---------- */
+function featuredBrandScore(b){
   const s=brandStats(b.name);
   if(!s.count)return 0;
   const countScore=Math.log(s.count+1)*22;
@@ -686,21 +686,19 @@ function brandScore(b){
   const recencyBonus=s.items.some(p=>p.releaseYear&&p.releaseYear>=2015)?8:0;
   return Math.round(countScore+divScore+tierBonus+recencyBonus);
 }
-function buildRanking(){
+function buildFeaturedBrands(){
   const root=document.getElementById("rankChart");
-  const scored=BRANDS.map(b=>({b,s:brandScore(b),st:brandStats(b.name)}))
+  const scored=BRANDS.map(b=>({b,s:featuredBrandScore(b),st:brandStats(b.name)}))
     .filter(x=>x.st.count>0).sort((a,b)=>b.s-a.s).slice(0,10);
-  const max=Math.max(...scored.map(x=>x.s),1);
-  root.innerHTML=scored.map((x,i)=>{
-    const w=Math.round(x.s/max*100);
+  root.innerHTML=scored.map((x)=>{
     const strip=x.st.fams.map(f=>`<span style="background:${f.color};flex:${f.weight}"></span>`).join("");
-    return `<div class="rank-row${i<3?" top"+(i+1):""}" data-bn="${x.b.name}">
-      <span class="rk">${String(i+1).padStart(2,"0")}</span>
+    return `<div class="rank-row" data-bn="${x.b.name}">
+      <span class="rk">PICK</span>
       <div>
         <div class="rname">${x.b.name} <span style="font-family:'Cormorant',serif;font-style:italic;font-size:12px;color:#8c8c92;margin-left:6px">${x.b.country} ・ ${x.st.count} fragrances</span></div>
-        <div class="rbar" style="width:${w}%">${strip}</div>
+        <div class="rbar">${strip}</div>
       </div>
-      <span class="rscore">${x.s}</span>
+      <span class="rscore">掲載 ${x.st.count}本</span>
     </div>`;
   }).join("");
   root.querySelectorAll(".rank-row").forEach(r=>{
@@ -1492,7 +1490,7 @@ function initializeDeferredHome(){
   document.getElementById("resetBtn").onclick=()=>{Object.keys(state).forEach(k=>state[k]=null);safeRender();};
   buildGuide();
   safeRender();
-  buildRanking();
+  buildFeaturedBrands();
   buildBrandTools();
   renderBrands();
   renderQuiz();
