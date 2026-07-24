@@ -979,15 +979,15 @@ render=function(){_origRender();attachHearts();};
    ============================================================ */
 const QUIZ = [
   {q:"香水をまとう、いちばん多い場面は？", opts:[
-    {jp:"オフィス・会議",en:"business",  w:{tier:{luxury:1,midrange:2}, fam:{aromatic:2,woody:2,citrus:1,musk:1}}},
-    {jp:"デート・夜",   en:"date & night",w:{tier:{luxury:2,niche:2},   fam:{amber:2,gourmand:2,woody:1,chypre:1}}},
-    {jp:"普段使い・日中",en:"daily",      w:{tier:{midrange:2,petit:1}, fam:{citrus:2,musk:2,aromatic:1}}},
-    {jp:"特別なフォーマル",en:"formal",   w:{tier:{luxury:2,niche:1},   fam:{woody:2,chypre:2,amber:1}}},
+    {jp:"オフィス・会議",en:"business",  w:{tier:{luxury:1,midrange:2}, fam:{aromatic:2,woody:2,citrus:1,musk:1},scene:{business:3}}},
+    {jp:"デート・夜",   en:"date & night",w:{tier:{luxury:2,niche:2},   fam:{amber:2,gourmand:2,woody:1,chypre:1},scene:{date:3}}},
+    {jp:"普段使い・日中",en:"daily",      w:{tier:{midrange:2,petit:1}, fam:{citrus:2,musk:2,aromatic:1},scene:{daily:3}}},
+    {jp:"特別なフォーマル",en:"formal",   w:{tier:{luxury:2,niche:1},   fam:{woody:2,chypre:2,amber:1},scene:{formal:3}}},
   ]},
   {q:"好む季節は？", opts:[
-    {jp:"春・夏",en:"spring/summer",w:{fam:{citrus:2,aquatic:2,aromatic:1,musk:1}}},
-    {jp:"秋・冬",en:"autumn/winter",w:{fam:{woody:2,amber:2,gourmand:1,chypre:1}}},
-    {jp:"一年中",en:"all year",     w:{fam:{musk:1,woody:1,aromatic:1,citrus:1}}},
+    {jp:"春・夏",en:"spring/summer",w:{fam:{citrus:2,aquatic:2,aromatic:1,musk:1},season:{spring:2,summer:2}}},
+    {jp:"秋・冬",en:"autumn/winter",w:{fam:{woody:2,amber:2,gourmand:1,chypre:1},season:{autumn:2,winter:2}}},
+    {jp:"一年中",en:"all year",     w:{fam:{musk:1,woody:1,aromatic:1,citrus:1},season:{spring:1,summer:1,autumn:1,winter:1}}},
   ]},
   {q:"香りの強さの理想は？", opts:[
     {jp:"そっと纏う、肌に寄り添う",en:"subtle",w:{fam:{musk:3,citrus:2,aromatic:1}}},
@@ -1001,14 +1001,15 @@ const QUIZ = [
     {jp:"親しみやすい",  en:"approachable",w:{tier:{midrange:2,petit:2}}},
   ]},
   {q:"予算感は？", opts:[
-    {jp:"3,000円以下のプチプラ",en:"under ¥3,000", w:{tier:{petit:3}}},
-    {jp:"5,000〜10,000円のミドル",en:"¥5,000–10,000", w:{tier:{midrange:3,luxury:1}}},
-    {jp:"15,000〜25,000円のラグジュアリー",en:"¥15,000–25,000", w:{tier:{luxury:3}}},
-    {jp:"こだわるなら30,000円〜",en:"¥30,000+", w:{tier:{niche:3,luxury:2}}},
+    {jp:"3,000円以下のプチプラ",en:"under ¥3,000", w:{tier:{petit:3},price:{petit:3}}},
+    {jp:"5,000〜10,000円のミドル",en:"¥5,000–10,000", w:{tier:{midrange:3,luxury:1},price:{mid:3}}},
+    {jp:"15,000〜25,000円のラグジュアリー",en:"¥15,000–25,000", w:{tier:{luxury:3},price:{high:3}}},
+    {jp:"こだわるなら30,000円〜",en:"¥30,000+", w:{tier:{niche:3,luxury:2},price:{high:3}}},
   ]},
 ];
 
-const quizState = {step:0, weights:{tier:{},fam:{},country:{}}};
+const emptyQuizWeights=()=>({tier:{},fam:{},country:{},scene:{},season:{},price:{}});
+const quizState = {step:0, weights:emptyQuizWeights()};
 
 function renderQuiz(){
   const card=document.getElementById("quizCard");
@@ -1026,7 +1027,7 @@ function renderQuiz(){
     b.onclick=()=>{
       const o=q.opts[Number(b.dataset.i)];
       const w=o.w||{};
-      ["tier","fam","country"].forEach(k=>{
+      ["tier","fam","country","scene","season","price"].forEach(k=>{
         if(w[k])Object.entries(w[k]).forEach(([key,val])=>{
           quizState.weights[k][key]=(quizState.weights[k][key]||0)+val;
         });
@@ -1038,6 +1039,7 @@ function renderQuiz(){
 
 function showQuizResult(){
   const card=document.getElementById("quizCard");
+  const recommendation=window.SillageQuizRecommendation.recommend(PERFUMES,quizState.weights);
   // score brands
   const scores=BRANDS.map(b=>{
     const s=brandStats(b.name);
@@ -1053,48 +1055,57 @@ function showQuizResult(){
     return {b,score:Math.round(score*10)/10,s};
   }).filter(Boolean).sort((a,b)=>b.score-a.score);
 
-  const top=scores[0], alts=scores.slice(1,5);
-  // 実データのみで算出する一致度(架空の統計は使わない): 全候補中でのスコア相対順位
-  const maxScore=scores[0].score||1;
-  const matchPct=Math.max(62, Math.min(99, Math.round((top.score/maxScore)*100)));
+  const top=scores[0];
+  const resultItems=[
+    {role:"第一候補",className:"primary",product:recommendation.primary,reason:"回答した香調・シーン・季節・価格帯が最も多く重なる候補"},
+    {role:"控えめな代替",className:"calm",product:recommendation.calm,reason:"同じ回答条件を保ちつつ、日常・仕事や軽快な香調を優先した候補"},
+    {role:"個性的な代替",className:"distinctive",product:recommendation.distinctive,reason:"同じ回答条件を保ちつつ、デート・フォーマルや輪郭のある香調を優先した候補"},
+  ];
+  const resultCard=({role,className,product,reason})=>`<article class="quiz-product ${className}">
+    <p class="quiz-role">${role}</p>
+    <p class="qbrand">${product.brand}</p>
+    <h4>${product.name}</h4>
+    <dl>
+      <div><dt>香調</dt><dd>${FAM[product.family].ja}</dd></div>
+      ${product.concentration?.label?`<div><dt>濃度</dt><dd>${product.concentration.label}</dd></div>`:""}
+      <div><dt>価格帯</dt><dd>${PRICE[product.priceTier]}</dd></div>
+      <div><dt>場面</dt><dd>${product.scenes.map(scene=>SCENE[scene]).join("・")}</dd></div>
+    </dl>
+    <p class="qreason">${reason}</p>
+    <a class="qdetail" href="/items/${product.slug}">${product.name}の詳細を見る →</a>
+  </article>`;
   card.innerHTML=`
     <div class="quiz-result show">
-      <h3>あなたに合いそうなブランド</h3>
-      <div class="rname">${top.b.name}</div>
-      <p class="rmeta">${top.b.country} ／ est. ${top.b.founded} ／ ${tierLabel(top.b.tier)}</p>
-      <p class="rdesc">${top.b.desc}</p>
-      <button class="show-result-btn" id="quizGoTop">${top.b.name} を見る →</button>
-      <div style="margin-top:36px">
-        <h3 style="font-family:'Cormorant',serif;font-style:italic;font-weight:500;font-size:16px;color:#aeb0b6;letter-spacing:.5px;margin-bottom:12px">候補となる他のブランド</h3>
-        <div class="quiz-altlist">
-          ${alts.map(a=>`<div class="quiz-alt" data-bn="${a.b.name}">
-            <div class="aname">${a.b.name}</div>
-            <div class="ascore">${a.b.country} ／ ${a.s.count} fragrances</div>
-          </div>`).join("")}
-        </div>
+      <h3>あなたへの香りの提案</h3>
+      <p class="quiz-type">${FAM[recommendation.primary.family].ja}を軸に選びました</p>
+      <p class="quiz-type-note">回答と掲載中92商品の既存属性を照合した3候補です。価格・濃度・使う場面を比べて、最後は肌で試してください。</p>
+      <div class="quiz-products">
+        ${resultItems.map(resultCard).join("")}
+      </div>
+      <div class="quiz-brand-supplement">
+        <h3>ブランド傾向（補助結果）</h3>
+        <p>ブランドの国・価格層まで含めると、${top.b.name}の傾向と重なります。商品3候補とは別の補助情報です。</p>
+        <button class="show-result-btn" id="quizGoBrand">${top.b.name}を見る →</button>
       </div>
       <div class="share-block">
         <p class="share-lead">— your scent layer —</p>
         <button class="share-btn" id="quizShareBtn">診断結果をカードでシェア</button>
       </div>
       <button class="quiz-restart" id="quizRestart">もう一度診断する</button>
-      <p style="font-size:11.5px;color:#67676d;margin-top:18px;line-height:1.7">本診断は、回答内容と本サイト掲載ブランドの公開情報をもとにした目安の提案です。実際の好みは試香で確かめてください。</p>
+      <p style="font-size:11.5px;color:#67676d;margin-top:18px;line-height:1.7">本診断は、回答内容と掲載商品の香調・シーン・季節・価格帯を照合した編集上の目安です。香りの強さや好みを保証するものではありません。</p>
     </div>`;
-  card.querySelector("#quizGoTop").onclick=()=>openBrandModal(top.b);
-  card.querySelectorAll(".quiz-alt").forEach(el=>{
-    el.onclick=()=>{const b=BRANDS.find(x=>x.name===el.dataset.bn);if(b)openBrandModal(b);};
-  });
+  card.querySelector("#quizGoBrand").onclick=()=>openBrandModal(top.b);
   card.querySelector("#quizRestart").onclick=()=>{
-    quizState.step=0;quizState.weights={tier:{},fam:{},country:{}};renderQuiz();
+    quizState.step=0;quizState.weights=emptyQuizWeights();renderQuiz();
   };
-  card.querySelector("#quizShareBtn").onclick=()=>openShareCard(top.b, matchPct);
+  card.querySelector("#quizShareBtn").onclick=()=>openShareCard(recommendation);
 }
 
 /* ============================================================
    香層シェアカード(集客導線): 診断結果を画像化してX/保存で拡散
    実データ(ブランド名・国・一致度)のみを使用し、架空の統計は作らない
    ============================================================ */
-function drawKasoShareCard(brand, pct){
+function drawKasoShareCard(result){
   const cvs=document.createElement("canvas");
   cvs.width=1200; cvs.height=630;
   const ctx=cvs.getContext("2d");
@@ -1129,26 +1140,30 @@ function drawKasoShareCard(brand, pct){
   // 見出し
   ctx.fillStyle="#8c8c92"; ctx.font="italic 20px Georgia, serif";
   ctx.fillText("— your scent layer —", 64, 220);
-  ctx.fillStyle="#ffffff"; ctx.font="600 56px 'Hiragino Mincho ProN', serif";
-  wrapCanvasText(ctx, `あなたに合う香りは`, 64, 280, 1000, 60);
-  ctx.fillStyle="#c9b558"; ctx.font="600 64px 'Hiragino Mincho ProN', serif";
-  ctx.fillText(brand.name, 64, 360);
-
-  // 一致度(実スコアに基づく数値のみ使用)
-  ctx.fillStyle="#c4889c"; ctx.font="italic 26px Georgia, serif";
-  ctx.fillText(`match ${pct}%`, 64, 420);
-  ctx.fillStyle="#a8a8ae"; ctx.font="16px sans-serif";
-  ctx.fillText(`${brand.country} ／ est. ${brand.founded}`, 64, 460);
+  ctx.fillStyle="#ffffff"; ctx.font="600 50px 'Hiragino Mincho ProN', serif";
+  ctx.fillText("あなたへの第一候補", 64, 280);
+  ctx.fillStyle="#c9b558";
+  fitCanvasText(ctx,result.primary.name,64,360,1060,64,36);
+  ctx.fillStyle="#a8a8ae"; ctx.font="18px sans-serif";
+  ctx.fillText(result.primary.brand,64,404);
+  ctx.fillStyle="#c4889c"; ctx.font="16px sans-serif";
+  ctx.fillText(`控えめな代替：${result.calm.name}`,64,455);
+  ctx.fillText(`個性的な代替：${result.distinctive.name}`,64,490);
 
   ctx.fillStyle="#67676d"; ctx.font="14px sans-serif";
   ctx.fillText("sillage.asutelu.com", 64, 580);
 
   return cvs;
 }
-function wrapCanvasText(ctx,text,x,y,maxW,lh){
-  ctx.fillText(text, x, y); // 短文前提のためシンプルに1行描画
+function fitCanvasText(ctx,text,x,y,maxW,startSize,minSize){
+  let size=startSize;
+  do{
+    ctx.font=`600 ${size}px 'Hiragino Mincho ProN', serif`;
+    size-=2;
+  }while(ctx.measureText(text).width>maxW&&size>=minSize);
+  ctx.fillText(text,x,y);
 }
-function openShareCard(brand, pct){
+function openShareCard(result){
   let back=document.getElementById("shareBack");
   if(!back){
     back=document.createElement("div");
@@ -1166,13 +1181,13 @@ function openShareCard(brand, pct){
     back.querySelector("#shareClose").onclick=()=>back.classList.remove("open");
     back.addEventListener("click",e=>{ if(e.target===back) back.classList.remove("open"); });
   }
-  const cvs=drawKasoShareCard(brand, pct);
+  const cvs=drawKasoShareCard(result);
   const target=back.querySelector("#shareCanvas");
   target.width=cvs.width; target.height=cvs.height;
   target.getContext("2d").drawImage(cvs,0,0);
   const dataUrl=cvs.toDataURL("image/png");
   back.querySelector("#shareDownload").href=dataUrl;
-  const text=encodeURIComponent(`香り診断で「${brand.name}」と一致度${pct}%でした。\n自分に合う香水はSillageで診断できます。\n#Sillage #香水診断`);
+  const text=encodeURIComponent(`香水診断の第一候補は「${result.primary.name}」でした。\n控えめな代替：${result.calm.name}\n個性的な代替：${result.distinctive.name}\n#Sillage #香水診断`);
   const url=encodeURIComponent("https://sillage.asutelu.com/");
   back.querySelector("#shareTweet").href=`https://twitter.com/intent/tweet?text=${text}&url=${url}`;
   back.classList.add("open");

@@ -651,6 +651,24 @@
     font-family:"Cormorant",serif;font-style:italic;font-size:15px;letter-spacing:.5px;color:#fff;
     border:1px solid #c4c6cc;border-radius:999px;padding:7px 22px;cursor:pointer;background:transparent;transition:all .18s}
   .quiz-result .show-result-btn:hover{background:#c4c6cc;color:#15151a}
+  .quiz-type{font-family:"Shippori Mincho",serif;font-size:clamp(20px,3vw,28px);color:#f0eeea;margin:0 0 8px}
+  .quiz-type-note{font-size:13px;color:#aeb0b6;line-height:1.8;margin-bottom:24px}
+  .quiz-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+  .quiz-product{display:flex;flex-direction:column;min-width:0;padding:20px 18px;border:1px solid #34353a;background:#0d0e10}
+  .quiz-product.primary{border-top:2px solid #c9b558}
+  .quiz-product.calm{border-top:2px solid #93a384}
+  .quiz-product.distinctive{border-top:2px solid #c4889c}
+  .quiz-role{font-family:"Cormorant",serif;font-style:italic;font-size:12px;letter-spacing:1px;color:#8c8c92}
+  .quiz-product .qbrand{margin-top:13px;font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:1.5px;color:#9a9a9f}
+  .quiz-product h4{margin:4px 0 12px;font-family:"Shippori Mincho",serif;font-size:17px;line-height:1.55;color:#f0eeea;overflow-wrap:anywhere}
+  .quiz-product dl{display:grid;gap:5px;margin-bottom:17px}
+  .quiz-product dl div{display:grid;grid-template-columns:52px minmax(0,1fr);gap:6px;font-size:11.5px}
+  .quiz-product dt{color:#77787e}.quiz-product dd{color:#c9c6c0;overflow-wrap:anywhere}
+  .quiz-product .qreason{font-size:11px;color:#9b9ca1;line-height:1.7;margin-bottom:16px}
+  .quiz-product .qdetail{margin-top:auto;color:#e2dfd9;text-decoration:none;border-bottom:1px solid #55565b;padding-bottom:5px;font-size:12.5px}
+  .quiz-brand-supplement{margin-top:34px;padding-top:24px;border-top:1px solid #2c2d31}
+  .quiz-brand-supplement p{font-size:12px;color:#8c8c92;line-height:1.8}
+  .quiz-brand-supplement button{margin-top:12px}
 
   /* ---------- mega timeline ---------- */
   .mtl-wrap{max-width:1240px;margin:24px auto 0;padding:0 clamp(16px,4vw,48px)}
@@ -789,8 +807,9 @@
 .fi-item:hover{color:#fff}
 .fi-brand{font-family:"Bodoni Moda",serif;font-size:10.5px;letter-spacing:1.5px;color:#9a9a9f;text-transform:uppercase}
 .fi-name{font-family:"Shippori Mincho",serif;font-weight:500;font-size:14px;margin-top:2px}
-@media(max-width:768px){
-  .brand-index-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+  @media(max-width:768px){
+    .quiz-products{grid-template-columns:1fr}
+    .brand-index-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
   .brand-tile{min-height:70px;padding:12px 14px}
   .brand-tile .bt-name{font-size:14px}
   .fi-item{padding:12px 0;min-height:44px}
@@ -879,6 +898,7 @@
   </div>
 </footer>
 
+<script defer src="/assets/quiz-recommendation.js"></script>
 <script defer src="/assets/home.js"></script>
 </body>
 </html>
