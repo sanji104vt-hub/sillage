@@ -154,7 +154,20 @@
   <url><loc>https://sillage.asutelu.com/columns/concentration-guide</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sillage.asutelu.com/columns/first-fragrance</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://sillage.asutelu.com/columns/season-scene-map</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://sillage.asutelu.com/about.html</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://sillage.asutelu.com/privacy.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://sillage.asutelu.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://sillage.asutelu.com/about.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/privacy.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/contact.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/age-and-perfume</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/blotter-vs-skin</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/office-perfume-amount</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-decanting</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-discoloration</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-gift-mistakes</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-on-clothes</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-storage</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/perfume-store-comparison</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/summer-perfume-strong</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/too-much-perfume</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/why-cant-smell-own-perfume</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/guides.html</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>

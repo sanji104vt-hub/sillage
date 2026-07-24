@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 import { join } from "node:path";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
+import { PROBLEM_ARTICLES } from "./data/problem-columns.mjs";
 
 const SITE_COPY = loadSiteCopy();
 const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
@@ -264,6 +265,8 @@ const articles = [
   },
 ];
 
+articles.push(...PROBLEM_ARTICLES);
+
 const esc = (s="") => String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
 function itemInfo(slug) {
@@ -278,6 +281,12 @@ function itemInfo(slug) {
 }
 
 function renderVisual(v) {
+  if (v.type === "steps") {
+    return `<figure class="visual-panel problem-visual" aria-label="${esc(v.title)}">
+      <div class="visual-kicker">ACTION MAP</div><h2>${esc(v.title)}</h2>
+      <div class="problem-steps flow-chart">${v.steps.map(([number,title,text])=>`<div class="problem-step flow-step"><span>${esc(number)}</span><b>${esc(title)}</b><small style="display:block;margin-top:6px;color:#808187;font-size:10px">${esc(text)}</small></div>`).join("")}</div>
+      <figcaption>${esc(v.caption)}</figcaption></figure>`;
+  }
   if (v.type === "bars" || v.type === "compare") {
     const bars = v.type === "bars" ? v.bars.map(([label,value])=>[label,value,null]) : v.axes;
     return `<figure class="visual-panel" aria-label="${esc(v.title || `${v.a}と${v.b}の比較グラフ`)}">
@@ -305,7 +314,7 @@ function renderArticle(article, all) {
   const items = article.featured.map(itemInfo);
   const image = familyOgpUrl(ARTICLE_FAMILY[article.slug]) || `${SITE}/ogp-default.png`;
   const title = `${article.title}｜${SITE_COPY.siteName}`;
-  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:`${SITE_COPY.shortName}編集部`},publisher:{"@type":"Organization",name:SITE_COPY.shortName},inLanguage:"ja",datePublished:PUBLISHED,dateModified:MODIFIED,...(image?{image}:{})};
+  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:`${SITE_COPY.shortName}編集部`},publisher:{"@type":"Organization",name:SITE_COPY.shortName},inLanguage:"ja",datePublished:article.publishedAt||PUBLISHED,dateModified:article.modifiedAt||MODIFIED,...(image?{image}:{})};
   const breadcrumbLd = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Sillage",item:`${SITE}/`},{"@type":"ListItem",position:2,name:article.title,item:canonical}]};
   const faqLd = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:article.faq.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))};
   const others = all.filter(x=>x.slug!==article.slug).slice(0,6);
@@ -339,8 +348,43 @@ function renderArticle(article, all) {
 <script>async function shareSillage(button){if(navigator.share){try{await navigator.share({title:document.title,url:location.href});return}catch(e){if(e&&e.name==='AbortError')return}}if(navigator.clipboard){await navigator.clipboard.writeText(location.href);button.textContent='コピーしました'}}</script></body></html>`;
 }
 
+function renderGuideIndex() {
+  const canonical = `${SITE}/guides.html`;
+  const title = `香水の悩み別ガイド｜${SITE_COPY.siteName}`;
+  const description = "つけすぎ、職場での量、夏の使い方、保存、試香、プレゼント選びまで。香水の具体的な困りごとを解決するSillageの実用ガイド。";
+  const itemListLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "香水の悩み別ガイド",
+    numberOfItems: PROBLEM_ARTICLES.length,
+    itemListElement: PROBLEM_ARTICLES.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: `${SITE}/columns/${article.slug}`,
+      name: article.title,
+    })),
+  };
+  const cards = PROBLEM_ARTICLES.map((article, index) => `<article class="guide-card">
+    <span>${String(index + 1).padStart(2, "0")} ／ ${esc(article.tag)}</span>
+    <h2><a href="/columns/${article.slug}">${esc(article.title)}</a></h2>
+    <p>${esc(article.description)}</p>
+    <a class="read" href="/columns/${article.slug}" aria-label="${esc(article.title)}を読む">記事を読む →</a>
+  </article>`).join("");
+  return `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q">
+<!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-60BQRQWB5M');</script>
+<link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}/ogp-default.png"><meta property="og:site_name" content="${esc(SITE_COPY.siteName)}"><meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">${JSON.stringify(itemListLd)}</script>
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0d0e10;color:#e9e7e3;font-family:system-ui,-apple-system,"Yu Gothic",sans-serif;line-height:1.8}.top{display:flex;justify-content:space-between;align-items:center;padding:15px clamp(18px,4vw,52px);border-bottom:1px solid #292a2f}.top a{color:#eeeae4;text-decoration:none}.logo{font-family:Georgia,serif;font-size:24px;letter-spacing:2px}.top nav{display:flex;gap:18px;font-size:12px}.shell{max-width:1180px;margin:auto;padding:clamp(54px,8vw,92px) clamp(18px,4vw,48px) 100px}.eyebrow{font:italic 13px Georgia,serif;color:#c9b558;letter-spacing:2px}.hero h1{font-family:"Yu Mincho",serif;font-size:clamp(31px,5vw,55px);line-height:1.45;max-width:15ch;margin:12px 0 20px}.hero>p{max-width:700px;color:#bdbbb7;font-size:15px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#303137;border:1px solid #303137;margin-top:55px}.guide-card{background:#15161a;padding:28px 25px;min-height:295px;display:flex;flex-direction:column}.guide-card>span{font:11px Georgia,serif;color:#8f8f95;letter-spacing:1px}.guide-card h2{font-family:"Yu Mincho",serif;font-size:20px;line-height:1.65;margin:12px 0}.guide-card h2 a{color:#f1eee8;text-decoration:none}.guide-card p{color:#aaa8a3;font-size:13px;margin:0 0 20px}.read{margin-top:auto;color:#c9b558;text-decoration:none;font-size:12px}.guide-card :focus-visible,.top a:focus-visible{outline:2px solid #c9b558;outline-offset:4px}.back{display:inline-block;margin-top:48px;color:#ddd9d2;text-decoration:none;border-bottom:1px solid #c9b558}@media(max-width:900px){.guide-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.top nav{display:none}.guide-grid{grid-template-columns:1fr}.guide-card{min-height:0}.shell{padding-top:48px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head>
+<body><header class="top"><a class="logo" href="/">Sillage</a><nav aria-label="主要ナビゲーション"><a href="/#fragrances">香水を探す</a><a href="/#diagnosis">香水診断</a></nav></header>
+<main class="shell"><header class="hero"><p class="eyebrow">FRAGRANCE PROBLEM GUIDE</p><h1>香水の悩みを、ひとつずつ解く。</h1><p>${esc(description)}</p></header>
+<section class="guide-grid" aria-label="香水の悩み別記事">${cards}</section><a class="back" href="/">Sillageトップへ戻る</a></main></body></html>`;
+}
+
 for (const article of articles) {
   const html = renderArticle(article, articles).replace(/[ \t]+\n/g, "\n");
   writeFileSync(join(OUT, `${article.slug}.html`), html);
 }
+writeFileSync(join("public", "guides.html"), renderGuideIndex().replace(/[ \t]+\n/g, "\n"));
 console.log(`Generated ${articles.length} enriched column pages`);
