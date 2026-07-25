@@ -1,8 +1,10 @@
 # Sillage 分岐統合・コラム本番デプロイ監査
 
-監査日時: 2026-07-26 00:53 JST  
-正規公開URL: https://sillage.asutelu.com/  
-Worker URL: https://sillage.sanji-104vt.workers.dev/  
+監査日時: 2026-07-26 00:53 JST
+
+正規公開URL: https://sillage.asutelu.com/
+
+Worker URL: https://sillage.sanji-104vt.workers.dev/
 GitHub Actions: https://github.com/sanji104vt-hub/sillage/actions/runs/30164491890
 
 ## 1. 分岐前の履歴
