@@ -75,4 +75,3 @@
 3. `node generate-seo.mjs`
 4. 各validateスクリプトと`git diff --check`
 5. 今回はpush・デプロイを行わず、2コミット作成後に停止
-
