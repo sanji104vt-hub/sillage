@@ -50,7 +50,11 @@ if (!existsSync(guidePath)) {
   for (const article of PROBLEM_ARTICLES) {
     if (!guideHtml.includes(`/columns/${article.slug}`)) errors.push(`一覧リンク欠損: ${article.slug}`);
   }
-  if (!guideHtml.includes(`"numberOfItems":12`)) errors.push("一覧のItemList件数が不正です");
+  const itemCount = Number(guideHtml.match(/"numberOfItems":(\d+)/)?.[1] || 0);
+  if (itemCount < PROBLEM_ARTICLES.length) errors.push(`一覧のItemList件数が不足しています: ${itemCount}`);
+  for (const category of ["beginner", "how-to", "trouble", "buying", "care", "scene", "knowledge", "comparison"]) {
+    if (!guideHtml.includes(`id="category-${category}"`)) errors.push(`カテゴリ欠損: ${category}`);
+  }
 }
 
 if (errors.length) {

@@ -4,12 +4,15 @@ import { join } from "node:path";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
 import { PROBLEM_ARTICLES } from "./data/problem-columns.mjs";
+import { COLUMN_CATEGORIES, applyColumnTaxonomy } from "./data/column-taxonomy.mjs";
 
 const SITE_COPY = loadSiteCopy();
 const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const OUT = join("public", "columns");
 const MODIFIED = "2026-07-16T22:00:00+09:00";
 const PUBLISHED = "2026-07-07T15:18:04+09:00";
+const FRAGRANCES = JSON.parse(readFileSync(join("data", "fragrances.json"), "utf8")).fragrances;
+const FRAGRANCE_BY_SLUG = new Map(FRAGRANCES.map((item) => [item.slug, item]));
 mkdirSync(OUT, { recursive: true });
 
 const ARTICLE_FAMILY = {
@@ -61,11 +64,12 @@ function compare(config) {
 
 const articles = [
   {
-    slug: "business-fragrance", tag: "WORK STYLE", title: "ビジネスで外さない香りの条件",
-    description: "職場で好印象をつくるメンズ香水の選び方を、香調・量・つける場所・季節別に図解。会議や商談でも強すぎない使い方が分かります。",
+    slug: "business-fragrance", tag: "WORK STYLE", title: "職場の香水は何プッシュ？迷惑にならない選び方とつけ方",
+    description: "職場で香水を使う時の量、香調、つける場所を整理。会議や商談など距離が近い場面で、周囲へ配慮する判断方法を解説します。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead: "仕事の香りで大切なのは、目立つことではなく『近づいたときだけ清潔に香る』こと。距離を設計すると失敗が減る。",
     answer: "清潔感のあるシトラス、軽いウッディ、ムスクを1プッシュ。首の前ではなく、腰やお腹など鼻から遠い場所につけるのが基本です。",
-    visual: { type: "bars", title: "仕事向き香水の理想バランス", bars: [["清潔感",92],["落ち着き",78],["拡散の強さ",32],["甘さ",24]] },
+    visual: { type: "traits", title: "仕事で扱いやすい香りの方向", traits: [["清潔感","重視"],["甘さ","控えめ"],["拡散","弱め"],["量","1プッシュから"]] },
     takeaways: ["香りはパーソナルスペースの内側に留める", "朝は1プッシュから。足りなければ次回調整する", "密室・会食・医療機関では、つけない判断も正解"],
     sections: [
       { title: "職場では『いい香り』より『距離感』が評価される", paragraphs: ["香水の好みは人によって大きく違う。自分には爽やかでも、会議室やエレベーターでは強く感じる人がいる。ビジネスでは香りの質より先に、相手が逃げられない空間かどうかを考えたい。", "目標は、廊下ですれ違った人に残り香を届けることではない。書類を渡す距離まで近づいたときに、清潔な印象が一瞬立ち上がる程度で十分だ。"] },
@@ -78,8 +82,9 @@ const articles = [
     brands:[BRANDS.chanel,BRANDS.armani,BRANDS.hermes,BRANDS.prada], featured:["chanel-1","giorgio-armani-2","hermes-3","prada-2"],
   },
   {
-    slug:"how-to-wear",tag:"HOW TO",title:"香水のつけ方、適量という正解",
-    description:"香水をつける場所と適量を身体図で解説。手首・首・腰の違い、季節や場面別のプッシュ数、香害を避ける方法が分かります。",
+    slug:"how-to-wear",tag:"HOW TO",title:"香水の正しいつけ方｜量・場所・タイミングの基本",
+    description:"香水の量、つける場所、タイミングを身体図で解説。手首・首・腰の違いと、周囲へ配慮しながら使う基本が分かります。",
+    modifiedAt:"2026-07-25T12:00:00+09:00",
     lead:"香水は、どこにつけるかで同じ一本でも別の表情になる。強くするより、立ち上がる位置を選ぶ。",
     answer:"日常は腰かお腹に1プッシュ。香りを近くで楽しみたい日は手首の内側、しっかり香らせたい夜だけ首の後ろへ。こすらず自然に乾かします。",
     visual:{type:"body"},
@@ -215,6 +220,7 @@ const articles = [
   {
     slug:"concentration-guide",tag:"BASICS",title:"EDT・EDP・パルファムの違い｜濃度だけで選ばない香水入門",
     description:"オードトワレ、オードパルファム、パルファムの違いを図解。持続時間・広がり方・季節・職場での選び方を初心者向けに解説します。",
+    modifiedAt:"2026-07-25T12:00:00+09:00",
     lead:"濃いほど上質、長いほど優秀とは限らない。大切なのは、香りを何時間、どの距離で届けたいか。",
     answer:"軽快さと日中の使いやすさならEDT、変化と持続のバランスならEDP、肌の近くで深い余韻を楽しむならパルファムが目安です。",
     visual:{type:"concentration"},
@@ -248,7 +254,8 @@ const articles = [
   },
   {
     slug:"first-fragrance",tag:"START HERE",title:"香水初心者の一本目｜失敗しない5ステップ",
-    description:"初めてのメンズ香水を選ぶ5ステップを図解。予算・場面・香調・試香・購入サイズまで、店頭で迷わない順番が分かります。",
+    description:"初めての香水を選ぶ5ステップを図解。予算・場面・香調・試香・購入サイズまで、店頭で迷わない順番が分かります。",
+    modifiedAt:"2026-07-25T12:00:00+09:00",
     lead:"最初の一本は、最も個性的な香りではなく、最も多く使える香りから選ぶ。好き嫌いは使う回数の中で育つ。",
     answer:"用途を一つ決め、3本まで絞り、肌で半日試し、小さい容量から買う。人気順位より『次に使う日が想像できるか』を優先します。",
     visual:{type:"flow"},
@@ -265,19 +272,57 @@ const articles = [
   },
 ];
 
-articles.push(...PROBLEM_ARTICLES);
+const allArticles = [...articles, ...PROBLEM_ARTICLES].map(applyColumnTaxonomy);
 
 const esc = (s="") => String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
 function itemInfo(slug) {
   const html = readFileSync(join("public", "items", `${slug}.html`), "utf8");
+  const data = FRAGRANCE_BY_SLUG.get(slug);
   const image = html.match(/<meta property="og:image" content="([^"]+)">/)?.[1];
   const name = html.match(/<h1[^>]*>(.*?)<\/h1>/s)?.[1]?.replace(/<[^>]+>/g, "").trim();
   const brandName = html.match(/<span class="brand">(.*?)<\/span>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
     || html.match(/<p class="brand">(.*?)<\/p>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
     || html.match(/<p class="brand-line">(.*?)<\/p>/s)?.[1]?.replace(/<[^>]+>/g, "").trim()
     || "香水";
-  return { slug, image, name: name || slug, brand: brandName };
+  return { slug, image, name: name || slug, brand: brandName, sources: data?.sources || [] };
+}
+
+function articleSources(article, items) {
+  const productSources = items.flatMap((item) => item.sources
+    .filter((source) => source?.url && source.sourceType === "official")
+    .map((source) => ({
+      publisher: source.publisher || "公式サイト",
+      title: source.title || `${item.brand}の商品情報`,
+      url: source.url,
+      note: "掲載商品の名称・濃度・ノート等を確認",
+    })));
+  const unique = new Map();
+  for (const source of [...article.sources, ...productSources]) {
+    if (source?.url && !unique.has(source.url)) unique.set(source.url, source);
+  }
+  return [...unique.values()].slice(0, 5);
+}
+
+function relatedArticles(article, all) {
+  const preferred = (article.relatedArticleSlugs || [])
+    .map((slug) => all.find((candidate) => candidate.slug === slug))
+    .filter(Boolean);
+  const sameCategory = all.filter((candidate) =>
+    candidate.slug !== article.slug
+    && candidate.category === article.category
+    && !preferred.some((item) => item.slug === candidate.slug)
+  );
+  const fallback = all.filter((candidate) =>
+    candidate.slug !== article.slug
+    && !preferred.some((item) => item.slug === candidate.slug)
+    && !sameCategory.some((item) => item.slug === candidate.slug)
+  );
+  return [...preferred, ...sameCategory, ...fallback].slice(0, 4);
+}
+
+function displayDate(value) {
+  return new Intl.DateTimeFormat("ja-JP", { timeZone: "Asia/Tokyo" }).format(new Date(value));
 }
 
 function renderVisual(v) {
@@ -286,6 +331,12 @@ function renderVisual(v) {
       <div class="visual-kicker">ACTION MAP</div><h2>${esc(v.title)}</h2>
       <div class="problem-steps flow-chart">${v.steps.map(([number,title,text])=>`<div class="problem-step flow-step"><span>${esc(number)}</span><b>${esc(title)}</b><small style="display:block;margin-top:6px;color:#808187;font-size:10px">${esc(text)}</small></div>`).join("")}</div>
       <figcaption>${esc(v.caption)}</figcaption></figure>`;
+  }
+  if (v.type === "traits") {
+    return `<figure class="visual-panel" aria-label="${esc(v.title)}">
+      <div class="visual-kicker">QUALITATIVE GUIDE</div><h2>${esc(v.title)}</h2>
+      <dl class="trait-list">${v.traits.map(([label,value])=>`<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("")}</dl>
+      <figcaption>数値評価ではなく、職場で周囲へ配慮するための定性的な目安です。</figcaption></figure>`;
   }
   if (v.type === "bars" || v.type === "compare") {
     const bars = v.type === "bars" ? v.bars.map(([label,value])=>[label,value,null]) : v.axes;
@@ -306,20 +357,25 @@ function renderVisual(v) {
 
 function renderTable(table) {
   if (!table) return "";
-  return `<section class="data-section"><p class="section-no">DATA</p><h2>${esc(table.title)}</h2><div class="table-scroll"><table><thead><tr>${table.heads.map(x=>`<th>${esc(x)}</th>`).join("")}</tr></thead><tbody>${table.rows.map(r=>`<tr>${r.map(x=>`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div><p class="data-note">${esc(table.note)}</p></section>`;
+  return `<section class="data-section"><p class="section-no">DATA</p><h2>${esc(table.title)}</h2><div class="table-scroll"><table><caption>${esc(table.title)}の条件別一覧</caption><thead><tr>${table.heads.map(x=>`<th scope="col">${esc(x)}</th>`).join("")}</tr></thead><tbody>${table.rows.map(r=>`<tr>${r.map((x,index)=>index===0?`<th scope="row">${esc(x)}</th>`:`<td>${esc(x)}</td>`).join("")}</tr>`).join("")}</tbody></table></div><p class="data-note">${esc(table.note)}</p></section>`;
 }
 
 function renderArticle(article, all) {
   const canonical = `${SITE}/columns/${article.slug}`;
   const items = article.featured.map(itemInfo);
+  const category = COLUMN_CATEGORIES[article.category];
+  const sources = articleSources(article, items);
+  const publishedAt = article.publishedAt || PUBLISHED;
+  const modifiedAt = article.modifiedAt || MODIFIED;
   const image = familyOgpUrl(ARTICLE_FAMILY[article.slug]) || `${SITE}/ogp-default.png`;
   const title = `${article.title}｜${SITE_COPY.siteName}`;
-  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:`${SITE_COPY.shortName}編集部`},publisher:{"@type":"Organization",name:SITE_COPY.shortName},inLanguage:"ja",datePublished:article.publishedAt||PUBLISHED,dateModified:article.modifiedAt||MODIFIED,...(image?{image}:{})};
-  const breadcrumbLd = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Sillage",item:`${SITE}/`},{"@type":"ListItem",position:2,name:article.title,item:canonical}]};
+  const articleLd = {"@context":"https://schema.org","@type":"Article",headline:article.title,description:article.description,url:canonical,mainEntityOfPage:canonical,author:{"@type":"Organization",name:`${SITE_COPY.shortName}編集部`,url:`${SITE}/about.html#update-policy`},publisher:{"@type":"Organization",name:SITE_COPY.shortName},inLanguage:"ja",datePublished:publishedAt,dateModified:modifiedAt,...(image?{image}:{})};
+  const breadcrumbLd = {"@context":"https://schema.org","@type":"BreadcrumbList",itemListElement:[{"@type":"ListItem",position:1,name:"Sillage",item:`${SITE}/`},{"@type":"ListItem",position:2,name:"香水コラム",item:`${SITE}/guides.html`},{"@type":"ListItem",position:3,name:article.title,item:canonical}]};
   const faqLd = {"@context":"https://schema.org","@type":"FAQPage",mainEntity:article.faq.map(x=>({"@type":"Question",name:x.q,acceptedAnswer:{"@type":"Answer",text:x.a}}))};
-  const others = all.filter(x=>x.slug!==article.slug).slice(0,6);
+  const others = relatedArticles(article, all);
   const sections = article.sections.map((s,i)=>`<section class="text-section" id="section-${i+1}"><p class="section-no">${String(i+1).padStart(2,"0")}</p><h2>${esc(s.title)}</h2>${s.paragraphs.map(p=>`<p>${esc(p)}</p>`).join("")}</section>`).join("");
   const toc = article.sections.map((s,i)=>`<a href="#section-${i+1}"><span>${String(i+1).padStart(2,"0")}</span>${esc(s.title)}</a>`).join("");
+  const sourceHtml = sources.map((source) => `<li><a href="${esc(source.url)}" target="_blank" rel="noopener noreferrer">${esc(source.publisher)}｜${esc(source.title)}<span>${esc(source.note || "記事内容の確認に使用")}</span></a></li>`).join("");
   const xUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(title)}&url=${encodeURIComponent(canonical)}`;
   const lineUrl = `https://social-plugins.line.me/lineit/share?url=${encodeURIComponent(canonical)}`;
   return `<!DOCTYPE html>
@@ -333,8 +389,9 @@ function renderArticle(article, all) {
 <script type="application/ld+json">${JSON.stringify(articleLd)}</script><script type="application/ld+json">${JSON.stringify(breadcrumbLd)}</script><script type="application/ld+json">${JSON.stringify(faqLd)}</script>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:#0d0e10;color:#e9e7e3;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;line-height:1.8;-webkit-font-smoothing:antialiased}.topbar{display:flex;align-items:center;justify-content:space-between;padding:14px clamp(16px,4vw,48px);border-bottom:1px solid #292a2f;background:rgba(13,14,16,.92);position:sticky;top:0;z-index:20;backdrop-filter:blur(10px)}.logo{font-family:"Bodoni Moda",serif;font-size:24px;letter-spacing:2px;color:#eeeae4;text-decoration:none}.pr-tag{font-size:10px;letter-spacing:1px;color:#8c8c92;border:1px solid #303137;border-radius:999px;padding:4px 10px}.article-shell{max-width:980px;margin:auto;padding:48px clamp(18px,5vw,58px) 80px}.crumb{font:italic 14px "Cormorant",serif;color:#87878d;margin-bottom:30px}.crumb a{color:#b9b9be;text-decoration:none}.eyebrow{font:11px "Bodoni Moda",serif;letter-spacing:3px;color:#c9b558}.hero h1{font:600 clamp(28px,5.2vw,48px)/1.45 "Shippori Mincho",serif;color:#fff;letter-spacing:.8px;max-width:20ch;margin:13px 0 18px}.lead{font:400 clamp(15px,2vw,18px)/2 "Shippori Mincho",serif;color:#c9c7c2;max-width:42em}.answer-box{margin:32px 0;padding:23px 25px;border:1px solid #3a3b40;border-left:3px solid #c9b558;border-radius:0 12px 12px 0;background:linear-gradient(135deg,#18191d,#121316)}.answer-box span{display:block;font:italic 13px "Cormorant",serif;color:#c9b558;letter-spacing:1px;margin-bottom:6px}.answer-box p{font-size:15px;line-height:1.9;color:#f0eeea}.visual-panel{margin:38px 0;background:radial-gradient(circle at 85% 10%,rgba(196,136,156,.11),transparent 34%),linear-gradient(145deg,#1b1c20,#121316);border:1px solid #34353a;border-radius:18px;padding:28px clamp(18px,4vw,36px);overflow:hidden}.visual-kicker,.section-no{font:10px "Bodoni Moda",serif;letter-spacing:2.5px;color:#c9b558}.visual-panel h2,.data-section h2{font:500 clamp(20px,3vw,28px)/1.5 "Shippori Mincho",serif;color:#f5f3ef;margin:5px 0 23px}.visual-panel figcaption{font-size:11.5px;color:#7f8087;margin-top:19px}.chart-legend{display:flex;gap:18px;justify-content:flex-end;font:11px "Bodoni Moda",serif;margin-bottom:15px}.chart-legend span:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.legend-a:before{background:#c9b558}.legend-b:before{background:#c4889c}.score-chart{display:grid;gap:13px}.score-row{display:grid;grid-template-columns:80px 1fr 30px;gap:12px;align-items:center;font-size:12px;color:#bdbbb7}.score-track{height:13px;background:#26272c;border-radius:999px;position:relative;overflow:hidden}.score-track i{position:absolute;left:0;height:5px;border-radius:999px}.score-a{top:1px;background:#c9b558}.score-b{bottom:1px;background:#c4889c}.score-row b{font:12px "Bodoni Moda",serif;color:#d9d6cf}.toc{margin:36px 0 48px;padding:21px 24px;background:#141519;border:1px solid #2d2e33;border-radius:12px}.toc>span{font:italic 13px "Cormorant",serif;color:#8c8c92;display:block;margin-bottom:8px}.toc a{display:flex;gap:12px;color:#c9c7c2;text-decoration:none;font-size:13px;padding:7px 0;border-bottom:1px solid #24252a}.toc a:last-child{border:none}.toc a span{font-family:"Bodoni Moda",serif;color:#5f6067}.takeaways{margin:0 0 54px}.takeaways h2,.choices h2,.faq h2{font:500 clamp(21px,3vw,29px) "Shippori Mincho",serif;margin-bottom:18px}.takeaway-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;counter-reset:take}.takeaway-grid div{min-height:125px;padding:18px;background:#18191d;border:1px solid #303137;border-radius:12px;font-size:13px;line-height:1.75;color:#d2d0cb}.takeaway-grid div:before{counter-increment:take;content:"0" counter(take);display:block;font:12px "Bodoni Moda",serif;color:#c9b558;margin-bottom:10px}.text-section{max-width:760px;margin:0 auto 58px}.text-section h2{font:600 clamp(22px,3.5vw,31px)/1.55 "Shippori Mincho",serif;color:#f6f3ee;margin:5px 0 20px}.text-section p{font-size:15px;line-height:2.08;color:#cfcdc8;margin-bottom:20px}.text-section p:first-of-type:first-letter{font-family:"Shippori Mincho",serif;font-size:1.42em;color:#fff}.data-section{margin:58px 0;padding:28px clamp(16px,4vw,34px);border:1px solid #34353a;border-radius:16px;background:#15161a}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:560px}th,td{text-align:left;padding:13px 12px;border-bottom:1px solid #303137;font-size:13px;vertical-align:top}th{font:11px "Bodoni Moda",serif;letter-spacing:1px;color:#c9b558}td{color:#c9c7c2}.data-note{font-size:11.5px;color:#74757b;margin-top:15px}.choices{margin:60px 0}.choice-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.choice{padding:22px;background:linear-gradient(145deg,#1a1b1f,#131417);border:1px solid #34353a;border-radius:14px}.choice h3{font:500 18px "Shippori Mincho",serif;color:#f3f0eb;margin-bottom:9px}.choice p{font-size:13.5px;line-height:1.85;color:#bdbbb6}.faq{margin:64px 0}.faq details{border-top:1px solid #303137;padding:17px 3px}.faq details:last-child{border-bottom:1px solid #303137}.faq summary{cursor:pointer;font:500 15px "Shippori Mincho",serif;color:#e5e2dd}.faq details p{font-size:13.5px;color:#aaa8a3;line-height:1.9;padding:12px 0 0}.note-timeline{padding:12px 0}.note-layer{display:grid;grid-template-columns:75px 150px 1fr;gap:12px;align-items:center;margin:12px 0}.note-layer b{font:11px "Bodoni Moda",serif}.note-layer span{font-size:12px;color:#a9a7a2}.note-layer i{height:13px;border-radius:999px}.note-layer.top i{width:38%;background:#aeb0b6}.note-layer.middle i{width:72%;background:#c9b558}.note-layer.last i{width:100%;background:#c4889c}.time-axis{display:flex;justify-content:space-between;margin-left:237px;border-top:1px solid #45464c;padding-top:7px;font-size:10px;color:#74757b}.body-map svg{width:100%;height:auto}.concentration-chart{height:250px;display:flex;align-items:flex-end;justify-content:center;gap:clamp(18px,5vw,54px);border-bottom:1px solid #44454b;padding:0 12px}.conc{height:100%;width:72px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center}.conc-bar{width:100%;background:linear-gradient(#c4889c,#c9b558);border-radius:10px 10px 0 0;opacity:.82}.conc b{font:10px "Bodoni Moda",serif;margin-top:9px}.conc span{font-size:10px;color:#7f8087}.season-matrix{display:grid;grid-template-columns:1fr 1fr;gap:10px}.season-matrix div{padding:20px;border:1px solid #393a40;border-radius:12px;background:rgba(255,255,255,.02)}.season-matrix b,.season-matrix span,.season-matrix small{display:block}.season-matrix b{font:14px "Shippori Mincho",serif;color:#f0ede8}.season-matrix span{font-size:12px;color:#c9b558;margin:7px 0}.season-matrix small{font-size:11px;color:#898a90}.flow-chart,.story-loop{display:flex;align-items:center;justify-content:center;gap:8px}.flow-step,.story-loop div{flex:1;min-width:0;text-align:center;padding:17px 8px;border:1px solid #393a40;border-radius:12px;background:rgba(255,255,255,.025)}.flow-step span,.story-loop span{display:block;font:11px "Bodoni Moda",serif;color:#c9b558}.flow-step b,.story-loop b{display:block;font:500 14px "Shippori Mincho",serif;margin-top:5px}.flow-step i,.story-loop>i{position:absolute;color:#65666c}.flow-step{position:relative}.flow-step i{right:-10px;top:35%}.story-loop>i{position:static}.story-loop small{display:block;font-size:10px;color:#808187;margin-top:6px}.related,.featured,.other,.share-tools{margin-top:48px;border-top:1px solid #303137;padding-top:25px}.related h2,.featured h2,.other h2{font:italic 18px "Cormorant",serif;color:#aaa9ae;margin-bottom:14px}.chips{display:flex;flex-wrap:wrap;gap:8px}.chips a{display:inline-flex;align-items:center;min-height:44px;padding:7px 15px;border:1px solid #3a3b40;border-radius:999px;color:#e2dfda;text-decoration:none;font:12px "Bodoni Moda",serif}.featured a,.other a{display:block;color:#c9c7c2;text-decoration:none;font-size:13.5px;padding:11px 0;border-bottom:1px solid #25262b}.share-tools p{font:italic 14px "Cormorant",serif;color:#88898f;margin-bottom:12px}.share-actions{display:flex;flex-wrap:wrap;gap:8px}.share-actions a,.share-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 17px;border:1px solid #393a40;border-radius:999px;background:transparent;color:#e9e7e3;text-decoration:none;font:500 12px "Zen Kaku Gothic New",sans-serif;cursor:pointer}.backhome{display:inline-block;margin-top:45px;color:#e8e5df;text-decoration:none;border-bottom:1px solid #c9b558;font:italic 16px "Cormorant",serif}footer{background:#141519;border-top:1px solid #2b2c31;padding:35px clamp(18px,5vw,58px);font-size:11.5px;color:#83848a;line-height:1.8}footer a{color:#aaa9ae}@media(max-width:680px){.pr-tag{display:none}.article-shell{padding-top:32px}.takeaway-grid,.choice-grid{grid-template-columns:1fr}.takeaway-grid div{min-height:0}.score-row{grid-template-columns:72px 1fr 24px}.note-layer{grid-template-columns:54px 1fr}.note-layer i{grid-column:1/-1}.time-axis{margin-left:0}.season-matrix{grid-template-columns:1fr}.flow-chart,.story-loop{flex-wrap:wrap}.flow-step,.story-loop div{flex:1 1 42%}.flow-step i,.story-loop>i{display:none}.visual-panel{border-radius:14px}.body-map svg text{font-size:11px}.concentration-chart{gap:10px}.conc{width:58px}}
+.trait-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:#34353a;border:1px solid #34353a}.trait-list div{display:flex;justify-content:space-between;gap:18px;background:#17181c;padding:16px}.trait-list dt{color:#9c9da3}.trait-list dd{color:#f0ede8;font-family:"Shippori Mincho",serif}.article-meta{display:flex;flex-wrap:wrap;gap:8px 20px;margin:18px 0 0;color:#87888e;font-size:12px}.category-link{display:inline-flex;align-items:center;min-height:38px;color:#c9b558;text-decoration:none;border-bottom:1px solid #7b6e38}.sources,.article-credit{margin-top:48px;border-top:1px solid #303137;padding-top:25px}.sources h2,.article-credit h2{font:italic 18px "Cormorant",serif;color:#aaa9ae;margin-bottom:14px}.source-list{list-style:none}.source-list a{display:block;color:#c9c7c2;text-decoration:none;font-size:13.5px;padding:11px 0;border-bottom:1px solid #25262b}.source-list span{display:block;color:#85868c;font-size:11px}.editorial-note,.article-credit p{font-size:12.5px;color:#99999f;line-height:1.9}caption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid #c9b558;outline-offset:4px}@media(max-width:680px){.trait-list{grid-template-columns:1fr}.table-scroll{overflow:visible}table{min-width:0}thead{position:absolute;width:1px;height:1px;overflow:hidden}table,tbody,tr,th,td{display:block}tr{padding:12px 0;border-bottom:1px solid #303137}th,td{border:0;padding:4px 0}tbody th{font-size:13px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style></head><body><header class="topbar"><a class="logo" href="/">Sillage</a><span class="pr-tag">PR・アフィリエイト広告を含みます</span></header>
-<main class="article-shell"><p class="crumb"><a href="/">Sillage</a> ／ 読み物 ／ ${esc(article.tag)}</p><header class="hero"><span class="eyebrow">${esc(article.tag)} ／ SILLAGE EDITORIAL</span><h1>${esc(article.title)}</h1><p class="lead">${esc(article.lead)}</p></header>
+<main class="article-shell"><p class="crumb"><a href="/">Sillage</a> ／ <a href="/guides.html">香水コラム</a> ／ ${esc(category.label)}</p><header class="hero"><a class="category-link" href="/guides.html#category-${esc(article.category)}">${esc(category.label)}の記事一覧</a><span class="eyebrow">${esc(article.tag)} ／ SILLAGE EDITORIAL</span><h1>${esc(article.title)}</h1><p class="lead">${esc(article.lead)}</p><p class="article-meta"><span>著者：Sillage編集部</span><span>公開日：<time datetime="${publishedAt}">${displayDate(publishedAt)}</time></span><span>更新日：<time datetime="${modifiedAt}">${displayDate(modifiedAt)}</time></span></p></header>
 <aside class="answer-box"><span>30秒で分かる結論</span><p>${esc(article.answer)}</p></aside>${renderVisual(article.visual)}
 <nav class="toc" aria-label="目次"><span>contents ／ この記事で分かること</span>${toc}<a href="#data"><span>DATA</span>${esc(article.table.title)}</a></nav>
 <section class="takeaways"><h2>先に押さえる3つ</h2><div class="takeaway-grid">${article.takeaways.map(x=>`<div>${esc(x)}</div>`).join("")}</div></section><div class="body">${sections}</div><div id="data">${renderTable(article.table)}</div>
@@ -343,6 +400,8 @@ function renderArticle(article, all) {
 <section class="related"><h2>登場・関連ブランド</h2><div class="chips">${article.brands.map(x=>`<a href="${x.href}">${esc(x.name)}</a>`).join("")}</div></section>
 <section class="featured"><h2>関連する香水を詳しく見る</h2>${items.map(x=>`<a href="/items/${x.slug}">${esc(x.name)}の香りを見る →</a>`).join("")}</section>
 <section class="other"><h2>次に読む</h2>${others.map(x=>`<a href="/columns/${x.slug}">${esc(x.title)}</a>`).join("")}</section>
+<section class="sources"><h2>情報源と編集区分</h2>${sourceHtml?`<ul class="source-list">${sourceHtml}</ul>`:""}<p class="editorial-note">商品名・濃度・ノート等は掲載商品の公式情報を優先し、使う量・場面・選び方はSillage編集部の判断として区別して記載しています。製品の表示と各施設のルールを優先してください。</p></section>
+<section class="article-credit"><h2>この記事について</h2><p>Sillage編集部が、公開情報と掲載中の商品データを照合して作成しました。詳しい確認方法は<a href="/about.html#update-policy">編集方針・更新ポリシー</a>をご覧ください。</p></section>
 <section class="share-tools"><p>share ／ 役立ったら共有</p><div class="share-actions"><a href="${xUrl}" target="_blank" rel="noopener">Xで共有</a><a href="${lineUrl}" target="_blank" rel="noopener">LINEで送る</a><button type="button" onclick="shareSillage(this)">リンクをコピー</button></div></section><a class="backhome" href="/">← Sillageトップへ戻る</a></main>
 <footer>当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文とグラフはブランド公開情報と香調構成をもとにしたSillage編集部の独自整理であり、香りの感じ方には個人差があります。<br><a href="/">${esc(SITE_COPY.footerLabel)}</a> ・ <a href="/about.html#update-policy">編集方針・更新ポリシー</a></footer>
 <script>async function shareSillage(button){if(navigator.share){try{await navigator.share({title:document.title,url:location.href});return}catch(e){if(e&&e.name==='AbortError')return}}if(navigator.clipboard){await navigator.clipboard.writeText(location.href);button.textContent='コピーしました'}}</script></body></html>`;
@@ -350,41 +409,52 @@ function renderArticle(article, all) {
 
 function renderGuideIndex() {
   const canonical = `${SITE}/guides.html`;
-  const title = `香水の悩み別ガイド｜${SITE_COPY.siteName}`;
-  const description = "つけすぎ、職場での量、夏の使い方、保存、試香、プレゼント選びまで。香水の具体的な困りごとを解決するSillageの実用ガイド。";
+  const title = `香水コラム｜初心者の疑問・つけ方・選び方を解説｜${SITE_COPY.shortName}`;
+  const description = "香水初心者の一本目から、つけ方、試香、保存、シーン別の選び方、ブランド比較まで。疑問から読めるSillageの香水コラム一覧です。";
   const itemListLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "香水の悩み別ガイド",
-    numberOfItems: PROBLEM_ARTICLES.length,
-    itemListElement: PROBLEM_ARTICLES.map((article, index) => ({
+    name: "Sillage 香水コラム",
+    numberOfItems: allArticles.length,
+    itemListElement: allArticles.map((article, index) => ({
       "@type": "ListItem",
       position: index + 1,
       url: `${SITE}/columns/${article.slug}`,
       name: article.title,
     })),
   };
-  const cards = PROBLEM_ARTICLES.map((article, index) => `<article class="guide-card">
-    <span>${String(index + 1).padStart(2, "0")} ／ ${esc(article.tag)}</span>
-    <h2><a href="/columns/${article.slug}">${esc(article.title)}</a></h2>
-    <p>${esc(article.description)}</p>
-    <a class="read" href="/columns/${article.slug}" aria-label="${esc(article.title)}を読む">記事を読む →</a>
-  </article>`).join("");
+  const categoryNav = Object.entries(COLUMN_CATEGORIES).map(([key, category]) =>
+    `<a href="#category-${key}">${esc(category.heading)}</a>`
+  ).join("");
+  const categorySections = Object.entries(COLUMN_CATEGORIES).map(([key, category]) => {
+    const categoryArticles = allArticles.filter((article) => article.category === key);
+    const startArticle = categoryArticles.find((article) => article.slug === category.startSlug) || categoryArticles[0];
+    const cards = categoryArticles.map((article) => `<article class="guide-card">
+      <span>${esc(category.label)} ／ ${esc(article.tag)}</span>
+      <h3><a href="/columns/${article.slug}">${esc(article.title)}</a></h3>
+      <p>${esc(article.description)}</p>
+      <a class="read" href="/columns/${article.slug}" aria-label="${esc(article.title)}を読む">「${esc(article.title)}」を読む →</a>
+    </article>`).join("");
+    return `<section class="category-section" id="category-${key}" aria-labelledby="category-${key}-title">
+      <div class="category-head"><p class="eyebrow">${esc(category.label)}</p><h2 id="category-${key}-title">${esc(category.heading)}</h2><p>${esc(category.description)}</p>${startArticle?`<a class="start-link" href="/columns/${startArticle.slug}">最初に読む「${esc(startArticle.title)}」</a>`:""}</div>
+      <div class="guide-grid">${cards}</div>
+    </section>`;
+  }).join("");
   return `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q">
 <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-60BQRQWB5M');</script>
 <link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}/ogp-default.png"><meta property="og:site_name" content="${esc(SITE_COPY.siteName)}"><meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify(itemListLd)}</script>
-<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0d0e10;color:#e9e7e3;font-family:system-ui,-apple-system,"Yu Gothic",sans-serif;line-height:1.8}.top{display:flex;justify-content:space-between;align-items:center;padding:15px clamp(18px,4vw,52px);border-bottom:1px solid #292a2f}.top a{color:#eeeae4;text-decoration:none}.logo{font-family:Georgia,serif;font-size:24px;letter-spacing:2px}.top nav{display:flex;gap:18px;font-size:12px}.shell{max-width:1180px;margin:auto;padding:clamp(54px,8vw,92px) clamp(18px,4vw,48px) 100px}.eyebrow{font:italic 13px Georgia,serif;color:#c9b558;letter-spacing:2px}.hero h1{font-family:"Yu Mincho",serif;font-size:clamp(31px,5vw,55px);line-height:1.45;max-width:15ch;margin:12px 0 20px}.hero>p{max-width:700px;color:#bdbbb7;font-size:15px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#303137;border:1px solid #303137;margin-top:55px}.guide-card{background:#15161a;padding:28px 25px;min-height:295px;display:flex;flex-direction:column}.guide-card>span{font:11px Georgia,serif;color:#8f8f95;letter-spacing:1px}.guide-card h2{font-family:"Yu Mincho",serif;font-size:20px;line-height:1.65;margin:12px 0}.guide-card h2 a{color:#f1eee8;text-decoration:none}.guide-card p{color:#aaa8a3;font-size:13px;margin:0 0 20px}.read{margin-top:auto;color:#c9b558;text-decoration:none;font-size:12px}.guide-card :focus-visible,.top a:focus-visible{outline:2px solid #c9b558;outline-offset:4px}.back{display:inline-block;margin-top:48px;color:#ddd9d2;text-decoration:none;border-bottom:1px solid #c9b558}@media(max-width:900px){.guide-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.top nav{display:none}.guide-grid{grid-template-columns:1fr}.guide-card{min-height:0}.shell{padding-top:48px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}</style></head>
+<style>*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#0d0e10;color:#e9e7e3;font-family:system-ui,-apple-system,"Yu Gothic",sans-serif;line-height:1.8}.top{display:flex;justify-content:space-between;align-items:center;padding:15px clamp(18px,4vw,52px);border-bottom:1px solid #292a2f}.top a{color:#eeeae4;text-decoration:none}.logo{font-family:Georgia,serif;font-size:24px;letter-spacing:2px}.top nav{display:flex;gap:18px;font-size:12px}.shell{max-width:1180px;margin:auto;padding:clamp(54px,8vw,92px) clamp(18px,4vw,48px) 100px}.eyebrow{font:italic 13px Georgia,serif;color:#c9b558;letter-spacing:2px}.hero h1{font-family:"Yu Mincho",serif;font-size:clamp(31px,5vw,55px);line-height:1.45;max-width:18ch;margin:12px 0 20px}.hero>p,.category-head>p{max-width:700px;color:#bdbbb7;font-size:15px}.category-nav{display:flex;flex-wrap:wrap;gap:8px;margin:36px 0 76px}.category-nav a{display:inline-flex;align-items:center;min-height:44px;padding:8px 15px;border:1px solid #35363b;color:#ddd9d2;text-decoration:none;font-size:12px}.category-section{scroll-margin-top:20px;margin-top:82px}.category-head h2{font-family:"Yu Mincho",serif;font-size:clamp(25px,4vw,38px);margin:5px 0 12px}.start-link{display:inline-block;margin-top:15px;color:#c9b558;text-decoration:none;border-bottom:1px solid #766a39}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#303137;border:1px solid #303137;margin-top:28px}.guide-card{background:#15161a;padding:28px 25px;min-height:295px;display:flex;flex-direction:column}.guide-card>span{font:11px Georgia,serif;color:#8f8f95;letter-spacing:1px}.guide-card h3{font-family:"Yu Mincho",serif;font-size:20px;line-height:1.65;margin:12px 0}.guide-card h3 a{color:#f1eee8;text-decoration:none}.guide-card p{color:#aaa8a3;font-size:13px;margin:0 0 20px}.read{margin-top:auto;color:#c9b558;text-decoration:none;font-size:12px}.guide-card :focus-visible,.top a:focus-visible,.category-nav a:focus-visible,.start-link:focus-visible{outline:2px solid #c9b558;outline-offset:4px}.back{display:inline-block;margin-top:68px;color:#ddd9d2;text-decoration:none;border-bottom:1px solid #c9b558}@media(max-width:900px){.guide-grid{grid-template-columns:1fr 1fr}}@media(max-width:600px){.top nav{display:none}.guide-grid{grid-template-columns:1fr}.guide-card{min-height:0}.shell{padding-top:48px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}</style></head>
 <body><header class="top"><a class="logo" href="/">Sillage</a><nav aria-label="主要ナビゲーション"><a href="/#fragrances">香水を探す</a><a href="/#diagnosis">香水診断</a></nav></header>
-<main class="shell"><header class="hero"><p class="eyebrow">FRAGRANCE PROBLEM GUIDE</p><h1>香水の悩みを、ひとつずつ解く。</h1><p>${esc(description)}</p></header>
-<section class="guide-grid" aria-label="香水の悩み別記事">${cards}</section><a class="back" href="/">Sillageトップへ戻る</a>　<a class="back" href="/about.html#update-policy">編集方針・更新ポリシー</a></main></body></html>`;
+<main class="shell"><header class="hero"><p class="eyebrow">SILLAGE EDITORIAL GUIDE</p><h1>香水の疑問から、選び方を見つける。</h1><p>${esc(description)}</p></header>
+<nav class="category-nav" aria-label="コラムカテゴリ">${categoryNav}</nav>${categorySections}<a class="back" href="/">Sillageトップへ戻る</a>　<a class="back" href="/about.html#update-policy">編集方針・更新ポリシー</a></main></body></html>`;
 }
 
-for (const article of articles) {
-  const html = renderArticle(article, articles).replace(/[ \t]+\n/g, "\n");
+for (const article of allArticles) {
+  const html = renderArticle(article, allArticles).replace(/[ \t]+\n/g, "\n");
   writeFileSync(join(OUT, `${article.slug}.html`), html);
 }
 writeFileSync(join("public", "guides.html"), renderGuideIndex().replace(/[ \t]+\n/g, "\n"));
-console.log(`Generated ${articles.length} enriched column pages`);
+console.log(`Generated ${allArticles.length} enriched column pages in ${Object.keys(COLUMN_CATEGORIES).length} categories`);

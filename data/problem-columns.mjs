@@ -4,8 +4,8 @@ function guide(config) {
   return {
     ...config,
     tag: "FRAGRANCE CARE",
-    publishedAt: "2026-07-24T15:00:00+09:00",
-    modifiedAt: "2026-07-24T15:00:00+09:00",
+    publishedAt: config.publishedAt || "2026-07-24T15:00:00+09:00",
+    modifiedAt: config.modifiedAt || "2026-07-24T15:00:00+09:00",
     visual: {
       type: "steps",
       title: config.visualTitle,
@@ -28,7 +28,8 @@ function guide(config) {
 
 export const PROBLEM_ARTICLES = [
   guide({
-    slug: "too-much-perfume", title: "香水をつけすぎた時の対処法", description: "香水をつけすぎた時に、肌・服・室内で香りを弱める手順を整理。こすらず、広げず、周囲へ配慮しながら落ち着いて対処する方法を紹介します。",
+    slug: "too-much-perfume", title: "香水をつけすぎた時の落とし方｜外出前・外出先の対処法", description: "香水をつけすぎた時に、肌・服・室内で香りを弱める手順を整理。外出前と外出先に分け、周囲へ広げず対処する方法を紹介します。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead: "つけた直後に強いと感じても、香りを重ねてごまかす必要はありません。香りの付着場所を確認し、余分な香料を取り除き、時間と換気を味方につけます。",
     answer: "肌は無香料の洗浄料でやさしく洗い、服は脱げるなら交換します。外出先では濡らした布で押さえ、風通しのよい場所へ移動してください。別の香りを重ねるのは避けます。",
     visualTitle: "つけすぎに気づいた時の4ステップ", steps: [["01","場所を確認","肌・服・髪のどこか"],["02","余分を取る","こすらず押さえる"],["03","洗う・替える","無香料で対処"],["04","換気して待つ","追加噴霧しない"]],
@@ -64,7 +65,8 @@ export const PROBLEM_ARTICLES = [
     brands:[["Bvlgari","bvlgari"],["Prada","prada"],["Aesop","aesop"]], featured:["bvlgari-2","prada-2","aesop-1"],
   }),
   guide({
-    slug:"why-cant-smell-own-perfume", title:"香水が自分では分からなくなる理由", description:"つけた香水を自分だけ感じにくくなる理由と、つけ足しを防ぐ確認方法を解説。嗅覚の慣れと香りの変化を分けて考えます。",
+    slug:"why-cant-smell-own-perfume", title:"香水の匂いが自分で分からない理由｜つけ足す前に知る嗅覚順応", description:"つけた香水を自分だけ感じにくくなる理由と、つけ足しを防ぐ確認方法を解説。嗅覚の慣れと香りの変化を分けて考えます。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead:"香りが消えたとは限りません。同じ刺激を受け続けると意識しにくくなるため、自分の鼻だけを基準に追加するとつけすぎにつながります。",
     answer:"鼻が香りに慣れることと、香料が揮発して弱くなることが同時に起こります。すぐに追加せず、屋外の新鮮な空気を吸い、服やムエットで時間変化を確認します。",
     visualTitle:"「感じない」を切り分ける", steps:[["01","待つ","すぐ追加しない"],["02","離れる","新鮮な空気を吸う"],["03","比べる","服やムエットを確認"],["04","記録","時間と量を残す"]],
@@ -100,7 +102,8 @@ export const PROBLEM_ARTICLES = [
     brands:[["Acqua di Parma","acqua-di-parma"],["Aesop","aesop"],["Hermès","hermes"]], featured:["acqua-di-parma-2","aesop-1","hermes-2"],
   }),
   guide({
-    slug:"perfume-on-clothes", title:"香水を服につけてもよい？素材別の注意点", description:"香水を服につける前に確認したい、シミ・変色・香り残りの注意点を解説。肌につける場合との違いと安全な試し方を紹介します。",
+    slug:"perfume-on-clothes", title:"香水を服につけてもいい？シミ・変色・香り方の注意点", description:"香水を服につける前に確認したい、シミ・変色・香り残りの注意点を解説。肌につける場合との違いと慎重な試し方を紹介します。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead:"服は香りが長く残りやすい一方、素材によってはシミや変色の原因になります。製品表示と洗濯表示を確認し、目立たない場所で試すことが前提です。",
     answer:"基本は製品が想定する使い方に従います。服へ使うなら、シルク・革・白い布・装飾部分を避け、離れた位置から目立たない場所で少量を試します。",
     visualTitle:"服につける前の確認", steps:[["01","表示","製品の使用方法"],["02","素材","シルク・革を避ける"],["03","試す","目立たない場所"],["04","距離","近距離で濡らさない"]],
@@ -118,7 +121,8 @@ export const PROBLEM_ARTICLES = [
     brands:[["Jo Malone","jo-malone"],["Maison Margiela","maison-margiela"],["Chanel","chanel"]], featured:["jo-malone-4","maison-margiela-2","chanel-3"],
   }),
   guide({
-    slug:"perfume-storage", title:"香水の保存場所｜光・熱・湿気を避ける基本", description:"香水を保管する場所の選び方を解説。直射日光、高温、温度変化、湿気を避け、ボトルと香りを扱いやすく保つ基本をまとめます。",
+    slug:"perfume-storage", title:"香水の正しい保存方法｜冷蔵庫・洗面所・窓際は大丈夫？", description:"香水を保管する場所の選び方を解説。冷蔵庫・洗面所・窓際を比較し、直射日光、高温多湿、温度変化を避ける基本をまとめます。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead:"見せる収納より、温度と光が安定した暗い場所を優先します。窓辺、浴室、車内は避け、箱がある場合は活用します。",
     answer:"直射日光が当たらず、高温多湿や急な温度変化が少ない室内の棚へ。キャップを閉め、立てた状態で保管します。",
     visualTitle:"保存場所を選ぶ4条件", steps:[["01","暗さ","直射日光を避ける"],["02","温度","高温・急変を避ける"],["03","湿気","浴室を避ける"],["04","姿勢","立てて閉栓"]],
@@ -154,7 +158,8 @@ export const PROBLEM_ARTICLES = [
     brands:[["Guerlain","guerlain"],["Chanel","chanel"],["Dior","dior"]], featured:["guerlain-1","chanel-5","dior-1"],
   }),
   guide({
-    slug:"perfume-decanting", title:"香水を小分けにする時の注意点", description:"香水をアトマイザーへ小分けする際の衛生、容器、ラベル、漏れ対策を解説。持ち運び前に確認したい手順をまとめます。",
+    slug:"perfume-decanting", title:"アトマイザーへの香水の移し方｜漏れ・劣化を防ぐ注意点", description:"香水をアトマイザーへ移す際の衛生、容器、ラベル、漏れ対策を解説。持ち運び前に確認したい手順をまとめます。",
+    modifiedAt: "2026-07-25T12:00:00+09:00",
     lead:"小分けでは香りだけでなく、液漏れ、容器材質、衛生、誤使用を防ぐ表示が重要です。清潔な香水対応容器を使い、最小限だけ移します。",
     answer:"香水対応の清潔な容器を選び、商品名と小分け日を記載。高温や火気を避け、機内持ち込みや配送は各事業者の最新規則を確認します。",
     visualTitle:"小分けの安全な順番", steps:[["01","容器","香水対応を選ぶ"],["02","清潔","手と器具を乾かす"],["03","表示","名前・日付を記録"],["04","確認","漏れ・規則を確認"]],
