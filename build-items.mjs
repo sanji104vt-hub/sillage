@@ -99,6 +99,9 @@ function pageHTML(p, related) {
   const famLabel = FAM[p.family]?.ja || p.family;
   const famColor = FAM[p.family]?.color || "#aeb0b6";
   const ogImage = familyOgpUrl(p.family);
+  // フェーズ3-B: 表示画像は自ドメイン。楽天CDNのURLはonerrorフォールバックとしてのみ保持する。
+  const productImage = `/img/products/${p.slug}.png`;
+  const productImageAbs = `https://sillage.asutelu.com${productImage}`;
   const seasons = (p.seasons || []).map(s => SEASON[s] || s).join(" / ");
   const scenes = (p.scenes || []).map(s => SCENE[s] || s).join(" / ");
   const priceTier = PRICE[p.priceTier] || "";
@@ -125,7 +128,7 @@ function pageHTML(p, related) {
     "category": famLabel,
     "description": p.verdict || desc,
     "url": url,
-    ...(ogImage ? { "image": ogImage } : {}),
+    "image": productImageAbs,
   };
 
   const officialUrl = p.purchaseLinks?.official?.url || "";
@@ -214,7 +217,8 @@ article{max-width:760px;margin:0 auto;padding:44px clamp(18px,4vw,40px) 60px}
 h1{font-family:"Shippori Mincho",serif;font-weight:600;font-size:clamp(24px,4.5vw,32px);line-height:1.5;color:#fff;letter-spacing:1px;margin-bottom:8px}
 .h1sub{font-family:"Cormorant",serif;font-style:italic;font-size:16px;color:#8c8c92;margin-bottom:22px}
 .fam-pill{display:inline-block;font-size:12px;padding:5px 12px;border-radius:999px;color:#0d0e10;font-weight:600;font-family:"Shippori Mincho",serif;margin-bottom:20px}
-.photo{width:100%;max-width:340px;margin:0 auto 26px;display:block;background:#fafaf7;padding:22px;border-radius:6px}
+.photo{width:100%;max-width:340px;margin:0 auto 26px;display:block;background:#141517;border:1px solid #2c2d31;padding:0;border-radius:6px}
+.photo.photo-fallback{background:#fafaf7;border-color:transparent;padding:22px}
 .pyramid{border:1px solid #2c2d31;border-radius:4px;padding:22px;margin-bottom:24px}
 .pyramid .row{display:flex;gap:12px;padding:9px 0;font-size:14px}
 .pyramid .row+.row{border-top:1px dashed #2c2d31}
@@ -246,7 +250,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #e9e7e3;outline-offset:4p
 article{max-width:1060px}
 .product-hero{display:grid;grid-template-columns:minmax(260px,420px) minmax(0,1fr);gap:clamp(36px,7vw,84px);align-items:center;margin-bottom:58px}
 .product-hero.no-image{grid-template-columns:minmax(0,720px);justify-content:center}
-.product-visual{min-width:0}.product-visual .photo{width:100%;max-width:420px;margin:0;background:#fafaf7;padding:clamp(18px,4vw,38px);border-radius:4px}
+.product-visual{min-width:0}.product-visual .photo{width:100%;max-width:420px;height:auto;aspect-ratio:1/1;object-fit:cover;margin:0;background:#141517;border:1px solid #2c2d31;padding:0;border-radius:4px}
+.product-visual .photo.photo-fallback{background:#fafaf7;border-color:transparent;padding:clamp(18px,4vw,38px);object-fit:contain}
 .product-copy{min-width:0}.eyebrow{font-family:"Cormorant",serif;font-style:italic;font-size:13px;letter-spacing:1.2px;color:#8c8c92;margin-bottom:9px}
 .product-copy h1{font-size:clamp(28px,4.8vw,46px);line-height:1.35;overflow-wrap:anywhere}.product-copy .h1sub{margin-bottom:18px}
 .hero-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 22px;margin:24px 0 28px;padding:20px 0;border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}
@@ -280,8 +285,8 @@ article{max-width:1060px}
 </header>
 <article>
   <p class="crumb"><a href="/">Sillage</a>${brandLink ? ` ／ <a href="${brandLink}">${escape(p.brand)}</a>` : ""} ／ ${escape(p.name)}</p>
-  <section class="product-hero${p.img ? "" : " no-image"}" aria-labelledby="product-title">
-    ${p.img ? `<div class="product-visual"><img class="photo" src="${escape(p.img)}" alt="${escape(p.brand)} ${escape(p.name)}の商品画像" fetchpriority="high"></div>` : ""}
+  <section class="product-hero" aria-labelledby="product-title">
+    <div class="product-visual"><img class="photo" src="${productImage}" alt="${escape(p.brand)} ${escape(p.name)}の商品画像" width="800" height="800" fetchpriority="high"${p.img ? ` onerror="this.onerror=null;this.classList.add('photo-fallback');this.removeAttribute('width');this.removeAttribute('height');this.src='${escape(p.img)}';"` : ""}></div>
     <div class="product-copy">
       <p class="eyebrow">Fragrance detail</p>
       <p class="brand-line">${brandLink ? `<a href="${brandLink}" style="color:inherit;text-decoration:none">${escape(p.brand)}</a>` : escape(p.brand)}</p>
