@@ -723,6 +723,7 @@
   /* ---------- mobile a11y: 44px tap targets + 12px+ font ---------- */
   @media(max-width:768px){
     .grid{gap:18px}
+    .quiz-products{grid-template-columns:1fr}
     .card{border-radius:15px}
     .flacon{height:226px}
     .flacon .photo{max-height:188px}
@@ -808,9 +809,8 @@
 .fi-item:hover{color:#fff}
 .fi-brand{font-family:"Bodoni Moda",serif;font-size:10.5px;letter-spacing:1.5px;color:#9a9a9f;text-transform:uppercase}
 .fi-name{font-family:"Shippori Mincho",serif;font-weight:500;font-size:14px;margin-top:2px}
-  @media(max-width:768px){
-    .quiz-products{grid-template-columns:1fr}
-    .brand-index-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
+@media(max-width:768px){
+  .brand-index-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
   .brand-tile{min-height:70px;padding:12px 14px}
   .brand-tile .bt-name{font-size:14px}
   .fi-item{padding:12px 0;min-height:44px}

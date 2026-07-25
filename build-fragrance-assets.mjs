@@ -1,8 +1,10 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { loadFragranceData } from "./lib/fragrance-data.mjs";
+import { loadSiteCopy } from "./lib/site-copy.mjs";
 
 const document = loadFragranceData();
 const brands = JSON.parse(readFileSync("data/brands.json", "utf8"));
+const siteCopy = loadSiteCopy();
 
 mkdirSync("public/data", { recursive: true });
 writeFileSync("public/data/fragrances.json", JSON.stringify(document.fragrances), "utf8");
@@ -20,6 +22,7 @@ const collectionPage = {
     name: "掲載香水",
     numberOfItems: document.fragrances.length,
   },
+  description: siteCopy.description,
 };
 const collectionPattern = /<script id="home-collection-jsonld" type="application\/ld\+json">([\s\S]*?)<\/script>/;
 const collectionScript = indexHtml.match(collectionPattern);

@@ -31,7 +31,11 @@ for (const fragrance of fragrances) {
   if (!html.includes("閲覧中の商品と比較候補2本、合計3本")) {
     throw new Error(`${fragrance.slug}: 購入候補3本の説明がありません`);
   }
-  if (/\b(?:undefined|null)\b/.test(html)) {
+  const visibleText = html
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " ");
+  if (/\b(?:undefined|null)\b/.test(visibleText)) {
     throw new Error(`${fragrance.slug}: 欠損値の文字列が表示されています`);
   }
 }

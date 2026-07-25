@@ -169,8 +169,11 @@ fragrances.forEach((item, index) => {
   if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);
   if (isEnriched && !html.includes(`情報確認日：${Number(item.verifiedAt.slice(0, 4))}年`)) errors.push(`情報確認日表示なし: ${path}`);
   if (!isEnriched && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
-  if (item.img && !/<img class="photo"[^>]+alt="[^"]+"/.test(html)) errors.push(`商品画像altなし: ${path}`);
-  if (!item.img && !html.includes('class="product-hero no-image"')) errors.push(`画像なしレイアウト未適用: ${path}`);
+  const localImagePath = `public/img/products/${slug}.png`;
+  const localImageUrl = `/img/products/${slug}.png`;
+  if (!existsSync(localImagePath)) errors.push(`自ドメイン商品画像なし: ${localImagePath}`);
+  if (!html.includes(`src="${localImageUrl}"`)) errors.push(`自ドメイン商品画像参照なし: ${path}`);
+  if (!/<img class="photo"[^>]+alt="[^"]+"/.test(html)) errors.push(`商品画像altなし: ${path}`);
 
   const jsonBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
   const structured = [];
@@ -183,6 +186,7 @@ fragrances.forEach((item, index) => {
   if (!product) errors.push(`Product JSON-LDなし: ${path}`);
   if (!breadcrumb) errors.push(`BreadcrumbListなし: ${path}`);
   if (product?.url !== expectedUrl) errors.push(`Product URL不一致: ${path}`);
+  if (product?.image !== `https://sillage.asutelu.com${localImageUrl}`) errors.push(`Product画像URL不一致: ${path}`);
   if (product?.aggregateRating || product?.offers) errors.push(`未検証の評価または価格情報を含む: ${path}`);
   const selfHref = `href="/items/${slug}"`;
   const comparisonArea = html.match(/<div class="compare-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] || "";

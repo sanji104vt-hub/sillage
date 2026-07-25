@@ -178,8 +178,10 @@ function matches(p){
 }
 function card(p){
   const f=FAM[p.family];const c=f.color;
-  const visual = p.img
-    ? `<div class="flacon"><img class="photo" src="${p.img}" alt="${p.brand} ${p.name}" loading="lazy">
+  const productImage=p.slug?`/img/products/${p.slug}.png`:p.img;
+  const imageFallback=p.slug&&p.img?` onerror="this.onerror=null;this.src='${p.img}'"`:"";
+  const visual = productImage
+    ? `<div class="flacon"><img class="photo" src="${productImage}" alt="${p.brand} ${p.name}" loading="lazy"${imageFallback}>
         <span class="fam-pill" style="background:${c}">${f.ja}</span>
         <span class="gender-pill">${GENDER[p.gender]}</span>
       </div>`
