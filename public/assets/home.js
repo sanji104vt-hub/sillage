@@ -323,6 +323,7 @@ function buildGuide(){
 
 function buildColumns(){
   const box=document.getElementById("colGrid");
+  if(!box)return;
   COLUMNS.forEach(col=>{
     const c=document.createElement("article");
     c.className="colcard";
@@ -1367,6 +1368,7 @@ function comparePreview(c,i){
 }
 function buildCompares(){
   const box=document.getElementById("cmpGrid");
+  if(!box)return;
   COMPARES.forEach((c,i)=>{
     const card=document.createElement("article");card.className="cmpcard";
     card.innerHTML=`

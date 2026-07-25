@@ -21,7 +21,8 @@ const duplicateTopics = [
   ["香水の正しいつけ方", "how-to-wear", "全体の量・場所・タイミングを扱う親記事"],
   ["職場の香水量", "business-fragrance / office-perfume-amount", "business-fragranceを選び方の親、office-perfume-amountを職場の運用詳細として整理"],
   ["店頭試香", "blotter-vs-skin / perfume-store-comparison", "紙と肌の違い、店頭で比較する順番へ検索意図を分離"],
-  ["プレゼント", "perfume-gift-mistakes", "失敗例に焦点を限定"],
+  ["店頭試香の全体手順", "how-to-test-perfume", "初回来店から候補決定までを扱う親記事として追加"],
+  ["プレゼント", "perfume-gift-guide / perfume-gift-mistakes", "選び方の親記事と、失敗例に絞る詳細記事へ分離"],
   ["小分け", "perfume-decanting", "既存URLをアトマイザー手順の正規記事として維持"],
 ];
 
@@ -30,7 +31,7 @@ const lines = [
   "",
   `- 監査日: 2026-07-25`,
   `- 監査対象: ${rows.length}記事`,
-  "- 生成元: `build-columns.mjs`、`data/problem-columns.mjs`",
+  "- 生成元: `build-columns.mjs`、`data/problem-columns.mjs`、`data/beginner-columns.mjs`、`data/column-taxonomy.mjs`",
   "- 公開形式: 初期HTMLへ本文を含む静的生成",
   "- 構造化データ: Article、BreadcrumbList、FAQPage",
   "- URL形式: `/columns/{slug}`（物理HTMLはWorkerで拡張子なしURLへ統一）",
@@ -39,7 +40,7 @@ const lines = [
   "- OGP画像: `lib/ogp-image.mjs`の香調別画像。該当しない記事は`ogp-default.png`",
   "- 著者・日付: 記事データの公開日・更新日をテンプレートで本文とArticleへ同期",
   "",
-  "## 既存記事一覧と検索意図",
+  "## 監査時点の記事一覧と検索意図",
   "",
   "| slug | title / H1 | カテゴリ | 主な見出し | 関連商品 | 関連記事 |",
   "|---|---|---|---|---:|---:|",

@@ -64,8 +64,7 @@ const orderedHomeMarkers = [
   'id="scent-guide"',
   "— interactive timeline",
   'id="brands"',
-  "— reading",
-  "— compare",
+  'id="home-columns-title"',
 ];
 let previousIndex = -1;
 for (const marker of orderedHomeMarkers) {
