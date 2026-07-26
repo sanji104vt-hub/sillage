@@ -1,12 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <rect width="64" height="64" rx="12" fill="#0d0e10"/>
-  <rect x="4" y="4" width="56" height="56" rx="9" fill="none" stroke="#c9b558" stroke-opacity="0.42" stroke-width="1.5"/>
-  <!-- Sillageの頭文字と、空気に残る香りの軌跡 -->
-  <path d="M43 17c-4.2-5.2-16.8-5.3-21.1.7C15.4 27 43.8 27.2 41.7 40c-1.7 10.3-18.9 13.5-26.4 4.4" fill="none" stroke="#f4f0e8" stroke-width="5.2" stroke-linecap="round"/>
-  <path d="M46.5 12.5c3.4 3 4.5 6.4 3.2 10.1" fill="none" stroke="#6c98ad" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M50.3 9.8c4.3 4.1 5.8 9.1 4.1 14.5" fill="none" stroke="#c4889c" stroke-width="1.8" stroke-linecap="round" opacity="0.9"/>
-  <!-- Top / Middle / Last note -->
-  <circle cx="44" cy="51" r="2.2" fill="#6c98ad"/>
-  <circle cx="50" cy="51" r="2.2" fill="#c9b558"/>
-  <circle cx="56" cy="51" r="2.2" fill="#c4889c"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!--
+    Sillage favicon: Didot風の高コントラストセリフ「S」に、
+    右上に金の粒(=残り香)を1点添える。
+    背景は透過(ブラウザタブでOSのライト/ダーク両対応)。
+    - S本体は #c9b558 (Sillageゴールド)
+    - 粒は #c4889c (ピンク)
+    - Sの中心軸(高コントラスト)は幅16、細部セリフは幅3〜4
+  -->
+
+  <!-- 縦長エレガントS。上のカーブから下のカーブへ滑らかに流れる。
+       stroke: none、fill only で描画(小サイズでの潰れを回避)。 -->
+  <path fill="#c9b558" d="
+    M 66 22
+    C 66 15, 58 12, 48 12
+    C 33 12, 24 20, 24 30
+    C 24 40, 33 44, 46 47
+    C 60 51, 68 55, 68 66
+    C 68 78, 58 86, 44 86
+    C 32 86, 24 82, 24 76
+    L 24 68
+    C 24 72, 30 77, 42 77
+    C 54 77, 60 71, 60 65
+    C 60 57, 52 54, 42 51
+    C 30 47, 22 42, 22 32
+    C 22 20, 32 8, 50 8
+    C 62 8, 66 12, 66 16
+    L 66 22
+    Z" />
+
+  <!-- 上下のセリフ装飾(細い水平線)。極めて薄く、Didot的なコントラスト演出。 -->
+  <line x1="20" y1="12" x2="34" y2="12" stroke="#c9b558" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="56" y1="86" x2="68" y2="86" stroke="#c9b558" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- 残り香の粒(右上に静かに1点)。ピンクで暖かみを添える。 -->
+  <circle cx="80" cy="20" r="4" fill="#c4889c"/>
 </svg>

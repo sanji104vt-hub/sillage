@@ -52,6 +52,23 @@ const GA4 = `<!-- Google tag (gtag.js) -->
   gtag('config', '${GA4_ID}');
 </script>`;
 
+// favicon 一式。全ページ共通で head に入れる(rel="manifest"の有無で冪等判定)。
+const FAVICON = `<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0d0e10">`;
+const LEGACY_FAVICON = '<link rel="icon" href="/favicon.svg" type="image/svg+xml">';
+
+function addFavicon(html) {
+  if (html.includes('rel="manifest"')) return html;
+  if (html.includes(LEGACY_FAVICON)) return html.replace(LEGACY_FAVICON, FAVICON);
+  const gsc = html.match(/<meta name="google-site-verification"[^>]*>/)?.[0];
+  if (gsc) return html.replace(gsc, `${gsc}\n${FAVICON}`);
+  return html.replace("</head>", `${FAVICON}\n</head>`);
+}
+
 function htmlFiles(dir) {
   return readdirSync(dir, { withFileTypes: true }).flatMap((entry) => {
     const path = join(dir, entry.name);
@@ -113,6 +130,8 @@ for (const path of files) {
     if (!marker) throw new Error(`GSC tag not found: ${rel}`);
     html = html.replace(marker, `${marker}\n${GA4}`);
   }
+
+  html = addFavicon(html);
 
   if (rel.startsWith("brand-") && rel.endsWith(".html")) {
     const previousBrandTitle = html.match(/<title>(.*?)<\/title>/s)?.[1];
