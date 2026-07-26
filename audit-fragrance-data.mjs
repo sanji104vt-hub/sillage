@@ -4,7 +4,7 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const EXPECTED_TOTAL = 92;
-const sourcePath = "public/index.html";
+const sourcePath = "public/assets/home.js";
 const source = readFileSync(sourcePath, "utf8");
 const fragrances = loadFragrances();
 const slugs = fragrances.map((item) => item.slug);

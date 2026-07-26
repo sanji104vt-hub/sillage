@@ -36,11 +36,16 @@ if (workersResponse.status !== 301 || !workersResponse.headers.get("location")?.
 const sitemap = readFileSync("public/sitemap.xml", "utf8");
 for (const item of fragrances) if (!sitemap.includes(`https://sillage.asutelu.com/items/${item.slug}`)) errors.push(`Sitemap item missing: ${item.slug}`);
 const top = readFileSync("public/index.html", "utf8");
-if (!top.includes('<script src="/data/fragrances.js"></script>')) errors.push("Top data asset missing");
-if (!existsSync("public/data/fragrances.js")) errors.push("Generated fragrance asset missing");
+const homeScript = readFileSync("public/assets/home.js", "utf8");
+if (!top.includes('<script defer src="/assets/home.js"></script>')) errors.push("Top application asset missing");
+if (!homeScript.includes('fetchHomeResource("/data/fragrances.json","json")')) errors.push("Lazy fragrance request missing");
+if (!homeScript.includes('fetchHomeResource("/data/brands.json","json")')) errors.push("Lazy brand request missing");
+if (!existsSync("public/data/fragrances.json")) errors.push("Generated fragrance JSON missing");
+if (!existsSync("public/data/brands.json")) errors.push("Generated brand JSON missing");
+if (!existsSync("public/partials/home-deferred.html")) errors.push("Deferred homepage fragment missing");
 for (const item of fragrances) {
-  for (const value of item.scenes || []) if (!top.includes(`${value}:`)) errors.push(`Scene filter missing: ${value}`);
-  for (const value of item.seasons || []) if (!top.includes(`${value}:`)) errors.push(`Season filter missing: ${value}`);
+  for (const value of item.scenes || []) if (!homeScript.includes(`${value}:`)) errors.push(`Scene filter missing: ${value}`);
+  for (const value of item.seasons || []) if (!homeScript.includes(`${value}:`)) errors.push(`Season filter missing: ${value}`);
 }
 
 if (errors.length) {

@@ -12,7 +12,7 @@ function htmlFiles(dir) {
   });
 }
 
-const rows = htmlFiles(PUBLIC).map((path) => {
+const rows = htmlFiles(PUBLIC).filter((path) => !path.split(/[\\/]/).includes("partials")).map((path) => {
   const html = readFileSync(path, "utf8");
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
   if (!canonical) throw new Error(`canonical missing: ${relative(PUBLIC, path)}`);

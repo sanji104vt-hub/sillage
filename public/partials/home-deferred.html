@@ -1,0 +1,215 @@
+<div class="section-head" id="find-fragrances">
+  <p class="kick">— find your fragrance</p>
+  <h2>香調・シーン・季節から香水を探す</h2>
+  <p class="section-copy">全92件から、使う場面や季節、価格帯を組み合わせて候補を絞れます。</p>
+</div>
+
+<section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
+  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
+  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
+  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
+  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
+  <button class="reset" id="resetBtn">reset all</button>
+</section>
+
+<div class="results-head">
+  <span class="count" id="resultsSummary" aria-live="polite">全<b>92</b>件の香水</span>
+  <span class="active-fam" id="activeFam"></span>
+</div>
+
+<main class="grid" id="grid" aria-busy="false"><noscript><div class="empty"><div class="big">掲載香水は全92件です</div>絞り込みにはJavaScriptが必要です。<a href="/columns/first-fragrance">初心者向けガイド</a>からも選べます。</div></noscript></main>
+
+
+
+<section class="beginner-nav" aria-labelledby="beginnerTitle">
+  <p class="beginner-kicker">— start with your purpose</p>
+  <h2 id="beginnerTitle">はじめての香水選び</h2>
+  <p class="beginner-lead">好みがまだ分からなくても大丈夫。目的や使う場面から、あなたに合う一本を探せます。</p>
+  <div class="beginner-cards">
+    <a class="beginner-card" href="#diagnosis">
+      <span class="beginner-no" aria-hidden="true">01 ／ DIAGNOSIS</span>
+      <h3>診断から選ぶ</h3>
+      <p>いくつかの質問に答えて、相性のよいブランドや香りを探す。</p>
+      <span class="beginner-link">香水診断を始める →</span>
+    </a>
+    <a class="beginner-card" href="#fragrances">
+      <span class="beginner-no" aria-hidden="true">02 ／ SCENE</span>
+      <h3>使う場面から選ぶ</h3>
+      <p>仕事、デート、休日など、香水を使いたい場面から探す。</p>
+      <span class="beginner-link">シーン別に見る →</span>
+    </a>
+    <a class="beginner-card" href="/columns/first-fragrance">
+      <span class="beginner-no" aria-hidden="true">03 ／ FIRST BOTTLE</span>
+      <h3>最初の一本を知る</h3>
+      <p>香りが強すぎず、日常で使いやすい初心者向け香水を確認する。</p>
+      <span class="beginner-link">初心者向けガイドを読む →</span>
+    </a>
+  </div>
+  <div class="beginner-shortcuts" aria-labelledby="shortcutTitle">
+    <p class="shortcut-label" id="shortcutTitle">よく選ばれる条件から、すぐに絞り込む</p>
+    <div class="shortcut-list">
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="business" aria-pressed="false">ビジネス</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="date" aria-pressed="false">デート</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="daily" aria-pressed="false">普段使い</button>
+      <button class="filter-shortcut" type="button" data-filter-field="scene" data-filter-value="sports" aria-pressed="false">スポーツ</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="spring" aria-pressed="false">春向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="summer" aria-pressed="false">夏向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="autumn" aria-pressed="false">秋向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="season" data-filter-value="winter" aria-pressed="false">冬向け</button>
+      <button class="filter-shortcut" type="button" data-filter-field="price" data-filter-value="petit" aria-pressed="false">プチプラ</button>
+    </div>
+  </div>
+</section>
+
+<div class="section-head" id="diagnosis">
+  <p class="kick">— diagnosis</p>
+  <h2>あなたに合う香水診断</h2>
+</div>
+<section class="quiz-wrap">
+  <div class="quiz-card" id="quizCard"></div>
+</section>
+
+<nav class="traffic-hub" id="popular-guides" aria-label="人気の香水ガイド">
+  <div class="traffic-hub-inner">
+    <p class="traffic-label">popular guides ／ 香水選びを学ぶ</p>
+    <div class="traffic-links">
+      <a href="/columns/business-fragrance">ビジネスで外さない香水</a>
+      <a href="/columns/how-to-wear">香水の正しいつけ方</a>
+      <a href="/columns/concentration-guide">EDT・EDP・パルファムの違い</a>
+      <a href="/guides.html">悩み別ガイドをすべて見る →</a>
+    </div>
+  </div>
+</nav>
+
+<div class="section-head" id="scent-guide">
+  <p class="kick">— ten families</p>
+  <h2>香りの系統を知る</h2>
+</div>
+<section class="guide-grid" id="guideGrid"></section>
+
+<!-- generated:family-items:start -->
+<section class="family-items-section" id="family-items" aria-label="香調から探す代表作">
+  <div class="section-head">
+    <p class="kick">— by family ／ 10 systems</p>
+    <h2>香調から代表作を探す</h2>
+    <p class="section-copy">香りの系統ごとに、掲載香水の中から新しいものを5本ずつピックアップしています。詳細ページへ直接遷移できます。</p>
+  </div>
+  <div class="family-items-grid"><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#c9b558" aria-hidden="true"></span>
+        <h3 class="fi-title">シトラス <span class="fi-en">CITRUS</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/atelier-cologne-1"><span class="fi-brand">Atelier Cologne</span><span class="fi-name">オランジュ サングィン</span></a><a class="fi-item" href="/items/hermes-1"><span class="fi-brand">Hermès</span><span class="fi-name">オー ド パンプルムース ローズ</span></a><a class="fi-item" href="/items/dolce-gabbana-1"><span class="fi-brand">Dolce&amp;Gabbana</span><span class="fi-name">ライト ブルー プールオム</span></a><a class="fi-item" href="/items/jo-malone-1"><span class="fi-brand">Jo Malone</span><span class="fi-name">ライムバジル &amp; マンダリン</span></a><a class="fi-item" href="/items/hermes-2"><span class="fi-brand">Hermès</span><span class="fi-name">オー ドランジュ ヴェルト</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#93a384" aria-hidden="true"></span>
+        <h3 class="fi-title">アロマティック <span class="fi-en">AROMATIC</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/ysl-1"><span class="fi-brand">YSL</span><span class="fi-name">Y メン オーデパルファン</span></a><a class="fi-item" href="/items/dior-3"><span class="fi-brand">Dior</span><span class="fi-name">ソヴァージュ EDP</span></a><a class="fi-item" href="/items/dior-2"><span class="fi-brand">Dior</span><span class="fi-name">ソヴァージュ EDT</span></a><a class="fi-item" href="/items/montblanc-1"><span class="fi-brand">Montblanc</span><span class="fi-name">レジェンド</span></a><a class="fi-item" href="/items/gucci-1"><span class="fi-brand">Gucci</span><span class="fi-name">ギルティ プールオム</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#c4889c" aria-hidden="true"></span>
+        <h3 class="fi-title">フローラル <span class="fi-en">FLORAL</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/ysl-2"><span class="fi-brand">YSL</span><span class="fi-name">リブレ オーデパルファン</span></a><a class="fi-item" href="/items/gucci-2"><span class="fi-brand">Gucci</span><span class="fi-name">ブルーム</span></a><a class="fi-item" href="/items/jo-malone-3"><span class="fi-brand">Jo Malone</span><span class="fi-name">ピオニー &amp; ブラッシュ スエード</span></a><a class="fi-item" href="/items/chanel-3"><span class="fi-brand">Chanel</span><span class="fi-name">チャンス オー タンドゥル</span></a><a class="fi-item" href="/items/jo-malone-2"><span class="fi-brand">Jo Malone</span><span class="fi-name">イングリッシュ ペアー &amp; フリージア</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#d18a64" aria-hidden="true"></span>
+        <h3 class="fi-title">フルーティ <span class="fi-en">FRUITY</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/versace-2"><span class="fi-brand">Versace</span><span class="fi-name">ディラン ブルー</span></a><a class="fi-item" href="/items/versace-1"><span class="fi-brand">Versace</span><span class="fi-name">エロス EDT</span></a><a class="fi-item" href="/items/azzaro-2"><span class="fi-brand">Azzaro</span><span class="fi-name">クローム</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#ba8a57" aria-hidden="true"></span>
+        <h3 class="fi-title">グルマン <span class="fi-en">GOURMAND</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/carolina-herrera-1"><span class="fi-brand">Carolina Herrera</span><span class="fi-name">バッドボーイ</span></a><a class="fi-item" href="/items/giorgio-armani-1"><span class="fi-brand">Giorgio Armani</span><span class="fi-name">ストロンガー ウィズ ユー</span></a><a class="fi-item" href="/items/parfums-de-marly-1"><span class="fi-brand">Parfums de Marly</span><span class="fi-name">レイトン</span></a><a class="fi-item" href="/items/viktor-rolf-1"><span class="fi-brand">Viktor&amp;Rolf</span><span class="fi-name">スパイスボム エクストリーム</span></a><a class="fi-item" href="/items/ysl-3"><span class="fi-brand">YSL</span><span class="fi-name">ブラック オピウム</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#c98c42" aria-hidden="true"></span>
+        <h3 class="fi-title">アンバー <span class="fi-en">AMBER</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/dior-5"><span class="fi-brand">Dior</span><span class="fi-name">ソヴァージュ エリクシール</span></a><a class="fi-item" href="/items/versace-3"><span class="fi-brand">Versace</span><span class="fi-name">エロス フレイム</span></a><a class="fi-item" href="/items/azzaro-3"><span class="fi-brand">Azzaro</span><span class="fi-name">ワンテッド</span></a><a class="fi-item" href="/items/bvlgari-1"><span class="fi-brand">Bvlgari</span><span class="fi-name">マン イン ブラック</span></a><a class="fi-item" href="/items/maison-francis-kurkdjian-1"><span class="fi-brand">Maison Francis Kurkdjian</span><span class="fi-name">バカラ ルージュ 540</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#927152" aria-hidden="true"></span>
+        <h3 class="fi-title">ウッディ <span class="fi-en">WOODY</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/givenchy-1"><span class="fi-brand">Givenchy</span><span class="fi-name">ジェントルマン ブシ</span></a><a class="fi-item" href="/items/montblanc-2"><span class="fi-brand">Montblanc</span><span class="fi-name">エクスプローラー</span></a><a class="fi-item" href="/items/prada-2"><span class="fi-brand">Prada</span><span class="fi-name">ルオム</span></a><a class="fi-item" href="/items/dunhill-1"><span class="fi-brand">Dunhill</span><span class="fi-name">アイコン</span></a><a class="fi-item" href="/items/chanel-4"><span class="fi-brand">Chanel</span><span class="fi-name">ブルー ドゥ シャネル EDP</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#7f8d5a" aria-hidden="true"></span>
+        <h3 class="fi-title">シプレ <span class="fi-en">CHYPRE</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/tom-ford-3"><span class="fi-brand">Tom Ford</span><span class="fi-name">ブラック オーキッド</span></a><a class="fi-item" href="/items/ysl-5"><span class="fi-brand">YSL</span><span class="fi-name">クロス</span></a><a class="fi-item" href="/items/chanel-6"><span class="fi-brand">Chanel</span><span class="fi-name">アンテウス</span></a><a class="fi-item" href="/items/aramis-1"><span class="fi-brand">Aramis</span><span class="fi-name">アラミス</span></a><a class="fi-item" href="/items/chanel-5"><span class="fi-brand">Chanel</span><span class="fi-name">プール ムッシュ</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#a59cb4" aria-hidden="true"></span>
+        <h3 class="fi-title">ムスク <span class="fi-en">MUSK</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/glossier-1"><span class="fi-brand">Glossier</span><span class="fi-name">ユー</span></a><a class="fi-item" href="/items/maison-margiela-2"><span class="fi-brand">Maison Margiela</span><span class="fi-name">レイジー サンデー モーニング</span></a><a class="fi-item" href="/items/le-labo-2"><span class="fi-brand">Le Labo</span><span class="fi-name">アナザー 13</span></a><a class="fi-item" href="/items/narciso-rodriguez-2"><span class="fi-brand">Narciso Rodriguez</span><span class="fi-name">フォー ヒム</span></a><a class="fi-item" href="/items/narciso-rodriguez-1"><span class="fi-brand">Narciso Rodriguez</span><span class="fi-name">フォー ハー</span></a></div>
+    </div><div class="fi-group">
+      <div class="fi-head">
+        <span class="fi-color" style="background:#6c98ad" aria-hidden="true"></span>
+        <h3 class="fi-title">アクアティック <span class="fi-en">AQUATIC</span></h3>
+      </div>
+      <div class="fi-links"><a class="fi-item" href="/items/paco-rabanne-3"><span class="fi-brand">Paco Rabanne</span><span class="fi-name">インヴィクタス</span></a><a class="fi-item" href="/items/bvlgari-3"><span class="fi-brand">Bvlgari</span><span class="fi-name">アクア プールオム</span></a><a class="fi-item" href="/items/acqua-di-parma-2"><span class="fi-brand">Acqua di Parma</span><span class="fi-name">ブルー メディテラネオ アランチャ</span></a><a class="fi-item" href="/items/giorgio-armani-3"><span class="fi-brand">Giorgio Armani</span><span class="fi-name">アクア ディ ジオ</span></a><a class="fi-item" href="/items/issey-miyake-1"><span class="fi-brand">Issey Miyake</span><span class="fi-name">ロードゥ イッセイ プールオム</span></a></div>
+    </div></div>
+</section>
+<!-- generated:family-items:end -->
+
+
+
+
+<div class="section-head">
+  <p class="kick">— interactive timeline</p>
+  <h2>香水の年表</h2>
+</div>
+<section class="mtl-wrap">
+  <div class="mtl-controls">
+    <span class="mlabel">フィルタ</span>
+    <div class="chips" id="mtlFilterChips"></div>
+  </div>
+  <div class="mtl">
+    <div class="mtl-decades" id="mtlDecades"></div>
+    <div class="mtl-events" id="mtl"></div>
+  </div>
+</section>
+
+<div class="section-head" id="brands">
+  <p class="kick">— brands</p>
+  <h2>ブランドで巡る</h2>
+</div>
+
+<div class="section-head">
+  <p class="kick">— featured brands</p>
+  <h2>注目ブランド</h2>
+  <p class="rank-note">掲載商品数・掲載香調の種類数・価格帯区分・2015年以降の商品有無を一定ルールで点数化し、上位10ブランドを掲載しています。閲覧人気・売上・ブランドの優劣を示す順位ではありません。</p>
+</div>
+<section class="rank-section"><div class="rank-chart" id="rankChart"></div></section>
+
+<div class="brand-tools">
+  <span class="glabel">filter ／ 価格帯</span>
+  <div class="chips" id="brandTierChips"></div>
+  <span class="glabel" style="margin-left:14px">sort ／ 並び</span>
+  <div class="chips" id="brandSortChips"></div>
+</div>
+<section class="brand-grid" id="brandGrid"></section>
+
+<!-- generated:brand-index:start -->
+<section class="brand-index-section" id="brand-index" aria-label="ブランドから探す">
+  <div class="section-head">
+    <p class="kick">— brands ／ 47 houses</p>
+    <h2>ブランドから探す</h2>
+    <p class="section-copy">アルファベット順の47ブランド。タイルをクリックすると、そのブランドの掲載香水一覧・代表作・特徴を専用ページで確認できます。</p>
+  </div>
+  <div class="brand-index-grid"><a class="brand-tile" href="/brand-acqua-di-parma.html"><span class="bt-name">Acqua di Parma</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-aesop.html"><span class="bt-name">Aesop</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#6c98ad" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-aramis.html"><span class="bt-name">Aramis</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#7f8d5a" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-atelier-cologne.html"><span class="bt-name">Atelier Cologne</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-azzaro.html"><span class="bt-name">Azzaro</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-brut.html"><span class="bt-name">Brut</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-bvlgari.html"><span class="bt-name">Bvlgari</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#c98c42" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-byredo.html"><span class="bt-name">Byredo</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-calvin-klein.html"><span class="bt-name">Calvin Klein</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-carolina-herrera.html"><span class="bt-name">Carolina Herrera</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-chanel.html"><span class="bt-name">Chanel</span><span class="bt-count">掲載 6 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-ck.html"><span class="bt-name">CK</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-creed.html"><span class="bt-name">Creed</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-davidoff.html"><span class="bt-name">Davidoff</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#6c98ad" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-dior.html"><span class="bt-name">Dior</span><span class="bt-count">掲載 7 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-diptyque.html"><span class="bt-name">Diptyque</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-dolce-gabbana.html"><span class="bt-name">Dolce&amp;Gabbana</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-dunhill.html"><span class="bt-name">Dunhill</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-giorgio-armani.html"><span class="bt-name">Giorgio Armani</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-givenchy.html"><span class="bt-name">Givenchy</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-glossier.html"><span class="bt-name">Glossier</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#a59cb4" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-gucci.html"><span class="bt-name">Gucci</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-guerlain.html"><span class="bt-name">Guerlain</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-hermes.html"><span class="bt-name">Hermès</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-hugo-boss.html"><span class="bt-name">Hugo Boss</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-issey-miyake.html"><span class="bt-name">Issey Miyake</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#6c98ad" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-jean-paul-gaultier.html"><span class="bt-name">Jean Paul Gaultier</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-jo-malone.html"><span class="bt-name">Jo Malone</span><span class="bt-count">掲載 4 本</span><span class="bt-dot" style="background:#c4889c" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-john-varvatos.html"><span class="bt-name">John Varvatos</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-le-labo.html"><span class="bt-name">Le Labo</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#927152" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-maison-francis-kurkdjian.html"><span class="bt-name">Maison Francis Kurkdjian</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#c98c42" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-maison-margiela.html"><span class="bt-name">Maison Margiela</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#c98c42" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-marc-jacobs.html"><span class="bt-name">Marc Jacobs</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#c4889c" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-montblanc.html"><span class="bt-name">Montblanc</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-mugler.html"><span class="bt-name">Mugler</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-narciso-rodriguez.html"><span class="bt-name">Narciso Rodriguez</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#a59cb4" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-nautica.html"><span class="bt-name">Nautica</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-paco-rabanne.html"><span class="bt-name">Paco Rabanne</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-parfums-de-marly.html"><span class="bt-name">Parfums de Marly</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-prada.html"><span class="bt-name">Prada</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-shiro.html"><span class="bt-name">SHIRO</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#a59cb4" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-thierry-mugler.html"><span class="bt-name">Thierry Mugler</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-tom-ford.html"><span class="bt-name">Tom Ford</span><span class="bt-count">掲載 3 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-versace.html"><span class="bt-name">Versace</span><span class="bt-count">掲載 4 本</span><span class="bt-dot" style="background:#d18a64" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-viktor-rolf.html"><span class="bt-name">Viktor&amp;Rolf</span><span class="bt-count">掲載 2 本</span><span class="bt-dot" style="background:#ba8a57" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-ysl.html"><span class="bt-name">YSL</span><span class="bt-count">掲載 5 本</span><span class="bt-dot" style="background:#93a384" aria-hidden="true"></span></a><a class="brand-tile" href="/brand-muji.html"><span class="bt-name">無印良品</span><span class="bt-count">掲載 1 本</span><span class="bt-dot" style="background:#c9b558" aria-hidden="true"></span></a></div>
+</section>
+<!-- generated:brand-index:end -->
+
+<!-- generated:home-columns:start -->
+<style data-home-columns>
+.home-columns{max-width:1240px;margin:80px auto 0;padding:0 clamp(16px,4vw,48px) 30px}.home-column-group{margin-top:38px}.home-column-group>div:first-child{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:14px}.home-column-group h3{font:500 clamp(20px,3vw,27px) "Shippori Mincho",serif;color:#f2efea}.home-column-group p{font-size:12px;color:#88898f}.home-column-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#303137;border:1px solid #303137}.home-column-card{display:flex;flex-direction:column;gap:8px;min-height:210px;padding:24px;background:#15161a;color:#e9e7e3;text-decoration:none}.home-column-card>span{font:10px "Bodoni Moda",serif;letter-spacing:1px;color:#c9b558}.home-column-card strong{font:500 17px/1.7 "Shippori Mincho",serif;color:#f4f1ec}.home-column-card small{font-size:12px;line-height:1.8;color:#96969c}.home-column-card:focus-visible,.home-columns-link:focus-visible{outline:2px solid #c9b558;outline-offset:4px}.home-columns-link{display:inline-block;margin-top:28px;color:#c9b558;text-decoration:none;border-bottom:1px solid #776b39}@media(max-width:768px){.home-column-group>div:first-child{display:block}.home-column-grid{grid-template-columns:1fr}.home-column-card{min-height:0}.home-column-group p{margin-top:5px}}@media(prefers-reduced-motion:reduce){.home-column-card{transition:none}}
+</style><section class="home-columns" aria-labelledby="home-columns-title"><div class="section-head"><p class="kick">— editorial guide</p><h2 id="home-columns-title">香水選びを、疑問から学ぶ</h2><p class="section-copy">トップでは9記事だけを厳選。すべての記事は、悩みや目的に合うカテゴリから探せます。</p></div><section class="home-column-group"><div><h3>初心者向け</h3><p>最初の一本を選ぶ順番から確認する。</p></div><div class="home-column-grid"><a class="home-column-card" href="/columns/first-fragrance"><span>香水初心者</span><strong>香水初心者の一本目｜失敗しない5ステップ</strong><small>初めての香水を選ぶ5ステップを図解。予算・場面・香調・試香・購入サイズまで、店頭で迷わない順番が分かります。</small></a><a class="home-column-card" href="/columns/perfume-bottle-size"><span>香水初心者</span><strong>香水初心者は何mLを買う？10・30・50・100mLの選び方</strong><small>香水初心者が容量で迷った時の選び方を解説。10・30・50・100mLを、試香状況、使用場面、予算、持ち運びから比較します。</small></a><a class="home-column-card" href="/columns/how-to-test-perfume"><span>購入・試香</span><strong>香水を店頭で試す方法｜ムエットと肌の正しい使い分け</strong><small>香水を店頭で試す初心者へ。ムエットで候補を絞り、肌で時間変化を確認する順番と、一度に試しすぎない比較方法を解説します。</small></a></div></section><section class="home-column-group"><div><h3>よく読まれる悩み</h3><p>起きやすい失敗を、次の行動へ変える。</p></div><div class="home-column-grid"><a class="home-column-card" href="/columns/too-much-perfume"><span>失敗・トラブル</span><strong>香水をつけすぎた時の落とし方｜外出前・外出先の対処法</strong><small>香水をつけすぎた時に、肌・服・室内で香りを弱める手順を整理。外出前と外出先に分け、周囲へ広げず対処する方法を紹介します。</small></a><a class="home-column-card" href="/columns/why-cant-smell-own-perfume"><span>失敗・トラブル</span><strong>香水の匂いが自分で分からない理由｜つけ足す前に知る嗅覚順応</strong><small>つけた香水を自分だけ感じにくくなる理由と、つけ足しを防ぐ確認方法を解説。嗅覚の慣れと香りの変化を分けて考えます。</small></a><a class="home-column-card" href="/columns/perfume-on-clothes"><span>つけ方・使い方</span><strong>香水を服につけてもいい？シミ・変色・香り方の注意点</strong><small>香水を服につける前に確認したい、シミ・変色・香り残りの注意点を解説。肌につける場合との違いと慎重な試し方を紹介します。</small></a></div></section><section class="home-column-group"><div><h3>新着・更新</h3><p>量、持続、贈り方を具体的に見直す。</p></div><div class="home-column-grid"><a class="home-column-card" href="/columns/how-many-sprays"><span>つけ方・使い方</span><strong>香水は何プッシュが正解？濃度・場所・場面別の目安</strong><small>香水を何プッシュつけるか迷う初心者へ。濃度、つける位置、職場・屋外などの場面別に、少量から調整する目安を解説します。</small></a><a class="home-column-card" href="/columns/make-perfume-last-longer"><span>つけ方・使い方</span><strong>香水がすぐ消えるのはなぜ？長持ちさせる7つの方法</strong><small>香水がすぐ消えたように感じる理由を、嗅覚の慣れ、肌の乾燥、量、位置、保管から整理。無理につけ足さず香りを保つ方法を解説します。</small></a><a class="home-column-card" href="/columns/perfume-gift-guide"><span>購入・試香</span><strong>香水をプレゼントする時の選び方｜失敗しにくい7つの確認</strong><small>香水をプレゼントする前に確認したい、好み、愛用品の正式名称、濃度、容量、生活環境、交換条件、試香方法を初心者向けに解説します。</small></a></div></section><a class="home-columns-link" href="/guides.html">香水コラムをカテゴリからすべて見る →</a></section>
+<!-- generated:home-columns:end -->
+<div class="modal-back" id="brandModal"><div class="modal" id="brandModalInner"></div></div>

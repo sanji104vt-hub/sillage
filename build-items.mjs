@@ -8,24 +8,29 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
+import { loadSiteCopy } from "./lib/site-copy.mjs";
 
-const html = readFileSync("public/index.html", "utf8");
+const homeScript = readFileSync("public/assets/home.js", "utf8");
+const SITE_COPY = loadSiteCopy();
+const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const PERFUMES = loadFragrances();
+const TRIAL_DATA = JSON.parse(readFileSync("data/fragrance-trials.json", "utf8"));
+const TRIALS = new Map((TRIAL_DATA.trials || []).map((trial) => [trial.slug, trial]));
 
 // BRANDS を抽出
-const bStart = html.indexOf("const BRANDS = [");
-const bArr = html.slice(html.indexOf("[", bStart), html.indexOf("\n];", bStart) + 2);
-const BRANDS = new Function("return " + bArr.replace(/,(\s*\])/g, "$1"))();
+const BRANDS = JSON.parse(readFileSync("data/brands.json", "utf8"));
 
 // FAMILIES → FAM
 function extractLine(marker) {
-  const i = html.indexOf(marker);
-  const end = html.indexOf("};", i);
-  return html.slice(html.indexOf("{", i), end + 1);
+  const i = homeScript.indexOf(marker);
+  if (i < 0) throw new Error(`${marker} が public/assets/home.js に見つかりません`);
+  const end = homeScript.indexOf("};", i);
+  return homeScript.slice(homeScript.indexOf("{", i), end + 1);
 }
-const FAMILIES_START = html.indexOf("const FAMILIES = [");
-const FAMILIES_END = html.indexOf("\n];", FAMILIES_START) + 2;
-const FAMILIES = new Function("return " + html.slice(html.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"))();
+const FAMILIES_START = homeScript.indexOf("const FAMILIES = [");
+const FAMILIES_END = homeScript.indexOf("\n];", FAMILIES_START) + 2;
+if (FAMILIES_START < 0 || FAMILIES_END < 2) throw new Error("FAMILIES が public/assets/home.js に見つかりません");
+const FAMILIES = new Function("return " + homeScript.slice(homeScript.indexOf("[", FAMILIES_START), FAMILIES_END).replace(/,(\s*\])/g, "$1"))();
 const FAM = Object.fromEntries(FAMILIES.map(f => [f.key, f]));
 const SCENE = new Function("return " + extractLine("const SCENE="))();
 const SEASON = new Function("return " + extractLine("const SEASON="))();
@@ -74,6 +79,11 @@ const formatSizes = sizes => (sizes || []).map((size) => {
     ? `${volume}：参考価格 ${Number(size.referencePriceYen).toLocaleString("ja-JP")}円（税込）`
     : volume;
 }).join(" / ");
+const trialMediumLabel = medium => ({
+  skin: "肌",
+  blotter: "ムエット",
+  both: "肌とムエット",
+}[medium] || medium);
 
 const filterUrl = (field, value) => `/?${field}=${encodeURIComponent(value)}#fragrances`;
 
@@ -88,6 +98,26 @@ function uniqueRelated(p, all) {
   return result.slice(0, 3);
 }
 
+function directCompetitors(p, all) {
+  const scored = all
+    .filter((candidate) => candidate.slug !== p.slug)
+    .map((candidate, index) => {
+      const sharedScenes = (candidate.scenes || []).filter((scene) => (p.scenes || []).includes(scene)).length;
+      const sharedSeasons = (candidate.seasons || []).filter((season) => (p.seasons || []).includes(season)).length;
+      const score =
+        (candidate.family === p.family ? 8 : 0) +
+        (candidate.brand !== p.brand ? 4 : 0) +
+        sharedScenes * 2 +
+        sharedSeasons +
+        (candidate.priceTier && candidate.priceTier === p.priceTier ? 1 : 0);
+      return { candidate, index, score };
+    })
+    .sort((a, b) => b.score - a.score || a.index - b.index);
+  const differentBrands = scored.filter(({ candidate }) => candidate.brand !== p.brand);
+  const pool = differentBrands.length >= 2 ? differentBrands : scored;
+  return pool.slice(0, 2).map(({ candidate }) => candidate);
+}
+
 function comparisonLabel(p, candidate) {
   if ((PRICE_RANK[candidate.priceTier] || 0) < (PRICE_RANK[p.priceTier] || 0)) return "価格帯を抑えやすい";
   if (!(p.scenes || []).includes("business") && (candidate.scenes || []).includes("business")) return "ビジネス向け";
@@ -95,7 +125,33 @@ function comparisonLabel(p, candidate) {
   return "";
 }
 
-function pageHTML(p, related) {
+function comparisonReason(p, candidate) {
+  const reasons = [];
+  if (candidate.family === p.family) reasons.push(`同じ${FAM[p.family]?.ja || p.family}香調`);
+  const sharedScenes = (candidate.scenes || []).filter((scene) => (p.scenes || []).includes(scene));
+  if (sharedScenes.length) reasons.push(`${sharedScenes.map((scene) => SCENE[scene] || scene).join("・")}で比較しやすい`);
+  if (candidate.priceTier && candidate.priceTier === p.priceTier) reasons.push("同じ価格帯");
+  return reasons.slice(0, 2).join(" ／ ") || "近い利用条件";
+}
+
+function comparisonRows(p, candidate) {
+  const rows = [];
+  const append = (label, current, other) => {
+    if (current && other) rows.push({ label, current, other });
+  };
+  append("香調", FAM[p.family]?.ja || p.family, FAM[candidate.family]?.ja || candidate.family);
+  append("濃度", p.concentration?.label, candidate.concentration?.label);
+  append("価格帯", PRICE[p.priceTier] || p.priceTier, PRICE[candidate.priceTier] || candidate.priceTier);
+  append("シーン", (p.scenes || []).map((scene) => SCENE[scene] || scene).join(" / "), (candidate.scenes || []).map((scene) => SCENE[scene] || scene).join(" / "));
+  append("季節", (p.seasons || []).map((season) => SEASON[season] || season).join(" / "), (candidate.seasons || []).map((season) => SEASON[season] || season).join(" / "));
+  append("トップ", p.top, candidate.top);
+  append("ミドル", p.mid, candidate.mid);
+  append("ラスト", p.last, candidate.last);
+  append("編集見立て", p.verdict, candidate.verdict);
+  return rows;
+}
+
+function pageHTML(p, related, competitors, trial) {
   const famLabel = FAM[p.family]?.ja || p.family;
   const famColor = FAM[p.family]?.color || "#aeb0b6";
   const ogImage = familyOgpUrl(p.family);
@@ -107,7 +163,7 @@ function pageHTML(p, related) {
   const priceTier = PRICE[p.priceTier] || "";
   const brandSlug = BRAND_SLUG[p.brand];
   const brandLink = brandSlug ? `/brand-${brandSlug}.html` : null;
-  const url = `https://sillage.asutelu.com/items/${p.slug}`;
+  const url = `${SITE}/items/${p.slug}`;
   const title = `${p.name}（${p.brand}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
   const desc = `${p.brand}「${p.name}」の香調(トップ・ミドル・ラスト)、季節・シーン、価格帯、Sillageの見立てをまとめています。`;
 
@@ -115,8 +171,8 @@ function pageHTML(p, related) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Sillage", "item": "https://sillage.asutelu.com/" },
-      ...(brandLink ? [{ "@type": "ListItem", "position": 2, "name": p.brand, "item": `https://sillage.asutelu.com${brandLink}` }] : []),
+      { "@type": "ListItem", "position": 1, "name": SITE_COPY.shortName, "item": SITE_COPY.siteUrl },
+      ...(brandLink ? [{ "@type": "ListItem", "position": 2, "name": p.brand, "item": `${SITE}${brandLink}` }] : []),
       { "@type": "ListItem", "position": brandLink ? 3 : 2, "name": p.name, "item": url },
     ]
   };
@@ -138,9 +194,9 @@ function pageHTML(p, related) {
     ? `${shop}で確認`
     : link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
   const purchaseButtons = [
-    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
-    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
-    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
+    amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="amazon" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
   const sizeSummary = formatSizes(p.sizes);
@@ -175,6 +231,35 @@ function pageHTML(p, related) {
       <a class="detail-link" href="/items/${r.slug}">香りを詳しく見る <span aria-hidden="true">→</span></a>
     </article>`;
   }).join("");
+  const directComparisonCards = competitors.map((candidate, index) => {
+    const rows = comparisonRows(p, candidate);
+    const currentDifference = comparisonLabel(candidate, p);
+    const candidateDifference = comparisonLabel(p, candidate);
+    const pairId = `direct-compare-${index + 1}`;
+    return `<section class="direct-pair" aria-labelledby="${pairId}" data-competitor="${escape(candidate.slug)}">
+      <p class="direct-relation">${escape(comparisonReason(p, candidate))}</p>
+      <h3 class="direct-title" id="${pairId}"><span>${escape(p.name)}</span><i>vs</i><a href="/items/${candidate.slug}">${escape(candidate.name)}</a></h3>
+      <table class="direct-table">
+        <thead><tr><th scope="col">比較軸</th><th scope="col">${escape(p.brand)}<small>${escape(p.name)}</small></th><th scope="col">${escape(candidate.brand)}<small>${escape(candidate.name)}</small></th></tr></thead>
+        <tbody>${rows.map((row) => `<tr><th scope="row">${escape(row.label)}</th><td>${escape(row.current)}</td><td>${escape(row.other)}</td></tr>`).join("")}</tbody>
+      </table>
+      ${(currentDifference || candidateDifference) ? `<div class="direct-choice" aria-label="既存データから確認できる違い">${currentDifference ? `<p><b>${escape(p.name)}</b><span>${escape(currentDifference)}</span></p>` : ""}${candidateDifference ? `<p><b>${escape(candidate.name)}</b><span>${escape(candidateDifference)}</span></p>` : ""}</div>` : ""}
+      <a class="detail-link" href="/items/${candidate.slug}">${escape(candidate.name)}の詳細を見る <span aria-hidden="true">→</span></a>
+    </section>`;
+  }).join("");
+  const trialFacts = trial ? [
+    ["試香日", formatDate(trial.testedAt)],
+    ["場所", trial.place],
+    ["方法", `${trialMediumLabel(trial.medium)} ／ ${trial.application}`],
+    ["気温", `${trial.temperatureC}℃`],
+  ] : [];
+  const trialObservations = trial ? [
+    ["30分後", trial.after30Minutes],
+    ["3時間後", trial.after3Hours],
+    ["翌日", trial.nextDay],
+    ["周囲約1m", trial.oneMeter],
+    ["服への残り方", trial.onClothing],
+  ] : [];
 
   return `<!DOCTYPE html>
 <html lang="ja">
@@ -204,8 +289,8 @@ function pageHTML(p, related) {
 <meta property="og:description" content="${escape(desc)}">
 <meta property="og:url" content="${url}">
 ${ogImage ? `<meta property="og:image" content="${escape(ogImage)}">` : ""}
-<meta property="og:site_name" content="Sillage（シヤージュ）">
-<meta name="twitter:card" content="summary${ogImage ? "_large_image" : ""}">
+<meta property="og:site_name" content="${escape(SITE_COPY.siteName)}">
+<meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
 <script type="application/ld+json">${JSON.stringify(product)}</script>
 <style>
@@ -276,9 +361,11 @@ article{max-width:1060px}
 .tag{display:inline-flex;align-items:center;min-height:42px;padding:8px 15px;border:1px solid #34353a;color:#d8d5cf;text-decoration:none;font-size:13px;transition:border-color .18s,color .18s}.tag:hover{border-color:#aeb0b6;color:#fff}
 .compare-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.compare-card{max-width:none;padding:22px 0 0;border-top:2px solid #34353a}.compare-reason{font-size:10.5px;letter-spacing:1.3px;color:#8c8c92;text-transform:uppercase}.compare-brand{font-family:"Bodoni Moda",serif;font-size:11px;letter-spacing:2px;color:#9a9a9f;margin-top:17px}.compare-card h3{font-family:"Shippori Mincho",serif;font-size:18px;line-height:1.5;margin:5px 0 16px}.compare-card h3 a{color:#f0eeea;text-decoration:none}.compare-card h3 a:hover{text-decoration:underline}
 .compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
+.direct-list{display:grid;gap:42px}.direct-pair{border-top:1px solid #3a3b40;padding-top:22px}.direct-relation{font-size:11px;letter-spacing:1.1px;color:#8c8c92}.direct-title{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:center;margin:9px 0 22px;font-family:"Shippori Mincho",serif;font-size:clamp(17px,2.4vw,23px);font-weight:500;line-height:1.45}.direct-title span,.direct-title a{overflow-wrap:anywhere}.direct-title a{color:#f0eeea;text-decoration:none}.direct-title a:hover{text-decoration:underline}.direct-title i{font:italic 14px "Cormorant",serif;color:#77787e}.direct-table{width:100%;table-layout:fixed;border-collapse:collapse}.direct-table th,.direct-table td{padding:11px 12px;border-bottom:1px solid #2a2b30;text-align:left;vertical-align:top;overflow-wrap:anywhere}.direct-table thead th{font:500 12px "Shippori Mincho",serif;color:#e8e5df}.direct-table thead th:first-child{width:94px;color:#77787e}.direct-table thead small{display:block;margin-top:3px;font:11px "Zen Kaku Gothic New",sans-serif;color:#8c8c92}.direct-table tbody th{font-size:11px;color:#8c8c92}.direct-table tbody td{font-size:12.5px;line-height:1.72;color:#cfccc6}.direct-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}.direct-choice p{border-left:2px solid #55565b;padding:8px 11px;background:#141517}.direct-choice b,.direct-choice span{display:block}.direct-choice b{font-size:11px;color:#d9d6d0}.direct-choice span{font-size:11px;color:#c9b558;margin-top:3px}.compare-method{font-size:11px;color:#77787e;line-height:1.8;margin:-8px 0 24px}
+.trial-intro{max-width:720px;color:#c9c6c0;font-size:13.5px;line-height:1.9}.trial-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:20px 0 26px;padding:15px 0;border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.trial-facts div{display:flex;gap:8px}.trial-facts dt{font-size:11px;color:#77787e}.trial-facts dd{font-size:11px;color:#d7d4ce}.trial-observations{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.trial-observations div{border-top:2px solid #4e4f54;padding-top:12px;min-width:0}.trial-observations dt{font-family:"Cormorant",serif;font-style:italic;color:#a5a6ab;font-size:13px}.trial-observations dd{margin-top:7px;font-size:12.5px;color:#d8d5cf;line-height:1.8;overflow-wrap:anywhere}.trial-preference{margin-top:24px;padding-left:16px;border-left:2px solid #c9b558;color:#dedbd5;font-size:13.5px;line-height:1.9}.trial-preference b{display:block;margin-bottom:4px;font-size:10.5px;letter-spacing:1px;color:#c9b558}.trial-disclaimer{margin-top:14px;color:#77787e;font-size:10.5px;line-height:1.75}
 .journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
 .buy-official{background:transparent;color:#e9e7e3;border:1px solid #67686e}.sources details{border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.sources summary{cursor:pointer;min-height:52px;display:flex;align-items:center;color:#d8d5cf;font-size:14px}.sources summary::marker{color:#8c8c92}.source-list{list-style:none;padding:4px 0 18px;display:grid;gap:15px}.source-list li{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:start}.source-type{font-size:10px;letter-spacing:1px;border:1px solid #3a3b40;padding:2px 7px;color:#aeb0b6}.source-list a{color:#d8d5cf;text-decoration:none;font-size:13px;overflow-wrap:anywhere}.source-list a:hover{text-decoration:underline}.source-date{grid-column:2;font-size:10.5px;color:#77787e}
-@media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
+@media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.direct-title{gap:9px}.direct-table th,.direct-table td{padding:9px 7px}.direct-table thead th:first-child{width:65px}.direct-choice{grid-template-columns:1fr}.trial-observations{grid-template-columns:1fr}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
 @media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
@@ -346,9 +433,26 @@ article{max-width:1060px}
     </div>
   </section>` : ""}
 
+  ${trial ? `<section class="section editorial-trial" aria-labelledby="editorial-trial-title">
+    <p class="section-kicker">Sillage wear test</p>
+    <h2 id="editorial-trial-title">編集部試香メモ</h2>
+    <p class="trial-intro">公開情報ではなく、Sillage編集部が記録した一条件での観察です。肌質・気温・使用量によって感じ方は変わります。</p>
+    <dl class="trial-facts">${trialFacts.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join("")}</dl>
+    <dl class="trial-observations">${trialObservations.map(([label, value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join("")}</dl>
+    <p class="trial-preference"><b>編集者の好み</b>${escape(trial.editorPreference)}</p>
+    <p class="trial-disclaimer">このメモはブランドの公式説明や性能保証ではありません。</p>
+  </section>` : ""}
+
+  ${directComparisonCards ? `<section class="section" aria-labelledby="direct-compare-title">
+    <p class="section-kicker">Direct comparison</p>
+    <h2 id="direct-compare-title">近い香水との違い</h2>
+    <p class="compare-method">閲覧中の商品と比較候補2本、合計3本に絞って違いを示します。比較は掲載中の香調・ノート・濃度・価格帯・シーン・季節と「Sillageの見立て」だけを使用し、未確認の点数・評価は加えていません。</p>
+    <div class="direct-list">${directComparisonCards}</div>
+  </section>` : ""}
+
   ${relatedCards ? `<section class="section" aria-labelledby="compare-title">
     <p class="section-kicker">Compare</p>
-    <h2 id="compare-title">似た香水と比べる</h2>
+    <h2 id="compare-title">ほかの候補も見る</h2>
     <div class="compare-grid">${relatedCards}</div>
   </section>` : ""}
 
@@ -361,6 +465,8 @@ article{max-width:1060px}
       <a href="/columns/first-fragrance"><span>初心者向け香水ガイド</span><span aria-hidden="true">→</span></a>
       <a href="/columns/how-to-wear"><span>香水の正しいつけ方</span><span aria-hidden="true">→</span></a>
       <a href="/columns/concentration-guide"><span>EDT・EDP・パルファムの違い</span><span aria-hidden="true">→</span></a>
+      <a href="/columns/how-many-sprays"><span>香水は何プッシュが目安？</span><span aria-hidden="true">→</span></a>
+      <a href="/columns/where-to-apply-perfume"><span>手首・首・腰につける違い</span><span aria-hidden="true">→</span></a>
     </nav>
   </section>
 
@@ -371,8 +477,24 @@ article{max-width:1060px}
 </article>
 <footer>
   当サイトはアフィリエイトプログラムを利用し、商品紹介により収益を得ています。本文はブランドおよび商品の公開情報をもとにした当サイト編集部の記述であり、ブランドからの提供文ではありません。<br>
-  <a href="/">Sillage（シヤージュ）— 香調・シーン・季節から選ぶ香水ガイド</a>
+  <a href="/">${escape(SITE_COPY.footerLabel)}</a> ・ <a href="/about.html#update-policy">編集方針・更新ポリシー</a>
 </footer>
+<script>
+document.addEventListener("click",function(event){
+  const link=event.target.closest("a[data-purchase-shop]");
+  if(!link)return;
+  const position=link.closest(".hero-actions")?"hero":"bottom";
+  if(typeof window.gtag==="function"){
+    window.gtag("event","purchase_link_click",{
+      product_id:link.dataset.productId,
+      purchase_shop:link.dataset.purchaseShop,
+      button_position:position,
+      destination_url:link.href,
+      transport_type:"beacon"
+    });
+  }
+});
+</script>
 </body>
 </html>`;
 }
@@ -385,7 +507,9 @@ let maxSize = 0;
 for (const p of itemsWithSlug) {
   // 同ブランド → 同香調 → 共通シーンの順で、根拠のある候補を最大3本。
   const related = uniqueRelated(p, itemsWithSlug);
-  const html = pageHTML(p, related).replace(/[ \t]+$/gm, "");
+  const competitors = directCompetitors(p, itemsWithSlug);
+  const trial = TRIALS.get(p.slug) || null;
+  const html = pageHTML(p, related, competitors, trial).replace(/[ \t]+$/gm, "");
   const path = `public/items/${p.slug}.html`;
   writeFileSync(path, html);
   totalSize += html.length;

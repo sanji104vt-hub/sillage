@@ -60,13 +60,16 @@ const FAVICON = `<link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0d0e10">`;
 const LEGACY_FAVICON = '<link rel="icon" href="/favicon.svg" type="image/svg+xml">';
+// 旧 manifest.webmanifest は SVG アイコンのみで PWA 用の 192/512 PNG を欠くため site.webmanifest に統一する。
+const LEGACY_MANIFEST = '<link rel="manifest" href="/manifest.webmanifest">';
 
 function addFavicon(html) {
-  if (html.includes('rel="manifest"')) return html;
-  if (html.includes(LEGACY_FAVICON)) return html.replace(LEGACY_FAVICON, FAVICON);
-  const gsc = html.match(/<meta name="google-site-verification"[^>]*>/)?.[0];
-  if (gsc) return html.replace(gsc, `${gsc}\n${FAVICON}`);
-  return html.replace("</head>", `${FAVICON}\n</head>`);
+  if (html.includes('href="/site.webmanifest"')) return html;
+  let next = html.replace(LEGACY_MANIFEST, "");
+  if (next.includes(LEGACY_FAVICON)) return next.replace(LEGACY_FAVICON, FAVICON);
+  const gsc = next.match(/<meta name="google-site-verification"[^>]*>/)?.[0];
+  if (gsc) return next.replace(gsc, `${gsc}\n${FAVICON}`);
+  return next.replace("</head>", `${FAVICON}\n</head>`);
 }
 
 function htmlFiles(dir) {
@@ -122,6 +125,8 @@ let changed = 0;
 for (const path of files) {
   const rel = relative(PUBLIC, path).replaceAll("\\", "/");
   if (rel === "index.html") continue;
+  // partials/ はページ本体ではなく差し込み用の断片。head を持たないので対象外。
+  if (rel.startsWith("partials/")) continue;
   let html = readFileSync(path, "utf8");
   const before = html;
 
