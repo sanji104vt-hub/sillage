@@ -189,13 +189,14 @@ for (const path of files) {
     if (productBlock) {
       const slug = rel.replace(/^items\//, "").replace(/\.html$/, "");
       const familyImage = familyOgpUrl(fragranceBySlug.get(slug)?.family);
+      // og:image は系統別OGP（SNSカード用）。Product JSON-LD の image は
+      // フェーズ3-Bで導入した自ドメインの商品画像を維持する。
       if (familyImage) {
         if (html.includes('property="og:image"')) {
           html = html.replace(/<meta property="og:image" content="[^"]*">/, `<meta property="og:image" content="${familyImage}">`);
         } else {
           html = html.replace(/(<meta property="og:url" content="[^"]+">)/, `$1\n<meta property="og:image" content="${familyImage}">`);
         }
-        html = replaceJsonLd(html, (data) => data?.["@type"] === "Product", (data) => ({ ...data, image: familyImage }));
       }
       const uniqueTitle = `${productBlock.name}（${productBlock.brand?.name}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
       html = html.replace(/<title>.*?<\/title>/s, `<title>${uniqueTitle}</title>`);

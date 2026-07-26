@@ -27,9 +27,8 @@ const FAMILIES = [
 const FAM = Object.fromEntries(FAMILIES.map(f=>[f.key,f]));
 
 /* ---------- sample data (brand & notes = public info; verdict = our own editorial) ---------- */
-let PERFUMES = [];
-
-let BRANDS = [];
+let PERFUMES = Array.isArray(window.SILLAGE_FRAGRANCES) ? window.SILLAGE_FRAGRANCES : [];
+let BRANDS = Array.isArray(window.SILLAGE_BRANDS) ? window.SILLAGE_BRANDS : [];
 const GENDER={men:"メンズ",women:"レディース",unisex:"ユニセックス"};
 const SCENE={business:"ビジネス",date:"デート",formal:"フォーマル",daily:"デイリー",sports:"スポーツ"};
 const SEASON={spring:"春",summer:"夏",autumn:"秋",winter:"冬"};
@@ -104,7 +103,7 @@ function setHub(famKey){
 }
 function toggleFamily(k){
   state.family=state.family===k?null:k;
-  loadDeferredHome().then(safeRender).catch(()=>{});
+  safeRender();
 }
 
 /* ---------- chips ---------- */
@@ -129,12 +128,7 @@ function initAnchorNavigation(){
       if(!target){
         event.preventDefault();
         history.pushState(null,"",hash);
-        try{
-          await loadDeferredHome();
-          target=document.querySelector(hash);
-        }catch{
-          return;
-        }
+        target=document.querySelector(hash);
       }
       if(!target)return;
       event.preventDefault();
@@ -152,7 +146,6 @@ function initFilterShortcuts(){
       const field=button.dataset.filterField,value=button.dataset.filterValue;
       if(!(field in state))return;
       state[field]=state[field]===value?null:value;
-      try{await loadDeferredHome();}catch{return;}
       safeRender();
       document.getElementById("fragrances").scrollIntoView({behavior:prefersReducedMotion()?"auto":"smooth",block:"start"});
     });
@@ -1472,18 +1465,10 @@ function addArticleLinks(){
   });
 }
 
-/* ---------- staged home loading ---------- */
-let deferredHomePromise=null;
-let deferredHomeInitialized=false;
-
-async function fetchHomeResource(url,type){
-  const response=await fetch(url,{credentials:"same-origin"});
-  if(!response.ok)throw new Error(`${url} returned ${response.status}`);
-  return type==="json"?response.json():response.text();
-}
-
+/* ---------- home initialisation ---------- */
+let homeInitialized=false;
 function initializeDeferredHome(){
-  if(deferredHomeInitialized)return;
+  if(homeInitialized)return;
   initAnchorNavigation();
   initFilterShortcuts();
   buildChips("sceneChips",SCENE,"scene");
@@ -1502,70 +1487,9 @@ function initializeDeferredHome(){
   buildMegaTimeline();
   buildCompares();
   addArticleLinks();
-  deferredHomeInitialized=true;
+  homeInitialized=true;
 }
 
-function showDeferredHomeError(){
-  const host=document.getElementById("deferredHome");
-  if(!host)return;
-  host.classList.remove("is-loaded");
-  host.setAttribute("aria-busy","false");
-  host.innerHTML=`<div class="deferred-error" role="alert">
-    <p>香水データを読み込めませんでした。通信状況を確認して、もう一度お試しください。</p>
-    <button type="button" id="deferredRetry">再読み込み</button>
-  </div>`;
-  document.getElementById("deferredRetry").onclick=()=>loadDeferredHome().catch(()=>{});
-}
-
-function loadDeferredHome(){
-  if(deferredHomeInitialized)return Promise.resolve();
-  if(deferredHomePromise)return deferredHomePromise;
-  const host=document.getElementById("deferredHome");
-  if(!host)return Promise.reject(new Error("Deferred home container not found."));
-  host.setAttribute("aria-busy","true");
-  deferredHomePromise=Promise.all([
-    fetchHomeResource("/partials/home-deferred.html","text"),
-    fetchHomeResource("/data/fragrances.json","json"),
-    fetchHomeResource("/data/brands.json","json"),
-  ]).then(([fragment,fragrances,brands])=>{
-    if(!Array.isArray(fragrances)||fragrances.length!==92)throw new Error("Expected 92 fragrances.");
-    if(!Array.isArray(brands)||brands.length!==47)throw new Error("Expected 47 brands.");
-    PERFUMES=fragrances;
-    BRANDS=brands;
-    host.innerHTML=fragment;
-    host.classList.add("is-loaded");
-    host.setAttribute("aria-busy","false");
-    initializeDeferredHome();
-    window.__SILLAGE_HOME_DATA_READY__=true;
-  }).catch(error=>{
-    console.error("Deferred home loading failed.",error);
-    deferredHomePromise=null;
-    showDeferredHomeError();
-    throw error;
-  });
-  return deferredHomePromise;
-}
-
-function observeDeferredHome(){
-  const host=document.getElementById("deferredHome");
-  if(!host)return;
-  if("IntersectionObserver" in window){
-    const observer=new IntersectionObserver(entries=>{
-      if(!entries.some(entry=>entry.isIntersecting))return;
-      observer.disconnect();
-      loadDeferredHome().catch(()=>{});
-    },{rootMargin:"800px 0px"});
-    observer.observe(host);
-  }else{
-    const fallback=()=>{
-      if(host.getBoundingClientRect().top>window.innerHeight+800)return;
-      window.removeEventListener("scroll",fallback);
-      loadDeferredHome().catch(()=>{});
-    };
-    window.addEventListener("scroll",fallback,{passive:true});
-    fallback();
-  }
-}
 
 initFilterShortcuts();
 initAnchorNavigation();
@@ -1575,16 +1499,11 @@ updateFavCount();
 buildWheel();
 initScrolly();
 initParticles();
-document.getElementById("favBtn").onclick=()=>loadDeferredHome().then(openFavorites).catch(()=>{});
-observeDeferredHome();
+document.getElementById("favBtn").onclick=openFavorites;
+// ホーム本体は初期HTMLに含まれるため、スクロールを待たずその場で初期化する。
+initializeDeferredHome();
+window.__SILLAGE_HOME_DATA_READY__=true;
 if(location.hash&&location.hash!=="#fragrance-wheel"){
-  const initialHash=location.hash;
-  loadDeferredHome().then(()=>{
-    const target=document.querySelector(initialHash);
-    if(target)requestAnimationFrame(()=>target.scrollIntoView({behavior:"auto",block:"start"}));
-  }).catch(()=>{});
-}
-const initialFilterParams=new URLSearchParams(location.search);
-if(["family","scene","season","gender","price"].some(key=>initialFilterParams.has(key))){
-  loadDeferredHome().catch(()=>{});
+  const target=document.querySelector(location.hash);
+  if(target)requestAnimationFrame(()=>target.scrollIntoView({behavior:"auto",block:"start"}));
 }

@@ -38,11 +38,23 @@ for (const item of fragrances) if (!sitemap.includes(`https://sillage.asutelu.co
 const top = readFileSync("public/index.html", "utf8");
 const homeScript = readFileSync("public/assets/home.js", "utf8");
 if (!top.includes('<script defer src="/assets/home.js"></script>')) errors.push("Top application asset missing");
-if (!homeScript.includes('fetchHomeResource("/data/fragrances.json","json")')) errors.push("Lazy fragrance request missing");
-if (!homeScript.includes('fetchHomeResource("/data/brands.json","json")')) errors.push("Lazy brand request missing");
 if (!existsSync("public/data/fragrances.json")) errors.push("Generated fragrance JSON missing");
 if (!existsSync("public/data/brands.json")) errors.push("Generated brand JSON missing");
-if (!existsSync("public/partials/home-deferred.html")) errors.push("Deferred homepage fragment missing");
+
+// ホームの主要データは同期スクリプトで確定させる（遅延読み込みでの取りこぼしを防ぐ）
+if (!existsSync("public/data/home-data.js")) errors.push("Synchronous home data script missing");
+if (!top.includes('<script src="/data/home-data.js"></script>')) errors.push("home-data.js not loaded from index.html");
+if (!homeScript.includes("window.SILLAGE_FRAGRANCES")) errors.push("home.js does not read synchronous fragrance data");
+if (!homeScript.includes("window.SILLAGE_BRANDS")) errors.push("home.js does not read synchronous brand data");
+
+// 内部リンク網は JavaScript 実行なしで初期HTMLからたどれること
+if (top.includes('id="deferredHome"')) errors.push("Homepage still defers its main content");
+const staticBrandLinks = new Set(top.match(/href="\/brand-[a-z0-9-]+\.html"/g) || []).size;
+const staticItemLinks = new Set(top.match(/href="\/items\/[a-z0-9-]+"/g) || []).size;
+const staticColumnLinks = new Set(top.match(/href="\/columns\/[a-z0-9-]+"/g) || []).size;
+if (staticBrandLinks !== 47) errors.push(`Static brand links in index.html: ${staticBrandLinks} (expected 47)`);
+if (staticItemLinks < 40) errors.push(`Static item links in index.html: ${staticItemLinks} (expected >= 40)`);
+if (staticColumnLinks < 10) errors.push(`Static column links in index.html: ${staticColumnLinks} (expected >= 10)`);
 for (const item of fragrances) {
   for (const value of item.scenes || []) if (!homeScript.includes(`${value}:`)) errors.push(`Scene filter missing: ${value}`);
   for (const value of item.seasons || []) if (!homeScript.includes(`${value}:`)) errors.push(`Season filter missing: ${value}`);

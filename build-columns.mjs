@@ -448,7 +448,12 @@ function renderGuideIndex() {
     </section>`;
   }).join("");
   return `<!DOCTYPE html><html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="theme-color" content="#0d0e10">
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}"><meta name="google-site-verification" content="UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q">
 <!-- Google tag (gtag.js) --><script async src="https://www.googletagmanager.com/gtag/js?id=G-60BQRQWB5M"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-60BQRQWB5M');</script>
 <link rel="canonical" href="${canonical}"><meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:url" content="${canonical}"><meta property="og:image" content="${SITE}/ogp-default.png"><meta property="og:site_name" content="${esc(SITE_COPY.siteName)}"><meta name="twitter:card" content="summary_large_image">
@@ -484,7 +489,7 @@ function renderHomeColumns() {
 </style><section class="home-columns" aria-labelledby="home-columns-title"><div class="section-head"><p class="kick">— editorial guide</p><h2 id="home-columns-title">香水選びを、疑問から学ぶ</h2><p class="section-copy">トップでは9記事だけを厳選。すべての記事は、悩みや目的に合うカテゴリから探せます。</p></div>${sections}<a class="home-columns-link" href="/guides.html">香水コラムをカテゴリからすべて見る →</a></section>`;
 }
 
-const homeFragmentPath = join("public", "partials", "home-deferred.html");
+const homeFragmentPath = join("public", "index.html");
 const homeFragment = readFileSync(homeFragmentPath, "utf8");
 const homeStart = "<!-- generated:home-columns:start -->";
 const homeEnd = "<!-- generated:home-columns:end -->";

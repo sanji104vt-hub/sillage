@@ -10,7 +10,7 @@ const requiredHomepageValues = [
   copy.footerCopyright,
   "G-60BQRQWB5M",
   "UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q",
-  "/manifest.webmanifest",
+  "/site.webmanifest",
 ];
 
 for (const value of requiredHomepageValues) {
@@ -35,9 +35,9 @@ for (const file of columnFiles) {
   }
 }
 
-const manifest = JSON.parse(readFileSync("public/manifest.webmanifest", "utf8"));
+const manifest = JSON.parse(readFileSync("public/site.webmanifest", "utf8"));
 if (manifest.description !== copy.description || manifest.short_name !== copy.shortName) {
-  throw new Error("manifest.webmanifest が data/site-copy.json と一致しません");
+  throw new Error("site.webmanifest が data/site-copy.json と一致しません");
 }
 
 for (const path of [
@@ -46,7 +46,7 @@ for (const path of [
   "public/privacy.html",
   "public/contact.html",
   "public/guides.html",
-  "public/manifest.webmanifest",
+  "public/site.webmanifest",
 ]) {
   const content = readFileSync(path, "utf8");
   for (const oldPhrase of ["メンズ香水比較", "メンズ香水ガイド", "メンズ香水情報", "メンズを中心とした"]) {
@@ -54,7 +54,7 @@ for (const path of [
   }
 }
 
-const deferred = readFileSync("public/partials/home-deferred.html", "utf8");
+const deferred = readFileSync("public/index.html", "utf8");
 const orderedHomeMarkers = [
   'id="find-fragrances"',
   'id="fragrances"',

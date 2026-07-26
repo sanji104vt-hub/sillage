@@ -63,12 +63,13 @@ index = replaceRequired(
 index = replaceRequired(index, /<p class="copy">[\s\S]*?<\/p>/, `<p class="copy">${copy.footerCopyright}</p>`, "homepage footer");
 index = syncJsonLd(index);
 
+// manifest は PWA 用 PNG アイコンを持つ site.webmanifest に統一する。
 if (/<link rel="manifest"[^>]*>/.test(index)) {
-  index = index.replace(/<link rel="manifest"[^>]*>/, '<link rel="manifest" href="/manifest.webmanifest">');
+  index = index.replace(/<link rel="manifest"[^>]*>/, '<link rel="manifest" href="/site.webmanifest">');
 } else {
   index = index.replace(
-    '<link rel="icon" href="/favicon.svg" type="image/svg+xml">',
-    '<link rel="icon" href="/favicon.svg" type="image/svg+xml">\n<link rel="manifest" href="/manifest.webmanifest">',
+    '<link rel="icon" type="image/svg+xml" href="/favicon.svg">',
+    '<link rel="icon" type="image/svg+xml" href="/favicon.svg">\n<link rel="manifest" href="/site.webmanifest">',
   );
 }
 if (!/<meta name="theme-color"/.test(index)) {
@@ -101,14 +102,10 @@ const manifest = {
   background_color: "#0d0e10",
   theme_color: "#0d0e10",
   icons: [
-    {
-      src: "/favicon.svg",
-      sizes: "any",
-      type: "image/svg+xml",
-      purpose: "any",
-    },
+    { src: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png", purpose: "any" },
+    { src: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png", purpose: "any" },
   ],
 };
-writeFileSync("public/manifest.webmanifest", `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
+writeFileSync("public/site.webmanifest", `${JSON.stringify(manifest, null, 2)}\n`, "utf8");
 
 console.log(`Synchronized site copy: ${copy.title}`);

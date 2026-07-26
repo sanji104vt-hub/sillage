@@ -9,7 +9,6 @@ import { readFileSync, writeFileSync, readdirSync } from "node:fs";
 const SITE = "https://sillage.asutelu.com";
 const INDEX = "public/index.html";
 const HOME_SCRIPT = "public/assets/home.js";
-const HOME_FRAGMENT = "public/partials/home-deferred.html";
 const COLUMNS_DIR = "public/columns";
 
 const data = JSON.parse(readFileSync("data/fragrances.json", "utf8"));
@@ -17,7 +16,6 @@ const PERFUMES = data.fragrances || data;
 
 const html = readFileSync(INDEX, "utf8");
 const homeScript = readFileSync(HOME_SCRIPT, "utf8");
-const homeFragment = readFileSync(HOME_FRAGMENT, "utf8");
 
 const BRANDS = JSON.parse(readFileSync("data/brands.json", "utf8"));
 
@@ -223,11 +221,33 @@ const START1 = "<!-- generated:brand-index:start -->";
 const END1 = "<!-- generated:brand-index:end -->";
 const START2 = "<!-- generated:family-items:start -->";
 const END2 = "<!-- generated:family-items:end -->";
+const START3 = "<!-- generated:column-index:start -->";
+const END3 = "<!-- generated:column-index:end -->";
+
+// -------- ③コラム全件索引 ---------
+// ホームの抜粋（9本）だけではクロールできない記事が残るため、
+// 全記事への静的リンクを初期HTMLに置く。
+function buildColumnIndex() {
+  const list = articles
+    .slice()
+    .sort((a, b) => a.slug.localeCompare(b.slug))
+    .map((a) => `<a class="ci-item" href="/columns/${a.slug}">${escape(a.title)}</a>`)
+    .join("");
+  return `<section class="column-index-section" id="column-index" aria-label="コラム全記事">
+  <div class="section-head">
+    <p class="kick">— all articles ／ ${articles.length} guides</p>
+    <h2>記事をすべて見る</h2>
+    <p class="section-copy">香水の選び方・つけ方・悩みの解決まで、掲載中の全${articles.length}記事の一覧です。</p>
+  </div>
+  <div class="column-index-grid">${list}</div>
+</section>`;
+}
 
 const brandIndexBlock = `${START1}\n${buildBrandIndex()}\n${END1}`;
 const familyItemsBlock = `${START2}\n${buildFamilyItems()}\n${END2}`;
+const columnIndexBlock = `${START3}\n${buildColumnIndex()}\n${END3}`;
 
-let out = homeFragment;
+let out = html;
 
 // 既存マーカー間があれば差し替え、なければ挿入
 function upsert(text, start, end, block, insertAfterAnchor) {
@@ -249,6 +269,11 @@ out = upsert(out, START1, END1, brandIndexBlock,
 // ②系統別代表: <section class="guide-grid" id="guideGrid"></section> の直後
 out = upsert(out, START2, END2, familyItemsBlock,
   `<section class="guide-grid" id="guideGrid"></section>`);
+
+// ③コラム全件索引: 抜粋セクション(home-columns)の外側に置く。
+// 内側に入れると「トップ抜粋は9本」の検証に引っかかるため。
+out = upsert(out, START3, END3, columnIndexBlock,
+  `<!-- generated:home-columns:end -->`);
 
 // CSS の追加 (idempotent) — <style> 末尾に注入
 const CSS_START = "/* generated:internal-links:start */";
@@ -274,17 +299,21 @@ ${CSS_START}
 .fi-item:hover{color:#fff}
 .fi-brand{font-family:"Bodoni Moda",serif;font-size:10.5px;letter-spacing:1.5px;color:#9a9a9f;text-transform:uppercase}
 .fi-name{font-family:"Shippori Mincho",serif;font-weight:500;font-size:14px;margin-top:2px}
+.column-index-section{max-width:1240px;margin:56px auto 0;padding:0 clamp(16px,4vw,48px) 24px}
+.column-index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:8px;margin-top:22px}
+.ci-item{display:flex;align-items:center;min-height:44px;padding:10px 14px;border:1px solid #2c2d31;border-radius:6px;background:#141517;color:#cfcdca;text-decoration:none;font-size:13.5px;line-height:1.5;transition:border-color .15s,color .15s}
+.ci-item:hover{border-color:#c4c6cc;color:#fff}
 @media(max-width:768px){
   .brand-index-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))}
   .brand-tile{min-height:70px;padding:12px 14px}
   .brand-tile .bt-name{font-size:14px}
   .fi-item{padding:12px 0;min-height:44px}
+  .column-index-grid{grid-template-columns:1fr}
 }
 ${CSS_END}
 `;
-writeFileSync(HOME_FRAGMENT, out);
 
-let indexOut = html;
+let indexOut = out;
 if (indexOut.includes(CSS_START)) {
   const s = indexOut.indexOf(CSS_START);
   const e = indexOut.indexOf(CSS_END) + CSS_END.length;

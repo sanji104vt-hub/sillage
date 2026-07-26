@@ -108,7 +108,7 @@ for (const file of files) {
   if (!guides.includes(`/columns/${slug}`)) errors.push(`一覧に記事がありません: ${slug}`);
 }
 
-const home = readFileSync(join("public", "partials", "home-deferred.html"), "utf8");
+const home = readFileSync(join("public", "index.html"), "utf8");
 const homeBlock = home.match(/<!-- generated:home-columns:start -->([\s\S]*?)<!-- generated:home-columns:end -->/)?.[1] || "";
 const homeLinks = [...homeBlock.matchAll(/href="\/columns\/([^"]+)"/g)].map((match) => match[1]);
 if (homeLinks.length !== 9 || new Set(homeLinks).size !== 9) errors.push(`トップ記事数または重複が不正: ${homeLinks.length}/${new Set(homeLinks).size}`);

@@ -51,7 +51,7 @@ for (const family of families) {
 }
 
 const index = readFileSync("public/index.html", "utf8");
-const fragment = readFileSync("public/partials/home-deferred.html", "utf8");
+const fragment = readFileSync("public/index.html", "utf8");
 const homeScript = readFileSync("public/assets/home.js", "utf8");
 const recommendationScriptIndex = index.indexOf("/assets/quiz-recommendation.js");
 const homeScriptIndex = index.indexOf("/assets/home.js");

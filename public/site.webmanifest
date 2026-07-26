@@ -1,14 +1,13 @@
 {
-  "name": "Sillage（シヤージュ）",
+  "name": "Sillage（シヤージュ）｜香調・シーン・季節から選ぶ香水ガイド",
   "short_name": "Sillage",
-  "description": "香調・シーン・季節から探すメンズ香水比較。フレグランスホイールで自分の残り香を選ぶ。",
+  "description": "プチプラからメゾンまで。香調・シーン・季節から、自分に合う香りを見つける総合香水ガイド。",
+  "lang": "ja",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
-  "orientation": "portrait",
   "background_color": "#0d0e10",
   "theme_color": "#0d0e10",
-  "lang": "ja",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

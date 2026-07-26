@@ -1,6 +1,6 @@
 import { readFileSync } from "node:fs";
 
-const partial = readFileSync("public/partials/home-deferred.html", "utf8");
+const partial = readFileSync("public/index.html", "utf8");
 const script = readFileSync("public/assets/home.js", "utf8");
 const errors = [];
 
