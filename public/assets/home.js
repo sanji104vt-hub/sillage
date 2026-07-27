@@ -171,12 +171,18 @@ function matches(p){
 }
 function card(p){
   const f=FAM[p.family];const c=f.color;
-  const productImage=p.slug?`/img/products/${p.slug}.png`:p.img;
-  const imageFallback=p.slug&&p.img?` onerror="this.onerror=null;this.src='${p.img}'"`:"";
-  const visual = productImage
-    ? `<div class="flacon"><img class="photo" src="${productImage}" alt="${p.brand} ${p.name}" loading="lazy"${imageFallback}>
+  // 実写(楽天CDN)を主役に、意匠画像はonerrorの保険。実写が無い商品は意匠画像を直接出す。
+  const designImage=p.slug?`/img/products/${p.slug}.png`:"";
+  const photoUrl=p.img||designImage;
+  const hasPhoto=Boolean(p.img);
+  const imageFallback=hasPhoto&&designImage
+    ? ` onerror="this.onerror=null;this.src='${designImage}';this.closest('.photo-hybrid').classList.add('is-fallback')"`
+    : "";
+  const visual = photoUrl
+    ? `<div class="flacon photo-hybrid${hasPhoto?"":" is-fallback"}" data-family="${p.family}"><img class="photo" src="${photoUrl}" alt="${p.brand} ${p.name}" loading="lazy"${imageFallback}>
         <span class="fam-pill" style="background:${c}">${f.ja}</span>
         <span class="gender-pill">${GENDER[p.gender]}</span>
+        <span class="photo-family-tag"><span class="dot" style="background:${c}"></span><span class="fam-en">${f.en}</span></span>
       </div>`
     : `<div class="flacon no-photo" style="background:radial-gradient(120% 90% at 50% 122%,${c}33,transparent 70%)">
         <span class="fam-pill" style="background:${c}">${f.ja}</span>

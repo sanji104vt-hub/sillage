@@ -171,8 +171,13 @@ fragrances.forEach((item, index) => {
   if (!isEnriched && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
   const localImagePath = `public/img/products/${slug}.png`;
   const localImageUrl = `/img/products/${slug}.png`;
+  // 実写＋意匠のハイブリッド: 実写(楽天CDN)を表示し、意匠画像はonerrorの保険として必ず残す。
   if (!existsSync(localImagePath)) errors.push(`自ドメイン商品画像なし: ${localImagePath}`);
-  if (!html.includes(`src="${localImageUrl}"`)) errors.push(`自ドメイン商品画像参照なし: ${path}`);
+  if (!html.includes(localImageUrl)) errors.push(`意匠画像への参照なし: ${path}`);
+  const expectedPhoto = item.img || localImageUrl;
+  if (!html.includes(`src="${expectedPhoto}"`)) errors.push(`商品画像srcが想定と不一致: ${path}`);
+  if (item.img && !html.includes(`this.src='${localImageUrl}'`)) errors.push(`意匠画像へのフォールバック未設定: ${path}`);
+  if (!html.includes('class="photo-family-tag"')) errors.push(`系統タグなし: ${path}`);
   if (!/<img class="photo"[^>]+alt="[^"]+"/.test(html)) errors.push(`商品画像altなし: ${path}`);
 
   const jsonBlocks = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)];
@@ -186,7 +191,8 @@ fragrances.forEach((item, index) => {
   if (!product) errors.push(`Product JSON-LDなし: ${path}`);
   if (!breadcrumb) errors.push(`BreadcrumbListなし: ${path}`);
   if (product?.url !== expectedUrl) errors.push(`Product URL不一致: ${path}`);
-  if (product?.image !== `https://sillage.asutelu.com${localImageUrl}`) errors.push(`Product画像URL不一致: ${path}`);
+  const expectedProductImage = item.img || `https://sillage.asutelu.com${localImageUrl}`;
+  if (product?.image !== expectedProductImage) errors.push(`Product画像URL不一致: ${path}`);
   if (product?.aggregateRating || product?.offers) errors.push(`未検証の評価または価格情報を含む: ${path}`);
   const selfHref = `href="/items/${slug}"`;
   const comparisonArea = html.match(/<div class="compare-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] || "";
