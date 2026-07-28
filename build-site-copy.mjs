@@ -19,15 +19,18 @@ function syncJsonLd(html) {
       } catch {
         return script;
       }
+      // Google への「名乗り」は英字表記に統一し、読み仮名を alternateName に置く。
+      // 画面表示（title / h1）は「Sillage（シヤージュ）」のまま維持する。
       if (value["@type"] === "WebSite") {
-        value.name = copy.siteName;
-        value.alternateName = copy.shortName;
+        value.name = copy.shortName;
+        value.alternateName = copy.readingName;
         value.url = copy.siteUrl;
         value.description = copy.description;
       } else if (value["@type"] === "Organization") {
         value.name = copy.shortName;
-        value.alternateName = copy.siteName;
+        value.alternateName = copy.readingName;
         value.url = copy.siteUrl;
+        value.logo = `${copy.siteUrl.replace(/\/$/, "")}/ogp-default.png`;
         value.description = copy.description;
       } else if (value["@type"] === "CollectionPage") {
         value.name = `${copy.shortName} 掲載香水一覧`;
@@ -50,7 +53,7 @@ index = replaceRequired(
 );
 index = replaceRequired(index, /<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${copy.title}">`, "og:title");
 index = replaceRequired(index, /<meta property="og:description" content="[^"]*">/, `<meta property="og:description" content="${copy.description}">`, "og:description");
-index = replaceRequired(index, /<meta property="og:site_name" content="[^"]*">/, `<meta property="og:site_name" content="${copy.siteName}">`, "og:site_name");
+index = replaceRequired(index, /<meta property="og:site_name" content="[^"]*">/, `<meta property="og:site_name" content="${copy.shortName}">`, "og:site_name");
 index = replaceRequired(index, /<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${copy.title}">`, "twitter:title");
 index = replaceRequired(index, /<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${copy.description}">`, "twitter:description");
 index = replaceRequired(index, /<span class="h1-sub">[\s\S]*?<\/span>/, `<span class="h1-sub">${copy.heroProductLine}</span>`, "hero product line");
@@ -87,6 +90,13 @@ for (const path of ["public/about.html", "public/privacy.html", "public/contact.
     /<p style="margin-top:14px">© 2026 Sillage — [\s\S]*?<\/p>/,
     `<p style="margin-top:14px">${copy.footerCopyright}</p>`,
     `${path} footer`,
+  );
+  // og:site_name も英字表記に統一する（title / h1 の表示は変えない）
+  html = replaceRequired(
+    html,
+    /<meta property="og:site_name" content="[^"]*">/,
+    `<meta property="og:site_name" content="${copy.shortName}">`,
+    `${path} og:site_name`,
   );
   writeFileSync(path, html, "utf8");
 }

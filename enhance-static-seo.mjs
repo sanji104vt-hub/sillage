@@ -153,6 +153,10 @@ for (const path of files) {
     if (title && description && !html.includes('name="twitter:title"')) {
       html = html.replace('<meta name="twitter:card" content="summary_large_image">', `<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${title}"><meta name="twitter:description" content="${description}">`);
     }
+    // サイト名の名乗りを全ページで揃える（表示テキストは変えない）
+    if (!html.includes('property="og:site_name"')) {
+      html = html.replace(/(<meta property="og:title"[^>]*>)/, `$1<meta property="og:site_name" content="Sillage">`);
+    }
 
     const collection = jsonLdBlocks(html).map((m) => {
       try { return JSON.parse(m[1]); } catch { return null; }

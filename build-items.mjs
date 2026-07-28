@@ -295,7 +295,7 @@ function pageHTML(p, related, competitors, trial) {
 <meta property="og:description" content="${escape(desc)}">
 <meta property="og:url" content="${url}">
 ${ogImage ? `<meta property="og:image" content="${escape(ogImage)}">` : ""}
-<meta property="og:site_name" content="${escape(SITE_COPY.siteName)}">
+<meta property="og:site_name" content="${escape(SITE_COPY.shortName)}">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">${JSON.stringify(breadcrumb)}</script>
 <script type="application/ld+json">${JSON.stringify(product)}</script>
