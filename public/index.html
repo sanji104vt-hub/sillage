@@ -834,6 +834,40 @@
   .deferred-error button{margin-top:16px;min-height:44px;padding:10px 22px;border:1px solid #66686e;background:transparent;color:#f0eeea;cursor:pointer}
   .deferred-error button:focus-visible{outline:2px solid #f0eeea;outline-offset:4px}
   @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*{animation:none!important;transition:none!important}}
+
+  /* ==========================================================================
+     Performance: content-visibility による描画最適化 (lazy-paint)
+     オフスクリーン要素の描画をブラウザにスキップさせるだけの純粋なCSS。
+     DOM・JS・データ・SEOには一切影響しない。非対応ブラウザは従来通り動く。
+     contain-intrinsic-size は実測値を採用(auto付きなので一度描画されれば
+     実サイズが記憶され、以降はこの値は使われない)。
+     ========================================================================== */
+  /* 商品カード92枚。#grid だけで約26,600px を占める最大の描画コスト */
+  .card{content-visibility:auto;contain-intrinsic-size:auto 840px}
+  /* 大きい3セクション */
+  #brand-index{content-visibility:auto;contain-intrinsic-size:auto 900px}
+  #column-index{content-visibility:auto;contain-intrinsic-size:auto 900px}
+  #family-items{content-visibility:auto;contain-intrinsic-size:auto 1820px}
+  /* 小さいセクション(見出し・フィルタ)。効果は小さいが指定どおり適用し、
+     実測値を置くことでレイアウトシフトを出さない */
+  #fragrances{content-visibility:auto;contain-intrinsic-size:auto 200px}
+  #diagnosis{content-visibility:auto;contain-intrinsic-size:auto 110px}
+  #scent-guide{content-visibility:auto;contain-intrinsic-size:auto 110px}
+  #brands{content-visibility:auto;contain-intrinsic-size:auto 110px}
+  /* モバイルは1カラムで各ブロックが縦に伸びるため、初回見積もりを実測に寄せる */
+  @media(max-width:768px){
+    .card{contain-intrinsic-size:auto 810px}
+    #brand-index,#column-index{contain-intrinsic-size:auto 2140px}
+    #family-items{contain-intrinsic-size:auto 4430px}
+    #fragrances{contain-intrinsic-size:auto 460px}
+    #diagnosis,#scent-guide,#brands{contain-intrinsic-size:auto 90px}
+    /* 系統タグは92枚すべてに出るため、モバイルではぼかしを外してGPU負荷を下げる。
+       視認性は背景を濃くして担保する(デスクトップはぼかしのまま) */
+    .photo-family-tag{
+      backdrop-filter:none;-webkit-backdrop-filter:none;
+      background:rgba(13,14,16,.92);
+    }
+  }
 /* generated:internal-links:start */
 .brand-index-section, .family-items-section{max-width:1240px;margin:56px auto 0;padding:0 clamp(16px,4vw,48px) 24px}
 .brand-index-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:10px;margin-top:22px}
