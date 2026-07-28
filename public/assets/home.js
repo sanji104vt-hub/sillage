@@ -1497,6 +1497,63 @@ function initializeDeferredHome(){
 }
 
 
+/* ---------- quick nav ----------
+   既存DOMには触れず、追加された #quicknav の挙動だけを受け持つ。 */
+function initQuicknav(){
+  const nav=document.getElementById("quicknav");
+  if(!nav)return;
+  const links=[...nav.querySelectorAll("a[data-target]")];
+
+  // topbar が sticky top:0 のため、その高さぶん下げて段積みする。
+  // フォント読み込みや折り返しで高さが変わるので、実測値を常に追従させる。
+  const topbar=document.querySelector(".topbar");
+  const syncOffset=()=>{
+    if(!topbar)return;
+    const h=Math.round(topbar.getBoundingClientRect().height);
+    if(h>0)document.documentElement.style.setProperty("--topbar-h",h+"px");
+  };
+  syncOffset();
+  if("ResizeObserver" in window){
+    new ResizeObserver(syncOffset).observe(topbar||document.body);
+  }else{
+    window.addEventListener("resize",syncOffset,{passive:true});
+  }
+  window.addEventListener("load",syncOffset,{once:true});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(syncOffset).catch(()=>{});
+
+  // お気に入りはヘッダーの♥と同じ動作
+  const favBtn=document.getElementById("quicknavFav");
+  if(favBtn)favBtn.onclick=openFavorites;
+
+  // 表示中セクションのハイライト
+  const targets=links.map(a=>document.getElementById(a.dataset.target)).filter(Boolean);
+  if("IntersectionObserver" in window&&targets.length){
+    const io=new IntersectionObserver(entries=>{
+      entries.forEach(e=>{
+        if(!e.isIntersecting)return;
+        const id=e.target.id;
+        links.forEach(a=>a.classList.toggle("is-active",a.dataset.target===id));
+      });
+    },{rootMargin:"-40% 0px -55% 0px",threshold:0});
+    targets.forEach(t=>io.observe(t));
+  }
+
+  // 下方向スクロールで退避、上方向で復帰
+  let lastY=window.scrollY,ticking=false;
+  window.addEventListener("scroll",()=>{
+    if(ticking)return;
+    ticking=true;
+    requestAnimationFrame(()=>{
+      const y=window.scrollY,delta=y-lastY;
+      if(y<2000)nav.classList.remove("is-hidden");
+      else if(delta>8)nav.classList.add("is-hidden");
+      else if(delta<-8)nav.classList.remove("is-hidden");
+      lastY=y;
+      ticking=false;
+    });
+  },{passive:true});
+}
+
 initFilterShortcuts();
 initAnchorNavigation();
 applyFiltersFromUrl();
@@ -1505,6 +1562,7 @@ updateFavCount();
 buildWheel();
 initScrolly();
 initParticles();
+initQuicknav();
 document.getElementById("favBtn").onclick=openFavorites;
 // ホーム本体は初期HTMLに含まれるため、スクロールを待たずその場で初期化する。
 initializeDeferredHome();

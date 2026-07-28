@@ -53,6 +53,36 @@
     padding:14px clamp(16px,4vw,48px);border-bottom:1px solid #2c2d31;
     position:sticky;top:0;z-index:50;background:rgba(13,14,16,.84);backdrop-filter:blur(10px);
   }
+  /* ---------- quick nav (主要セクションへの近道) ---------- */
+  /* topbar が既に top:0 で sticky なので、その真下に段積みして吸着させる。
+     z-index は topbar(50) より下にして、退避時に topbar の裏へ滑り込ませる。 */
+  .quicknav{
+    position:sticky;top:var(--topbar-h,58px);z-index:45;
+    background:rgba(13,14,16,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(233,231,227,.06);
+    transition:transform .35s ease;will-change:transform;
+  }
+  .quicknav.is-hidden{transform:translateY(-100%)}
+  .quicknav-inner{
+    max-width:1200px;margin:0 auto;padding:0 16px;height:44px;
+    display:flex;align-items:center;gap:6px;overflow-x:auto;scrollbar-width:none;
+  }
+  .quicknav-inner::-webkit-scrollbar{display:none}
+  .quicknav-inner>a,.quicknav-inner>button{
+    flex-shrink:0;display:inline-flex;align-items:center;min-height:32px;padding:6px 14px;
+    font-family:"Cormorant",'Cormorant Garamond',"Shippori Mincho",Georgia,serif;
+    font-size:14px;letter-spacing:.6px;color:#a8a8ae;text-decoration:none;
+    background:transparent;border:none;cursor:pointer;border-radius:100px;
+    transition:color .2s ease,background .2s ease;white-space:nowrap;
+  }
+  .quicknav-inner>a:hover,.quicknav-inner>button:hover{color:#e9e7e3;background:rgba(233,231,227,.04)}
+  .quicknav-inner>a.is-active{color:#c9b558;background:rgba(201,181,88,.08)}
+  .quicknav-fav{margin-left:auto;color:#c4889c !important}
+  @media(min-width:720px){
+    .quicknav-inner{height:48px;padding:0 24px;gap:10px}
+    .quicknav-inner>a,.quicknav-inner>button{font-size:15px;padding:8px 18px}
+  }
+  @media(prefers-reduced-motion:reduce){.quicknav{transition:none}}
   .brand{display:flex;align-items:baseline;gap:11px}
   .brand .logo{font-family:"Bodoni Moda",serif;font-weight:500;font-size:27px;letter-spacing:2px;color:#e9e7e3}
   .brand .kana{font-size:10.5px;letter-spacing:4px;color:#8c8c92}
@@ -869,6 +899,17 @@
   </div>
   <div class="scroll-cue">scroll</div>
 </section>
+
+<nav id="quicknav" class="quicknav" aria-label="サイト内クイックナビ">
+  <div class="quicknav-inner">
+    <a href="#fragrances" data-target="fragrances">探す</a>
+    <a href="#diagnosis" data-target="diagnosis">診断</a>
+    <a href="#scent-guide" data-target="scent-guide">系統</a>
+    <a href="#brand-index" data-target="brand-index">ブランド</a>
+    <a href="#column-index" data-target="column-index">コラム</a>
+    <button type="button" class="quicknav-fav" id="quicknavFav">お気に入り</button>
+  </div>
+</nav>
 
 <section class="hero">
   <div class="hero-copy">
