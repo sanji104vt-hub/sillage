@@ -79,11 +79,21 @@ for (const file of files) {
   ]) {
     if (!html.includes(marker)) errors.push(`${slug}: 必須要素欠損 ${marker}`);
   }
-  const relatedSection = html.match(/<section class="other">[\s\S]*?<\/section>/)?.[0] || "";
+  // フェーズA: 「次に読む」は .related-columns / .related-list の8本構成
+  const relatedSection = html.match(/<section class="related-columns">[\s\S]*?<\/section>/)?.[0] || "";
   const productSection = html.match(/<section class="featured">[\s\S]*?<\/section>/)?.[0] || "";
   const relatedCount = (relatedSection.match(/href="\/columns\//g) || []).length;
   const productCount = (productSection.match(/href="\/items\//g) || []).length;
-  if (relatedCount < 3 || relatedCount > 5) errors.push(`${slug}: 関連記事数 ${relatedCount}`);
+  if (relatedCount !== 8) errors.push(`${slug}: 関連記事数 ${relatedCount}（期待8）`);
+  const relatedSlugs = [...relatedSection.matchAll(/href="\/columns\/([a-z0-9-]+)"/g)].map((m) => m[1]);
+  if (new Set(relatedSlugs).size !== relatedSlugs.length) errors.push(`${slug}: 関連記事に重複`);
+  if (relatedSlugs.includes(slug)) errors.push(`${slug}: 関連記事に自分自身が含まれる`);
+  // CTA導線
+  const ctaCards = (html.match(/class="cta-card"/g) || []).length;
+  if (ctaCards !== 3) errors.push(`${slug}: CTAカード ${ctaCards}枚（期待3）`);
+  for (const href of ["/#diagnosis", "/#find-fragrances", "/#brand-index"]) {
+    if (!html.includes(`href="${href}"`)) errors.push(`${slug}: CTAリンク欠損 ${href}`);
+  }
   if (productCount > 5) errors.push(`${slug}: 関連商品が5件を超えています`);
   if (targetSlugs.includes(slug)) {
     const faqCount = (html.match(/<section class="faq">[\s\S]*?<\/section>/)?.[0].match(/<details>/g) || []).length;

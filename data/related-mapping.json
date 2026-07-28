@@ -1,0 +1,1388 @@
+{
+  "aesop-vs-diptyque": [
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "bvlgari-vs-versace": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "chanel-vs-dior": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "hermes-vs-acquadiparma": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "lelabo-vs-jomalone": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "margiela-vs-byredo": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "tomford-vs-creed": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "why-margiela-replica": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "age-and-perfume": [
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "notes-pyramid",
+      "label": "トップ・ミドル・ラストの読み方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "concentration-guide": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "notes-pyramid",
+      "label": "トップ・ミドル・ラストの読み方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "first-fragrance": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "notes-pyramid",
+      "label": "トップ・ミドル・ラストの読み方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "notes-pyramid": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "perfume-bottle-size": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "perfume-discoloration": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "perfume-expiration": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "why-cant-smell-own-perfume": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    }
+  ],
+  "blotter-vs-skin": [
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-wear",
+      "label": "香水のつけ方の基本",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "how-many-sprays": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-wear",
+      "label": "香水のつけ方の基本",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "how-to-test-perfume": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-wear",
+      "label": "香水のつけ方の基本",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "how-to-wear": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "make-perfume-last-longer": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "office-perfume-amount": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "perfume-decanting": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "perfume-on-clothes": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "perfume-storage": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "too-much-perfume": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "where-to-apply-perfume": [
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    }
+  ],
+  "business-fragrance": [
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "summer-perfume-strong",
+      "label": "夏に強い香水の選び方",
+      "category": "シーン"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    }
+  ],
+  "season-scene-map": [
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "summer-perfume-strong",
+      "label": "夏に強い香水の選び方",
+      "category": "シーン"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    }
+  ],
+  "summer-perfume-strong": [
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "label": "ムエットと肌、香りが違う理由",
+      "category": "howto"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "label": "香水の試し方",
+      "category": "howto"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    }
+  ],
+  "perfume-gift-guide": [
+    {
+      "slug": "perfume-gift-mistakes",
+      "label": "香水ギフトで失敗しない",
+      "category": "ギフト"
+    },
+    {
+      "slug": "perfume-store-comparison",
+      "label": "香水はどこで買うのが正解?",
+      "category": "買い方"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "lelabo-vs-jomalone",
+      "label": "ル ラボ vs ジョー マローン",
+      "category": "比較"
+    }
+  ],
+  "perfume-gift-mistakes": [
+    {
+      "slug": "perfume-gift-guide",
+      "label": "香水ギフト選びガイド",
+      "category": "ギフト"
+    },
+    {
+      "slug": "perfume-store-comparison",
+      "label": "香水はどこで買うのが正解?",
+      "category": "買い方"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "lelabo-vs-jomalone",
+      "label": "ル ラボ vs ジョー マローン",
+      "category": "比較"
+    }
+  ],
+  "perfume-store-comparison": [
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "aesop-vs-diptyque",
+      "label": "アエソップ vs ディプティック",
+      "category": "比較"
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "label": "ブルガリ vs ヴェルサーチ",
+      "category": "比較"
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "label": "シャネル vs ディオール",
+      "category": "比較"
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "label": "エルメス vs アクア ディ パルマ",
+      "category": "比較"
+    },
+    {
+      "slug": "lelabo-vs-jomalone",
+      "label": "ル ラボ vs ジョー マローン",
+      "category": "比較"
+    }
+  ]
+}
