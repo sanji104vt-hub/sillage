@@ -43,6 +43,41 @@ if (!existsSync("public/data/brands.json")) errors.push("Generated brand JSON mi
 
 // ホームの主要データは同期スクリプトで確定させる（遅延読み込みでの取りこぼしを防ぐ）
 if (!existsSync("public/data/home-data.js")) errors.push("Synchronous home data script missing");
+
+// 配信物が真のソース(data/fragrances.json)と一致しているか。
+// build-fragrance-assets.mjs / build-home-data.mjs の実行漏れをここで検知する。
+// （個別ページだけ直って、トップのカードが古い画像のまま、という事故を防ぐ）
+if (existsSync("public/data/fragrances.json")) {
+  const published = JSON.parse(readFileSync("public/data/fragrances.json", "utf8"));
+  if (published.length !== fragrances.length) {
+    errors.push(`public/data/fragrances.json is stale: ${published.length} items (source has ${fragrances.length})`);
+  } else {
+    const bySlug = new Map(published.map((item) => [item.slug, item]));
+    for (const item of fragrances) {
+      const shipped = bySlug.get(item.slug);
+      if (!shipped) { errors.push(`public/data/fragrances.json missing: ${item.slug}`); continue; }
+      if ((shipped.img || "") !== (item.img || "")) {
+        errors.push(`public/data/fragrances.json is stale for ${item.slug}: img mismatch (run build-fragrance-assets.mjs)`);
+      }
+    }
+  }
+}
+if (existsSync("public/data/home-data.js")) {
+  const script = readFileSync("public/data/home-data.js", "utf8");
+  const match = script.match(/window\.SILLAGE_FRAGRANCES=(\[[\s\S]*?\]);\r?\n/);
+  if (!match) errors.push("home-data.js does not define SILLAGE_FRAGRANCES");
+  else {
+    const embedded = JSON.parse(match[1]);
+    const bySlug = new Map(embedded.map((item) => [item.slug, item]));
+    for (const item of fragrances) {
+      const shipped = bySlug.get(item.slug);
+      if (!shipped) { errors.push(`home-data.js missing: ${item.slug}`); continue; }
+      if ((shipped.img || "") !== (item.img || "")) {
+        errors.push(`home-data.js is stale for ${item.slug}: img mismatch (run build-home-data.mjs)`);
+      }
+    }
+  }
+}
 if (!top.includes('<script src="/data/home-data.js"></script>')) errors.push("home-data.js not loaded from index.html");
 if (!homeScript.includes("window.SILLAGE_FRAGRANCES")) errors.push("home.js does not read synchronous fragrance data");
 if (!homeScript.includes("window.SILLAGE_BRANDS")) errors.push("home.js does not read synchronous brand data");
