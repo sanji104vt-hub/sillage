@@ -41,7 +41,7 @@ const TYPED_PURCHASE_LABEL_SLUGS = new Set([
   "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
   "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4", "tom-ford-2",
   "creed-1", "diptyque-1", "byredo-1", "tom-ford-3", "le-labo-2",
-  "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4",
+  "maison-margiela-2", "giorgio-armani-3", "versace-4",
 ]);
 
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
@@ -59,10 +59,9 @@ const BRAND_SLUG = {
   "Parfums de Marly": "parfums-de-marly", "Maison Margiela": "maison-margiela",
   "Bvlgari": "bvlgari", "Maison Francis Kurkdjian": "maison-francis-kurkdjian",
   "Creed": "creed", "Le Labo": "le-labo", "Diptyque": "diptyque", "Byredo": "byredo",
-  "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss",
-  "Givenchy": "givenchy", "Aramis": "aramis", "SHIRO": "shiro",
+  "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
-  "Aesop": "aesop", "Davidoff": "davidoff", "Issey Miyake": "issey-miyake",
+  "Aesop": "aesop", "Davidoff": "davidoff",
 };
 
 const itemsWithSlug = PERFUMES;

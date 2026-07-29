@@ -13,6 +13,8 @@ const OUT = join("public", "columns");
 const MODIFIED = "2026-07-16T22:00:00+09:00";
 const PUBLISHED = "2026-07-07T15:18:04+09:00";
 const FRAGRANCES = JSON.parse(readFileSync(join("data", "fragrances.json"), "utf8")).fragrances;
+// CTA の掲載数はデータの実数に追従させる（商品・ブランドの増減で表記がずれないように）
+const BRAND_COUNT = JSON.parse(readFileSync(join("data", "brands.json"), "utf8")).length;
 const FRAGRANCE_BY_SLUG = new Map(FRAGRANCES.map((item) => [item.slug, item]));
 // フェーズA: 「次に読む」を8本に拡充するためのマッピング（カテゴリ混合で回遊率を上げる）
 const RELATED_MAP = JSON.parse(readFileSync(join("data", "related-mapping.json"), "utf8"));
@@ -420,7 +422,7 @@ function renderArticle(article, all) {
 <section class="related"><h2>登場・関連ブランド</h2><div class="chips">${article.brands.map(x=>`<a href="${x.href}">${esc(x.name)}</a>`).join("")}</div></section>
 <section class="featured"><h2>関連する香水を詳しく見る</h2>${items.map(x=>`<a href="/items/${x.slug}">${esc(x.name)}の香りを見る →</a>`).join("")}</section>
 <section class="related-columns"><h2>次に読む</h2><ul class="related-list">${others.map(x=>`<li><a href="/columns/${x.slug}">${esc(x.title)}</a>${x.relatedCategory?`<span class="cat-badge">${esc(x.relatedCategory)}</span>`:""}</li>`).join("")}</ul></section>
-<section class="column-cta"><p class="cta-lead">読んで、実際に選ぶ。</p><div class="cta-grid"><a class="cta-card" href="/#diagnosis"><span class="cta-icon">◇</span><span class="cta-title">診断で見つける</span><span class="cta-desc">6問で自分に合うブランドを診断</span></a><a class="cta-card" href="/#find-fragrances"><span class="cta-icon">○</span><span class="cta-title">香調から探す</span><span class="cta-desc">系統色で92本の香水を比較</span></a><a class="cta-card" href="/#brand-index"><span class="cta-icon">△</span><span class="cta-title">ブランドで探す</span><span class="cta-desc">47ブランドの掲載一覧</span></a></div></section>
+<section class="column-cta"><p class="cta-lead">読んで、実際に選ぶ。</p><div class="cta-grid"><a class="cta-card" href="/#diagnosis"><span class="cta-icon">◇</span><span class="cta-title">診断で見つける</span><span class="cta-desc">6問で自分に合うブランドを診断</span></a><a class="cta-card" href="/#find-fragrances"><span class="cta-icon">○</span><span class="cta-title">香調から探す</span><span class="cta-desc">系統色で${FRAGRANCES.length}本の香水を比較</span></a><a class="cta-card" href="/#brand-index"><span class="cta-icon">△</span><span class="cta-title">ブランドで探す</span><span class="cta-desc">${BRAND_COUNT}ブランドの掲載一覧</span></a></div></section>
 <section class="sources"><h2>情報源と編集区分</h2>${sourceHtml?`<ul class="source-list">${sourceHtml}</ul>`:""}<p class="editorial-note">商品名・濃度・ノート等は掲載商品の公式情報を優先し、使う量・場面・選び方はSillage編集部の判断として区別して記載しています。製品の表示と各施設のルールを優先してください。</p></section>
 <section class="article-credit"><h2>この記事について</h2><p>Sillage編集部が、公開情報と掲載中の商品データを照合して作成しました。詳しい確認方法は<a href="/about.html#update-policy">編集方針・更新ポリシー</a>をご覧ください。</p></section>
 <section class="share-tools"><p>share ／ 役立ったら共有</p><div class="share-actions"><a href="${xUrl}" target="_blank" rel="noopener">Xで共有</a><a href="${lineUrl}" target="_blank" rel="noopener">LINEで送る</a><button type="button" onclick="shareSillage(this)">リンクをコピー</button></div></section><a class="backhome" href="/">← Sillageトップへ戻る</a></main>

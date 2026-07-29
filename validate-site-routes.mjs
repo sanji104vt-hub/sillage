@@ -26,7 +26,8 @@ await expect("/items/does-not-exist", 404);
 await expect(`/items/${fragrances[0].slug}.html`, 301, `/items/${fragrances[0].slug}`);
 const brandPages = readdirSync("public").filter((name) => /^brand-.+\.html$/.test(name));
 const columnPages = readdirSync("public/columns").filter((name) => name.endsWith(".html"));
-if (brandPages.length !== 47) errors.push(`Expected 47 brand pages, got ${brandPages.length}`);
+const brandSource = JSON.parse(readFileSync("data/brands.json", "utf8"));
+if (brandPages.length !== brandSource.length) errors.push(`Expected ${brandSource.length} brand pages, got ${brandPages.length}`);
 if (!columnPages.length) errors.push("No column pages found");
 if (brandPages[0]) await expect(`/${brandPages[0]}`, 200);
 if (columnPages[0]) await expect(`/columns/${columnPages[0].replace(/\.html$/, "")}`, 200);
@@ -87,7 +88,7 @@ if (top.includes('id="deferredHome"')) errors.push("Homepage still defers its ma
 const staticBrandLinks = new Set(top.match(/href="\/brand-[a-z0-9-]+\.html"/g) || []).size;
 const staticItemLinks = new Set(top.match(/href="\/items\/[a-z0-9-]+"/g) || []).size;
 const staticColumnLinks = new Set(top.match(/href="\/columns\/[a-z0-9-]+"/g) || []).size;
-if (staticBrandLinks !== 47) errors.push(`Static brand links in index.html: ${staticBrandLinks} (expected 47)`);
+if (staticBrandLinks !== brandSource.length) errors.push(`Static brand links in index.html: ${staticBrandLinks} (expected ${brandSource.length})`);
 if (staticItemLinks < 40) errors.push(`Static item links in index.html: ${staticItemLinks} (expected >= 40)`);
 if (staticColumnLinks < 10) errors.push(`Static column links in index.html: ${staticColumnLinks} (expected >= 10)`);
 for (const item of fragrances) {

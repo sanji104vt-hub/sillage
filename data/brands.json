@@ -189,13 +189,6 @@
     "desc": "ベネズエラ出身のデザイナーによるNY拠点メゾン。バッドボーイで近年人気上昇。"
   },
   {
-    "name": "Givenchy",
-    "country": "FR",
-    "founded": 1952,
-    "tier": "luxury",
-    "desc": "パリの古典メゾン。オードリー・ヘップバーンとの縁でも知られ、香水でも歴史を持つ。"
-  },
-  {
     "name": "Hugo Boss",
     "country": "DE",
     "founded": 1924,
@@ -236,13 +229,6 @@
     "founded": 1980,
     "tier": "midrange",
     "desc": "スイスのライフスタイルブランド。クール ウォーターでマリン香水の元祖を作った。"
-  },
-  {
-    "name": "Issey Miyake",
-    "country": "JP",
-    "founded": 1970,
-    "tier": "luxury",
-    "desc": "三宅一生のメゾン。ロードゥ イッセイは透明感を主題にした日本発の名作。"
   },
   {
     "name": "SHIRO",

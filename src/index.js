@@ -16,6 +16,30 @@ export default {
 
     const path = url.pathname;
 
+    // 掲載を取り下げたURL。恒久的な削除であることを検索エンジンに伝えるため 410 Gone を返す。
+    // （404 だと「一時的に見つからない」と解釈され、インデックスからの削除が遅れる）
+    const GONE = new Set([
+      "/items/givenchy-1",
+      "/items/givenchy-1.html",
+      "/items/ysl-5",
+      "/items/ysl-5.html",
+      "/items/issey-miyake-1",
+      "/items/issey-miyake-1.html",
+      "/brand-givenchy.html",
+      "/brand-issey-miyake.html",
+    ]);
+    if (GONE.has(path.replace(/\/$/, "") || path)) {
+      return new Response(
+        "<!DOCTYPE html><html lang=\"ja\"><head><meta charset=\"UTF-8\"><meta name=\"robots\" content=\"noindex\"><title>掲載を終了しました｜Sillage</title></head>" +
+        "<body style=\"background:#0d0e10;color:#e9e7e3;font-family:system-ui,sans-serif;text-align:center;padding:80px 20px\">" +
+        "<h1 style=\"font-size:22px;margin-bottom:16px\">このページは掲載を終了しました</h1>" +
+        "<p style=\"color:#8c8c92;font-size:14px;line-height:1.9\">掲載内容の見直しにより、この商品・ブランドの掲載を取り下げました。</p>" +
+        "<p style=\"margin-top:28px\"><a href=\"/\" style=\"color:#c9b558\">Sillage トップへ戻る</a></p>" +
+        "</body></html>",
+        { status: 410, headers: { "content-type": "text/html; charset=utf-8", "cache-control": "no-cache" } },
+      );
+    }
+
     // Canonical URL redirects: prevent duplicate indexing of physical HTML files.
     if (path === "/index.html") {
       const u = new URL(request.url);

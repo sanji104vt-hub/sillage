@@ -14,7 +14,7 @@ const SECOND_BATCH_SLUGS = new Set([
   "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
   "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4",
   "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3",
-  "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "issey-miyake-1", "versace-4",
+  "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "versace-4",
 ]);
 const THIRD_BATCH_SLUGS = new Set([
   "4711-1", "atelier-cologne-1", "guerlain-1", "dolce-gabbana-1", "hermes-2",
@@ -27,7 +27,7 @@ const THIRD_BATCH_SLUGS = new Set([
 const FOURTH_BATCH_SLUGS = new Set([
   "dior-5", "paco-rabanne-2", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
   "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "john-varvatos-1", "montblanc-2",
-  "jo-malone-4", "hugo-boss-1", "dior-7", "givenchy-1", "aramis-1", "chanel-5", "ysl-5", "chanel-6", "narciso-rodriguez-1",
+  "jo-malone-4", "hugo-boss-1", "dior-7", "aramis-1", "chanel-5", "chanel-6", "narciso-rodriguez-1",
   "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
 ]);
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS]);
@@ -204,11 +204,11 @@ fragrances.forEach((item, index) => {
 
 console.log(`商品総数: ${fragrances.length}`);
 for (const [label, count] of Object.entries(missing)) console.log(`${label}: ${count}`);
-if (fragrances.length !== 92) errors.push(`商品総数が92件ではありません: ${fragrances.length}`);
-if (SECOND_BATCH_SLUGS.size !== 20) errors.push(`第2段階の商品数が20件ではありません: ${SECOND_BATCH_SLUGS.size}`);
-if (THIRD_BATCH_SLUGS.size !== 31) errors.push(`第3段階の商品数が31件ではありません: ${THIRD_BATCH_SLUGS.size}`);
-if (FOURTH_BATCH_SLUGS.size !== 31) errors.push(`第4段階の商品数が31件ではありません: ${FOURTH_BATCH_SLUGS.size}`);
-if (ENRICHED_SLUGS.size !== 92) errors.push(`補完済み商品数が92件ではありません: ${ENRICHED_SLUGS.size}`);
+// 商品総数はソース(data/fragrances.json)が真値。固定値との比較はしない。
+
+
+
+if (ENRICHED_SLUGS.size !== fragrances.length) errors.push(`補完済み商品数が掲載数と一致しません: ${ENRICHED_SLUGS.size} / ${fragrances.length}`);
 const secondBatchItems = fragrances.filter((_, index) => SECOND_BATCH_SLUGS.has(slugs[index]));
 const brandCounts = new Map();
 for (const item of secondBatchItems) brandCounts.set(item.brand, (brandCounts.get(item.brand) || 0) + 1);

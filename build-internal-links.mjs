@@ -1,6 +1,6 @@
 // フェーズ2内部リンク網:
-// - 遅延読込HTMLに <section id="brand-index"> (47ブランドタイル)
-// - 遅延読込HTMLに <section id="family-items"> (10系統 × 代表5本)
+// - index.html に <section id="brand-index"> (全ブランドタイル)
+// - index.html に <section id="family-items"> (10系統 × 代表5本)
 // - 各 brand-*.html 下部に「同じ系統の他ブランド」「登場記事」
 // マーカー間を毎回差し替える(冪等)。既存のGA4/GSC/楽天IDは触らない。
 
@@ -47,10 +47,9 @@ const BRAND_SLUG = {
   "Parfums de Marly": "parfums-de-marly", "Maison Margiela": "maison-margiela",
   "Bvlgari": "bvlgari", "Maison Francis Kurkdjian": "maison-francis-kurkdjian",
   "Creed": "creed", "Le Labo": "le-labo", "Diptyque": "diptyque", "Byredo": "byredo",
-  "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss",
-  "Givenchy": "givenchy", "Aramis": "aramis", "SHIRO": "shiro",
+  "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
-  "Aesop": "aesop", "Davidoff": "davidoff", "Issey Miyake": "issey-miyake",
+  "Aesop": "aesop", "Davidoff": "davidoff",
 };
 
 const escape = (s) =>
@@ -86,7 +85,7 @@ function buildBrandIndex() {
   <div class="section-head">
     <p class="kick">— brands ／ ${brandsWithSlug.length} houses</p>
     <h2>ブランドから探す</h2>
-    <p class="section-copy">アルファベット順の47ブランド。タイルをクリックすると、そのブランドの掲載香水一覧・代表作・特徴を専用ページで確認できます。</p>
+    <p class="section-copy">アルファベット順の${brandsWithSlug.length}ブランド。タイルをクリックすると、そのブランドの掲載香水一覧・代表作・特徴を専用ページで確認できます。</p>
   </div>
   <div class="brand-index-grid">${tiles}</div>
 </section>`;

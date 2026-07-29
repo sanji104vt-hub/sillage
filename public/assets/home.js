@@ -1079,7 +1079,7 @@ function showQuizResult(){
     <div class="quiz-result show">
       <h3>あなたへの香りの提案</h3>
       <p class="quiz-type">${FAM[recommendation.primary.family].ja}を軸に選びました</p>
-      <p class="quiz-type-note">回答と掲載中92商品の既存属性を照合した3候補です。価格・濃度・使う場面を比べて、最後は肌で試してください。</p>
+      <p class="quiz-type-note">回答と掲載中全商品の既存属性を照合した3候補です。価格・濃度・使う場面を比べて、最後は肌で試してください。</p>
       <div class="quiz-products">
         ${resultItems.map(resultCard).join("")}
       </div>
