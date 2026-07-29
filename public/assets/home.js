@@ -174,7 +174,8 @@ function card(p){
   // 実写(楽天CDN)を主役に、意匠画像はonerrorの保険。実写が無い商品は意匠画像を直接出す。
   const designImage=p.slug?`/img/products/${p.slug}.png`:"";
   const photoUrl=p.img||designImage;
-  const hasPhoto=Boolean(p.img);
+  // 自ドメインの意匠画像を指している場合は「実写なし」扱い（系統タグの二重表示を避ける）
+  const hasPhoto=Boolean(p.img)&&!String(p.img).startsWith("/img/products/");
   const imageFallback=hasPhoto&&designImage
     ? ` onerror="this.onerror=null;this.src='${designImage}';this.closest('.photo-hybrid').classList.add('is-fallback')"`
     : "";

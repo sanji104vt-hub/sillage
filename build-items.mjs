@@ -158,8 +158,10 @@ function pageHTML(p, related, competitors, trial) {
   // 実写＋意匠のハイブリッド: 実写(楽天CDN)を主役に、意匠画像はonerrorの保険として残す。
   const designImage = `/img/products/${p.slug}.png`;
   const designImageAbs = `https://sillage.asutelu.com${designImage}`;
-  const photoUrl = p.img || designImage;              // 実写が無い14件は意匠画像を直接表示
-  const hasPhoto = Boolean(p.img);
+  // img が未設定、または自ドメインの意匠画像を直接指している場合は「実写なし」として扱う。
+  // （楽天CDNの画像が別カテゴリの商品を指していた商品は、意匠画像に切り替えている）
+  const photoUrl = p.img || designImage;
+  const hasPhoto = Boolean(p.img) && !String(p.img).startsWith("/img/products/");
   const famEn = FAM[p.family]?.en || "";
   // 意匠画像を出しているときは系統タグを重ねない(意匠画像に同じ情報が入っているため)
   const hybridClass = hasPhoto ? "photo-hybrid" : "photo-hybrid is-fallback";
@@ -190,7 +192,9 @@ function pageHTML(p, related, competitors, trial) {
     "description": p.verdict || desc,
     "url": url,
     // 表示している実写を構造化データにも反映する(実写が無い商品は自ドメインの意匠画像)
-    "image": p.img || designImageAbs,
+    // 構造化データは常に絶対URL（サイト内パスは自ドメインを補う）
+    "image": !p.img ? designImageAbs
+      : String(p.img).startsWith("/") ? `https://sillage.asutelu.com${p.img}` : p.img,
   };
 
   const officialUrl = p.purchaseLinks?.official?.url || "";
