@@ -44,6 +44,31 @@ function validUrl(value) {
     return ["http:", "https:"].includes(url.protocol) && Boolean(url.hostname);
   } catch { return false; }
 }
+// 楽天CDNの cabinet ディレクトリ名の形。ショップごとに命名規則が違うので、
+// 実データから確認できた規則のみを登録する。プレースホルダ(/cabinet/c/ など)を
+// そのまま登録してしまう事故を、ネットワークに出ずに検知するのが目的。
+// 2026-07-30: 5商品が /cabinet/c/ のまま登録され、実写画像が404していた。
+const RAKUTEN_CABINET_RULES = {
+  // 03, 41, 91, 01c, 01b ... 2桁数字＋任意の1英字
+  kousuimonogatari: { pattern: /^\d{2}[a-z]?$/, note: "2桁数字＋任意の英字1文字" },
+  // 30, 00, 50_2 ... 2桁数字＋任意の _数字
+  kousuiandco: { pattern: /^\d{2}(?:_\d)?$/, note: "2桁数字＋任意の_数字" },
+};
+function validateImageUrlShape(slug, img) {
+  if (!img || String(img).startsWith("/img/products/")) return;
+  const parsed = img.match(/\/@0_mall\/([^/]+)\/cabinet\/([^/]+)\//);
+  if (!parsed) return;
+  const [, mall, dir] = parsed;
+  // 1英字だけのディレクトリは、規則を調べずに仮値を入れた痕跡として扱う
+  if (/^[a-z]$/i.test(dir)) {
+    errors.push(`楽天画像URLのcabinetディレクトリが英字1文字: ${slug} (/cabinet/${dir}/) — 仮値が残っている可能性`);
+    return;
+  }
+  const rule = RAKUTEN_CABINET_RULES[mall];
+  if (rule && !rule.pattern.test(dir)) {
+    errors.push(`楽天画像URLのcabinetディレクトリが${mall}の規則(${rule.note})に合いません: ${slug} (/cabinet/${dir}/)`);
+  }
+}
 function validDate(value) {
   if (!ISO_DATE.test(String(value || ""))) return false;
   return new Date(`${value}T00:00:00Z`).toISOString().slice(0, 10) === value;
@@ -176,6 +201,7 @@ fragrances.forEach((item, index) => {
   if (!html.includes(localImageUrl)) errors.push(`意匠画像への参照なし: ${path}`);
   // img が自ドメインの意匠画像を指す商品は「実写なし」扱い（onerrorは不要）
   const usesExternalPhoto = Boolean(item.img) && !String(item.img).startsWith("/img/products/");
+  validateImageUrlShape(slug, item.img);
   const expectedPhoto = item.img || localImageUrl;
   if (!html.includes(`src="${expectedPhoto}"`)) errors.push(`商品画像srcが想定と不一致: ${path}`);
   if (usesExternalPhoto && !html.includes(`this.src='${localImageUrl}'`)) errors.push(`意匠画像へのフォールバック未設定: ${path}`);
