@@ -83,6 +83,22 @@ if (!top.includes('<script src="/data/home-data.js"></script>')) errors.push("ho
 if (!homeScript.includes("window.SILLAGE_FRAGRANCES")) errors.push("home.js does not read synchronous fragrance data");
 if (!homeScript.includes("window.SILLAGE_BRANDS")) errors.push("home.js does not read synchronous brand data");
 
+// 押せない偽ボタンの再発防止（2026-07-30: 購入リンクが無い14商品にも href="#" の楽天ボタンが出ていた）。
+// カードの購入ボタンは purchaseLinks[shop].url があるときだけ出力する。href に "#" の
+// フォールバックを置くと、押しても何も起きないボタンがユーザーに見えてしまう。
+const cardActionsBlock = homeScript.match(/<div class="card-actions">[\s\S]*?<\/div>/)?.[0] || "";
+if (!cardActionsBlock) {
+  errors.push("home.js: card-actions block not found (purchase button guard cannot be verified)");
+} else if (/href="\$\{[^}]*\}"/.test(cardActionsBlock) && !cardActionsBlock.includes("${buyButtons}")) {
+  errors.push("home.js: card-actions must render purchase buttons via the URL-guarded builder");
+}
+if (/\?\.url\s*\|\|\s*"#"/.test(homeScript) || /href="#"[^`]*class="buy/.test(homeScript) || /class="buy[^"]*"\s+href="#"/.test(homeScript)) {
+  errors.push('home.js: purchase button falls back to href="#" (押せない偽ボタンになる)');
+}
+if (!/PURCHASE_SHOPS[\s\S]{0,400}?filter\(s=>p\.purchaseLinks\?\.\[s\.key\]\?\.url\)/.test(homeScript)) {
+  errors.push("home.js: purchase buttons are not gated on purchaseLinks[shop].url");
+}
+
 // 内部リンク網は JavaScript 実行なしで初期HTMLからたどれること
 if (top.includes('id="deferredHome"')) errors.push("Homepage still defers its main content");
 const staticBrandLinks = new Set(top.match(/href="\/brand-[a-z0-9-]+\.html"/g) || []).size;

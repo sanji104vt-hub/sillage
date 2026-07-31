@@ -33,6 +33,16 @@ const GENDER={men:"メンズ",women:"レディース",unisex:"ユニセックス
 const SCENE={business:"ビジネス",date:"デート",formal:"フォーマル",daily:"デイリー",sports:"スポーツ"};
 const SEASON={spring:"春",summer:"夏",autumn:"秋",winter:"冬"};
 const PRICE={petit:"プチプラ",mid:"ミドル",high:"ハイブランド"};
+// カードの購入ボタン定義。購入窓口を増やすときはここに1行足すだけでよい。
+// 出力するかどうかは purchaseLinks[key].url の有無だけで決める（押せない href="#" を作らないため）。
+// 並び順は「楽天→Amazon→公式」。既存の見た目（詳しく見る＋楽天が1行目）を保ち、
+// アフィリエイト導線の位置を動かさないため、商品詳細ページとは順序を変えている。
+// rel: 広告リンクには nofollow sponsored、公式リンクには付けない（広告ではないため）。
+const PURCHASE_SHOPS=[
+  {key:"rakuten", label:"楽天で価格を見る",   cls:"buy",              rel:"nofollow sponsored noopener"},
+  {key:"amazon",  label:"Amazonで価格を見る", cls:"buy",              rel:"nofollow sponsored noopener"},
+  {key:"official",label:"公式サイトで見る",   cls:"buy buy-official", rel:"noopener noreferrer"},
+];
 const state={family:null,scene:null,season:null,gender:null,price:null};
 
 /* ---------- geometry ---------- */
@@ -190,7 +200,11 @@ function card(p){
         <span class="gender-pill">${GENDER[p.gender]}</span>
         <div class="bottle" style="background:linear-gradient(165deg,${c}d9,${c}6b)"></div>
       </div>`;
-  const buyHref = p.purchaseLinks?.rakuten?.url || "#";
+  // 実URLがある窓口のボタンだけを組み立てる（商品詳細ページと同じ判定）
+  const buyButtons=PURCHASE_SHOPS
+    .filter(s=>p.purchaseLinks?.[s.key]?.url)
+    .map(s=>`<a class="${s.cls}" href="${p.purchaseLinks[s.key].url}" target="_blank" rel="${s.rel}">${s.label} ↗</a>`)
+    .join("");
   return`
   <article class="card" style="--family:${c}">
     ${visual}
@@ -217,8 +231,8 @@ function card(p){
         <span class="price"><span class="price-label">参考価格</span>${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
       </div>
       <div class="card-actions">
-        ${p.slug?`<a class="item-link" href="/items/${p.slug}">香りを詳しく見る</a>`:`<span></span>`}
-        <a class="buy" href="${buyHref}" target="_blank" rel="nofollow sponsored noopener">楽天で価格を見る ↗</a>
+        ${p.slug?`<a class="item-link" href="/items/${p.slug}">香りを詳しく見る</a>`:""}
+        ${buyButtons}
       </div>
     </div>
   </article>`;

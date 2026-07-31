@@ -245,13 +245,19 @@
   .price-label{display:block;font-size:10px;color:#77787e;letter-spacing:.8px;margin-bottom:3px}
   .price{font-family:"Bodoni Moda",serif;font-size:17px;color:#f0eeea;line-height:1.2}
   .price .tier{font-family:"Zen Kaku Gothic New",sans-serif;font-size:10px;color:#8c8c92;letter-spacing:.8px;display:block;margin-top:4px}
-  .card-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  /* 購入窓口の有無でボタン数が1〜4個に変わるため、固定2列ではなく折り返しで追従させる。
+     1個なら全幅、2個なら半分ずつ、3個なら1行目に2個＋2行目が全幅になる。 */
+  .card-actions{display:flex;flex-wrap:wrap;gap:8px}
+  .card-actions>*{flex:1 1 calc(50% - 4px)}
   .buy{
     display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 11px;text-align:center;
     font-family:"Zen Kaku Gothic New",sans-serif;font-style:normal;font-size:12px;letter-spacing:.3px;color:#15151a;
     background:#e7e4de;border:1px solid #e7e4de;border-radius:9px;text-decoration:none;transition:all .18s;
   }
   .buy:hover{background:#fff;color:#15151a;border-color:#fff}
+  /* 公式リンクは広告ではないので、塗りボタン（楽天/Amazon）と区別して枠線表示にする（商品詳細ページと同じ扱い） */
+  .buy-official{background:transparent;color:#e9e7e3;border-color:#67686e}
+  .buy-official:hover{background:#202126;color:#fff;border-color:#c4c6cc}
   .item-link{display:inline-flex;align-items:center;justify-content:center;min-height:44px;text-align:center;
     font-family:"Zen Kaku Gothic New",sans-serif;font-size:12px;color:#e2e0dc;letter-spacing:.3px;text-decoration:none;
     padding:8px 11px;border:1px solid #484950;border-radius:9px;transition:color .18s,border-color .18s,background .18s}
