@@ -7,7 +7,7 @@ const source = readFileSync("public/index.html", "utf8");
 const fragrances = loadFragrances();
 const slugs = fragrances.map((item) => item.slug);
 const PILOT_SLUGS = new Set([
-  "muji-1", "dior-2", "ysl-2", "versace-1", "tom-ford-1",
+  "dior-2", "ysl-2", "versace-1", "tom-ford-1",
   "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1",
 ]);
 const SECOND_BATCH_SLUGS = new Set([
@@ -17,15 +17,15 @@ const SECOND_BATCH_SLUGS = new Set([
   "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "versace-4",
 ]);
 const THIRD_BATCH_SLUGS = new Set([
-  "4711-1", "atelier-cologne-1", "guerlain-1", "dolce-gabbana-1", "hermes-2",
+  "4711-1", "guerlain-1", "dolce-gabbana-1", "hermes-2",
   "ck-1", "montblanc-1", "azzaro-1", "chanel-1", "paco-rabanne-1",
-  "nautica-1", "brut-1", "ysl-1", "chanel-2", "gucci-1", "dior-3",
+  "nautica-1", "ysl-1", "chanel-2", "gucci-1", "dior-3",
   "calvin-klein-1", "chanel-3", "gucci-2", "jo-malone-2", "marc-jacobs-1",
   "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1", "jean-paul-gaultier-1",
   "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
 ]);
 const FOURTH_BATCH_SLUGS = new Set([
-  "dior-5", "paco-rabanne-2", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
+  "dior-5", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
   "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "john-varvatos-1", "montblanc-2",
   "jo-malone-4", "hugo-boss-1", "dior-7", "aramis-1", "chanel-5", "chanel-6", "narciso-rodriguez-1",
   "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",

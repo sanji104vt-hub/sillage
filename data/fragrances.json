@@ -467,65 +467,6 @@
       "updatedAt": "2026-07-18"
     },
     {
-      "slug": "atelier-cologne-1",
-      "brand": "Atelier Cologne",
-      "name": "オランジュ サングィン",
-      "gender": "unisex",
-      "family": "citrus",
-      "top": "ブラッドオレンジ",
-      "mid": "ジャスミン",
-      "last": "サンダルウッド",
-      "seasons": [
-        "spring",
-        "summer"
-      ],
-      "scenes": [
-        "daily",
-        "date"
-      ],
-      "priceTier": "high",
-      "price": "¥20,000前後",
-      "releaseYear": 2010,
-      "verdict": "果汁したたるブラッドオレンジ。甘さと苦味のバランスがよく、シトラスの中でも色気がある。",
-      "purchaseLinks": {
-        "official": null,
-        "amazon": null,
-        "rakuten": null
-      },
-      "recommendedFor": [
-        {
-          "text": "ブラッドオレンジの果実感を主役にしたい人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春夏の休日やデートに明るいシトラスを選びたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "ドライな樹木香や重いアンバーを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "現行のブランド公式商品ページを確認できないため、販売状況は購入先で確認してください。"
-      ],
-      "sources": [],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18",
-      "concentration": null,
-      "sizes": []
-    },
-    {
       "slug": "guerlain-1",
       "brand": "Guerlain",
       "name": "オー インペリアル",
@@ -611,64 +552,6 @@
         "youthfulToMature": null,
         "method": "editorial-v1"
       },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "muji-1",
-      "brand": "無印良品",
-      "name": "オードトワレ シトラス",
-      "gender": "unisex",
-      "family": "citrus",
-      "top": "オレンジ・レモン",
-      "mid": "グレープフルーツ",
-      "last": "ライム",
-      "seasons": [
-        "summer",
-        "spring"
-      ],
-      "scenes": [
-        "daily",
-        "sports"
-      ],
-      "priceTier": "petit",
-      "price": "¥1,990前後",
-      "verdict": "果汁そのままの直球シトラス。香水然としない素朴さで、職場でも気を遣わせない普段使い。",
-      "concentration": null,
-      "sizes": [],
-      "recommendedFor": [
-        {
-          "text": "軽いシトラス系を普段使いしたい人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春夏のデイリー用を探している人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "甘く重厚な香りを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "現行の公式商品ページを特定できなかったため、販売状況は掲載していません"
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "purchaseLinks": {
-        "official": null,
-        "amazon": null,
-        "rakuten": null
-      },
-      "sources": [],
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
     },
@@ -1454,64 +1337,6 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "brut-1",
-      "brand": "Brut",
-      "name": "クラシック",
-      "gender": "men",
-      "family": "aromatic",
-      "top": "シトラス・アニス",
-      "mid": "ラベンダー・ゼラニウム",
-      "last": "ムスク・サンダルウッド",
-      "seasons": [
-        "autumn",
-        "spring"
-      ],
-      "scenes": [
-        "daily"
-      ],
-      "priceTier": "petit",
-      "price": "¥1,500前後",
-      "releaseYear": 1964,
-      "verdict": "1964年から続く昔ながらのフゼア。レトロで飾らない清潔感が、かえって今は新鮮。",
-      "purchaseLinks": {
-        "official": null,
-        "amazon": null,
-        "rakuten": null
-      },
-      "recommendedFor": [
-        {
-          "text": "ラベンダーとゼラニウムのレトロなフゼアを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春秋の日常で飾らない清潔感を出したい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "透明感のある現代的なアクア系を求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "現行のブランド公式商品ページを確認できないため、販売状況は購入先で確認してください。"
-      ],
-      "sources": [],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18",
-      "concentration": null,
-      "sizes": []
     },
     {
       "slug": "guerlain-2",
@@ -4131,65 +3956,6 @@
           "sourceType": "official"
         }
       ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "paco-rabanne-2",
-      "brand": "Paco Rabanne",
-      "name": "1 ミリオン",
-      "gender": "men",
-      "family": "amber",
-      "top": "グレープフルーツ・ミント",
-      "mid": "ローズ・シナモン",
-      "last": "レザー・アンバー",
-      "seasons": [
-        "autumn",
-        "winter"
-      ],
-      "scenes": [
-        "date",
-        "daily"
-      ],
-      "priceTier": "mid",
-      "price": "¥7,000前後",
-      "releaseYear": 2008,
-      "verdict": "金塊型ボトルの華やかな甘さ。わかりやすく目立つ、若い世代の夜遊び向け定番。",
-      "purchaseLinks": {
-        "official": null,
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": null,
-      "sizes": [],
-      "recommendedFor": [
-        {
-          "text": "ミントとシナモンにレザーが重なる甘い香りを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "秋冬の休日やデートで華やかなアンバー香を使いたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "甘さを抑えた透明感のある香りを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "現行のブランド公式商品ページを確認できないため、濃度・容量・公式購入先は掲載していません。"
-      ],
-      "sources": [],
       "profile": {
         "lightToRich": null,
         "freshToSweet": null,

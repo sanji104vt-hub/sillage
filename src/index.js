@@ -27,6 +27,18 @@ export default {
       "/items/issey-miyake-1.html",
       "/brand-givenchy.html",
       "/brand-issey-miyake.html",
+      // 2026-07-30 追加：楽天・公式どちらの購入リンクも無い4商品と、それに伴い掲載0本になった3ブランド。
+      "/items/atelier-cologne-1",
+      "/items/atelier-cologne-1.html",
+      "/items/muji-1",
+      "/items/muji-1.html",
+      "/items/brut-1",
+      "/items/brut-1.html",
+      "/items/paco-rabanne-2",
+      "/items/paco-rabanne-2.html",
+      "/brand-atelier-cologne.html",
+      "/brand-muji.html",
+      "/brand-brut.html",
     ]);
     if (GONE.has(path.replace(/\/$/, "") || path)) {
       return new Response(

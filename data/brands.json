@@ -238,20 +238,6 @@
     "desc": "北海道砂川市発。サボンで清潔感の代名詞となり、国内で熱い支持を集める。"
   },
   {
-    "name": "無印良品",
-    "country": "JP",
-    "founded": 1980,
-    "tier": "petit",
-    "desc": "日本の生活ブランド。香水でも素朴で気取らない実用性が魅力。"
-  },
-  {
-    "name": "Atelier Cologne",
-    "country": "FR",
-    "founded": 2009,
-    "tier": "luxury",
-    "desc": "パリ発のコロン専門メゾン。柑橘を主役にした明るく上質な香りを展開。"
-  },
-  {
     "name": "Montblanc",
     "country": "DE",
     "founded": 1906,
@@ -292,13 +278,6 @@
     "founded": 1964,
     "tier": "midrange",
     "desc": "エスティ ローダー傘下のメンズ専業。クラシックなレザーシプレで貫禄を出す。"
-  },
-  {
-    "name": "Brut",
-    "country": "US",
-    "founded": 1964,
-    "tier": "petit",
-    "desc": "レトロな緑色ボトルで知られる米国の古典ブランド。手頃なフゼアの代名詞。"
   },
   {
     "name": "Dunhill",

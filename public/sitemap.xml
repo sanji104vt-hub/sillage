@@ -46,15 +46,12 @@
   <url><loc>https://sillage.asutelu.com/brand-ck.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-davidoff.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-shiro.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://sillage.asutelu.com/brand-muji.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://sillage.asutelu.com/brand-atelier-cologne.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-montblanc.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-marc-jacobs.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-narciso-rodriguez.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-glossier.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-nautica.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-aramis.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://sillage.asutelu.com/brand-brut.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-dunhill.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/brand-john-varvatos.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://sillage.asutelu.com/items/jo-malone-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -62,9 +59,7 @@
   <url><loc>https://sillage.asutelu.com/items/dior-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/hermes-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/4711-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://sillage.asutelu.com/items/atelier-cologne-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/guerlain-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://sillage.asutelu.com/items/muji-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/dolce-gabbana-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/hermes-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/dior-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -74,7 +69,6 @@
   <url><loc>https://sillage.asutelu.com/items/chanel-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/paco-rabanne-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/nautica-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://sillage.asutelu.com/items/brut-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/guerlain-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/ysl-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/chanel-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
@@ -103,7 +97,6 @@
   <url><loc>https://sillage.asutelu.com/items/parfums-de-marly-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/maison-margiela-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/dior-5</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://sillage.asutelu.com/items/paco-rabanne-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/bvlgari-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/ysl-4</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/viktor-rolf-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
