@@ -23,7 +23,9 @@ const targetSlugs = [
   "perfume-decanting",
 ];
 
-if (files.length !== 33) errors.push(`記事数が33件ではありません: ${files.length}`);
+// 記事数はディレクトリ実数に追従する（新規記事追加時に固定値エラーで止めないため）。
+// 最低本数だけを担保して、意図せず削除されたときにだけ検知する。
+if (files.length < 33) errors.push(`記事数が最低33件を下回っています: ${files.length}`);
 for (const forbidden of ["why-cant-smell-perfume.html", "perfume-atomizer.html"]) {
   if (existsSync(join(COLUMN_DIR, forbidden))) errors.push(`重複する検索意図の記事が生成されています: ${forbidden}`);
 }

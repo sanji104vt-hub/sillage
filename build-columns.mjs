@@ -277,7 +277,26 @@ const articles = [
   },
 ];
 
-const allArticles = [...articles, ...PROBLEM_ARTICLES, ...BEGINNER_ARTICLES].map(applyColumnTaxonomy);
+// このスクリプトの articles 配列は「visual/takeaways/table/choices/faq/brands/featured」を
+// 前提とする定型スキーマで書かれている。京都香水店ガイドのような地域ガイド記事は
+// その枠に収まらないため、外部で author した静的HTMLを public/columns/ に直接置き、
+// メタデータだけをここに登録して guides.html のカテゴリインデックスと ItemList schema
+// にだけ含める（renderArticle は呼ばず、既存の静的HTMLを上書きしない）。
+const EXTERNAL_COLUMNS = [
+  {
+    slug: "kyoto-fragrance-shops",
+    external: true,
+    category: "scene",
+    tag: "KYOTO GUIDE",
+    title: "京都で香水を選ぶ：デパートから町屋、寺町までの17店ガイド",
+    description: "京都の香水店17店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。",
+  },
+];
+const allArticles = [
+  ...articles,
+  ...PROBLEM_ARTICLES,
+  ...BEGINNER_ARTICLES,
+].map(applyColumnTaxonomy).concat(EXTERNAL_COLUMNS);
 
 const esc = (s="") => String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");
 
@@ -481,6 +500,8 @@ function renderGuideIndex() {
 }
 
 for (const article of allArticles) {
+  // 外部で author した記事は既に public/columns/ に配置済み。上書きしない。
+  if (article.external) continue;
   const html = renderArticle(article, allArticles).replace(/[ \t]+\n/g, "\n");
   writeFileSync(join(OUT, `${article.slug}.html`), html);
 }
