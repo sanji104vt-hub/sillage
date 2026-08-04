@@ -50,6 +50,7 @@ const BRAND_SLUG = {
   "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
   "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
+  "Ralph Lauren": "ralph-lauren",
 };
 
 const escape = (s) =>

@@ -19,6 +19,7 @@ const FOURTH_BATCH_SLUGS = new Set([
 ]);
 const FIFTH_BATCH_SLUGS = new Set([
   "loewe-1", "loewe-2", "loewe-3", "loewe-4",
+  "ralph-lauren-1", "ralph-lauren-2", "ralph-lauren-3", "ralph-lauren-4", "ralph-lauren-5", "ralph-lauren-6",
 ]);
 const REQUEST_DELAY_MS = 450;
 const RETRY_DELAY_MS = 1600;

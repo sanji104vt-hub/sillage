@@ -33,6 +33,8 @@ const FOURTH_BATCH_SLUGS = new Set([
 const FIFTH_BATCH_SLUGS = new Set([
   // 2026-08-04 追加：Loewe 4商品(001マン/エセンシア/アグア エル クラシコ/アグア ドロップ)
   "loewe-1", "loewe-2", "loewe-3", "loewe-4",
+  // 2026-08-04 追加：Ralph Lauren 6商品(Safari/Polo/Polo Blue/Polo Red/Ralph's Club EDP/Parfum)
+  "ralph-lauren-1", "ralph-lauren-2", "ralph-lauren-3", "ralph-lauren-4", "ralph-lauren-5", "ralph-lauren-6",
 ]);
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
