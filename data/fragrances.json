@@ -8547,6 +8547,239 @@
       ],
       "verifiedAt": "2026-08-04",
       "updatedAt": "2026-08-04"
+    },
+    {
+      "slug": "lacoste-l1212-blanc-edt-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン EDT 50mL",
+      "gender": "men",
+      "family": "woody",
+      "top": "グレープフルーツ・カルダモン",
+      "mid": "チュベローズ・イランイラン",
+      "last": "ベチバー・スエード",
+      "seasons": [],
+      "scenes": [],
+      "verdict": "グレープフルーツとカルダモンから、ベチバーとスエードへ続くウッディアロマティック。",
+      "img": "/img/products/lacoste-l1212-blanc-edt-50.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC001A02-000.html"
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [
+        "公式確認先は海外サイトです。日本国内の公式価格は掲載していません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": null
+      },
+      "affiliateOfferKey": "lacoste-l1212-blanc-edt-50",
+      "sources": [
+        {
+          "url": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC001A02-000.html",
+          "publisher": "Lacoste",
+          "title": "L.12.12 Blanc Eau de Toilette 50 ml",
+          "accessedAt": "2026-08-05",
+          "sourceType": "official",
+          "market": "OTHER",
+          "supports": ["concentration", "sizes", "notes"]
+        }
+      ],
+      "verifiedAt": "2026-08-05",
+      "updatedAt": "2026-08-05"
+    },
+    {
+      "slug": "lacoste-l1212-blanc-edp-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン EDP 50mL",
+      "gender": "men",
+      "family": "woody",
+      "top": "フィンガーライム・カルダモン",
+      "mid": "パイン・ユーカリ",
+      "last": "シダーウッド・バルサムファー",
+      "seasons": [],
+      "scenes": [],
+      "verdict": "フィンガーライムとカルダモンに、パイン、ユーカリ、シダーウッドが重なるウッディアロマティック。",
+      "img": "/img/products/lacoste-l1212-blanc-edp-50.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC002A02.html"
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [
+        "公式確認先は海外サイトです。日本国内の公式価格は掲載していません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": null
+      },
+      "affiliateOfferKey": "lacoste-l1212-blanc-edp-50",
+      "sources": [
+        {
+          "url": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC002A02.html",
+          "publisher": "Lacoste",
+          "title": "L.12.12 Blanc Eau de Parfum 50 ml",
+          "accessedAt": "2026-08-05",
+          "sourceType": "official",
+          "market": "OTHER",
+          "supports": ["concentration", "sizes", "notes"]
+        }
+      ],
+      "verifiedAt": "2026-08-05",
+      "updatedAt": "2026-08-05"
+    },
+    {
+      "slug": "lacoste-l1212-blanc-eau-fraiche-edt-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン オーフレッシュ EDT 50mL",
+      "gender": "men",
+      "family": "woody",
+      "top": "ジンジャー・グレープフルーツ・レモン",
+      "mid": "アップル・ジュニパー・ラバンディン",
+      "last": "ベチバー・シダーウッド・アンブロフィックス",
+      "seasons": [],
+      "scenes": [],
+      "verdict": "ジンジャー、グレープフルーツ、レモンから、ラバンディンとシダーウッドへ続くウッディアロマティック。",
+      "img": "/img/products/lacoste-l1212-blanc-eau-fraiche-edt-50.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/dk/lacoste/men/accessories/fragrance/LC003A02-000.html"
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [
+        "公式確認先は海外サイトです。日本国内の公式価格は掲載していません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": null
+      },
+      "affiliateOfferKey": "lacoste-l1212-blanc-eau-fraiche-edt-50",
+      "sources": [
+        {
+          "url": "https://www.lacoste.com/dk/lacoste/men/accessories/fragrance/LC003A02-000.html",
+          "publisher": "Lacoste",
+          "title": "L.12.12 Blanc Eau Fraîche 50 ml",
+          "accessedAt": "2026-08-05",
+          "sourceType": "official",
+          "market": "OTHER",
+          "supports": ["concentration", "sizes"]
+        },
+        {
+          "url": "https://www.lacoste.com/ca/en/lacoste/men/accessories/fragrance/99350108114.html",
+          "publisher": "Lacoste",
+          "title": "L.12.12 Blanc Eau Fraîche",
+          "accessedAt": "2026-08-05",
+          "sourceType": "official",
+          "market": "OTHER",
+          "supports": ["notes"]
+        }
+      ],
+      "verifiedAt": "2026-08-05",
+      "updatedAt": "2026-08-05"
+    },
+    {
+      "slug": "lacoste-l1212-blanc-eau-intense-edt-100",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン オーインテンス EDT 100mL",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "カルダモン・マンダリン",
+      "mid": "ラバンディン・セージ",
+      "last": "ホワイトレザー・サンダルウッド",
+      "seasons": [],
+      "scenes": [],
+      "verdict": "カルダモンとマンダリンに、ラバンディン、ホワイトレザー、サンダルウッドが重なるフゼアレザー。",
+      "img": "/img/products/lacoste-l1212-blanc-eau-intense-edt-100.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lacoste.com/id/en/sport/l.12.12-blanc-eau-intense-100ml/0100-LACLC004A01.html"
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [
+        "公式確認先は海外サイトです。日本国内の公式価格は掲載していません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": null
+      },
+      "affiliateOfferKey": "lacoste-l1212-blanc-eau-intense-edt-100",
+      "sources": [
+        {
+          "url": "https://www.lacoste.com/id/en/sport/l.12.12-blanc-eau-intense-100ml/0100-LACLC004A01.html",
+          "publisher": "Lacoste",
+          "title": "L.12.12 Blanc Eau Intense 100 ml",
+          "accessedAt": "2026-08-05",
+          "sourceType": "official",
+          "market": "OTHER",
+          "supports": ["concentration", "sizes", "notes"]
+        }
+      ],
+      "verifiedAt": "2026-08-05",
+      "updatedAt": "2026-08-05"
     }
   ]
 }

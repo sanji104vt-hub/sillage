@@ -51,6 +51,7 @@ const BRAND_SLUG = {
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
   "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
   "Ralph Lauren": "ralph-lauren",
+  "Lacoste": "lacoste",
 };
 
 const escape = (s) =>

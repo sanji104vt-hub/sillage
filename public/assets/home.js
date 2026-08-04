@@ -227,9 +227,9 @@ function card(p){
         </div>
       </div>
       <p class="verdict" style="border-left-color:${c}"><span class="vlabel">Sillage の見立て</span>${p.verdict}</p>
-      <div class="card-foot">
-        <span class="price"><span class="price-label">参考価格</span>${p.price}<span class="tier">${PRICE[p.priceTier]}</span></span>
-      </div>
+      ${(p.price||p.priceTier)?`<div class="card-foot">
+        <span class="price">${p.price?`<span class="price-label">参考価格</span>${p.price}`:""}${p.priceTier?`<span class="tier">${PRICE[p.priceTier]}</span>`:""}</span>
+      </div>`:""}
       <div class="card-actions">
         ${p.slug?`<a class="item-link" href="/items/${p.slug}">香りを詳しく見る</a>`:""}
         ${buyButtons}

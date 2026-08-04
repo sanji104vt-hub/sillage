@@ -9,6 +9,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
+import { MOSHIMO_AFFILIATE_OFFERS } from "./data/moshimo-affiliate-offers.mjs";
 
 const homeScript = readFileSync("public/assets/home.js", "utf8");
 const SITE_COPY = loadSiteCopy();
@@ -63,6 +64,7 @@ const BRAND_SLUG = {
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
   "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
   "Ralph Lauren": "ralph-lauren",
+  "Lacoste": "lacoste",
 };
 
 const itemsWithSlug = PERFUMES;
@@ -200,6 +202,8 @@ function pageHTML(p, related, competitors, trial) {
   const officialUrl = p.purchaseLinks?.official?.url || "";
   const amazonUrl = p.purchaseLinks?.amazon?.url || "";
   const rakutenUrl = p.purchaseLinks?.rakuten?.url || "";
+  const moshimoOffer = p.affiliateOfferKey ? MOSHIMO_AFFILIATE_OFFERS[p.affiliateOfferKey] : null;
+  if (p.affiliateOfferKey && !moshimoOffer) throw new Error(`もしも広告が見つかりません: ${p.slug}`);
   const purchaseLabel = (link, shop) => !TYPED_PURCHASE_LABEL_SLUGS.has(p.slug)
     ? `${shop}で確認`
     : link?.type === "search" ? `${shop}で検索` : link?.type === "product" ? `${shop}で商品を見る` : `${shop}で確認`;
@@ -209,6 +213,7 @@ function pageHTML(p, related, competitors, trial) {
     rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
+  const hasPurchase = Boolean(purchaseButtons || moshimoOffer);
   const sizeSummary = formatSizes(p.sizes);
   const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
@@ -376,10 +381,10 @@ article{max-width:1060px}
 .compare-card dl{display:grid;gap:5px}.compare-card dl div{display:grid;grid-template-columns:55px 1fr;font-size:12px}.compare-card dt{color:#77787e}.compare-card dd{color:#bbb8b2}.compare-label{display:inline-block;margin-top:14px;padding:5px 9px;background:#191a1d;color:#c9b558;font-size:11px}.detail-link{display:inline-block;margin-top:18px;color:#cfcdca;text-decoration:none;border-bottom:1px solid #55565b;font-family:"Cormorant",serif;font-style:italic;font-size:15px}
 .direct-list{display:grid;gap:42px}.direct-pair{border-top:1px solid #3a3b40;padding-top:22px}.direct-relation{font-size:11px;letter-spacing:1.1px;color:#8c8c92}.direct-title{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:14px;align-items:center;margin:9px 0 22px;font-family:"Shippori Mincho",serif;font-size:clamp(17px,2.4vw,23px);font-weight:500;line-height:1.45}.direct-title span,.direct-title a{overflow-wrap:anywhere}.direct-title a{color:#f0eeea;text-decoration:none}.direct-title a:hover{text-decoration:underline}.direct-title i{font:italic 14px "Cormorant",serif;color:#77787e}.direct-table{width:100%;table-layout:fixed;border-collapse:collapse}.direct-table th,.direct-table td{padding:11px 12px;border-bottom:1px solid #2a2b30;text-align:left;vertical-align:top;overflow-wrap:anywhere}.direct-table thead th{font:500 12px "Shippori Mincho",serif;color:#e8e5df}.direct-table thead th:first-child{width:94px;color:#77787e}.direct-table thead small{display:block;margin-top:3px;font:11px "Zen Kaku Gothic New",sans-serif;color:#8c8c92}.direct-table tbody th{font-size:11px;color:#8c8c92}.direct-table tbody td{font-size:12.5px;line-height:1.72;color:#cfccc6}.direct-choice{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:18px}.direct-choice p{border-left:2px solid #55565b;padding:8px 11px;background:#141517}.direct-choice b,.direct-choice span{display:block}.direct-choice b{font-size:11px;color:#d9d6d0}.direct-choice span{font-size:11px;color:#c9b558;margin-top:3px}.compare-method{font-size:11px;color:#77787e;line-height:1.8;margin:-8px 0 24px}
 .trial-intro{max-width:720px;color:#c9c6c0;font-size:13.5px;line-height:1.9}.trial-facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin:20px 0 26px;padding:15px 0;border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.trial-facts div{display:flex;gap:8px}.trial-facts dt{font-size:11px;color:#77787e}.trial-facts dd{font-size:11px;color:#d7d4ce}.trial-observations{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}.trial-observations div{border-top:2px solid #4e4f54;padding-top:12px;min-width:0}.trial-observations dt{font-family:"Cormorant",serif;font-style:italic;color:#a5a6ab;font-size:13px}.trial-observations dd{margin-top:7px;font-size:12.5px;color:#d8d5cf;line-height:1.8;overflow-wrap:anywhere}.trial-preference{margin-top:24px;padding-left:16px;border-left:2px solid #c9b558;color:#dedbd5;font-size:13.5px;line-height:1.9}.trial-preference b{display:block;margin-bottom:4px;font-size:10.5px;letter-spacing:1px;color:#c9b558}.trial-disclaimer{margin-top:14px;color:#77787e;font-size:10.5px;line-height:1.75}
-.journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}
+.journey-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 28px}.journey-links a{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:52px;border-bottom:1px solid #242529;color:#d5d2cc;text-decoration:none;font-size:13.5px}.journey-links a:hover{color:#fff}.purchase-bottom{padding:28px;background:#141517;border-left:3px solid ${famColor}}.purchase-bottom h2{margin-bottom:10px}.purchase-bottom .actions{margin:16px 0 0}${moshimoOffer ? `.moshimo-offer{margin-top:16px;padding:18px;border:1px solid #303137;background:#0f1012;overflow:hidden}.moshimo-offer-label{font:italic 13px "Cormorant",serif;color:#c9b558;margin-bottom:10px}.moshimo-offer a{display:block;min-height:128px;color:#e1ded8;text-decoration:none;font-size:13px;line-height:1.75;overflow-wrap:anywhere}.moshimo-offer a:hover{text-decoration:underline}.moshimo-offer a>img{float:left;width:128px;height:128px;object-fit:contain;margin:0 16px 6px 0;background:#fff}.moshimo-offer a::after{content:"";display:block;clear:both}` : ""}
 .buy-official{background:transparent;color:#e9e7e3;border:1px solid #67686e}.sources details{border-top:1px solid #2c2d31;border-bottom:1px solid #2c2d31}.sources summary{cursor:pointer;min-height:52px;display:flex;align-items:center;color:#d8d5cf;font-size:14px}.sources summary::marker{color:#8c8c92}.source-list{list-style:none;padding:4px 0 18px;display:grid;gap:15px}.source-list li{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;align-items:start}.source-type{font-size:10px;letter-spacing:1px;border:1px solid #3a3b40;padding:2px 7px;color:#aeb0b6}.source-list a{color:#d8d5cf;text-decoration:none;font-size:13px;overflow-wrap:anywhere}.source-list a:hover{text-decoration:underline}.source-date{grid-column:2;font-size:10.5px;color:#77787e}
 @media(max-width:767px){article{padding-top:30px}.product-hero{grid-template-columns:1fr;gap:30px;margin-bottom:40px}.product-visual{order:2}.product-copy{order:1}.product-visual .photo-hybrid{max-width:330px;margin:0 auto}.hero-facts{grid-template-columns:1fr 1fr}.decision{grid-template-columns:1fr}.scent-timeline{grid-template-columns:1fr;gap:24px}.scent-timeline::before{top:4px;bottom:4px;left:4px;right:auto;width:1px;height:auto}.note-stage,.note-stage+.note-stage{padding:0 0 0 27px}.note-dot{position:absolute;left:0;top:0;margin:8px 0}.usage-groups,.compare-grid,.journey-links{grid-template-columns:1fr}.compare-grid{gap:30px}.direct-title{gap:9px}.direct-table th,.direct-table td{padding:9px 7px}.direct-table thead th:first-child{width:65px}.direct-choice{grid-template-columns:1fr}.trial-observations{grid-template-columns:1fr}.purchase-bottom{padding:24px 18px}.buy{width:100%}}
-@media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}}
+@media(max-width:420px){.hero-facts{grid-template-columns:1fr}.pr-tag{font-size:9.5px;padding:4px 8px}.product-copy h1{font-size:28px}${moshimoOffer ? `.moshimo-offer{padding:14px}.moshimo-offer a{min-height:96px;font-size:12px}.moshimo-offer a>img{width:96px;height:96px;margin-right:12px}` : ""}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
@@ -407,7 +412,7 @@ article{max-width:1060px}
         ${p.price && !(p.sizes || []).some((size) => size.referencePriceYen) ? `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>` : !p.price && priceTier ? `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>` : ""}
         ${p.releaseYear ? `<div><dt>発売年</dt><dd>${p.releaseYear}年</dd></div>` : ""}
       </dl>
-      ${purchaseButtons ? `${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p>` : ""}<div class="actions hero-actions">${purchaseButtons}</div>` : ""}
+      ${purchaseButtons ? `${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p>` : ""}<div class="actions hero-actions">${purchaseButtons}</div>` : moshimoOffer ? `<p class="ad-note">PR：楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="brand-link" href="#purchase-title">楽天市場の購入先を見る</a></div>` : ""}
       ${p.updatedAt ? `<p class="updated">データ更新日：${escape(formatDate(p.updatedAt))}</p>` : ""}
       ${p.verifiedAt ? `<p class="updated">情報確認日：${escape(formatDate(p.verifiedAt))}</p>` : ""}
     </div>
@@ -485,7 +490,7 @@ article{max-width:1060px}
 
   ${sourceItems ? `<section class="section sources" aria-labelledby="sources-title"><p class="section-kicker">References</p><h2 id="sources-title">情報源</h2><details><summary>確認した情報源を表示する</summary><ul class="source-list">${sourceItems}</ul></details></section>` : ""}
 
-  ${purchaseButtons ? `<section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2>${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p>` : `<p class="ad-note">価格や在庫は公式サイトで最新情報をご確認ください。</p>`}<div class="actions">${purchaseButtons}</div></section>` : ""}
+  ${hasPurchase ? `<section class="section purchase-bottom" aria-labelledby="purchase-title"><p class="section-kicker">Purchase</p><h2 id="purchase-title">購入前に販売状況を確認する</h2>${(hasSponsoredPurchase || moshimoOffer) ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクはアフィリエイト広告です。価格や在庫は販売先で最新情報をご確認ください。</p>` : `<p class="ad-note">価格や在庫は公式サイトで最新情報をご確認ください。</p>`}${purchaseButtons ? `<div class="actions">${purchaseButtons}</div>` : ""}${moshimoOffer ? `<div class="moshimo-offer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}"><p class="moshimo-offer-label">楽天市場 ／ ${escape(moshimoOffer.label)}</p>${moshimoOffer.html}</div>` : ""}</section>` : ""}
   <a class="backhome" href="/#fragrances">← 香水一覧へ戻る</a>
 </article>
 <footer>
@@ -494,13 +499,14 @@ article{max-width:1060px}
 </footer>
 <script>
 document.addEventListener("click",function(event){
-  const link=event.target.closest("a[data-purchase-shop]");
+  const link=event.target.closest("${moshimoOffer ? "a[data-purchase-shop],.moshimo-offer a[href*='af.moshimo.com']" : "a[data-purchase-shop]"}");
   if(!link)return;
-  const position=link.closest(".hero-actions")?"hero":"bottom";
+${moshimoOffer ? `  const offer=link.closest(".moshimo-offer");
+` : ""}  const position=link.closest(".hero-actions")?"hero":"bottom";
   if(typeof window.gtag==="function"){
     window.gtag("event","purchase_link_click",{
-      product_id:link.dataset.productId,
-      purchase_shop:link.dataset.purchaseShop,
+      product_id:${moshimoOffer ? "link.dataset.productId||offer?.dataset.productId" : "link.dataset.productId"},
+      purchase_shop:${moshimoOffer ? "link.dataset.purchaseShop||offer?.dataset.purchaseShop" : "link.dataset.purchaseShop"},
       button_position:position,
       destination_url:link.href,
       transport_type:"beacon"

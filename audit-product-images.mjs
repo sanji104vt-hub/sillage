@@ -8,7 +8,7 @@
 //
 // 判定方針（Sillageでの「画像あり」の定義）:
 //   実写の商品画像が実際に表示される状態のみを「画像あり」とする。
-//   img が自ドメインの意匠画像(/img/products/*.png)を指す商品は「実写なし」に数える。
+//   img が自ドメインの意匠画像(/img/products/*)を指す商品は「実写なし」に数える。
 import { existsSync, readFileSync } from "node:fs";
 import { loadFragrances } from "./lib/fragrance-data.mjs";
 
@@ -56,7 +56,10 @@ await Promise.all(
 results.sort((a, b) => a.slug.localeCompare(b.slug));
 
 const broken = results.filter((result) => !result.ok);
-const missingFallback = fragrances.filter((item) => !existsSync(`public/img/products/${item.slug}.png`));
+const fallbackPath = (item) => String(item.img || "").startsWith("/img/products/")
+  ? `public${item.img}`
+  : `public/img/products/${item.slug}.png`;
+const missingFallback = fragrances.filter((item) => !existsSync(fallbackPath(item)));
 
 console.log(`商品総数: ${fragrances.length}`);
 console.log(`実写URL登録あり: ${external.length}`);
@@ -72,7 +75,7 @@ if (broken.length) {
 }
 if (missingFallback.length) {
   console.error("\n意匠画像（フォールバック）が存在しない商品:");
-  for (const item of missingFallback) console.error(`- ${item.slug}: public/img/products/${item.slug}.png`);
+  for (const item of missingFallback) console.error(`- ${item.slug}: ${fallbackPath(item)}`);
 }
 
 if (broken.length || missingFallback.length) {

@@ -35,6 +35,9 @@ const FIFTH_BATCH_SLUGS = new Set([
   "loewe-1", "loewe-2", "loewe-3", "loewe-4",
   // 2026-08-04 追加：Ralph Lauren 6商品(Safari/Polo/Polo Blue/Polo Red/Ralph's Club EDP/Parfum)
   "ralph-lauren-1", "ralph-lauren-2", "ralph-lauren-3", "ralph-lauren-4", "ralph-lauren-5", "ralph-lauren-6",
+  // 2026-08-05 追加：Lacoste L.12.12 Blanc 4商品
+  "lacoste-l1212-blanc-edt-50", "lacoste-l1212-blanc-edp-50",
+  "lacoste-l1212-blanc-eau-fraiche-edt-50", "lacoste-l1212-blanc-eau-intense-edt-100",
 ]);
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
@@ -42,7 +45,9 @@ const ENRICHMENT_FIELDS = [
   "profile", "sources", "verifiedAt", "updatedAt",
 ];
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
-const today = new Date().toISOString().slice(0, 10);
+const today = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit",
+}).format(new Date());
 const hasOwn = (object, key) => Object.prototype.hasOwnProperty.call(object, key);
 function validUrl(value) {
   try {
@@ -167,7 +172,7 @@ fragrances.forEach((item, index) => {
   if (!item.last) missing["ラストノートなし"]++;
   if (!item.scenes?.length) missing["シーンなし"]++;
   if (!item.seasons?.length) missing["季節なし"]++;
-  if (!Object.values(item.purchaseLinks || {}).some(Boolean)) missing["購入リンクなし"]++;
+  if (!Object.values(item.purchaseLinks || {}).some(Boolean) && !item.affiliateOfferKey) missing["購入リンクなし"]++;
   if (Object.hasOwn(item, "rakuten")) errors.push(`旧rakutenフィールドが残っています: ${slug}`);
 
   const path = `public/items/${slug}.html`;
@@ -200,8 +205,8 @@ fragrances.forEach((item, index) => {
   if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);
   if (isEnriched && !html.includes(`情報確認日：${Number(item.verifiedAt.slice(0, 4))}年`)) errors.push(`情報確認日表示なし: ${path}`);
   if (!isEnriched && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
-  const localImagePath = `public/img/products/${slug}.png`;
-  const localImageUrl = `/img/products/${slug}.png`;
+  const localImageUrl = String(item.img || "").startsWith("/img/products/") ? item.img : `/img/products/${slug}.png`;
+  const localImagePath = `public${localImageUrl}`;
   // 実写＋意匠のハイブリッド: 実写(楽天CDN)を表示し、意匠画像はonerrorの保険として必ず残す。
   if (!existsSync(localImagePath)) errors.push(`自ドメイン商品画像なし: ${localImagePath}`);
   if (!html.includes(localImageUrl)) errors.push(`意匠画像への参照なし: ${path}`);

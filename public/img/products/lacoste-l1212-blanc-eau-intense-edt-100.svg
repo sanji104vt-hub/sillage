@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Lacoste L.12.12 Blanc Eau Intense EDT 100mL</title>
+  <desc id="desc">商品識別用のSillage編集画像</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4f2eb"/><stop offset="1" stop-color="#d9d4c8"/></linearGradient></defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+  <rect x="210" y="130" width="380" height="540" rx="18" fill="#f1efe7" stroke="#afa99d" stroke-width="3"/>
+  <rect x="316" y="75" width="168" height="66" rx="8" fill="#cfcac0" stroke="#afa99d" stroke-width="3"/>
+  <path d="M250 560C342 508 460 505 550 560" fill="none" stroke="#9b7f6a" stroke-width="3"/>
+  <text x="400" y="286" text-anchor="middle" fill="#2a211c" font-family="Georgia,serif" font-size="31" letter-spacing="3">LACOSTE</text>
+  <text x="400" y="351" text-anchor="middle" fill="#47362d" font-family="Arial,sans-serif" font-size="46" font-weight="700">L.12.12</text>
+  <text x="400" y="398" text-anchor="middle" fill="#624a3c" font-family="Arial,sans-serif" font-size="23" letter-spacing="7">BLANC</text>
+  <text x="400" y="448" text-anchor="middle" fill="#765848" font-family="Arial,sans-serif" font-size="19" letter-spacing="3">EAU INTENSE</text>
+  <text x="400" y="486" text-anchor="middle" fill="#765f52" font-family="Arial,sans-serif" font-size="16" letter-spacing="2">EAU DE TOILETTE</text>
+  <text x="400" y="610" text-anchor="middle" fill="#716359" font-family="Arial,sans-serif" font-size="17">100 mL</text>
+  <text x="400" y="724" text-anchor="middle" fill="#80776f" font-family="Arial,sans-serif" font-size="13" letter-spacing="3">SILLAGE EDITORIAL IMAGE</text>
+</svg>
