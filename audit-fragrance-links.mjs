@@ -17,6 +17,9 @@ const FOURTH_BATCH_SLUGS = new Set([
   "jo-malone-4", "hugo-boss-1", "dior-7", "givenchy-1", "aramis-1", "chanel-5", "ysl-5", "chanel-6", "narciso-rodriguez-1",
   "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
 ]);
+const FIFTH_BATCH_SLUGS = new Set([
+  "loewe-1", "loewe-2", "loewe-3", "loewe-4",
+]);
 const REQUEST_DELAY_MS = 450;
 const RETRY_DELAY_MS = 1600;
 const TIMEOUT_MS = 12000;

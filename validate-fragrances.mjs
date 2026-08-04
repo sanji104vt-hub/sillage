@@ -30,7 +30,11 @@ const FOURTH_BATCH_SLUGS = new Set([
   "jo-malone-4", "hugo-boss-1", "dior-7", "aramis-1", "chanel-5", "chanel-6", "narciso-rodriguez-1",
   "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS]);
+const FIFTH_BATCH_SLUGS = new Set([
+  // 2026-08-04 追加：Loewe 4商品(001マン/エセンシア/アグア エル クラシコ/アグア ドロップ)
+  "loewe-1", "loewe-2", "loewe-3", "loewe-4",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

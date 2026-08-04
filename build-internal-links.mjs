@@ -49,7 +49,7 @@ const BRAND_SLUG = {
   "Creed": "creed", "Le Labo": "le-labo", "Diptyque": "diptyque", "Byredo": "byredo",
   "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
-  "Aesop": "aesop", "Davidoff": "davidoff",
+  "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
 };
 
 const escape = (s) =>

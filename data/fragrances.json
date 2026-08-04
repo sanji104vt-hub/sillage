@@ -7706,6 +7706,343 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
+    },
+    {
+      "slug": "loewe-1",
+      "brand": "Loewe",
+      "name": "001 マン",
+      "gender": "men",
+      "family": "woody",
+      "top": "ベルガモット・カルダモム・コリアンダー",
+      "mid": "ゼラニウム・サンダルウッド",
+      "last": "シダーウッド・ヒマラヤシダー・ホワイトムスク・アンバー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "price": "¥8,000前後",
+      "releaseYear": 2016,
+      "verdict": "恋人の残り香をコンセプトにしたユニセックス寄りのウッディムスク。優しく肌に馴染み、翌朝のシャツを思わせる親密な余韻。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/item43/lw001medt50ml.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "近距離で穏やかに香らせたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "秋冬の休日やデートに向く柔らかいウッディムスクを探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "夏の日中に清涼感のあるシトラスを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "公式サイトの日本国内販売ページは今回確認できていません",
+        "価格は楽天市場の並行輸入品の目安で、実売価格は流通で変動します"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Flw001medt50ml%2F",
+          "verifiedAt": "2026-08-04",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/sunbrand-select/lw001medt50ml/",
+          "publisher": "楽天市場",
+          "title": "ロエベ 001 マン EDT 50mL 掲載ページ",
+          "accessedAt": "2026-08-04",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-04",
+      "updatedAt": "2026-08-04"
+    },
+    {
+      "slug": "loewe-2",
+      "brand": "Loewe",
+      "name": "エセンシア",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "レッドペッパー・バジル・タラゴン",
+      "mid": "ラベンダー・ジェネビアン",
+      "last": "モス・ベチバー・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "price": "¥5,500前後",
+      "releaseYear": 2018,
+      "verdict": "フゼアの伝統をモダンに再構築した力強いアロマティック。ラベンダーとモス、ベチバーが深みと爽快感を両立する。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/fragrance/lwesphedp50.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "クラシックなフゼアの骨格を現代のメンズ香水で使いたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "平日の仕事から週末までを1本でつなぎたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さやグルマン感を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通し、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Flwesphedp50%2F",
+          "verifiedAt": "2026-08-04",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/sunbrand-select/lwesphedp50/",
+          "publisher": "楽天市場",
+          "title": "ロエベ エセンシア プールオム EDP 50mL 掲載ページ",
+          "accessedAt": "2026-08-04",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-04",
+      "updatedAt": "2026-08-04"
+    },
+    {
+      "slug": "loewe-3",
+      "brand": "Loewe",
+      "name": "アグア エル クラシコ",
+      "gender": "men",
+      "family": "citrus",
+      "top": "ベルガモット・マンダリン・レモン",
+      "mid": "ミント・リンゴ",
+      "last": "ホワイトムスク・サンダルウッド",
+      "seasons": [
+        "summer",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "sports"
+      ],
+      "priceTier": "mid",
+      "price": "¥4,500前後",
+      "releaseYear": 2009,
+      "verdict": "夏の光を切り取ったような清潔感のあるシトラス・ウッディ。リネンや白いシャツと相性がよく、日中の軽やかさに向く。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/loe24_050_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "汗ばむ季節に軽く1プッシュで整えたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "明るいシトラスに透明なウッドの残り香を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "夜や寒い季節の存在感を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通し、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10053504%2F",
+          "verifiedAt": "2026-08-04",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/wish/10053504/",
+          "publisher": "楽天市場",
+          "title": "ロエベ アグア エル クラシコ EDT 50mL 掲載ページ",
+          "accessedAt": "2026-08-04",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-04",
+      "updatedAt": "2026-08-04"
+    },
+    {
+      "slug": "loewe-4",
+      "brand": "Loewe",
+      "name": "アグア ドロップ",
+      "gender": "men",
+      "family": "aquatic",
+      "top": "ウォーターアクセント・アクアティック",
+      "mid": "フローラル・ムスク",
+      "last": "ムスク・サンダルウッド",
+      "seasons": [
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "price": "¥4,500前後",
+      "releaseYear": null,
+      "verdict": "透明感のあるアクアティックを主軸に据えた爽やかで清潔な1本。夏の日中や湿度が高い日のビジネスにも扱いやすい。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/2/8426017080705.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "夏の職場で1プッシュから使える控えめな清涼感を求める人",
+          "basis": "editorial"
+        },
+        {
+          "text": "水を思わせる質感のフレグランスを試したい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "甘さや華やかさを主役にした香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "発売年は今回確認できませんでした",
+        "楽天では並行輸入品として流通し、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F8426017080705%2F",
+          "verifiedAt": "2026-08-04",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/aquabouquet/8426017080705/",
+          "publisher": "楽天市場",
+          "title": "ロエベ アグア ドロップ EDP 掲載ページ",
+          "accessedAt": "2026-08-04",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-04",
+      "updatedAt": "2026-08-04"
     }
   ]
 }
