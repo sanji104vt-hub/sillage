@@ -8560,7 +8560,8 @@
       "seasons": [],
       "scenes": [],
       "verdict": "グレープフルーツとカルダモンから、ベチバーとスエードへ続くウッディアロマティック。",
-      "img": "/img/products/lacoste-l1212-blanc-edt-50.svg",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img021/fr3386460149105.jpg?_ex=512x512",
+      "designImage": "/img/products/lacoste-l1212-blanc-edt-50.svg",
       "concentration": {
         "value": "Eau de Toilette",
         "label": "オードトワレ"
@@ -8587,7 +8588,11 @@
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": null
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautyfactory-belmo%2Ffr3386460149105%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautyfactory-belmo%2Fi%2F10046692%2F",
+          "type": "product",
+          "verifiedAt": "2026-08-05"
+        }
       },
       "affiliateOfferKey": "lacoste-l1212-blanc-edt-50",
       "sources": [
@@ -8616,7 +8621,8 @@
       "seasons": [],
       "scenes": [],
       "verdict": "フィンガーライムとカルダモンに、パイン、ユーカリ、シダーウッドが重なるウッディアロマティック。",
-      "img": "/img/products/lacoste-l1212-blanc-edp-50.svg",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img021/fr3386460149099.jpg?_ex=512x512",
+      "designImage": "/img/products/lacoste-l1212-blanc-edp-50.svg",
       "concentration": {
         "value": "Eau de Parfum",
         "label": "オードパルファム"
@@ -8643,7 +8649,11 @@
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": null
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3386460149099%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbelmo%2Fi%2F11965921%2F",
+          "type": "product",
+          "verifiedAt": "2026-08-05"
+        }
       },
       "affiliateOfferKey": "lacoste-l1212-blanc-edp-50",
       "sources": [
@@ -8672,7 +8682,8 @@
       "seasons": [],
       "scenes": [],
       "verdict": "ジンジャー、グレープフルーツ、レモンから、ラバンディンとシダーウッドへ続くウッディアロマティック。",
-      "img": "/img/products/lacoste-l1212-blanc-eau-fraiche-edt-50.svg",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img021/fr3386460149143.jpg?_ex=512x512",
+      "designImage": "/img/products/lacoste-l1212-blanc-eau-fraiche-edt-50.svg",
       "concentration": {
         "value": "Eau de Toilette",
         "label": "オードトワレ"
@@ -8699,7 +8710,11 @@
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": null
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3386460149143%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbelmo%2Fi%2F11965930%2F",
+          "type": "product",
+          "verifiedAt": "2026-08-05"
+        }
       },
       "affiliateOfferKey": "lacoste-l1212-blanc-eau-fraiche-edt-50",
       "sources": [
@@ -8737,7 +8752,8 @@
       "seasons": [],
       "scenes": [],
       "verdict": "カルダモンとマンダリンに、ラバンディン、ホワイトレザー、サンダルウッドが重なるフゼアレザー。",
-      "img": "/img/products/lacoste-l1212-blanc-eau-intense-edt-100.svg",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img009/fr3616303459895.jpg?_ex=512x512",
+      "designImage": "/img/products/lacoste-l1212-blanc-eau-intense-edt-100.svg",
       "concentration": {
         "value": "Eau de Toilette",
         "label": "オードトワレ"
@@ -8764,7 +8780,11 @@
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": null
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautyfactory-belmo%2Ffr3616303459895%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautyfactory-belmo%2Fi%2F10005237%2F",
+          "type": "product",
+          "verifiedAt": "2026-08-05"
+        }
       },
       "affiliateOfferKey": "lacoste-l1212-blanc-eau-intense-edt-100",
       "sources": [

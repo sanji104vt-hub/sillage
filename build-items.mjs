@@ -158,7 +158,7 @@ function pageHTML(p, related, competitors, trial) {
   const famColor = FAM[p.family]?.color || "#aeb0b6";
   const ogImage = familyOgpUrl(p.family);
   // 実写＋意匠のハイブリッド: 実写(楽天CDN)を主役に、意匠画像はonerrorの保険として残す。
-  const designImage = `/img/products/${p.slug}.png`;
+  const designImage = p.designImage || `/img/products/${p.slug}.png`;
   const designImageAbs = `https://sillage.asutelu.com${designImage}`;
   // img が未設定、または自ドメインの意匠画像を直接指している場合は「実写なし」として扱う。
   // （楽天CDNの画像が別カテゴリの商品を指していた商品は、意匠画像に切り替えている）
@@ -210,7 +210,7 @@ function pageHTML(p, related, competitors, trial) {
   const purchaseButtons = [
     officialUrl ? `<a class="buy buy-official" href="${escape(officialUrl)}" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.official, "公式サイト")} <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a>` : "",
     amazonUrl ? `<a class="buy" href="${escape(amazonUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="amazon" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.amazon, "Amazon")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
-    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}">${purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
+    rakutenUrl ? `<a class="buy" href="${escape(rakutenUrl)}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="${escape(p.slug)}">${p.affiliateOfferKey ? "楽天で価格を見る" : purchaseLabel(p.purchaseLinks?.rakuten, "楽天市場")} <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a>` : "",
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
   const hasPurchase = Boolean(purchaseButtons || moshimoOffer);

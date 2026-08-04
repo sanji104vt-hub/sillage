@@ -205,7 +205,7 @@ fragrances.forEach((item, index) => {
   if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);
   if (isEnriched && !html.includes(`情報確認日：${Number(item.verifiedAt.slice(0, 4))}年`)) errors.push(`情報確認日表示なし: ${path}`);
   if (!isEnriched && html.includes("データ更新日：")) errors.push(`対象外商品に固定更新日あり: ${path}`);
-  const localImageUrl = String(item.img || "").startsWith("/img/products/") ? item.img : `/img/products/${slug}.png`;
+  const localImageUrl = item.designImage || (String(item.img || "").startsWith("/img/products/") ? item.img : `/img/products/${slug}.png`);
   const localImagePath = `public${localImageUrl}`;
   // 実写＋意匠のハイブリッド: 実写(楽天CDN)を表示し、意匠画像はonerrorの保険として必ず残す。
   if (!existsSync(localImagePath)) errors.push(`自ドメイン商品画像なし: ${localImagePath}`);

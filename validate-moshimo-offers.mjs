@@ -33,16 +33,23 @@ for (const [slug, expected] of Object.entries(EXPECTED)) {
   if ((offer.html.match(/<a href="\/\/af\.moshimo\.com\/af\/c\/click\?/g) || []).length !== 1) errors.push(`クリックリンク数が不正: ${slug}`);
   if ((offer.html.match(/<img src="\/\/i\.moshimo\.com\/af\/i\/impression\?/g) || []).length !== 1) errors.push(`インプレッションタグ数が不正: ${slug}`);
   if (!offer.html.includes('width="1" height="1"')) errors.push(`1×1指定なし: ${slug}`);
-  if (Object.values(item.purchaseLinks || {}).some(Boolean)) errors.push(`既存購入リンクともしもHTMLが二重登録: ${slug}`);
+  const rawAffiliateHref = offer.html.match(/<a href="([^"]+)"/)?.[1]?.replace(/&amp;/g, "&").replace(/^\/\//, "https://");
+  const rawImageSrc = offer.html.match(/<a[^>]*><img src="([^"]+)"/)?.[1]?.replace(/^\/\//, "https://");
+  if (item.purchaseLinks?.rakuten?.url !== rawAffiliateHref) errors.push(`楽天ボタンURLがもしも原文と不一致: ${slug}`);
+  if (item.purchaseLinks?.rakuten?.type !== "product") errors.push(`楽天リンク種別がproductではありません: ${slug}`);
+  const expectedMainImage = rawImageSrc?.replace("_ex=128x128", "_ex=512x512");
+  if (item.img !== expectedMainImage) errors.push(`メイン商品画像が同一楽天商品の512px画像と不一致: ${slug}`);
+  if (!item.designImage?.startsWith("/img/products/") || !item.designImage.endsWith(".svg")) errors.push(`意匠画像フォールバックなし: ${slug}`);
 
   const pagePath = `public/items/${slug}.html`;
   const html = readFileSync(pagePath, "utf8");
   if (!html.includes(offer.html)) errors.push(`生成HTMLがもしも原文と一致しません: ${slug}`);
   if (html.includes("&lt;a href=&quot;//af.moshimo.com")) errors.push(`もしもHTMLが文字列表示されています: ${slug}`);
   if ((html.match(/\/af\/i\/impression\?a_id=5718841/g) || []).length !== 1) errors.push(`生成ページのインプレッション数が不正: ${slug}`);
-  if ((html.match(/\/af\/c\/click\?a_id=5718841/g) || []).length !== 1) errors.push(`生成ページのクリックリンク数が不正: ${slug}`);
-  if (!html.includes(`<img class="photo" src="${item.img}"`)) errors.push(`メイン画像が自ドメイン画像ではありません: ${slug}`);
-  if (html.match(/<img class="photo"[^>]+(?:moshimo|rakuten\.co\.jp)/)) errors.push(`もしも画像をメイン画像に使用: ${slug}`);
+  if ((html.match(/\/af\/c\/click\?a_id=5718841/g) || []).length !== 3) errors.push(`生成ページのクリックリンク数が不正: ${slug}`);
+  if (!html.includes(`<img class="photo" src="${item.img}"`)) errors.push(`メイン商品画像が楽天画像ではありません: ${slug}`);
+  if (!html.includes(`this.src='${item.designImage}'`)) errors.push(`メイン画像のフォールバック参照なし: ${slug}`);
+  if ((html.match(/>楽天で価格を見る /g) || []).length !== 2) errors.push(`楽天で価格を見るボタンが上下2か所にありません: ${slug}`);
   const purchaseSection = html.match(/<section class="section purchase-bottom"[\s\S]*?<\/section>/)?.[0] || "";
   if (!purchaseSection.includes(offer.html)) errors.push(`もしもHTMLが購入セクション外です: ${slug}`);
   if (!purchaseSection.includes("アフィリエイト広告")) errors.push(`広告表示なし: ${slug}`);
@@ -58,5 +65,5 @@ if (errors.length) {
   errors.forEach((error) => console.error(`- ${error}`));
   process.exitCode = 1;
 } else {
-  console.log("もしも商品リンク検証: OK（4商品・濃度・容量・原文HTML・インプレッションタグ一致）");
+  console.log("もしも商品リンク検証: OK（4商品の実物画像・楽天価格ボタン・原文HTML・インプレッションタグ一致）");
 }

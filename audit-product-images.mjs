@@ -56,7 +56,9 @@ await Promise.all(
 results.sort((a, b) => a.slug.localeCompare(b.slug));
 
 const broken = results.filter((result) => !result.ok);
-const fallbackPath = (item) => String(item.img || "").startsWith("/img/products/")
+const fallbackPath = (item) => item.designImage
+  ? `public${item.designImage}`
+  : String(item.img || "").startsWith("/img/products/")
   ? `public${item.img}`
   : `public/img/products/${item.slug}.png`;
 const missingFallback = fragrances.filter((item) => !existsSync(fallbackPath(item)));

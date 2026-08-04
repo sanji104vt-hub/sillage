@@ -182,7 +182,7 @@ function matches(p){
 function card(p){
   const f=FAM[p.family];const c=f.color;
   // 実写(楽天CDN)を主役に、意匠画像はonerrorの保険。実写が無い商品は意匠画像を直接出す。
-  const designImage=p.slug?`/img/products/${p.slug}.png`:"";
+  const designImage=p.designImage||(p.slug?`/img/products/${p.slug}.png`:"");
   const photoUrl=p.img||designImage;
   // 自ドメインの意匠画像を指している場合は「実写なし」扱い（系統タグの二重表示を避ける）
   const hasPhoto=Boolean(p.img)&&!String(p.img).startsWith("/img/products/");
