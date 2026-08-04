@@ -47,7 +47,7 @@ const TYPED_PURCHASE_LABEL_SLUGS = new Set([
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
 const BRAND_SLUG = {
   "Jo Malone": "jo-malone", "Acqua di Parma": "acqua-di-parma", "Dior": "dior",
-  "Hermès": "hermes", "4711": null, "Atelier Cologne": "atelier-cologne",
+  "Hermès": "hermes", "4711": "4711", "Atelier Cologne": "atelier-cologne",
   "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana",
   "CK": "ck", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",
   "Paco Rabanne": "paco-rabanne", "Nautica": "nautica", "Brut": "brut",

@@ -35,7 +35,7 @@ const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 // ブランド名 → slug (brand-*.html のスラッグ部)
 const BRAND_SLUG = {
   "Jo Malone": "jo-malone", "Acqua di Parma": "acqua-di-parma", "Dior": "dior",
-  "Hermès": "hermes", "4711": null, "Atelier Cologne": "atelier-cologne",
+  "Hermès": "hermes", "4711": "4711", "Atelier Cologne": "atelier-cologne",
   "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana",
   "CK": "ck", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",
   "Paco Rabanne": "paco-rabanne", "Nautica": "nautica", "Brut": "brut",
@@ -93,11 +93,19 @@ function buildBrandIndex() {
 
 // -------- ②系統別 代表5本 ---------
 function buildFamilyItems() {
+  // 2026-08-04 修正：以前は releaseYear DESC で 5本にクリップしていたため、
+  // 発売年が null の商品(例: loewe-4)がゼロ扱いで末尾に沈み、8本ある aquatic
+  // グループで切り捨てられていた。上限を撤廃し、その系統の全商品を掲載する。
+  // ソートは releaseYear DESC、null は最後尾、同年は slug で安定ソート。
   const groups = FAMILIES.map((f) => {
     const items = PERFUMES
       .filter((p) => p.family === f.key && p.slug)
-      .sort((a, b) => (b.releaseYear || 0) - (a.releaseYear || 0))
-      .slice(0, 5);
+      .sort((a, b) => {
+        const ay = a.releaseYear ?? -Infinity;
+        const by = b.releaseYear ?? -Infinity;
+        if (ay !== by) return by - ay;
+        return a.slug.localeCompare(b.slug);
+      });
     return { fam: f, items };
   }).filter((g) => g.items.length > 0);
 
@@ -121,7 +129,7 @@ function buildFamilyItems() {
   <div class="section-head">
     <p class="kick">— by family ／ 10 systems</p>
     <h2>香調から代表作を探す</h2>
-    <p class="section-copy">香りの系統ごとに、掲載香水の中から新しいものを5本ずつピックアップしています。詳細ページへ直接遷移できます。</p>
+    <p class="section-copy">香りの系統ごとに、掲載香水を発売年の新しい順に並べています。詳細ページへ直接遷移できます。</p>
   </div>
   <div class="family-items-grid">${groupsHTML}</div>
 </section>`;
@@ -149,35 +157,42 @@ function articlesMentioning(brandName) {
 }
 
 function relatedBrands(brandName) {
+  // 2026-08-04 修正：以前は「target.mainFamily と一致する家族を持つブランド」だけを
+  // 候補にしていた。これだと家族分布がばらつく新ブランド(例: Loeweは4家族×1本ずつ)は
+  // 「mainFamily=woody」でしか登場せず、aromatic/citrus/aquatic を扱うブランドの
+  // ページには載らなかった。target が扱う家族のいずれかを共有していれば候補にし、
+  // 「共有家族数の多い順 → 同一国 → 総本数」で並べる。見出しも系統単独ではなく
+  // 「香調が重なる他のブランド」と汎化した(sectionText 側で対応)。
   const target = statsOf(brandName);
   const targetBrand = BRANDS.find((b) => b.name === brandName);
-  if (!target.mainFamily || !targetBrand) return [];
+  if (!target.families.length || !targetBrand) return [];
+  const targetFamSet = new Set(target.families);
   return BRANDS
-    .map((b) => ({ ...b, slug: BRAND_SLUG[b.name], stats: statsOf(b.name) }))
-    // 「同じ系統を扱う」= その系統の香水を1本以上掲載しているブランド
+    .map((b) => {
+      const stats = statsOf(b.name);
+      const sharedFams = stats.families.filter((f) => targetFamSet.has(f));
+      return { ...b, slug: BRAND_SLUG[b.name], stats, sharedCount: sharedFams.length };
+    })
     .filter((b) =>
-      b.slug && b.name !== brandName && b.stats.count > 0 &&
-      b.stats.families.includes(target.mainFamily)
+      b.slug && b.name !== brandName && b.stats.count > 0 && b.sharedCount > 0
     )
     .sort((a, b) => {
-      // 同じ国が先, その後 掲載本数(全体)降順
+      if (a.sharedCount !== b.sharedCount) return b.sharedCount - a.sharedCount;
       const cA = a.country === targetBrand.country ? 0 : 1;
       const cB = b.country === targetBrand.country ? 0 : 1;
       if (cA !== cB) return cA - cB;
       return b.stats.count - a.stats.count;
     })
-    .slice(0, 4);
+    .slice(0, 10);
 }
 
 function brandPageAppendix(brandName) {
   const rel = relatedBrands(brandName);
   const arts = articlesMentioning(brandName);
   if (rel.length === 0 && arts.length === 0) return "";
-  const mainFamKey = statsOf(brandName).mainFamily;
-  const mainFamLabel = FAM[mainFamKey]?.ja || "";
 
   const relHTML = rel.length ? `<section class="related-brands">
-  <h2>同じ ${escape(mainFamLabel)} 系統の他のブランド</h2>
+  <h2>香調が重なる他のブランド</h2>
   <div class="rb-list">${rel.map((r) => {
     const c = FAM[r.stats.mainFamily]?.color || "#aeb0b6";
     return `<a class="rb-item" href="/brand-${r.slug}.html">
