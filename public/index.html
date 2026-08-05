@@ -942,9 +942,9 @@
 
 <nav id="quicknav" class="quicknav" aria-label="サイト内クイックナビ">
   <div class="quicknav-inner">
-    <a href="#fragrances" data-target="fragrances">探す</a>
     <a href="#diagnosis" data-target="diagnosis">診断</a>
     <a href="#scent-guide" data-target="scent-guide">系統</a>
+    <a href="#fragrances" data-target="fragrances">探す</a>
     <a href="#brand-index" data-target="brand-index">ブランド</a>
     <a href="#column-index" data-target="column-index">コラム</a>
     <button type="button" class="quicknav-fav" id="quicknavFav">お気に入り</button>
@@ -972,29 +972,6 @@
   </div>
 </section>
 <p class="wheel-hint">tap a family to filter ／ 香りの系統で絞り込む</p>
-
-<div class="section-head" id="find-fragrances">
-  <p class="kick">— find your fragrance</p>
-  <h2>香調・シーン・季節から香水を探す</h2>
-  <p class="section-copy">全99件から、使う場面や季節、価格帯を組み合わせて候補を絞れます。</p>
-</div>
-
-<section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
-  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
-  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
-  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
-  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
-  <button class="reset" id="resetBtn">reset all</button>
-</section>
-
-<div class="results-head">
-  <span class="count" id="resultsSummary" aria-live="polite">全<b>95</b>件の香水</span>
-  <span class="active-fam" id="activeFam"></span>
-</div>
-
-<main class="grid" id="grid" aria-busy="false"><noscript><div class="empty"><div class="big">掲載香水は全99件です</div>絞り込みにはJavaScriptが必要です。<a href="/columns/first-fragrance">初心者向けガイド</a>からも選べます。</div></noscript></main>
-
-
 
 <section class="beginner-nav" aria-labelledby="beginnerTitle">
   <p class="beginner-kicker">— start with your purpose</p>
@@ -1061,6 +1038,27 @@
   <h2>香りの系統を知る</h2>
 </div>
 <section class="guide-grid" id="guideGrid"></section>
+
+<div class="section-head" id="find-fragrances">
+  <p class="kick">— find your fragrance</p>
+  <h2>香調・シーン・季節から香水を探す</h2>
+  <p class="section-copy">全99件から、使う場面や季節、価格帯を組み合わせて候補を絞れます。</p>
+</div>
+
+<section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
+  <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
+  <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
+  <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
+  <div class="fgroup"><span class="glabel">price ／ 価格帯</span><div class="chips" id="priceChips"></div></div>
+  <button class="reset" id="resetBtn">reset all</button>
+</section>
+
+<div class="results-head">
+  <span class="count" id="resultsSummary" aria-live="polite">全<b>95</b>件の香水</span>
+  <span class="active-fam" id="activeFam"></span>
+</div>
+
+<main class="grid" id="grid" aria-busy="false"><noscript><div class="empty"><div class="big">掲載香水は全99件です</div>絞り込みにはJavaScriptが必要です。<a href="/columns/first-fragrance">初心者向けガイド</a>からも選べます。</div></noscript></main>
 
 <!-- generated:family-items:start -->
 <section class="family-items-section" id="family-items" aria-label="香調から探す代表作">

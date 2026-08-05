@@ -55,13 +55,17 @@ for (const path of [
 }
 
 const deferred = readFileSync("public/index.html", "utf8");
+// 2026-08-05: 「はじめての香水選び」ブロック(beginner-nav〜guideGrid)を商品一覧の前へ移動。
+// 99商品を全部スクロールしないと「香りの系統を知る」へ到達できない状態を解消するため、
+// 導入(診断・系統)→ 商品一覧 → 香調別 → ブランド → コラム の順にした。
 const orderedHomeMarkers = [
-  'id="find-fragrances"',
-  'id="fragrances"',
   'class="beginner-nav"',
   'id="diagnosis"',
   'id="popular-guides"',
   'id="scent-guide"',
+  'id="guideGrid"',
+  'id="find-fragrances"',
+  'id="fragrances"',
   "— interactive timeline",
   'id="brands"',
   'id="home-columns-title"',
