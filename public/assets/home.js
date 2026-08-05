@@ -128,6 +128,17 @@ function buildChips(id,map,field){
 }
 
 function prefersReducedMotion(){return window.matchMedia("(prefers-reduced-motion: reduce)").matches;}
+/* アンカー着地位置のオフセット。topbar(sticky top:0)の下に quicknav(sticky)が重なるので、
+   その合計＋余白ぶん上に余白を取らないと見出しが固定ヘッダーに潜る。
+   高さはフォント読み込みや折り返しで変わるため、クリック時に実測する。
+   CSS 側の scroll-margin-top(calc(var(--topbar-h) + 60px))と同じ意図。 */
+function stickyOffset(){
+  const topbar=document.querySelector(".topbar");
+  const nav=document.getElementById("quicknav");
+  const topbarH=topbar?topbar.getBoundingClientRect().height:75;
+  const navH=(nav&&!nav.classList.contains("is-hidden"))?nav.getBoundingClientRect().height:0;
+  return Math.round(topbarH+navH+11);
+}
 function initAnchorNavigation(){
   document.querySelectorAll('.hero-actions a[href^="#"],.beginner-card[href^="#"]').forEach(link=>{
     if(link.dataset.anchorBound==="true")return;
@@ -143,7 +154,7 @@ function initAnchorNavigation(){
       if(!target)return;
       event.preventDefault();
       if(location.hash!==hash)history.pushState(null,"",hash);
-      const top=target.getBoundingClientRect().top+window.scrollY-78;
+      const top=target.getBoundingClientRect().top+window.scrollY-stickyOffset();
       window.scrollTo({top,behavior:prefersReducedMotion()?"auto":"smooth"});
     });
   });
