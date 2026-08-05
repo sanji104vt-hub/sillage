@@ -3,10 +3,13 @@ import { loadSiteCopy } from "./lib/site-copy.mjs";
 
 const copy = loadSiteCopy();
 const index = readFileSync("public/index.html", "utf8");
+// 掲載件数はデータの実数が真値。build-site-copy.mjs が流し込むので、ここでは一致を検証する。
+const FRAGRANCE_COUNT = JSON.parse(readFileSync("data/fragrances.json", "utf8")).fragrances.length;
+const heroProductLine = copy.heroProductLine.replace(/\d+本/, `${FRAGRANCE_COUNT}本`);
 const requiredHomepageValues = [
   copy.title,
   copy.description,
-  copy.heroProductLine,
+  heroProductLine,
   copy.footerCopyright,
   "G-60BQRQWB5M",
   "UucVcbwbG6YhXKLVS3GGS8nVk_egyJCLywDHkw6J-5Q",
@@ -15,6 +18,28 @@ const requiredHomepageValues = [
 
 for (const value of requiredHomepageValues) {
   if (!index.includes(value)) throw new Error(`public/index.html: ${value} が見つかりません`);
+}
+
+// 2026-08-05: Lacoste 追加時に #resultsSummary だけ 95 のまま取り残された。
+// 掲載件数を表示する箇所をすべて列挙し、データの実数と一致することを検証する。
+const countChecks = [
+  { label: "h1-sub", re: /<span class="h1-sub">香水(\d+)本/ },
+  { label: "find-fragrances", re: /<div class="section-head" id="find-fragrances">[\s\S]*?<p class="section-copy">全(\d+)件から/ },
+  { label: "resultsSummary", re: /<span class="count" id="resultsSummary"[^>]*>全<b>(\d+)<\/b>件の香水/ },
+  { label: "noscript", re: /<div class="big">掲載香水は全(\d+)件です/ },
+];
+for (const { label, re } of countChecks) {
+  const found = index.match(re);
+  if (!found) throw new Error(`public/index.html: ${label} の掲載件数表示が見つかりません`);
+  if (Number(found[1]) !== FRAGRANCE_COUNT) {
+    throw new Error(`public/index.html: ${label} の掲載件数が実数と不一致 (${found[1]} / 実数 ${FRAGRANCE_COUNT})`);
+  }
+}
+const aboutHtml = readFileSync("public/about.html", "utf8");
+for (const found of aboutHtml.matchAll(/香水(\d+)本/g)) {
+  if (Number(found[1]) !== FRAGRANCE_COUNT) {
+    throw new Error(`public/about.html: 掲載件数が実数と不一致 (${found[1]} / 実数 ${FRAGRANCE_COUNT})`);
+  }
 }
 
 for (const match of index.matchAll(

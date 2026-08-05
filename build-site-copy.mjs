@@ -4,6 +4,14 @@ import { loadSiteCopy } from "./lib/site-copy.mjs";
 const copy = loadSiteCopy();
 const indexPath = "public/index.html";
 
+// 掲載件数はデータの実数を唯一の真値とする。
+// 2026-08-05: 商品追加のたびに index.html / about.html / site-copy.json の
+// 件数を手で書き換えていたため、Lacoste 追加時に #resultsSummary だけ
+// 95 のまま取り残された。以後は毎ビルドでここから流し込む。
+const FRAGRANCE_COUNT = JSON.parse(readFileSync("data/fragrances.json", "utf8")).fragrances.length;
+// site-copy.json の文言はテンプレートとして使い、数字だけ実数へ差し替える
+const heroProductLine = copy.heroProductLine.replace(/\d+本/, `${FRAGRANCE_COUNT}本`);
+
 function replaceRequired(source, pattern, replacement, label) {
   if (!pattern.test(source)) throw new Error(`Missing ${label}.`);
   return source.replace(pattern, replacement);
@@ -56,7 +64,26 @@ index = replaceRequired(index, /<meta property="og:description" content="[^"]*">
 index = replaceRequired(index, /<meta property="og:site_name" content="[^"]*">/, `<meta property="og:site_name" content="${copy.shortName}">`, "og:site_name");
 index = replaceRequired(index, /<meta name="twitter:title" content="[^"]*">/, `<meta name="twitter:title" content="${copy.title}">`, "twitter:title");
 index = replaceRequired(index, /<meta name="twitter:description" content="[^"]*">/, `<meta name="twitter:description" content="${copy.description}">`, "twitter:description");
-index = replaceRequired(index, /<span class="h1-sub">[\s\S]*?<\/span>/, `<span class="h1-sub">${copy.heroProductLine}</span>`, "hero product line");
+index = replaceRequired(index, /<span class="h1-sub">[\s\S]*?<\/span>/, `<span class="h1-sub">${heroProductLine}</span>`, "hero product line");
+// 掲載件数の表示は4箇所。すべて実数から流し込み、手作業での書き換えを不要にする。
+index = replaceRequired(
+  index,
+  /(<div class="section-head" id="find-fragrances">[\s\S]*?<p class="section-copy">)全\d+件から/,
+  `$1全${FRAGRANCE_COUNT}件から`,
+  "find-fragrances count",
+);
+index = replaceRequired(
+  index,
+  /(<span class="count" id="resultsSummary"[^>]*>)全<b>\d+<\/b>件の香水/,
+  `$1全<b>${FRAGRANCE_COUNT}</b>件の香水`,
+  "resultsSummary count",
+);
+index = replaceRequired(
+  index,
+  /(<div class="big">)掲載香水は全\d+件です/,
+  `$1掲載香水は全${FRAGRANCE_COUNT}件です`,
+  "noscript count",
+);
 index = replaceRequired(
   index,
   /(<section class="hero">[\s\S]*?<div class="hero-copy">[\s\S]*?<\/h1>\s*)<p>[\s\S]*?<\/p>/,
@@ -98,6 +125,10 @@ for (const path of ["public/about.html", "public/privacy.html", "public/contact.
     `<meta property="og:site_name" content="${copy.shortName}">`,
     `${path} og:site_name`,
   );
+  // about.html のサイト説明にも掲載件数があるため実数へ追従させる
+  if (/香水\d+本/.test(html)) {
+    html = html.replace(/香水\d+本/g, `香水${FRAGRANCE_COUNT}本`);
+  }
   writeFileSync(path, html, "utf8");
 }
 
