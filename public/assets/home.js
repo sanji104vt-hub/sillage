@@ -1525,6 +1525,7 @@ function initializeDeferredHome(){
 
 /* ---------- quick nav ----------
    既存DOMには触れず、追加された #quicknav の挙動だけを受け持つ。 */
+let topbarResizeObserver=null; // GCで回収されると高さ追従が止まるため参照を保持する
 function initQuicknav(){
   const nav=document.getElementById("quicknav");
   if(!nav)return;
@@ -1539,13 +1540,23 @@ function initQuicknav(){
     if(h>0)document.documentElement.style.setProperty("--topbar-h",h+"px");
   };
   syncOffset();
+  // 2026-08-05: 本番で --topbar-h が初回計測の 148px のまま固まり、topbar(実測75px)と
+  // quicknav の間に 73px の隙間ができていた。ResizeObserver の参照を保持していなかったため
+  // 回収され、フォント差し替え後の縮小を拾えなくなっていたのが原因。
+  // 参照をモジュールスコープに置き、resize と数フレーム後の再計測も併用して取りこぼしを防ぐ。
   if("ResizeObserver" in window){
-    new ResizeObserver(syncOffset).observe(topbar||document.body);
-  }else{
-    window.addEventListener("resize",syncOffset,{passive:true});
+    topbarResizeObserver=new ResizeObserver(syncOffset);
+    topbarResizeObserver.observe(topbar||document.body);
   }
-  window.addEventListener("load",syncOffset,{once:true});
-  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(syncOffset).catch(()=>{});
+  window.addEventListener("resize",syncOffset,{passive:true});
+  window.addEventListener("load",()=>{syncOffset();requestAnimationFrame(syncOffset);},{once:true});
+  if(document.fonts&&document.fonts.ready){
+    document.fonts.ready.then(()=>{
+      syncOffset();
+      requestAnimationFrame(syncOffset);
+      setTimeout(syncOffset,300);
+    }).catch(()=>{});
+  }
 
   // お気に入りはヘッダーの♥と同じ動作
   const favBtn=document.getElementById("quicknavFav");
