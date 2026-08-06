@@ -4575,6 +4575,342 @@
       "updatedAt": "2026-07-18"
     },
     {
+      "slug": "diptyque-2",
+      "brand": "Diptyque",
+      "name": "オルフェオン",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "ジュニパーベリー・ピンクペッパー",
+      "mid": "ジャスミン・ナルシス",
+      "last": "トンカビーン・シダー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "business",
+        "formal"
+      ],
+      "priceTier": "high",
+      "price": "¥26,000前後",
+      "releaseYear": 2021,
+      "verdict": "1960年代パリのバーを思わせるドライなウッディ。紙と木と煙が静かに重なり、声を張らずに知性を見せる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jurrecosmetics/cabinet/10998603/imgrc0138392056.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 75
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "落ち着いた場でドライなウッディをまといたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "ディプティックの中でも渋さのある一本を探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "明るく分かりやすいシトラスを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fjurrecosmetics%2Fdiptyque1%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fjurrecosmetics%2Fi%2F10000199%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/jurrecosmetics/diptyque1/",
+          "publisher": "楽天市場",
+          "title": "ディプティック オルフェオン EDP 75mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "diptyque-3",
+      "brand": "Diptyque",
+      "name": "フィロシコス",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "イチジクの葉",
+      "mid": "イチジク・ココナッツ",
+      "last": "ホワイトシダー・ウッド",
+      "seasons": [
+        "summer",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥26,000前後",
+      "releaseYear": 1996,
+      "verdict": "青いイチジクの葉から果実、樹皮までを一本の木として描く。緑の苦みが残るので甘く終わらない。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/partytime-tokyo/cabinet/pfm/22dt116pfm_001.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 75
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "果実の甘さより葉や樹皮の青さを楽しみたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "夏の休日に自然な緑をまといたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "夜の存在感や重厚さを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpartytime-tokyo%2F22dt116pfm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpartytime-tokyo%2Fi%2F10036140%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/partytime-tokyo/22dt116pfm/",
+          "publisher": "楽天市場",
+          "title": "ディプティック フィロシコス オードパルファン 75mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "diptyque-4",
+      "brand": "Diptyque",
+      "name": "ドソン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "ローズ・オレンジリーフ",
+      "mid": "チューベローズ・ジャスミン",
+      "last": "ホワイトムスク・ベンゾイン",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "priceTier": "high",
+      "price": "¥26,000前後",
+      "releaseYear": 2005,
+      "verdict": "ベトナムの海辺の寺院に着想したチューベローズ。白い花の濃さを、潮の湿り気で軽く保つ。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12666829/imgrc0179785912.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 75
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "白い花の香りを重すぎない形で楽しみたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "春から初夏の装いに合う華やかさを探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "花の甘さが苦手な人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F100000013%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frareu%2Fi%2F10003523%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/rareu/100000013/",
+          "publisher": "楽天市場",
+          "title": "ディプティック オードパルファン ドソン 75mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "diptyque-5",
+      "brand": "Diptyque",
+      "name": "フルール ドゥ ポー",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "アルデヒド・ピンクペッパー",
+      "mid": "アイリス・ローズ",
+      "last": "ムスク・アンバー・レザー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥26,000前後",
+      "releaseYear": 2018,
+      "verdict": "肌そのものを思わせるムスクに、アイリスの粉っぽさが乗る。香水というより体温の延長として働く。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth009/zzdip43_075p.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 75
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "素肌に近い自然な残り香を求める人",
+          "basis": "editorial"
+        },
+        {
+          "text": "人と重なりにくい静かなムスクを探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "はっきりした果実や花の輪郭を求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2Fz10052841%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10064093%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/wish/z10052841/",
+          "publisher": "楽天市場",
+          "title": "ディプティック フルール ドゥ ポー EDP 75mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
       "slug": "byredo-1",
       "brand": "Byredo",
       "name": "ジプシー ウォーター",
@@ -4822,6 +5158,174 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
+    },
+    {
+      "slug": "prada-3",
+      "brand": "Prada",
+      "name": "ルナロッサ カーボン",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ベルガモット・ラベンダー",
+      "mid": "ペッパー・メタリックノート",
+      "last": "パチュリ・アンバー",
+      "seasons": [
+        "autumn",
+        "spring"
+      ],
+      "scenes": [
+        "business",
+        "sports"
+      ],
+      "priceTier": "high",
+      "price": "¥11,000前後",
+      "releaseYear": 2017,
+      "verdict": "ラベンダーの清潔さに金属的な冷たさを重ねた現代のフゼア。汗ばむ場面でも輪郭が濁りにくい。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovelove/cabinet/p241129/2500000227912.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "仕事から運動まで一本で通したい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "甘さを抑えたモダンなフゼアを探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "温かみのある甘い香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Flovelove%2F2500000227912%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Flovelove%2Fi%2F10565530%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/lovelove/2500000227912/",
+          "publisher": "楽天市場",
+          "title": "プラダ ルナロッサ カーボン EDT 100mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "prada-4",
+      "brand": "Prada",
+      "name": "インフュージョン ディリス",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "マンダリン・ネロリ・ガルバナム",
+      "mid": "アイリス・オレンジブロッサム",
+      "last": "ベンゾイン・シダー・ベチバー",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "formal"
+      ],
+      "priceTier": "high",
+      "price": "¥10,000前後",
+      "releaseYear": 2007,
+      "verdict": "石けんを思わせる清潔なアイリス。粉っぽさと苦い緑が同居し、性別を問わず端正にまとまる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/pra04_030.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "清潔感のあるアイリスを仕事の場で使いたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "性別を問わず使える端正な一本を探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "夜に映える濃厚な甘さを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F1593815%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10017741%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/wish/1593815/",
+          "publisher": "楽天市場",
+          "title": "プラダ インフュージョン ディリス EDP 30mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
     },
     {
       "slug": "montblanc-2",
@@ -5975,6 +6479,174 @@
       "updatedAt": "2026-07-18"
     },
     {
+      "slug": "maison-margiela-3",
+      "brand": "Maison Margiela",
+      "name": "レプリカ セーリング デイ",
+      "gender": "unisex",
+      "family": "aquatic",
+      "top": "ベルガモット・シーノート・アルデヒド",
+      "mid": "セージ・ジュニパーベリー",
+      "last": "アンバーグリス・シダー",
+      "seasons": [
+        "summer",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "sports"
+      ],
+      "priceTier": "high",
+      "price": "¥14,000前後",
+      "releaseYear": 2019,
+      "verdict": "潮風と船のロープを思わせる塩気のあるアクアティック。夏の日中に、汗と喧嘩しない清涼感で通せる一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth008/zzmmg11_100.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "夏の外出や休日に、清涼感のある香りをまといたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "レプリカの情景を海や船の記憶で選びたい人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "寒い季節に甘さや厚みを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10050152%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fwish%2Fi%2F10056457%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/wish/10050152/",
+          "publisher": "楽天市場",
+          "title": "メゾン マルジェラ レプリカ セーリング デイ EDT 100mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
+      "slug": "maison-margiela-4",
+      "brand": "Maison Margiela",
+      "name": "レプリカ ネバーエンディング サマー",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "ベルガモット・洋なし",
+      "mid": "ジャスミン・ムスク",
+      "last": "バニラ・トンカビーン",
+      "seasons": [
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥14,000前後",
+      "releaseYear": 2023,
+      "verdict": "終わらない夏の残像を、洋なしの甘さと肌に寄るムスクで描く。日が落ちたあとの余韻に近い温度を持つ。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img011/fr3614274347586.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100
+        }
+      ],
+      "recommendedFor": [
+        {
+          "text": "肌に近い距離で穏やかに香らせたい人",
+          "basis": "editorial"
+        },
+        {
+          "text": "夏から秋へ移る時期に使える一本を探す人",
+          "basis": "editorial"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "text": "輪郭のはっきりした強い香りを求める人",
+          "basis": "editorial"
+        }
+      ],
+      "cautions": [
+        "楽天では並行輸入品として流通しており、国内正規販売ページは今回確認できていません"
+      ],
+      "profile": {
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null,
+        "method": "editorial-v1"
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbeautyfactory-belmo%2Ffr3614274347586%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fbeautyfactory-belmo%2Fi%2F10050681%2F",
+          "verifiedAt": "2026-08-06",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://item.rakuten.co.jp/beautyfactory-belmo/fr3614274347586/",
+          "publisher": "楽天市場",
+          "title": "メゾン マルジェラ レプリカ ネバーエンディング サマー EDT 100mL 掲載ページ",
+          "accessedAt": "2026-08-06",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-08-06",
+      "updatedAt": "2026-08-06"
+    },
+    {
       "slug": "narciso-rodriguez-2",
       "brand": "Narciso Rodriguez",
       "name": "フォー ヒム",
@@ -6163,6 +6835,9 @@
       },
       "sizes": [
         {
+          "volumeMl": 50
+        },
+        {
           "volumeMl": 100,
           "sourceUrl": "https://www.bulgari.com/ja-jp/product/42539",
           "referencePriceYen": 19470,
@@ -6210,7 +6885,7 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-08-06"
     },
     {
       "slug": "aesop-1",

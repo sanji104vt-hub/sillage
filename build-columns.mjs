@@ -84,7 +84,7 @@ const articles = [
     table: { title:"場面別の安全ライン", heads:["場面","目安","向く香り"], rows:[["デスクワーク","腰に1プッシュ","シトラス／ムスク"],["商談・会議","香らせない〜ごく弱く","軽いウッディ"],["外回り","朝1プッシュ","アクアティック"],["会食","夕方に少量","ドライなウッディ"]], note:"香りに敏感な人がいる場所では、施設や職場のルールを優先してください。" },
     choices:[{title:"朝のチェック",text:"自分の鼻が慣れて感じなくても、追加しない。家を出て10分後に一度だけ確認する。"},{title:"避けたいサイン",text:"隣の席から香りが分かる、部屋を出た後も残る、衣服へ何度も噴霧する。この三つは量を減らす合図。"}],
     faq:[{q:"仕事用香水は何プッシュが正解？",a:"まず1プッシュから始めるのが安全です。香水の濃度、噴霧量、気温で広がり方が違うため、周囲の反応を見て次回調整します。"},{q:"首につけてもいい？",a:"香りが広がりやすいため、職場では腰やお腹など鼻から遠い場所の方が扱いやすいです。"}],
-    brands:[BRANDS.chanel,BRANDS.armani,BRANDS.hermes,BRANDS.prada], featured:["chanel-1","giorgio-armani-2","hermes-3","prada-2"],
+    brands:[BRANDS.chanel,BRANDS.armani,BRANDS.hermes,BRANDS.prada], featured:["chanel-1","giorgio-armani-2","hermes-2","prada-2"],
   },
   {
     slug:"how-to-wear",tag:"HOW TO",title:"香水の正しいつけ方｜量・場所・タイミングの基本",
@@ -102,7 +102,7 @@ const articles = [
     table:{title:"場面別・最初の目安",heads:["場面","場所","回数"],rows:[["オフィス","腰・お腹","1回"],["休日の屋外","手首または腰","1〜2回"],["夜の外出","首の後ろまたは胸元","1回から"],["試香","左右の手首","各1回"]],note:"回数はあくまで開始点です。噴霧量や香水の強さに応じて減らしてください。"},
     choices:[{title:"穏やかに香らせる",text:"腰・お腹・膝の裏。空気と衣服を通るため、角が取れやすい。"},{title:"輪郭を出す",text:"手首・首の後ろ。体温で立ちやすいので、狭い空間では量を控える。"}],
     faq:[{q:"手首をこすると香りは壊れる？",a:"香りが完全に壊れるというより、摩擦や熱で立ち上がり方が変わる可能性があります。こすらず乾かす方が比較しやすいです。"},{q:"服につけてもいい？",a:"素材によってシミや変色の可能性があります。目立たない場所で確認し、基本は肌につける方が安全です。"}],
-    brands:[BRANDS.jomalone,BRANDS.chanel,BRANDS.hermes],featured:["jo-malone-1","chanel-1","hermes-1"],
+    brands:[BRANDS.jomalone,BRANDS.chanel,BRANDS.hermes],featured:["jo-malone-1","chanel-1","hermes-2"],
   },
   {
     slug:"notes-pyramid",tag:"BASICS",title:"トップ・ミドル・ラストの読み方",
@@ -155,7 +155,7 @@ const articles = [
     rows:[["印象","濃密・官能的","明るい・堂々"],["得意な季節","秋冬","春秋・屋外"],["得意な場面","夜・バー・会食","スーツ・休日・イベント"],["注意点","量を増やしすぎない","評判より肌で確認"]],
     aFit:"黒やブラウンの服が多く、夜の外出で香りまで含めた世界観を作りたい人。",bFit:"高級感は欲しいが暗く重くしたくない。昼のスーツにも合わせたい人。",
     faq:[{q:"高い香水は長持ちする？",a:"価格と持続時間は比例しません。香料構成、濃度、肌、気温で変わるため、必ず肌で確認します。"},{q:"仕事でも使える？",a:"どちらも量を抑えれば使えますが、狭い職場では腰に1プッシュ以下から試すのが安全です。"}],
-    brands:[BRANDS.tomford,BRANDS.creed,BRANDS.dior],featured:["tom-ford-1","creed-1","tom-ford-2","dior-6"],
+    brands:[BRANDS.tomford,BRANDS.creed,BRANDS.dior],featured:["tom-ford-2","creed-1","dior-6"],
   }),
   compare({
     slug:"aesop-vs-diptyque",title:"アエソップとディプティック、ナチュラル系ニッチの本流",description:"アエソップとディプティックの香水を、植物感・芸術性・日常性・静けさで図解比較。ナチュラル系ニッチの選び分けを解説。",
@@ -191,7 +191,7 @@ const articles = [
     rows:[["品の出方","静か・乾いている","明るい・清潔"],["得意な季節","秋冬・通年","春夏"],["服装","スーツ・上質な日常着","白シャツ・軽いジャケット"],["余韻","ウッディ・鉱物的","シトラス・石けん" ]],
     aFit:"落ち着き、知性、少しの苦みを香りに求める。時間が経った余韻を重視する人。",bFit:"明るく清潔な第一印象が欲しい。春夏や昼の予定で気軽に使いたい人。",
     faq:[{q:"ビジネス向きなのは？",a:"どちらも向きます。より静かで落ち着いた印象ならエルメス、明るい清潔感ならアクア ディ パルマです。"},{q:"夏に使いやすいのは？",a:"シトラス中心のアクア ディ パルマが選びやすいですが、汗を拭いてから少量使います。"}],
-    brands:[BRANDS.hermes,BRANDS.acquadiparma,BRANDS.guerlain,BRANDS.chanel],featured:["hermes-3","acqua-di-parma-1","hermes-1","acqua-di-parma-2"],
+    brands:[BRANDS.hermes,BRANDS.acquadiparma,BRANDS.guerlain,BRANDS.chanel],featured:["hermes-2","acqua-di-parma-1","jo-malone-1","acqua-di-parma-2"],
   }),
   compare({
     slug:"bvlgari-vs-versace",title:"ブルガリとヴェルサーチ、イタリア二大ブランドの香水比較",description:"ブルガリとヴェルサーチのメンズ香水を、清潔感・華やかさ・仕事・デート適性で図解比較。年代や場面に合う選び方を解説。",
@@ -255,7 +255,7 @@ const articles = [
     table:{title:"季節と場面の早見表",heads:["季節・場面","狙う印象","香調の例"],rows:[["春・仕事","軽い清潔感","シトラス／ティー"],["夏・休日","涼しさ","アクアティック／ハーブ"],["秋・デート","柔らかな深み","アイリス／ウッディ"],["冬・夜","温かい余韻","アンバー／バニラ"]],note:"重い香りを暑い日に使う場合は、量を減らし屋外や夜へ場面を移します。"},
     choices:[{title:"暑い日の合言葉",text:"明るく、薄く、低い位置。足りないくらいから始める。"},{title:"寒い日の合言葉",text:"乾いた木と柔らかな甘さ。コートの内側で近くに留める。"}],
     faq:[{q:"夏にウッディは使えない？",a:"軽く乾いたウッディなら使えます。量を減らし、夜や屋外から試してください。"},{q:"冬にシトラスは軽すぎる？",a:"ウッドやムスクが土台にあるシトラスなら冬にも合わせやすいです。"}],
-    brands:[BRANDS.hermes,BRANDS.jomalone,BRANDS.tomford,BRANDS.bvlgari],featured:["hermes-3","jo-malone-1","tom-ford-1","bvlgari-2"],
+    brands:[BRANDS.hermes,BRANDS.jomalone,BRANDS.tomford,BRANDS.bvlgari],featured:["hermes-2","jo-malone-1","tom-ford-2","bvlgari-2"],
   },
   {
     slug:"first-fragrance",tag:"START HERE",title:"香水初心者の一本目｜失敗しない5ステップ",
@@ -273,7 +273,7 @@ const articles = [
     table:{title:"5ステップの判断基準",heads:["手順","決めること","合格ライン"],rows:[["1 用途","仕事・休日・デート","使う日を言える"],["2 方向","明るい・落ち着く・甘い","3系統以内"],["3 試香","ムエット→肌","2本まで"],["4 時間","直後・30分後・数時間後","ラストも好き"],["5 容量","サンプル・小容量","使い切れる"]],note:"購入を急がず、別の日に同じ香りを試すと鼻と気分による差を確認できます。"},
     choices:[{title:"安全な一本目",text:"シトラス、アロマティック、軽いウッディ、ムスク。仕事と休日をつなぎやすい。"},{title:"個性ある一本目",text:"好きな場面が明確なら、甘いアンバーやレザーも候補。ただし小容量から。"}],
     faq:[{q:"初心者向けの価格帯は？",a:"金額より、無理なく使い切れる容量と用途を優先します。サンプルや30mL前後があれば比較しやすいです。"},{q:"通販だけで買ってもいい？",a:"香りは肌で変わるため、可能なら店頭やサンプルで試してからが安全です。通販では返品条件も確認します。"}],
-    brands:[BRANDS.chanel,BRANDS.bvlgari,BRANDS.jomalone,BRANDS.hermes],featured:["chanel-1","bvlgari-2","jo-malone-1","hermes-3"],
+    brands:[BRANDS.chanel,BRANDS.bvlgari,BRANDS.jomalone,BRANDS.hermes],featured:["chanel-1","bvlgari-2","jo-malone-1","hermes-2"],
   },
 ];
 

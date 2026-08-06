@@ -38,6 +38,10 @@ const FIFTH_BATCH_SLUGS = new Set([
   // 2026-08-05 追加：Lacoste L.12.12 Blanc 4商品
   "lacoste-l1212-blanc-edt-50", "lacoste-l1212-blanc-edp-50",
   "lacoste-l1212-blanc-eau-fraiche-edt-50", "lacoste-l1212-blanc-eau-intense-edt-100",
+  // 2026-08-06 追加：既存4ブランドへの追補（Margiela 2 / Diptyque 4 / Prada 2）
+  "maison-margiela-3", "maison-margiela-4",
+  "diptyque-2", "diptyque-3", "diptyque-4", "diptyque-5",
+  "prada-3", "prada-4",
 ]);
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
