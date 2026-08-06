@@ -292,93 +292,6 @@
       "updatedAt": "2026-07-18"
     },
     {
-      "slug": "hermes-1",
-      "brand": "Hermès",
-      "name": "オー ド パンプルムース ローズ",
-      "gender": "unisex",
-      "family": "citrus",
-      "top": "グレープフルーツ",
-      "mid": "ローズ",
-      "last": "ベチバー",
-      "seasons": [
-        "spring",
-        "summer"
-      ],
-      "scenes": [
-        "daily",
-        "business"
-      ],
-      "priceTier": "high",
-      "price": "¥17,000前後",
-      "releaseYear": 2009,
-      "verdict": "グレープフルーツの苦味とローズの軽さ。みずみずしく中性的で、肩の力が抜けた洗練。",
-      "concentration": {
-        "value": "Eau de Cologne",
-        "label": "オーデコロン"
-      },
-      "sizes": [
-        {
-          "volumeMl": 100,
-          "referencePriceYen": 18480,
-          "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%87-%E3%82%B3%E3%83%AD%E3%83%B3-%E3%80%8A%E3%82%AA%E3%83%BC-%E3%83%89%E3%82%A5-%E3%83%91%E3%83%B3%E3%83%97%E3%83%AB%E3%83%A0%E3%82%B9-%E3%83%AD%E3%83%BC%E3%82%BA%E3%80%8B-V25602/"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "グレープフルーツの苦みを含む爽やかさが好きな人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春夏の日常や仕事で軽やかに使いたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "濃厚な花や甘さが長く残る香りを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%87-%E3%82%B3%E3%83%AD%E3%83%B3-%E3%80%8A%E3%82%AA%E3%83%BC-%E3%83%89%E3%82%A5-%E3%83%91%E3%83%B3%E3%83%97%E3%83%AB%E3%83%A0%E3%82%B9-%E3%83%AD%E3%83%BC%E3%82%BA%E3%80%8B-V25602/",
-          "publisher": "Hermès",
-          "title": "オー デ コロン《オー ドゥ パンプルムス ローズ》",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "price",
-            "notes",
-            "releaseYear"
-          ],
-          "market": "JP",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%87-%E3%82%B3%E3%83%AD%E3%83%B3-%E3%80%8A%E3%82%AA%E3%83%BC-%E3%83%89%E3%82%A5-%E3%83%91%E3%83%B3%E3%83%97%E3%83%AB%E3%83%A0%E3%82%B9-%E3%83%AD%E3%83%BC%E3%82%BA%E3%80%8B-V25602/",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
       "slug": "4711-1",
       "brand": "4711",
       "name": "オーデコロン",
@@ -810,7 +723,7 @@
     },
     {
       "slug": "ck-1",
-      "brand": "CK",
+      "brand": "Calvin Klein",
       "name": "CK one",
       "gender": "unisex",
       "family": "aromatic",
@@ -1428,101 +1341,6 @@
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "ysl-1",
-      "brand": "YSL",
-      "name": "Y メン オーデパルファン",
-      "gender": "men",
-      "family": "aromatic",
-      "top": "ベルガモット・ジンジャー",
-      "mid": "セージ・ゼラニウム",
-      "last": "アンバーウッド・トンカ",
-      "seasons": [
-        "spring",
-        "autumn"
-      ],
-      "scenes": [
-        "business",
-        "date"
-      ],
-      "priceTier": "high",
-      "price": "¥13,000前後",
-      "releaseYear": 2018,
-      "verdict": "フレッシュさと甘い余韻の対比。清潔感と色気を両立し、近年のメンズ人気を牽引する一本。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Parfum",
-        "label": "オーデパルファム"
-      },
-      "sizes": [
-        {
-          "volumeMl": 40,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html"
-        },
-        {
-          "volumeMl": 60,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html"
-        },
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html"
-        },
-        {
-          "volumeMl": 200,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "セージとゼラニウムに甘いウッドが続く香りを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春秋の仕事からデートまで一本で使いたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "軽いコロンの短い余韻を好む人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/y/y-eau-de-parfum/727YSL.html",
-          "publisher": "YSL Beauty",
-          "title": "Y Eau De Parfum",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes"
-          ],
-          "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
@@ -2853,102 +2671,6 @@
       "updatedAt": "2026-07-18"
     },
     {
-      "slug": "tom-ford-1",
-      "brand": "Tom Ford",
-      "name": "トバコ バニラ",
-      "gender": "unisex",
-      "family": "gourmand",
-      "top": "タバコリーフ・スパイス",
-      "mid": "トンカ・カカオ",
-      "last": "バニラ・ドライフルーツ",
-      "seasons": [
-        "winter"
-      ],
-      "scenes": [
-        "date",
-        "formal"
-      ],
-      "priceTier": "high",
-      "price": "¥30,000前後",
-      "releaseYear": 2007,
-      "verdict": "甘い葉巻と蜂蜜の濃厚な温度感。拡散が強く一滴で十分。冬の夜、距離の近い場面で印象を残す。",
-      "concentration": {
-        "value": "Eau de Parfum",
-        "label": "オード パルファム"
-      },
-      "sizes": [
-        {
-          "volumeMl": 10,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum"
-        },
-        {
-          "volumeMl": 50,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum"
-        },
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum"
-        },
-        {
-          "volumeMl": 250,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "タバコとバニラの濃厚な甘さを楽しみたい人",
-          "basis": "editorial"
-        },
-        {
-          "text": "冬の夜やフォーマルな装いに合わせたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "軽やかなシトラスやマリン系を求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "公式確認先は米国サイトです。日本国内の公式価格は掲載していません"
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "sources": [
-        {
-          "url": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
-          "publisher": "Tom Ford Beauty",
-          "title": "Tobacco Vanille Eau de Parfum",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes"
-          ],
-          "sourceType": "official",
-          "market": "GLOBAL"
-        }
-      ],
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
       "slug": "mugler-1",
       "brand": "Mugler",
       "name": "エンジェル",
@@ -3040,7 +2762,7 @@
     },
     {
       "slug": "thierry-mugler-1",
-      "brand": "Thierry Mugler",
+      "brand": "Mugler",
       "name": "A*MEN",
       "gender": "men",
       "family": "gourmand",
@@ -3111,102 +2833,6 @@
             "sizes",
             "notes",
             "releaseYear",
-            "family"
-          ],
-          "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "jean-paul-gaultier-1",
-      "brand": "Jean Paul Gaultier",
-      "name": "ル マル",
-      "gender": "men",
-      "family": "gourmand",
-      "top": "ミント・ラベンダー",
-      "mid": "オレンジブロッサム・シナモン",
-      "last": "バニラ・トンカ",
-      "seasons": [
-        "winter",
-        "autumn"
-      ],
-      "scenes": [
-        "date",
-        "daily"
-      ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
-      "releaseYear": 1995,
-      "verdict": "ミントとバニラの清潔な甘さ。トルソー型ボトルの象徴的存在で、色気のある定番。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オードトワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 40,
-          "sourceUrl": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122"
-        },
-        {
-          "volumeMl": 75,
-          "sourceUrl": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122"
-        },
-        {
-          "volumeMl": 125,
-          "sourceUrl": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122"
-        },
-        {
-          "volumeMl": 200,
-          "sourceUrl": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "ミントとラベンダーからバニラへ移る香りを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "秋冬のデートや日常に温かい甘さを選びたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "甘さを避けたドライなコロンを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.jeanpaulgaultier.com/us/en_US/p/range-le-male/le-male-eau-de-toilette-000000000065120122",
-          "publisher": "Jean Paul Gaultier",
-          "title": "Le Male Eau de Toilette",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes",
             "family"
           ],
           "market": "US",
@@ -3684,96 +3310,6 @@
       "updatedAt": "2026-07-18"
     },
     {
-      "slug": "parfums-de-marly-1",
-      "brand": "Parfums de Marly",
-      "name": "レイトン",
-      "gender": "men",
-      "family": "gourmand",
-      "top": "アップル・ベルガモット・マンダリン",
-      "mid": "ラベンダー・すみれ・ゼラニウム",
-      "last": "バニラ・サンダルウッド・ペッパー",
-      "seasons": [
-        "autumn",
-        "winter"
-      ],
-      "scenes": [
-        "date",
-        "formal"
-      ],
-      "priceTier": "high",
-      "price": "¥38,000前後",
-      "releaseYear": 2016,
-      "verdict": "りんごとバニラの上品な甘さ。華やかで高級感があり、ニッチ入門としても人気が高い。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://us.parfums-de-marly.com/products/layton",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Parfum",
-        "label": "オードパルファム"
-      },
-      "sizes": [
-        {
-          "volumeMl": 75,
-          "sourceUrl": "https://us.parfums-de-marly.com/products/layton"
-        },
-        {
-          "volumeMl": 125,
-          "sourceUrl": "https://us.parfums-de-marly.com/products/layton"
-        },
-        {
-          "volumeMl": 200,
-          "sourceUrl": "https://us.parfums-de-marly.com/products/layton"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "りんごとラベンダーにバニラが重なる華やかさを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "秋冬のデートやフォーマルで上質な甘さを使いたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "低価格帯の軽い日常用コロンを探している人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://us.parfums-de-marly.com/products/layton",
-          "publisher": "Parfums de Marly",
-          "title": "Layton Eau de Parfum",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes"
-          ],
-          "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
       "slug": "maison-margiela-1",
       "brand": "Maison Margiela",
       "name": "レプリカ ジャズクラブ",
@@ -4059,97 +3595,6 @@
       "updatedAt": "2026-07-18"
     },
     {
-      "slug": "ysl-4",
-      "brand": "YSL",
-      "name": "ラ ニュイ ドゥ ロム",
-      "gender": "men",
-      "family": "amber",
-      "top": "カルダモン",
-      "mid": "ラベンダー・ベルガモット",
-      "last": "シダー・ベチバー",
-      "seasons": [
-        "autumn",
-        "winter"
-      ],
-      "scenes": [
-        "date",
-        "formal"
-      ],
-      "priceTier": "high",
-      "price": "¥13,000前後",
-      "releaseYear": 2009,
-      "verdict": "カルダモンの効いたエレガントなスパイシー。隙のない洗練で、デートの鉄板とされる。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オードトワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 60,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
-        },
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
-        },
-        {
-          "volumeMl": 200,
-          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "カルダモンとラベンダーの温かなスパイス感を好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "秋冬のデートや普段使いに落ち着いた香りを選びたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "明るい柑橘が長く主役になる香りを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html",
-          "publisher": "YSL Beauty",
-          "title": "La Nuit de L'Homme Eau de Toilette",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes"
-          ],
-          "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
       "slug": "viktor-rolf-2",
       "brand": "Viktor&Rolf",
       "name": "スパイスボム",
@@ -4227,184 +3672,6 @@
             "notes"
           ],
           "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "dolce-gabbana-2",
-      "brand": "Dolce&Gabbana",
-      "name": "ザ ワン フォー メン",
-      "gender": "men",
-      "family": "amber",
-      "top": "グレープフルーツ・バジル",
-      "mid": "カルダモン・ジンジャー",
-      "last": "タバコ・アンバー",
-      "seasons": [
-        "autumn",
-        "winter"
-      ],
-      "scenes": [
-        "business",
-        "date"
-      ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
-      "releaseYear": 2008,
-      "verdict": "スパイスとタバコの温かみ。フォーマルにもデートにも効く、品のある甘さが魅力。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オードトワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "グレープフルーツからタバコへ移る温かな香りを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "秋冬のデートやフォーマルで穏やかな色気を出したい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "夏向けの軽いアクアティック香を探している人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.dolcegabbana.com/en-us/beauty/perfumes-for-him/the-one-for-men/the-one-for-men-edt-100ml---158057971180509.html?keeplocale=true",
-          "publisher": "Dolce&Gabbana",
-          "title": "The One for Men Eau de Toilette 100ml",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes"
-          ],
-          "market": "US",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "azzaro-3",
-      "brand": "Azzaro",
-      "name": "ワンテッド",
-      "gender": "men",
-      "family": "amber",
-      "top": "ジンジャー・レモン",
-      "mid": "カルダモン・サフラン",
-      "last": "トンカ・ベチバー",
-      "seasons": [
-        "autumn",
-        "winter"
-      ],
-      "scenes": [
-        "date",
-        "daily"
-      ],
-      "priceTier": "mid",
-      "price": "¥6,500前後",
-      "releaseYear": 2016,
-      "verdict": "ジンジャーとトンカの心地よい甘辛さ。親しみやすく華やかで、デートに使いやすい。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オードトワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 30,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
-        },
-        {
-          "volumeMl": 50,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
-        },
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
-        },
-        {
-          "volumeMl": 150,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "レモンとジンジャーにトンカの甘さが重なる香りを好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春秋の休日やデートで快活な印象を作りたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "甘さのない端正なウッディ香を求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.azzaro.com/en/fragrances/azzaro-wanted/eau-de-toilette",
-          "publisher": "Azzaro",
-          "title": "Azzaro Wanted Eau de Toilette",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes",
-            "notes"
-          ],
-          "market": "GLOBAL",
           "sourceType": "official"
         }
       ],
@@ -4819,92 +4086,6 @@
           "type": "product"
         }
       },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "hermes-3",
-      "brand": "Hermès",
-      "name": "テール ド エルメス",
-      "gender": "men",
-      "family": "woody",
-      "top": "オレンジ・グレープフルーツ",
-      "mid": "ペッパー・ゼラニウム",
-      "last": "ベチバー・シダー",
-      "seasons": [
-        "autumn",
-        "spring"
-      ],
-      "scenes": [
-        "business",
-        "formal"
-      ],
-      "priceTier": "high",
-      "price": "¥17,000前後",
-      "releaseYear": 2006,
-      "verdict": "柑橘から鉱物的なベチバーへ。乾いた大地を思わせる、知性と品格のモダンクラシック。",
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オー ド トワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 50,
-          "referencePriceYen": 14190,
-          "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%89-%E3%83%88%E3%83%AF%E3%83%AC-%E3%80%8A%E3%83%86%E3%83%BC%E3%83%AB-%E3%83%89%E3%82%A5-%E3%82%A8%E3%83%AB%E3%83%A1%E3%82%B9%E3%80%8B-V107189V0/"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "ドライなウッディ系を仕事やフォーマルで使いたい人",
-          "basis": "editorial"
-        },
-        {
-          "text": "柑橘から木質へ移る香りを好む人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "バニラ主体の甘い香りを求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [
-        "50mL以外の国内参考価格は今回の確認対象に含めていません"
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%89-%E3%83%88%E3%83%AF%E3%83%AC-%E3%80%8A%E3%83%86%E3%83%BC%E3%83%AB-%E3%83%89%E3%82%A5-%E3%82%A8%E3%83%AB%E3%83%A1%E3%82%B9%E3%80%8B-V107189V0/",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "sources": [
-        {
-          "url": "https://www.hermes.com/jp/ja/product/%E3%82%AA%E3%83%BC-%E3%83%89-%E3%83%88%E3%83%AF%E3%83%AC-%E3%80%8A%E3%83%86%E3%83%BC%E3%83%AB-%E3%83%89%E3%82%A5-%E3%82%A8%E3%83%AB%E3%83%A1%E3%82%B9%E3%80%8B-V107189V0/",
-          "publisher": "Hermès",
-          "title": "オー ド トワレ《テール ドゥ エルメス》50 ml",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "concentration",
-            "sizes"
-          ],
-          "sourceType": "official",
-          "market": "JP"
-        }
-      ],
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18"
     },
@@ -5628,85 +4809,6 @@
             "notes"
           ],
           "market": "GLOBAL",
-          "sourceType": "official"
-        }
-      ],
-      "profile": {
-        "lightToRich": null,
-        "freshToSweet": null,
-        "subtleToBold": null,
-        "dailyToDistinctive": null,
-        "youthfulToMature": null,
-        "method": "editorial-v1"
-      },
-      "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
-    },
-    {
-      "slug": "john-varvatos-1",
-      "brand": "John Varvatos",
-      "name": "アーティザン",
-      "gender": "men",
-      "family": "woody",
-      "top": "クレメンタイン・バジル",
-      "mid": "シダー・タバコ",
-      "last": "アンバー・スエード",
-      "seasons": [
-        "autumn",
-        "spring"
-      ],
-      "scenes": [
-        "date",
-        "daily"
-      ],
-      "priceTier": "mid",
-      "price": "¥6,000前後",
-      "releaseYear": 2009,
-      "verdict": "柑橘と乾いた木のバランスがよい隠れた良作。価格以上の満足感で根強いファンを持つ。",
-      "purchaseLinks": {
-        "official": {
-          "url": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
-        "amazon": null,
-        "rakuten": null
-      },
-      "concentration": null,
-      "sizes": [
-        {
-          "volumeMl": 125,
-          "sourceUrl": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "text": "マンダリンとオレンジブロッサムの明るい柑橘香を好む人",
-          "basis": "editorial"
-        },
-        {
-          "text": "春夏の休日や普段使いに軽快な香りを選びたい人",
-          "basis": "editorial"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "text": "濃密なアンバーやレザーを主役に求める人",
-          "basis": "editorial"
-        }
-      ],
-      "cautions": [],
-      "sources": [
-        {
-          "url": "https://www.johnvarvatos.com/accessories/fragrance/artisan-4.2-oz/873824001184.html",
-          "publisher": "John Varvatos",
-          "title": "Artisan 4.2 oz",
-          "accessedAt": "2026-07-18",
-          "supports": [
-            "sizes",
-            "notes"
-          ],
-          "market": "US",
           "sourceType": "official"
         }
       ],
@@ -8603,7 +7705,11 @@
           "accessedAt": "2026-08-05",
           "sourceType": "official",
           "market": "OTHER",
-          "supports": ["concentration", "sizes", "notes"]
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ]
         }
       ],
       "verifiedAt": "2026-08-05",
@@ -8664,7 +7770,11 @@
           "accessedAt": "2026-08-05",
           "sourceType": "official",
           "market": "OTHER",
-          "supports": ["concentration", "sizes", "notes"]
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ]
         }
       ],
       "verifiedAt": "2026-08-05",
@@ -8725,7 +7835,10 @@
           "accessedAt": "2026-08-05",
           "sourceType": "official",
           "market": "OTHER",
-          "supports": ["concentration", "sizes"]
+          "supports": [
+            "concentration",
+            "sizes"
+          ]
         },
         {
           "url": "https://www.lacoste.com/ca/en/lacoste/men/accessories/fragrance/99350108114.html",
@@ -8734,7 +7847,9 @@
           "accessedAt": "2026-08-05",
           "sourceType": "official",
           "market": "OTHER",
-          "supports": ["notes"]
+          "supports": [
+            "notes"
+          ]
         }
       ],
       "verifiedAt": "2026-08-05",
@@ -8795,7 +7910,11 @@
           "accessedAt": "2026-08-05",
           "sourceType": "official",
           "market": "OTHER",
-          "supports": ["concentration", "sizes", "notes"]
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ]
         }
       ],
       "verifiedAt": "2026-08-05",

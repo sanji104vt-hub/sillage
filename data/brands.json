@@ -70,13 +70,6 @@
     "desc": "元ルイ・ヴィトン専属調香師フランシス・クルジャンの個人メゾン。バカラ ルージュ540で世界的話題に。"
   },
   {
-    "name": "Parfums de Marly",
-    "country": "FR",
-    "founded": 2009,
-    "tier": "niche",
-    "desc": "ヴェルサイユ宮殿時代の調香文化に着想。ラグジュアリーなニッチとして人気上昇中。"
-  },
-  {
     "name": "Acqua di Parma",
     "country": "IT",
     "founded": 1916,
@@ -154,25 +147,13 @@
     "desc": "メルボルン発のオーガニック志向ブランド。タシットなど植物的な香りで支持される。"
   },
   {
-    "name": "Jean Paul Gaultier",
-    "country": "FR",
-    "founded": 1976,
-    "tier": "luxury",
-    "desc": "パリのモードメゾン。トルソー型ボトルが象徴的で、ル マルなど色気の名作を持つ。"
-  },
-  {
     "name": "Mugler",
     "country": "FR",
     "founded": 1973,
     "tier": "luxury",
-    "desc": "エンジェルでグルマン香水を発明した革新派。創業者ティエリー・ミュグレーは2022年没。"
-  },
-  {
-    "name": "Thierry Mugler",
-    "country": "FR",
-    "founded": 1973,
-    "tier": "luxury",
-    "desc": "ティエリー・ミュグレー創業のメゾン(現Mugler)。A*MENなどメンズグルマンの先駆。"
+    "desc": "エンジェルでグルマン香水を発明した革新派。創業者ティエリー・ミュグレーは2022年没。旧称：ティエリー ミュグレー（Thierry Mugler）。",
+    "alternateName": "Thierry Mugler",
+    "nameJa": "ミュグレー（旧称：ティエリー ミュグレー）"
   },
   {
     "name": "Viktor&Rolf",
@@ -215,13 +196,6 @@
     "founded": 1968,
     "tier": "midrange",
     "desc": "NY発。CK Oneでユニセックス香水のムーブメントを生んだ90年代の象徴。"
-  },
-  {
-    "name": "CK",
-    "country": "US",
-    "founded": 1968,
-    "tier": "midrange",
-    "desc": "Calvin KleinのCK系ライン。手頃な価格帯でユニセックス香水の入門に。"
   },
   {
     "name": "Davidoff",
@@ -285,13 +259,6 @@
     "founded": 1893,
     "tier": "midrange",
     "desc": "ロンドンの英国紳士ブランド。アイコンなどスーツに合うレザー系が得意。"
-  },
-  {
-    "name": "John Varvatos",
-    "country": "US",
-    "founded": 2000,
-    "tier": "midrange",
-    "desc": "NYのメンズデザイナー。スエードや木の温かみを纏う、隠れた良作で知られる。"
   },
   {
     "name": "Loewe",

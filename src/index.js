@@ -39,6 +39,34 @@ export default {
       "/brand-atelier-cologne.html",
       "/brand-muji.html",
       "/brand-brut.html",
+      // 2026-08-05 追加：実写画像が無い10商品と、それに伴い掲載0本になった3ブランド。
+      "/items/hermes-1",
+      "/items/hermes-1.html",
+      "/items/hermes-3",
+      "/items/hermes-3.html",
+      "/items/ysl-1",
+      "/items/ysl-1.html",
+      "/items/ysl-4",
+      "/items/ysl-4.html",
+      "/items/tom-ford-1",
+      "/items/tom-ford-1.html",
+      "/items/jean-paul-gaultier-1",
+      "/items/jean-paul-gaultier-1.html",
+      "/items/parfums-de-marly-1",
+      "/items/parfums-de-marly-1.html",
+      "/items/dolce-gabbana-2",
+      "/items/dolce-gabbana-2.html",
+      "/items/azzaro-3",
+      "/items/azzaro-3.html",
+      "/items/john-varvatos-1",
+      "/items/john-varvatos-1.html",
+      "/brand-jean-paul-gaultier.html",
+      "/brand-parfums-de-marly.html",
+      "/brand-john-varvatos.html",
+      // 2026-08-05 追加：同一メゾンの重複ブランドを統合したため、旧ブランドページを取り下げ。
+      // CK → Calvin Klein / Thierry Mugler → Mugler（商品の slug は変更していない）
+      "/brand-ck.html",
+      "/brand-thierry-mugler.html",
     ]);
     if (GONE.has(path.replace(/\/$/, "") || path)) {
       return new Response(

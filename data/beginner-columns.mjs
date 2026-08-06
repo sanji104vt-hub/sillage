@@ -49,7 +49,7 @@ export const BEGINNER_ARTICLES = [
     faq: [["EDTなら2プッシュ必要ですか？","濃度表記だけで回数は決まりません。最初は1プッシュから実際の広がりを確認します。"],["香水を半プッシュにできますか？","ノズルによって噴霧が不安定になるため、腰など鼻から遠い位置へ1回つける方が再現しやすい場合があります。"],["朝と夕方に1回ずつなら大丈夫ですか？","朝の香りが残っている可能性があります。追加前に肌や服への残り方と、その後の場面を確認してください。"]],
     relatedArticleSlugs: ["how-to-wear","where-to-apply-perfume","why-cant-smell-own-perfume","too-much-perfume"],
     brands: [["Bvlgari","bvlgari"],["Hermès","hermes"],["Jo Malone","jo-malone"]],
-    featured: ["bvlgari-2","hermes-3","jo-malone-1"],
+    featured:["bvlgari-2","hermes-2","jo-malone-1"],
   }),
   guide({
     slug: "where-to-apply-perfume",
@@ -101,7 +101,7 @@ export const BEGINNER_ARTICLES = [
     relatedArticleSlugs: ["why-cant-smell-own-perfume","how-many-sprays","perfume-storage","perfume-on-clothes"],
     sources: [{ publisher:"日本化粧品工業会", title:"化粧品を保管するときに注意していただきたいこと", url:"https://www.jcia.org/user/public/basis/store", note:"光・熱・湿気・温度変化を避ける保管方法" }],
     brands: [["Chanel","chanel"],["Hermès","hermes"],["Narciso Rodriguez","narciso-rodriguez"]],
-    featured: ["chanel-4","hermes-3","narciso-rodriguez-1"],
+    featured:["chanel-4","hermes-2","narciso-rodriguez-1"],
   }),
   guide({
     slug: "how-to-test-perfume",

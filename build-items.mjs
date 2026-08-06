@@ -39,7 +39,7 @@ const PRICE = new Function("return " + extractLine("const PRICE="))();
 const PRICE_RANK = { petit: 1, mid: 2, high: 3 };
 // 第2段階で既に商品/検索ラベルを公開済みの商品。その他は移行前の「確認」表示を維持する。
 const TYPED_PURCHASE_LABEL_SLUGS = new Set([
-  "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
+  "jo-malone-1", "acqua-di-parma-1", "dior-1", "guerlain-2",
   "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4", "tom-ford-2",
   "creed-1", "diptyque-1", "byredo-1", "tom-ford-3", "le-labo-2",
   "maison-margiela-2", "giorgio-armani-3", "versace-4",
@@ -49,18 +49,15 @@ const TYPED_PURCHASE_LABEL_SLUGS = new Set([
 const BRAND_SLUG = {
   "Jo Malone": "jo-malone", "Acqua di Parma": "acqua-di-parma", "Dior": "dior",
   "Hermès": "hermes", "4711": "4711", "Atelier Cologne": "atelier-cologne",
-  "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana",
-  "CK": "ck", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",
+  "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",
   "Paco Rabanne": "paco-rabanne", "Nautica": "nautica", "Brut": "brut",
   "YSL": "ysl", "Gucci": "gucci", "Calvin Klein": "calvin-klein",
   "Marc Jacobs": "marc-jacobs", "Versace": "versace", "Tom Ford": "tom-ford",
-  "Mugler": "mugler", "Thierry Mugler": "thierry-mugler",
-  "Jean Paul Gaultier": "jean-paul-gaultier", "Giorgio Armani": "giorgio-armani",
-  "Viktor&Rolf": "viktor-rolf", "Prada": "prada", "Carolina Herrera": "carolina-herrera",
-  "Parfums de Marly": "parfums-de-marly", "Maison Margiela": "maison-margiela",
+  "Mugler": "mugler", "Giorgio Armani": "giorgio-armani",
+  "Viktor&Rolf": "viktor-rolf", "Prada": "prada", "Carolina Herrera": "carolina-herrera", "Maison Margiela": "maison-margiela",
   "Bvlgari": "bvlgari", "Maison Francis Kurkdjian": "maison-francis-kurkdjian",
   "Creed": "creed", "Le Labo": "le-labo", "Diptyque": "diptyque", "Byredo": "byredo",
-  "Dunhill": "dunhill", "John Varvatos": "john-varvatos", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
+  "Dunhill": "dunhill", "Hugo Boss": "hugo-boss", "Aramis": "aramis", "SHIRO": "shiro",
   "Narciso Rodriguez": "narciso-rodriguez", "Glossier": "glossier",
   "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
   "Ralph Lauren": "ralph-lauren",

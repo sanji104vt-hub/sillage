@@ -7,11 +7,11 @@ const source = readFileSync("public/index.html", "utf8");
 const fragrances = loadFragrances();
 const slugs = fragrances.map((item) => item.slug);
 const PILOT_SLUGS = new Set([
-  "dior-2", "ysl-2", "versace-1", "tom-ford-1",
-  "maison-margiela-1", "hermes-3", "guerlain-3", "shiro-1", "aesop-1",
+  "dior-2", "ysl-2", "versace-1",
+  "maison-margiela-1", "guerlain-3", "shiro-1", "aesop-1",
 ]);
 const SECOND_BATCH_SLUGS = new Set([
-  "jo-malone-1", "acqua-di-parma-1", "dior-1", "hermes-1", "guerlain-2",
+  "jo-malone-1", "acqua-di-parma-1", "dior-1", "guerlain-2",
   "dior-4", "mugler-1", "ysl-3", "bvlgari-1", "chanel-4",
   "tom-ford-2", "creed-1", "diptyque-1", "byredo-1", "tom-ford-3",
   "le-labo-2", "maison-margiela-2", "giorgio-armani-3", "versace-4",
@@ -19,14 +19,14 @@ const SECOND_BATCH_SLUGS = new Set([
 const THIRD_BATCH_SLUGS = new Set([
   "4711-1", "guerlain-1", "dolce-gabbana-1", "hermes-2",
   "ck-1", "montblanc-1", "azzaro-1", "chanel-1", "paco-rabanne-1",
-  "nautica-1", "ysl-1", "chanel-2", "gucci-1", "dior-3",
+  "nautica-1", "chanel-2", "gucci-1", "dior-3",
   "calvin-klein-1", "chanel-3", "gucci-2", "jo-malone-2", "marc-jacobs-1",
-  "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1", "jean-paul-gaultier-1",
-  "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1", "parfums-de-marly-1",
+  "jo-malone-3", "versace-2", "azzaro-2", "thierry-mugler-1",
+  "giorgio-armani-1", "viktor-rolf-1", "prada-1", "carolina-herrera-1",
 ]);
 const FOURTH_BATCH_SLUGS = new Set([
-  "dior-5", "ysl-4", "viktor-rolf-2", "dolce-gabbana-2", "azzaro-3", "maison-francis-kurkdjian-1",
-  "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "john-varvatos-1", "montblanc-2",
+  "dior-5", "viktor-rolf-2", "maison-francis-kurkdjian-1",
+  "versace-3", "dior-6", "giorgio-armani-2", "le-labo-1", "dunhill-1", "prada-2", "montblanc-2",
   "jo-malone-4", "hugo-boss-1", "dior-7", "aramis-1", "chanel-5", "chanel-6", "narciso-rodriguez-1",
   "narciso-rodriguez-2", "glossier-1", "bvlgari-2", "davidoff-1", "paco-rabanne-3", "bvlgari-3", "acqua-di-parma-2",
 ]);
@@ -251,7 +251,25 @@ const brandCounts = new Map();
 for (const item of secondBatchItems) brandCounts.set(item.brand, (brandCounts.get(item.brand) || 0) + 1);
 if (brandCounts.size < 15) errors.push(`第2段階のブランド数が15未満です: ${brandCounts.size}`);
 if ([...brandCounts.values()].some((count) => count > 2)) errors.push("第2段階に同一ブランド3件以上があります");
-if (!secondBatchItems.some((item) => item.purchaseLinks?.rakuten) || !secondBatchItems.some((item) => !item.purchaseLinks?.rakuten)) errors.push("第2段階に楽天リンクあり・なしの両ケースがありません");
+// 2026-08-05: 「第2段階に楽天リンクあり・なしの両ケースがあること」は移行期の検査だった。
+// 実写画像も楽天リンクも無い商品を全て取り下げた結果、掲載中の全商品が楽天リンクを持つ
+// 状態になり、この条件は成立しなくなった。現在の掲載方針を表す検査に置き換える。
+const noRakuten = fragrances.filter((item) => !item.purchaseLinks?.rakuten?.url);
+if (noRakuten.length) {
+  errors.push(`楽天リンクを持たない商品があります: ${noRakuten.map((item) => item.slug).join(", ")}`);
+}
+// 実写画像(楽天CDN)を持たない商品は掲載しない。意匠画像は onerror の保険であって「画像あり」ではない。
+const noPhoto = fragrances.filter((item) => !item.img || String(item.img).startsWith("/img/products/"));
+if (noPhoto.length) {
+  errors.push(`実写画像を持たない商品があります: ${noPhoto.map((item) => item.slug).join(", ")}`);
+}
+// 同一メゾンが別ブランドとして重複登録されていないか（CK/Calvin Klein, Thierry Mugler/Mugler の再発防止）
+const brandNames = [...new Set(fragrances.map((item) => item.brand))];
+const brandSource = JSON.parse(readFileSync("data/brands.json", "utf8"));
+const orphanBrands = brandNames.filter((name) => !brandSource.some((brand) => brand.name === name));
+if (orphanBrands.length) errors.push(`BRANDSに定義が無いブランド: ${orphanBrands.join(", ")}`);
+const emptyBrands = brandSource.filter((brand) => !brandNames.includes(brand.name));
+if (emptyBrands.length) errors.push(`掲載0本のブランドがBRANDSに残っています: ${emptyBrands.map((b) => b.name).join(", ")}`);
 
 if (errors.length) {
   console.error("\n検証エラー:");

@@ -210,7 +210,7 @@ export const PROBLEM_ARTICLES = [
     tableNote:"時間は比較の目安です。製品や環境により変化します。",
     choices:[["迷った時","正式名称を控え、サンプルの有無を確認して持ち帰ります。"],["二択になった時","使う場面を一つ決め、その場面に自然なほうを選びます。"]],
     faq:[["香水売り場で鼻が疲れたら？","候補を増やさず、香りの少ない場所へ移動して休憩します。"],["人気商品から試すべきですか？","人気より用途、苦手な要素、予算に合う候補から試すほうが判断しやすくなります。"]],
-    brands:[["Chanel","chanel"],["Dior","dior"],["Hermès","hermes"]], featured:["chanel-4","dior-2","hermes-3"],
+    brands:[["Chanel","chanel"],["Dior","dior"],["Hermès","hermes"]], featured:["chanel-4","dior-2","hermes-2"],
   }),
   guide({
     slug:"age-and-perfume", title:"「30代だからこの香り」という選び方は必要？", description:"年齢別の香水選びに迷う人へ。年代を唯一の基準にせず、場面・距離・好み・服装から自分に合う香りを選ぶ方法を解説します。",
@@ -228,7 +228,7 @@ export const PROBLEM_ARTICLES = [
     tableNote:"年代や性別の分類を否定するのではなく、唯一の判断基準にしないための整理です。",
     choices:[["日常の一本","最も頻繁に使う場面へ合わせ、少量で自然なものを選びます。"],["気分を変える一本","手持ちと異なる香調を、休日に少量から試します。"]],
     faq:[["30代は甘い香水を避けるべきですか？","年齢だけで避ける必要はありません。甘さの強さ、量、場面、自分の好みで判断します。"],["性別表記と違う香水を選んでもよいですか？","香りの好みと使用場面に合うなら候補にできます。分類は探索の目安として使います。"]],
-    brands:[["Hermès","hermes"],["Le Labo","le-labo"],["Jo Malone","jo-malone"]], featured:["hermes-3","le-labo-2","jo-malone-4"],
+    brands:[["Hermès","hermes"],["Le Labo","le-labo"],["Jo Malone","jo-malone"]], featured:["hermes-2","le-labo-2","jo-malone-4"],
   }),
   guide({
     slug:"perfume-gift-mistakes", title:"プレゼントで香水を選ぶ際の失敗と避け方", description:"香水を贈る時に起こりやすい、好み・濃度・容量・正式名称の取り違えを防ぐ方法を解説。無理に本品を選ばない代替案も紹介します。",
