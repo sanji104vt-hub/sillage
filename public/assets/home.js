@@ -263,37 +263,50 @@ function brandSortKey(name){
   const normalized=String(name||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
   return (/^\d/.test(normalized)?"0":"1")+normalized;
 }
+// 香調順の系統の並びは FAMILIES の定義順（＝香調ホイールの並び）に合わせる。
+// citrus → aromatic → floral → fruity → gourmand → amber → woody → chypre → musk → aquatic
+const FAMILY_ORDER=Object.fromEntries(FAMILIES.map((f,i)=>[f.key,i]));
 // 元配列は壊さずに、現在の並び順で整列した配列を返す。
-// ブランド順でも同一ブランド内は元の並び（＝香調順）を保つ。
+// どちらのモードでも、グループ内はデータ配列の並び（ブランドごとにまとまった順）を保つ。
 function sortForDisplay(list){
-  if(sortMode!=="brand")return list.slice();
-  return list.map((p,i)=>({p,i})).sort((a,b)=>{
-    const ka=brandSortKey(a.p.brand),kb=brandSortKey(b.p.brand);
-    if(ka!==kb)return ka<kb?-1:1;
-    return a.i-b.i;
-  }).map(x=>x.p);
+  const keyed=list.map((p,i)=>({p,i}));
+  if(sortMode==="brand"){
+    keyed.sort((a,b)=>{
+      const ka=brandSortKey(a.p.brand),kb=brandSortKey(b.p.brand);
+      if(ka!==kb)return ka<kb?-1:1;
+      return a.i-b.i;
+    });
+  }else{
+    keyed.sort((a,b)=>{
+      const fa=FAMILY_ORDER[a.p.family]??99,fb=FAMILY_ORDER[b.p.family]??99;
+      if(fa!==fb)return fa-fb;
+      return a.i-b.i;
+    });
+  }
+  return keyed.map(x=>x.p);
 }
-// 区切り見出しはブランド順のときだけ出す。
-// 香調順は「現在の並びを変えない」ことが要件だが、その並びは系統ごとに連続しておらず
-// (97商品が10系統に対し28ブロックへ分断。aromatic と woody は5回ずつ現れる)、
-// 見出しを付けると同じ系統名が何度も出てしまう。連続させるには並び替えが必要になり
-// 要件と矛盾するため、香調順では見出しを出さない。
-// ブランド順は名前で整列するので同一ブランドが必ず連続し、見出しが一度ずつで済む。
+// 区切り見出しは両モードぶんまとめて出しておき、表示は applyOrder() の hidden で切り替える。
+// どちらのモードも整列後はグループが必ず連続するので、見出しは一度ずつで済む。
 function dividersHTML(list){
-  const seen=new Set();
   const html=[];
+  const famCount={},brandCount={};
   for(const p of list){
-    if(seen.has(p.brand))continue;
-    seen.add(p.brand);
-    html.push(`<h3 class="grid-divider" data-mode="brand" data-group="${escapeAttr(p.brand)}" hidden><span class="gd-ja">${escapeAttr(p.brand)}</span><span class="gd-en">${escapeAttr(brandCount(list,p.brand))}</span></h3>`);
+    famCount[p.family]=(famCount[p.family]||0)+1;
+    brandCount[p.brand]=(brandCount[p.brand]||0)+1;
+  }
+  // 香調：FAMILIES の定義順で出す
+  for(const f of FAMILIES){
+    if(!famCount[f.key])continue;
+    const en=f.en.charAt(0)+f.en.slice(1).toLowerCase();
+    html.push(`<h3 class="grid-divider" data-mode="family" data-group="${escapeAttr(f.key)}" hidden><span class="gd-ja">${escapeAttr(f.ja)}</span><span class="gd-en">${escapeAttr(en)}</span><span class="gd-n">${countLabel(famCount[f.key])}</span></h3>`);
+  }
+  // ブランド：出現順のまま（表示順は order で決まるので並びは問わない）
+  for(const brand of Object.keys(brandCount)){
+    html.push(`<h3 class="grid-divider" data-mode="brand" data-group="${escapeAttr(brand)}" hidden><span class="gd-ja">${escapeAttr(brand)}</span><span class="gd-n">${countLabel(brandCount[brand])}</span></h3>`);
   }
   return html.join("");
 }
-// 見出しの副題は掲載本数（欧文イタリックのゴールドで小さく添える）
-const brandCount=(list,brand)=>{
-  const n=list.filter(p=>p.brand===brand).length;
-  return n+(n===1?" item":" items");
-};
+const countLabel=n=>n+(n===1?" item":" items");
 // 現在の sortMode に合わせて order を振り直し、該当カードが無い見出しを隠す。
 function applyOrder(){
   const grid=document.getElementById("grid");
@@ -313,11 +326,12 @@ function applyOrder(){
 
   let index=0,lastGroup=null;
   for(const p of ordered){
-    // 見出しはブランド順のときだけ。並び替えでブランドが必ず連続するため一度ずつ出る。
-    if(sortMode==="brand"&&p.brand!==lastGroup){
-      const divider=dividers.get("brand:"+p.brand);
+    // 整列後はグループが必ず連続するので、切り替わり目でだけ見出しを出せばよい
+    const key=sortMode==="brand"?p.brand:p.family;
+    if(key!==lastGroup){
+      const divider=dividers.get(sortMode+":"+key);
       if(divider){divider.hidden=false;divider.style.order=String(index++);}
-      lastGroup=p.brand;
+      lastGroup=key;
     }
     const el=elBySlug.get(p.slug);
     if(el)el.style.order=String(index++);
