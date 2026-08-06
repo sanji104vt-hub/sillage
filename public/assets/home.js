@@ -44,6 +44,10 @@ const PURCHASE_SHOPS=[
   {key:"official",label:"公式サイトで見る",   cls:"buy buy-official", rel:"noopener noreferrer"},
 ];
 const state={family:null,scene:null,season:null,gender:null,price:null};
+// 並び順は「絞り込み条件」ではないので state には入れない。
+// state に混ぜると render() の filtered 判定（Object.values(state).some(Boolean)）が
+// 常に真になり、件数表示が「全97件」から「97件が見つかりました」に変わってしまう。
+let sortMode="family";
 
 /* ---------- geometry ---------- */
 const SVGNS="http://www.w3.org/2000/svg";
@@ -248,6 +252,96 @@ function card(p){
     </div>
   </article>`;
 }
+/* ---------- 並び替え ----------
+   カードのHTMLは作り直さず、CSS の order だけで並べ替える。
+   innerHTML を触ると hybrid photo の onerror が再発火して楽天CDN画像を
+   取り直すことになるため、並び順の切り替えでは DOM を再生成しない。
+   カードに data 属性は足せないので、中の /items/{slug} リンクから対応付ける。 */
+const escapeAttr=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+// 「Hermès」を「Hermes」として比較する。数字始まり(4711)は先頭へ。
+function brandSortKey(name){
+  const normalized=String(name||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
+  return (/^\d/.test(normalized)?"0":"1")+normalized;
+}
+// 元配列は壊さずに、現在の並び順で整列した配列を返す。
+// ブランド順でも同一ブランド内は元の並び（＝香調順）を保つ。
+function sortForDisplay(list){
+  if(sortMode!=="brand")return list.slice();
+  return list.map((p,i)=>({p,i})).sort((a,b)=>{
+    const ka=brandSortKey(a.p.brand),kb=brandSortKey(b.p.brand);
+    if(ka!==kb)return ka<kb?-1:1;
+    return a.i-b.i;
+  }).map(x=>x.p);
+}
+// 区切り見出しはブランド順のときだけ出す。
+// 香調順は「現在の並びを変えない」ことが要件だが、その並びは系統ごとに連続しておらず
+// (97商品が10系統に対し28ブロックへ分断。aromatic と woody は5回ずつ現れる)、
+// 見出しを付けると同じ系統名が何度も出てしまう。連続させるには並び替えが必要になり
+// 要件と矛盾するため、香調順では見出しを出さない。
+// ブランド順は名前で整列するので同一ブランドが必ず連続し、見出しが一度ずつで済む。
+function dividersHTML(list){
+  const seen=new Set();
+  const html=[];
+  for(const p of list){
+    if(seen.has(p.brand))continue;
+    seen.add(p.brand);
+    html.push(`<h3 class="grid-divider" data-mode="brand" data-group="${escapeAttr(p.brand)}" hidden><span class="gd-ja">${escapeAttr(p.brand)}</span><span class="gd-en">${escapeAttr(brandCount(list,p.brand))}</span></h3>`);
+  }
+  return html.join("");
+}
+// 見出しの副題は掲載本数（欧文イタリックのゴールドで小さく添える）
+const brandCount=(list,brand)=>{
+  const n=list.filter(p=>p.brand===brand).length;
+  return n+(n===1?" item":" items");
+};
+// 現在の sortMode に合わせて order を振り直し、該当カードが無い見出しを隠す。
+function applyOrder(){
+  const grid=document.getElementById("grid");
+  if(!grid)return;
+  const bySlug=new Map(PERFUMES.map(p=>[p.slug,p]));
+  const pairs=[...grid.querySelectorAll(".card")].map(el=>{
+    const href=el.querySelector('a[href^="/items/"]')?.getAttribute("href")||"";
+    return {el,p:bySlug.get(href.slice("/items/".length))};
+  }).filter(x=>x.p);
+  if(!pairs.length)return;
+
+  const elBySlug=new Map(pairs.map(x=>[x.p.slug,x.el]));
+  const ordered=sortForDisplay(pairs.map(x=>x.p));
+  const dividers=new Map([...grid.querySelectorAll(".grid-divider")]
+    .map(el=>[el.dataset.mode+":"+el.dataset.group,el]));
+  dividers.forEach(el=>{el.hidden=true;});
+
+  let index=0,lastGroup=null;
+  for(const p of ordered){
+    // 見出しはブランド順のときだけ。並び替えでブランドが必ず連続するため一度ずつ出る。
+    if(sortMode==="brand"&&p.brand!==lastGroup){
+      const divider=dividers.get("brand:"+p.brand);
+      if(divider){divider.hidden=false;divider.style.order=String(index++);}
+      lastGroup=p.brand;
+    }
+    const el=elBySlug.get(p.slug);
+    if(el)el.style.order=String(index++);
+  }
+  // 表示順どおりに段階的にフェードインさせる（40枚目以降は同じ遅延で頭打ち）
+  [...grid.children].forEach(el=>{
+    const o=Number(el.style.order);
+    el.style.animationDelay=Number.isFinite(o)?(Math.min(o,40)*40)+"ms":"0ms";
+  });
+}
+// 並び順チップ（単一選択：選択中を再クリックしても解除されない）
+function initOrderChips(){
+  const box=document.getElementById("orderChips");
+  if(!box)return;
+  const chips=[...box.querySelectorAll(".chip")];
+  const sync=()=>chips.forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.val===sortMode)));
+  chips.forEach(c=>c.addEventListener("click",()=>{
+    if(sortMode===c.dataset.val)return;
+    sortMode=c.dataset.val;
+    sync();
+    applyOrder();
+  }));
+  sync();
+}
 function render(){
   if(!Array.isArray(PERFUMES)||!PERFUMES.length)throw new Error("香水データを利用できません");
   const grid=document.getElementById("grid");
@@ -271,9 +365,11 @@ function render(){
   const summary=document.getElementById("resultsSummary");
   summary.innerHTML=list.length?(filtered?`<b>${list.length}</b>件が見つかりました`:`全<b>${list.length}</b>件の香水`):"条件に合う香水がありません";
   document.getElementById("activeFam").textContent=state.family?FAM[state.family].ja:"";
-  grid.innerHTML=list.length?list.map(card).join("")
+  // カードは常に元の並び（香調順）で書き出し、見た目の順序は applyOrder() の
+  // CSS order だけで決める。こうすると並び順を変えても innerHTML を触らずに済む。
+  grid.innerHTML=list.length?dividersHTML(list)+list.map(card).join("")
     :`<div class="empty"><div class="big">条件に合う香水がありません</div>条件をゆるめるか、「reset all」で全件に戻せます。</div>`;
-  [...grid.children].forEach((el,i)=>el.style.animationDelay=(i*40)+"ms");
+  applyOrder();
   grid.setAttribute("aria-busy","false");
 }
 function showProductError(error){
@@ -1508,7 +1604,15 @@ function initializeDeferredHome(){
   buildChips("genderChips",GENDER,"gender");
   buildChips("priceChips",PRICE,"price");
   applyFiltersFromUrl();
-  document.getElementById("resetBtn").onclick=()=>{Object.keys(state).forEach(k=>state[k]=null);safeRender();};
+  initOrderChips();
+  // reset all は絞り込み条件のクリアと同時に、並び順も既定の香調順へ戻す
+  document.getElementById("resetBtn").onclick=()=>{
+    Object.keys(state).forEach(k=>state[k]=null);
+    sortMode="family";
+    document.querySelectorAll("#orderChips .chip")
+      .forEach(c=>c.setAttribute("aria-pressed",String(c.dataset.val==="family")));
+    safeRender();
+  };
   buildGuide();
   safeRender();
   buildFeaturedBrands();

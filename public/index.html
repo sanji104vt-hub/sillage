@@ -151,6 +151,11 @@
   }
   .chip:hover{border-color:#aeb0b6}
   .chip.on{background:#c4c6cc;color:#15151a;border-color:#c4c6cc}
+  /* 並び順は単一選択（必ずどちらか一方が有効）。複数選択のフィルタと区別できるよう
+     枠線を実線＋わずかに明るくし、選択中はゴールドで示す。色は既存トークンのみ使用。 */
+  .chip.is-order{border-style:solid;border-color:#3a3b40;color:#8c8c92}
+  .chip.is-order:hover{border-color:#c9b558;color:#e9e7e3}
+  .chip.is-order[aria-pressed="true"]{background:transparent;border-color:#c9b558;color:#c9b558}
   .reset{
     margin-left:auto;align-self:center;font-family:"Cormorant",serif;font-style:italic;font-size:14px;
     color:#8c8c92;background:none;border:none;cursor:pointer;letter-spacing:.5px;text-decoration:underline;text-underline-offset:3px;
@@ -170,6 +175,15 @@
     max-width:1240px;margin:18px auto 0;padding:0 clamp(16px,4vw,48px) 40px;
     display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:26px;
   }
+  /* グループの区切り見出し。グリッドの全幅を占め、カードと同じ order 空間に並ぶ。
+     カードのHTMLは触らず、CSS order だけで並び替えるため見出しも order を持つ。 */
+  .grid-divider{
+    grid-column:1/-1;display:flex;align-items:baseline;gap:12px;
+    margin:14px 0 -6px;padding-top:20px;border-top:1px solid #2c2d31;
+  }
+  .grid-divider[hidden]{display:none}
+  .grid-divider .gd-ja{font-family:"Shippori Mincho",serif;font-weight:500;font-size:18px;color:#e9e7e3;letter-spacing:.5px}
+  .grid-divider .gd-en{font-family:"Cormorant",serif;font-style:italic;font-size:14px;color:#c9b558;letter-spacing:1px}
   .card{
     --family:#aeb0b6;isolation:isolate;background:linear-gradient(180deg,#1b1c20 0%,#17181b 100%);
     border:1px solid #303137;border-radius:18px;overflow:hidden;display:flex;flex-direction:column;
@@ -1053,6 +1067,10 @@
 </div>
 
 <section class="filters" id="fragrances" aria-label="香水の絞り込み条件">
+  <div class="fgroup"><span class="glabel">order ／ 並び順</span><div class="chips" id="orderChips">
+    <button type="button" class="chip is-order" data-val="family" aria-pressed="true">香調順</button>
+    <button type="button" class="chip is-order" data-val="brand" aria-pressed="false">ブランド順</button>
+  </div></div>
   <div class="fgroup"><span class="glabel">scene ／ シーン</span><div class="chips" id="sceneChips"></div></div>
   <div class="fgroup"><span class="glabel">season ／ 季節</span><div class="chips" id="seasonChips"></div></div>
   <div class="fgroup"><span class="glabel">for ／ 性別</span><div class="chips" id="genderChips"></div></div>
