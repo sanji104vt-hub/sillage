@@ -195,9 +195,11 @@ function matches(p){
   return true;
 }
 /* 参考価格の補足（容量・取得時点）。
-   価格は楽天APIで購入リンク先そのものから取得しているので、
-   どの容量のいつの価格なのかを併記して景品表示法の観点でも誤解が出ないようにする。 */
+   楽天APIで購入リンク先そのものから取得した実売価格のときだけ出す。
+   手入力のままの価格に「2026年8月時点」と付けると、取得していない価格を
+   取得したかのように見せることになるので、priceSource で必ず出し分ける。 */
 function priceMeta(p){
+  if(p.priceSource!=="rakuten")return"";
   const parts=[];
   if(p.priceSize)parts.push(p.priceSize);
   if(p.priceFetchedAt){

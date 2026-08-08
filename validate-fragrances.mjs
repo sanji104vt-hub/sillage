@@ -254,6 +254,23 @@ fragrances.forEach((item, index) => {
   } else if (item.priceSource === "rakuten") {
     errors.push(`実測価格があるのに offers がない: ${path}`);
   }
+
+  // 実売価格として採用した商品は、掲載容量のいずれかと一致していなければならない。
+  // 別容量の価格を採用すると価格帯フィルタが実態とずれる。
+  if (item.priceSource === "rakuten") {
+    const got = Number(String(item.priceSize ?? "").match(/(\d+(?:\.\d+)?)/)?.[1]);
+    const ours = (item.sizes || []).map((size) => Number(size.volumeMl));
+    if (!ours.some((n) => n === got)) errors.push(`実売価格の容量が掲載容量と不一致: ${path}`);
+    if (item.priceSizeMismatch) errors.push(`容量不一致なのに実売価格を採用: ${path}`);
+  }
+  // 手入力のままの価格に取得日や容量が残っていると、取得していない価格を
+  // 取得したように見せることになる。表示はこれらのフィールドから作られるので、
+  // データ側で消えていることを確かめれば「2026年8月時点」の誤表示は起こらない。
+  if (item.priceSource !== "rakuten") {
+    for (const field of ["priceValue", "priceSize", "priceFetchedAt", "priceIsFrom"]) {
+      if (item[field] !== undefined) errors.push(`手入力価格に ${field} が残っている: ${slug}`);
+    }
+  }
   const selfHref = `href="/items/${slug}"`;
   const comparisonArea = html.match(/<div class="compare-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] || "";
   if (comparisonArea.includes(selfHref)) errors.push(`類似商品に自身を含む: ${path}`);

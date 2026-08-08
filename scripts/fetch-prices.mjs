@@ -19,7 +19,30 @@
 //   そのため itemCode 直引きは当てにできず、検索結果の itemUrl が
 //   /{shop}/{slug}/ を含むことを必ず確認してから採用する。これが商品取り違えの防波堤。
 //
-// 実行: node scripts/fetch-prices.mjs [--dry-run] [--limit N] [--slug xxx]
+// ■ 容量の一致確認（重要）
+//   商品が特定できても、その価格が当サイトの掲載容量のものとは限らない。
+//   楽天には複数容量をまとめた販売ページがあり、API が返すのは最安構成の価格になる。
+//   例: メゾン マルジェラ レプリカの「30ml/100ml 各種」ページは 2ml×10 セットの
+//       ¥4,800 を返す。これをそのまま採用すると価格帯フィルタが壊れる。
+//   そこで取得価格の容量が sizes のいずれかと一致する場合だけ実売価格として採用し、
+//   一致しない・容量を判定できない商品は手入力価格を維持して priceSizeMismatch を立てる。
+//
+// ------------------------------------------------------------------ 実行手順
+//   1. 必ず Sillage のリポジトリルートで実行すること。
+//        cd C:/Users/niji1/Downloads/sillage
+//      別サイト（Moilum など）のディレクトリで実行すると data/fragrances.json が
+//      無いため MODULE_NOT_FOUND / ENOENT で落ちる。
+//
+//   2. 環境変数を Sillage のものに設定すること。
+//        export RAKUTEN_APP_ID='...'
+//        export RAKUTEN_ACCESS_KEY='...'
+//        export RAKUTEN_ORIGIN='https://sillage.asutelu.com/'
+//
+//   3. 他サイトの作業で RAKUTEN_ORIGIN がシェルに残っていると、そちらが優先されて
+//      認証に失敗する。ターミナルを開き直しても残る場合があるので毎回明示的に
+//      上書きすること。Sillage 以外の値なら下のガードが止める。
+//
+//   実行: node scripts/fetch-prices.mjs [--dry-run] [--limit N] [--slug xxx]
 
 import { readFileSync, writeFileSync, renameSync, unlinkSync, existsSync } from "node:fs";
 
@@ -30,11 +53,27 @@ const SLEEP_MS = 1200;          // 楽天APIは概ね1秒1リクエスト。並�
 const MAX_SHOP_PAGES = 5;       // ショップ全件走査の上限（大型店で無限に走らせない）
 const CHANGE_ALERT = 0.20;      // 20%以上の変動は商品取り違えの疑いとして必ず報告
 
+const SITE_HOST = "sillage.asutelu.com";
+
 const APP = process.env.RAKUTEN_APP_ID;
 const KEY = process.env.RAKUTEN_ACCESS_KEY;
-const ORIGIN = process.env.RAKUTEN_ORIGIN || "https://sillage.asutelu.com/";
+const ORIGIN = process.env.RAKUTEN_ORIGIN || `https://${SITE_HOST}/`;
 if (!APP || !KEY) {
   console.error("環境変数 RAKUTEN_APP_ID / RAKUTEN_ACCESS_KEY が必要です");
+  process.exit(1);
+}
+// 他サイトの作業でシェルに残った RAKUTEN_ORIGIN のまま実行すると、
+// 楽天APIの認証が通らないまま全件「取得失敗」になって原因が分かりにくい。
+// Sillage 以外の値なら実行前に止める。
+if (!ORIGIN.includes(SITE_HOST)) {
+  console.error(`RAKUTEN_ORIGIN が Sillage のものではありません: ${ORIGIN}`);
+  console.error(`  export RAKUTEN_ORIGIN='https://${SITE_HOST}/' を設定してから実行してください。`);
+  console.error("  （他サイトの作業で設定した値がシェルに残っている場合があります）");
+  process.exit(1);
+}
+// Moilum など別サイトのディレクトリで実行された場合もここで止める。
+if (!existsSync(FILE)) {
+  console.error(`${FILE} が見つかりません。Sillage のリポジトリルートで実行してください。`);
   process.exit(1);
 }
 
@@ -75,6 +114,22 @@ function parseSize(itemName) {
   if (!unique.length) return { size: null, isFrom: false };
   // 楽天の itemPrice は複数構成のとき通常「最小構成」の価格
   return { size: `${unique[0]}ml`, isFrom: unique.length > 1 };
+}
+
+// "50ml" "50mL" "50ML" "50 mL" を同じ 50 として扱う。数値だけ取り出して比較する。
+function mlOf(value) {
+  const n = Number(String(value ?? "").match(/(\d+(?:\.\d+)?)/)?.[1]);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
+// 取得価格の容量が、当サイトが掲載している容量ラインナップに含まれるか。
+// 含まれないなら、その価格は別容量のものなので実売価格として採用してはいけない。
+function sizeMatches(product, priceSize) {
+  const got = mlOf(priceSize);
+  if (got === null) return false;                       // 商品名から容量を読めなかった
+  const ours = (product.sizes || []).map((size) => mlOf(size.volumeMl)).filter((n) => n !== null);
+  if (!ours.length) return false;                       // 掲載容量が無く照合できない
+  return ours.some((n) => n === got);
 }
 
 async function callApi(query) {
@@ -142,8 +197,21 @@ if (LIMIT) products = products.slice(0, LIMIT);
 const before = new Map(document.fragrances.map((p) => [p.slug, { price: p.price, tier: p.priceTier, value: p.priceValue }]));
 const succeeded = [];
 const failed = [];
+const mismatched = [];
 const bigChanges = [];
 const tierChanges = [];
+
+// 実売価格を採用しない商品は、価格を取得前の状態に戻す。
+// 取得日や容量が残っていると「いつの価格か」を偽って伝えることになるので必ず消す。
+function keepManualPrice(product, prev, source) {
+  product.price = prev.price;
+  product.priceTier = prev.tier;
+  delete product.priceValue;
+  delete product.priceSize;
+  delete product.priceFetchedAt;
+  delete product.priceIsFrom;
+  product.priceSource = source;
+}
 
 console.log(`対象 ${products.length} 件 / 1件あたり最大 ${3 + MAX_SHOP_PAGES} リクエスト・間隔 ${SLEEP_MS}ms`);
 console.log(`Origin: ${ORIGIN}${DRY_RUN ? "  (dry-run: 書き込みなし)" : ""}\n`);
@@ -151,10 +219,12 @@ console.log(`Origin: ${ORIGIN}${DRY_RUN ? "  (dry-run: 書き込みなし)" : ""
 let index = 0;
 for (const product of products) {
   index++;
+  const prev = before.get(product.slug);
   const link = product.purchaseLinks?.rakuten?.url;
   const target = link ? parseRakutenTarget(link) : null;
   if (!target) {
-    product.priceSource = "manual-stale";
+    keepManualPrice(product, prev, "manual-stale");
+    delete product.priceSizeMismatch;
     failed.push({ slug: product.slug, reason: "楽天リンクなし/URL解析不可" });
     continue;
   }
@@ -168,7 +238,8 @@ for (const product of products) {
 
   if (!result.hit || !Number.isFinite(Number(result.hit.itemPrice))) {
     // 取得失敗時は既存 price を残す。priceFetchedAt も更新しない。
-    product.priceSource = "manual-stale";
+    keepManualPrice(product, prev, "manual-stale");
+    delete product.priceSizeMismatch;
     failed.push({ slug: product.slug, reason: result.error || `${target.shop}/${target.slug} を特定できず` });
     console.log(`  ${String(index).padStart(3)}/${products.length} ✗ ${product.slug} (${target.shop})`);
     continue;
@@ -176,7 +247,18 @@ for (const product of products) {
 
   const value = Number(result.hit.itemPrice);
   const { size, isFrom } = parseSize(result.hit.itemName);
-  const prev = before.get(product.slug);
+
+  // 商品は特定できたが、その価格が掲載容量のものでない場合は採用しない。
+  // 採用すると別容量の価格で価格帯フィルタが決まってしまう。
+  if (!sizeMatches(product, size)) {
+    keepManualPrice(product, prev, "manual");
+    product.priceSizeMismatch = true;
+    const ours = (product.sizes || []).map((s) => `${Number(s.volumeMl)}mL`).join("/") || "掲載容量なし";
+    mismatched.push({ slug: product.slug, got: size, gotPrice: yen(value) + (isFrom ? "〜" : ""), ours });
+    console.log(`  ${String(index).padStart(3)}/${products.length} △ ${product.slug.padEnd(34)} ${(yen(value) + (isFrom ? "〜" : "")).padStart(10)} 取得${String(size || "不明").padEnd(7)} 掲載${ours}`);
+    continue;
+  }
+  delete product.priceSizeMismatch;
 
   product.price = yen(value) + (isFrom ? "〜" : "");
   product.priceValue = value;
@@ -212,11 +294,28 @@ if (!DRY_RUN) {
 const dist = { petit: 0, mid: 0, high: 0 };
 for (const p of document.fragrances) if (dist[p.priceTier] !== undefined) dist[p.priceTier]++;
 
+const bySource = {};
+for (const p of document.fragrances) bySource[p.priceSource || "(未設定)"] = (bySource[p.priceSource || "(未設定)"] || 0) + 1;
+const expensive = document.fragrances
+  .filter((p) => p.priceSource === "rakuten" && Number(p.priceValue) > 50000)
+  .sort((a, b) => b.priceValue - a.priceValue);
+
 console.log("\n" + "=".repeat(64));
-console.log(`取得成功: ${succeeded.length}件 / 取得失敗: ${failed.length}件`);
+console.log(`実売価格を採用: ${succeeded.length}件 / 容量不一致で不採用: ${mismatched.length}件 / 取得失敗: ${failed.length}件`);
+console.log(`priceSource 別: ${Object.entries(bySource).map(([k, v]) => `${k} ${v}`).join(" / ")}`);
 if (failed.length) {
-  console.log("\n取得失敗:");
+  console.log("\n取得失敗（priceSource: manual-stale）:");
   for (const f of failed) console.log(`  - ${f.slug}  (${f.reason})`);
+}
+if (mismatched.length) {
+  console.log("\n容量不一致（priceSizeMismatch: true ＝ リンク先を単品ページに直すべき商品）:");
+  for (const m of mismatched) {
+    console.log(`  - ${m.slug.padEnd(30)} 取得 ${String(m.got || "容量不明").padEnd(8)}${m.gotPrice.padStart(10)}   掲載 ${m.ours}`);
+  }
+}
+if (expensive.length) {
+  console.log("\n実売価格が¥50,000超:");
+  for (const p of expensive) console.log(`  - ${p.slug.padEnd(30)} ${p.price.padStart(10)}  ${p.priceSize}`);
 }
 console.log(`\n価格が${CHANGE_ALERT * 100}%以上変動: ${bigChanges.length}件`);
 for (const c of bigChanges) console.log(`  - ${c.slug.padEnd(34)} ${String(c.from).padStart(12)} → ${String(c.to).padStart(10)}  (${c.rate > 0 ? "+" : ""}${c.rate}%)`);

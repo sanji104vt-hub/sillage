@@ -78,8 +78,9 @@ const formatSizes = sizes => (sizes || []).map((size) => {
     ? `${volume}：参考価格 ${Number(size.referencePriceYen).toLocaleString("ja-JP")}円（税込）`
     : volume;
 }).join(" / ");
-// 参考価格の行。楽天APIで取得した実売価格がある商品は、
-// どの容量のいつの価格かを明示したうえで注記を実売価格向けの文言に差し替える。
+// 参考価格の行。楽天APIで実売価格を取得できた商品だけ、どの容量のいつの価格かを併記する。
+// 手入力のままの価格に容量や取得日を付けると、取得していない価格を取得したように
+// 見せることになるので、priceSource で必ず出し分ける。
 const priceMetaText = p => {
   const parts = [];
   if (p.priceSize) parts.push(p.priceSize);
@@ -88,12 +89,12 @@ const priceMetaText = p => {
   return parts.length ? `（${parts.join("・")}）` : "";
 };
 const priceRow = (p, priceTier) => {
+  const tier = priceTier ? `　${priceTier}` : "";
   if (p.priceSource === "rakuten" && p.price) {
-    const tier = priceTier ? `　${priceTier}` : "";
     return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(priceMetaText(p))}${escape(tier)}<span class="price-note">価格は取得時点の楽天市場での実売価格です。最新の価格は各販売ページでご確認ください。</span></dd></div>`;
   }
   if (p.price && !(p.sizes || []).some((size) => size.referencePriceYen)) {
-    return `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>`;
+    return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(tier)}<span class="price-note">販売店や時期により変動します</span></dd></div>`;
   }
   if (!p.price && priceTier) return `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>`;
   return "";
