@@ -261,7 +261,21 @@ fragrances.forEach((item, index) => {
     const got = Number(String(item.priceSize ?? "").match(/(\d+(?:\.\d+)?)/)?.[1]);
     const ours = (item.sizes || []).map((size) => Number(size.volumeMl));
     if (!ours.some((n) => n === got)) errors.push(`実売価格の容量が掲載容量と不一致: ${path}`);
-    if (item.priceSizeMismatch) errors.push(`容量不一致なのに実売価格を採用: ${path}`);
+    if (item.priceSizeMismatch || item.priceSizeUnknown) {
+      errors.push(`容量を採用できない印が付いたまま実売価格を採用: ${path}`);
+    }
+  }
+  // 容量のフラグは対処方法が違うので、どちらか一方だけが立つようにする。
+  // mismatch = 楽天リンクを単品ページへ差し替える / unknown = sizes を補う。
+  if (item.priceSizeMismatch && item.priceSizeUnknown) {
+    errors.push(`priceSizeMismatch と priceSizeUnknown が両方立っている: ${slug}`);
+  }
+  if (item.priceSizeUnknown && (item.sizes || []).length && item.priceSize) {
+    errors.push(`照合できるのに priceSizeUnknown が立っている: ${slug}`);
+  }
+  // 作業管理用のフラグなので、ページにも配信JSONにも出さない。
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown"]) {
+    if (html.includes(flag)) errors.push(`${flag} がページに出力されている: ${path}`);
   }
   // 手入力のままの価格に取得日や容量が残っていると、取得していない価格を
   // 取得したように見せることになる。表示はこれらのフィールドから作られるので、
@@ -307,6 +321,14 @@ const orphanBrands = brandNames.filter((name) => !brandSource.some((brand) => br
 if (orphanBrands.length) errors.push(`BRANDSに定義が無いブランド: ${orphanBrands.join(", ")}`);
 const emptyBrands = brandSource.filter((brand) => !brandNames.includes(brand.name));
 if (emptyBrands.length) errors.push(`掲載0本のブランドがBRANDSに残っています: ${emptyBrands.map((b) => b.name).join(", ")}`);
+
+// 内部の作業管理フラグが、ブラウザへ配信されるデータに混ざっていないか。
+for (const deliverable of ["public/data/fragrances.json", "public/data/home-data.js"]) {
+  const text = existsSync(deliverable) ? readFileSync(deliverable, "utf8") : "";
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown"]) {
+    if (text.includes(flag)) errors.push(`${flag} が配信データに含まれています: ${deliverable}`);
+  }
+}
 
 if (errors.length) {
   console.error("\n検証エラー:");

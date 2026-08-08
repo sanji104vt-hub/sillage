@@ -570,7 +570,7 @@
       "updatedAt": "2026-07-18",
       "sizes": [],
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "hermes-2",
@@ -651,7 +651,7 @@
       "updatedAt": "2026-07-18",
       "sizes": [],
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "dior-2",
@@ -1199,7 +1199,7 @@
       "concentration": null,
       "sizes": [],
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "nautica-1",
@@ -1766,7 +1766,7 @@
       "updatedAt": "2026-07-18",
       "sizes": [],
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "ysl-2",
@@ -2944,7 +2944,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "giorgio-armani-1",
@@ -3023,7 +3023,7 @@
       "updatedAt": "2026-07-18",
       "sizes": [],
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "viktor-rolf-1",
@@ -6065,7 +6065,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "chanel-5",
@@ -6505,7 +6505,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "le-labo-2",
@@ -6947,7 +6947,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "glossier-1",
@@ -7470,7 +7470,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "bvlgari-3",
@@ -7536,7 +7536,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSizeUnknown": true
     },
     {
       "slug": "versace-4",

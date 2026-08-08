@@ -24,8 +24,10 @@
 //   楽天には複数容量をまとめた販売ページがあり、API が返すのは最安構成の価格になる。
 //   例: メゾン マルジェラ レプリカの「30ml/100ml 各種」ページは 2ml×10 セットの
 //       ¥4,800 を返す。これをそのまま採用すると価格帯フィルタが壊れる。
-//   そこで取得価格の容量が sizes のいずれかと一致する場合だけ実売価格として採用し、
-//   一致しない・容量を判定できない商品は手入力価格を維持して priceSizeMismatch を立てる。
+//   そこで取得価格の容量が sizes のいずれかと一致する場合だけ実売価格として採用する。
+//   採用しない商品は手入力価格を維持し、後の対処が違うので2つのフラグに分ける。
+//     priceSizeMismatch … 掲載容量と違う容量の価格だった（リンクを単品ページへ差し替える）
+//     priceSizeUnknown  … 掲載容量が無い／商品名から容量を読めず照合できない（sizes を補う）
 //
 // ------------------------------------------------------------------ 実行手順
 //   1. 必ず Sillage のリポジトリルートで実行すること。
@@ -122,14 +124,15 @@ function mlOf(value) {
   return Number.isFinite(n) && n > 0 ? n : null;
 }
 
-// 取得価格の容量が、当サイトが掲載している容量ラインナップに含まれるか。
-// 含まれないなら、その価格は別容量のものなので実売価格として採用してはいけない。
-function sizeMatches(product, priceSize) {
+// 取得価格の容量が、当サイトが掲載している容量ラインナップに含まれるかを判定する。
+// 「不一致」と「照合できない」は後の対処が違うので分けて返す。
+//   mismatch … 楽天の単品ページへリンクを差し替えるべき商品
+//   unknown  … sizes にデータを入れれば解決する見込みの商品
+function classifySize(product, priceSize) {
   const got = mlOf(priceSize);
-  if (got === null) return false;                       // 商品名から容量を読めなかった
   const ours = (product.sizes || []).map((size) => mlOf(size.volumeMl)).filter((n) => n !== null);
-  if (!ours.length) return false;                       // 掲載容量が無く照合できない
-  return ours.some((n) => n === got);
+  if (got === null || !ours.length) return "unknown";   // 商品名から容量を読めない／掲載容量が無い
+  return ours.some((n) => n === got) ? "match" : "mismatch";
 }
 
 async function callApi(query) {
@@ -198,11 +201,13 @@ const before = new Map(document.fragrances.map((p) => [p.slug, { price: p.price,
 const succeeded = [];
 const failed = [];
 const mismatched = [];
+const unknownSize = [];
 const bigChanges = [];
 const tierChanges = [];
 
 // 実売価格を採用しない商品は、価格を取得前の状態に戻す。
 // 取得日や容量が残っていると「いつの価格か」を偽って伝えることになるので必ず消す。
+// 容量のフラグもここで一旦落とし、呼び出し側が必要な方だけを立て直す。
 function keepManualPrice(product, prev, source) {
   product.price = prev.price;
   product.priceTier = prev.tier;
@@ -210,6 +215,8 @@ function keepManualPrice(product, prev, source) {
   delete product.priceSize;
   delete product.priceFetchedAt;
   delete product.priceIsFrom;
+  delete product.priceSizeMismatch;
+  delete product.priceSizeUnknown;
   product.priceSource = source;
 }
 
@@ -224,7 +231,6 @@ for (const product of products) {
   const target = link ? parseRakutenTarget(link) : null;
   if (!target) {
     keepManualPrice(product, prev, "manual-stale");
-    delete product.priceSizeMismatch;
     failed.push({ slug: product.slug, reason: "楽天リンクなし/URL解析不可" });
     continue;
   }
@@ -239,7 +245,6 @@ for (const product of products) {
   if (!result.hit || !Number.isFinite(Number(result.hit.itemPrice))) {
     // 取得失敗時は既存 price を残す。priceFetchedAt も更新しない。
     keepManualPrice(product, prev, "manual-stale");
-    delete product.priceSizeMismatch;
     failed.push({ slug: product.slug, reason: result.error || `${target.shop}/${target.slug} を特定できず` });
     console.log(`  ${String(index).padStart(3)}/${products.length} ✗ ${product.slug} (${target.shop})`);
     continue;
@@ -250,15 +255,21 @@ for (const product of products) {
 
   // 商品は特定できたが、その価格が掲載容量のものでない場合は採用しない。
   // 採用すると別容量の価格で価格帯フィルタが決まってしまう。
-  if (!sizeMatches(product, size)) {
+  const sizeVerdict = classifySize(product, size);
+  if (sizeVerdict !== "match") {
     keepManualPrice(product, prev, "manual");
-    product.priceSizeMismatch = true;
+    // フラグはどちらか一方だけが立つようにする（対処方法が違うため）
+    if (sizeVerdict === "mismatch") product.priceSizeMismatch = true;
+    else product.priceSizeUnknown = true;
     const ours = (product.sizes || []).map((s) => `${Number(s.volumeMl)}mL`).join("/") || "掲載容量なし";
-    mismatched.push({ slug: product.slug, got: size, gotPrice: yen(value) + (isFrom ? "〜" : ""), ours });
-    console.log(`  ${String(index).padStart(3)}/${products.length} △ ${product.slug.padEnd(34)} ${(yen(value) + (isFrom ? "〜" : "")).padStart(10)} 取得${String(size || "不明").padEnd(7)} 掲載${ours}`);
+    const shown = yen(value) + (isFrom ? "〜" : "");
+    (sizeVerdict === "mismatch" ? mismatched : unknownSize)
+      .push({ slug: product.slug, got: size, gotPrice: shown, ours });
+    console.log(`  ${String(index).padStart(3)}/${products.length} ${sizeVerdict === "mismatch" ? "△" : "?"} ${product.slug.padEnd(34)} ${shown.padStart(10)} 取得${String(size || "不明").padEnd(7)} 掲載${ours}`);
     continue;
   }
   delete product.priceSizeMismatch;
+  delete product.priceSizeUnknown;
 
   product.price = yen(value) + (isFrom ? "〜" : "");
   product.priceValue = value;
@@ -301,15 +312,21 @@ const expensive = document.fragrances
   .sort((a, b) => b.priceValue - a.priceValue);
 
 console.log("\n" + "=".repeat(64));
-console.log(`実売価格を採用: ${succeeded.length}件 / 容量不一致で不採用: ${mismatched.length}件 / 取得失敗: ${failed.length}件`);
+console.log(`実売価格を採用: ${succeeded.length}件 / 容量不一致: ${mismatched.length}件 / 容量照合不可: ${unknownSize.length}件 / 取得失敗: ${failed.length}件`);
 console.log(`priceSource 別: ${Object.entries(bySource).map(([k, v]) => `${k} ${v}`).join(" / ")}`);
 if (failed.length) {
   console.log("\n取得失敗（priceSource: manual-stale）:");
   for (const f of failed) console.log(`  - ${f.slug}  (${f.reason})`);
 }
 if (mismatched.length) {
-  console.log("\n容量不一致（priceSizeMismatch: true ＝ リンク先を単品ページに直すべき商品）:");
+  console.log("\n容量不一致（priceSizeMismatch: true ＝ リンク先を単品ページに差し替えるべき商品）:");
   for (const m of mismatched) {
+    console.log(`  - ${m.slug.padEnd(30)} 取得 ${String(m.got).padEnd(8)}${m.gotPrice.padStart(10)}   掲載 ${m.ours}`);
+  }
+}
+if (unknownSize.length) {
+  console.log("\n容量照合不可（priceSizeUnknown: true ＝ sizes を補えば解決する見込みの商品）:");
+  for (const m of unknownSize) {
     console.log(`  - ${m.slug.padEnd(30)} 取得 ${String(m.got || "容量不明").padEnd(8)}${m.gotPrice.padStart(10)}   掲載 ${m.ours}`);
   }
 }

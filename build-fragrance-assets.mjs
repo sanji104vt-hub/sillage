@@ -7,7 +7,16 @@ const brands = JSON.parse(readFileSync("data/brands.json", "utf8"));
 const siteCopy = loadSiteCopy();
 
 mkdirSync("public/data", { recursive: true });
-writeFileSync("public/data/fragrances.json", JSON.stringify(document.fragrances), "utf8");
+
+// priceSizeMismatch / priceSizeUnknown は「後で直すべき商品」を管理するための
+// 内部フラグで、サイトの表示には一切使わない。配信するJSONからは落とす。
+const INTERNAL_FIELDS = ["priceSizeMismatch", "priceSizeUnknown"];
+const publicFragrances = document.fragrances.map((fragrance) => {
+  const copy = { ...fragrance };
+  for (const field of INTERNAL_FIELDS) delete copy[field];
+  return copy;
+});
+writeFileSync("public/data/fragrances.json", JSON.stringify(publicFragrances), "utf8");
 writeFileSync("public/data/brands.json", JSON.stringify(brands), "utf8");
 
 const indexPath = "public/index.html";
