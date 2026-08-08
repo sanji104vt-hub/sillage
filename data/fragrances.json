@@ -19,7 +19,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥12,100〜",
       "releaseYear": 1999,
       "verdict": "ハーバルなバジルでシトラスに陰影を。重ねづけ前提の軽さでオフィスでも主張しすぎない。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item/260704ma/10101l00301_newb.jpg?_ex=512x512",
@@ -95,7 +95,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 12100,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "acqua-di-parma-1",
@@ -115,7 +120,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥18,000前後",
+      "price": "¥14,300",
       "releaseYear": 1916,
       "verdict": "イタリアの伝統コロン。柑橘の明るさを上品な木で支える、清潔感の規範のような一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/03/adp1003_1.jpg?_ex=512x512",
@@ -194,7 +199,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 14300,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "dior-1",
@@ -214,7 +223,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥13,000前後",
+      "price": "¥18,380",
       "releaseYear": 1966,
       "verdict": "1966年の名作。シトラスにハーブと苔の渋みを通した、時代を超える紳士の清涼感。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241211/3348900627499-1_cp.jpg?_ex=512x512",
@@ -289,7 +298,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 18380,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "4711-1",
@@ -307,8 +320,8 @@
         "daily",
         "sports"
       ],
-      "priceTier": "petit",
-      "price": "¥1,200前後",
+      "priceTier": "mid",
+      "price": "¥6,798",
       "releaseYear": 1792,
       "verdict": "200年以上続く原点のシトラス。持続は短いが、その潔さこそ夏に惜しみなく使える理由。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/04/yon1004_1.jpg?_ex=512x512",
@@ -377,7 +390,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 6798,
+      "priceSize": "800ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "guerlain-1",
@@ -397,7 +414,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥18,359",
       "releaseYear": 1853,
       "verdict": "皇后のために生まれた歴史的コロン。気品ある柑橘で、フォーマルにも軽やかに寄り添う。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12666829/imgrc0180140454.jpg?_ex=512x512",
@@ -466,7 +483,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 18359,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "dolce-gabbana-1",
@@ -486,7 +507,7 @@
         "date"
       ],
       "priceTier": "mid",
-      "price": "¥7,000前後",
+      "price": "¥5,698",
       "releaseYear": 2007,
       "verdict": "地中海の昼下がりのような爽やかさ。万人受けする軽さで、夏の定番として根強い人気。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/58/1082458_1.jpg?_ex=512x512",
@@ -549,7 +570,11 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": []
+      "sizes": [],
+      "priceValue": 5698,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "hermes-2",
@@ -569,7 +594,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥26,540",
       "releaseYear": 1979,
       "verdict": "エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/03011640105.jpg?_ex=512x512",
@@ -628,7 +653,11 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": []
+      "sizes": [],
+      "priceValue": 26540,
+      "priceSize": "200ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "dior-2",
@@ -719,7 +748,8 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "ck-1",
@@ -739,7 +769,7 @@
         "sports"
       ],
       "priceTier": "petit",
-      "price": "¥2,500前後",
+      "price": "¥2,990〜",
       "releaseYear": 1994,
       "verdict": "ユニセックスの先駆け。軽く中性的で、香水入門の外さない最初の一本として今も現役。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/fragrance-u/cabinet/13121356/ck.jpg?_ex=512x512",
@@ -803,7 +833,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 2990,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "montblanc-1",
@@ -822,8 +857,8 @@
         "business",
         "date"
       ],
-      "priceTier": "mid",
-      "price": "¥6,500前後",
+      "priceTier": "petit",
+      "price": "¥4,653",
       "releaseYear": 2011,
       "verdict": "清潔感と甘さの黄金比。クセがなく好感度が高い、コスパに優れた万能フゼア。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/30/mon007-030_1.jpg?_ex=512x512",
@@ -899,7 +934,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 4653,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "azzaro-1",
@@ -919,7 +958,7 @@
         "formal"
       ],
       "priceTier": "mid",
-      "price": "¥4,500前後",
+      "price": "¥5,368",
       "releaseYear": 1978,
       "verdict": "1978年のクラシックフゼア。男性的な厚みと清潔感を併せ持つ、王道の大人の香り。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/75/1021975_1.jpg?_ex=512x512",
@@ -1001,7 +1040,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 5368,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "chanel-1",
@@ -1021,7 +1064,7 @@
         "sports"
       ],
       "priceTier": "high",
-      "price": "¥13,000前後",
+      "price": "¥28,325",
       "releaseYear": 2004,
       "verdict": "爽快さの中に上質な温もり。スポーティでありながら品があり、オンオフ問わず使える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/50_2/cha008-150_1.jpg?_ex=512x512",
@@ -1097,7 +1140,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 28325,
+      "priceSize": "150ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "paco-rabanne-1",
@@ -1117,7 +1164,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥4,000前後",
+      "price": "¥6,995",
       "releaseYear": 1973,
       "verdict": "ハーブの効いた正統派フゼア。香水黎明期の骨格を残す、堅実で外さない一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/07718351/compass1611907526.jpg?_ex=512x512",
@@ -1161,7 +1208,11 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "concentration": null,
-      "sizes": []
+      "sizes": [],
+      "priceValue": 6995,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "nautica-1",
@@ -1181,7 +1232,7 @@
         "sports"
       ],
       "priceTier": "petit",
-      "price": "¥2,000前後",
+      "price": "¥3,388",
       "releaseYear": 2006,
       "verdict": "爽やかなグリーンと水生ノート。驚きの低価格で、最初の一本として選ばれ続ける定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/41/nau1041_1.jpg?_ex=512x512",
@@ -1249,7 +1300,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 3388,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "guerlain-2",
@@ -1269,7 +1324,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥27,500",
       "releaseYear": 1959,
       "verdict": "土と草の根の渋み。知的で落ち着いた香りで、大人の男のための名作と評される。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12666829/imgrc0180200179.jpg?_ex=512x512",
@@ -1343,7 +1398,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 27500,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "chanel-2",
@@ -1363,7 +1422,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥23,381",
       "releaseYear": 1993,
       "verdict": "清涼なラベンダーから温かい木へ。端正で品があり、知的な紳士像を描く90年代の名作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/2/imgrc0092232221.jpg?_ex=512x512",
@@ -1439,7 +1498,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 23381,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "gucci-1",
@@ -1459,7 +1522,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥9,000前後",
+      "price": "¥7,480",
       "releaseYear": 2009,
       "verdict": "明るい柑橘とフローラルの軽やかさ。華やかで親しみやすく、デートにも普段使いにも。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/50_2/guc016-050_1.jpg?_ex=512x512",
@@ -1528,7 +1591,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 7480,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "dior-3",
@@ -1548,7 +1615,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥17,545",
       "releaseYear": 2018,
       "verdict": "EDTより甘くまろやか。塩気とラベンダーが奥行きを生み、昼も夜も使える万能版。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth006/cd100_060.jpg?_ex=512x512",
@@ -1627,7 +1694,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 17545,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "calvin-klein-1",
@@ -1647,7 +1718,7 @@
         "daily"
       ],
       "priceTier": "petit",
-      "price": "¥3,000前後",
+      "price": "¥4,928",
       "releaseYear": 1989,
       "verdict": "ラベンダーとハーブの清潔感。落ち着いた大人のフゼアで、コスパよく長く使える定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/91/571691_1.jpg?_ex=512x512",
@@ -1708,7 +1779,11 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": []
+      "sizes": [],
+      "priceValue": 4928,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ysl-2",
@@ -1728,7 +1803,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥13,970〜",
       "releaseYear": 2019,
       "verdict": "ラベンダーで締めた現代的フローラル。甘さに芯があり、日常から少し背伸びした場まで橋渡しする。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/yslbeauty/cabinet/12648558/13296352/13472614/imgrc0118480649.jpg?_ex=512x512",
@@ -1814,7 +1889,12 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13970,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "chanel-3",
@@ -1834,7 +1914,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥17,480〜",
       "releaseYear": 2010,
       "verdict": "みずみずしく可憐なフルーティフローラル。明るく親しみやすい、若々しい魅力の定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/brilliantworld/cabinet/pointopr26/chanceedp.jpg?_ex=512x512",
@@ -1915,7 +1995,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 17480,
+      "priceSize": "35ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "dior-4",
@@ -1935,7 +2020,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥28,050",
       "releaseYear": 1999,
       "verdict": "豪奢な花束をまとう王道フローラル。フェミニンの象徴として揺るがない地位を持つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/ikou_20090929_005/img10395007936.jpg?_ex=512x512",
@@ -2014,7 +2099,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 28050,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "gucci-2",
@@ -2034,7 +2123,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥13,000前後",
+      "price": "¥13,673",
       "releaseYear": 2017,
       "verdict": "白い花が咲き乱れる濃密なフローラル。瑞々しくも官能的で、存在感のある華やかさ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/guc044-100_1.jpg?_ex=512x512",
@@ -2102,7 +2191,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13673,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "jo-malone-2",
@@ -2121,8 +2214,8 @@
         "daily",
         "date"
       ],
-      "priceTier": "high",
-      "price": "¥15,000前後",
+      "priceTier": "mid",
+      "price": "¥6,940〜",
       "releaseYear": 2010,
       "verdict": "熟した洋ナシと白い花。フルーティで上品なフローラルは、性別を問わず使いやすい。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosme-venus/cabinet/skuimage/topimage/jomalone30and100.jpg?_ex=512x512",
@@ -2198,7 +2291,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 6940,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "marc-jacobs-1",
@@ -2285,7 +2383,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "jo-malone-3",
@@ -2305,7 +2404,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥12,100〜",
       "releaseYear": 2013,
       "verdict": "咲きほこる芍薬にスエードの陰影。華やかさと落ち着きが同居し、性別を問わず使える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item/260704ma/27028l3ae01_newb.jpg?_ex=512x512",
@@ -2381,7 +2480,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 12100,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "versace-1",
@@ -2401,7 +2505,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥6,000前後",
+      "price": "¥5,588",
       "releaseYear": 2012,
       "verdict": "青リンゴとミントの甘い清涼感。わかりやすく華やかで、若い世代のデート向け定番のコスパ枠。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/91/ver1191_1.jpg?_ex=512x512",
@@ -2475,7 +2579,11 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 5588,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "versace-2",
@@ -2495,7 +2603,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥6,500前後",
+      "price": "¥6,358",
       "releaseYear": 2017,
       "verdict": "フィグとアクアの瑞々しさ。爽やかさに甘さを乗せた、近年のメンズ人気作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/01c/ver1321-sale_1.jpg?_ex=512x512",
@@ -2572,7 +2680,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 6358,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "azzaro-2",
@@ -2668,7 +2780,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "mugler-1",
@@ -2688,7 +2801,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥14,311",
       "releaseYear": 1992,
       "verdict": "綿菓子とパチョリの衝撃。グルマン香水の発明者であり、好き嫌いを超えて歴史を変えた一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/thi002-100_1.jpg?_ex=512x512",
@@ -2758,7 +2871,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 14311,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "thierry-mugler-1",
@@ -2777,8 +2894,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥9,000前後",
+      "priceTier": "high",
+      "price": "¥13,440",
       "releaseYear": 1996,
       "verdict": "コーヒーとキャラメルの男性的グルマン。甘く力強く、寒い夜に濃厚な余韻を残す。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/10409905/compass1708670327.jpg?_ex=512x512",
@@ -2848,7 +2965,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13440,
+      "priceSize": null,
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "giorgio-armani-1",
@@ -2867,8 +2988,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥9,000前後",
+      "priceTier": "high",
+      "price": "¥18,500",
       "releaseYear": 2017,
       "verdict": "栗とバニラの温かい甘さ。親しみやすく好感度が高い、デート向けの近年の人気作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/strawberrynet-beauty/cabinet/12557956/12567302/23525431005.jpg?_ex=512x512",
@@ -2925,7 +3046,11 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": []
+      "sizes": [],
+      "priceValue": 18500,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "viktor-rolf-1",
@@ -2943,8 +3068,8 @@
         "date",
         "formal"
       ],
-      "priceTier": "mid",
-      "price": "¥10,000前後",
+      "priceTier": "high",
+      "price": "¥30,800",
       "releaseYear": 2014,
       "verdict": "オリジナルをより甘く濃密に。タバコとバニラの大人の甘さで、冬の夜に深い印象を残す。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img008/fr3614270659706.jpg?_ex=512x512",
@@ -3012,7 +3137,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 30800,
+      "priceSize": "90ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "prada-1",
@@ -3114,7 +3243,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "carolina-herrera-1",
@@ -3133,8 +3263,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
+      "priceTier": "high",
+      "price": "¥13,420",
       "releaseYear": 2019,
       "verdict": "稲妻型ボトルのスパイシーグルマン。ココアとトンカの甘さで、遊び心ある色気を演出。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img010/fr8411061962145.jpg?_ex=512x512",
@@ -3201,7 +3331,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13420,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ysl-3",
@@ -3221,7 +3355,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥19,800",
       "releaseYear": 2014,
       "verdict": "コーヒーとバニラの中毒性ある甘さ。夜が似合う、官能的でモダンなレディースの定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img008/fr3614273256476.jpg?_ex=512x512",
@@ -3307,7 +3441,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 19800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "maison-margiela-1",
@@ -3327,7 +3465,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥13,860",
       "releaseYear": 2013,
       "verdict": "ラムとタバコの甘い燻し。夜のバーの記憶を再現する系統で、秋冬のオフの装いに馴染む。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth009/zzmmg19_100.jpg?_ex=512x512",
@@ -3405,7 +3543,11 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13860,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "dior-5",
@@ -3425,7 +3567,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥18,000前後",
+      "price": "¥26,160",
       "releaseYear": 2021,
       "verdict": "ソヴァージュの濃縮版。スパイスと甘さが凝縮され、冬の夜に圧倒的な存在感を放つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04133661/3348901567572-1_cp.jpg?_ex=512x512",
@@ -3501,7 +3643,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 26160,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "bvlgari-1",
@@ -3520,8 +3666,8 @@
         "date",
         "formal"
       ],
-      "priceTier": "high",
-      "price": "¥12,000前後",
+      "priceTier": "mid",
+      "price": "¥10,263",
       "releaseYear": 2014,
       "verdict": "ラムとレザーの男性的な官能。甘く重厚で、大人の夜にふさわしい色気をまとう。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/60/bvl025-060_1.jpg?_ex=512x512",
@@ -3592,7 +3738,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 10263,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "viktor-rolf-2",
@@ -3611,8 +3761,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥9,000前後",
+      "priceTier": "high",
+      "price": "¥16,300",
       "releaseYear": 2012,
       "verdict": "手榴弾型ボトルの爆発的スパイス。温かく刺激的で、寒い季節に強く印象を残す。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/strawberrynet-beauty/cabinet/12557956/12565763/13849390605.jpg?_ex=512x512",
@@ -3684,7 +3834,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 16300,
+      "priceSize": "90ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "maison-francis-kurkdjian-1",
@@ -3704,7 +3858,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥35,000前後",
+      "price": "¥108,130",
       "releaseYear": 2014,
       "verdict": "世界的に話題のニッチ香水。甘く鉱物的な唯一無二の香りで、強い拡散と存在感を放つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00/mai005-200_1.jpg?_ex=512x512",
@@ -3774,7 +3928,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 108130,
+      "priceSize": "200ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "versace-3",
@@ -3794,7 +3952,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥7,000前後",
+      "price": "¥10,098",
       "releaseYear": 2018,
       "verdict": "エロスをより温かくスパイシーに。甘さに深みが増し、秋冬の夜のデートに映える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/33/ver1333_1.jpg?_ex=512x512",
@@ -3870,7 +4028,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 10098,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "chanel-4",
@@ -3890,7 +4052,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥16,180〜",
       "releaseYear": 2014,
       "verdict": "清涼なトップから乾いた白檀へ落ちる正統派ウッディ。スーツに最も外さない、社会人の一本目。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/brilliantworld/cabinet/pointopr26/bluedo-edp-00.jpg?_ex=512x512",
@@ -3981,7 +4143,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 16180,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "tom-ford-2",
@@ -4001,7 +4168,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥28,000前後",
+      "price": "¥21,300〜",
       "releaseYear": 2007,
       "verdict": "ウードを上品に飼いならした名作。スモーキーで甘く、夜の特別な装いに深みを与える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04133661/1059081924-2_cp.jpg?_ex=512x512",
@@ -4087,7 +4254,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 21300,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "dior-6",
@@ -4107,7 +4279,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥17,980〜",
       "releaseYear": 1988,
       "verdict": "すみれとガソリンを思わせる唯一無二の構築美。好みは分かれるが忘れられない個性派。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241102/0061012219-1_cp.jpg?_ex=512x512",
@@ -4179,7 +4351,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 17980,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "creed-1",
@@ -4282,7 +4459,8 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "giorgio-armani-2",
@@ -4301,8 +4479,8 @@
         "date",
         "formal"
       ],
-      "priceTier": "mid",
-      "price": "¥9,000前後",
+      "priceTier": "high",
+      "price": "¥13,750",
       "releaseYear": 2004,
       "verdict": "甘く温かいウッディ・スパイシー。夜とデートに強い、色気のあるシグネチャー。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/armanibeauty/cabinet/thumb/09663805/imgrc0089887897.jpg?_ex=512x512",
@@ -4385,7 +4563,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13750,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "le-labo-1",
@@ -4405,7 +4587,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥30,000前後",
+      "price": "¥34,800",
       "releaseYear": 2011,
       "verdict": "乾いた白檀とレザーの中性的な煙。唯一無二の存在感で、性別を超えて支持される。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rush-mall/cabinet/point/p3/0704-0705/lelabo-004_n2.jpg?_ex=512x512",
@@ -4481,7 +4663,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 34800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "diptyque-1",
@@ -4501,7 +4687,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥22,000前後",
+      "price": "¥20,845",
       "releaseYear": 2003,
       "verdict": "クリーミーな白檀を主役にした静謐な香り。瞑想的で、知的な落ち着きをまとわせる。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00/dip019-100_1.jpg?_ex=512x512",
@@ -4572,7 +4758,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 20845,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "diptyque-2",
@@ -4592,7 +4782,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥26,000前後",
+      "price": "¥29,800",
       "releaseYear": 2021,
       "verdict": "1960年代パリのバーを思わせるドライなウッディ。紙と木と煙が静かに重なり、声を張らずに知性を見せる。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jurrecosmetics/cabinet/10998603/imgrc0138392056.jpg?_ex=512x512",
@@ -4656,7 +4846,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 29800,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "diptyque-3",
@@ -4676,7 +4870,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥26,000前後",
+      "price": "¥40,910",
       "releaseYear": 1996,
       "verdict": "青いイチジクの葉から果実、樹皮までを一本の木として描く。緑の苦みが残るので甘く終わらない。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/partytime-tokyo/cabinet/pfm/22dt116pfm_001.jpg?_ex=512x512",
@@ -4740,7 +4934,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 40910,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "diptyque-4",
@@ -4760,7 +4958,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥26,000前後",
+      "price": "¥33,880",
       "releaseYear": 2005,
       "verdict": "ベトナムの海辺の寺院に着想したチューベローズ。白い花の濃さを、潮の湿り気で軽く保つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12666829/imgrc0179785912.jpg?_ex=512x512",
@@ -4824,7 +5022,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 33880,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "diptyque-5",
@@ -4844,7 +5046,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥26,000前後",
+      "price": "¥28,270",
       "releaseYear": 2018,
       "verdict": "肌そのものを思わせるムスクに、アイリスの粉っぽさが乗る。香水というより体温の延長として働く。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth009/zzdip43_075p.jpg?_ex=512x512",
@@ -4908,7 +5110,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 28270,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "byredo-1",
@@ -5005,7 +5211,8 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "dunhill-1",
@@ -5069,7 +5276,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "prada-2",
@@ -5089,7 +5297,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥13,000前後",
+      "price": "¥14,830",
       "releaseYear": 2016,
       "verdict": "アイリスの上品なパウダリーさ。控えめで洗練され、清潔感のある大人の余裕を演出する。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/ezcoshop/cabinet/strawberry/2018_11/img585029angle1.jpg?_ex=512x512",
@@ -5157,7 +5365,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 14830,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "prada-3",
@@ -5177,7 +5389,7 @@
         "sports"
       ],
       "priceTier": "high",
-      "price": "¥11,000前後",
+      "price": "¥13,690",
       "releaseYear": 2017,
       "verdict": "ラベンダーの清潔さに金属的な冷たさを重ねた現代のフゼア。汗ばむ場面でも輪郭が濁りにくい。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovelove/cabinet/p241129/2500000227912.jpg?_ex=512x512",
@@ -5241,7 +5453,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 13690,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "prada-4",
@@ -5261,7 +5477,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥10,000前後",
+      "price": "¥14,850",
       "releaseYear": 2007,
       "verdict": "石けんを思わせる清潔なアイリス。粉っぽさと苦い緑が同居し、性別を問わず端正にまとまる。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/pra04_030.jpg?_ex=512x512",
@@ -5325,7 +5541,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 14850,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "montblanc-2",
@@ -5413,7 +5633,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "jo-malone-4",
@@ -5433,7 +5654,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥15,000前後",
+      "price": "¥12,100〜",
       "releaseYear": 2014,
       "verdict": "海辺の崖を思わせるミネラル感。ミニマルで中性的、重ねづけの土台にも向く人気作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item/260704ma/32241l41601_2026logo.jpg?_ex=512x512",
@@ -5509,7 +5730,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 12100,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "hugo-boss-1",
@@ -5597,7 +5823,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "dior-7",
@@ -5617,7 +5844,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥15,580〜",
       "releaseYear": 2005,
       "verdict": "アイリスのパウダリーな上品さ。洗練と色気を兼ね、大人の余裕を静かに語る。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/0061126342_cp.jpg?_ex=512x512",
@@ -5689,7 +5916,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 15580,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "tom-ford-3",
@@ -5709,7 +5941,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥20,000前後",
+      "price": "¥13,380〜",
       "releaseYear": 2006,
       "verdict": "土と黒い花の濃密なシプレ。拡散が強く一滴で十分。冬の夜、印象を残したい場面の切り札。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/1059000055-1_cp.jpg?_ex=512x512",
@@ -5795,7 +6027,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13380,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "aramis-1",
@@ -5815,7 +6052,7 @@
         "business"
       ],
       "priceTier": "mid",
-      "price": "¥5,000前後",
+      "price": "¥10,978",
       "releaseYear": 1965,
       "verdict": "1965年の重厚なレザー・シプレ。古典的な男臭さがあり、貫禄を求める大人に。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/32/1080332_1.jpg?_ex=512x512",
@@ -5859,7 +6096,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 10978,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "chanel-5",
@@ -5879,7 +6120,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥24,200",
       "releaseYear": 1955,
       "verdict": "シャネル唯一のメンズ古典。シトラス・シプレの端正な構築で、知的な紳士像を描く。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/26/1184426_1.jpg?_ex=512x512",
@@ -5947,7 +6188,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 24200,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "guerlain-3",
@@ -5967,7 +6212,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥18,000前後",
+      "price": "¥18,420",
       "releaseYear": 1919,
       "verdict": "桃と苔の対比が生む憂いの香り。1919年から愛される、シプレの完成形と称される傑作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2015_11/img372656.jpg?_ex=512x512",
@@ -6039,7 +6284,11 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 18420,
+      "priceSize": "75ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "chanel-6",
@@ -6059,7 +6308,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥22,480",
       "releaseYear": 1981,
       "verdict": "レザーと苔の重厚な古典。野性的で官能的な、貫禄ある大人の男のためのシプレ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/rank_10002171.jpg?_ex=512x512",
@@ -6129,7 +6378,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 22480,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "shiro-1",
@@ -6148,8 +6401,8 @@
         "daily",
         "business"
       ],
-      "priceTier": "mid",
-      "price": "¥4,700前後",
+      "priceTier": "petit",
+      "price": "¥2,155〜",
       "verdict": "清潔感の代名詞。石けんの輪郭をムスクで柔らかく包む、誰の隣でも安全牌になる王道。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/arianakosume/cabinet/marason-ariana/shiro-parfum-001-ra.jpg?_ex=512x512",
       "concentration": {
@@ -6219,7 +6472,12 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 2155,
+      "priceSize": "10ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "narciso-rodriguez-1",
@@ -6238,8 +6496,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "high",
-      "price": "¥12,000前後",
+      "priceTier": "mid",
+      "price": "¥9,780〜",
       "releaseYear": 2003,
       "verdict": "上質なムスクの官能。肌に溶けるような色気で、世界的に支持されるムスクの代表作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241211/1396515956-1_cp.jpg?_ex=512x512",
@@ -6283,7 +6541,12 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 9780,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "le-labo-2",
@@ -6303,7 +6566,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥30,000前後",
+      "price": "¥16,200〜",
       "releaseYear": 2010,
       "verdict": "透明感のあるクリーンムスク。性別も季節も選ばず、現代的な抜け感を肌にまとわせる。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/hewuakaneshop/cabinet/10001990/842185117186.jpg?_ex=512x512",
@@ -6386,7 +6649,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 16200,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "maison-margiela-2",
@@ -6404,8 +6672,8 @@
       "scenes": [
         "daily"
       ],
-      "priceTier": "high",
-      "price": "¥16,000前後",
+      "priceTier": "petit",
+      "price": "¥4,800〜",
       "releaseYear": 2012,
       "verdict": "洗いたてのシーツのような清潔感。穏やかで安心感があり、休日の素肌に寄り添う。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmediva/cabinet/skuimage/topimage/maison.jpg?_ex=512x512",
@@ -6476,7 +6744,12 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 4800,
+      "priceSize": "2ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceIsFrom": true
     },
     {
       "slug": "maison-margiela-3",
@@ -6496,7 +6769,7 @@
         "sports"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥14,300",
       "releaseYear": 2019,
       "verdict": "潮風と船のロープを思わせる塩気のあるアクアティック。夏の日中に、汗と喧嘩しない清涼感で通せる一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth008/zzmmg11_100.jpg?_ex=512x512",
@@ -6560,7 +6833,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 14300,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "maison-margiela-4",
@@ -6580,7 +6857,7 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥14,000前後",
+      "price": "¥23,518",
       "releaseYear": 2023,
       "verdict": "終わらない夏の残像を、洋なしの甘さと肌に寄るムスクで描く。日が落ちたあとの余韻に近い温度を持つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img011/fr3614274347586.jpg?_ex=512x512",
@@ -6644,7 +6921,11 @@
         }
       ],
       "verifiedAt": "2026-08-06",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceValue": 23518,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "narciso-rodriguez-2",
@@ -6663,8 +6944,8 @@
         "business",
         "date"
       ],
-      "priceTier": "high",
-      "price": "¥11,000前後",
+      "priceTier": "mid",
+      "price": "¥11,690",
       "releaseYear": 2007,
       "verdict": "すみれの葉とムスクの上品な男性版。控えめながら奥行きがあり、知的な清潔感を放つ。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2025_11/img762566.jpg?_ex=512x512",
@@ -6708,7 +6989,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 11690,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "glossier-1",
@@ -6727,8 +7012,8 @@
         "daily",
         "date"
       ],
-      "priceTier": "mid",
-      "price": "¥9,000前後",
+      "priceTier": "high",
+      "price": "¥20,410",
       "releaseYear": 2017,
       "verdict": "肌の匂いを増幅するようなスキンムスク。つける人ごとに変わる、親密で個人的な香り。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/americana/cabinet/joanne/joa3/glossieryou1.jpg?_ex=512x512",
@@ -6792,7 +7077,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 20410,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "bvlgari-2",
@@ -6885,7 +7174,8 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-08-06"
+      "updatedAt": "2026-08-06",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "aesop-1",
@@ -6905,7 +7195,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥17,000前後",
+      "price": "¥18,580",
       "verdict": "柚子と海風のグリーン。生っぽい清涼感で、香りで涼を演出したい蒸し暑い日に効く。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosme-venus/cabinet/skuimage/topimage/9319944006568-set.jpg?_ex=512x512",
       "concentration": {
@@ -6975,7 +7265,11 @@
         }
       ],
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 18580,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "davidoff-1",
@@ -6994,8 +7288,8 @@
         "daily",
         "sports"
       ],
-      "priceTier": "petit",
-      "price": "¥2,500前後",
+      "priceTier": "mid",
+      "price": "¥5,665",
       "releaseYear": 1988,
       "verdict": "1988年のマリン香水の元祖。清涼で爽やか、低価格ながら今なお色褪せない定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/dav002-200_1.jpg?_ex=512x512",
@@ -7063,7 +7357,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 5665,
+      "priceSize": "200ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "giorgio-armani-3",
@@ -7082,8 +7380,8 @@
         "business",
         "sports"
       ],
-      "priceTier": "high",
-      "price": "¥11,000前後",
+      "priceTier": "mid",
+      "price": "¥9,768",
       "releaseYear": 1996,
       "verdict": "海そのものを思わせる透明感。爽やかさの代名詞で、夏のメンズ香水の絶対王者。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/77/924377_1.jpg?_ex=512x512",
@@ -7150,7 +7448,11 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 9768,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "paco-rabanne-3",
@@ -7169,8 +7471,8 @@
         "sports",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥7,000前後",
+      "priceTier": "high",
+      "price": "¥13,200",
       "releaseYear": 2013,
       "verdict": "トロフィー型ボトルの爽快マリン。スポーティで力強く、アクティブな印象を与える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/nan002/ztpr033_100.jpg?_ex=512x512",
@@ -7214,7 +7516,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 13200,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "bvlgari-3",
@@ -7233,8 +7539,8 @@
         "business",
         "sports"
       ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
+      "priceTier": "high",
+      "price": "¥14,120",
       "releaseYear": 2005,
       "verdict": "海藻のミネラル感が独特の塩気を生む。爽やかさに深みがあり、夏でも安っぽくならない。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/mimori/cabinet/point1/0783320427152.jpg?_ex=512x512",
@@ -7278,7 +7584,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 14120,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "versace-4",
@@ -7386,7 +7696,8 @@
         }
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "acqua-di-parma-2",
@@ -7405,8 +7716,8 @@
         "daily",
         "date"
       ],
-      "priceTier": "high",
-      "price": "¥16,000前後",
+      "priceTier": "mid",
+      "price": "¥8,479",
       "releaseYear": 1999,
       "verdict": "地中海の青を閉じ込めた爽やかさ。柑橘とウッディの均衡が上質な軽さを生む。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/zzacp08_030.jpg?_ex=512x512",
@@ -7482,7 +7793,11 @@
         "method": "editorial-v1"
       },
       "verifiedAt": "2026-07-18",
-      "updatedAt": "2026-07-18"
+      "updatedAt": "2026-07-18",
+      "priceValue": 8479,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "loewe-1",
@@ -7501,8 +7816,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
+      "priceTier": "high",
+      "price": "¥16,780",
       "releaseYear": 2016,
       "verdict": "恋人の残り香をコンセプトにしたユニセックス寄りのウッディムスク。優しく肌に馴染み、翌朝のシャツを思わせる親密な余韻。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/item43/lw001medt50ml.jpg?_ex=512x512",
@@ -7567,7 +7882,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 16780,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "loewe-2",
@@ -7586,8 +7905,8 @@
         "business",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥5,500前後",
+      "priceTier": "high",
+      "price": "¥18,800",
       "releaseYear": 2018,
       "verdict": "フゼアの伝統をモダンに再構築した力強いアロマティック。ラベンダーとモス、ベチバーが深みと爽快感を両立する。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/fragrance/lwesphedp50.jpg?_ex=512x512",
@@ -7651,7 +7970,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 18800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "loewe-3",
@@ -7735,7 +8058,8 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceSource": "manual-stale"
     },
     {
       "slug": "loewe-4",
@@ -7753,8 +8077,8 @@
         "business",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥4,500前後",
+      "priceTier": "high",
+      "price": "¥30,412",
       "releaseYear": null,
       "verdict": "透明感のあるアクアティックを主軸に据えた爽やかで清潔な1本。夏の日中や湿度が高い日のビジネスにも扱いやすい。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/2/8426017080705.jpg?_ex=512x512",
@@ -7819,7 +8143,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 30412,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-1",
@@ -7839,7 +8167,7 @@
         "date"
       ],
       "priceTier": "mid",
-      "price": "¥7,500前後",
+      "price": "¥8,228",
       "releaseYear": 1992,
       "verdict": "冒険と自由をテーマにした力強いフゼアウッディ。ラベンダーとハーブから、レザーとオークモスの深い余韻へ落ちる。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth009/rl004_125.jpg?_ex=512x512",
@@ -7903,7 +8231,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 8228,
+      "priceSize": "125ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-2",
@@ -7923,7 +8255,7 @@
         "date"
       ],
       "priceTier": "mid",
-      "price": "¥5,500前後",
+      "price": "¥6,765",
       "releaseYear": 1978,
       "verdict": "1978年発表のシプレレザー原点。フレッシュなハーブから、革とタバコの深い余韻に落ちる、大人のクラシック。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/rl003_030_1.jpg?_ex=512x512",
@@ -7987,7 +8319,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 6765,
+      "priceSize": "30ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-3",
@@ -8007,7 +8343,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥6,000前後",
+      "price": "¥8,250",
       "releaseYear": 2003,
       "verdict": "メロンとキューカンバーの透明感が際立つブルー系フレッシュ。白いシャツやリネンと相性がよく、日中に扱いやすい。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth009/rl012_125.jpg?_ex=512x512",
@@ -8071,7 +8407,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 8250,
+      "priceSize": "125ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-4",
@@ -8091,7 +8431,7 @@
         "formal"
       ],
       "priceTier": "mid",
-      "price": "¥6,000前後",
+      "price": "¥9,966",
       "releaseYear": 2013,
       "verdict": "サフランとジンジャーが際立つスパイシーなアンバーウッディ。夜のシーンやデートに映える情熱的な1本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth011/rl035_125_1.jpg?_ex=512x512",
@@ -8155,7 +8495,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 9966,
+      "priceSize": "125ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-5",
@@ -8174,8 +8518,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥8,500前後",
+      "priceTier": "high",
+      "price": "¥17,600",
       "releaseYear": 2021,
       "verdict": "ラベンダーとベチバー、パチュリが折り重なるモダンなウッディ・アロマティック。社交的な夜のシーンで映える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img044/fr3605971512612.jpg?_ex=512x512",
@@ -8239,7 +8583,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 17600,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "ralph-lauren-6",
@@ -8259,7 +8607,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥12,000前後",
+      "price": "¥23,650",
       "releaseYear": 2022,
       "verdict": "EDP版よりマンダリンとベチバーの奥行きが深まったパルファム。長時間持続する濃密なラルフズクラブを求める人に。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img047/fr3605972698780.jpg?_ex=512x512",
@@ -8323,7 +8671,11 @@
         }
       ],
       "verifiedAt": "2026-08-04",
-      "updatedAt": "2026-08-04"
+      "updatedAt": "2026-08-04",
+      "priceValue": 23650,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten"
     },
     {
       "slug": "lacoste-l1212-blanc-edt-50",
@@ -8388,7 +8740,13 @@
         }
       ],
       "verifiedAt": "2026-08-05",
-      "updatedAt": "2026-08-05"
+      "updatedAt": "2026-08-05",
+      "price": "¥7,343",
+      "priceValue": 7343,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceTier": "mid"
     },
     {
       "slug": "lacoste-l1212-blanc-edp-50",
@@ -8453,7 +8811,13 @@
         }
       ],
       "verifiedAt": "2026-08-05",
-      "updatedAt": "2026-08-05"
+      "updatedAt": "2026-08-05",
+      "price": "¥7,618",
+      "priceValue": 7618,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceTier": "mid"
     },
     {
       "slug": "lacoste-l1212-blanc-eau-fraiche-edt-50",
@@ -8528,7 +8892,13 @@
         }
       ],
       "verifiedAt": "2026-08-05",
-      "updatedAt": "2026-08-05"
+      "updatedAt": "2026-08-05",
+      "price": "¥7,068",
+      "priceValue": 7068,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceTier": "mid"
     },
     {
       "slug": "lacoste-l1212-blanc-eau-intense-edt-100",
@@ -8593,7 +8963,13 @@
         }
       ],
       "verifiedAt": "2026-08-05",
-      "updatedAt": "2026-08-05"
+      "updatedAt": "2026-08-05",
+      "price": "¥13,999",
+      "priceValue": 13999,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-07",
+      "priceSource": "rakuten",
+      "priceTier": "high"
     }
   ]
 }

@@ -78,6 +78,26 @@ const formatSizes = sizes => (sizes || []).map((size) => {
     ? `${volume}：参考価格 ${Number(size.referencePriceYen).toLocaleString("ja-JP")}円（税込）`
     : volume;
 }).join(" / ");
+// 参考価格の行。楽天APIで取得した実売価格がある商品は、
+// どの容量のいつの価格かを明示したうえで注記を実売価格向けの文言に差し替える。
+const priceMetaText = p => {
+  const parts = [];
+  if (p.priceSize) parts.push(p.priceSize);
+  const m = String(p.priceFetchedAt || "").match(/^(\d{4})-(\d{2})/);
+  if (m) parts.push(`${m[1]}年${Number(m[2])}月時点`);
+  return parts.length ? `（${parts.join("・")}）` : "";
+};
+const priceRow = (p, priceTier) => {
+  if (p.priceSource === "rakuten" && p.price) {
+    const tier = priceTier ? `　${priceTier}` : "";
+    return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(priceMetaText(p))}${escape(tier)}<span class="price-note">価格は取得時点の楽天市場での実売価格です。最新の価格は各販売ページでご確認ください。</span></dd></div>`;
+  }
+  if (p.price && !(p.sizes || []).some((size) => size.referencePriceYen)) {
+    return `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>`;
+  }
+  if (!p.price && priceTier) return `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>`;
+  return "";
+};
 const trialMediumLabel = medium => ({
   skin: "肌",
   blotter: "ムエット",
@@ -196,6 +216,16 @@ function pageHTML(p, related, competitors, trial) {
       : String(p.img).startsWith("/") ? `https://sillage.asutelu.com${p.img}` : p.img,
   };
 
+  // 楽天APIで実売価格を取得できた商品だけ offers を出す。
+  // 在庫状況までは取得していないので availability は付けない（断定できないため）。
+  // 複数容量がまとまった商品は最小構成の価格なので AggregateOffer の lowPrice で表す。
+  if (p.priceSource === "rakuten" && Number.isFinite(Number(p.priceValue))) {
+    const value = Number(p.priceValue);
+    product.offers = p.priceIsFrom
+      ? { "@type": "AggregateOffer", "priceCurrency": "JPY", "lowPrice": value, "url": url }
+      : { "@type": "Offer", "priceCurrency": "JPY", "price": value, "url": url };
+  }
+
   const officialUrl = p.purchaseLinks?.official?.url || "";
   const amazonUrl = p.purchaseLinks?.amazon?.url || "";
   const rakutenUrl = p.purchaseLinks?.rakuten?.url || "";
@@ -211,7 +241,13 @@ function pageHTML(p, related, competitors, trial) {
   ].filter(Boolean).join("");
   const hasSponsoredPurchase = Boolean(amazonUrl || rakutenUrl);
   const hasPurchase = Boolean(purchaseButtons || moshimoOffer);
-  const sizeSummary = formatSizes(p.sizes);
+  // 楽天APIの実売価格がある商品は、そちらを唯一の参考価格にする。
+  // 旧 referencePriceYen（手入力・日付なし）を併記すると同じ容量に2つの参考価格が並び、
+  // どちらが今の価格か読者に判断できなくなるため、容量の一覧だけ残す。
+  const hasLivePrice = p.priceSource === "rakuten" && Boolean(p.price);
+  const sizeSummary = hasLivePrice
+    ? (p.sizes || []).map((size) => `${Number(size.volumeMl)}mL`).join(" / ")
+    : formatSizes(p.sizes);
   const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const cautionItems = (p.cautions || []).map((item) => `<li>${escape(item)}</li>`).join("");
@@ -403,10 +439,10 @@ article{max-width:1060px}
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>${escape(famLabel)}</dd></div>
         ${p.concentration?.label ? `<div><dt>香水濃度</dt><dd>${escape(p.concentration.label)}</dd></div>` : ""}
-        ${sizeSummary ? `<div><dt>容量・参考価格</dt><dd>${escape(sizeSummary)}${(p.sizes || []).some((size) => size.referencePriceYen) ? `<span class="price-note">公式確認時の税込価格。変更される場合があります</span>` : ""}</dd></div>` : ""}
+        ${sizeSummary ? `<div><dt>${hasLivePrice ? "容量" : "容量・参考価格"}</dt><dd>${escape(sizeSummary)}${!hasLivePrice && (p.sizes || []).some((size) => size.referencePriceYen) ? `<span class="price-note">公式確認時の税込価格。変更される場合があります</span>` : ""}</dd></div>` : ""}
         ${scenes ? `<div><dt>主な利用シーン</dt><dd>${escape(scenes)}</dd></div>` : ""}
         ${seasons ? `<div><dt>主な季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
-        ${p.price && !(p.sizes || []).some((size) => size.referencePriceYen) ? `<div><dt>参考価格</dt><dd>${escape(p.price)}<span class="price-note">販売店や時期により変動します</span></dd></div>` : !p.price && priceTier ? `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>` : ""}
+        ${priceRow(p, priceTier)}
         ${p.releaseYear ? `<div><dt>発売年</dt><dd>${p.releaseYear}年</dd></div>` : ""}
       </dl>
       ${purchaseButtons ? `${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p>` : ""}<div class="actions hero-actions">${purchaseButtons}</div>` : moshimoOffer ? `<p class="ad-note">PR：楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="brand-link" href="#purchase-title">楽天市場の購入先を見る</a></div>` : ""}

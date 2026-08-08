@@ -237,7 +237,23 @@ fragrances.forEach((item, index) => {
   const expectedProductImage = !item.img ? `https://sillage.asutelu.com${localImageUrl}`
     : String(item.img).startsWith("/") ? `https://sillage.asutelu.com${item.img}` : item.img;
   if (product?.image !== expectedProductImage) errors.push(`Product画像URL不一致: ${path}`);
-  if (product?.aggregateRating || product?.offers) errors.push(`未検証の評価または価格情報を含む: ${path}`);
+  // 評価は編集部で検証していないので一切出さない。
+  // 価格は楽天APIで購入リンク先そのものから取得した実測値のときだけ offers を認める。
+  // 在庫は取得していないので availability は付けない。
+  if (product?.aggregateRating) errors.push(`未検証の評価情報を含む: ${path}`);
+  if (product?.offers) {
+    const offer = product.offers;
+    const offerValue = offer["@type"] === "AggregateOffer" ? offer.lowPrice : offer.price;
+    if (item.priceSource !== "rakuten") errors.push(`実測価格の裏付けがない offers: ${path}`);
+    if (offerValue !== item.priceValue) errors.push(`offers の価格がデータと不一致: ${path}`);
+    if (offer.priceCurrency !== "JPY") errors.push(`offers の通貨がJPYでない: ${path}`);
+    if (offer.availability) errors.push(`未確認の在庫状況(availability)を含む: ${path}`);
+    if ((offer["@type"] === "AggregateOffer") !== Boolean(item.priceIsFrom)) {
+      errors.push(`複数容量ページの offers 型が不適切: ${path}`);
+    }
+  } else if (item.priceSource === "rakuten") {
+    errors.push(`実測価格があるのに offers がない: ${path}`);
+  }
   const selfHref = `href="/items/${slug}"`;
   const comparisonArea = html.match(/<div class="compare-grid">([\s\S]*?)<\/div>\s*<\/section>/)?.[1] || "";
   if (comparisonArea.includes(selfHref)) errors.push(`類似商品に自身を含む: ${path}`);

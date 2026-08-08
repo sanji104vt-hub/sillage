@@ -194,6 +194,18 @@ function matches(p){
   if(state.price&&p.priceTier!==state.price)return false;
   return true;
 }
+/* 参考価格の補足（容量・取得時点）。
+   価格は楽天APIで購入リンク先そのものから取得しているので、
+   どの容量のいつの価格なのかを併記して景品表示法の観点でも誤解が出ないようにする。 */
+function priceMeta(p){
+  const parts=[];
+  if(p.priceSize)parts.push(p.priceSize);
+  if(p.priceFetchedAt){
+    const m=String(p.priceFetchedAt).match(/^(\d{4})-(\d{2})/);
+    if(m)parts.push(`${m[1]}年${Number(m[2])}月時点`);
+  }
+  return parts.length?`<span class="price-meta">（${parts.join("・")}）</span>`:"";
+}
 function card(p){
   const f=FAM[p.family];const c=f.color;
   // 実写(楽天CDN)を主役に、意匠画像はonerrorの保険。実写が無い商品は意匠画像を直接出す。
@@ -243,7 +255,7 @@ function card(p){
       </div>
       <p class="verdict" style="border-left-color:${c}"><span class="vlabel">Sillage の見立て</span>${p.verdict}</p>
       ${(p.price||p.priceTier)?`<div class="card-foot">
-        <span class="price">${p.price?`<span class="price-label">参考価格</span>${p.price}`:""}${p.priceTier?`<span class="tier">${PRICE[p.priceTier]}</span>`:""}</span>
+        <span class="price">${p.price?`<span class="price-label">参考価格</span>${p.price}${priceMeta(p)}`:""}${p.priceTier?`<span class="tier">${PRICE[p.priceTier]}</span>`:""}</span>
       </div>`:""}
       <div class="card-actions">
         ${p.slug?`<a class="item-link" href="/items/${p.slug}">香りを詳しく見る</a>`:""}
