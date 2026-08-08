@@ -392,6 +392,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -505,7 +506,7 @@
         "date"
       ],
       "priceTier": "mid",
-      "price": "¥7,000前後",
+      "price": "¥5,698",
       "releaseYear": 2007,
       "verdict": "地中海の昼下がりのような爽やかさ。万人受けする軽さで、夏の定番として根強い人気。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/58/1082458_1.jpg?_ex=512x512",
@@ -568,9 +569,22 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": [],
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.fashionsnap.com/article/2025-05-12/dolce-and-gabbana-light-blue/",
+          "sourceNote": "公式製品ページに容量表記がないため暫定出典"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.fashionsnap.com/article/2025-05-12/dolce-and-gabbana-light-blue/",
+          "sourceNote": "公式製品ページに容量表記がないため暫定出典"
+        }
+      ],
+      "priceSource": "rakuten",
+      "priceValue": 5698,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "hermes-2",
@@ -590,7 +604,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥16,000前後",
+      "price": "¥26,590",
       "releaseYear": 1979,
       "verdict": "エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/03011640105.jpg?_ex=512x512",
@@ -649,9 +663,16 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": [],
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "sizes": [
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.hermes.com/uk/en/product/eau-d-orange-verte-eau-de-cologne-V101914V0/"
+        }
+      ],
+      "priceSource": "rakuten",
+      "priceValue": 26590,
+      "priceSize": "200ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "dior-2",
@@ -829,6 +850,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -1133,6 +1155,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -1153,7 +1176,7 @@
         "daily"
       ],
       "priceTier": "mid",
-      "price": "¥4,000前後",
+      "price": "¥6,995",
       "releaseYear": 1973,
       "verdict": "ハーブの効いた正統派フゼア。香水黎明期の骨格を残す、堅実で外さない一本。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/07718351/compass1611907526.jpg?_ex=512x512",
@@ -1197,9 +1220,16 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "concentration": null,
-      "sizes": [],
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.rabanne.com/ww/en/fragrance/p/paco-rabanne-pour-homme--000000000065051929"
+        }
+      ],
+      "priceSource": "rakuten",
+      "priceValue": 6995,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "nautica-1",
@@ -1580,6 +1610,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -1703,7 +1734,7 @@
         "daily"
       ],
       "priceTier": "petit",
-      "price": "¥3,000前後",
+      "price": "¥4,928",
       "releaseYear": 1989,
       "verdict": "ラベンダーとハーブの清潔感。落ち着いた大人のフゼアで、コスパよく長く使える定番。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/91/571691_1.jpg?_ex=512x512",
@@ -1764,9 +1795,16 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "sizes": [],
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.calvinklein.us/en/men/fragrance/fragrance/eternity-eau-de-toilette-for-men/LX000145-000.html"
+        }
+      ],
+      "priceSource": "rakuten",
+      "priceValue": 4928,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "ysl-2",
@@ -2564,6 +2602,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -2587,7 +2626,7 @@
       "price": "¥6,500前後",
       "releaseYear": 2017,
       "verdict": "フィグとアクアの瑞々しさ。爽やかさに甘さを乗せた、近年のメンズ人気作。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/01c/ver1321-sale_1.jpg?_ex=512x512",
+      "img": "/img/products/versace-2.png",
       "purchaseLinks": {
         "official": {
           "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
@@ -2595,11 +2634,7 @@
           "type": "product"
         },
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2Fver1321-sale%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "concentration": {
         "value": "Eau de Toilette",
@@ -2662,8 +2697,8 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "azzaro-2",
@@ -2783,7 +2818,7 @@
       "price": "¥15,000前後",
       "releaseYear": 1992,
       "verdict": "綿菓子とパチョリの衝撃。グルマン香水の発明者であり、好き嫌いを超えて歴史を変えた一本。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/thi002-100_1.jpg?_ex=512x512",
+      "img": "/img/products/mugler-1.png",
       "concentration": {
         "value": "Eau de Parfum",
         "label": "オードパルファム"
@@ -2843,16 +2878,12 @@
           "type": "product"
         },
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fthi002-100%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeMismatch": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "thierry-mugler-1",
@@ -2944,6 +2975,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeUnknown": true
     },
     {
@@ -2967,15 +2999,11 @@
       "price": "¥9,000前後",
       "releaseYear": 2017,
       "verdict": "栗とバニラの温かい甘さ。親しみやすく好感度が高い、デート向けの近年の人気作。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/strawberrynet-beauty/cabinet/12557956/12567302/23525431005.jpg?_ex=512x512",
+      "img": "/img/products/giorgio-armani-1.png",
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fstrawberrynet-beauty%2F235254%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "concentration": {
         "value": "Eau de Toilette",
@@ -3022,8 +3050,8 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "sizes": [],
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "viktor-rolf-1",
@@ -3306,6 +3334,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -3711,6 +3740,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -3899,6 +3929,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -5888,6 +5919,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -6022,15 +6054,11 @@
       "price": "¥5,000前後",
       "releaseYear": 1965,
       "verdict": "1965年の重厚なレザー・シプレ。古典的な男臭さがあり、貫禄を求める大人に。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuimonogatari/cabinet/32/1080332_1.jpg?_ex=512x512",
+      "img": "/img/products/aramis-1.png",
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuimonogatari%2F1080332%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "concentration": null,
       "sizes": [],
@@ -6064,8 +6092,8 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "chanel-5",
@@ -6439,6 +6467,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -6462,15 +6491,11 @@
       "price": "¥12,000前後",
       "releaseYear": 2003,
       "verdict": "上質なムスクの官能。肌に溶けるような色気で、世界的に支持されるムスクの代表作。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241211/1396515956-1_cp.jpg?_ex=512x512",
+      "img": "/img/products/narciso-rodriguez-1.png",
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2F3423478515956%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "concentration": null,
       "sizes": [],
@@ -6504,8 +6529,8 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "le-labo-2",
@@ -6705,6 +6730,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -6904,15 +6930,11 @@
       "price": "¥11,000前後",
       "releaseYear": 2007,
       "verdict": "すみれの葉とムスクの上品な男性版。控えめながら奥行きがあり、知的な清潔感を放つ。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2025_11/img762566.jpg?_ex=512x512",
+      "img": "/img/products/narciso-rodriguez-2.png",
       "purchaseLinks": {
         "official": null,
         "amazon": null,
-        "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhline-international%2F762566%2F",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        }
+        "rakuten": null
       },
       "concentration": null,
       "sizes": [],
@@ -6946,8 +6968,8 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "manual-stale",
+      "needsCorrectLink": true
     },
     {
       "slug": "glossier-1",
@@ -7313,6 +7335,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -7470,6 +7493,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeUnknown": true
     },
     {
@@ -7489,8 +7513,8 @@
         "business",
         "sports"
       ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
+      "priceTier": "high",
+      "price": "¥14,120",
       "releaseYear": 2005,
       "verdict": "海藻のミネラル感が独特の塩気を生む。爽やかさに深みがあり、夏でも安っぽくならない。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/mimori/cabinet/point1/0783320427152.jpg?_ex=512x512",
@@ -7504,7 +7528,12 @@
         }
       },
       "concentration": null,
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-us/products/91152-e.html"
+        }
+      ],
       "recommendedFor": [
         {
           "text": "マンダリンと海藻にウッディな余韻が重なる香りを好む人",
@@ -7535,8 +7564,10 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "priceValue": 14120,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "versace-4",
@@ -7743,6 +7774,7 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual",
+      "needsCorrectLink": true,
       "priceSizeMismatch": true
     },
     {
@@ -7762,8 +7794,8 @@
         "date",
         "daily"
       ],
-      "priceTier": "mid",
-      "price": "¥8,000前後",
+      "priceTier": "high",
+      "price": "¥16,780",
       "releaseYear": 2016,
       "verdict": "恋人の残り香をコンセプトにしたユニセックス寄りのウッディムスク。優しく肌に馴染み、翌朝のシャツを思わせる親密な余韻。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/item43/lw001medt50ml.jpg?_ex=512x512",
@@ -7829,7 +7861,10 @@
       ],
       "verifiedAt": "2026-08-04",
       "updatedAt": "2026-08-04",
-      "priceSource": "manual-stale"
+      "priceSource": "rakuten",
+      "priceValue": 16780,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-08"
     },
     {
       "slug": "loewe-2",

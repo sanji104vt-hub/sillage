@@ -274,7 +274,7 @@ fragrances.forEach((item, index) => {
     errors.push(`照合できるのに priceSizeUnknown が立っている: ${slug}`);
   }
   // 作業管理用のフラグなので、ページにも配信JSONにも出さない。
-  for (const flag of ["priceSizeMismatch", "priceSizeUnknown"]) {
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink"]) {
     if (html.includes(flag)) errors.push(`${flag} がページに出力されている: ${path}`);
   }
   // 手入力のままの価格に取得日や容量が残っていると、取得していない価格を
@@ -305,14 +305,25 @@ if ([...brandCounts.values()].some((count) => count > 2)) errors.push("第2段�
 // 2026-08-05: 「第2段階に楽天リンクあり・なしの両ケースがあること」は移行期の検査だった。
 // 実写画像も楽天リンクも無い商品を全て取り下げた結果、掲載中の全商品が楽天リンクを持つ
 // 状態になり、この条件は成立しなくなった。現在の掲載方針を表す検査に置き換える。
-const noRakuten = fragrances.filter((item) => !item.purchaseLinks?.rakuten?.url);
+// 2026-08-08: 記事と別商品にリンクしていた商品が見つかり、正しいリンクが入るまで
+// 楽天リンクを外す運用を始めた。外した商品は needsCorrectLink で追跡しているので、
+// その印がある商品だけを例外として認める（印の無い商品は従来どおり不可）。
+const noRakuten = fragrances.filter((item) => !item.purchaseLinks?.rakuten?.url && !item.needsCorrectLink);
 if (noRakuten.length) {
   errors.push(`楽天リンクを持たない商品があります: ${noRakuten.map((item) => item.slug).join(", ")}`);
 }
 // 実写画像(楽天CDN)を持たない商品は掲載しない。意匠画像は onerror の保険であって「画像あり」ではない。
-const noPhoto = fragrances.filter((item) => !item.img || String(item.img).startsWith("/img/products/"));
+// ただし楽天リンクを外した商品は、その写真がリンク先＝別商品のものなので意匠画像に戻している。
+const noPhoto = fragrances.filter((item) => (!item.img || String(item.img).startsWith("/img/products/"))
+  && item.purchaseLinks?.rakuten?.url);
 if (noPhoto.length) {
   errors.push(`実写画像を持たない商品があります: ${noPhoto.map((item) => item.slug).join(", ")}`);
+}
+// 別商品にリンクしていた商品の写真は、そのリンク先のボトル写真なので残してはいけない。
+const wrongPhoto = fragrances.filter((item) => item.needsCorrectLink && !item.purchaseLinks?.rakuten?.url
+  && String(item.img || "").includes("rakuten.co.jp"));
+if (wrongPhoto.length) {
+  errors.push(`リンクを外したのに楽天CDN画像が残っています: ${wrongPhoto.map((item) => item.slug).join(", ")}`);
 }
 // 同一メゾンが別ブランドとして重複登録されていないか（CK/Calvin Klein, Thierry Mugler/Mugler の再発防止）
 const brandNames = [...new Set(fragrances.map((item) => item.brand))];
@@ -325,7 +336,7 @@ if (emptyBrands.length) errors.push(`掲載0本のブランドがBRANDSに残っ
 // 内部の作業管理フラグが、ブラウザへ配信されるデータに混ざっていないか。
 for (const deliverable of ["public/data/fragrances.json", "public/data/home-data.js"]) {
   const text = existsSync(deliverable) ? readFileSync(deliverable, "utf8") : "";
-  for (const flag of ["priceSizeMismatch", "priceSizeUnknown"]) {
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink"]) {
     if (text.includes(flag)) errors.push(`${flag} が配信データに含まれています: ${deliverable}`);
   }
 }
