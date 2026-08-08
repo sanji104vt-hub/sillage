@@ -325,6 +325,20 @@ const wrongPhoto = fragrances.filter((item) => item.needsCorrectLink && !item.pu
 if (wrongPhoto.length) {
   errors.push(`リンクを外したのに楽天CDN画像が残っています: ${wrongPhoto.map((item) => item.slug).join(", ")}`);
 }
+// 楽天CDNの写真は、その楽天リンクの商品ページから取っている。リンクだけ差し替えて
+// 写真を更新し忘れると、差し替え前の商品のボトル写真が残り続ける。
+// 2026-08-08 のリンク差し替え作業で実際に起こりうると分かったので検査に入れる。
+const shopOfLink = (item) => decodeURIComponent(
+  new URL(item.purchaseLinks.rakuten.url).searchParams.get("url") || "",
+).match(/item\.rakuten\.co\.jp\/([^/]+)\//)?.[1];
+const photoShopMismatch = fragrances.filter((item) => {
+  const mall = String(item.img || "").match(/@0_mall\/([^/]+)\//)?.[1];
+  if (!mall || !item.purchaseLinks?.rakuten?.url) return false;
+  return mall !== shopOfLink(item);
+});
+if (photoShopMismatch.length) {
+  errors.push(`商品画像の出店者が楽天リンク先と違います（リンク差し替え時の更新漏れ）: ${photoShopMismatch.map((item) => item.slug).join(", ")}`);
+}
 // 同一メゾンが別ブランドとして重複登録されていないか（CK/Calvin Klein, Thierry Mugler/Mugler の再発防止）
 const brandNames = [...new Set(fragrances.map((item) => item.brand))];
 const brandSource = JSON.parse(readFileSync("data/brands.json", "utf8"));
