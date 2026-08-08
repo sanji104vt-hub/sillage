@@ -80,6 +80,7 @@ if (!existsSync(FILE)) {
 }
 
 const args = process.argv.slice(2);
+const REPORT = args.includes("--report");
 const DRY_RUN = args.includes("--dry-run");
 const LIMIT = Number((args.find((a) => a.startsWith("--limit")) || "").split("=")[1] || 0)
   || (args.includes("--limit") ? Number(args[args.indexOf("--limit") + 1]) : 0);
@@ -98,18 +99,25 @@ function tierOf(value) {
   return "high";
 }
 
-// もしも経由URL → { shop, slug }
+// もしも経由URL → { shop, slug, url }（url はもしもを剥がした素の楽天商品URL）
 function parseRakutenTarget(moshimoUrl) {
   try {
     const target = decodeURIComponent(new URL(moshimoUrl).searchParams.get("url") || "");
     const m = target.match(/item\.rakuten\.co\.jp\/([^/]+)\/([^/?#]+)/);
-    return m ? { shop: m[1], slug: m[2] } : null;
+    return m ? { shop: m[1], slug: m[2], url: target } : null;
   } catch { return null; }
 }
 
 // itemName から容量を拾う。複数容量が並ぶ商品は最小容量＋「〜」表記にする。
+//
+// 楽天の商品名は表記がばらつくので、先に NFKC 正規化して吸収する。
+//   全角 ｍｌ／ＭＬ → ml／ML、全角数字 １００ → 100、全角空白 → 半角空白、
+//   合字 ㎖ → ml。そのうえで大文字小文字を無視して照合する（ml/mL/ML/Ml）。
+// 「100ml/3.3oz」のような oz 併記は ml 側だけが拾われる（oz にはマッチしない）。
+// 数値と単位の間の空白と小数（7.5ml）も許容し、商品名の途中でも拾う。
 function parseSize(itemName) {
-  const matches = [...String(itemName || "").matchAll(/(\d+(?:\.\d+)?)\s*(ml|mL|ML|ｍｌ)/g)]
+  const text = String(itemName || "").normalize("NFKC");
+  const matches = [...text.matchAll(/(\d+(?:\.\d+)?)\s*ml/gi)]
     .map((m) => Number(m[1]))
     .filter((n) => Number.isFinite(n) && n > 0 && n <= 2000);
   const unique = [...new Set(matches)].sort((a, b) => a - b);
@@ -196,6 +204,55 @@ const document = JSON.parse(readFileSync(FILE, "utf8"));
 let products = document.fragrances;
 if (ONLY_SLUG) products = products.filter((p) => p.slug === ONLY_SLUG);
 if (LIMIT) products = products.slice(0, LIMIT);
+
+// ------------------------------------------------------------ 診断レポート
+// 容量が確認できず実売価格を採用できなかった商品について、楽天が何を返しているかを
+// そのまま出す。itemName は容量の表記ゆれやセット販売を目で判断するため全文を出す。
+// 診断だけが目的なので data/fragrances.json は一切書き換えない。
+if (REPORT) {
+  const targets = products.filter((p) => p.priceSizeUnknown || p.priceSizeMismatch);
+  console.log(`診断レポート: ${targets.length}件（data/fragrances.json は書き換えません）`);
+  console.log(`Origin: ${ORIGIN}\n`);
+
+  let n = 0;
+  for (const product of targets) {
+    n++;
+    const flag = product.priceSizeMismatch ? "priceSizeMismatch" : "priceSizeUnknown";
+    const ours = (product.sizes || []).map((s) => `${Number(s.volumeMl)}mL`).join(" / ") || "なし";
+    const target = parseRakutenTarget(product.purchaseLinks?.rakuten?.url || "");
+
+    console.log("─".repeat(72));
+    console.log(`[${n}/${targets.length}] ${product.slug}   (${flag})`);
+    console.log(`  ブランド / 商品名 : ${product.brand} / ${product.name}`);
+    console.log(`  掲載sizes         : ${ours}`);
+    console.log(`  楽天商品URL       : ${target?.url || "（解析不可）"}`);
+
+    if (!target) { console.log("  → 楽天リンクを解析できませんでした\n"); continue; }
+
+    let result;
+    try { result = await lookup(product, target); }
+    catch (error) { result = { hit: null, error: String(error?.message || error) }; }
+
+    if (!result.hit) {
+      console.log(`  itemName          : （商品を特定できず: ${result.error || "検索でヒットなし"}）\n`);
+      continue;
+    }
+
+    const { size, isFrom } = parseSize(result.hit.itemName);
+    // sizes があるのに unknown だった商品は、容量を抽出できなかったのが原因。
+    // 抽出できるようになったならここで印を付ける（採用はしない）。
+    const wasExtractionFailure = product.priceSizeUnknown && (product.sizes || []).length > 0;
+    console.log(`  itemName          : ${result.hit.itemName}`);
+    console.log(`  抽出した容量      : ${size ? `${size}${isFrom ? "（複数容量あり・最小値）" : ""}` : "抽出不可"}`
+      + (wasExtractionFailure && size ? "   ★抽出可能になった" : ""));
+    console.log(`  itemPrice         : ${yen(result.hit.itemPrice)}`);
+    console.log(`  現在のルールでの判定: ${classifySize(product, size)}   (検索経路: ${result.via})`);
+    console.log("");
+  }
+  console.log("─".repeat(72));
+  console.log("※ 容量の妥当性を確認したうえで、採用するものを指示してください。");
+  process.exit(0);
+}
 
 const before = new Map(document.fragrances.map((p) => [p.slug, { price: p.price, tier: p.priceTier, value: p.priceValue }]));
 const succeeded = [];

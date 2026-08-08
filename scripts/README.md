@@ -49,9 +49,26 @@ node scripts/fetch-prices.mjs --dry-run --slug dior-1
 
 | オプション | 意味 |
 | --- | --- |
+| `--report` | 診断レポートだけ出す（書き込みなし。下記参照） |
 | `--dry-run` | ファイルに書き込まない |
 | `--limit N` | 先頭N件だけ |
 | `--slug xxx` | 特定の商品だけ |
+
+### 診断レポート（--report）
+
+```bash
+node scripts/fetch-prices.mjs --report
+```
+
+`priceSizeUnknown` / `priceSizeMismatch` が立っている商品について、楽天が実際に何を返しているかを出す。
+`data/fragrances.json` は書き換えない。
+
+商品ごとに、掲載 sizes・楽天の `itemName` 全文・抽出した容量・`itemPrice`・素の楽天商品URLを出力する。
+`itemName` を全文で出すのは、容量の表記ゆれ（`100mL` / `3.4oz` / `100ml/3.3oz` など）や
+セット販売・付属品つきの商品を目で判断するため。
+
+これを見て「この容量なら妥当」と判断できた商品は、`data/fragrances.json` の `sizes` に
+その容量を追加すれば、次回の通常実行で実売価格に切り替わる。
 
 ### 何をしているか
 
