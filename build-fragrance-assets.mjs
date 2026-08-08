@@ -10,7 +10,7 @@ mkdirSync("public/data", { recursive: true });
 
 // priceSizeMismatch / priceSizeUnknown / needsCorrectLink は「後で直すべき商品」を
 // 管理するための内部フラグで、サイトの表示には一切使わない。配信するJSONからは落とす。
-const INTERNAL_FIELDS = ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink"];
+const INTERNAL_FIELDS = ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink", "priceStaleRuns"];
 const publicFragrances = document.fragrances.map((fragrance) => {
   const copy = { ...fragrance };
   for (const field of INTERNAL_FIELDS) delete copy[field];

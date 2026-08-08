@@ -274,7 +274,7 @@ fragrances.forEach((item, index) => {
     errors.push(`照合できるのに priceSizeUnknown が立っている: ${slug}`);
   }
   // 作業管理用のフラグなので、ページにも配信JSONにも出さない。
-  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink"]) {
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink", "priceStaleRuns"]) {
     if (html.includes(flag)) errors.push(`${flag} がページに出力されている: ${path}`);
   }
   // 手入力のままの価格に取得日や容量が残っていると、取得していない価格を
@@ -350,7 +350,7 @@ if (emptyBrands.length) errors.push(`掲載0本のブランドがBRANDSに残っ
 // 内部の作業管理フラグが、ブラウザへ配信されるデータに混ざっていないか。
 for (const deliverable of ["public/data/fragrances.json", "public/data/home-data.js"]) {
   const text = existsSync(deliverable) ? readFileSync(deliverable, "utf8") : "";
-  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink"]) {
+  for (const flag of ["priceSizeMismatch", "priceSizeUnknown", "needsCorrectLink", "priceStaleRuns"]) {
     if (text.includes(flag)) errors.push(`${flag} が配信データに含まれています: ${deliverable}`);
   }
 }

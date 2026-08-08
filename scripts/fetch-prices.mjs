@@ -254,11 +254,14 @@ if (REPORT) {
   process.exit(0);
 }
 
-const before = new Map(document.fragrances.map((p) => [p.slug, { price: p.price, tier: p.priceTier, value: p.priceValue }]));
+const before = new Map(document.fragrances.map((p) => [p.slug, {
+  price: p.price, tier: p.priceTier, value: p.priceValue, source: p.priceSource,
+}]));
 const succeeded = [];
 const failed = [];
 const mismatched = [];
 const unknownSize = [];
+const staleKept = [];
 const bigChanges = [];
 const tierChanges = [];
 
@@ -274,7 +277,17 @@ function keepManualPrice(product, prev, source) {
   delete product.priceIsFrom;
   delete product.priceSizeMismatch;
   delete product.priceSizeUnknown;
+  delete product.priceStaleRuns;
   product.priceSource = source;
+}
+
+// 取得に失敗しても、前回までに取れていた実売価格があるならそれを残す。
+// ショップ内検索は当たり外れがあり、実行のたびに数件が入れ替わる。毎回手入力価格へ
+// 戻すと、読者から見て価格表示が実行ごとに揺れて情報として後退する。
+// 取得日を併記しているので、日付が古いまま残ること自体は誤表示にならない。
+function keepLastFetchedPrice(product) {
+  product.priceStaleRuns = (Number(product.priceStaleRuns) || 0) + 1;
+  return product.priceStaleRuns;
 }
 
 console.log(`対象 ${products.length} 件 / 1件あたり最大 ${3 + MAX_SHOP_PAGES} リクエスト・間隔 ${SLEEP_MS}ms`);
@@ -300,9 +313,17 @@ for (const product of products) {
   }
 
   if (!result.hit || !Number.isFinite(Number(result.hit.itemPrice))) {
-    // 取得失敗時は既存 price を残す。priceFetchedAt も更新しない。
+    const reason = result.error || `${target.shop}/${target.slug} を特定できず`;
+    // 前回までに実売価格を取れていた商品は、その価格・容量・取得日をそのまま残す。
+    if (prev.source === "rakuten" && Number.isFinite(Number(prev.value))) {
+      const runs = keepLastFetchedPrice(product);
+      staleKept.push({ slug: product.slug, price: product.price, fetchedAt: product.priceFetchedAt, runs, reason });
+      console.log(`  ${String(index).padStart(3)}/${products.length} ↷ ${product.slug.padEnd(34)} ${String(product.price).padStart(10)} 前回値を保持（連続${runs}回失敗・取得日 ${product.priceFetchedAt}）`);
+      continue;
+    }
+    // 一度も取れていない商品は手入力価格のまま。priceFetchedAt も付けない。
     keepManualPrice(product, prev, "manual-stale");
-    failed.push({ slug: product.slug, reason: result.error || `${target.shop}/${target.slug} を特定できず` });
+    failed.push({ slug: product.slug, reason });
     console.log(`  ${String(index).padStart(3)}/${products.length} ✗ ${product.slug} (${target.shop})`);
     continue;
   }
@@ -333,6 +354,7 @@ for (const product of products) {
   product.priceSize = size;
   product.priceFetchedAt = today;
   product.priceSource = "rakuten";
+  delete product.priceStaleRuns;
   if (isFrom) product.priceIsFrom = true; else delete product.priceIsFrom;
   const newTier = tierOf(value);
   if (prev?.tier && prev.tier !== newTier) tierChanges.push({ slug: product.slug, from: prev.tier, to: newTier });
@@ -369,11 +391,25 @@ const expensive = document.fragrances
   .sort((a, b) => b.priceValue - a.priceValue);
 
 console.log("\n" + "=".repeat(64));
-console.log(`実売価格を採用: ${succeeded.length}件 / 容量不一致: ${mismatched.length}件 / 容量照合不可: ${unknownSize.length}件 / 取得失敗: ${failed.length}件`);
+console.log(`実売価格を採用: ${succeeded.length}件 / 前回値を保持: ${staleKept.length}件 / 容量不一致: ${mismatched.length}件 / 容量照合不可: ${unknownSize.length}件 / 取得失敗: ${failed.length}件`);
 console.log(`priceSource 別: ${Object.entries(bySource).map(([k, v]) => `${k} ${v}`).join(" / ")}`);
 if (failed.length) {
   console.log("\n取得失敗（priceSource: manual-stale）:");
   for (const f of failed) console.log(`  - ${f.slug}  (${f.reason})`);
+}
+if (staleKept.length) {
+  console.log("\n今回は取得できず、前回の実売価格を保持（表示は変わりません）:");
+  for (const s of staleKept) {
+    console.log(`  - ${s.slug.padEnd(30)} ${String(s.price).padStart(10)}  取得日 ${s.fetchedAt}  連続${s.runs}回失敗`);
+  }
+}
+// 何度も取れない商品はリンク先が消えている可能性がある。差し替えの検知に使う。
+const longStale = document.fragrances.filter((p) => Number(p.priceStaleRuns) > 3);
+if (longStale.length) {
+  console.log("\n★4回以上連続で取得できていない商品（リンク先が消えた可能性・要差し替え）:");
+  for (const p of longStale) {
+    console.log(`  - ${p.slug.padEnd(30)} ${String(p.price).padStart(10)}  取得日 ${p.priceFetchedAt}  連続${p.priceStaleRuns}回失敗`);
+  }
 }
 if (mismatched.length) {
   console.log("\n容量不一致（priceSizeMismatch: true ＝ リンク先を単品ページに差し替えるべき商品）:");
