@@ -54,7 +54,17 @@ const SIXTH_BATCH_SLUGS = new Set([
   "bvlgari-4",
   "guerlain-4", "guerlain-5", "guerlain-6",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS]);
+const SEVENTH_BATCH_SLUGS = new Set([
+  // 2026-08-09 追加：インデックス未登録と判定されたブランドを厚くするための20商品
+  "tom-ford-4", "tom-ford-5", "tom-ford-6", "tom-ford-7",
+  "hugo-boss-2", "hugo-boss-3", "hugo-boss-4", "hugo-boss-5", "hugo-boss-6",
+  "acqua-di-parma-3", "acqua-di-parma-4", "acqua-di-parma-5",
+  "creed-2", "creed-3", "creed-4",
+  "gucci-3", "gucci-4",
+  "maison-francis-kurkdjian-2", "maison-francis-kurkdjian-3",
+  "dunhill-2",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",
