@@ -43,7 +43,18 @@ const FIFTH_BATCH_SLUGS = new Set([
   "diptyque-2", "diptyque-3", "diptyque-4", "diptyque-5",
   "prada-3", "prada-4",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS]);
+const SIXTH_BATCH_SLUGS = new Set([
+  // 2026-08-09 追加：ブランドあたりの掲載本数を増やすための17商品（新規ブランドなし）
+  "jo-malone-5", "jo-malone-6",
+  "lacoste-5",
+  "loewe-5", "loewe-6",
+  "maison-margiela-5", "maison-margiela-6", "maison-margiela-7",
+  "prada-5", "prada-6", "prada-7",
+  "versace-5", "versace-6",
+  "bvlgari-4",
+  "guerlain-4", "guerlain-5", "guerlain-6",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

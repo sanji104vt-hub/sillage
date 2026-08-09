@@ -5585,6 +5585,202 @@
       "priceSource": "rakuten"
     },
     {
+      "slug": "prada-5",
+      "brand": "Prada",
+      "name": "ルナ ロッサ オーシャン",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ベルガモット・アンブレット",
+      "mid": "ラベンダー・セージ",
+      "last": "ベチバー・パチュリ・ムスク",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "sports"
+      ],
+      "releaseYear": 2021,
+      "verdict": "名前ほど塩気は強くなく、実体はラベンダーとセージのフゼア。夏の仕事に使いやすい。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img048/fr3614273556620.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏でもきちんと感を保ちたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "アクアティックより落ち着いた爽やかさが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3614273556620%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "prada-6",
+      "brand": "Prada",
+      "name": "ルナ ロッサ ブラック",
+      "gender": "men",
+      "family": "amber",
+      "top": "ベルガモット・オレンジ・アンジェリカ",
+      "mid": "ローズ・パチュリ",
+      "last": "アンバー・パチュリ・ムスク",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2018,
+      "verdict": "カーボンの金属的な冷たさに対し、こちらは温度のある夜。シリーズで最も甘く長い。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/04891660/8435137782970.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ルナ ロッサ カーボンを持っていて夜用を足したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さのあるアンバーを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "日中のオフィスで使いたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F8435137782970%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "prada-7",
+      "brand": "Prada",
+      "name": "ルオム インテンス",
+      "gender": "men",
+      "family": "amber",
+      "top": "ネロリ・ペッパー",
+      "mid": "アイリス・パチュリ",
+      "last": "アンバー・ベンゾイン・トンカビーン",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "releaseYear": 2017,
+      "verdict": "掲載中のルオムの夜版。アイリスの粉っぽさは共通で、ベンゾインの甘さと厚みが増す。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img002/fr8435137764730.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ルオムを使っていて秋冬向けが欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "石鹸的な清潔感に深みを足したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽さと透明感を優先する人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr8435137764730%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "montblanc-2",
       "brand": "Montblanc",
       "name": "エクスプローラー",
@@ -5776,6 +5972,136 @@
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten",
       "priceIsFrom": true
+    },
+    {
+      "slug": "jo-malone-5",
+      "brand": "Jo Malone",
+      "name": "ミルラ & トンカ",
+      "gender": "unisex",
+      "family": "amber",
+      "top": "ラベンダー",
+      "mid": "ナミビア産ミルラ",
+      "last": "トンカビーン・バニラ・アーモンド",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "releaseYear": 2016,
+      "verdict": "樹脂の深みにトンカの甘さ。軽いコロンとは対照的な、夜に長く残るジョー マローン。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/04891660/690251047345.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Cologne Intense",
+        "label": "コロン インテンス"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さのあるアンバー系を長く楽しみたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "軽いコロンでは物足りなくなった人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場で香りを主張したくない人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F690251047345%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "jo-malone-6",
+      "brand": "Jo Malone",
+      "name": "ポメグラネート ノアール",
+      "gender": "unisex",
+      "family": "fruity",
+      "top": "ザクロ・ピンクペッパー・プラム",
+      "mid": "カサブランカリリー・スパイシーウッド",
+      "last": "パチュリ・グアヤックウッド",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "releaseYear": 2005,
+      "verdict": "果実の甘さをスパイスと木で締めた一本。ジョー マローンの中では最も夜の顔を持つ。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/jomalone/cabinet/item3/9900l10f01_new.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Cologne",
+        "label": "コロン"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "フルーティでも甘すぎない香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "性別を選ばない一本を贈りたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "終日つけていられる軽さを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F9900l10f01%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "hugo-boss-1",
@@ -6333,6 +6659,201 @@
       "priceSize": "75ml",
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten"
+    },
+    {
+      "slug": "guerlain-4",
+      "brand": "Guerlain",
+      "name": "ロム イデアル エクストレム",
+      "gender": "men",
+      "family": "amber",
+      "top": "アーモンド・ベルガモット",
+      "mid": "ローズ・チェリー",
+      "last": "トンカビーン・バニラ・インセンス",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "releaseYear": 2015,
+      "verdict": "アーモンドの甘さを濃くした一本。アマレット的なクリーミーさをインセンスが締める。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img007/fr3346470304345.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さのあるメンズを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "ゲランのバニラの扱いを味わいたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘い香りが苦手な人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3346470304345%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "guerlain-5",
+      "brand": "Guerlain",
+      "name": "アビ ルージュ",
+      "gender": "men",
+      "family": "amber",
+      "top": "ベルガモット・オレンジ・ライム",
+      "mid": "ローズ・カーネーション・パチュリ",
+      "last": "レザー・バニラ・アンバー・ベンゾイン",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "releaseYear": 1965,
+      "verdict": "1965年、乗馬服の赤に着想した史上初のアンバー系メンズ。レザーと大地が重なる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/a02/3346470235533.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "古典的な紳士の香りを知りたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "レザーとバニラの組み合わせが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "現代的で軽い清潔感を求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F3346470235533%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "guerlain-6",
+      "brand": "Guerlain",
+      "name": "ゲラン オム",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ライム・ミント",
+      "mid": "ラム・ゼラニウム",
+      "last": "ベチバー・パチュリ・シダー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2008,
+      "verdict": "モヒートから着想したライムとミントとラム。ゲランのメンズでは最も軽快な一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth010/ge117_100.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏の夜に使える爽やかな香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "カクテルのような甘さと清涼感が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "フォーマルな場で落ち着かせたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10044902%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "chanel-6",
@@ -6970,6 +7491,199 @@
       "priceSize": "100ml",
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten"
+    },
+    {
+      "slug": "maison-margiela-5",
+      "brand": "Maison Margiela",
+      "name": "バイ ザ ファイヤープレイス",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "ピンクペッパー・オレンジブロッサム・クローブ",
+      "mid": "チェスナット・グアヤックウッド・カシュメラン",
+      "last": "バニラ・カデオイル・ペルーバルサム",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2015,
+      "verdict": "焼けた木と栗の甘さで暖炉を再現。燻した質感が芯にあり、甘いだけでは終わらない。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img008/fr3614273185875.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "冬に手放せない一本を探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さと煙たさが同居する香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "一年を通して同じ香りを使いたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3614273185875%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "maison-margiela-6",
+      "brand": "Maison Margiela",
+      "name": "ビーチ ウォーク",
+      "gender": "unisex",
+      "family": "aquatic",
+      "top": "ベルガモット・ピンクペッパー・レモン",
+      "mid": "ココナッツミルク・イランイラン・ヘリオトロープ",
+      "last": "ムスク・シダー・ベンゾイン",
+      "seasons": [
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2012,
+      "verdict": "海そのものではなく、日焼け止めと肌と潮風が混じった浜辺の空気。体温で甘さが立つ。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/6/maisonm006.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏の記憶と結びつく香りを求める人"
+        },
+        {
+          "basis": "editorial",
+          "text": "塩気より甘さのあるアクアティックが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "仕事の場で無難にまとめたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2Fmaisonm006%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "maison-margiela-7",
+      "brand": "Maison Margiela",
+      "name": "コーヒー ブレイク",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "コーヒーアブソリュート・ベルガモット",
+      "mid": "ミルク・カカオ",
+      "last": "ムスク・バニラ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "releaseYear": 2019,
+      "verdict": "淹れたてのコーヒーとミルク。グルマンの中では砂糖菓子的な甘さが薄く、苦味が残る。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sanwaworld/cabinet/04771686/imgrc0124979610.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘すぎないグルマンを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "日常の場面と結びつく香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかさや存在感を求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsanwaworld%2F10031550%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "narciso-rodriguez-2",
@@ -7632,6 +8346,73 @@
       "priceFetchedAt": "2026-08-09"
     },
     {
+      "slug": "bvlgari-4",
+      "brand": "Bvlgari",
+      "name": "マン ウッド エッセンス",
+      "gender": "men",
+      "family": "woody",
+      "top": "ベルガモット・オレンジ",
+      "mid": "サイプレス・コリアンダー",
+      "last": "ベチバー・シダー・オリバナム",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "formal"
+      ],
+      "releaseYear": 2018,
+      "verdict": "サイプレスとベチバーの乾いた森に、樹脂が奥で立つ。同シリーズで最も静かで清潔。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img286/fr0783320461019.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "主張しすぎないウッディを職場で使いたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "マン イン ブラックのレザーが重いと感じた人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さや華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr0783320461019%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "versace-4",
       "brand": "Versace",
       "name": "プールオム",
@@ -7739,6 +8520,136 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "manual-stale"
+    },
+    {
+      "slug": "versace-5",
+      "brand": "Versace",
+      "name": "エロス エナジー",
+      "gender": "men",
+      "family": "citrus",
+      "top": "イタリア産ベルガモット・ブラッドオレンジ・ライム・レモン・グレープフルーツ・マンダリン",
+      "mid": "ピンクペッパー・ブラックカラント・ホワイトアンバー",
+      "last": "パチュリ・ムスク・オークモス",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2025,
+      "verdict": "六種の柑橘を重ねた2025年の最新エロス。従来のミントとバニラの甘さとは別方向。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/swishpop/cabinet/11888259/i0156839.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オー ド パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "エロスの名は好きだが甘さが苦手だった人"
+        },
+        {
+          "basis": "editorial",
+          "text": "明るい柑橘で存在感を出したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "落ち着いた大人しい香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fswishpop%2Fi0156839%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "versace-6",
+      "brand": "Versace",
+      "name": "エロス パルファム",
+      "gender": "men",
+      "family": "amber",
+      "top": "レモン・マンダリン・リツエアクベバ・エレミ・ブラックペッパー",
+      "mid": "ポマローズ・ゼラニウム・ラベンダー・セージ",
+      "last": "ベンゾイン・パチュリ・バニラ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2021,
+      "verdict": "エロスの最高濃度。入り口のシトラスは同じで、樹脂とバニラに着地する点が違う。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img023/fr8011003872077.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Parfum",
+        "label": "パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "エロスを使っていて持続を上げたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夜に強く残る一本を探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場でつけたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr8011003872077%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "acqua-di-parma-2",
@@ -8190,6 +9101,138 @@
       "priceSource": "rakuten"
     },
     {
+      "slug": "loewe-5",
+      "brand": "Loewe",
+      "name": "ソロ ロエベ セドロ",
+      "gender": "men",
+      "family": "woody",
+      "top": "ベルガモット・カルダモン",
+      "mid": "シダーウッド・ゼラニウム",
+      "last": "シダー・ベチバー・トンカビーン",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "releaseYear": 2013,
+      "verdict": "シダーを主役に据えたソロの派生。乾いた明るさがあり、湿度の高い日でも重くならない。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/09687781/compass1684737639.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ウッディでも重さを感じたくない人"
+        },
+        {
+          "basis": "editorial",
+          "text": "スペイン系の乾いた質感が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "濃厚で甘い残り香を求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Floewe-sololoewecedroedt-100ml%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "loewe-6",
+      "brand": "Loewe",
+      "name": "アグア デ ロエベ エル",
+      "gender": "men",
+      "family": "citrus",
+      "top": "ベルガモット・マンダリン・バジル",
+      "mid": "ジャスミン・ミント",
+      "last": "ホワイトムスク・シダー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "sports"
+      ],
+      "releaseYear": 2012,
+      "verdict": "地中海の空気を狙ったシトラスとハーブ。掲載中のクラシックより軽く、日中向き。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/pic10/compass1622601552.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏の日中に惜しみなく使える一本が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "香りを主張しすぎたくない人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "長時間の持続を最優先する人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Floewe-aqualoeweeledt-100ml%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "ralph-lauren-1",
       "brand": "Ralph Lauren",
       "name": "サファリ フォーメン",
@@ -8451,7 +9494,8 @@
       "priceValue": 8250,
       "priceSize": "125ml",
       "priceFetchedAt": "2026-08-09",
-      "priceSource": "rakuten"
+      "priceSource": "rakuten",
+      "priceStaleRuns": 1
     },
     {
       "slug": "ralph-lauren-4",
@@ -9010,6 +10054,72 @@
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten",
       "priceTier": "high"
+    },
+    {
+      "slug": "lacoste-5",
+      "brand": "Lacoste",
+      "name": "L.12.12 ノワール",
+      "gender": "men",
+      "family": "woody",
+      "top": "マンダリン・ミント",
+      "mid": "ゼラニウム・オリーブツリー",
+      "last": "ベチバー・サンダルウッド・レザー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2017,
+      "verdict": "白のブランに対する黒。ベチバーとレザーで陰影をつけた、同シリーズのもう一つの顔。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img019/fr2010405000027.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オー ド トワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ブランを使っていて秋冬用を足したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "手に取りやすい価格でウッディを試したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清潔感一辺倒の軽さを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr2010405000027%2F",
+          "verifiedAt": "2026-08-09",
+          "type": "product"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-09",
+      "updatedAt": "2026-08-09",
+      "needsCorrectLink": true,
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     }
   ]
 }
