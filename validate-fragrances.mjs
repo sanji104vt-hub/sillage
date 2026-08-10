@@ -64,7 +64,18 @@ const SEVENTH_BATCH_SLUGS = new Set([
   "maison-francis-kurkdjian-2", "maison-francis-kurkdjian-3",
   "dunhill-2",
 ]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS]);
+const EIGHTH_BATCH_SLUGS = new Set([
+  // 2026-08-09 追加：あと1〜2本で5本に届くブランドを埋める16商品
+  // YSL はレディース2本だけの状態だったため、メンズ4本を入れて解消した
+  "bvlgari-5", "bvlgari-6",
+  "creed-5", "creed-6", "creed-7",
+  "gucci-5", "gucci-6",
+  "maison-francis-kurkdjian-4", "maison-francis-kurkdjian-5",
+  "maison-francis-kurkdjian-6", "maison-francis-kurkdjian-7",
+  "ysl-6", "ysl-7", "ysl-8", "ysl-9",
+  "giorgio-armani-4",
+]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

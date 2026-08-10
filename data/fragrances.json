@@ -99,7 +99,7 @@
       "priceSource": "rakuten",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceIsFrom": true
     },
     {
@@ -202,7 +202,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 14300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -301,7 +301,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 18380,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -485,7 +485,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 18359,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -584,7 +584,7 @@
       "priceSource": "rakuten",
       "priceValue": 5698,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "hermes-2",
@@ -672,7 +672,7 @@
       "priceSource": "rakuten",
       "priceValue": 26590,
       "priceSize": "200ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "dior-2",
@@ -950,7 +950,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 4653,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1056,7 +1056,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 5368,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1229,7 +1229,7 @@
       "priceSource": "rakuten",
       "priceValue": 6995,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "nautica-1",
@@ -1320,7 +1320,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 3388,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1418,7 +1418,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 27500,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1518,7 +1518,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 23381,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1713,7 +1713,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17545,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -1804,7 +1804,7 @@
       "priceSource": "rakuten",
       "priceValue": 4928,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "ysl-2",
@@ -1913,7 +1913,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13970,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2019,7 +2019,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17480,
       "priceSize": "35ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2123,7 +2123,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 28050,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -2215,7 +2215,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13673,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -2349,6 +2349,135 @@
       "priceSizeUnknown": true
     },
     {
+      "slug": "gucci-5",
+      "brand": "Gucci",
+      "name": "ギルティ プールオム オードパルファム",
+      "gender": "men",
+      "family": "amber",
+      "top": "ピンクペッパー・チリペッパー",
+      "mid": "ラベンダー・オレンジブロッサム",
+      "last": "パチュリ・シダー・ベチバー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "releaseYear": 2020,
+      "verdict": "掲載中のオードトワレを濃くした版。ラベンダーの骨格に樹脂の甘さと厚みを足している。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/hline-international/cabinet/strawberrynet/2020_10/img709436.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ギルティを使っていて持続を上げたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "スパイスの効いた甘さが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽く清潔な香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhline-international%2F709436%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual-stale"
+    },
+    {
+      "slug": "gucci-6",
+      "brand": "Gucci",
+      "name": "ギルティ ラブ エディション プールオム",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ピンクペッパー・イタリアンレモン",
+      "mid": "ラベンダー・オレンジブロッサム",
+      "last": "パチュリ・シダー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "releaseYear": 2021,
+      "verdict": "ギルティの限定仕様。ラベンダーとオレンジブロッサムを軽やかに再構成している。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img008/fr3614225299520.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ギルティの軽い方が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "春夏に使える一本を探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "重厚さや存在感を求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3614225299520%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "jo-malone-2",
       "brand": "Jo Malone",
       "name": "イングリッシュ ペアー & フリージア",
@@ -2445,7 +2574,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 6940,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2634,7 +2763,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2834,7 +2963,7 @@
       "priceSource": "rakuten",
       "priceValue": 11902,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "azzaro-2",
@@ -3029,7 +3158,7 @@
       "priceSource": "rakuten",
       "priceValue": 14900,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "thierry-mugler-1",
@@ -3123,7 +3252,7 @@
       "priceSource": "rakuten",
       "priceValue": 14300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "giorgio-armani-1",
@@ -3220,7 +3349,7 @@
       "priceSource": "rakuten",
       "priceValue": 14472,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "viktor-rolf-1",
@@ -3310,7 +3439,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 30800,
       "priceSize": "90ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -3613,8 +3742,272 @@
       "updatedAt": "2026-07-18",
       "priceValue": 19800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
+    },
+    {
+      "slug": "ysl-6",
+      "brand": "YSL",
+      "name": "MYSLF オーデパルファム",
+      "gender": "men",
+      "family": "woody",
+      "top": "オレンジブロッサム・シトラス・ベルガモット",
+      "mid": "オレンジブロッサム",
+      "last": "ウッド・アンバーグリス・パチュリ",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "date"
+      ],
+      "releaseYear": 2023,
+      "verdict": "オレンジブロッサムの柔らかさとドライなウッドの衝突。YSLの現行メンズ主力。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/rb260711bc1fb7028e/348197.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "定番から一歩進んだ現行品を探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "フローラルとウッドの対比が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "classicな重厚さを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoscora%2F348197%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "ysl-7",
+      "brand": "YSL",
+      "name": "MYSLF ルパルファム",
+      "gender": "men",
+      "family": "amber",
+      "top": "ベルガモット・ブラックペッパー",
+      "mid": "オレンジブロッサム",
+      "last": "ウッド・バニラバーボン・パチュリ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2024,
+      "verdict": "MYSLFにバニラバーボンと黒胡椒を重ねた濃厚版。2024年発表の夜向け。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img012/fr3614274114652.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Parfum",
+        "label": "パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "MYSLFを使っていて夜用が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "バニラの甘さが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽さと清潔感を優先する人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3614274114652%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "ysl-8",
+      "brand": "YSL",
+      "name": "MYSLF ラブソリュ",
+      "gender": "men",
+      "family": "amber",
+      "top": "ベルガモット・スパイス",
+      "mid": "オレンジブロッサム・アイリス",
+      "last": "ウッド・アンバー・バニラ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2025,
+      "verdict": "MYSLFシリーズの最も濃い版。樹脂と木の比重が上がり、残り方が長くなる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/2/3614274329391.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Parfum",
+        "label": "パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "MYSLFを深く知りたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "強く長く残る一本を探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場で控えめに使いたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F3614274329391%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "ysl-9",
+      "brand": "YSL",
+      "name": "ラ ニュイ ド ロム",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "カルダモン・ベルガモット",
+      "mid": "ラベンダー・シダー・キャラウェイ",
+      "last": "ベチバー・クミン・トンカビーン",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "date",
+        "formal",
+        "daily"
+      ],
+      "releaseYear": 2009,
+      "verdict": "カルダモンとラベンダーの端正な夜。2009年から続く、YSLメンズの代表作。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/images27/90096.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夜のデートに使う定番を探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "スパイスの効いた落ち着きが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "明るく軽快な香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoscora%2F90096%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "maison-margiela-1",
@@ -3715,7 +4108,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13860,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -3815,7 +4208,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 26160,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -4005,7 +4398,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16300,
       "priceSize": "90ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -4234,6 +4627,270 @@
       "priceSizeUnknown": true
     },
     {
+      "slug": "maison-francis-kurkdjian-4",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア ヴィタエ フォルテ",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "レモン・ベルガモット・オレンジ",
+      "mid": "シダー・ジャスミン",
+      "last": "トンカビーン・ムスク・ケイド",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "formal"
+      ],
+      "releaseYear": 2019,
+      "verdict": "柑橘とシダーの透明感を濃度で厚くした版。清潔感を保ったまま持続を伸ばしている。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/wish/cabinet/earth006/zzmfk20_070.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清潔感を長く保ちたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "柑橘とウッドの組み合わせが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10047581%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-5",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア セレスティア",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "ライム・ミント・ブラックカラント",
+      "mid": "ミモザ",
+      "last": "ムスク・ホワイトウッディ",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "sports",
+        "business"
+      ],
+      "releaseYear": 2017,
+      "verdict": "ライムとミントとミモザ。空と水を主題にした、クルジャンで最も軽い一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/pics2/compass1583906028.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽くて涼しい香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "ミントの清涼感が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "持続や存在感を重視する人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Ffrancisk-aquacelestia-70ml%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-6",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア セレスティア コローニュ フォルテ",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "ライム・ミント・ベルガモット",
+      "mid": "ミモザ・ジャスミン",
+      "last": "ムスク・アンバーウッド",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "formal",
+        "daily"
+      ],
+      "releaseYear": 2020,
+      "verdict": "アクア セレスティアを濃度で厚くした版。同じ透明感のまま、残り方だけが変わる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/a05/370055611050.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アクア セレスティアの持続を上げたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "軽さと持続を両立させたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "方向性の違う香りを探している人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F370055611050%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-7",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "バカラ ルージュ 540 エキストレ ドゥ パルファム",
+      "gender": "unisex",
+      "family": "amber",
+      "top": "サフラン・ビターアーモンド",
+      "mid": "エジプシャンジャスミン・シダー",
+      "last": "アンバーグリス・モミの樹脂・ウッディノート",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2017,
+      "verdict": "掲載中のバカラ ルージュ540の最高濃度。サフランと樹脂が濃く、残り方が別次元。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/aquabouquet/cabinet/a09/3700559605905.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Extrait de Parfum",
+        "label": "エクストレ ドゥ パルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "バカラ ルージュ540の持続を上げたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "少量で長く香る一本が欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "日常づかいの気軽さを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2F3700559605905%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "versace-3",
       "brand": "Versace",
       "name": "エロス フレイム",
@@ -4330,7 +4987,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 10098,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -4445,7 +5102,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16180,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -4556,7 +5213,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 21300,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -4653,7 +5310,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17980,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -4959,6 +5616,203 @@
       "priceSizeUnknown": true
     },
     {
+      "slug": "creed-5",
+      "brand": "Creed",
+      "name": "アバントゥス コロン",
+      "gender": "men",
+      "family": "citrus",
+      "top": "ジンジャー・ピンクペッパー・ベルガモット",
+      "mid": "パチュリ・サンダルウッド・ジャスミン",
+      "last": "ムスク・バニラ・トンカビーン",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "sports"
+      ],
+      "releaseYear": 2019,
+      "verdict": "アバントゥスを日中向けに軽くした派生。パイナップルの甘さを抑え、生姜で締めている。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmenana/cabinet/item07/crd050-002.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アバントゥスが好きだが強すぎると感じる人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夏に使える上質な一本を探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "原作の重厚さを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmenana%2Fcrd050-002%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "creed-6",
+      "brand": "Creed",
+      "name": "ミレジム インペリアル",
+      "gender": "unisex",
+      "family": "aquatic",
+      "top": "シチリア産マンダリン・ベルガモット・海塩",
+      "mid": "アイリス・ミネラルノート",
+      "last": "ムスク・サンダルウッド・アンバーグリス",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "formal",
+        "business",
+        "date"
+      ],
+      "releaseYear": 1995,
+      "verdict": "海水とメロンを思わせる塩気のある甘さ。クリードで最も独特な質感を持つ一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/07135627/compass1589358822.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "他にない質感の香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "塩気のある甘さが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "分かりやすい爽やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fcreed-millesimeimperialedp-50ml%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "creed-7",
+      "brand": "Creed",
+      "name": "ボワ ドゥ ポルトガル",
+      "gender": "men",
+      "family": "woody",
+      "top": "ベルガモット・ラベンダー",
+      "mid": "サンダルウッド・シダー・ベチバー",
+      "last": "アンバー・ムスク・トンカビーン",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "business"
+      ],
+      "releaseYear": 1987,
+      "verdict": "サンダルウッドとアンバーの古典的な紳士像。1987年から変わらない、正装のための香り。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/pics01/compass1580545966.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "正装に合う落ち着いた香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "サンダルウッドの厚みが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽快さや現代的な清潔感を求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fcreed-boisduportugal-100ml%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
       "slug": "giorgio-armani-2",
       "brand": "Giorgio Armani",
       "name": "アルマーニ コード",
@@ -5062,7 +5916,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13750,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5162,7 +6016,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 34800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5257,7 +6111,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 20845,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5345,7 +6199,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 29800,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5433,7 +6287,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 40910,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5521,7 +6375,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 33880,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5609,7 +6463,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 28270,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -5929,7 +6783,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 14910,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -6017,7 +6871,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 13690,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -6105,7 +6959,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 14850,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -6393,7 +7247,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 9600,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -6493,10 +7347,9 @@
       "updatedAt": "2026-07-18",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceIsFrom": true,
-      "priceStaleRuns": 1
+      "priceIsFrom": true
     },
     {
       "slug": "jo-malone-5",
@@ -7246,7 +8099,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13380,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -7585,7 +8438,7 @@
       "priceSource": "rakuten",
       "priceValue": 13500,
       "priceSize": "110ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "chanel-5",
@@ -7676,7 +8529,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 24200,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -7772,7 +8625,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 18420,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -8061,7 +8914,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 22480,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -8228,7 +9081,7 @@
       "priceSource": "rakuten",
       "priceValue": 12375,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "le-labo-2",
@@ -8334,7 +9187,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16200,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -8516,7 +9369,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 14300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -8604,7 +9457,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 23518,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -8947,7 +9800,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 20410,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -9135,7 +9988,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 18580,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -9317,8 +10170,73 @@
       "updatedAt": "2026-07-18",
       "priceValue": 9768,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
+    },
+    {
+      "slug": "giorgio-armani-4",
+      "brand": "Giorgio Armani",
+      "name": "ストロンガー ウィズ ユー インテンスリー",
+      "gender": "men",
+      "family": "amber",
+      "top": "ラベンダー・ピンクペッパー",
+      "mid": "セージ・バニラ",
+      "last": "トンカビーン・アンバー・トフィー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "releaseYear": 2019,
+      "verdict": "掲載中のストロンガー ウィズ ユーを甘く濃くした版。バニラとトフィーの温度。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/images36/235253.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "原作を使っていて秋冬用が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘いグルマン寄りのメンズが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さが苦手な人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoscora%2F235253%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
     },
     {
       "slug": "paco-rabanne-3",
@@ -9458,7 +10376,7 @@
       "priceSource": "rakuten",
       "priceValue": 14120,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-10"
     },
     {
       "slug": "bvlgari-4",
@@ -9524,6 +10442,138 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "bvlgari-5",
+      "brand": "Bvlgari",
+      "name": "マン レイン エッセンス",
+      "gender": "men",
+      "family": "aquatic",
+      "top": "グリーンティー・オレンジ",
+      "mid": "ホワイトロータス・クリスタルムスク",
+      "last": "ミネラルアンバー・ガイアックウッド",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "releaseYear": 2023,
+      "verdict": "雨上がりの空気を主題にした一本。グリーンティーとミネラルで、濡れた清涼感を作る。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/besba/cabinet/s22/bvl-917.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清涼感のあるウッディを職場で使いたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "緑茶やミネラルの質感が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さや華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fbvl-917%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
+      "priceSource": "manual",
+      "priceSizeUnknown": true
+    },
+    {
+      "slug": "bvlgari-6",
+      "brand": "Bvlgari",
+      "name": "マン ウッド ネロリ",
+      "gender": "men",
+      "family": "woody",
+      "top": "ネロリ・ベルガモット・オレンジ",
+      "mid": "シダー・ゼラニウム",
+      "last": "ベチバー・アンバーウッド・ムスク",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily",
+        "formal"
+      ],
+      "releaseYear": 2018,
+      "verdict": "ネロリの青さをシダーで受け止めた一本。ウッド エッセンスより明るく、日中に向く。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img302/fr0783320403897.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ネロリの青さが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "明るいウッディを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "重く濃厚な香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": null,
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr0783320403897%2F",
+          "verifiedAt": "2026-08-10"
+        }
+      },
+      "sources": [],
+      "verifiedAt": "2026-08-10",
+      "updatedAt": "2026-08-10",
       "priceSource": "manual",
       "priceSizeUnknown": true
     },
@@ -10149,7 +11199,8 @@
       "priceSource": "rakuten",
       "priceValue": 16780,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09"
+      "priceFetchedAt": "2026-08-09",
+      "priceStaleRuns": 1
     },
     {
       "slug": "loewe-2",
@@ -10236,7 +11287,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 18800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -10409,7 +11460,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 30412,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -10629,7 +11680,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 8228,
       "priceSize": "125ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -10717,7 +11768,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 6765,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -10807,7 +11858,7 @@
       "priceSize": "125ml",
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "ralph-lauren-4",
@@ -10894,7 +11945,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 9966,
       "priceSize": "125ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -10982,7 +12033,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 17600,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -11070,7 +12121,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 23650,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten"
     },
     {
@@ -11140,7 +12191,7 @@
       "price": "¥7,343",
       "priceValue": 7343,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -11211,7 +12262,7 @@
       "price": "¥7,618",
       "priceValue": 7618,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -11292,7 +12343,7 @@
       "price": "¥7,068",
       "priceValue": 7068,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -11363,7 +12414,7 @@
       "price": "¥13,999",
       "priceValue": 13999,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-09",
+      "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
       "priceTier": "high"
     },
