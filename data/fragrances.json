@@ -2765,7 +2765,8 @@
       "priceSize": "30ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceIsFrom": true
+      "priceIsFrom": true,
+      "priceStaleRuns": 1
     },
     {
       "slug": "versace-1",
@@ -3771,7 +3772,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-eau-de-parfum/WW-51115YSL.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -3809,8 +3815,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥17,700",
+      "priceValue": 17700,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "ysl-7",
@@ -3836,7 +3846,12 @@
         "value": "Parfum",
         "label": "パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-le-parfum/WW-51213YSL.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -3874,8 +3889,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥21,384",
+      "priceValue": 21384,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "ysl-8",
@@ -3901,7 +3920,12 @@
         "value": "Parfum",
         "label": "パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-l-absolu/WW-51427YSL.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -3939,8 +3963,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥34,244",
+      "priceValue": 34244,
+      "priceSize": "60ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "ysl-9",
@@ -4519,7 +4547,12 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-universalis-eau-de-toilette-RA130321.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4557,8 +4590,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥35,200",
+      "priceValue": 35200,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "maison-francis-kurkdjian-3",
@@ -4585,7 +4622,12 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/amyris-homme-eau-de-toilette-RA131421.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4623,8 +4665,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥38,681",
+      "priceValue": 38681,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "maison-francis-kurkdjian-4",
@@ -4651,7 +4697,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-vitae-cologne-forte-eau-de-parfum-10233021.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4689,8 +4740,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥42,900",
+      "priceValue": 42900,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "maison-francis-kurkdjian-5",
@@ -4717,7 +4772,12 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-eau-de-toilette-RA13262.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4755,8 +4815,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥65,000",
+      "priceValue": 65000,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "maison-francis-kurkdjian-6",
@@ -4784,7 +4848,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-cologne-forte-eau-de-parfum-RA12342.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4822,8 +4891,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥40,603",
+      "priceValue": 40603,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "maison-francis-kurkdjian-7",
@@ -4849,7 +4922,12 @@
         "value": "Extrait de Parfum",
         "label": "エクストレ ドゥ パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/baccarat-rouge-540-extrait-de-parfum-RA142321.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4887,8 +4965,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥75,900",
+      "priceValue": 75900,
+      "priceSize": "70ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "versace-3",
@@ -5444,7 +5526,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/green-irish-tweed"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5482,8 +5569,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥62,707",
+      "priceValue": 62707,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "creed-3",
@@ -5510,7 +5601,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/silver-mountain-water"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5548,8 +5644,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥62,707",
+      "priceValue": 62707,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "creed-4",
@@ -5574,7 +5674,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/virgin-island-water"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5612,8 +5717,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥62,707",
+      "priceValue": 62707,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "creed-5",
@@ -5640,7 +5749,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://creedboutique.com/products/aventus-cologne"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5678,8 +5792,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥32,000",
+      "priceValue": 32000,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "creed-6",
@@ -5706,7 +5824,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://creedboutique.com/products/millesime-imperial"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5744,8 +5867,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥43,500",
+      "priceValue": 43500,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "creed-7",
@@ -5771,7 +5898,12 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/bois-du-portugal"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -5809,8 +5941,12 @@
       "sources": [],
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥49,875",
+      "priceValue": 49875,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "giorgio-armani-2",
@@ -6987,7 +7123,12 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-ocean-edt-100-ml/2A1156_2D00_F0Z99_P_ML100"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7025,8 +7166,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥15,796",
+      "priceValue": 15796,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "prada-6",
@@ -7052,7 +7197,12 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-black-50-ml/2A1155_2HC5_F0Z99_P_ML050"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7090,8 +7240,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥20,927",
+      "priceValue": 20927,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "prada-7",
@@ -7375,7 +7529,12 @@
         "value": "Cologne Intense",
         "label": "コロン インテンス"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.com/product/25946/43657/colognes/myrrh-tonka-cologne-intense"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7413,8 +7572,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥28,110",
+      "priceValue": 28110,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "jo-malone-6",
@@ -7594,7 +7757,12 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.hugoboss.com/boss-bottled-night-eau-de-toilette-100ml/hbeu58004750_999.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7632,8 +7800,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥10,148",
+      "priceValue": 10148,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "mid"
     },
     {
       "slug": "hugo-boss-3",
@@ -7660,7 +7832,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.hugoboss.com/boss-bottled-infinite-eau-de-parfum-50ml/hbeu58079183_999.html"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7698,8 +7875,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥14,850",
+      "priceValue": 14850,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "hugo-boss-4",
@@ -8128,7 +8309,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/neroli-portofino-eau-de-parfum"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8166,8 +8352,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥44,625",
+      "priceValue": 44625,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "tom-ford-5",
@@ -8193,7 +8383,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/noir-extreme-eau-de-parfum"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8231,8 +8426,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥24,872",
+      "priceValue": 24872,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "tom-ford-6",
@@ -8260,7 +8459,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/grey-vetiver-eau-de-parfum"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8298,8 +8502,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥36,230",
+      "priceValue": 36230,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "tom-ford-7",
@@ -8325,7 +8533,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8363,8 +8576,12 @@
       "sources": [],
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
-      "priceSource": "manual",
-      "priceSizeUnknown": true
+      "priceSource": "rakuten",
+      "price": "¥57,767",
+      "priceValue": 57767,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-08-10",
+      "priceTier": "high"
     },
     {
       "slug": "aramis-1",
@@ -11200,7 +11417,7 @@
       "priceValue": 16780,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-08-09",
-      "priceStaleRuns": 1
+      "priceStaleRuns": 2
     },
     {
       "slug": "loewe-2",
@@ -11288,7 +11505,8 @@
       "priceValue": 18800,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-08-10",
-      "priceSource": "rakuten"
+      "priceSource": "rakuten",
+      "priceStaleRuns": 1
     },
     {
       "slug": "loewe-3",
@@ -11858,7 +12076,7 @@
       "priceSize": "125ml",
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten",
-      "priceStaleRuns": 3
+      "priceStaleRuns": 4
     },
     {
       "slug": "ralph-lauren-4",
