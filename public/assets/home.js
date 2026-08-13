@@ -13,16 +13,16 @@ const ICONS = {
   aquatic:`<path d="M3 9 q3 -3 6 0 t6 0 t6 0"/><path d="M3 14 q3 -3 6 0 t6 0 t6 0"/><path d="M3 19 q3 -3 6 0 t6 0 t6 0"/>`,
 };
 const FAMILIES = [
-  {key:"citrus", ja:"シトラス", en:"CITRUS", color:"#c9b558", desc:"レモンやベルガモットが弾ける、最も明るく清潔感のある系統。日中や夏、香水入門に向き、誰からも好かれやすい。"},
-  {key:"aromatic", ja:"アロマティック", en:"AROMATIC", color:"#93a384", desc:"ラベンダーやハーブを核にした伝統的な清潔感。フゼアとも呼ばれ、石けんのような安心感でビジネスの定番。"},
-  {key:"floral", ja:"フローラル", en:"FLORAL", color:"#c4889c", desc:"花束のような華やかさ。花の種類や組み合わせで、透明感のあるものから濃密なものまで幅広い。"},
-  {key:"fruity", ja:"フルーティ", en:"FRUITY", color:"#d18a64", desc:"りんごやベリーなど果実の甘酸っぱさ。親しみやすく華やかで、デートや若い世代に好まれる。"},
-  {key:"gourmand", ja:"グルマン", en:"GOURMAND", color:"#ba8a57", desc:"バニラやキャラメル、コーヒーを思わせる甘い系統。秋冬や、距離の近い夜の場面で魅力を放つ。"},
-  {key:"amber", ja:"アンバー", en:"AMBER", color:"#c98c42", desc:"樹脂やスパイスの温かく官能的な甘さ。オリエンタルとも呼ばれ、冬やフォーマルで強い存在感を出す。"},
-  {key:"woody", ja:"ウッディ", en:"WOODY", color:"#927152", desc:"サンダルウッドやシダーなど乾いた木の香り。落ち着きと品格があり、日常からフォーマルまで合わせやすい。"},
-  {key:"chypre", ja:"シプレ", en:"CHYPRE", color:"#7f8d5a", desc:"ベルガモットとオークモスの対比が生む、ほろ苦く知的な系統。クラシックで個性が際立つ。"},
-  {key:"musk", ja:"ムスク", en:"MUSK", color:"#a59cb4", desc:"肌のぬくもりのような清潔で官能的な残り香。軽く万人受けし、素肌っぽい自然な香りづけに。"},
-  {key:"aquatic", ja:"アクアティック", en:"AQUATIC", color:"#6c98ad", desc:"海風や水を思わせる透明感のある清涼系。夏やスポーツ、ビジネスで爽やかに香らせたいときに。"},
+  {key:"citrus", ja:"シトラス", en:"CITRUS", color:"#e2cf50", surface:"#1a1911", panel:"#26241a", desc:"レモンやベルガモットが弾ける、最も明るく清潔感のある系統。日中や夏、香水入門に向き、誰からも好かれやすい。"},
+  {key:"aromatic", ja:"アロマティック", en:"AROMATIC", color:"#7bb06d", surface:"#131a11", panel:"#1c261a", desc:"ラベンダーやハーブを核にした伝統的な清潔感。フゼアとも呼ばれ、石けんのような安心感でビジネスの定番。"},
+  {key:"floral", ja:"フローラル", en:"FLORAL", color:"#ce82a8", surface:"#1a1116", panel:"#261a20", desc:"花束のような華やかさ。花の種類や組み合わせで、透明感のあるものから濃密なものまで幅広い。"},
+  {key:"fruity", ja:"フルーティ", en:"FRUITY", color:"#d68066", surface:"#1a1311", panel:"#261d1a", desc:"りんごやベリーなど果実の甘酸っぱさ。親しみやすく華やかで、デートや若い世代に好まれる。"},
+  {key:"gourmand", ja:"グルマン", en:"GOURMAND", color:"#c25b69", surface:"#1a1112", panel:"#261a1c", desc:"バニラやキャラメル、コーヒーを思わせる甘い系統。秋冬や、距離の近い夜の場面で魅力を放つ。"},
+  {key:"amber", ja:"アンバー", en:"AMBER", color:"#d09939", surface:"#1a1711", panel:"#26211a", desc:"樹脂やスパイスの温かく官能的な甘さ。オリエンタルとも呼ばれ、冬やフォーマルで強い存在感を出す。"},
+  {key:"woody", ja:"ウッディ", en:"WOODY", color:"#9d704d", surface:"#1a1511", panel:"#261f1a", desc:"サンダルウッドやシダーなど乾いた木の香り。落ち着きと品格があり、日常からフォーマルまで合わせやすい。"},
+  {key:"chypre", ja:"シプレ", en:"CHYPRE", color:"#7f964a", surface:"#171a11", panel:"#22261a", desc:"ベルガモットとオークモスの対比が生む、ほろ苦く知的な系統。クラシックで個性が際立つ。"},
+  {key:"musk", ja:"ムスク", en:"MUSK", color:"#aa92bf", surface:"#16111a", panel:"#201a26", desc:"肌のぬくもりのような清潔で官能的な残り香。軽く万人受けし、素肌っぽい自然な香りづけに。"},
+  {key:"aquatic", ja:"アクアティック", en:"AQUATIC", color:"#5da6c0", surface:"#11181a", panel:"#1a2326", desc:"海風や水を思わせる透明感のある清涼系。夏やスポーツ、ビジネスで爽やかに香らせたいときに。"},
 ];
 const FAM = Object.fromEntries(FAMILIES.map(f=>[f.key,f]));
 
@@ -235,7 +235,7 @@ function card(p){
     .map(s=>`<a class="${s.cls}" href="${p.purchaseLinks[s.key].url}" target="_blank" rel="${s.rel}">${s.label} ↗</a>`)
     .join("");
   return`
-  <article class="card" style="--family:${c}">
+  <article class="card" style="--family:${c};--fam-surface:${f.surface};--fam-panel:${f.panel}">
     ${visual}
     <div class="card-body">
       <div class="product-heading">
