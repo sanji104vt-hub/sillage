@@ -5,6 +5,7 @@ import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
 import { PROBLEM_ARTICLES } from "./data/problem-columns.mjs";
 import { BEGINNER_ARTICLES } from "./data/beginner-columns.mjs";
+import { MOTE_ARTICLES } from "./data/mote-columns.mjs";
 import { COLUMN_CATEGORIES, applyColumnTaxonomy } from "./data/column-taxonomy.mjs";
 
 const SITE_COPY = loadSiteCopy();
@@ -296,6 +297,7 @@ const allArticles = [
   ...articles,
   ...PROBLEM_ARTICLES,
   ...BEGINNER_ARTICLES,
+  ...MOTE_ARTICLES,
 ].map(applyColumnTaxonomy).concat(EXTERNAL_COLUMNS);
 
 const esc = (s="") => String(s).replaceAll("&","&amp;").replaceAll("<","&lt;").replaceAll(">","&gt;").replaceAll('"',"&quot;");

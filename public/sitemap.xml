@@ -230,4 +230,8 @@
   <url><loc>https://sillage.asutelu.com/items/ysl-7</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/ysl-8</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/ysl-9</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/does-mote-fragrance-exist</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/fragrance-moments</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/how-to-wear-for-good-impression</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sillage.asutelu.com/columns/scents-women-prefer</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>

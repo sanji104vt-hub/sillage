@@ -456,9 +456,9 @@
       "category": "比較"
     },
     {
-      "slug": "chanel-vs-dior",
-      "label": "シャネル vs ディオール",
-      "category": "比較"
+      "slug": "does-mote-fragrance-exist",
+      "label": "「モテる香水」は本当に存在するのか",
+      "category": "香りの知識"
     }
   ],
   "notes-pyramid": [
@@ -750,9 +750,9 @@
       "category": "シーン"
     },
     {
-      "slug": "first-fragrance",
-      "label": "初めての香水の選び方",
-      "category": "教育"
+      "slug": "how-to-wear-for-good-impression",
+      "label": "つけ方でほとんど決まる",
+      "category": "つけ方・使い方"
     }
   ],
   "how-to-test-perfume": [
@@ -1128,9 +1128,9 @@
       "category": "シーン"
     },
     {
-      "slug": "first-fragrance",
-      "label": "初めての香水の選び方",
-      "category": "教育"
+      "slug": "how-to-wear-for-good-impression",
+      "label": "つけ方でほとんど決まる",
+      "category": "つけ方・使い方"
     }
   ],
   "business-fragrance": [
@@ -1212,9 +1212,9 @@
       "category": "教育"
     },
     {
-      "slug": "bvlgari-vs-versace",
-      "label": "ブルガリ vs ヴェルサーチ",
-      "category": "比較"
+      "slug": "fragrance-moments",
+      "label": "香りが効く瞬間",
+      "category": "シーン・季節"
     }
   ],
   "summer-perfume-strong": [
@@ -1383,6 +1383,174 @@
       "slug": "lelabo-vs-jomalone",
       "label": "ル ラボ vs ジョー マローン",
       "category": "比較"
+    }
+  ],
+  "does-mote-fragrance-exist": [
+    {
+      "slug": "scents-women-prefer",
+      "label": "女性が好む男性の香り",
+      "category": "香りの知識"
+    },
+    {
+      "slug": "how-to-wear-for-good-impression",
+      "label": "つけ方でほとんど決まる",
+      "category": "つけ方・使い方"
+    },
+    {
+      "slug": "fragrance-moments",
+      "label": "香りが効く瞬間",
+      "category": "シーン・季節"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    }
+  ],
+  "scents-women-prefer": [
+    {
+      "slug": "does-mote-fragrance-exist",
+      "label": "「モテる香水」は本当に存在するのか",
+      "category": "香りの知識"
+    },
+    {
+      "slug": "fragrance-moments",
+      "label": "香りが効く瞬間",
+      "category": "シーン・季節"
+    },
+    {
+      "slug": "notes-pyramid",
+      "label": "トップ・ミドル・ラストの読み方",
+      "category": "教育"
+    },
+    {
+      "slug": "first-fragrance",
+      "label": "初めての香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "age-and-perfume",
+      "label": "年齢と香水の選び方",
+      "category": "教育"
+    },
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "how-to-wear-for-good-impression",
+      "label": "つけ方でほとんど決まる",
+      "category": "つけ方・使い方"
+    },
+    {
+      "slug": "concentration-guide",
+      "label": "パルファム・EDT・コロン濃度の違い",
+      "category": "教育"
+    }
+  ],
+  "how-to-wear-for-good-impression": [
+    {
+      "slug": "how-many-sprays",
+      "label": "香水は何プッシュが正解?",
+      "category": "howto"
+    },
+    {
+      "slug": "where-to-apply-perfume",
+      "label": "香水はどこにつける？手首・首・腰・服の違い",
+      "category": "つけ方・使い方"
+    },
+    {
+      "slug": "too-much-perfume",
+      "label": "香水をつけすぎた時の落とし方",
+      "category": "失敗・トラブル"
+    },
+    {
+      "slug": "office-perfume-amount",
+      "label": "職場で香水が迷惑にならない量とつけ方",
+      "category": "シーン・季節"
+    },
+    {
+      "slug": "fragrance-moments",
+      "label": "香りが効く瞬間",
+      "category": "シーン・季節"
+    },
+    {
+      "slug": "does-mote-fragrance-exist",
+      "label": "「モテる香水」は本当に存在するのか",
+      "category": "香りの知識"
+    },
+    {
+      "slug": "how-to-wear",
+      "label": "香水のつけ方の基本",
+      "category": "howto"
+    },
+    {
+      "slug": "make-perfume-last-longer",
+      "label": "香水がすぐ消えるのはなぜ？長持ちさせる7つの方法",
+      "category": "つけ方・使い方"
+    }
+  ],
+  "fragrance-moments": [
+    {
+      "slug": "season-scene-map",
+      "label": "季節×シーンの香水マップ",
+      "category": "シーン"
+    },
+    {
+      "slug": "business-fragrance",
+      "label": "ビジネスシーン向けの香水",
+      "category": "シーン"
+    },
+    {
+      "slug": "how-to-wear-for-good-impression",
+      "label": "つけ方でほとんど決まる",
+      "category": "つけ方・使い方"
+    },
+    {
+      "slug": "scents-women-prefer",
+      "label": "女性が好む男性の香り",
+      "category": "香りの知識"
+    },
+    {
+      "slug": "does-mote-fragrance-exist",
+      "label": "「モテる香水」は本当に存在するのか",
+      "category": "香りの知識"
+    },
+    {
+      "slug": "make-perfume-last-longer",
+      "label": "香水がすぐ消えるのはなぜ？長持ちさせる7つの方法",
+      "category": "つけ方・使い方"
+    },
+    {
+      "slug": "notes-pyramid",
+      "label": "トップ・ミドル・ラストの読み方",
+      "category": "教育"
+    },
+    {
+      "slug": "summer-perfume-strong",
+      "label": "夏に強い香水の選び方",
+      "category": "シーン"
     }
   ]
 }
