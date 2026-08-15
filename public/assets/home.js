@@ -44,6 +44,12 @@ const PURCHASE_SHOPS=[
   {key:"official",label:"公式サイトで見る",   cls:"buy buy-official", rel:"noopener noreferrer"},
 ];
 const state={family:null,scene:null,season:null,gender:null,price:null};
+// 絞り込みの利用状況。「色で選ぶ」が実際に使われているかを見るために送る。
+// analytics.js が読み込まれていない場合は何もしない。
+function trackFilter(type,value){
+  if(typeof window.SillageTrack!=="function")return;
+  window.SillageTrack("filter_use",{filter_type:type,filter_value:String(value||"")});
+}
 // 並び順は「絞り込み条件」ではないので state には入れない。
 // state に混ぜると render() の filtered 判定（Object.values(state).some(Boolean)）が
 // 常に真になり、件数表示が「全97件」から「97件が見つかりました」に変わってしまう。
@@ -117,6 +123,7 @@ function setHub(famKey){
 }
 function toggleFamily(k){
   state.family=state.family===k?null:k;
+  if(state.family)trackFilter("family",state.family);
   safeRender();
 }
 
@@ -126,7 +133,7 @@ function buildChips(id,map,field){
   Object.entries(map).forEach(([val,label])=>{
     const b=document.createElement("button");
     b.type="button";b.className="chip";b.textContent=label;b.dataset.val=val;b.setAttribute("aria-pressed","false");
-    b.onclick=()=>{state[field]=state[field]===val?null:val;safeRender();};
+    b.onclick=()=>{state[field]=state[field]===val?null:val;if(state[field])trackFilter(field,val);safeRender();};
     box.appendChild(b);
   });
 }
@@ -235,7 +242,9 @@ function card(p){
     .map(s=>`<a class="${s.cls}" href="${p.purchaseLinks[s.key].url}" target="_blank" rel="${s.rel}">${s.label} ↗</a>`)
     .join("");
   return`
-  <article class="card" style="--family:${c};--fam-surface:${f.surface};--fam-panel:${f.panel}">
+  <article class="card" style="--family:${c};--fam-surface:${f.surface};--fam-panel:${f.panel}"
+    data-item-slug="${escapeAttr(p.slug)}" data-item-name="${escapeAttr(p.name)}" data-item-brand="${escapeAttr(p.brand)}"
+    data-item-family="${escapeAttr(p.family)}" data-price-tier="${escapeAttr(p.priceTier)}">
     ${visual}
     <div class="card-body">
       <div class="product-heading">
@@ -365,6 +374,7 @@ function initOrderChips(){
   chips.forEach(c=>c.addEventListener("click",()=>{
     if(sortMode===c.dataset.val)return;
     sortMode=c.dataset.val;
+    trackFilter("order",sortMode);
     sync();
     applyOrder();
   }));
@@ -1189,6 +1199,10 @@ function renderQuiz(){
 
 function showQuizResult(){
   const card=document.getElementById("quizCard");
+  if(typeof window.SillageTrack==="function"){
+    const famScores=Object.entries(quizState.weights.fam||{}).sort((a,b)=>b[1]-a[1]);
+    window.SillageTrack("diagnosis_complete",{result_family:famScores.length?famScores[0][0]:""});
+  }
   const recommendation=window.SillageQuizRecommendation.recommend(PERFUMES,quizState.weights);
   // score brands
   const scores=BRANDS.map(b=>{

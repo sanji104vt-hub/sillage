@@ -422,7 +422,8 @@ article{max-width:1060px}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
 </style>
 </head>
-<body>
+<body data-page-type="item" data-item-slug="${escape(p.slug)}" data-item-name="${escape(p.name)}" data-item-brand="${escape(p.brand)}" data-item-family="${escape(p.family)}" data-price-tier="${escape(p.priceTier || "")}">
+<script defer src="/assets/analytics.js"></script>
 <header class="topbar">
   <a class="logo" href="/">Sillage</a>
   <span class="pr-tag">PR・アフィリエイト広告を含みます</span>
