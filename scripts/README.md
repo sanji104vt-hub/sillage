@@ -122,3 +122,63 @@ node validate-fragrances.mjs
   サイトは書き戻された静的JSONを読むだけにする
 - 並列実行しない。楽天APIは概ね1秒1リクエスト
 - `purchaseLinks` を書き換えない。価格取得のために `url=` を読むのは可
+
+---
+
+## audit/ — 週次の健全性監査
+
+150商品のリンク・画像・内部整合性を毎週チェックし、深刻度「高」があったときだけ
+GitHub Issue を起票する。**検知と報告だけを行い、`data/` は一切書き換えない。**
+
+```bash
+export RAKUTEN_APP_ID='...' RAKUTEN_ACCESS_KEY='...'
+export RAKUTEN_ORIGIN='https://sillage.asutelu.com/'
+node scripts/audit/run.mjs            # 通常実行（Issueも起票）
+node scripts/audit/run.mjs --no-issue # Issueを立てずに確認だけ
+node scripts/audit/run.mjs --limit 8  # 先頭8件で試す
+```
+
+所要時間は約9分（楽天API 149件を1.2秒間隔で逐次照合するため）。
+
+### なぜ死活監視では足りないか
+
+過去に起きた事故はいずれも「楽天APIは正常に応答し、リンクも生きていた」状態だった。
+
+- ジェントルマン ブシの画像がシャツだった
+- フォーハーのリンクがピュア ムスク（別ライン）だった
+- テスター品・箱なし品を掴んでいた
+
+だから商品名の一致まで見る。`data/brand-aliases.json` がその照合表で、
+ブランド名の英字↔カナ、および掲載名と楽天名が別表記の組み合わせを持つ。
+
+### 検査項目
+
+| 分類 | 内容 |
+| --- | --- |
+| A | 楽天リンク：商品の存在 / 商品名の一致 / 除外語 / 価格急変 / 容量変化 |
+| B | 死活：商品画像・意匠画像・商品ページ・ブランドページ・コラム・OGP・favicon |
+| C | 内部：12バリデータ / 件数の一致 / 空ボタン / 内部フラグ漏れ / a_id / GA4測定ID |
+
+### 深刻度の考え方
+
+「高」だけが Issue になる。毎週同じものを鳴らすと通知が形骸化するため、
+次のものは「中」に落としている。
+
+- `needsCorrectLink` が付いた既知の商品
+- `priceSource: manual-stale`（価格取得でも取れていない既知の状態）の取得失敗
+- 前週は取得できていた商品の単発の取得失敗（ショップ内検索は当たり外れがある）
+- 楽天の商品名が英語表記で、カナの掲載名と機械的に比較できない場合
+
+### 前週との比較
+
+`reports/state.json` に価格・容量・商品名を記録し、翌週これと比較する。
+初回は比較対象がないので記録だけ作る。
+
+### GitHub Actions
+
+`.github/workflows/weekly-audit.yml` が毎週月曜 09:00 JST に実行する。
+`workflow_dispatch` で手動実行もできる。
+
+実行には `RAKUTEN_APP_ID` と `RAKUTEN_ACCESS_KEY` の GitHub Secrets が必要。
+`RAKUTEN_ORIGIN` はワークフロー内で明示している（他サイトの値が残っていて
+認証に失敗した事例があるため）。

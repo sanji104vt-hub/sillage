@@ -1,0 +1,247 @@
+{
+  "_note": "週次監査で楽天の商品名とブランドを照合するための表記ゆれ辞書。楽天の商品名は英字・カナ・表記ゆれが混在するため、いずれか1つでも含まれていればブランド一致とみなす。data/brands.json の41ブランドに対応。",
+  "Dior": [
+    "Dior",
+    "ディオール",
+    "クリスチャンディオール",
+    "クリスチャン ディオール",
+    "CHRISTIAN DIOR"
+  ],
+  "Chanel": [
+    "Chanel",
+    "シャネル"
+  ],
+  "Tom Ford": [
+    "Tom Ford",
+    "TOMFORD",
+    "トムフォード",
+    "トム フォード"
+  ],
+  "Hermès": [
+    "Hermes",
+    "Hermès",
+    "エルメス"
+  ],
+  "Creed": [
+    "Creed",
+    "クリード"
+  ],
+  "Le Labo": [
+    "Le Labo",
+    "ルラボ",
+    "ル ラボ"
+  ],
+  "Byredo": [
+    "Byredo",
+    "バイレード",
+    "バイレードー"
+  ],
+  "Diptyque": [
+    "Diptyque",
+    "ディプティック"
+  ],
+  "Maison Margiela": [
+    "Maison Margiela",
+    "MAISON MARTIN MARGIELA",
+    "メゾンマルジェラ",
+    "メゾン マルジェラ",
+    "マルジェラ",
+    "レプリカ",
+    "REPLICA"
+  ],
+  "Maison Francis Kurkdjian": [
+    "Maison Francis Kurkdjian",
+    "MFK",
+    "メゾンフランシスクルジャン",
+    "メゾン フランシス クルジャン",
+    "クルジャン"
+  ],
+  "Acqua di Parma": [
+    "Acqua di Parma",
+    "ACQUA DI PARMA",
+    "アクアディパルマ",
+    "アクア ディ パルマ",
+    "アクア デ パルマ"
+  ],
+  "Guerlain": [
+    "Guerlain",
+    "ゲラン"
+  ],
+  "Giorgio Armani": [
+    "Giorgio Armani",
+    "Emporio Armani",
+    "ARMANI",
+    "ジョルジオ アルマーニ",
+    "ジョルジオアルマーニ",
+    "エンポリオ アルマーニ",
+    "エンポリオアルマーニ",
+    "アルマーニ"
+  ],
+  "Versace": [
+    "Versace",
+    "ヴェルサーチ",
+    "ヴェルサーチェ",
+    "ベルサーチ"
+  ],
+  "YSL": [
+    "YSL",
+    "Yves Saint Laurent",
+    "イヴサンローラン",
+    "イヴ サンローラン",
+    "サンローラン"
+  ],
+  "Gucci": [
+    "Gucci",
+    "グッチ"
+  ],
+  "Prada": [
+    "Prada",
+    "プラダ"
+  ],
+  "Bvlgari": [
+    "Bvlgari",
+    "Bulgari",
+    "BVLGARI",
+    "ブルガリ"
+  ],
+  "Dolce&Gabbana": [
+    "Dolce&Gabbana",
+    "Dolce & Gabbana",
+    "DOLCE",
+    "D&G",
+    "ドルチェ＆ガッバーナ",
+    "ドルチェ&ガッバーナ",
+    "ドルガバ"
+  ],
+  "Jo Malone": [
+    "Jo Malone",
+    "JO MALONE",
+    "ジョーマローン",
+    "ジョー マローン"
+  ],
+  "Aesop": [
+    "Aesop",
+    "イソップ"
+  ],
+  "Mugler": [
+    "Mugler",
+    "Thierry Mugler",
+    "ミュグレー",
+    "ティエリーミュグレー",
+    "ティエリー ミュグレー",
+    "ティエリー・ミュグレー"
+  ],
+  "Viktor&Rolf": [
+    "Viktor&Rolf",
+    "Viktor & Rolf",
+    "VIKTOR",
+    "ヴィクター＆ロルフ",
+    "ヴィクター&ロルフ",
+    "ヴィクター アンド ロルフ"
+  ],
+  "Carolina Herrera": [
+    "Carolina Herrera",
+    "キャロライナヘレラ",
+    "キャロライナ ヘレラ"
+  ],
+  "Hugo Boss": [
+    "Hugo Boss",
+    "HUGO BOSS",
+    "BOSS",
+    "ヒューゴボス",
+    "ヒューゴ ボス",
+    "ボス"
+  ],
+  "Paco Rabanne": [
+    "Paco Rabanne",
+    "Rabanne",
+    "パコラバンヌ",
+    "パコ ラバンヌ",
+    "パコ・ラバンヌ"
+  ],
+  "Azzaro": [
+    "Azzaro",
+    "アザロ"
+  ],
+  "Calvin Klein": [
+    "Calvin Klein",
+    "CALVIN KLEIN",
+    "カルバンクライン",
+    "カルバン クライン",
+    "カルヴァンクライン",
+    "シーケーワン",
+    "CK"
+  ],
+  "Davidoff": [
+    "Davidoff",
+    "ダビドフ"
+  ],
+  "SHIRO": [
+    "SHIRO",
+    "シロ"
+  ],
+  "Montblanc": [
+    "Montblanc",
+    "Mont Blanc",
+    "モンブラン"
+  ],
+  "Marc Jacobs": [
+    "Marc Jacobs",
+    "マークジェイコブス",
+    "マーク ジェイコブス"
+  ],
+  "Narciso Rodriguez": [
+    "Narciso Rodriguez",
+    "ナルシソロドリゲス",
+    "ナルシソ ロドリゲス",
+    "ナルシソ"
+  ],
+  "Glossier": [
+    "Glossier",
+    "グロッシアー",
+    "グロッシエ"
+  ],
+  "Nautica": [
+    "Nautica",
+    "ノーティカ"
+  ],
+  "Aramis": [
+    "Aramis",
+    "アラミス"
+  ],
+  "Dunhill": [
+    "Dunhill",
+    "DUNHILL",
+    "ダンヒル"
+  ],
+  "Loewe": [
+    "Loewe",
+    "LOEWE",
+    "ロエベ"
+  ],
+  "4711": [
+    "4711"
+  ],
+  "Ralph Lauren": [
+    "Ralph Lauren",
+    "RALPH LAUREN",
+    "ラルフローレン",
+    "ラルフ ローレン",
+    "ポロ",
+    "POLO"
+  ],
+  "Lacoste": [
+    "Lacoste",
+    "LACOSTE",
+    "ラコステ"
+  ],
+  "_productNameNote": "_productNameAliases は、掲載名と楽天の商品名が別表記だと分かっている組み合わせ。監査の商品名照合でのみ使う。",
+  "_productNameAliases": {
+    "thierry-mugler-1": [
+      "エンジェル メン",
+      "ANGEL MEN",
+      "A*Men",
+      "AMEN"
+    ]
+  }
+}

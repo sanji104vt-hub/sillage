@@ -1,0 +1,63 @@
+name: Weekly Audit
+
+# 150商品の健全性を毎週チェックし、深刻度「高」があったときだけ Issue を起票する。
+# 検知と報告だけを行い、data/ 配下は書き換えない。デプロイもトリガーしない。
+on:
+  schedule:
+    - cron: '0 0 * * 1'    # 毎週月曜 09:00 JST (UTC 00:00)
+  workflow_dispatch:        # デプロイ直後に手動で回せるようにする
+
+# reports/ のコミットと Issue の起票に必要
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: weekly-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    # 楽天APIを1.2秒間隔で150件叩くため、既定の6時間より短く上限を切っておく
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run audit
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          # 他サイトの値が残っていて認証に失敗した事例があるため明示する
+          RAKUTEN_ORIGIN: 'https://sillage.asutelu.com/'
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUDIT_REPO: ${{ github.repository }}
+        run: node scripts/audit/run.mjs
+
+      - name: Commit report
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          if git diff --cached --quiet; then
+            echo "レポートに変更なし"
+          else
+            git commit -m "chore: 週次監査レポートを追加"
+            git push
+          fi
+
+      - name: Guard against data changes
+        # 監査は検知のみ。data/ が変わっていたら実装の誤りなので落とす。
+        run: |
+          if ! git diff --quiet -- data/; then
+            echo "data/ が変更されました。監査は検知のみのはずです。"
+            git diff --stat -- data/
+            exit 1
+          fi
+          echo "data/ は未変更"
