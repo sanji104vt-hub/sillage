@@ -45,6 +45,76 @@ function nameOverlap(productName, itemName) {
   };
 }
 
+// カナの掲載名と英語表記の楽天商品名を照合するための補助。
+//
+// 楽天には「Versace Eros Energy by Versace for Men」のように商品名が全て英語の
+// 出品がある。カナの掲載名とは日本語の語では比較できないので、掲載名をローマ字に
+// 直してから文字の並びの重なりを見る。「エロス」→ erosu は "Eros" と十分重なるが、
+// 「エナジー」→ enajii は "energy" とは重ならない。転写は不可逆なので完全一致は
+// 期待せず、語の半数が重なるかで判断する。
+const KANA_ROMAJI = [
+  ["キャ","kya"],["キュ","kyu"],["キョ","kyo"],["シャ","sha"],["シュ","shu"],["ショ","sho"],
+  ["チャ","cha"],["チュ","chu"],["チョ","cho"],["ニャ","nya"],["ニュ","nyu"],["ニョ","nyo"],
+  ["ヒャ","hya"],["ヒュ","hyu"],["ヒョ","hyo"],["ミャ","mya"],["ミュ","myu"],["ミョ","myo"],
+  ["リャ","rya"],["リュ","ryu"],["リョ","ryo"],["ギャ","gya"],["ギュ","gyu"],["ギョ","gyo"],
+  ["ジャ","ja"],["ジュ","ju"],["ジョ","jo"],["ビャ","bya"],["ビュ","byu"],["ビョ","byo"],
+  ["ピャ","pya"],["ピュ","pyu"],["ピョ","pyo"],["ティ","ti"],["ディ","di"],["デュ","du"],
+  ["ファ","fa"],["フィ","fi"],["フェ","fe"],["フォ","fo"],["ウィ","wi"],["ウェ","we"],["ウォ","wo"],
+  ["ア","a"],["イ","i"],["ウ","u"],["エ","e"],["オ","o"],
+  ["カ","ka"],["キ","ki"],["ク","ku"],["ケ","ke"],["コ","ko"],
+  ["サ","sa"],["シ","shi"],["ス","su"],["セ","se"],["ソ","so"],
+  ["タ","ta"],["チ","chi"],["ツ","tsu"],["テ","te"],["ト","to"],
+  ["ナ","na"],["ニ","ni"],["ヌ","nu"],["ネ","ne"],["ノ","no"],
+  ["ハ","ha"],["ヒ","hi"],["フ","fu"],["ヘ","he"],["ホ","ho"],
+  ["マ","ma"],["ミ","mi"],["ム","mu"],["メ","me"],["モ","mo"],
+  ["ヤ","ya"],["ユ","yu"],["ヨ","yo"],
+  ["ラ","ra"],["リ","ri"],["ル","ru"],["レ","re"],["ロ","ro"],
+  ["ワ","wa"],["ヲ","o"],["ン","n"],
+  ["ガ","ga"],["ギ","gi"],["グ","gu"],["ゲ","ge"],["ゴ","go"],
+  ["ザ","za"],["ジ","ji"],["ズ","zu"],["ゼ","ze"],["ゾ","zo"],
+  ["ダ","da"],["ヂ","ji"],["ヅ","zu"],["デ","de"],["ド","do"],
+  ["バ","ba"],["ビ","bi"],["ブ","bu"],["ベ","be"],["ボ","bo"],
+  ["パ","pa"],["ピ","pi"],["プ","pu"],["ペ","pe"],["ポ","po"],
+  ["ッ",""],["ー",""],
+];
+
+function toRomaji(text) {
+  let out = "";
+  let rest = String(text || "").normalize("NFKC");
+  outer: while (rest.length) {
+    for (const [kana, romaji] of KANA_ROMAJI) {
+      if (rest.startsWith(kana)) { out += romaji; rest = rest.slice(kana.length); continue outer; }
+    }
+    out += rest[0];
+    rest = rest.slice(1);
+  }
+  return out.toLowerCase().replace(/[^a-z0-9]/g, "");
+}
+
+// 最長共通部分列の長さ。転写のぶれを許容して重なりを測る。
+function lcsLength(a, b) {
+  const prev = new Array(b.length + 1).fill(0);
+  for (let i = 1; i <= a.length; i++) {
+    let diag = 0;
+    for (let j = 1; j <= b.length; j++) {
+      const tmp = prev[j];
+      prev[j] = a[i - 1] === b[j - 1] ? diag + 1 : Math.max(prev[j], prev[j - 1]);
+      diag = tmp;
+    }
+  }
+  return prev[b.length];
+}
+
+// 掲載名をローマ字化し、英語の商品名と語ごとに突き合わせる。
+function romajiOverlap(productName, itemName) {
+  const hay = String(itemName || "").toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (!hay) return { ratio: 0, missing: [] };
+  const words = String(productName || "").split(/[\s　・/／,、]+/).filter(Boolean).map(toRomaji).filter((w) => w.length >= 3);
+  if (!words.length) return { ratio: 0, missing: [] };
+  const matched = words.filter((w) => lcsLength(w, hay) / w.length >= 0.7);
+  return { ratio: matched.length / words.length, missing: words.filter((w) => lcsLength(w, hay) / w.length < 0.7) };
+}
+
 function brandMatches(brand, itemName) {
   const hay = norm(itemName);
   const names = ALIASES[brand] || [brand];
@@ -92,27 +162,40 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
     log(`  ${String(index).padStart(3)}/${targets.length} ${result.hit ? "✓" : "✗"} ${product.slug}`);
 
     if (!result.hit) {
-      // A1: 引けない。ただし大型店のショップ内検索は当たり外れがあり、
-      // 同じリンクでも実行ごとに成功・失敗が入れ替わる（実測済み）。
-      // 1回の失敗で「高」にすると毎週誤検知が出るので、継続性で判断する。
-      //   前週も失敗 → 高（リンク先が消えた可能性）
-      //   前週は成功 → 中（一時的な揺れの可能性）
-      //   記録なし   → 価格取得の状態から推定。rakuten で取れている商品なら中。
+      // A1: 引けない。深刻度は前週からの状態遷移で決める。
+      // 大型店のショップ内検索は当たり外れがあり、同じリンクでも実行ごとに
+      // 成功・失敗が入れ替わる（実測済み）。単発の失敗を毎回「高」にすると
+      // 誤検知が続いて通知が形骸化する。一方で「先週まで取れていた商品が
+      // 消えた」のは最も検出したい事象なので、そこだけを「高」にする。
+      //   前週 rakuten      → 高（商品が消えた可能性）
+      //   前週 manual-stale → 中（取得できない状態が継続）
+      //   前週の記録なし    → 中（初回のため判断不能）
       const prevEntry = state ? state[product.slug] : undefined;
-      const everWorked = product.priceSource === "rakuten";
-      let level = "medium";
-      let note = "";
-      if (prevEntry === null) { level = "high"; note = "前週も取得できていません（継続的な異常）"; }
-      else if (prevEntry) { note = "前週は取得できていました（一時的な揺れの可能性）"; }
-      else if (!everWorked) { note = "価格取得でも取得できていない既知の商品です（priceSource: manual-stale）"; }
-      else { note = "前週の記録がありません。価格は取得できている商品なので一時的な可能性があります"; }
+      const prevSource = prevEntry ? prevEntry.priceSource : (prevEntry === null ? "manual-stale" : undefined);
 
-      add(level, "A1", "楽天APIで商品を特定できません", {
+      let level = "medium";
+      let title = "楽天APIで商品を特定できません";
+      let note = "";
+      if (prevSource === "rakuten") {
+        level = "high";
+        title = "先週まで取得できていた商品が取得できなくなりました";
+        note = "出品が取り下げられた可能性があります。リンク先を確認してください。";
+      } else if (prevSource === "manual-stale") {
+        title = "取得できない状態が継続しています";
+        note = "前週も取得できていません。すぐの対応は不要ですが、続くようならリンクの差し替えを検討してください。";
+      } else {
+        title = "取得できませんでした（前週の記録なし）";
+        note = "前週の記録がないため、消失か一時的な揺れか判断できません。翌週の結果と合わせて見てください。";
+      }
+
+      add(level, "A1", title, {
         リンク: target.url,
         理由: result.error || "検索でヒットなし",
+        前週の状態: prevSource === "rakuten" ? "取得できていた" : prevSource === "manual-stale" ? "取得できていない" : "記録なし",
         判断: note,
       });
-      nextState[product.slug] = null;   // 次回、継続的な失敗として判定できるようにする
+      // 次回の遷移判定のため、失敗も状態として残す
+      nextState[product.slug] = { price: null, size: null, itemName: null, priceSource: "manual-stale", checkedAt: new Date().toISOString().slice(0, 10) };
       continue;
     }
 
@@ -126,7 +209,14 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
     // 掲載名がカナで楽天名が英語のことがある（例: エロス エナジー / Eros Energy）。
     // 別表記と分かっている組み合わせは辞書で救う。
     const aliasHit = (NAME_ALIASES[product.slug] || []).some((alias) => norm(itemName).includes(norm(alias)));
-    const overlap = aliasHit ? { ratio: 1, missing: [] } : nameOverlap(product.name, itemName);
+    let overlap = aliasHit ? { ratio: 1, missing: [] } : nameOverlap(product.name, itemName);
+    // 日本語の語で一致しないときは、掲載名をローマ字にして英語の商品名と突き合わせる。
+    // 「エロス エナジー」と "Eros Energy" のような組み合わせをここで拾う。
+    let viaRomaji = false;
+    if (overlap.ratio < 0.5) {
+      const r = romajiOverlap(product.name, itemName);
+      if (r.ratio >= 0.5) { overlap = r; viaRomaji = true; }
+    }
     if (!brandOk || overlap.ratio < 0.5) {
       // 楽天の商品名が英語表記だと、カナの掲載名とは機械的に比較できない。
       // ただし【正規品】【送料無料】のような装飾語に日本語が混ざるため、
@@ -178,7 +268,7 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
       });
     }
 
-    nextState[product.slug] = { price, size, itemName, checkedAt: new Date().toISOString().slice(0, 10) };
+    nextState[product.slug] = { price, size, itemName, priceSource: "rakuten", checkedAt: new Date().toISOString().slice(0, 10) };
   }
 
   return { findings, nextState, checked: targets.length };
