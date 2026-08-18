@@ -98,10 +98,12 @@ mkdirSync("reports", { recursive: true });
 writeFileSync(`reports/${label}.md`, report, "utf8");
 // API障害のときは nextState が null。前週の記録を上書きすると翌週の
 // 遷移判定の土台が失われるので、そのまま残す。
-if (rakuten.nextState) {
+// --limit は一部しか照合していない。その結果で state を上書きすると、
+// 見ていない商品の記録が消えて翌週の遷移判定が壊れる（実際に5件へ切り詰まった）。
+if (rakuten.nextState && !LIMIT) {
   writeFileSync(STATE, JSON.stringify({ updatedAt: new Date().toISOString(), items: rakuten.nextState }, null, 2) + "\n", "utf8");
 } else {
-  console.log("楽天APIが応答しないため、reports/state.json は更新しません（前週の記録を保持）");
+  console.log(LIMIT ? "--limit 実行のため reports/state.json は更新しません（全件の記録を保持）" : "楽天APIが応答しないため、reports/state.json は更新しません（前週の記録を保持）");
 }
 
 // データを書き換えていないことを実行後に確認する

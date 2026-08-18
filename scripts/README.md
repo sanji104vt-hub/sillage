@@ -116,6 +116,33 @@ node validate-fragrances.mjs
 
 `data/fragrances.json` を書き換えただけではサイトに反映されない。ビルドまで実行すること。
 
+### エンドポイントのバージョン
+
+```
+https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701
+```
+
+`scripts/lib/rakuten.mjs` の1箇所で定義し、価格取得と週次監査の両方が使う。
+
+**楽天はエンドポイントのバージョンを予告して廃止する。**
+2026-08-17 に `20220601` が完全廃止され、全件が
+`HTTP 400 API Configuration not found` になった。認証エラーではないので
+原因が分かりにくい。同じ症状が出たら、まず現行バージョンを確認すること。
+
+- 公式ドキュメント: https://webservice.rakuten.co.jp/documentation/ichiba-item-search
+  （ページタイトルにバージョンが載っている）
+- 廃止の告知: 楽天ウェブサービスブログ https://rakuten-webservice.tumblr.com/
+
+### 認証情報の渡し方
+
+`.env.local`（git管理外）に置き、読み込んでから実行する。
+
+```bash
+set -a; . ./.env.local; set +a
+```
+
+アクセスキーは秘密情報なので、コマンドライン引数やコミットに直接書かない。
+
 ### やってはいけないこと
 
 - **Cloudflare Workers のリクエスト処理中に楽天APIを呼ばない。** subrequest 上限に当たる（潮見で実績あり）。

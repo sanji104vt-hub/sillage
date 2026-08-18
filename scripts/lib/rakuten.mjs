@@ -3,7 +3,7 @@
 // ここに切り出しているのは「リンク先の商品を取り違えない」ための判定で、
 // 二重に持つと片方だけ直して食い違う。挙動は fetch-prices.mjs のものと同一。
 
-export const ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20220601";
+export const ENDPOINT = "https://openapi.rakuten.co.jp/ichibams/api/IchibaItem/Search/20260701";
 export const SLEEP_MS = 1200;      // 楽天APIは概ね1秒1リクエスト。並列実行はしない
 export const MAX_SHOP_PAGES = 5;   // ショップ全件走査の上限（大型店で無限に走らせない）
 

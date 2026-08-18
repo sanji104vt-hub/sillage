@@ -17,18 +17,20 @@ async function fetchOnce(url) {
 }
 
 // 同時接続が重なると接続自体が弾かれることがある（初回実行で21件が該当し、
-// 個別に叩くと全て200だった）。1度だけ間を置いて再試行し、誤検知を防ぐ。
+// 個別に叩くと全て200だった）。間を置いて再試行し、誤検知を防ぐ。
+// 1回では足りず loewe-5 / loewe-6 が誤検知されたので、2回に増やして間隔も広げた。
+const RETRY_WAITS = [1500, 4000];
 async function head(url) {
-  try {
-    return await fetchOnce(url);
-  } catch (first) {
-    await wait(1500);
+  let last;
+  for (let attempt = 0; attempt <= RETRY_WAITS.length; attempt++) {
+    if (attempt > 0) await wait(RETRY_WAITS[attempt - 1]);
     try {
       return await fetchOnce(url);
     } catch (error) {
-      return { url, status: 0, type: "", error: String(error?.message || error) };
+      last = error;
     }
   }
+  return { url, status: 0, type: "", error: String(last?.message || last) };
 }
 
 async function pool(urls, worker) {
@@ -76,10 +78,20 @@ export async function checkAssets({ site, products, brandSlugs, columnSlugs, fam
     const bad = results.filter((r) => !OK_STATUS.has(r.status));
     log(`  ${code} ${label.padEnd(12)} ${urls.length - bad.length}/${urls.length} OK`);
     summary.push({ code, label, total: urls.length, ng: bad.length });
+    // status 0 は「サーバーが応答を返した」のではなく「接続できなかった」状態。
+    // 大半が成功しているのに数件だけ届かないのは、ページの異常ではなく
+    // こちら側の同時接続の問題なので「高」にしない（再試行後も残った分だけ中で報告）。
+    const connFails = bad.filter((r) => r.status === 0).length;
+    const transient = connFails > 0 && connFails / urls.length < 0.1;
     for (const r of bad) {
       // 画像は落ちても意匠画像へフォールバックするので中、ページは高。
-      const level = code === "B1" ? "medium" : "high";
-      add(level, code, `${label}が取得できません`, { url: r.url, status: r.status || "接続失敗", error: r.error });
+      let level = code === "B1" ? "medium" : "high";
+      let note;
+      if (r.status === 0 && transient) {
+        level = "medium";
+        note = "再試行しても接続できませんでしたが、他は取得できています。一時的な失敗の可能性が高いので、続くようなら確認してください。";
+      }
+      add(level, code, `${label}が取得できません`, { url: r.url, status: r.status || "接続失敗", error: r.error, 判断: note });
     }
   }
   return { findings, summary };
