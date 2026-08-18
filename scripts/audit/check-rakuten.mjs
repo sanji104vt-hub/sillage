@@ -122,6 +122,10 @@ function brandMatches(brand, itemName) {
 }
 
 export async function checkRakuten({ products, state, appId, accessKey, origin, log = () => {} }) {
+  // API側の不調を後でまとめて報告できるよう、直近のエラー応答を控えておく。
+  // 「検索でヒットなし」と「APIが400を返した」は原因も対処も全く違うので、
+  // 区別できないと監査レポートが役に立たない。
+  let apiError = "";
   async function callApi(query) {
     const url = `${ENDPOINT}?format=json&applicationId=${appId}&accessKey=${accessKey}&${query}`;
     const response = await fetch(url, {
@@ -130,6 +134,10 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
     const text = await response.text();
     let json = null;
     try { json = JSON.parse(text); } catch { /* 非JSONは扱えない */ }
+    if (!response.ok) {
+      const message = json?.error_description || json?.errors?.errorMessage || text.slice(0, 120);
+      apiError = `HTTP ${response.status} ${message}`;
+    }
     return { status: response.status, json, text };
   }
 
@@ -137,6 +145,8 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
   const nextState = {};
   const targets = products.filter((p) => p.purchaseLinks?.rakuten?.url);
   let index = 0;
+  let failed = 0;
+  let lastError = "";
 
   for (const product of targets) {
     index++;
@@ -159,6 +169,7 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
     } catch (error) {
       result = { hit: null, error: String(error?.message || error) };
     }
+    if (!result.hit) { failed++; lastError = result.error || lastError; }
     log(`  ${String(index).padStart(3)}/${targets.length} ${result.hit ? "✓" : "✗"} ${product.slug}`);
 
     if (!result.hit) {
@@ -271,5 +282,29 @@ export async function checkRakuten({ products, state, appId, accessKey, origin, 
     nextState[product.slug] = { price, size, itemName, priceSource: "rakuten", checkedAt: new Date().toISOString().slice(0, 10) };
   }
 
-  return { findings, nextState, checked: targets.length };
+  // 大半が失敗したときは、商品が一斉に消えたのではなく楽天API側の問題。
+  // 実際に 2026-08-18、認証は通るのに "API Configuration not found" が返り、
+  // 149件すべてが失敗する状態が起きた。このとき商品ごとに警告を出すと、
+  // 前週 rakuten だった126件が全て「高」になり、巨大な誤報になる。
+  // そこで閾値を超えたら、商品ごとの警告を捨てて1件の警告にまとめる。
+  const OUTAGE_RATIO = 0.5;
+  const outage = targets.length >= 10 && failed / targets.length >= OUTAGE_RATIO;
+  if (outage) {
+    return {
+      findings: [{
+        slug: null, level: "high", code: "A0", known: false,
+        title: "楽天APIから商品情報を取得できていません",
+        detail: {
+          失敗: `${failed} / ${targets.length}件`,
+          理由: apiError || lastError || "検索でヒットなし",
+          判断: "これだけの件数が同時に取得できなくなるのは、商品の消失ではなくAPI側の問題です。楽天ウェブサービスの管理画面で、アプリケーションと商品検索APIの利用設定をご確認ください。今回は前週の記録を上書きしていません。",
+        },
+      }],
+      nextState: null,   // 前週の記録を壊さない
+      checked: targets.length,
+      outage: true,
+    };
+  }
+
+  return { findings, nextState, checked: targets.length, outage: false };
 }
