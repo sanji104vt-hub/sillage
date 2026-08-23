@@ -39,7 +39,7 @@ export RAKUTEN_ORIGIN='https://sillage.asutelu.com/'
 node scripts/fetch-prices.mjs
 ```
 
-全97件で約8〜10分。楽天APIの制限に合わせて1.2秒間隔・逐次実行しており、並列化はしない。
+全商品で約8〜15分。楽天APIの制限に合わせて1.2秒間隔・逐次実行しており、並列化はしない。
 
 動作を試すとき:
 
@@ -113,6 +113,7 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
   && node build-kyoto-article.mjs && node build-i18n.mjs && node generate-seo.mjs && node enhance-static-seo.mjs
 node validate-fragrances.mjs
 node validate-i18n.mjs
+node validate-kyoto-guide.mjs
 ```
 
 `data/fragrances.json` を書き換えただけではサイトに反映されない。ビルドまで実行すること。

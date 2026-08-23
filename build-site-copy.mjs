@@ -9,8 +9,9 @@ const indexPath = "public/index.html";
 // 件数を手で書き換えていたため、Lacoste 追加時に #resultsSummary だけ
 // 95 のまま取り残された。以後は毎ビルドでここから流し込む。
 const FRAGRANCE_COUNT = JSON.parse(readFileSync("data/fragrances.json", "utf8")).fragrances.length;
-// site-copy.json の文言はテンプレートとして使い、数字だけ実数へ差し替える
-const heroProductLine = copy.heroProductLine.replace(/\d+本/, `${FRAGRANCE_COUNT}本`);
+// site-copy.json の文言はテンプレートとして使い、件数トークンを実数へ差し替える。
+// 古い件数をテンプレート内へ固定しないことで、管理値の取り残しを防ぐ。
+const heroProductLine = copy.heroProductLine.replace("{fragranceCount}", String(FRAGRANCE_COUNT));
 
 function replaceRequired(source, pattern, replacement, label) {
   if (!pattern.test(source)) throw new Error(`Missing ${label}.`);

@@ -5,7 +5,7 @@ const copy = loadSiteCopy();
 const index = readFileSync("public/index.html", "utf8");
 // 掲載件数はデータの実数が真値。build-site-copy.mjs が流し込むので、ここでは一致を検証する。
 const FRAGRANCE_COUNT = JSON.parse(readFileSync("data/fragrances.json", "utf8")).fragrances.length;
-const heroProductLine = copy.heroProductLine.replace(/\d+本/, `${FRAGRANCE_COUNT}本`);
+const heroProductLine = copy.heroProductLine.replace("{fragranceCount}", String(FRAGRANCE_COUNT));
 const requiredHomepageValues = [
   copy.title,
   copy.description,
@@ -81,7 +81,7 @@ for (const path of [
 
 const deferred = readFileSync("public/index.html", "utf8");
 // 2026-08-05: 「はじめての香水選び」ブロック(beginner-nav〜guideGrid)を商品一覧の前へ移動。
-// 99商品を全部スクロールしないと「香りの系統を知る」へ到達できない状態を解消するため、
+// 全商品をスクロールしないと「香りの系統を知る」へ到達できない状態を解消するため、
 // 導入(診断・系統)→ 商品一覧 → 香調別 → ブランド → コラム の順にした。
 const orderedHomeMarkers = [
   'class="beginner-nav"',

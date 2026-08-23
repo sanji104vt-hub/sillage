@@ -46,7 +46,7 @@ assert(new Set(routes).size === routes.length, "English routes are not unique");
 
 for (const [path, canonical, noindex] of [
   ["public/en/index.html", `${SITE}/en/`, false],
-  ["public/en/fragrances/index.html", `${SITE}/en/fragrances/`, true],
+  ["public/en/fragrances/index.html", `${SITE}/en/fragrances/`, false],
 ]) {
   assert(existsSync(path), `English foundation page missing: ${path}`);
   if (!existsSync(path)) continue;
@@ -64,8 +64,20 @@ for (const slug of Object.keys(englishProducts)) {
 
 const sitemap = readFileSync("public/sitemap.xml", "utf8");
 assert(sitemap.includes(`<loc>${SITE}/en/</loc>`), "English home missing from sitemap");
-assert(!sitemap.includes(`<loc>${SITE}/en/fragrances/</loc>`), "Noindex English catalogue leaked into sitemap");
+assert(sitemap.includes(`<loc>${SITE}/en/fragrances/</loc>`), "Indexable English catalogue missing from sitemap");
 for (const route of routes) assert(sitemap.includes(`<loc>${SITE}${route}</loc>`), `English pilot missing from sitemap: ${route}`);
+
+const catalogue = readFileSync("public/en/fragrances/index.html", "utf8");
+assert((catalogue.match(/class="card" href="\/en\/fragrances\//g) || []).length === routes.length, "English catalogue does not contain exactly the pilot products");
+assert(!catalogue.includes("Japanese detail"), "English catalogue still links untranslated products");
+assert(catalogue.includes(`${routes.length} fragrances currently available in English`), "English catalogue count explanation missing");
+
+for (const route of routes) {
+  const html = readFileSync(`public${route}index.html`, "utf8");
+  assert(html.includes("Buy on Rakuten Japan"), `Rakuten Japan CTA missing: ${route}`);
+  assert(html.includes("Last verified"), `Last verified missing: ${route}`);
+  assert(html.includes('property="og:image"'), `OG image missing: ${route}`);
+}
 
 const home = readFileSync("public/index.html", "utf8");
 assert(home.includes(`<link rel="alternate" hreflang="en" href="${SITE}/en/">`), "Japanese home English hreflang missing");

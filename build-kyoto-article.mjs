@@ -14,12 +14,15 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
 const SHOPS = JSON.parse(readFileSync(join("data", "kyoto-shops.json"), "utf8")).kyoto_fragrance_shops;
+const FRAGRANCE_COUNT = JSON.parse(readFileSync(join("data", "fragrances.json"), "utf8")).fragrances.length;
+const BRAND_COUNT = JSON.parse(readFileSync(join("data", "brands.json"), "utf8")).length;
 const SITE_COPY = JSON.parse(readFileSync(join("data", "site-copy.json"), "utf8"));
 const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
 const SLUG = "kyoto-fragrance-shops";
 const CANONICAL = `${SITE}/columns/${SLUG}`;
-const TITLE = "京都で香水を選ぶ：デパートから町屋、寺町までの17店ガイド";
-const DESCRIPTION = "京都の香水店17店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。";
+const SHOP_COUNT = SHOPS.length;
+const TITLE = `京都で香水を選ぶ：デパートから町屋、寺町までの${SHOP_COUNT}店ガイド`;
+const DESCRIPTION = `京都の香水店${SHOP_COUNT}店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。`;
 const PUBLISHED = "2026-08-01T09:00:00+09:00";
 const MODIFIED = "2026-08-01T09:00:00+09:00";
 const OGP_IMAGE = `${SITE}/ogp-default.png`;
@@ -201,8 +204,8 @@ const SECTIONS = [
       {
         heading: "LE SILLAGE FRAGRANCE SHOP KYOTO（下京区）",
         paragraphs: [
-          "下京区新明町、四条烏丸から少し南に位置する香水セレクトショップ。Google Mapsのレビューでは評価4.7、口コミ117件。海外からのレビューを見ると、「日本のニッチブランドの品揃えが、大都市を含めても屈指」「スタッフが穏やかで、じっくり相談に乗ってくれる」との声が繰り返し出てきます。",
-          "古い建物を活かした店内で、静かに1本と向き合う時間を作ってくれるとの評価。営業時間を確認したところ11:00〜20:00、水曜定休です。",
+          "下京区神明町、四条烏丸から少し南に位置する香水セレクトショップ。Google Mapsのレビューでは評価4.7、口コミ117件。海外からのレビューを見ると、「日本のニッチブランドの品揃えが、大都市を含めても屈指」「スタッフが穏やかで、じっくり相談に乗ってくれる」との声が繰り返し出てきます。",
+          "古い建物を活かした店内で、静かに1本と向き合う時間を作ってくれるとの評価。公式案内では営業時間11:00〜20:00、不定休です。",
         ],
         info: shopInfo(shop("le-sillage-fragrance-shop")),
         readerNote: "海外の有名ブランドだけでなく、日本のインディーズ香水を試したい方に。Sillageの掲載外にあるブランドと出会える可能性が高い店の1つとして口コミで挙げられています。",
@@ -218,7 +221,7 @@ const SECTIONS = [
       {
         heading: "LE LABO KYOTO MACHIYA（中京区）",
         paragraphs: [
-          "もう一つのLe Labo京都店で、こちらは町屋を改装した空間+抹茶カフェ併設という Le Labo京都限定のコンセプト店。下御霊町、丸太町駅の南側に位置します。Google Mapsのレビューでは評価3.7、口コミ267件。",
+          "もう一つのLe Labo京都店で、こちらは町屋を改装した空間+抹茶カフェ併設という Le Labo京都限定のコンセプト店。木屋町通四条上る、祇園四条駅に近い場所に位置します。Google Mapsのレビューでは評価3.7、口コミ267件。",
           "口コミを見ると、店舗体験は賛否分かれる印象です。空間と抹茶ラテを目的にする人には最高の場所という声がある一方、「じっくり嗅ぎ比べたい」目的の場合は混雑と接客スタイルにフラストレーションを感じたという声もあります。",
         ],
         info: shopInfo(shop("le-labo-machiya")),
@@ -227,7 +230,7 @@ const SECTIONS = [
       {
         heading: "201LAB PLATFORM KYOTO（中京区）",
         paragraphs: [
-          "伊勢屋町、寺町通り沿いにある個性派ショップ。Google Mapsのレビューでは評価4.9、口コミ169件。オーナーのRichard氏が調香する香水・オイル・インセンス・家具までを扱う小さなアトリエで、「京都の隠れた至宝」的な口コミが多く見られます。",
+          "伊勢屋町、御幸町通六角下るにあるART LAB.の直営店。公式案内では50種類以上の香りから量り売りで選べる店舗で、無理や無駄を減らす循環型の香りの楽しみ方を提案しています。",
         ],
         info: shopInfo(shop("201lab-platform")),
         readerNote: "大手ブランドに疲れた、より個人的な作り手の香りに触れたい方に。1点ものに近い扱いの品も多く、「旅先の記憶と結びつく1本」を探すのに向いています。",
@@ -242,9 +245,9 @@ const SECTIONS = [
     ],
     shops: [
       {
-        heading: "JR京都伊勢丹「L'atlier des Purfums」（下京区）",
+        heading: "JR京都伊勢丹「ラトリエ デ パルファム」（下京区）",
         paragraphs: [
-          "JR京都駅直結の伊勢丹5階、Women's Accessories フロア内。Google Mapsのレビューでは評価4.6、口コミ14件と規模は控えめですが、「Parlemoreや Crivelli など比較的新しいニッチブランドを、デパート水準の接客で試せる」との評価が確認できます。",
+          "JR京都駅直結の伊勢丹2階、化粧品・フレグランスフロア内。公式ブランド一覧では、ラトリエ デ パルファムのほか、クリード、フレデリック マル、メゾン マルジェラなどの取り扱いを確認できます。",
         ],
         info: multiShopInfo(["jr-kyoto-isetan-latelier", "jr-kyoto-isetan"]),
         readerNote: "新幹線の待ち時間で立ち寄れる立地。京都駅到着から30分で香水を試せる場所として、旅行者に特に便利です。",
@@ -252,8 +255,8 @@ const SECTIONS = [
       {
         heading: "京都高島屋（下京区四条河原町）",
         paragraphs: [
-          "Jo Malone London 京都高島屋店、Latelier des Parfums（高島屋の香水セレクト）など、複数の香水ショップが集まります。高島屋自体が老舗デパートで、海外ブランドの品揃えは京都でもトップクラスとされています。",
-          "Jo Malone London は評価4.4、口コミ21件で、人気のイングリッシュペアー & フリージア、ライムバジル & マンダリンなどを試せます。Latelier des Parfums は評価4.5、口コミ8件で、デパート全体のセレクションを担当しています。",
+          "Jo Malone London 京都高島屋店、ラトリエ デ パルファム（高島屋の香水セレクト）など、複数の香水ショップが集まります。高島屋自体が老舗デパートで、公式ブランド一覧でも幅広い海外フレグランスの取り扱いを確認できます。",
+          "Jo Malone Londonではブランドのコロンを、ラトリエ デ パルファムでは複数ブランドを横断して試せます。同じ館内でブランド直営カウンターとセレクト売場を見比べられる点が特徴です。",
         ],
         info: multiShopInfo(["kyoto-takashimaya", "jomalone-takashimaya", "latelier-des-parfums-takashimaya"]),
         readerNote: "Sillageに掲載中のJo Malone、Chanel、Dior、Guerlainなど、主要ブランドをまとめて確認したい方に。",
@@ -290,12 +293,12 @@ const SECTIONS = [
     id: "reflection",
     title: "5. 京都で香水を選ぶということ",
     intro: [
-      "京都は東京や大阪と比べて街が凝縮されています。四条烏丸から徒歩30分の範囲に、この記事で紹介した17店のうち半数以上が集中しています。つまり、「1日で複数の香水店を歩いて回れる街」として、実は日本で最も高密度な香水都市の1つと言えます。",
+      `京都は東京や大阪と比べて街が凝縮されています。四条烏丸から徒歩30分の範囲に、この記事で紹介した${SHOP_COUNT}店のうち半数以上が集中しています。つまり、「1日で複数の香水店を歩いて回れる街」として、実は日本で最も高密度な香水都市の1つと言えます。`,
       "そしてもう1つ、京都に固有の魅力があります。それは、香水店が「他の店との間」に存在している、ということ。",
       "パリのフレグランスショップは香水街のなかにあり、ニューヨークの店は香水フロアのなかにある。だが京都では、着物店の隣に、和菓子屋の斜向かいに、喫茶店の2軒隣に、香水店があります。",
       "これは、香りを選ぶ体験を「他の記憶」と結びつけやすい環境ということでもあります。清水寺の帰りに調合したから、あの日の光と一緒に思い出す香り。大丸で買い物の合間に試したから、母の記憶と地続きになった香り。ホテルへ帰る前に錦市場で選んだから、あの日の京都の空気を含んだ香り。",
       "香りは、記憶の地図になる。",
-      "Sillageの読者が京都を訪れるとき、あるいは京都に住みながら改めて街を歩くとき、この17店のどれかが、新しい「地図の1点」になれば嬉しく思います。",
+      `Sillageの読者が京都を訪れるとき、あるいは京都に住みながら改めて街を歩くとき、この${SHOP_COUNT}店のどれかが、新しい「地図の1点」になれば嬉しく思います。`,
     ],
     shops: [],
   },
@@ -375,8 +378,8 @@ const ctaSection = `<section class="column-cta">
       <p class="cta-lead">読んで、実際に選ぶ。</p>
       <div class="cta-grid">
         <a class="cta-card" href="/#diagnosis"><span class="cta-icon">◇</span><span class="cta-title">診断で見つける</span><span class="cta-desc">6問で自分に合うブランドを診断</span></a>
-        <a class="cta-card" href="/#find-fragrances"><span class="cta-icon">○</span><span class="cta-title">香調から探す</span><span class="cta-desc">系統色で85本の香水を比較</span></a>
-        <a class="cta-card" href="/#brand-index"><span class="cta-icon">△</span><span class="cta-title">ブランドで探す</span><span class="cta-desc">42ブランドの掲載一覧</span></a>
+        <a class="cta-card" href="/#find-fragrances"><span class="cta-icon">○</span><span class="cta-title">香調から探す</span><span class="cta-desc">系統色で${FRAGRANCE_COUNT}本の香水を比較</span></a>
+        <a class="cta-card" href="/#brand-index"><span class="cta-icon">△</span><span class="cta-title">ブランドで探す</span><span class="cta-desc">${BRAND_COUNT}ブランドの掲載一覧</span></a>
       </div>
     </section>`;
 
@@ -384,7 +387,7 @@ const ctaSection = `<section class="column-cta">
 const sourcesSection = `<section class="sources">
       <h2>情報源と編集区分</h2>
       <ul class="source-list">
-        <li><a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Google Maps｜掲載18店舗の住所・営業時間・レビュー・評価<span>各店舗の実測データ（2026年8月時点）</span></a></li>
+        <li><a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Google Maps｜掲載${SHOP_COUNT}店舗の住所・営業時間・レビュー・評価<span>各店舗の公開情報（2026年8月確認）</span></a></li>
       </ul>
       <p class="editorial-note">店舗名・住所・営業時間・座標は上記情報源で確認しています。カテゴリ分類（カスタム調合・セレクトショップ・百貨店・京都独自）と、各店舗への「Sillageの読者に」コメントはSillage編集部の判断です。編集部は現地取材を行っておらず、Google Mapsのレビュー傾向と公開情報から特徴を整理しています。</p>
     </section>`;
@@ -442,7 +445,7 @@ const html = `<!DOCTYPE html>
   <nav class="toc" aria-label="目次"><span>contents ／ この記事で分かること</span>${tocFull}</nav>
   <section class="text-section" id="section-intro">
     <p>京都の路地を歩いていると、時折、思いがけない場所から香りが漏れてくることがあります。古い町屋を改装したセレクトショップ、寺町通に面したカスタム香水の店、デパート地下から地上へ上がる階段の途中に、ふと届く香水売場の気配。</p>
-    <p>京都は「香りを選ぶ場所」として、実は日本でも屈指の密度を持つ街だと言えます。この記事では、京都市内の香水店・香水を試せる場所を17店ピックアップし、それぞれの特徴と、Sillageの読者に向けた「どんな時に足を運ぶといいか」を整理しました。旅行で訪れる方、京都に住んでいて改めて街を再発見したい方、どちらにも実用的な地図として使ってもらえれば嬉しいです。</p>
+    <p>京都は「香りを選ぶ場所」として、実は日本でも屈指の密度を持つ街だと言えます。この記事では、京都市内の香水店・香水を試せる場所を${SHOP_COUNT}店ピックアップし、それぞれの特徴と、Sillageの読者に向けた「どんな時に足を運ぶといいか」を整理しました。旅行で訪れる方、京都に住んでいて改めて街を再発見したい方、どちらにも実用的な地図として使ってもらえれば嬉しいです。</p>
   </section>
   ${bodySections}
   ${mapSection}

@@ -52,7 +52,7 @@ function trackFilter(type,value){
 }
 // 並び順は「絞り込み条件」ではないので state には入れない。
 // state に混ぜると render() の filtered 判定（Object.values(state).some(Boolean)）が
-// 常に真になり、件数表示が「全97件」から「97件が見つかりました」に変わってしまう。
+// 常に真になり、初期の全件表示が「条件適用後の件数」に変わってしまう。
 let sortMode="family";
 
 /* ---------- geometry ---------- */
