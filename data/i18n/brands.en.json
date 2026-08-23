@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "brands": {
+    "Dior": {
+      "slug": "dior",
+      "nameEn": "Dior",
+      "nameJa": "ディオール",
+      "aliases": ["Christian Dior"]
+    },
+    "Maison Margiela": {
+      "slug": "maison-margiela",
+      "nameEn": "Maison Margiela",
+      "nameJa": "メゾン マルジェラ",
+      "aliases": ["Maison Martin Margiela"]
+    },
+    "Le Labo": {
+      "slug": "le-labo",
+      "nameEn": "Le Labo",
+      "nameJa": "ル ラボ",
+      "aliases": ["LE LABO"]
+    },
+    "Jo Malone": {
+      "slug": "jo-malone-london",
+      "nameEn": "Jo Malone London",
+      "nameJa": "ジョー マローン ロンドン",
+      "aliases": ["Jo Malone"]
+    },
+    "Aesop": {
+      "slug": "aesop",
+      "nameEn": "Aesop",
+      "nameJa": "イソップ",
+      "aliases": []
+    }
+  }
+}

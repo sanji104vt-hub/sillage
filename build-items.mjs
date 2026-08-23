@@ -10,6 +10,7 @@ import { loadFragrances } from "./lib/fragrance-data.mjs";
 import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
 import { MOSHIMO_AFFILIATE_OFFERS } from "./data/moshimo-affiliate-offers.mjs";
+import { englishRoute } from "./lib/i18n.mjs";
 
 const homeScript = readFileSync("public/assets/home.js", "utf8");
 const SITE_COPY = loadSiteCopy();
@@ -191,6 +192,7 @@ function pageHTML(p, related, competitors, trial) {
   const brandSlug = BRAND_SLUG[p.brand];
   const brandLink = brandSlug ? `/brand-${brandSlug}.html` : null;
   const url = `${SITE}/items/${p.slug}`;
+  const routeEn = englishRoute(p);
   const title = `${p.name}（${p.brand}）はどんな匂い？香調・持続・合うシーン｜Sillage`;
   const desc = `${p.brand}「${p.name}」の香調(トップ・ミドル・ラスト)、季節・シーン、価格帯、Sillageの見立てをまとめています。`;
 
@@ -332,7 +334,10 @@ function pageHTML(p, related, competitors, trial) {
   gtag('js', new Date());
   gtag('config', 'G-60BQRQWB5M');
 </script>
-<link rel="canonical" href="${url}">
+<link rel="canonical" href="${url}">${routeEn ? `
+<link rel="alternate" hreflang="ja" href="${url}">
+<link rel="alternate" hreflang="en" href="${SITE}${routeEn}">
+<link rel="alternate" hreflang="x-default" href="${url}">` : ""}
 <meta property="og:type" content="product">
 <meta property="og:title" content="${escape(p.name)}｜${escape(p.brand)}｜Sillage">
 <meta property="og:description" content="${escape(desc)}">

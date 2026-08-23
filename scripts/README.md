@@ -110,8 +110,9 @@ node scripts/fetch-prices.mjs --report
 ```bash
 node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-copy.mjs \
   && node build-items.mjs && node build-columns.mjs && node build-internal-links.mjs \
-  && node build-kyoto-article.mjs && node generate-seo.mjs && node enhance-static-seo.mjs
+  && node build-kyoto-article.mjs && node build-i18n.mjs && node generate-seo.mjs && node enhance-static-seo.mjs
 node validate-fragrances.mjs
+node validate-i18n.mjs
 ```
 
 `data/fragrances.json` を書き換えただけではサイトに反映されない。ビルドまで実行すること。

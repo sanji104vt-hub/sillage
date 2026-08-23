@@ -17,8 +17,9 @@ const rows = htmlFiles(PUBLIC).filter((path) => !path.split(/[\\/]/).includes("p
   const canonical = html.match(/<link rel="canonical" href="([^"]+)">/)?.[1];
   if (!canonical) throw new Error(`canonical missing: ${relative(PUBLIC, path)}`);
   if (!canonical.startsWith(`${SITE}/`)) throw new Error(`unexpected canonical host: ${canonical}`);
-  return { path: relative(PUBLIC, path).replaceAll("\\", "/"), canonical };
-});
+  const robots = html.match(/<meta name="robots" content="([^"]+)">/)?.[1] || "index,follow";
+  return { path: relative(PUBLIC, path).replaceAll("\\", "/"), canonical, robots };
+}).filter((row) => !row.robots.toLowerCase().split(",").map((value) => value.trim()).includes("noindex"));
 
 const unique = new Set(rows.map((row) => row.canonical));
 if (unique.size !== rows.length) throw new Error(`duplicate canonical: ${rows.length - unique.size}`);

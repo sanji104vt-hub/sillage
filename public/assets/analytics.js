@@ -27,7 +27,7 @@
   // ページ種別はURLから決める。ブランドページ41枚にも属性を足さずに済む。
   var path = location.pathname;
   var PAGE_TYPE =
-    path.indexOf("/items/") === 0 ? "item" :
+    path.indexOf("/items/") === 0 || path.indexOf("/en/fragrances/") === 0 && path !== "/en/fragrances/" ? "item" :
     path.indexOf("/columns/") === 0 ? "column" :
     path.indexOf("/brand-") === 0 ? "brand" : "home";
   window.SillagePageType = PAGE_TYPE;

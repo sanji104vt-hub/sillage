@@ -87,6 +87,20 @@ export default {
       return Response.redirect(u.toString(), 301);
     }
 
+    // English pages use directory-style canonical URLs while static assets keep index.html.
+    const englishIndex = path.match(/^\/en(?:\/(fragrances))?(?:\/index\.html)$/);
+    if (englishIndex) {
+      const u = new URL(request.url);
+      u.pathname = englishIndex[1] ? "/en/fragrances/" : "/en/";
+      return Response.redirect(u.toString(), 301);
+    }
+    const englishProductIndex = path.match(/^\/en\/fragrances\/([a-z0-9-]+)\/([a-z0-9-]+)\/index\.html$/);
+    if (englishProductIndex) {
+      const u = new URL(request.url);
+      u.pathname = `/en/fragrances/${englishProductIndex[1]}/${englishProductIndex[2]}/`;
+      return Response.redirect(u.toString(), 301);
+    }
+
     const columnHtml = path.match(/^\/columns\/([A-Za-z0-9][A-Za-z0-9-]*)\.html$/);
     if (columnHtml) {
       const u = new URL(request.url);
@@ -104,6 +118,42 @@ export default {
     if (path === "/") {
       const u = new URL(request.url);
       u.pathname = "/index.html";
+      return env.ASSETS.fetch(new Request(u, request));
+    }
+
+    if (path === "/en") {
+      const u = new URL(request.url);
+      u.pathname = "/en/";
+      return Response.redirect(u.toString(), 301);
+    }
+
+    if (path === "/en/") {
+      const u = new URL(request.url);
+      u.pathname = "/en/index.html";
+      return env.ASSETS.fetch(new Request(u, request));
+    }
+
+    if (path === "/en/fragrances") {
+      const u = new URL(request.url);
+      u.pathname = "/en/fragrances/";
+      return Response.redirect(u.toString(), 301);
+    }
+
+    if (path === "/en/fragrances/") {
+      const u = new URL(request.url);
+      u.pathname = "/en/fragrances/index.html";
+      return env.ASSETS.fetch(new Request(u, request));
+    }
+
+    const englishProduct = path.match(/^\/en\/fragrances\/([a-z0-9-]+)\/([a-z0-9-]+)\/?$/);
+    if (englishProduct) {
+      if (!path.endsWith("/")) {
+        const u = new URL(request.url);
+        u.pathname = `${path}/`;
+        return Response.redirect(u.toString(), 301);
+      }
+      const u = new URL(request.url);
+      u.pathname = `/en/fragrances/${englishProduct[1]}/${englishProduct[2]}/index.html`;
       return env.ASSETS.fetch(new Request(u, request));
     }
 

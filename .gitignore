@@ -1,3 +1,6 @@
 
 # 楽天APIの認証情報。コミットしない
 .env.local
+
+# Wrangler のローカル開発キャッシュ。公開物ではない。
+.wrangler/
