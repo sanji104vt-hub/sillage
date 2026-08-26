@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "lastVerified": "2026-08-24",
+  "shops": {
+    "my-only-fragrance-teramachi": {
+      "nameEn": "My Only Fragrance Teramachi",
+      "area": "Teramachi & Kawaramachi",
+      "addressEn": "MP Building 1F, 245 Shikibu-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://myonlyfragrance.com/shops/"
+    },
+    "my-only-fragrance-kiyomizu": {
+      "nameEn": "My Only Fragrance Kiyomizu",
+      "area": "Kiyomizu & Higashiyama",
+      "addressEn": "3-348 Kiyomizu, Higashiyama-ku, Kyoto",
+      "nearestStation": "Kiyomizu-michi bus stop",
+      "officialUrl": "https://myonlyfragrance.com/shops/"
+    },
+    "my-only-fragrance-kawaramachi": {
+      "nameEn": "My Only Fragrance Kawaramachi",
+      "area": "Kawaramachi",
+      "addressEn": "1F, 271-2 Tenma-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://myonlyfragrance.com/shops/"
+    },
+    "cabinet": {
+      "nameEn": "CABINET",
+      "area": "Teramachi & Shijo",
+      "addressEn": "543 Ebisu-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://prtimes.jp/main/html/rd/p/000000001.000181384.html"
+    },
+    "flavor-design-store": {
+      "nameEn": "THE FLAVOR DESIGN STORE KYOTO",
+      "area": "Kiyomizu & Higashiyama",
+      "addressEn": "362-8 Masuya-cho, Higashiyama-ku, Kyoto",
+      "nearestStation": "Kiyomizu-michi bus stop",
+      "officialUrl": "https://www.theflavordesign.com/store/kyoto/"
+    },
+    "sholayered": {
+      "nameEn": "SHOLAYERED Kyoto Sanjo",
+      "area": "Sanjo & Downtown",
+      "addressEn": "57 Benkeiishi-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Kyoto Shiyakusho-mae Station",
+      "officialUrl": "https://sholayered.jp/pages/stores"
+    },
+    "le-sillage-fragrance-shop": {
+      "nameEn": "LE SILLAGE FRAGRANCE SHOP KYOTO",
+      "area": "Shijo-Karasuma",
+      "addressEn": "233-2 Shinmei-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Karasuma Station",
+      "officialUrl": "https://lesillage-kyoto.shop/pages/about"
+    },
+    "le-labo-shinpuhkan": {
+      "nameEn": "LE LABO Kyoto Shinpuhkan",
+      "area": "Karasuma Oike",
+      "addressEn": "Shinpuhkan 1F, 586-2 Bano-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Karasuma Oike Station",
+      "officialUrl": "https://www.lelabofragrances.jp/pages/locations"
+    },
+    "le-labo-machiya": {
+      "nameEn": "LE LABO KYOTO MACHIYA",
+      "area": "Kiyamachi & Pontocho",
+      "addressEn": "206 Shimokoriki-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Gion-Shijo Station",
+      "officialUrl": "https://www.lelabofragrances.jp/pages/lelabo-kyoto-machiya"
+    },
+    "201lab-platform": {
+      "nameEn": "201LAB PLATFORM KYOTO",
+      "area": "Teramachi & Downtown",
+      "addressEn": "348 Iseya-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Kyoto Shiyakusho-mae Station",
+      "officialUrl": "https://www.artlab.co.jp/shop/shop201lab"
+    },
+    "jr-kyoto-isetan-latelier": {
+      "nameEn": "L'Atelier des Parfums at JR Kyoto Isetan",
+      "area": "Kyoto Station",
+      "addressEn": "JR Kyoto Isetan 2F, Higashishiokoji-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto Station",
+      "officialUrl": "https://www.mistore.jp/store/kyoto/shops/beauty/cosmetics2f.html"
+    },
+    "jr-kyoto-isetan": {
+      "nameEn": "JR Kyoto Isetan",
+      "area": "Kyoto Station",
+      "addressEn": "Higashishiokoji-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto Station",
+      "officialUrl": "https://www.mistore.jp/store/kyoto/shops/beauty/cosmetics2f.html"
+    },
+    "jomalone-takashimaya": {
+      "nameEn": "Jo Malone London at Kyoto Takashimaya",
+      "area": "Shijo-Kawaramachi",
+      "addressEn": "Kyoto Takashimaya 1F, 52 Shin-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://www.takashimaya.co.jp/kyoto/departmentstore/cosmenews/p01.html"
+    },
+    "latelier-des-parfums-takashimaya": {
+      "nameEn": "L'Atelier des Parfums at Kyoto Takashimaya",
+      "area": "Shijo-Kawaramachi",
+      "addressEn": "Kyoto Takashimaya 1F, 52 Shin-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://www.takashimaya.co.jp/kyoto/departmentstore/cosmenews/p01.html"
+    },
+    "daimaru-kyoto": {
+      "nameEn": "Daimaru Kyoto",
+      "area": "Shijo-Karasuma",
+      "addressEn": "79 Tachiuri-nishi-machi, Shimogyo-ku, Kyoto",
+      "nearestStation": "Karasuma Station",
+      "officialUrl": "https://www.daimaru.co.jp/kyoto/"
+    },
+    "shiro-daimaru": {
+      "nameEn": "SHIRO at Daimaru Kyoto",
+      "area": "Shijo-Karasuma",
+      "addressEn": "Daimaru Kyoto 1F, 79 Tachiuri-nishi-machi, Shimogyo-ku, Kyoto",
+      "nearestStation": "Karasuma Station",
+      "officialUrl": "https://shiro-shiro.jp/ec/ext/shop/daimaru-kyoto/index.html"
+    },
+    "kyoto-takashimaya": {
+      "nameEn": "Kyoto Takashimaya",
+      "area": "Shijo-Kawaramachi",
+      "addressEn": "52 Shin-cho, Shimogyo-ku, Kyoto",
+      "nearestStation": "Kyoto-Kawaramachi Station",
+      "officialUrl": "https://www.takashimaya.co.jp/kyoto/departmentstore/sys_access.html"
+    },
+    "your-musk-johns-blend": {
+      "nameEn": "Your Musk John's Blend Kyoto Nishiki Market",
+      "area": "Nishiki Market",
+      "addressEn": "Roa Kyoto Building 1F, 458-1 Jumonji-cho, Nakagyo-ku, Kyoto",
+      "nearestStation": "Karasuma Station",
+      "officialUrl": "https://www.johns-blend.com/f/store"
+    }
+  }
+}

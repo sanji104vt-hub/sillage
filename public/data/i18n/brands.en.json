@@ -5,31 +5,91 @@
       "slug": "dior",
       "nameEn": "Dior",
       "nameJa": "ディオール",
+      "country": "FR",
+      "officialSite": "https://www.dior.com/ja_jp/beauty",
+      "summaryEn": "A French luxury house whose fragrance range in Japan includes longstanding classics and the Sauvage collection.",
       "aliases": ["Christian Dior"]
     },
     "Maison Margiela": {
       "slug": "maison-margiela",
       "nameEn": "Maison Margiela",
       "nameJa": "メゾン マルジェラ",
+      "country": "FR",
+      "officialSite": "https://www.maisonmargiela.com/ja-jp/",
+      "summaryEn": "A French fashion house whose REPLICA fragrances connect scent with places, moments and memories.",
       "aliases": ["Maison Martin Margiela"]
     },
     "Le Labo": {
       "slug": "le-labo",
       "nameEn": "Le Labo",
       "nameJa": "ル ラボ",
+      "country": "US",
+      "officialSite": "https://www.lelabofragrances.jp/",
+      "summaryEn": "A fragrance house known for formulas named after a leading note and the number of materials in the composition.",
       "aliases": ["LE LABO"]
     },
     "Jo Malone": {
       "slug": "jo-malone-london",
       "nameEn": "Jo Malone London",
       "nameJa": "ジョー マローン ロンドン",
+      "country": "UK",
+      "officialSite": "https://www.jomalone.jp/",
+      "summaryEn": "A British fragrance house known for colognes designed to be worn alone or combined through scent layering.",
       "aliases": ["Jo Malone"]
     },
     "Aesop": {
       "slug": "aesop",
       "nameEn": "Aesop",
       "nameJa": "イソップ",
+      "country": "AU",
+      "officialSite": "https://www.aesop.com/jp/",
+      "summaryEn": "An Australian brand offering fragrance alongside skin, hair and body care in Japan.",
       "aliases": []
+    },
+    "Chanel": {
+      "slug": "chanel",
+      "nameEn": "Chanel",
+      "nameJa": "シャネル",
+      "country": "FR",
+      "officialSite": "https://www.chanel.com/jp/fragrance/",
+      "summaryEn": "A French luxury house with fragrance lines ranging from classic chypres to contemporary woody and floral compositions.",
+      "aliases": ["CHANEL"]
+    },
+    "Diptyque": {
+      "slug": "diptyque",
+      "nameEn": "Diptyque",
+      "nameJa": "ディプティック",
+      "country": "FR",
+      "officialSite": "https://www.diptyqueparis.com/ja_jp/",
+      "summaryEn": "A Paris fragrance house offering eaux de toilette, eaux de parfum and scented objects through its Japan site.",
+      "aliases": ["diptyque"]
+    },
+    "Tom Ford": {
+      "slug": "tom-ford",
+      "nameEn": "Tom Ford",
+      "nameJa": "トム フォード",
+      "country": "US",
+      "officialSite": "https://www.tomfordbeauty.com/",
+      "summaryEn": "A US luxury beauty brand whose fragrance range includes both signature scents and Private Blend creations.",
+      "aliases": ["TOM FORD"]
+    },
+    "Creed": {
+      "slug": "creed",
+      "nameEn": "Creed",
+      "nameJa": "クリード",
+      "country": "FR",
+      "officialSite": "https://www.creedfragrance.com/",
+      "summaryEn": "A fragrance house whose current official catalogue includes Aventus and other woody, aromatic compositions.",
+      "aliases": ["CREED"]
+    },
+    "Prada": {
+      "slug": "prada",
+      "nameEn": "Prada",
+      "nameJa": "プラダ",
+      "country": "IT",
+      "officialSite": "https://www.prada-beauty.com/",
+      "summaryEn": "An Italian fashion house with fragrance collections spanning clean iris, aromatic and gourmand styles.",
+      "aliases": ["PRADA"]
     }
   }
 }

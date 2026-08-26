@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "products": {
+    "dior-2": {
+      "editorial": {
+        "summary": "Fresh bergamot gives way to a dry ambroxan trail. It is a useful reference point for balancing broad appeal with a noticeable presence.",
+        "recommendedFor": ["People looking for a fresh aromatic fragrance for work or going out", "People who also want something suitable for dates in spring or autumn"],
+        "notRecommendedFor": ["People who prioritise a very quiet scent profile"],
+        "cautions": ["The official Japan online store showed this item as unavailable when last checked."]
+      }
+    },
+    "maison-margiela-1": {
+      "editorial": {
+        "summary": "Sweet rum and tobacco suggest the memory of a night bar. Its warm amber character fits relaxed autumn and winter wear.",
+        "recommendedFor": ["People who enjoy warm rum and tobacco notes", "People seeking a distinctive amber scent for autumn and winter"],
+        "notRecommendedFor": ["People who want only a light, bright citrus scent"],
+        "cautions": ["The official reference is an overseas site; no official Japan price is shown here."]
+      }
+    },
+    "le-labo-1": {
+      "editorial": {
+        "summary": "Dry sandalwood and leather create a smoky, gender-neutral profile with a distinctive presence.",
+        "recommendedFor": ["People who enjoy dry cardamom and sandalwood", "People looking for an individual woody scent for autumn or winter"],
+        "notRecommendedFor": ["People who want a bright, sweet fruity floral"]
+      }
+    },
+    "jo-malone-4": {
+      "editorial": {
+        "summary": "A mineral, windswept profile inspired by the coast. It feels minimal and gender-neutral, and can also work as a layering base.",
+        "recommendedFor": ["People who enjoy the dry transparency of sea salt and sage", "People seeking a light everyday scent for spring or summer"],
+        "notRecommendedFor": ["People who prioritise dense sweetness or a heavy drydown"]
+      }
+    },
+    "aesop-1": {
+      "editorial": {
+        "summary": "Yuzu and green herbs create a fresh, plant-like impression suited to warm and humid days.",
+        "recommendedFor": ["People who enjoy the botanical freshness of yuzu and basil", "People seeking a spring or summer scent for work and everyday use"],
+        "notRecommendedFor": ["People looking for rich vanilla sweetness"],
+        "cautions": ["The official site showed this item as unavailable when last checked."]
+      }
+    },
+    "chanel-2": {
+      "nameEn": "Platinum Égoïste Eau de Toilette",
+      "englishSlug": "platinum-egoiste-eau-de-toilette",
+      "notes": { "top": "Lavender, rosemary", "mid": "Geranium, petitgrain", "last": "Amber, cedar" },
+      "editorial": {
+        "summary": "Cool lavender moves toward warm woods. The composed aromatic profile works especially well with business and formal clothing.",
+        "recommendedFor": ["People who enjoy structured lavender and rosemary", "People prioritising a clean impression for work or formal occasions"],
+        "notRecommendedFor": ["People looking for a casual fragrance led by sweet fruit"]
+      },
+      "indexReady": true
+    },
+    "chanel-3": {
+      "nameEn": "Chance Eau Tendre Eau de Toilette",
+      "englishSlug": "chance-eau-tendre-eau-de-toilette",
+      "notes": { "top": "Grapefruit, quince", "mid": "Jasmine, hyacinth", "last": "White musk, cedar" },
+      "editorial": {
+        "summary": "A fresh, gentle fruity floral with an approachable and youthful character.",
+        "recommendedFor": ["People who enjoy soft grapefruit and jasmine", "People seeking a bright floral for everyday wear or dates in spring and summer"],
+        "notRecommendedFor": ["People looking for dry smoke or heavy leather"]
+      },
+      "indexReady": true
+    },
+    "chanel-4": {
+      "nameEn": "Bleu de Chanel Eau de Parfum",
+      "englishSlug": "bleu-de-chanel-eau-de-parfum",
+      "notes": { "top": "Grapefruit, lemon, mint", "mid": "Ginger, jasmine", "last": "Sandalwood, cedar" },
+      "editorial": {
+        "summary": "A polished woody fragrance that moves from a cool opening to dry sandalwood. It is an easy first choice for business and formal wear.",
+        "recommendedFor": ["People who want both freshness and dry woods", "People seeking a composed fragrance for work or formal settings"],
+        "notRecommendedFor": ["People who want unusual sweetness or dense flowers as the main focus"]
+      },
+      "indexReady": true
+    },
+    "chanel-6": {
+      "nameEn": "Antaeus Eau de Toilette",
+      "englishSlug": "antaeus-eau-de-toilette",
+      "notes": { "top": "Lemon, petitgrain, thyme", "mid": "Castoreum, patchouli, rose", "last": "Leather, oakmoss" },
+      "editorial": {
+        "summary": "A substantial leather-and-moss composition with a classic, assertive character.",
+        "recommendedFor": ["People who enjoy rose and citrus over a deep leather base", "People seeking presence for formal occasions or dates in autumn and winter"],
+        "notRecommendedFor": ["People looking for a light spring or summer cologne"]
+      },
+      "indexReady": true
+    },
+    "dior-1": {
+      "nameEn": "Eau Sauvage Eau de Toilette",
+      "englishSlug": "eau-sauvage-eau-de-toilette",
+      "notes": { "top": "Lemon, basil", "mid": "Rosemary, jasmine", "last": "Vetiver, oakmoss" },
+      "editorial": {
+        "summary": "A classic citrus composition sharpened by herbs and moss. Its restrained freshness remains well suited to business wear.",
+        "recommendedFor": ["People who enjoy citrus with herbal and mossy depth", "People seeking composed freshness for work in spring or summer"],
+        "notRecommendedFor": ["People looking for a rounded, sweet gourmand"]
+      },
+      "indexReady": true
+    },
+    "dior-3": {
+      "nameEn": "Sauvage Eau de Parfum",
+      "englishSlug": "sauvage-eau-de-parfum",
+      "notes": { "top": "Calabrian bergamot", "mid": "Lavender, sea salt, star anise", "last": "Ambroxan, cedar" },
+      "editorial": {
+        "summary": "Rounder and warmer than the Eau de Toilette, with lavender and a salty accent adding depth for both daytime and evening wear.",
+        "recommendedFor": ["People who enjoy bergamot with a warmer aromatic base", "People seeking more presence for work or dates in spring and autumn"],
+        "notRecommendedFor": ["People looking for a very quiet citrus cologne"]
+      },
+      "indexReady": true
+    },
+    "dior-4": {
+      "nameEn": "J'adore Eau de Parfum",
+      "englishSlug": "jadore-eau-de-parfum",
+      "notes": { "top": "Bergamot, mandarin", "mid": "Ylang-ylang, rose, jasmine", "last": "Musk, vanilla" },
+      "editorial": {
+        "summary": "A full floral bouquet built around ylang-ylang, rose and jasmine, suited to polished occasions.",
+        "recommendedFor": ["People who enjoy a vivid bouquet of rose and jasmine", "People seeking a classic floral for formal occasions or dates"],
+        "notRecommendedFor": ["People who prefer minimal fragrances with little floral presence"]
+      },
+      "indexReady": true
+    },
+    "diptyque-1": {
+      "nameEn": "Tam Dao Eau de Toilette",
+      "englishSlug": "tam-dao-eau-de-toilette",
+      "notes": { "top": "Cypress, rose", "mid": "Sandalwood, cedar", "last": "Amber, musk" },
+      "editorial": {
+        "summary": "A calm woody fragrance centred on creamy sandalwood, with a meditative and composed character.",
+        "recommendedFor": ["People who enjoy quiet sandalwood-led fragrances", "People seeking calm woods for everyday or formal wear in autumn and winter"],
+        "notRecommendedFor": ["People looking for juicy, sweet fruit"]
+      },
+      "indexReady": true
+    },
+    "le-labo-2": {
+      "nameEn": "Another 13",
+      "englishSlug": "another-13",
+      "notes": { "top": "Ambrox, aldehydes", "mid": "Jasmine", "last": "Amber, musk" },
+      "editorial": {
+        "summary": "A transparent clean-musk profile that sits close to the skin and works across seasons and styles.",
+        "recommendedFor": ["People who prefer transparent musk close to the skin", "People seeking an everyday or work fragrance across seasons"],
+        "notRecommendedFor": ["People who want clearly defined flowers or fruit"]
+      },
+      "indexReady": true
+    },
+    "chanel-5": {
+      "nameEn": "Pour Monsieur Eau de Toilette",
+      "englishSlug": "pour-monsieur-eau-de-toilette",
+      "notes": { "top": "Lemon, bergamot", "mid": "Basil, ginger", "last": "Vetiver, oakmoss" },
+      "editorial": {
+        "summary": "A composed citrus-chypre with a classic profile, moving from lemon and ginger toward vetiver and moss.",
+        "recommendedFor": ["People who enjoy lemon and ginger over vetiver", "People seeking a classic fragrance for work or formal wear in spring and autumn"],
+        "notRecommendedFor": ["People looking for dense vanilla or sweet fruit"]
+      },
+      "indexReady": true
+    },
+    "dior-5": {
+      "nameEn": "Sauvage Elixir",
+      "englishSlug": "sauvage-elixir",
+      "notes": { "top": "Cinnamon, cardamom, nutmeg", "mid": "Lavender", "last": "Amber, licorice" },
+      "editorial": {
+        "summary": "A concentrated spicy interpretation with a strong amber profile, best considered for cool-weather evenings.",
+        "recommendedFor": ["People who enjoy dense spices and lavender in autumn or winter", "People seeking a defined amber fragrance for formal occasions or dates"],
+        "notRecommendedFor": ["People who want the restraint of a light citrus cologne"]
+      },
+      "indexReady": true
+    },
+    "dior-6": {
+      "nameEn": "Fahrenheit Eau de Toilette",
+      "englishSlug": "fahrenheit-eau-de-toilette",
+      "notes": { "top": "Mandarin, hawthorn", "mid": "Violet, nutmeg", "last": "Leather, vetiver" },
+      "editorial": {
+        "summary": "Violet and leather create a highly individual profile that can divide opinion but is difficult to confuse with another fragrance.",
+        "recommendedFor": ["People who enjoy a distinctive transition from citrus to leather", "People seeking a substantial woody scent for autumn or winter"],
+        "notRecommendedFor": ["People focused on soft, sweet florals"]
+      },
+      "indexReady": true
+    },
+    "jo-malone-1": {
+      "nameEn": "Lime Basil & Mandarin Cologne",
+      "englishSlug": "lime-basil-and-mandarin-cologne",
+      "notes": { "top": "Lime, mandarin", "mid": "Basil", "last": "Amberwood" },
+      "editorial": {
+        "summary": "Herbal basil gives depth to bright citrus. Its light structure works at the office and as part of fragrance layering.",
+        "recommendedFor": ["People who enjoy citrus with a clear herbal edge", "People seeking a light work or everyday scent for spring and summer"],
+        "notRecommendedFor": ["People looking for dense sweetness or a heavy drydown"]
+      },
+      "indexReady": true
+    },
+    "jo-malone-2": {
+      "nameEn": "English Pear & Freesia Cologne",
+      "englishSlug": "english-pear-and-freesia-cologne",
+      "notes": { "top": "Pear", "mid": "Freesia, rose", "last": "Patchouli, musk" },
+      "editorial": {
+        "summary": "Ripe pear and white flowers make an elegant fruity floral that is easy to wear across styles.",
+        "recommendedFor": ["People who enjoy ripe pear with white flowers", "People seeking polished fruit for everyday wear or dates in spring and autumn"],
+        "notRecommendedFor": ["People looking for a smoky, hard-edged woody scent"]
+      },
+      "indexReady": true
+    },
+    "jo-malone-3": {
+      "nameEn": "Peony & Blush Suede Cologne",
+      "englishSlug": "peony-and-blush-suede-cologne",
+      "notes": { "top": "Red apple", "mid": "Peony", "last": "Suede" },
+      "editorial": {
+        "summary": "Peony and red apple are softened by suede, balancing brightness with a quieter base.",
+        "recommendedFor": ["People who enjoy peony with a soft suede accent", "People seeking floral brightness for everyday wear or dates in spring and summer"],
+        "notRecommendedFor": ["People looking for only dry citrus freshness"]
+      },
+      "indexReady": true
+    },
+    "prada-2": {
+      "nameEn": "L'Homme Prada Eau de Toilette",
+      "englishSlug": "lhomme-prada-eau-de-toilette",
+      "notes": { "top": "Neroli, cardamom", "mid": "Iris, geranium", "last": "Amber, patchouli" },
+      "editorial": {
+        "summary": "Powdery iris gives this restrained fragrance a polished, clean character suited to adult workwear.",
+        "recommendedFor": ["People who enjoy neroli and iris over amber", "People seeking a composed fragrance for work or formal wear in spring and autumn"],
+        "notRecommendedFor": ["People looking for heavy smoke or forceful spices"]
+      },
+      "indexReady": true
+    },
+    "tom-ford-2": {
+      "nameEn": "Oud Wood Eau de Parfum",
+      "englishSlug": "oud-wood-eau-de-parfum",
+      "notes": { "top": "Rosewood, cardamom", "mid": "Oud, sandalwood", "last": "Vanilla, amber" },
+      "editorial": {
+        "summary": "Oud is framed by polished woods, spice and amber, adding depth to special evening wear.",
+        "recommendedFor": ["People who enjoy oud with smooth woods and spice", "People seeking depth for evenings or special clothing in autumn and winter"],
+        "notRecommendedFor": ["People looking for only light, bright citrus"],
+        "cautions": ["The official reference is an overseas site; no official Japan price is shown here."]
+      },
+      "indexReady": true
+    },
+    "tom-ford-3": {
+      "nameEn": "Black Orchid Eau de Parfum",
+      "englishSlug": "black-orchid-eau-de-parfum",
+      "notes": { "top": "Truffle, blackcurrant", "mid": "Orchid, spices", "last": "Patchouli, vetiver" },
+      "editorial": {
+        "summary": "Dark flowers, earth and spice create a dense chypre profile intended for a clear evening presence.",
+        "recommendedFor": ["People who enjoy dense dark flowers, earth and spice", "People seeking a distinctive autumn or winter evening fragrance"],
+        "notRecommendedFor": ["People looking for a quiet work fragrance"],
+        "cautions": ["The official reference is an overseas site; no official Japan price is shown here."]
+      },
+      "indexReady": true
+    },
+    "creed-1": {
+      "nameEn": "Aventus",
+      "englishSlug": "aventus",
+      "notes": { "top": "Pineapple, bergamot", "mid": "Birch, jasmine", "last": "Musk, oakmoss" },
+      "editorial": {
+        "summary": "Bright fruit moves toward smoky birch, creating a clearly defined woody-fruity profile.",
+        "recommendedFor": ["People who enjoy the contrast of bright fruit and smoky woods", "People seeking definition for business or formal wear"],
+        "notRecommendedFor": ["People who want only soft flowers or quiet musk"],
+        "cautions": ["The official reference is an overseas site; no official Japan price is shown here."]
+      },
+      "indexReady": true
+    },
+    "prada-1": {
+      "nameEn": "Prada Candy Eau de Parfum",
+      "englishSlug": "prada-candy-eau-de-parfum",
+      "notes": { "top": "Caramel, benzoin", "mid": "Musk", "last": "Vanilla" },
+      "editorial": {
+        "summary": "Caramel, benzoin and vanilla create a soft gourmand sweetness for cooler weather.",
+        "recommendedFor": ["People who enjoy caramel and benzoin sweetness", "People seeking a gentle gourmand for dates or everyday wear in autumn and winter"],
+        "notRecommendedFor": ["People looking for dry citrus without sweetness"]
+      },
+      "indexReady": true
+    }
+  }
+}

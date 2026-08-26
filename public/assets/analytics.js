@@ -19,6 +19,8 @@
   function track(name, params) {
     try {
       if (typeof window.gtag !== "function") return;
+      params = params || {};
+      if (!params.language) params.language = document.documentElement.lang || "ja";
       window.gtag("event", name, params);
     } catch (_) { /* 計測の失敗でページを壊さない */ }
   }
@@ -28,8 +30,8 @@
   var path = location.pathname;
   var PAGE_TYPE =
     path.indexOf("/items/") === 0 || path.indexOf("/en/fragrances/") === 0 && path !== "/en/fragrances/" ? "item" :
-    path.indexOf("/columns/") === 0 ? "column" :
-    path.indexOf("/brand-") === 0 ? "brand" : "home";
+    path.indexOf("/columns/") === 0 || path.indexOf("/en/guides/") === 0 ? "column" :
+    path.indexOf("/brand-") === 0 || path.indexOf("/en/brands/") === 0 ? "brand" : "home";
   window.SillagePageType = PAGE_TYPE;
 
   function attr(el, name) {
