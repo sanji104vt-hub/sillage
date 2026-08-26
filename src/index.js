@@ -101,6 +101,13 @@ export default {
       return Response.redirect(u.toString(), 301);
     }
 
+    const englishPhase2Index = path.match(/^\/en\/(brands(?:\/[a-z0-9-]+)?|guides\/[a-z0-9-]+)\/index\.html$/);
+    if (englishPhase2Index) {
+      const u = new URL(request.url);
+      u.pathname = `/en/${englishPhase2Index[1]}/`;
+      return Response.redirect(u.toString(), 301);
+    }
+
     const columnHtml = path.match(/^\/columns\/([A-Za-z0-9][A-Za-z0-9-]*)\.html$/);
     if (columnHtml) {
       const u = new URL(request.url);
@@ -154,6 +161,18 @@ export default {
       }
       const u = new URL(request.url);
       u.pathname = `/en/fragrances/${englishProduct[1]}/${englishProduct[2]}/index.html`;
+      return env.ASSETS.fetch(new Request(u, request));
+    }
+
+    const englishPhase2Directory = path.match(/^\/en\/(brands(?:\/[a-z0-9-]+)?|guides\/[a-z0-9-]+)\/?$/);
+    if (englishPhase2Directory) {
+      if (!path.endsWith("/")) {
+        const u = new URL(request.url);
+        u.pathname = `${path}/`;
+        return Response.redirect(u.toString(), 301);
+      }
+      const u = new URL(request.url);
+      u.pathname = `/en/${englishPhase2Directory[1]}/index.html`;
       return env.ASSETS.fetch(new Request(u, request));
     }
 
