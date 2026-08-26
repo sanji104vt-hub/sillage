@@ -1,6 +1,16 @@
 import { readFileSync } from "node:fs";
 
-const shops = JSON.parse(readFileSync("data/kyoto-shops.json", "utf8")).kyoto_fragrance_shops;
+const shops = JSON.parse(readFileSync("data/stores.json", "utf8")).stores
+  .filter((store) => store.city === "kyoto")
+  .map((store) => ({
+    slug: store.id,
+    name: store.nameJa,
+    address: store.addressJa,
+    hours: store.openingHours,
+    latitude: store.coordinates?.lat,
+    longitude: store.coordinates?.lng,
+    google_maps_url: store.googleMapsUrl,
+  }));
 const html = readFileSync("public/columns/kyoto-fragrance-shops.html", "utf8");
 const errors = [];
 const assert = (condition, message) => { if (!condition) errors.push(message); };

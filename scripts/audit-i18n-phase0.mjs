@@ -5,7 +5,18 @@ import { loadFragrances } from "../lib/fragrance-data.mjs";
 const products = loadFragrances();
 const brands = JSON.parse(readFileSync("data/brands.json", "utf8"));
 const siteCopy = JSON.parse(readFileSync("data/site-copy.json", "utf8"));
-const shops = JSON.parse(readFileSync("data/kyoto-shops.json", "utf8")).kyoto_fragrance_shops;
+const shops = JSON.parse(readFileSync("data/stores.json", "utf8")).stores
+  .filter((store) => store.city === "kyoto")
+  .map((store) => ({
+    slug: store.id,
+    name: store.nameJa,
+    address: store.addressJa,
+    latitude: store.coordinates?.lat,
+    longitude: store.coordinates?.lng,
+    google_maps_url: store.googleMapsUrl,
+    hours: store.openingHours,
+    verifiedAt: store.verifiedAt,
+  }));
 const kyotoHtml = readFileSync("public/columns/kyoto-fragrance-shops.html", "utf8");
 const output = "reports/i18n-phase0";
 mkdirSync(output, { recursive: true });

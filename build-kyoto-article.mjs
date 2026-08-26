@@ -13,7 +13,22 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 
-const SHOPS = JSON.parse(readFileSync(join("data", "kyoto-shops.json"), "utf8")).kyoto_fragrance_shops;
+const SHOPS = JSON.parse(readFileSync(join("data", "stores.json"), "utf8")).stores
+  .filter((store) => store.city === "kyoto")
+  .map((store) => ({
+    slug: store.id,
+    name: store.nameJa,
+    category: store.storeType === "custom-fragrance" ? "custom"
+      : store.storeType === "brand-boutique" || store.storeType === "multi-brand-specialist" ? "niche"
+      : store.storeType === "department-store" || store.storeType === "department-counter" ? "department"
+      : "kyoto-original",
+    address: store.addressJa,
+    latitude: store.coordinates?.lat ?? null,
+    longitude: store.coordinates?.lng ?? null,
+    hours: store.openingHours,
+    closed: store.closedDays,
+    google_maps_url: store.googleMapsUrl,
+  }));
 const FRAGRANCE_COUNT = JSON.parse(readFileSync(join("data", "fragrances.json"), "utf8")).fragrances.length;
 const BRAND_COUNT = JSON.parse(readFileSync(join("data", "brands.json"), "utf8")).length;
 const SITE_COPY = JSON.parse(readFileSync(join("data", "site-copy.json"), "utf8"));

@@ -58,6 +58,16 @@
     try {
       var target = event.target;
       if (!target || !target.closest) return;
+      var storeLink = target.closest("a[data-store-link]");
+      if (storeLink) {
+        track(attr(storeLink, "data-store-link") === "maps" ? "store_map_click" : "store_official_click", {
+          store_id: attr(storeLink, "data-store-id"),
+          city: attr(storeLink, "data-store-city"),
+          page_type: PAGE_TYPE,
+          transport_type: "beacon",
+        });
+        return;
+      }
       var buy = target.closest("a.buy");
       if (!buy) return;
       var isOfficial = buy.classList.contains("buy-official");
@@ -80,6 +90,12 @@
           column_slug: attr(body, "data-column-slug"),
           column_title: attr(body, "data-column-title"),
           column_category: attr(body, "data-column-category"),
+        });
+      }
+      if (body.getAttribute("data-city-guide")) {
+        track("city_guide_view", {
+          city: attr(body, "data-city-guide"),
+          page_type: PAGE_TYPE,
         });
       }
     } catch (_) { /* 同上 */ }
