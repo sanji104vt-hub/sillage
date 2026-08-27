@@ -64,6 +64,8 @@ for (const [path, canonical, noindex] of [
   ["public/en/brands/index.html", `${SITE}/en/brands/`, false],
   ["public/en/guides/perfume-shopping-tokyo/index.html", `${SITE}/en/guides/perfume-shopping-tokyo/`, false],
   ["public/en/guides/perfume-shopping-kyoto/index.html", `${SITE}/en/guides/perfume-shopping-kyoto/`, false],
+  ["public/en/guides/perfume-shopping-osaka/index.html", `${SITE}/en/guides/perfume-shopping-osaka/`, false],
+  ["public/en/guides/tax-free-perfume-shopping-japan/index.html", `${SITE}/en/guides/tax-free-perfume-shopping-japan/`, false],
   ["public/en/guides/best-japanese-perfume-brands/index.html", `${SITE}/en/guides/best-japanese-perfume-brands/`, false],
 ]) {
   assert(existsSync(path), `English foundation page missing: ${path}`);
@@ -109,11 +111,26 @@ assert(tokyo.includes(`"numberOfItems":${tokyoStores.length}`), "Tokyo ItemList 
 assert(tokyo.includes('data-city-guide="tokyo"'), "Tokyo guide analytics attribute missing");
 assert(!tokyo.includes('hreflang="ja"'), "Tokyo guide must not invent a Japanese counterpart");
 
+const osaka = read("public/en/guides/perfume-shopping-osaka/index.html");
+const osakaStores = JSON.parse(read("data/stores.json")).stores.filter((store) => store.city === "osaka");
+assert(osakaStores.length >= 15 && osakaStores.length <= 25, "Osaka source count must remain within Phase 4 scope");
+assert((osaka.match(/<article class="shop"/g) || []).length === osakaStores.length, "Osaka guide store count mismatch");
+assert(osaka.includes(`"numberOfItems":${osakaStores.length}`), "Osaka ItemList count mismatch");
+assert(osaka.includes('data-city-guide="osaka"'), "Osaka guide analytics attribute missing");
+assert(!osaka.includes('hreflang="ja"'), "Osaka guide must not invent a Japanese counterpart");
+assert(osaka.includes("Individual fragrance stock is not confirmed") || osaka.includes("stock of a specific fragrance"), "Osaka stock disclaimer missing");
+
+const taxFreeGuide = read("public/en/guides/tax-free-perfume-shopping-japan/index.html");
+assert(taxFreeGuide.includes("Until October 31, 2026") && taxFreeGuide.includes("From November 1, 2026"), "Tax-free date split missing");
+assert(taxFreeGuide.includes('data-tax-free-guide="japan"'), "Tax-free analytics attribute missing");
+assert(!taxFreeGuide.includes('hreflang="ja"'), "Tax-free guide must not invent a Japanese counterpart");
+
 const japaneseBrandsGuide = read("public/en/guides/best-japanese-perfume-brands/index.html");
 assert((japaneseBrandsGuide.match(/<article class="brand-guide">/g) || []).length === 6, "Japanese brands guide must contain exactly six sourced brands");
 assert(japaneseBrandsGuide.includes('"@type":"Article"') && japaneseBrandsGuide.includes('"@type":"BreadcrumbList"'), "Japanese brands guide structured data incomplete");
 assert(!japaneseBrandsGuide.includes('hreflang="ja" href="https://sillage.asutelu.com/columns/'), "Japanese brands guide must not invent a Japanese counterpart");
 assert(japaneseBrandsGuide.includes('data-column-slug="best-japanese-perfume-brands"'), "Japanese brands guide analytics attributes missing");
+assert(japaneseBrandsGuide.includes("/en/guides/perfume-shopping-osaka/"), "Japanese brands guide Osaka link missing");
 
 const analytics = read("public/assets/analytics.js");
 assert(analytics.includes('params.language = document.documentElement.lang || "ja"'), "Analytics language dimension missing");
@@ -122,7 +139,7 @@ assert(analytics.includes('path.indexOf("/en/guides/")') && analytics.includes('
 const sitemap = readFileSync("public/sitemap.xml", "utf8");
 assert(sitemap.includes(`<loc>${SITE}/en/</loc>`), "English home missing from sitemap");
 assert(sitemap.includes(`<loc>${SITE}/en/fragrances/</loc>`), "Indexable English catalogue missing from sitemap");
-for (const expected of ["/en/brands/", "/en/guides/perfume-shopping-tokyo/", "/en/guides/perfume-shopping-kyoto/", "/en/guides/best-japanese-perfume-brands/"]) assert(sitemap.includes(`<loc>${SITE}${expected}</loc>`), `English Phase 3 page missing from sitemap: ${expected}`);
+for (const expected of ["/en/brands/", "/en/guides/perfume-shopping-tokyo/", "/en/guides/perfume-shopping-kyoto/", "/en/guides/perfume-shopping-osaka/", "/en/guides/tax-free-perfume-shopping-japan/", "/en/guides/best-japanese-perfume-brands/"]) assert(sitemap.includes(`<loc>${SITE}${expected}</loc>`), `English Phase 4 page missing from sitemap: ${expected}`);
 for (const brand of brandData.filter((entry) => entry.count >= 2)) assert(sitemap.includes(`<loc>${SITE}/en/brands/${brand.slug}/</loc>`), `English brand page missing from sitemap: ${brand.slug}`);
 for (const route of routes) assert(sitemap.includes(`<loc>${SITE}${route}</loc>`), `English product missing from sitemap: ${route}`);
 
@@ -134,6 +151,7 @@ assert(catalogue.includes(`${routes.length} fragrances currently available in En
 const englishHome = read("public/en/index.html");
 assert(englishHome.includes(`Explore ${routes.length} fragrances`), "English home dynamic product count missing");
 assert(!/(?:Start with five|Five fragrance|English pilot|In development)/i.test(englishHome), "English home still contains pilot or placeholder copy");
+assert(englishHome.includes("/en/guides/perfume-shopping-osaka/") && englishHome.includes("/en/guides/tax-free-perfume-shopping-japan/"), "English home Phase 4 guide links missing");
 
 for (const route of routes) {
   const html = readFileSync(`public${route}index.html`, "utf8");
@@ -164,4 +182,4 @@ if (errors.length) {
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
-console.log(`i18n validation: OK (${routes.length} English products, 10 brands, 3 guides, ${products.length} shared catalogue records)`);
+console.log(`i18n validation: OK (${routes.length} English products, 10 brands, 5 guides, ${products.length} shared catalogue records)`);

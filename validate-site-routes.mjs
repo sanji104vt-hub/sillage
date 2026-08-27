@@ -35,6 +35,12 @@ await expect("/en/guides/perfume-shopping-kyoto/index.html", 301, "/en/guides/pe
 await expect("/en/guides/perfume-shopping-tokyo", 301, "/en/guides/perfume-shopping-tokyo/");
 await expect("/en/guides/perfume-shopping-tokyo/", 200);
 await expect("/en/guides/perfume-shopping-tokyo/index.html", 301, "/en/guides/perfume-shopping-tokyo/");
+await expect("/en/guides/perfume-shopping-osaka", 301, "/en/guides/perfume-shopping-osaka/");
+await expect("/en/guides/perfume-shopping-osaka/", 200);
+await expect("/en/guides/perfume-shopping-osaka/index.html", 301, "/en/guides/perfume-shopping-osaka/");
+await expect("/en/guides/tax-free-perfume-shopping-japan", 301, "/en/guides/tax-free-perfume-shopping-japan/");
+await expect("/en/guides/tax-free-perfume-shopping-japan/", 200);
+await expect("/en/guides/tax-free-perfume-shopping-japan/index.html", 301, "/en/guides/tax-free-perfume-shopping-japan/");
 await expect("/en/guides/does-not-exist/", 404);
 const brandPages = readdirSync("public").filter((name) => /^brand-.+\.html$/.test(name));
 const columnPages = readdirSync("public/columns").filter((name) => name.endsWith(".html"));

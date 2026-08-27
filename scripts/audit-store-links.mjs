@@ -2,14 +2,15 @@ import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const LIVE = process.argv.includes("--live");
 const stores = JSON.parse(readFileSync("data/stores.json", "utf8")).stores;
-const output = "reports/i18n-phase3-store-link-audit.csv";
+const taxFreeSources = JSON.parse(readFileSync("data/tax-free-system.json", "utf8")).sources;
+const output = "reports/i18n-phase4-store-link-audit.csv";
 const csv = (value) => `"${String(value ?? "").replaceAll('"', '""')}"`;
 
-const references = stores.flatMap((store) => [
+const references = [...stores.flatMap((store) => [
   { storeId: store.id, city: store.city, kind: "official", url: store.officialUrl },
   { storeId: store.id, city: store.city, kind: "google_maps", url: store.googleMapsUrl },
   ...(store.sources || []).map((source) => ({ storeId: store.id, city: store.city, kind: "source", url: source.url })),
-]);
+]), ...taxFreeSources.map((source, index) => ({ storeId: `tax-free-source-${index + 1}`, city: "japan", kind: "tax_free_source", url: source.url }))];
 const unique = new Map();
 for (const reference of references) {
   if (!unique.has(reference.url)) unique.set(reference.url, { ...reference, usedBy: [] });

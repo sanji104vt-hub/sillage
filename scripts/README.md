@@ -115,9 +115,10 @@ node validate-fragrances.mjs
 node validate-i18n.mjs
 node validate-kyoto-guide.mjs
 node validate-stores.mjs
+node validate-tax-free-guide.mjs
 ```
 
-店舗ガイドの元データは `data/stores.json` の1ファイルに集約する。京都・東京を別JSONへ複製せず、`city` と `brands` で絞り込む。英語対応、免税、個別商品の在庫は公式確認できない限り推測しない。
+店舗ガイドの元データは `data/stores.json` の1ファイルに集約する。京都・東京・大阪を別JSONへ複製せず、`city` と `brands` で絞り込む。免税制度の根拠と更新日は `data/tax-free-system.json` で版管理する。英語対応、免税、個別商品の在庫は公式確認できない限り推測しない。
 
 `data/fragrances.json` を書き換えただけではサイトに反映されない。ビルドまで実行すること。
 

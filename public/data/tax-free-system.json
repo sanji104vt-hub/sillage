@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "verifiedAt": "2026-08-27",
+  "currentVersion": "pre-refund",
+  "changesAt": "2026-11-01",
+  "periods": {
+    "preRefund": {
+      "until": "2026-10-31",
+      "label": "Until October 31, 2026"
+    },
+    "refund": {
+      "from": "2026-11-01",
+      "label": "From November 1, 2026",
+      "customsConfirmationWithinDays": 90
+    }
+  },
+  "sources": [
+    { "publisher": "Japan National Tourism Organization", "title": "Japan's Tax Exemption", "url": "https://www.japan.travel/en/plan/japans-tax-exemption/", "sourceType": "official", "supports": ["current-system", "refund-method", "international-shipping"] },
+    { "publisher": "Japan Tourism Agency", "title": "Tax-Free Shopping System — Refund Method for Travelers", "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html", "sourceType": "official", "supports": ["refund-method", "effective-date"] },
+    { "publisher": "National Tax Agency", "title": "Tax-Free Shopping System will be shifted to the Refund Method from November 2026", "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/202506/pdf/0025006-106.pdf", "sourceType": "official", "supports": ["refund-method", "90-day-rule", "customs-confirmation"] },
+    { "publisher": "Japan Customs", "title": "Consumption Tax Exemption for Exports for Non-residents and Visitors", "url": "https://www.customs.go.jp/english/c-answer_e/extsukan/5004_e.htm", "sourceType": "official", "supports": ["current-system", "passport", "departure-customs"] }
+  ]
+}
