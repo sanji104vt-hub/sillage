@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 1,
-  "verifiedAt": "2026-08-27",
+  "schemaVersion": 2,
+  "verifiedAt": "2026-09-02",
   "currentVersion": "pre-refund",
   "changesAt": "2026-11-01",
   "periods": {
@@ -15,9 +15,136 @@
     }
   },
   "sources": [
-    { "publisher": "Japan National Tourism Organization", "title": "Japan's Tax Exemption", "url": "https://www.japan.travel/en/plan/japans-tax-exemption/", "sourceType": "official", "supports": ["current-system", "refund-method", "international-shipping"] },
-    { "publisher": "Japan Tourism Agency", "title": "Tax-Free Shopping System — Refund Method for Travelers", "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html", "sourceType": "official", "supports": ["refund-method", "effective-date"] },
-    { "publisher": "National Tax Agency", "title": "Tax-Free Shopping System will be shifted to the Refund Method from November 2026", "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/202506/pdf/0025006-106.pdf", "sourceType": "official", "supports": ["refund-method", "90-day-rule", "customs-confirmation"] },
-    { "publisher": "Japan Customs", "title": "Consumption Tax Exemption for Exports for Non-residents and Visitors", "url": "https://www.customs.go.jp/english/c-answer_e/extsukan/5004_e.htm", "sourceType": "official", "supports": ["current-system", "passport", "departure-customs"] }
+    {
+      "publisher": "Japan National Tourism Organization",
+      "title": "Japan's Tax Exemption",
+      "url": "https://www.japan.travel/en/plan/japans-tax-exemption/",
+      "sourceType": "official",
+      "supports": [
+        "current-system",
+        "refund-method",
+        "international-shipping"
+      ]
+    },
+    {
+      "publisher": "Japan Tourism Agency",
+      "title": "Tax-Free Shopping System — Refund Method for Travelers",
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html",
+      "sourceType": "official",
+      "supports": [
+        "refund-method",
+        "effective-date"
+      ]
+    },
+    {
+      "publisher": "National Tax Agency",
+      "title": "Tax-Free Shopping System will be shifted to the Refund Method from November 2026",
+      "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/202506/pdf/0025006-106.pdf",
+      "sourceType": "official",
+      "supports": [
+        "refund-method",
+        "90-day-rule",
+        "customs-confirmation"
+      ]
+    },
+    {
+      "publisher": "Japan Customs",
+      "title": "Consumption Tax Exemption for Exports for Non-residents and Visitors",
+      "url": "https://www.customs.go.jp/english/c-answer_e/extsukan/5004_e.htm",
+      "sourceType": "official",
+      "supports": [
+        "current-system",
+        "passport",
+        "departure-customs"
+      ]
+    },
+    {
+      "publisher": "National Tax Agency",
+      "title": "Outline of the Reduced Tax Rate System (Japanese)",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm",
+      "sourceType": "official",
+      "supports": [
+        "consumption-tax-rate",
+        "reduced-rate-scope"
+      ]
+    }
+  ],
+  "consumptionTax": {
+    "standardRatePercent": 10,
+    "reducedRatePercent": 8,
+    "reducedRateAppliesTo": [
+      "Food and beverages, excluding alcohol and dining out",
+      "Newspapers published at least twice a week under a subscription contract"
+    ],
+    "fragranceRate": "standard",
+    "source": "https://www.nta.go.jp/taxes/shiraberu/zeimokubetsu/shohi/keigenzeiritsu/01.htm"
+  },
+  "refundMayBeLessThanTax": true,
+  "consumablesCapJpy": {
+    "preRefund": 500000,
+    "refund": null
+  },
+  "comparison": [
+    {
+      "item": "Payment at the store",
+      "preRefund": "Pay the price with consumption tax deducted",
+      "refund": "Pay the tax-inclusive price"
+    },
+    {
+      "item": "Refund",
+      "preRefund": "None — the exemption is applied at purchase",
+      "refund": "Refunded after customs confirms the goods leave Japan"
+    },
+    {
+      "item": "Special packaging for consumables",
+      "preRefund": "Sealed packaging required",
+      "refund": "Requirement removed"
+    },
+    {
+      "item": "Purchase cap on consumables",
+      "preRefund": "¥500,000",
+      "refund": "Removed"
+    },
+    {
+      "item": "Deadline to leave Japan",
+      "preRefund": "Not specified for this procedure",
+      "refund": "Within 90 days of purchase"
+    }
+  ],
+  "airportSteps": [
+    "Arrive at the airport with extra time. Customs confirmation cannot be rushed.",
+    "Go to customs before you check your baggage with the airline if the perfume will travel in a checked bag. Once the bag is checked in, the goods can no longer be presented.",
+    "Present the tax-free goods and the required travel documents for customs confirmation.",
+    "Receive the refund through the method stated by the participating business."
+  ],
+  "faq": [
+    {
+      "q": "When does the Japan tax-free system change?",
+      "a": "The refund method is scheduled to start on 1 November 2026. Purchases made through 31 October 2026 follow the current procedure."
+    },
+    {
+      "q": "Do I pay consumption tax at the store?",
+      "a": "Under the current procedure through 31 October 2026, eligible purchases are exempted at the store. From 1 November 2026, travelers pay the tax-inclusive price first and receive a refund later."
+    },
+    {
+      "q": "Where do I get the refund?",
+      "a": "After customs confirms the goods are leaving Japan, the refund is provided through the participating business's stated method. The method and timing differ by retailer or refund operator, so confirm at the point of purchase."
+    },
+    {
+      "q": "Is perfume a consumable item?",
+      "a": "Fragrance is treated as a consumable under the tax-free system. The ¥500,000 cap on consumables is scheduled to be removed on 1 November 2026."
+    },
+    {
+      "q": "What happens if I use the product in Japan?",
+      "a": "Customs confirmation requires that the goods are being taken out of Japan. Removing the special packaging requirement does not mean the product may be consumed in Japan before departure."
+    },
+    {
+      "q": "How long do I have to leave Japan after buying?",
+      "a": "Under the refund method, you must leave Japan within 90 days of purchase. Long-stay visitors such as students may not meet this condition."
+    },
+    {
+      "q": "Is tax-free the same as duty-free?",
+      "a": "No. Tax-free stores in the city refund Japan's consumption tax. Duty-free shops at the airport relate to customs duty and to taxes on items such as alcohol and tobacco. Sillage covers the former."
+    }
   ]
 }

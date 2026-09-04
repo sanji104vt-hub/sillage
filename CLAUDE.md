@@ -48,6 +48,44 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 
 ---
 
+## 免税ガイドを直すとき
+
+`/en/guides/tax-free-perfume-shopping-japan/` は本文9,700字。
+**事実と散文で置き場所が分かれている。**
+
+| 直したいもの | 場所 |
+| --- | --- |
+| 日付・税率・上限・日数 | `data/tax-free-system.json` |
+| 対比表の行 | 同 `comparison` |
+| 空港の手順 | 同 `airportSteps` |
+| FAQ の質問と回答 | 同 `faq` |
+| 出典 | 同 `sources` |
+| 説明の散文 | `build-i18n.mjs` の `renderTaxFreeGuide()` |
+
+**FAQ は本文と FAQPage schema を同じ配列から生成している。**
+`faq` を直せば両方に反映される。片方だけ直そうとしないこと。
+
+`lib/tax-free-data.mjs` は JSON を読んで渡すだけに保つ。
+ここに散文を置くと、JSON と lib のどちらを見ればよいか分からなくなる。
+
+### 税制を書くときの原則
+
+**数値は必ず JSON に置き、`validate-tax-free-guide.mjs` の検査対象にする。**
+税制の誤記は読者に実害が及ぶ。バリデータは税率10%/8%、上限50万円、
+90日、施行日を固定し、本文に出ていることまで検査している。
+
+**税率を書くなら、全額が戻るとは限らないことを必ずセットで書く。**
+新制度では免税店または委託事業者が手数料を差し引くことが想定されており、
+10%と書くだけだと「10%戻る」と誤解される。バリデータが
+"The refund amount may be less than the full tax amount" の存在を検査している。
+
+**香水が標準税率である根拠は、制度の構造から導く。**
+「香水は10%」と単独で断定せず、軽減税率の対象（酒類・外食を除く飲食料品／
+定期購読契約の週2回以上発行の新聞）を示したうえで、そこに含まれないと書く。
+こう書けば出典に書かれている内容だけで構成される。
+
+---
+
 ## デプロイの仕組み
 
 - `.github/workflows/deploy.yml` が `main` への push で発火

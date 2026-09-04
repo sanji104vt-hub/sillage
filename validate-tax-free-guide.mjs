@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
-import { taxFreePeriods, taxFreeSources, taxFreeVerifiedAt } from "./lib/tax-free-data.mjs";
+import { taxFreeAirportSteps, taxFreeComparison, taxFreeConsumablesCap, taxFreeConsumptionTax, taxFreeFaq, taxFreePeriods, taxFreeRefundMayBeLess, taxFreeSources, taxFreeVerifiedAt } from "./lib/tax-free-data.mjs";
 
 const path = "public/en/guides/tax-free-perfume-shopping-japan/index.html";
 const errors = [];
@@ -23,6 +23,39 @@ assert(html.includes('"@type":"Article"') && html.includes('"@type":"BreadcrumbL
 assert(html.includes('data-tax-free-guide="japan"'), "Tax-free analytics attribute missing");
 assert(html.includes(":focus-visible") && html.includes("prefers-reduced-motion:reduce"), "Accessibility styles missing");
 for (const source of taxFreeSources) assert(html.includes(source.url.replaceAll("&", "&amp;")), `Source link missing: ${source.publisher}`);
+
+// 税率・上限・FAQ。税制の誤記は読者に実害が及ぶので、数値はデータ側で固定し
+// 本文に出ていることまで検査する。2026-08-17 に楽天のエンドポイント廃止で
+// 症状から原因が辿れなかったのと同じで、間違いは早い段階で止めるほうが安い。
+assert(taxFreeConsumptionTax.standardRatePercent === 10, "Standard consumption tax rate must be 10");
+assert(taxFreeConsumptionTax.reducedRatePercent === 8, "Reduced consumption tax rate must be 8");
+assert(taxFreeConsumptionTax.fragranceRate === "standard", "Fragrance must be recorded as standard-rate");
+assert(taxFreeConsumptionTax.reducedRateAppliesTo.length === 2, "Reduced-rate scope must list both categories (food/beverages, newspapers)");
+assert(/^https:\/\/www\.nta\.go\.jp\//.test(taxFreeConsumptionTax.source), "Consumption tax rate needs a National Tax Agency source");
+assert(html.includes("a standard rate of 10%") && html.includes("a reduced rate of 8%"), "Both consumption tax rates must be visible");
+assert(html.includes("Fragrance is not in either category, so the standard 10% rate applies"), "Fragrance must be derived from the reduced-rate scope, not asserted alone");
+
+// 税率を書く以上、全額が戻るとは限らないことを必ずセットで出す。
+assert(taxFreeRefundMayBeLess === true, "Handling-fee caveat must stay recorded in data");
+assert(html.includes("The refund amount may be less than the full tax amount"), "Refund-amount caveat missing");
+assert(html.includes("Confirm the refund terms at the point of purchase"), "Refund terms instruction missing");
+
+assert(taxFreeConsumablesCap.preRefund === 500000, "Consumables cap must be 500000 under the current procedure");
+assert(taxFreeConsumablesCap.refund === null, "Consumables cap must be removed under the refund method");
+assert(html.includes("¥500,000"), "Consumables cap is not visible");
+
+assert(taxFreeComparison.length >= 5, "Comparison table needs at least 5 rows");
+assert(html.includes("Scheduled changes to Japan's tax-free procedure"), "Comparison table missing");
+assert(taxFreeAirportSteps.length >= 4, "Airport procedure needs at least 4 steps");
+assert(html.includes("before you check your baggage with the airline"), "Baggage check-in warning missing");
+assert(html.includes("Tax-free is not duty-free"), "Tax-free vs duty-free section missing");
+
+assert(taxFreeFaq.length >= 5, "FAQPage needs at least 5 questions");
+assert(html.includes('"@type":"FAQPage"'), "FAQPage structured data missing");
+for (const entry of taxFreeFaq) assert(html.includes(entry.q.replaceAll("&", "&amp;")), `FAQ question missing from body: ${entry.q}`);
+
+const bodyText = html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+assert(bodyText.length >= 5000, `Tax-free guide is too short for the topic: ${bodyText.length} characters (needs 5000)`);
 
 if (errors.length) {
   console.error("Tax-free guide validation failed:");
