@@ -1,5 +1,5 @@
 import { existsSync, readFileSync } from "node:fs";
-import { taxFreeAirportSteps, taxFreeComparison, taxFreeConsumablesCap, taxFreeConsumptionTax, taxFreeFaq, taxFreePeriods, taxFreeRefundMayBeLess, taxFreeSources, taxFreeVerifiedAt } from "./lib/tax-free-data.mjs";
+import { taxFreeAirportSteps, taxFreeComparison, taxFreeConsumablesCap, taxFreeConsumptionTax, taxFreeExportPledge, taxFreeFaq, taxFreeItemCategories, taxFreePeriods, taxFreeRefundMayBeLess, taxFreeSeparateShipmentFrom, taxFreeSources, taxFreeVerifiedAt } from "./lib/tax-free-data.mjs";
 
 const path = "public/en/guides/tax-free-perfume-shopping-japan/index.html";
 const errors = [];
@@ -44,7 +44,26 @@ assert(taxFreeConsumablesCap.preRefund === 500000, "Consumables cap must be 5000
 assert(taxFreeConsumablesCap.refund === null, "Consumables cap must be removed under the refund method");
 assert(html.includes("¥500,000"), "Consumables cap is not visible");
 
-assert(taxFreeComparison.length >= 5, "Comparison table needs at least 5 rows");
+assert(taxFreeComparison.length >= 6, "Comparison table needs at least 6 rows");
+
+// 現行制度の期限を「存在しない」と断定しない。国税庁の資料には30日の誓約がある。
+// ただし他の公式サイトでは省かれているので、断定を避けた書き方まで検査する。
+assert(taxFreeExportPledge.preRefundDays === 30, "Consumables 30-day export pledge must stay recorded");
+assert(/nta\.go\.jp/.test(taxFreeExportPledge.source), "30-day pledge needs a National Tax Agency source");
+assert(html.includes("NTA guidance refers to a 30-day pledge"), "30-day pledge missing from the comparison table");
+assert(!html.includes("Not specified for this procedure"), "Do not assert that the current procedure has no deadline");
+assert(html.includes("without opening the designated packaging"), "Unopened-packaging condition missing");
+
+// 11月以降は一般物品と消耗品の区分そのものが撤廃される。
+// 「香水は消耗品」だけを書くと、改正後の説明として不正確になる。
+assert(Array.isArray(taxFreeItemCategories.preRefund) && taxFreeItemCategories.preRefund.length === 2, "Current item categories must list general goods and consumables");
+assert(taxFreeItemCategories.refund === null, "Item category distinction must be recorded as removed");
+assert(html.includes("The distinction between general goods and consumables is removed"), "Removal of the category distinction missing from the comparison table");
+assert(html.includes("The category itself disappears"), "Category removal missing from the perfume section");
+
+// 別送の禁止は2025-04-01から施行済み。改正のうちこれだけが先行している。
+assert(taxFreeSeparateShipmentFrom === "2025-04-01", "Separate-shipment exclusion date must stay 2025-04-01");
+assert(html.includes("This change is already in force"), "Separate-shipment rule must be marked as already in force");
 assert(html.includes("Scheduled changes to Japan's tax-free procedure"), "Comparison table missing");
 assert(taxFreeAirportSteps.length >= 4, "Airport procedure needs at least 4 steps");
 assert(html.includes("before you check your baggage with the airline"), "Baggage check-in warning missing");

@@ -67,6 +67,16 @@
         "consumption-tax-rate",
         "reduced-rate-scope"
       ]
+    },
+    {
+      "publisher": "National Tax Agency",
+      "title": "Consumption Tax Exemption Shops: Q&A (Japanese)",
+      "url": "https://www.nta.go.jp/publication/pamph/shohi/menzei/pdf/201806.pdf",
+      "sourceType": "official",
+      "supports": [
+        "consumables-30-day-pledge",
+        "item-categories"
+      ]
     }
   ],
   "consumptionTax": {
@@ -101,13 +111,18 @@
       "refund": "Requirement removed"
     },
     {
+      "item": "Item categories",
+      "preRefund": "Goods are divided into general goods and consumables. Fragrance is a consumable.",
+      "refund": "The distinction between general goods and consumables is removed."
+    },
+    {
       "item": "Purchase cap on consumables",
       "preRefund": "¥500,000",
       "refund": "Removed"
     },
     {
       "item": "Deadline to leave Japan",
-      "preRefund": "Not specified for this procedure",
+      "preRefund": "Consumables must be exported unopened. NTA guidance refers to a 30-day pledge made at the time of purchase.",
       "refund": "Within 90 days of purchase"
     }
   ],
@@ -146,5 +161,19 @@
       "q": "Is tax-free the same as duty-free?",
       "a": "No. Tax-free stores in the city refund Japan's consumption tax. Duty-free shops at the airport relate to customs duty and to taxes on items such as alcohol and tobacco. Sillage covers the former."
     }
-  ]
+  ],
+  "consumablesExportPledge": {
+    "preRefundDays": 30,
+    "note": "NTA guidance refers to a pledge, made at purchase, to export consumables within 30 days without opening the designated packaging. Some other official pages omit this figure.",
+    "source": "https://www.nta.go.jp/publication/pamph/shohi/menzei/pdf/201806.pdf"
+  },
+  "itemCategories": {
+    "preRefund": [
+      "General goods",
+      "Consumables"
+    ],
+    "refund": null,
+    "fragrancePreRefund": "Consumables"
+  },
+  "separateShipmentExcludedFrom": "2025-04-01"
 }
