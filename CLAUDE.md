@@ -97,6 +97,24 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 
 ---
 
+## 試験実行は永続化された成果物を書き換えない
+
+週次監査の `--limit N` は**全件を前提にした成果物を一部の結果で作ってしまう**。
+レポート・`reports/state.json`・GitHub Issue はいずれも150商品全体を説明する
+ものなので、一部しか見ていない結果で残してはいけない。
+
+`scripts/audit/run.mjs` では `TRIAL`（`--limit` 指定時に true）1箇所で
+3経路すべてを止めている。新しい出力を足すときも必ず `TRIAL` で囲むこと。
+
+（2026-09-07 に `--limit 5` の実行がCIの週次レポートを5件分で上書きした。
+`state.json` は守っていたがレポートとIssueは素通りだった）
+
+`fetch-prices.mjs` の `--slug` / `--limit` は事情が違い、**商品単位の更新**なので
+書いてよい（`document` 全体は保持したまま対象商品だけ更新される）。
+`--dry-run` と `--report` は書き込まない。
+
+---
+
 ## デプロイの仕組み
 
 - `.github/workflows/deploy.yml` が `main` への push で発火

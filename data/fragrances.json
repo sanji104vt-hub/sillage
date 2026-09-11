@@ -223,10 +223,10 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥18,380",
+      "price": "¥18,865",
       "releaseYear": 1966,
       "verdict": "1966年の名作。シトラスにハーブと苔の渋みを通した、時代を超える紳士の清涼感。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/cp20241211/3348900627499-1_cp.jpg?_ex=512x512",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/chr026-100_1.jpg?_ex=512x512",
       "concentration": {
         "value": "Eau de Toilette",
         "label": "オードゥ トワレ"
@@ -292,16 +292,16 @@
         },
         "amazon": null,
         "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcosmelink%2Fb3348900627499%2F",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fchr026-100%2F",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 18380,
+      "priceValue": 18865,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-10",
+      "priceFetchedAt": "2026-09-11",
       "priceSource": "rakuten"
     },
     {
@@ -692,10 +692,10 @@
         "date"
       ],
       "priceTier": "high",
-      "price": "¥12,000前後",
+      "price": "¥19,680",
       "releaseYear": 2015,
       "verdict": "清涼なベルガモットから乾いたアンブロキサンへ。万人受けと存在感を両立する、迷ったときの基準点。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/blanc-lapin/cabinet/item/dir/dir3f0000042sku.jpg?_ex=512x512",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/sunbrand-select/cabinet/item15/cdsvaedt100.jpg?_ex=512x512",
       "concentration": {
         "value": "Eau de Toilette",
         "label": "オードゥ トワレ"
@@ -705,6 +705,10 @@
           "volumeMl": 60,
           "referencePriceYen": 14300,
           "priceVerifiedAt": "2026-07-18",
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html"
+        },
+        {
+          "volumeMl": 100,
           "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html"
         }
       ],
@@ -743,7 +747,7 @@
         },
         "amazon": null,
         "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fblanc-lapin%2Fdir3f0000042%2F",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Fcdsvaedt100%2F",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
@@ -764,7 +768,10 @@
       ],
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual-stale"
+      "priceSource": "rakuten",
+      "priceValue": 19680,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-11"
     },
     {
       "slug": "ck-1",
@@ -6848,10 +6855,10 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥14,910",
+      "price": "¥26,250",
       "releaseYear": 2016,
       "verdict": "アイリスの上品なパウダリーさ。控えめで洗練され、清潔感のある大人の余裕を演出する。",
-      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/ezcoshop/cabinet/strawberry/2018_11/img585029angle1.jpg?_ex=512x512",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/diogreco/cabinet/pics01/compass1581058688.jpg?_ex=512x512",
       "purchaseLinks": {
         "official": {
           "url": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
@@ -6860,7 +6867,7 @@
         },
         "amazon": null,
         "rakuten": {
-          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fezcoshop%2F585029%2F",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fprada-lhommeedt-100ml%2F",
           "verifiedAt": "2026-07-18",
           "type": "product"
         }
@@ -6917,9 +6924,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 14910,
+      "priceValue": 26250,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-08-10",
+      "priceFetchedAt": "2026-09-11",
       "priceSource": "rakuten"
     },
     {

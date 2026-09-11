@@ -25,6 +25,13 @@ const args = process.argv.slice(2);
 const NO_ISSUE = args.includes("--no-issue");
 const LIMIT = args.includes("--limit") ? Number(args[args.indexOf("--limit") + 1]) : 0;
 
+// --limit は「全件を前提にした成果物」を一部の結果で作ってしまう試験モード。
+// 監査のレポート・state.json・Issue はいずれも150商品全体を説明する成果物なので、
+// 一部しか見ていない結果で永続化してはいけない。
+// （実際に --limit 5 の実行がCIの週次レポートを5件分で上書きした）
+// 価格取得の --slug は商品単位の更新なので事情が違い、あちらは書いてよい。
+const TRIAL = LIMIT > 0;
+
 const appId = process.env.RAKUTEN_APP_ID;
 const accessKey = process.env.RAKUTEN_ACCESS_KEY;
 const origin = process.env.RAKUTEN_ORIGIN || `${SITE}/`;
@@ -94,16 +101,21 @@ const report = buildReport({
   elapsedSec,
 });
 
-mkdirSync("reports", { recursive: true });
-writeFileSync(`reports/${label}.md`, report, "utf8");
+if (!TRIAL) {
+  mkdirSync("reports", { recursive: true });
+  writeFileSync(`reports/${label}.md`, report, "utf8");
+} else {
+  console.log("--limit 実行のため reports/ にファイルを書き出しません（全件のレポートを保持）");
+  console.log(report);   // 確認できるよう標準出力には出す
+}
 // API障害のときは nextState が null。前週の記録を上書きすると翌週の
 // 遷移判定の土台が失われるので、そのまま残す。
 // --limit は一部しか照合していない。その結果で state を上書きすると、
 // 見ていない商品の記録が消えて翌週の遷移判定が壊れる（実際に5件へ切り詰まった）。
-if (rakuten.nextState && !LIMIT) {
+if (rakuten.nextState && !TRIAL) {
   writeFileSync(STATE, JSON.stringify({ updatedAt: new Date().toISOString(), items: rakuten.nextState }, null, 2) + "\n", "utf8");
 } else {
-  console.log(LIMIT ? "--limit 実行のため reports/state.json は更新しません（全件の記録を保持）" : "楽天APIが応答しないため、reports/state.json は更新しません（前週の記録を保持）");
+  console.log(TRIAL ? "--limit 実行のため reports/state.json は更新しません（全件の記録を保持）" : "楽天APIが応答しないため、reports/state.json は更新しません（前週の記録を保持）");
 }
 
 // データを書き換えていないことを実行後に確認する
@@ -116,7 +128,7 @@ if (dataHashBefore !== dataHashAfter) {
 console.log(`\n${"=".repeat(60)}`);
 console.log(`深刻度「高」: ${high.length}件 / 「中」: ${medium.length}件`);
 console.log(`楽天照合: ${rakuten.checked}件 / 所要 ${Math.round(elapsedSec)}秒`);
-console.log(`レポート: reports/${label}.md`);
+console.log(TRIAL ? "レポート: 書き出していません（--limit 実行）" : `レポート: reports/${label}.md`);
 console.log(`data/fragrances.json は未変更（${dataHashBefore.slice(0, 12)}）`);
 console.log("=".repeat(60));
 
@@ -125,7 +137,7 @@ for (const f of high) {
 }
 
 // Issue は「高」があるときだけ。毎週鳴らすと通知が形骸化する。
-if (high.length && !NO_ISSUE) {
+if (high.length && !NO_ISSUE && !TRIAL) {
   try {
     const result = fileIssue({ label, high, repo: REPO });
     console.log(`\nIssue: ${result.action === "create" ? result.url : `#${result.number} にコメントを追加`}`);
