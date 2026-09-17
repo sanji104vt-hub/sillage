@@ -12708,6 +12708,2075 @@
       "needsCorrectLink": true,
       "priceSource": "manual",
       "priceSizeUnknown": true
+    },
+    {
+      "slug": "j-scent-1",
+      "brand": "J-Scent",
+      "name": "ツタジュウ オードパルファン",
+      "gender": "unisex",
+      "family": "chypre",
+      "top": "ジャパニーズアイビー・ジンジャー・バイオレット",
+      "mid": "ジャスミン・アンバー",
+      "last": "パチョリ・ベチバー・オークモス",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "petit",
+      "verdict": "蔦と緑墨。苔と土の渋みで、和の粋を陰影のある形に落とした一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "和の意匠を香りで身につけたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "オークモスの渋みが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "明るく軽い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/ftk-tsutayaelectrics/cabinet/item11/4560228465051.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥4,950",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fftk-tsutayaelectrics%2Fs4560228465051%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4950,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-2",
+      "brand": "J-Scent",
+      "name": "和肌 オードパルファン",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "ペアー・グリーンノート",
+      "mid": "ミルク・ライスパウダー・ローズ・ジャスミン",
+      "last": "ムスク・サンダルウッド・アンバー",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "verdict": "川端康成『眠れる美女』が主題。ミルクと米の粉が肌の温度を思わせる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "肌に寄り添う穏やかな香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "J-Scentを1本試すなら定番から入りたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかな存在感を求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156491608.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2023111631%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-3",
+      "brand": "J-Scent",
+      "name": "ラムネ オードパルファン",
+      "gender": "unisex",
+      "family": "fruity",
+      "top": "スペアミント・ペパーミント・レモンスカッシュ・ラズベリー・ベルガモット",
+      "mid": "ローズ・ミューゲ・ウォーターリリー・マグノリア・ヒヤシンス",
+      "last": "ムスク・アンバー・シダーウッド・サンダルウッド・バニラ",
+      "seasons": [
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "夏祭りの縁日、ラムネ栓を押し開ける瞬間。ミントと炭酸の記憶。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏に振り切った一本が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さより清涼感が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "通年で使える香りを探している人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576680.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120050%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-4",
+      "brand": "J-Scent",
+      "name": "恋雨 オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "アップル・ピーチ・ベルガモット・マンダリン・レモン・カシス",
+      "mid": "ローズ・ジャスミン・マグノリア・バイオレット・ウォーターリリー",
+      "last": "ムスク・シダーウッド・モッシーノート",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "verdict": "雨をテーマにした一本。果実と白い花が濡れた空気の中で立ち上がる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "雨の日に似合う香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "フルーティとフローラルの中間が好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "はっきりした主張を求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576676.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120048%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-5",
+      "brand": "J-Scent",
+      "name": "花街 オードパルファン",
+      "gender": "women",
+      "family": "floral",
+      "top": "レモン・ベルガモット・イランイラン",
+      "mid": "ローズ・バイオレット・イリス・ジャスミン・ヘリオトロープ",
+      "last": "沈香・バニラ・ムスク・桜の葉・ピーチ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "華やぎと艶。イランイランと沈香が、灯りの残る通りの空気を作る。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "艶のあるフローラルを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夜の場に映る一本が欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場で控えめに使いたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576412.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120029%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-6",
+      "brand": "J-Scent",
+      "name": "紙せっけん オードパルファン",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "アルデハイド",
+      "mid": "ローズ・ゼラニウム・ミューゲ・ラベンダー",
+      "last": "ムスク・ジャスミン",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "mid",
+      "verdict": "清潔感とクリーミーな甘さ。石けんの記憶をそのまま香りにした一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "せっけんの香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "香水らしさを出したくない人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性や存在感で選びたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576461.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120033%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-7",
+      "brand": "J-Scent",
+      "name": "ヒスイ オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "ベルガモット・レモン・マンダリン・カシス",
+      "mid": "チュベローズ・ジャスミン・ミューゲ・イランイラン・オレンジフラワー",
+      "last": "ムスク・アンバー・サンダルウッド・パチョリ・オークモス",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "緑と白の貴石。柑橘から白い花へ、神秘的な色彩を思わせる移ろい。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "透明感のあるフローラルが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "季節を選ばず使いたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘く濃い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576411.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120028%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-8",
+      "brand": "J-Scent",
+      "name": "珈琲 オードパルファン",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "コーヒー・オレンジ・レモン",
+      "mid": "オレンジフラワー・ミューゲ・バイオレット",
+      "last": "バニラ・ムスク・シダーウッド",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "苦いコーヒーと甘いオレンジフラワー。砂糖菓子にならないグルマン。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘すぎないグルマンを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "コーヒーの香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "爽やかさを優先する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576556.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120040%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-9",
+      "brand": "J-Scent",
+      "name": "花見酒 オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "吟醸香・ペアー・アップル・ラズベリー・グリーンノート",
+      "mid": "桜・ローズ・ミューゲ",
+      "last": "ムスク・シダーウッド",
+      "seasons": [
+        "spring"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "verdict": "吟醸香と桜。盃に浮かぶ花びらを、儚さごと閉じ込めた春の一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "春だけの一本が欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "日本酒の香りに惹かれる人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "通年で使いたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576483.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120034%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-10",
+      "brand": "J-Scent",
+      "name": "はちみつとレモン オードパルファン",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "レモン・オレンジ・ピーチ",
+      "mid": "ローズ・ジャスミン",
+      "last": "ムスク・サンダルウッド・ハニーノート",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "とろける蜜と爽やかなレモン。懐かしさのある無邪気な甘さが残る。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "親しみやすい甘さが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "重いグルマンが苦手な人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "大人びた深みを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576421.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120030%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-11",
+      "brand": "J-Scent",
+      "name": "力士 オードパルファン",
+      "gender": "men",
+      "family": "amber",
+      "top": "オレンジ・ユーカリ・アニス",
+      "mid": "シナモン・ヘリオトロープ・バイオレット・オレンジフラワー",
+      "last": "ラブダナム・サンダルウッド・パチョリ・ジャスミン",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "びんつけ油。アニスとラブダナムで、土俵の凛とした空気を写す。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "他にない題材の香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "樹脂の甘さが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "万人受けを重視する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576438.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120031%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-12",
+      "brand": "J-Scent",
+      "name": "光芒 オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "ベルガモット・レモン・グレープフルーツ・オレンジフラワー",
+      "mid": "ローズ・ジャスミン・ミューゲ・ユリ・マグノリア・ガーデニア",
+      "last": "ムスク・アンバー・サンダルウッド・パチョリ・バニラ・オークモス",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "差し込む光の柱。白い花を大きく束ね、草木の生命力を立ち上げる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかなフローラルブーケが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "明るい印象を出したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "控えめにまとめたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576324.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120027%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-13",
+      "brand": "J-Scent",
+      "name": "紫陽花 オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "バイオレット・リーフグリーン・ヒヤシンス",
+      "mid": "ジャスミン・ローズ・イリス・ミューゲ",
+      "last": "シダーウッド・ムスク",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "mid",
+      "verdict": "雨の午後、濡れた紫陽花。グリーンと白い花の、静かで清楚な佇まい。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清楚で静かな香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "梅雨の時期に使う一本が欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "存在感の強さを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576440.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120032%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-14",
+      "brand": "J-Scent",
+      "name": "入道雲 オードパルファン",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "ペパーミント",
+      "mid": "バニラ・シュガー",
+      "last": "ミルク",
+      "seasons": [
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "ペパーミントからバニラとミルクへ。夏空の記憶を甘さで閉じる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ミントと甘さの組み合わせが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夏の思い出を香りにしたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘い香りが苦手な人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156575052.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120002%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-15",
+      "brand": "J-Scent",
+      "name": "沈香 オードパルファン",
+      "gender": "men",
+      "family": "woody",
+      "top": "オレンジピール・シナモン",
+      "mid": "シダーウッド・ベチバー",
+      "last": "サンダルウッド・アンバー・ムスク・パチョリ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "古来珍重された香木。シナモンとベチバーで、優雅さに厚みを足す。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "和の香木に惹かれる人"
+        },
+        {
+          "basis": "editorial",
+          "text": "落ち着いたウッディを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽快さを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576688.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120051%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-16",
+      "brand": "J-Scent",
+      "name": "月雫 オードパルファン",
+      "gender": "women",
+      "family": "floral",
+      "top": "ル レクチエ・ベルガモット・レモン",
+      "mid": "コブシ・ジャスミンサンバック・ダマスクローズ・チュベローズ",
+      "last": "ムスク・アンバー・サンダルウッド・ベチバー・パチョリ",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "マザーオブパールの艶。洋梨と白い花が、しっとりした光沢を描く。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "上品な白い花の香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "艶のある印象を出したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "カジュアルに使いたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576634.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120047%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-17",
+      "brand": "J-Scent",
+      "name": "うす紅 オードパルファン",
+      "gender": "women",
+      "family": "floral",
+      "top": "マンダリン・リーフグリーン・アプリコット・イランイラン",
+      "mid": "ユリ・カーネーション・ガーデニア・オレンジフラワー",
+      "last": "キンモクセイ・ジャスミン・ムスク・サンダルウッド・ピーチ",
+      "seasons": [
+        "autumn",
+        "spring"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "verdict": "頬のぬくもり。キンモクセイと桃が、控えめな血色の温度を思わせる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "キンモクセイの香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "柔らかい印象を出したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "辛口の香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576323.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120026%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-18",
+      "brand": "J-Scent",
+      "name": "ハンカチーフ オードパルファン",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "ロータス・ベルガモット・リーフグリーン",
+      "mid": "ピオニー・ローズ・ジャスミン",
+      "last": "ムスク・サンダルウッド・アンバー・バニラ",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "柔らかな布が纏う面影。ピオニーとロータスの、憧れのような花。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "優しい花の香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "日常に馴染む一本が欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/13126474/imgrc0196386443.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥5,995",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20260911024%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 5995,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-19",
+      "brand": "J-Scent",
+      "name": "ほうじ茶 オードパルファン",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "ココナッツ・ピーナッツ・海苔",
+      "mid": "ジャスミン・ミント・ウインターグリーン",
+      "last": "イリス・シダーウッド・バニラ・クローバー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "mid",
+      "verdict": "焙煎した茶葉。ココナッツと海苔という異例の構成で香ばしさを作る。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "和の食卓の香りに惹かれる人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘くない香ばしさが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576485.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120036%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-20",
+      "brand": "J-Scent",
+      "name": "黒革 オードパルファン",
+      "gender": "men",
+      "family": "chypre",
+      "top": "レザー・ベルガモット",
+      "mid": "タバコ・ジャスミン",
+      "last": "オークモス・アンバー・ムスク・バニラ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "verdict": "黒革に滲む哀愁。レザーとタバコを苔が受け止める、煙たい一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "レザー系の香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "陰のある大人の香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清潔感を優先する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576678.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120049%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-21",
+      "brand": "J-Scent",
+      "name": "薄荷 オードパルファン",
+      "gender": "unisex",
+      "family": "aromatic",
+      "top": "ベルガモット・薄荷・リーフグリーン",
+      "mid": "ジャスミン・ユリ・イリス・ロータス",
+      "last": "ムスク・アンバー・シダーウッド",
+      "seasons": [
+        "summer",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "sports"
+      ],
+      "priceTier": "mid",
+      "verdict": "天衣無縫。薄荷とリーフグリーンが、透き通る軽さのまま抜けていく。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏に使える清涼感を探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "主張しすぎない香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "持続の長さを重視する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576034.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120025%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-22",
+      "brand": "J-Scent",
+      "name": "木屑 オードパルファン",
+      "gender": "men",
+      "family": "woody",
+      "top": "檜・シダーウッド",
+      "mid": "ローズ・ベチバー",
+      "last": "サンダルウッド・グアイアックウッド・ムスク・バニラ",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "verdict": "木屑と廃材。檜とベチバーで、削られた木の断面の匂いをそのまま写す。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "檜の香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "職場で使えるウッディを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さや華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576022.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120024%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "j-scent-23",
+      "brand": "J-Scent",
+      "name": "落雁 オードパルファン",
+      "gender": "unisex",
+      "family": "gourmand",
+      "top": "アプリコット・アップル・ストロベリー",
+      "mid": "メープル・ローズ・ベンゾイン・ピーチ",
+      "last": "バニラ・トンカビーンズ・シダーウッド・イリス",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "verdict": "和菓子の繊細な甘さ。メープルとベンゾインが、干菓子の口どけを作る。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "和菓子のような甘さが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "穏やかなグルマンを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さが苦手な人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/10356246/imgrc0156576484.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+        }
+      ],
+      "price": "¥6,215",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.luz-store.com/view/category/j-scent_edp",
+          "verifiedAt": "2026-09-16",
+          "type": "search"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120035%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "url": "https://www.luz-store.com/view/news/20250228133953",
+          "publisher": "LUZ-Store",
+          "title": "LUZ-Store（J-Scent製造元 公式ストア）香り一覧",
+          "accessedAt": "2026-09-16",
+          "supports": [
+            "notes",
+            "sizes"
+          ],
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 6215,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-17"
     }
   ]
 }

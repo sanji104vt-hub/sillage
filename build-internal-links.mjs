@@ -34,6 +34,7 @@ const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 
 // ブランド名 → slug (brand-*.html のスラッグ部)
 const BRAND_SLUG = {
+  "J-Scent": "j-scent",
   "Jo Malone": "jo-malone", "Acqua di Parma": "acqua-di-parma", "Dior": "dior",
   "Hermès": "hermes", "4711": "4711", "Atelier Cologne": "atelier-cologne",
   "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",
