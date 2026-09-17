@@ -62,6 +62,15 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 3つ目が最も気づきにくい。ビルドは成功し、落ちるのは別のバリデータで、
 しかもメッセージはブランドタイルの話をしていない。
 
+**英語版にも展開するなら、`validate-i18n.mjs` の英語側の基準値がさらに2つある。**
+
+| 直す場所 | 内容 |
+| --- | --- |
+| 英語対訳の許容範囲 | `Expected 48–55 English product overlays` の下限・上限 |
+| 英語ブランド索引 | `English brand index should contain exactly 11 represented brands` |
+
+日本語版の3ファイルを直しても、英語版に展開した時点でこの2つが別途落ちる。
+
 ### 手順
 
 1. `data/fragrances.json` に商品を追加
@@ -96,6 +105,11 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 **香調は商品の事実なので、出典なしに入れない。** 受け取ったデータでも
 出典ページを実際に取得し、記載された香調が本当にそのページにあるかを
 機械照合してから投入する。
+
+英語の対訳を受け取ったときは、**香調の語数が日英で一致するか**も見る。
+`validate-i18n.mjs` が自動で検査する（日本語は「・」、英語は「,」で
+分割して数を比べるだけ）。2026-09-17 の J-Scent 23商品では、各層の
+最後の1語が落ちた箇所が7つあり、目視では気づきにくかった。
 
 ---
 

@@ -27,6 +27,14 @@ for (const [slug, overlay] of Object.entries(englishProducts)) {
   assert(Boolean(overlay.nameEn), `English product name missing: ${slug}`);
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(overlay.englishSlug || ""), `Invalid English slug: ${slug}`);
   assert(["top", "mid", "last"].every((key) => overlay.notes?.[key]), `English notes incomplete: ${slug}`);
+  // 香調の語数が日英で一致するか。転記漏れを構造的に防ぐ。
+  // 2026-09-17 の J-Scent 23商品で、各層の最後の1語が落ちた箇所が7つあった。
+  // 区切りが「・」と「,」で違うだけなので、分割して数を比べれば足りる。
+  for (const key of ["top", "mid", "last"]) {
+    const ja = String(source[key] || "").split(/[・･、]/).map((v) => v.trim()).filter(Boolean).length;
+    const en = String(overlay.notes?.[key] || "").split(/,/).map((v) => v.trim()).filter(Boolean).length;
+    assert(ja === en, `Note count mismatch (${key}): ${slug} — ja ${ja} vs en ${en} / 「${source[key]}」 vs 「${overlay.notes?.[key]}」`);
+  }
   assert(Boolean(overlay.editorial?.summary), `English editorial summary missing: ${slug}`);
   assert(overlay.editorial?.recommendedFor?.length > 0, `English recommended-for guidance missing: ${slug}`);
   assert(overlay.editorial?.notRecommendedFor?.length > 0, `English not-recommended guidance missing: ${slug}`);

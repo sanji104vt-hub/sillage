@@ -525,8 +525,8 @@
       "nameEn": "Ramune Eau de Parfum",
       "englishSlug": "ramune-eau-de-parfum",
       "notes": {
-        "top": "Spearmint, peppermint, lemon squash, raspberry",
-        "mid": "Rose, lily of the valley, water lily, magnolia",
+        "top": "Spearmint, peppermint, lemon squash, raspberry, bergamot",
+        "mid": "Rose, lily of the valley, water lily, magnolia, hyacinth",
         "last": "Musk, amber, cedarwood, sandalwood, vanilla"
       },
       "indexReady": true,
@@ -546,7 +546,7 @@
       "nameEn": "Koiame Eau de Parfum",
       "englishSlug": "koiame-eau-de-parfum",
       "notes": {
-        "top": "Apple, peach, bergamot, mandarin, cassis",
+        "top": "Apple, peach, bergamot, mandarin, lemon, cassis",
         "mid": "Rose, jasmine, magnolia, violet, water lily",
         "last": "Musk, cedarwood, mossy notes"
       },
@@ -610,7 +610,7 @@
       "englishSlug": "hisui-eau-de-parfum",
       "notes": {
         "top": "Bergamot, lemon, mandarin, cassis",
-        "mid": "Tuberose, jasmine, lily of the valley, ylang-ylang",
+        "mid": "Tuberose, jasmine, lily of the valley, ylang-ylang, orange flower",
         "last": "Musk, amber, sandalwood, patchouli, oakmoss"
       },
       "indexReady": true,
@@ -651,7 +651,7 @@
       "nameEn": "Hanamizake Eau de Parfum",
       "englishSlug": "hanamizake-eau-de-parfum",
       "notes": {
-        "top": "Ginjo sake accord, pear, apple, raspberry",
+        "top": "Ginjo sake accord, pear, apple, raspberry, green notes",
         "mid": "Cherry blossom, rose, lily of the valley",
         "last": "Musk, cedarwood"
       },
@@ -715,8 +715,8 @@
       "englishSlug": "shaft-of-light-eau-de-parfum",
       "notes": {
         "top": "Bergamot, lemon, grapefruit, orange flower",
-        "mid": "Rose, jasmine, lily, magnolia, gardenia",
-        "last": "Musk, amber, sandalwood, patchouli, vanilla"
+        "mid": "Rose, jasmine, lily of the valley, lily, magnolia, gardenia",
+        "last": "Musk, amber, sandalwood, patchouli, vanilla, oakmoss"
       },
       "indexReady": true,
       "editorial": {
