@@ -48,6 +48,57 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 
 ---
 
+## ブランドを1つ足すときのチェックリスト
+
+**現在の件数を固定値で持っているファイルが3つある。** 更新を忘れると
+バリデータが落ちるが、エラー文からは原因が分かりにくい。
+
+| ファイル | 直す場所 | 忘れるとどうなるか |
+| --- | --- | --- |
+| `validate-fragrances.mjs` | `ENRICHED_SLUGS` に新商品の slug を追加 | 「対象外商品に補完項目あり」で全件落ちる |
+| `validate-i18n.mjs` | 商品数とブランド数の基準値 | 「Expected current baseline of N」で落ちる |
+| `build-internal-links.mjs` | `BRAND_SLUG` にブランド名→slug を追加 | **トップのブランドタイルが生成されず**、`validate-site-routes` が「Static brand links 41 (expected 42)」で落ちる |
+
+3つ目が最も気づきにくい。ビルドは成功し、落ちるのは別のバリデータで、
+しかもメッセージはブランドタイルの話をしていない。
+
+### 手順
+
+1. `data/fragrances.json` に商品を追加
+2. `data/brands.json` にブランドを追加（`name` / `country` / `founded` / `tier` / `desc`）
+3. 上の表の3ファイルを更新
+4. **意匠画像 `public/img/products/{slug}.png` を全商品分配置**
+   生成スクリプトは無い。無いと `validate-fragrances.mjs` が落ちてデプロイできない
+5. **ブランドページ `public/brand-{slug}.html` を作る**
+   生成スクリプトは無い。`validate-site-routes.mjs` がブランド数と同数を要求する。
+   既存ページを雛形にし、GA4 `G-60BQRQWB5M` とGSC検証タグを必ず含める。
+   ページ下部の `<!-- generated:brand-appendix -->` は `build-internal-links.mjs` が後から入れる
+6. **価格は `fetch-prices.mjs` で引く**
+   `priceSource: "rakuten"` を手で書いても `priceSize` と `priceFetchedAt` が
+   入らず、JSON-LD の `offers` が出ないうえ容量照合に落ちる
+7. 英語版に出すなら `data/i18n/brands.en.json` と
+   `data/i18n/products.en.json` の両方が要る。ブランドだけ足しても
+   商品の対訳が無ければ英語版には現れない（`brandEntries` が
+   `products.length > 0` で絞るため、エラーにはならず黙って消える）
+8. 全パイプラインでビルド → バリデータ16本 → `git status` で削除0件
+
+### 外部から受け取ったデータを入れるとき
+
+構造が既存150商品と違うことがある。2026-09-17 の J-Scent 23商品では
+次の3点を直した。
+
+- `purchaseLinks.official` が文字列 → `{url, verifiedAt, type}` に。
+  商品個別ページでなくカテゴリ一覧なら `type` は `"search"`
+- `sources` が `{label, url}` → `publisher` / `title` / `accessedAt` /
+  `sourceType` / `market` / `supports` が必須
+- 既存に無い項目（`description` など）は落として構成を揃える
+
+**香調は商品の事実なので、出典なしに入れない。** 受け取ったデータでも
+出典ページを実際に取得し、記載された香調が本当にそのページにあるかを
+機械照合してから投入する。
+
+---
+
 ## 免税ガイドを直すとき
 
 `/en/guides/tax-free-perfume-shopping-japan/` は本文9,700字。
