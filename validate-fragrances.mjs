@@ -77,7 +77,10 @@ const EIGHTH_BATCH_SLUGS = new Set([
 ]);
 // 日本ブランド第1弾。香調の出典は LUZ-Store（J-Scent製造元 有限会社ルズの公式ストア）。
 const JSCENT_SLUGS = new Set(["j-scent-1", "j-scent-2", "j-scent-3", "j-scent-4", "j-scent-5", "j-scent-6", "j-scent-7", "j-scent-8", "j-scent-9", "j-scent-10", "j-scent-11", "j-scent-12", "j-scent-13", "j-scent-14", "j-scent-15", "j-scent-16", "j-scent-17", "j-scent-18", "j-scent-19", "j-scent-20", "j-scent-21", "j-scent-22", "j-scent-23"]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS]);
+// 日本ブランド第2弾。KITOWA はオー・エクロジオン4件のみ（オードパルファム3件は
+// 香調の出典が404で代替が無いため見送り）。SHIRO は既存ブランドへの追加。
+const KITOWA_SLUGS = new Set(["kitowa-1", "kitowa-2", "kitowa-3", "kitowa-4", "shiro-2"]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

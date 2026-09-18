@@ -14,8 +14,8 @@ const walkHtml = (dir) => readdirSync(dir).flatMap((name) => {
   return statSync(path).isDirectory() ? walkHtml(path) : path.endsWith(".html") ? [path] : [];
 });
 
-assert(products.length === 173, `Expected current baseline of 173 products; got ${products.length}`);
-assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 42, "Expected current baseline of 42 brands");
+assert(products.length === 178, `Expected current baseline of 178 products; got ${products.length}`);
+assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 43, "Expected current baseline of 43 brands");
 assert(Object.keys(englishProducts).length >= 48 && Object.keys(englishProducts).length <= 55, `Expected 48–55 English product overlays; got ${Object.keys(englishProducts).length}`);
 
 const routes = [];

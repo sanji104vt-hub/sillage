@@ -321,4 +321,10 @@
   <url><loc>https://sillage.asutelu.com/en/fragrances/j-scent/usubeni-eau-de-parfum/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/en/fragrances/j-scent/wood-flake-eau-de-parfum/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/en/fragrances/j-scent/yawahada-eau-de-parfum/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/brand-kitowa.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://sillage.asutelu.com/items/kitowa-1</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/items/kitowa-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/items/kitowa-3</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/items/kitowa-4</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/items/shiro-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>

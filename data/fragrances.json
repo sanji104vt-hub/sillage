@@ -14777,6 +14777,437 @@
       "priceValue": 6215,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-09-17"
+    },
+    {
+      "slug": "kitowa-1",
+      "brand": "KITOWA",
+      "name": "ヒノキ オー・エクロジオン",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "サイプレス・ミント・ホワイトペッパー",
+      "mid": "ヒノキ・ゼラニウム・イリス",
+      "last": "セダーウッド・フランキンセンス・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "high",
+      "verdict": "ヒノキの香りをアルコール不使用で。肌への刺激を抑えた水性の処方。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アルコールに弱い肌の人"
+        },
+        {
+          "basis": "editorial",
+          "text": "ヒノキの香りを長く楽しみたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "強い拡散力を求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0007.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html"
+        }
+      ],
+      "price": "¥29,040",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0007%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "オー・エクロジオン 発売リリース",
+          "url": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "accessedAt": "2026-09-20",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "sizes"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 29040,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-19"
+    },
+    {
+      "slug": "kitowa-2",
+      "brand": "KITOWA",
+      "name": "ヒバ オー・エクロジオン",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "パインニードル・ティーツリー・グレープフルーツ",
+      "mid": "ヒバ・ジャスミン・パチュリ",
+      "last": "アンバー・トンカビーン・ムスク",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "formal"
+      ],
+      "priceTier": "high",
+      "verdict": "青森ヒバをアルコール不使用で。穏やかに、そして長く香り続ける。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アルコールに弱い肌の人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さのある木の香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "即効性のある拡散を求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0008.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html"
+        }
+      ],
+      "price": "¥29,040",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0008%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "オー・エクロジオン 発売リリース",
+          "url": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "accessedAt": "2026-09-20",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "sizes"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 29040,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-19"
+    },
+    {
+      "slug": "kitowa-3",
+      "brand": "KITOWA",
+      "name": "モス・テンプル オー・エクロジオン",
+      "gender": "unisex",
+      "family": "chypre",
+      "top": "マンダリン・サイプレス・ジンジャー",
+      "mid": "オクメウッド・イリス・ミュゲ",
+      "last": "モス・ムスク・サンダルウッド",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "formal",
+        "daily"
+      ],
+      "priceTier": "high",
+      "verdict": "苔寺。雨音が苔に吸い込まれる、閑寂の中の美しさをモスで写した一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "苔や湿った森の香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "静かで潤いのある香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "明るく華やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0010.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple"
+        }
+      ],
+      "price": "¥29,040",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0010%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "オー・エクロジオン モス・テンプル",
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+          "accessedAt": "2026-09-20",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "sizes"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 29040,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-19"
+    },
+    {
+      "slug": "kitowa-4",
+      "brand": "KITOWA",
+      "name": "スギ オー・エクロジオン",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "ベルガモット・セダーリーフ・ジュニパーベリー",
+      "mid": "スギ・ジャスミン・マグノリア",
+      "last": "セダーウッド・サンダルウッド・ドライアンバー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "high",
+      "verdict": "朝の光が差し込む杉の森。森呼吸の歓びをシトラスウッディで表した一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "森の朝の空気が好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "柑橘と木の組み合わせを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0009.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi"
+        }
+      ],
+      "price": "¥29,040",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0009%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "オー・エクロジオン スギ",
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+          "accessedAt": "2026-09-20",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "sizes"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 29040,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-19"
+    },
+    {
+      "slug": "shiro-2",
+      "brand": "SHIRO",
+      "name": "ホワイトティー オードパルファン",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "グレープフルーツ・レモン・グリーン",
+      "mid": "グリーンティー・ジャスミン・ローズ・リリー",
+      "last": "ムスク・ウッディ・アンバー",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "petit",
+      "verdict": "爽やかなシトラス調に深みあるティー。性別も季節も選ばない落ち着き。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "香水らしさを出したくない人"
+        },
+        {
+          "basis": "editorial",
+          "text": "職場や食事の席でも使える香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "存在感の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/homelove/cabinet/main-neko/shiro-001-ra-rk.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 40,
+          "sourceUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906"
+        }
+      ],
+      "price": "¥2,155",
+      "priceSource": "manual",
+      "purchaseLinks": {
+        "official": null,
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhomelove%2F4580514122307%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "SHIRO",
+          "title": "ホワイトティー オードパルファン",
+          "url": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+          "accessedAt": "2026-09-20",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "sizes"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceSizeMismatch": true
     }
   ]
 }
