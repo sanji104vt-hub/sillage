@@ -131,6 +131,19 @@
       "aliases": [
         "キトワ"
       ]
+    },
+    "SHIRO": {
+      "slug": "shiro",
+      "nameEn": "SHIRO",
+      "nameJa": "シロ",
+      "country": "JP",
+      "officialSite": "https://shiro-shiro.jp/",
+      "summaryEn": "A Japanese cosmetics house from Sunagawa in Hokkaido, founded in 2009 as LAUREL and renamed SHIRO in 2019. Its fragrances are built around ingredients sourced from specific parts of Japan — sake lees from Kuriyama, gagome kelp from the waters off Hakodate, yuzu from Kito in Tokushima. Everything from formulation to retail is handled in-house, and the factory remains in Hokkaido.",
+      "aliases": [
+        "シロ",
+        "shiro",
+        "LAUREL"
+      ]
     }
   }
 }

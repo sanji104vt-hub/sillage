@@ -1045,6 +1045,27 @@
         ],
         "cautions": []
       }
+    },
+    "shiro-2": {
+      "nameEn": "White Tea Eau de Parfum",
+      "englishSlug": "white-tea-eau-de-parfum",
+      "notes": {
+        "top": "Grapefruit, lemon, green notes",
+        "mid": "Green tea, jasmine, rose, lily",
+        "last": "Musk, woody notes, amber"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Bright citrus over the depth of green tea. SHIRO states it suits any season and any wearer.",
+        "recommendedFor": [
+          "People who would rather not smell of perfume",
+          "People who need something safe for the office or a meal"
+        ],
+        "notRecommendedFor": [
+          "People who choose fragrance for presence"
+        ],
+        "cautions": []
+      }
     }
   }
 }

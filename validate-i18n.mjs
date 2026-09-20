@@ -39,6 +39,13 @@ for (const [slug, overlay] of Object.entries(englishProducts)) {
   assert(overlay.editorial?.recommendedFor?.length > 0, `English recommended-for guidance missing: ${slug}`);
   assert(overlay.editorial?.notRecommendedFor?.length > 0, `English not-recommended guidance missing: ${slug}`);
   const route = englishRoute(source);
+  // brands.en.json にブランドが無いと englishRoute は null を返し、
+  // 以降の path が "publicnullindex.html" になって別の場所で落ちる。
+  // 原因が分かる形でここで止める。
+  if (!route) {
+    assert(false, `English overlay exists but no English route: ${slug} — add "${source.brand}" to data/i18n/brands.en.json`);
+    continue;
+  }
   routes.push(route);
   const path = `public${route}index.html`;
   assert(existsSync(path), `English page missing: ${path}`);
@@ -85,13 +92,22 @@ for (const [path, canonical, noindex] of [
 }
 
 for (const slug of Object.keys(englishProducts)) {
-  const localized = localizeProduct(bySlug.get(slug));
-  assert(!bySlug.get(slug).needsCorrectLink, `Pilot product has an unresolved purchase link: ${slug}`);
+  const source = bySlug.get(slug);
+  const localized = localizeProduct(source);
+  // localizeProduct は brands.en.json にブランドが無いと null を返す。
+  // 対訳があるのに英語版から黙って消える唯一の経路なので、ここで止める。
+  // 2026-09-20 に shiro-2 が実際にこれで消えた。26行目の検査は反応していたが、
+  // 直後のこの行が null で TypeError になり、集めたエラーが表示されずに落ちていた。
+  if (!localized) {
+    assert(false, `English overlay exists but the product drops out of the English site: ${slug} — add "${source?.brand}" to data/i18n/brands.en.json`);
+    continue;
+  }
+  assert(!source.needsCorrectLink, `Pilot product has an unresolved purchase link: ${slug}`);
   assert(Boolean(localized.japanAvailability.purchaseLinks.official), `Pilot product has no official purchase link: ${slug}`);
 }
 
 const brandData = Object.entries(englishBrands).map(([key, brand]) => ({ key, ...brand, count: products.filter((product) => product.brand === key && englishProducts[product.slug]).length }));
-assert(brandData.filter((brand) => brand.count > 0).length === 12, "English brand index should contain exactly 12 represented brands");
+assert(brandData.filter((brand) => brand.count > 0).length === 13, "English brand index should contain exactly 13 represented brands");
 for (const brand of brandData.filter((entry) => entry.count > 0)) {
   const path = `public/en/brands/${brand.slug}/index.html`;
   assert(existsSync(path) === (brand.count >= 2), `Brand detail threshold mismatch: ${brand.nameEn} (${brand.count})`);
