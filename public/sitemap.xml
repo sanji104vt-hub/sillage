@@ -327,4 +327,9 @@
   <url><loc>https://sillage.asutelu.com/items/kitowa-3</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/kitowa-4</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
   <url><loc>https://sillage.asutelu.com/items/shiro-2</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/en/brands/kitowa/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/en/fragrances/kitowa/hiba-eau-eclosion/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/en/fragrances/kitowa/hinoki-eau-eclosion/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/en/fragrances/kitowa/moss-temple-eau-eclosion/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://sillage.asutelu.com/en/fragrances/kitowa/sugi-eau-eclosion/</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>

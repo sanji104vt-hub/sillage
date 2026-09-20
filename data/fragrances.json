@@ -14829,7 +14829,11 @@
       "price": "¥29,040",
       "priceSource": "rakuten",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-hinoki",
+          "verifiedAt": "2026-09-20",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0007%2F",
@@ -14915,7 +14919,11 @@
       "price": "¥29,040",
       "priceSource": "rakuten",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-hiba",
+          "verifiedAt": "2026-09-20",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0008%2F",
@@ -15002,7 +15010,11 @@
       "price": "¥29,040",
       "priceSource": "rakuten",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+          "verifiedAt": "2026-09-20",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0010%2F",
@@ -15088,7 +15100,11 @@
       "price": "¥29,040",
       "priceSource": "rakuten",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+          "verifiedAt": "2026-09-20",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0009%2F",
@@ -15175,7 +15191,11 @@
       "price": "¥2,155",
       "priceSource": "manual",
       "purchaseLinks": {
-        "official": null,
+        "official": {
+          "url": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+          "verifiedAt": "2026-09-20",
+          "type": "product"
+        },
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fhomelove%2F4580514122307%2F",

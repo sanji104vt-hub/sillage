@@ -961,6 +961,90 @@
         ],
         "cautions": []
       }
+    },
+    "kitowa-1": {
+      "nameEn": "Hinoki Eau Éclosion",
+      "englishSlug": "hinoki-eau-eclosion",
+      "notes": {
+        "top": "Cypress, mint, white pepper",
+        "mid": "Hinoki, geranium, iris",
+        "last": "Cedarwood, frankincense, sandalwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Hinoki cypress from Mie, the timber used to rebuild Ise Grand Shrine every twenty years. Alcohol-free and water-based.",
+        "recommendedFor": [
+          "People who want to try Japanese timber as a fragrance",
+          "People whose skin reacts badly to alcohol"
+        ],
+        "notRecommendedFor": [
+          "People who want a scent that projects strongly"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-2": {
+      "nameEn": "Hiba Eau Éclosion",
+      "englishSlug": "hiba-eau-eclosion",
+      "notes": {
+        "top": "Pine needle, tea tree, grapefruit",
+        "mid": "Hiba, jasmine, patchouli",
+        "last": "Amber, tonka bean, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Hiba from Aomori, a conifer found only in Japan. Tonka bean rounds the weight of the wood with a soft sweetness.",
+        "recommendedFor": [
+          "People who want some sweetness in a woody scent",
+          "People whose skin reacts badly to alcohol"
+        ],
+        "notRecommendedFor": [
+          "People who prefer something light and brisk"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-3": {
+      "nameEn": "Moss Temple Eau Éclosion",
+      "englishSlug": "moss-temple-eau-eclosion",
+      "notes": {
+        "top": "Mandarin, cypress, ginger",
+        "mid": "Okoume wood, iris, lily of the valley",
+        "last": "Moss, musk, sandalwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Kokedera, the moss temple in Kyoto. Rain absorbed into moss, rendered as a quiet and damp green.",
+        "recommendedFor": [
+          "People drawn to moss and damp forest air",
+          "People who want a still, contemplative scent"
+        ],
+        "notRecommendedFor": [
+          "People looking for something bright or showy"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-4": {
+      "nameEn": "Sugi Eau Éclosion",
+      "englishSlug": "sugi-eau-eclosion",
+      "notes": {
+        "top": "Bergamot, cedar leaf, juniper berry",
+        "mid": "Sugi, jasmine, magnolia",
+        "last": "Cedarwood, sandalwood, dry amber"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Sugi, Japanese cedar, at first light. Bergamot carries the relief of breathing in a forest at dawn.",
+        "recommendedFor": [
+          "People who like the air of a forest in the morning",
+          "People looking for citrus paired with wood"
+        ],
+        "notRecommendedFor": [
+          "People who want a sweet fragrance"
+        ],
+        "cautions": []
+      }
     }
   }
 }

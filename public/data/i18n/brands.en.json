@@ -120,6 +120,17 @@
         "J-SCENT",
         "ジェイセント"
       ]
+    },
+    "KITOWA": {
+      "slug": "kitowa",
+      "nameEn": "KITOWA",
+      "nameJa": "キトワ",
+      "country": "JP",
+      "officialSite": "https://www.kitowa.co.jp/",
+      "summaryEn": "Japan's first fragrance maison, launched in 2018 by Nippon Kodo, an incense house with 450 years of history. Every scent is built on natural oils from Japanese timber — hinoki from Mie, hiba from Aomori, kusunoki from Yakushima — layered with fine perfumery materials. The alcohol-free Eau Éclosion line uses a water base, unusual among luxury fragrances.",
+      "aliases": [
+        "キトワ"
+      ]
     }
   }
 }
