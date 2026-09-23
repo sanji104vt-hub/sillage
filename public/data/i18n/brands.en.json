@@ -144,6 +144,18 @@
         "shiro",
         "LAUREL"
       ]
+    },
+    "AUX PARADIS": {
+      "slug": "aux-paradis",
+      "nameEn": "AUX PARADIS",
+      "nameJa": "オゥパラディ",
+      "country": "JP",
+      "officialSite": "https://www.auxparadis.com/",
+      "summaryEn": "A Japanese fragrance brand whose eaux de parfum carry a 20% fragrance concentration. Each product page lists its materials and their origins by top, middle and last note. Most compositions are built lightly around lemon and bergamot.",
+      "aliases": [
+        "オゥパラディ",
+        "オーパラディ"
+      ]
     }
   }
 }

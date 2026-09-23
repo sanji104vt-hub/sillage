@@ -15228,6 +15228,1042 @@
         "youthfulToMature": null
       },
       "priceSizeMismatch": true
+    },
+    {
+      "slug": "aux-paradis-1",
+      "brand": "AUX PARADIS",
+      "name": "フルール オードパルファム",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "レモン・ベルガモット",
+      "mid": "ネロリ・ラベンサラ",
+      "last": "合成アンバー・ムスク",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "petit",
+      "verdict": "レモンから立ち上がるネロリ。白い花を軽やかに束ねた、明るいフローラル。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽やかな花の香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "香水を初めて試す人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "濃厚で甘い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/13126474/imgrc0186777635.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html"
+        }
+      ],
+      "price": "¥4,510",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210116.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024040602%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "フルール 使用香料",
+          "url": "https://www.auxparadis.com/products/210116.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4510,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-2",
+      "brand": "AUX PARADIS",
+      "name": "シトロン オードパルファム",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "レモン・ベルガモット・イエローマンダリン・リツェアクベバ",
+      "mid": "オレンジ",
+      "last": "合成ムスク",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "sports"
+      ],
+      "priceTier": "petit",
+      "verdict": "柑橘を4種重ね、オレンジで受ける。最初から最後まで柑橘で通した一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "柑橘だけで組んだ香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夏の日中に惜しみなく使いたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "持続の長さを重視する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/tokyo-giftgarage/cabinet/12874110/imgrc0148710538.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210105.html"
+        }
+      ],
+      "price": "¥4,498",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210105.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "シトロン 使用香料",
+          "url": "https://www.auxparadis.com/products/210105.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4498,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-3",
+      "brand": "AUX PARADIS",
+      "name": "オム オードパルファム",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "レモン・イエローマンダリン",
+      "mid": "ネロリ・サイプレス",
+      "last": "シダー・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "petit",
+      "verdict": "柑橘からサイプレスへ、シダーとサンダルウッドで着地する端正なウッディ。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場で使える静かなウッディを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さのない香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/tokyo-giftgarage/cabinet/12874110/imgrc0148710527.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210119.html"
+        }
+      ],
+      "price": "¥4,498",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210119.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1444%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "オム 使用香料",
+          "url": "https://www.auxparadis.com/products/210119.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4498,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-4",
+      "brand": "AUX PARADIS",
+      "name": "ピュア オードパルファム",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "ベルガモット・イエローマンダリン・レッドペッパー",
+      "mid": "ナツメグ",
+      "last": "合成ムスク",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "petit",
+      "verdict": "柑橘にレッドペッパーとナツメグ。スパイスを効かせつつ、ムスクで静かに閉じる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "スパイスの効いた軽い香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "肌に近い香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘く濃い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/tokyo-giftgarage/cabinet/12874110/imgrc0148710532.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210121.html"
+        }
+      ],
+      "price": "¥4,498",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210121.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2F1000180212111z%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "ピュア 使用香料",
+          "url": "https://www.auxparadis.com/products/210121.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4498,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-5",
+      "brand": "AUX PARADIS",
+      "name": "フレーズ オードパルファム",
+      "gender": "unisex",
+      "family": "citrus",
+      "top": "レモン・ベルガモット・グレープフルーツ",
+      "mid": "オレンジ",
+      "last": "カブリューバ",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "petit",
+      "verdict": "柑橘3種とオレンジを、カブリューバの穏やかな木の香りで受け止める。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "柑橘に少し木の落ち着きが欲しい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "季節を問わず使える軽い香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "存在感の強さを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/tokyo-giftgarage/cabinet/12874110/imgrc0148710523.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210118.html"
+        }
+      ],
+      "price": "¥4,498",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210118.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz10001802122%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "フレーズ 使用香料",
+          "url": "https://www.auxparadis.com/products/210118.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4498,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-6",
+      "brand": "AUX PARADIS",
+      "name": "サボン オードパルファム",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "レモン・バジル",
+      "mid": "ラバンディングロッソ",
+      "last": "合成ムスク",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "petit",
+      "verdict": "レモンとバジルにラバンジン。石けんを思わせる、清潔感だけを突き詰めた一本。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "せっけんの香りを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "香水らしさを出したくない人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/13126474/imgrc0186777635.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210117.html"
+        }
+      ],
+      "price": "¥4,510",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210117.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024040604%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "サボン 使用香料",
+          "url": "https://www.auxparadis.com/products/210117.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4510,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "aux-paradis-7",
+      "brand": "AUX PARADIS",
+      "name": "ローズ オードパルファム",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "レモン・イエローマンダリン",
+      "mid": "ダマスクローズ",
+      "last": "パチュリ・合成アンバー・ムスク",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "priceTier": "petit",
+      "verdict": "ダマスクローズを主役に、パチュリで陰影をつけた、甘すぎないローズ。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘すぎないローズを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "性別を選ばず使える花の香りが欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽く爽やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/emporio8888/cabinet/09724286/imgrc0125310908.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210104.html"
+        }
+      ],
+      "price": "¥4,580",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.auxparadis.com/products/210104.html",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Femporio8888%2F10002660%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "AUX PARADIS",
+          "title": "ローズ 使用香料",
+          "url": "https://www.auxparadis.com/products/210104.html",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 4580,
+      "priceSize": "15ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "kitowa-5",
+      "brand": "KITOWA",
+      "name": "ヒノキ オードパルファム",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "サイプレス・ミント・ホワイトペッパー",
+      "mid": "ヒノキ・ゼラニウム・イリス",
+      "last": "セダーウッド・フランキンセンス・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "business"
+      ],
+      "priceTier": "high",
+      "verdict": "三重県産ヒノキオイルをオードパルファムで。水性版より拡散が強く、輪郭が明確。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "和の木の香りを本格的に試したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "静かで格式のあるウッディを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さや華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0013.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142480"
+        }
+      ],
+      "price": "¥36,300",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/147142480",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0013%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "EAU DE PARFUM HINOKI",
+          "url": "https://www.kitowa.co.jp/products/147142480",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 36300,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "kitowa-6",
+      "brand": "KITOWA",
+      "name": "ヒバ オードパルファム",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "パインニードル・ティーツリー・グレープフルーツ",
+      "mid": "ヒバ・ジャスミン・パチュリ",
+      "last": "アンバー・トンカビーン・ムスク",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "priceTier": "high",
+      "verdict": "青森県産ヒバをオードパルファムで。トンカビーンの甘さが木の重さを和らげる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "木の香りに甘さを少し足したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "青森ヒバの香りに惹かれる人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽快さを優先する人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0014.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142499"
+        }
+      ],
+      "price": "¥36,300",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/147142499",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0014%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "EAU DE PARFUM HIBA",
+          "url": "https://www.kitowa.co.jp/products/147142499",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 36300,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "kitowa-7",
+      "brand": "KITOWA",
+      "name": "クスノキ オードパルファム",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "ベルガモット・オレンジ・グレープフルーツ",
+      "mid": "クスノキ・ミュゲ・カシミアウッド",
+      "last": "ムスク・バニラ・ファーバルサム",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "high",
+      "verdict": "屋久島産クスノキオイル。南国の樹を思わせる清涼感と柑橘が重なる。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清涼感のあるウッディを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "夏でも使える木の香りが欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "重く濃い香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0015.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142527"
+        }
+      ],
+      "price": "¥36,300",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/147142527",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0015%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "EAU DE PARFUM KUSUNOKI",
+          "url": "https://www.kitowa.co.jp/products/147142527",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 36300,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "kitowa-8",
+      "brand": "KITOWA",
+      "name": "サンダルウッド オー・エクロジオン",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "レモン・ベルガモット・カルダモン",
+      "mid": "キャロットシード・イリス・ゼラニウム",
+      "last": "サンダルウッド・ムスク・バニラ",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "formal"
+      ],
+      "priceTier": "high",
+      "verdict": "サンダルウッドをアルコール不使用の水性で。イリスとキャロットシードが柔らかさを添える。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アルコールに弱い肌の人"
+        },
+        {
+          "basis": "editorial",
+          "text": "柔らかいサンダルウッドを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "強い拡散力を求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0011.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood"
+        }
+      ],
+      "price": "¥36,300",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0011%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "EAU ÉCLOSION SANDALWOOD",
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 36300,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "kitowa-9",
+      "brand": "KITOWA",
+      "name": "ウード オー・エクロジオン",
+      "gender": "unisex",
+      "family": "amber",
+      "top": "ベルガモット・シナモン・マンダリン",
+      "mid": "ローズ・イランイラン・プラム",
+      "last": "ウード・パチュリ・システラブダナム",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "priceTier": "high",
+      "verdict": "ウードをアルコール不使用で。ローズとプラムの甘さを樹脂が深く受け止める。",
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "アルコールに弱い肌でウードを試したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "深みのある甘さが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽く爽やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/retailer/cabinet/10426085/kit-0012.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau Eclosion",
+        "label": "オー・エクロジオン（アルコールフリー・水性）"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-oud"
+        }
+      ],
+      "price": "¥43,560",
+      "priceSource": "rakuten",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-oud",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0012%2F",
+          "verifiedAt": "2026-09-16",
+          "type": "product"
+        }
+      },
+      "sources": [
+        {
+          "publisher": "KITOWA",
+          "title": "EAU ÉCLOSION OUD",
+          "url": "https://www.kitowa.co.jp/products/eau-eclosion-oud",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "verifiedAt": "2026-09-16",
+      "updatedAt": "2026-09-16",
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "priceValue": 43560,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-23"
     }
   ]
 }

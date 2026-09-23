@@ -80,7 +80,10 @@ const JSCENT_SLUGS = new Set(["j-scent-1", "j-scent-2", "j-scent-3", "j-scent-4"
 // 日本ブランド第2弾。KITOWA はオー・エクロジオン4件のみ（オードパルファム3件は
 // 香調の出典が404で代替が無いため見送り）。SHIRO は既存ブランドへの追加。
 const KITOWA_SLUGS = new Set(["kitowa-1", "kitowa-2", "kitowa-3", "kitowa-4", "shiro-2"]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS]);
+// 日本ブランド第3弾。AUX PARADIS 7件（15mLスプレー）と KITOWA 5件。
+// 香調はすべて公式商品ページで確認済み。
+const JP_BATCH3_SLUGS = new Set(["aux-paradis-1", "aux-paradis-2", "aux-paradis-3", "aux-paradis-4", "aux-paradis-5", "aux-paradis-6", "aux-paradis-7", "kitowa-5", "kitowa-6", "kitowa-7", "kitowa-8", "kitowa-9"]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

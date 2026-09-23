@@ -1066,6 +1066,258 @@
         ],
         "cautions": []
       }
+    },
+    "aux-paradis-1": {
+      "nameEn": "Fleur Eau de Parfum",
+      "englishSlug": "fleur-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, bergamot",
+        "mid": "Neroli, ravensara",
+        "last": "Synthetic amber, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Neroli rising from lemon and bergamot. A bright, light floral with a soft amber base.",
+        "recommendedFor": [
+          "People looking for a light floral",
+          "People trying fragrance for the first time"
+        ],
+        "notRecommendedFor": [
+          "People who want something rich and sweet"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-2": {
+      "nameEn": "Citron Eau de Parfum",
+      "englishSlug": "citron-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, bergamot, yellow mandarin, litsea cubeba",
+        "mid": "Orange",
+        "last": "Synthetic musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Four citrus notes layered over orange. Citrus from opening to close, with only a trace of musk beneath.",
+        "recommendedFor": [
+          "People who like fragrances built only from citrus",
+          "People who want something to wear freely in summer"
+        ],
+        "notRecommendedFor": [
+          "People who value long wear above all"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-3": {
+      "nameEn": "Homme Eau de Parfum",
+      "englishSlug": "homme-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, yellow mandarin",
+        "mid": "Neroli, cypress",
+        "last": "Cedar, sandalwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Citrus giving way to cypress, settling on cedar and sandalwood. A composed woody with no sweetness.",
+        "recommendedFor": [
+          "People who want a quiet woody for work",
+          "People who prefer fragrances without sweetness"
+        ],
+        "notRecommendedFor": [
+          "People looking for something showy"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-4": {
+      "nameEn": "Pure Eau de Parfum",
+      "englishSlug": "pure-eau-de-parfum",
+      "notes": {
+        "top": "Bergamot, yellow mandarin, red pepper",
+        "mid": "Nutmeg",
+        "last": "Synthetic musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Citrus lifted by red pepper and nutmeg, then closed quietly with musk. Spiced but kept light.",
+        "recommendedFor": [
+          "People who want a light scent with some spice",
+          "People who like fragrances that sit close to the skin"
+        ],
+        "notRecommendedFor": [
+          "People who want something sweet and dense"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-5": {
+      "nameEn": "Fraise Eau de Parfum",
+      "englishSlug": "fraise-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, bergamot, grapefruit",
+        "mid": "Orange",
+        "last": "Cabreuva"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Three citrus notes and orange, held by the soft wood of cabreuva. Light, with a quiet woody finish.",
+        "recommendedFor": [
+          "People who want citrus with a little woody calm",
+          "People looking for a light scent for any season"
+        ],
+        "notRecommendedFor": [
+          "People who choose fragrance for presence"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-6": {
+      "nameEn": "Savon Eau de Parfum",
+      "englishSlug": "savon-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, basil",
+        "mid": "Lavandin grosso",
+        "last": "Synthetic musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Lemon and basil over lavandin, finished with musk. Built entirely around the idea of clean soap.",
+        "recommendedFor": [
+          "People looking for a soap scent",
+          "People who would rather not smell of perfume"
+        ],
+        "notRecommendedFor": [
+          "People who choose fragrance for individuality"
+        ],
+        "cautions": []
+      }
+    },
+    "aux-paradis-7": {
+      "nameEn": "Rose Eau de Parfum",
+      "englishSlug": "rose-eau-de-parfum",
+      "notes": {
+        "top": "Lemon, yellow mandarin",
+        "mid": "Damask rose",
+        "last": "Patchouli, synthetic amber, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Damask rose at the centre, shaded with patchouli. A rose that avoids being overly sweet.",
+        "recommendedFor": [
+          "People looking for a rose that is not too sweet",
+          "People who want a floral wearable by anyone"
+        ],
+        "notRecommendedFor": [
+          "People who prefer light, fresh scents"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-5": {
+      "nameEn": "Hinoki Eau de Parfum",
+      "englishSlug": "hinoki-eau-de-parfum",
+      "notes": {
+        "top": "Cypress, mint, white pepper",
+        "mid": "Hinoki, geranium, iris",
+        "last": "Cedarwood, frankincense, sandalwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Hinoki cypress oil from Mie in an eau de parfum. Stronger projection and a sharper outline than the water-based version.",
+        "recommendedFor": [
+          "People who want to try Japanese timber as a fragrance",
+          "People looking for a quiet, formal woody"
+        ],
+        "notRecommendedFor": [
+          "People who want sweetness or glamour"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-6": {
+      "nameEn": "Hiba Eau de Parfum",
+      "englishSlug": "hiba-eau-de-parfum",
+      "notes": {
+        "top": "Pine needle, tea tree, grapefruit",
+        "mid": "Hiba, jasmine, patchouli",
+        "last": "Amber, tonka bean, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Hiba from Aomori in an eau de parfum. Tonka bean softens the weight of the wood.",
+        "recommendedFor": [
+          "People who want some sweetness in a woody scent",
+          "People drawn to Aomori hiba"
+        ],
+        "notRecommendedFor": [
+          "People who prefer something light and brisk"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-7": {
+      "nameEn": "Kusunoki Eau de Parfum",
+      "englishSlug": "kusunoki-eau-de-parfum",
+      "notes": {
+        "top": "Bergamot, orange, grapefruit",
+        "mid": "Kusunoki, lily of the valley, cashmere wood",
+        "last": "Musk, vanilla, fir balsam"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Camphor laurel oil from Yakushima. Citrus layered over the cool, resinous air of a southern tree.",
+        "recommendedFor": [
+          "People looking for a cooling woody scent",
+          "People who want a woody they can wear in summer"
+        ],
+        "notRecommendedFor": [
+          "People who want something heavy and dense"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-8": {
+      "nameEn": "Sandalwood Eau Éclosion",
+      "englishSlug": "sandalwood-eau-eclosion",
+      "notes": {
+        "top": "Lemon, bergamot, cardamom",
+        "mid": "Carrot seed, iris, geranium",
+        "last": "Sandalwood, musk, vanilla"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Sandalwood in an alcohol-free, water-based formula. Iris and carrot seed add softness to the wood.",
+        "recommendedFor": [
+          "People whose skin reacts badly to alcohol",
+          "People looking for a soft sandalwood"
+        ],
+        "notRecommendedFor": [
+          "People who want a scent that projects strongly"
+        ],
+        "cautions": []
+      }
+    },
+    "kitowa-9": {
+      "nameEn": "Oud Eau Éclosion",
+      "englishSlug": "oud-eau-eclosion",
+      "notes": {
+        "top": "Bergamot, cinnamon, mandarin",
+        "mid": "Rose, ylang-ylang, plum",
+        "last": "Oud, patchouli, cistus labdanum"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Oud in an alcohol-free, water-based formula. Rose and plum sweetness held deep in resin and labdanum.",
+        "recommendedFor": [
+          "People with sensitive skin who want to try oud",
+          "People who like deep, resinous sweetness"
+        ],
+        "notRecommendedFor": [
+          "People who prefer light, fresh scents"
+        ],
+        "cautions": []
+      }
     }
   }
 }
