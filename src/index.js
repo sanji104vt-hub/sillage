@@ -101,6 +101,18 @@ export default {
       return Response.redirect(u.toString(), 301);
     }
 
+    // englishSlug を変更した英語商品ページの旧URL。
+    // 外部から参照されている可能性があるので 301 で新URLへ送る。
+    const RENAMED_EN_PRODUCTS = {
+      "/en/fragrances/comme-des-garcons/eau-de-parfum-eau-de-parfum/": "/en/fragrances/comme-des-garcons/comme-des-garcons-eau-de-parfum/",
+    };
+    const renamedEn = RENAMED_EN_PRODUCTS[path] || RENAMED_EN_PRODUCTS[path + "/"];
+    if (renamedEn) {
+      const u = new URL(request.url);
+      u.pathname = renamedEn;
+      return Response.redirect(u.toString(), 301);
+    }
+
     const englishPhase2Index = path.match(/^\/en\/(brands(?:\/[a-z0-9-]+)?|guides\/[a-z0-9-]+)\/index\.html$/);
     if (englishPhase2Index) {
       const u = new URL(request.url);

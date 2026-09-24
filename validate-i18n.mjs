@@ -26,6 +26,22 @@ for (const [slug, overlay] of Object.entries(englishProducts)) {
   assert(Boolean(englishBrands[source.brand]), `English brand overlay missing: ${source.brand}`);
   assert(Boolean(overlay.nameEn), `English product name missing: ${slug}`);
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(overlay.englishSlug || ""), `Invalid English slug: ${slug}`);
+  // englishSlug に同じ語の並びが連続していないか。
+  // 商品名と濃度をつなぐ生成規則で「eau-de-parfum-eau-de-parfum」のような
+  // URLができることがあり、2026-09-25 に cdg-7 で実際に起きた。
+  {
+    const parts = String(overlay.englishSlug || "").split("-");
+    let repeated = null;
+    for (let len = Math.floor(parts.length / 2); len >= 1 && !repeated; len--) {
+      for (let i = 0; i + len * 2 <= parts.length; i++) {
+        if (parts.slice(i, i + len).join("-") === parts.slice(i + len, i + len * 2).join("-")) {
+          repeated = parts.slice(i, i + len).join("-");
+          break;
+        }
+      }
+    }
+    assert(!repeated, `Repeated segment in English slug: ${slug} — 「${repeated}」 appears twice in a row in "${overlay.englishSlug}"`);
+  }
   // 日本語版が keyNotes の商品は、英語版も notes.key を持つ。
   const jaKeyNotes = Boolean(source.keyNotes);
   if (jaKeyNotes) {
