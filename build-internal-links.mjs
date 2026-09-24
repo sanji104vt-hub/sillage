@@ -34,6 +34,8 @@ const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 
 // ブランド名 → slug (brand-*.html のスラッグ部)
 const BRAND_SLUG = {
+  "Comme des Garçons": "comme-des-garcons",
+  "Comme des Garçons": "comme-des-garcons",
   "AUX PARADIS": "aux-paradis",
   "KITOWA": "kitowa",
   "J-Scent": "j-scent",

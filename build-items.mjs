@@ -473,7 +473,14 @@ article{max-width:1060px}
     </div>
   </section>` : ""}
 
-  ${notes.length ? `<section class="section" aria-labelledby="timeline-title">
+  ${p.keyNotes ? `<section class="section" aria-labelledby="timeline-title">
+    <p class="section-kicker">Key notes</p>
+    <h2 id="timeline-title">主な香料</h2>
+    <div class="scent-timeline" aria-label="${escape(p.name)}の主な香料">
+      <div class="note-stage" style="--note-color:${FAM[p.family]?.color || "#c9b558"}"><span class="note-dot" aria-hidden="true"></span><p class="note-value">${escape(p.keyNotes)}</p></div>
+    </div>
+    <p class="timeline-note">ブランドはトップ・ミドル・ラストの区分を公表していません。</p>
+  </section>` : notes.length ? `<section class="section" aria-labelledby="timeline-title">
     <p class="section-kicker">Scent over time</p>
     <h2 id="timeline-title">香りの時間変化</h2>
     <div class="scent-timeline" aria-label="${escape(p.name)}の香りの変化">

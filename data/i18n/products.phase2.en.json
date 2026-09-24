@@ -1318,6 +1318,44 @@
         ],
         "cautions": []
       }
+    },
+    "cdg-2": {
+      "nameEn": "Concrete Eau de Parfum",
+      "englishSlug": "concrete-eau-de-parfum",
+      "notes": {
+        "key": "Cumin, cardamom, clove, rose oxide, jasmine sambac, sandalwood, cedarwood, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Precious sandalwood taken apart and rebuilt with rose oxide. The house calls it destruction, construction and creation.",
+        "recommendedFor": [
+          "People curious about another side of sandalwood",
+          "People who enjoy spice-forward scents"
+        ],
+        "notRecommendedFor": [
+          "People looking for easy, familiar comfort"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-3": {
+      "nameEn": "Odeur 71 Eau de Toilette",
+      "englishSlug": "odeur-71-eau-de-toilette",
+      "notes": {
+        "key": "Smell of dust on a hot light bulb, warm photocopier toner, hot metal, a toaster, freshly welded aluminium, the ink in a fountain pen, fresh pencil shavings, wood and moss, bay leaves and bamboo, white pepper, hyacinth, lettuce juice"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "An anti-perfume built from the inorganic smells of daily life: dust on a hot bulb, photocopier toner, pencil shavings.",
+        "recommendedFor": [
+          "People who want to experience fragrance outside its conventions",
+          "People drawn to scent as a concept"
+        ],
+        "notRecommendedFor": [
+          "People choosing fragrance as simple grooming"
+        ],
+        "cautions": []
+      }
     }
   }
 }

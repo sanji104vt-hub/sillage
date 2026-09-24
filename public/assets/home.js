@@ -251,11 +251,14 @@ function card(p){
         <span class="brandname">${p.brand}</span>
         <h3 class="pname">${p.slug?`<a class="product-name-link" href="/items/${p.slug}">${p.name}</a>`:p.name}</h3>
       </div>
-      <div class="info-label">香りの変化</div>
+      <div class="info-label">${p.keyNotes?"主な香料":"香りの変化"}</div>
       <div class="pyramid">
-        <div class="row"><span class="lv lv-top">Top</span><span>${p.top}</span></div>
+        ${p.keyNotes
+          ? `<div class="row"><span class="lv lv-top">Notes</span><span>${p.keyNotes}</span></div>
+        <p class="pyramid-note">ブランドはトップ・ミドル・ラストの区分を公表していません</p>`
+          : `<div class="row"><span class="lv lv-top">Top</span><span>${p.top}</span></div>
         <div class="row"><span class="lv lv-mid">Mid</span><span>${p.mid}</span></div>
-        <div class="row"><span class="lv lv-last">Last</span><span>${p.last}</span></div>
+        <div class="row"><span class="lv lv-last">Last</span><span>${p.last}</span></div>`}
       </div>
       <div class="meta-wrap">
         <div class="info-label">似合う季節・場面</div>
@@ -806,7 +809,7 @@ function openFavorites(){
             <span style="font-family:'Bodoni Moda',serif;font-size:10.5px;color:#9a9a9f;letter-spacing:1.5px">${p.brand}</span>
             <span class="iname">${p.name}</span>
             <span class="iyear">${p.releaseYear||"—"}</span>
-            <span class="inotes">${p.top} ／ ${p.mid} ／ ${p.last}</span>
+            <span class="inotes">${p.keyNotes || `${p.top} ／ ${p.mid} ／ ${p.last}`}</span>
           </div>`}).join("")}</div>`
           :`<p class="empty-fav">まだ気になる香水がありません。<br>商品カードのハートマークから追加できます。</p>`}
       </div>
@@ -942,7 +945,7 @@ function openBrandModal(b){
             <span class="ipill" style="background:${f.color}">${f.ja}</span>
             <span class="iname">${p.name}</span>
             <span class="iyear">${p.releaseYear?p.releaseYear:"—"}</span>
-            <span class="inotes">${p.top} ／ ${p.mid} ／ ${p.last}</span>
+            <span class="inotes">${p.keyNotes || `${p.top} ／ ${p.mid} ／ ${p.last}`}</span>
           </div>`;
         }).join("")}</div>
       </div>

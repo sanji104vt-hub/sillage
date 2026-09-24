@@ -14,8 +14,8 @@ const walkHtml = (dir) => readdirSync(dir).flatMap((name) => {
   return statSync(path).isDirectory() ? walkHtml(path) : path.endsWith(".html") ? [path] : [];
 });
 
-assert(products.length === 190, `Expected current baseline of 190 products; got ${products.length}`);
-assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 44, "Expected current baseline of 44 brands");
+assert(products.length === 192, `Expected current baseline of 192 products; got ${products.length}`);
+assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 45, "Expected current baseline of 45 brands");
 assert(Object.keys(englishProducts).length >= 65 && Object.keys(englishProducts).length <= 75, `Expected 65–75 English product overlays; got ${Object.keys(englishProducts).length}`);
 
 const routes = [];
@@ -26,11 +26,23 @@ for (const [slug, overlay] of Object.entries(englishProducts)) {
   assert(Boolean(englishBrands[source.brand]), `English brand overlay missing: ${source.brand}`);
   assert(Boolean(overlay.nameEn), `English product name missing: ${slug}`);
   assert(/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(overlay.englishSlug || ""), `Invalid English slug: ${slug}`);
-  assert(["top", "mid", "last"].every((key) => overlay.notes?.[key]), `English notes incomplete: ${slug}`);
+  // 日本語版が keyNotes の商品は、英語版も notes.key を持つ。
+  const jaKeyNotes = Boolean(source.keyNotes);
+  if (jaKeyNotes) {
+    assert(Boolean(overlay.notes?.key), `English key notes missing: ${slug}`);
+    assert(!["top", "mid", "last"].some((k) => overlay.notes?.[k]), `English overlay has both key notes and a pyramid: ${slug}`);
+  } else {
+    assert(["top", "mid", "last"].every((key) => overlay.notes?.[key]), `English notes incomplete: ${slug}`);
+  }
   // 香調の語数が日英で一致するか。転記漏れを構造的に防ぐ。
   // 2026-09-17 の J-Scent 23商品で、各層の最後の1語が落ちた箇所が7つあった。
   // 区切りが「・」と「,」で違うだけなので、分割して数を比べれば足りる。
-  for (const key of ["top", "mid", "last"]) {
+  if (jaKeyNotes) {
+    const ja = String(source.keyNotes || "").split(/[・･、]/).map((v) => v.trim()).filter(Boolean).length;
+    const en = String(overlay.notes?.key || "").split(/,/).map((v) => v.trim()).filter(Boolean).length;
+    assert(ja === en, `Key note count mismatch: ${slug} — ja ${ja} vs en ${en} / 「${source.keyNotes}」 vs 「${overlay.notes?.key}」`);
+  }
+  for (const key of jaKeyNotes ? [] : ["top", "mid", "last"]) {
     const ja = String(source[key] || "").split(/[・･、]/).map((v) => v.trim()).filter(Boolean).length;
     const en = String(overlay.notes?.[key] || "").split(/,/).map((v) => v.trim()).filter(Boolean).length;
     assert(ja === en, `Note count mismatch (${key}): ${slug} — ja ${ja} vs en ${en} / 「${source[key]}」 vs 「${overlay.notes?.[key]}」`);
@@ -107,7 +119,7 @@ for (const slug of Object.keys(englishProducts)) {
 }
 
 const brandData = Object.entries(englishBrands).map(([key, brand]) => ({ key, ...brand, count: products.filter((product) => product.brand === key && englishProducts[product.slug]).length }));
-assert(brandData.filter((brand) => brand.count > 0).length === 14, "English brand index should contain exactly 14 represented brands");
+assert(brandData.filter((brand) => brand.count > 0).length === 15, "English brand index should contain exactly 15 represented brands");
 for (const brand of brandData.filter((entry) => entry.count > 0)) {
   const path = `public/en/brands/${brand.slug}/index.html`;
   assert(existsSync(path) === (brand.count >= 2), `Brand detail threshold mismatch: ${brand.nameEn} (${brand.count})`);

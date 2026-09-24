@@ -4,3 +4,6 @@
 
 # Wrangler のローカル開発キャッシュ。公開物ではない。
 .wrangler/
+
+# プレビュー用のローカル設定
+.claude/launch.json

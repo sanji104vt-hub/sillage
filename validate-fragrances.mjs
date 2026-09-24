@@ -83,7 +83,9 @@ const KITOWA_SLUGS = new Set(["kitowa-1", "kitowa-2", "kitowa-3", "kitowa-4", "s
 // 日本ブランド第3弾。AUX PARADIS 7件（15mLスプレー）と KITOWA 5件。
 // 香調はすべて公式商品ページで確認済み。
 const JP_BATCH3_SLUGS = new Set(["aux-paradis-1", "aux-paradis-2", "aux-paradis-3", "aux-paradis-4", "aux-paradis-5", "aux-paradis-6", "aux-paradis-7", "kitowa-5", "kitowa-6", "kitowa-7", "kitowa-8", "kitowa-9"]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS]);
+// コム デ ギャルソン試験導入。ブランドが層を公表しないため keyNotes を持つ。
+const CDG_SLUGS = new Set(["cdg-2", "cdg-3"]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS, ...CDG_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",
@@ -190,7 +192,16 @@ fragrances.forEach((item, index) => {
     if (!Array.isArray(item.cautions) || item.cautions.length > 3) errors.push(`cautionsが配列でないか3件超: ${slug}`);
     const profileKeys = ["lightToRich", "freshToSweet", "subtleToBold", "dailyToDistinctive", "youthfulToMature"];
     if (!item.profile || item.profile.method !== "editorial-v1" || profileKeys.some((key) => item.profile[key] !== null && (!Number.isFinite(item.profile[key]) || item.profile[key] < 0 || item.profile[key] > 100))) errors.push(`profile構造が不正: ${slug}`);
-    const sourceUrls = new Set();
+    // 香調の持ち方は2通り。従来の3層か、ブランドが層を公表しない場合の keyNotes か。
+  // 両方あり・両方なしはデータの誤り。
+  const hasPyramid = Boolean(item.top || item.mid || item.last);
+  const hasKeyNotes = Boolean(item.keyNotes);
+  if (hasPyramid && hasKeyNotes) errors.push(`top/mid/last と keyNotes の両方があります: ${slug}`);
+  if (!hasPyramid && !hasKeyNotes) errors.push(`香調がありません（top/mid/last か keyNotes のどちらかが必要）: ${slug}`);
+  if (hasPyramid && !(item.top && item.mid && item.last)) errors.push(`top/mid/last の一部が欠けています: ${slug}`);
+  // keyNotes はブランドの公表内容そのものなので、公式の出典を必須にする。
+  if (hasKeyNotes && !(item.sources || []).some((entry) => entry.sourceType === "official")) errors.push(`keyNotes に公式の出典がありません: ${slug}`);
+  const sourceUrls = new Set();
     for (const sourceEntry of item.sources || []) {
       if (!validUrl(sourceEntry.url) || !sourceEntry.publisher || !sourceEntry.title || !validDate(sourceEntry.accessedAt)) errors.push(`情報源の必須値が不正: ${slug}`);
       if (!["official", "official-press", "authorized-distributor", "department-store", "authorized-retailer", "major-retailer"].includes(sourceEntry.sourceType)) errors.push(`情報源種別が不正: ${slug}`);
@@ -198,7 +209,7 @@ fragrances.forEach((item, index) => {
       if (sourceUrls.has(sourceEntry.url)) errors.push(`出典URLが重複: ${slug}`);
       sourceUrls.add(sourceEntry.url);
       for (const support of sourceEntry.supports || []) {
-        const exists = support === "notes" ? Boolean(item.top || item.mid || item.last) : hasOwn(item, support) && item[support] != null;
+        const exists = support === "notes" ? Boolean(item.top || item.mid || item.last || item.keyNotes) : hasOwn(item, support) && item[support] != null;
         if (!exists) errors.push(`supportsが存在しない項目を参照: ${slug} ${support}`);
       }
     }
@@ -211,9 +222,12 @@ fragrances.forEach((item, index) => {
   if (!item.img) missing["画像なし"]++;
   if (!item.price) missing["価格なし"]++;
   if (!item.family) missing["香調なし"]++;
-  if (!item.top) missing["トップノートなし"]++;
-  if (!item.mid) missing["ミドルノートなし"]++;
-  if (!item.last) missing["ラストノートなし"]++;
+  // keyNotes を持つ商品は、ブランドが3層を公表していないので欠落ではない。
+  if (!item.keyNotes) {
+    if (!item.top) missing["トップノートなし"]++;
+    if (!item.mid) missing["ミドルノートなし"]++;
+    if (!item.last) missing["ラストノートなし"]++;
+  }
   if (!item.scenes?.length) missing["シーンなし"]++;
   if (!item.seasons?.length) missing["季節なし"]++;
   if (!Object.values(item.purchaseLinks || {}).some(Boolean) && !item.affiliateOfferKey) missing["購入リンクなし"]++;

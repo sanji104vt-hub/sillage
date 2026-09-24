@@ -156,6 +156,20 @@
         "オゥパラディ",
         "オーパラディ"
       ]
+    },
+    "Comme des Garçons": {
+      "slug": "comme-des-garcons",
+      "nameEn": "Comme des Garçons",
+      "nameJa": "コム デ ギャルソン",
+      "country": "JP",
+      "officialSite": "https://comme-des-garcons-parfum.com/",
+      "summaryEn": "The fragrance line of Comme des Garçons, the fashion house Rei Kawakubo leads from Tokyo. Its first perfume appeared in 1994. The house often breaks with convention: some works, such as Odeur 71, are built so that head and base notes cannot be separated at all.",
+      "aliases": [
+        "コム デ ギャルソン",
+        "CDG",
+        "Comme des Garcons",
+        "COMME des GARCONS PARFUMS"
+      ]
     }
   }
 }

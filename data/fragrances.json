@@ -16264,6 +16264,180 @@
       "priceValue": 43560,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-09-23"
+    },
+    {
+      "slug": "cdg-2",
+      "brand": "Comme des Garçons",
+      "name": "コンクリート",
+      "gender": "unisex",
+      "family": "woody",
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "クミン・カルダモン・クローブ・ローズオキサイド・ジャスミンサンバック・サンダルウッド・シダーウッド・ムスク",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "verdict": "貴重なサンダルウッドを壊し、ローズオキサイドで組み直す。破壊と構築の一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370878xx/137087875_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 80,
+          "sourceUrl": "https://comme-des-garcons-parfum.com/products/concrete"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "サンダルウッドの別の顔を知りたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "スパイスの効いた香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "王道の心地よさを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "CONCRETE",
+          "url": "https://comme-des-garcons-parfum.com/products/concrete",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/concrete",
+          "verifiedAt": "2026-09-21",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137087875%2F",
+          "verifiedAt": "2026-09-21"
+        }
+      },
+      "priceTier": "high",
+      "priceSource": "rakuten",
+      "price": "¥30,800",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24",
+      "priceValue": 30800,
+      "priceSize": "80ml",
+      "priceFetchedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-3",
+      "brand": "Comme des Garçons",
+      "name": "オドゥール 71",
+      "gender": "unisex",
+      "family": "chypre",
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "熱い電球のほこり・温かいコピー機のトナー・熱い金属・トースター・溶接したてのアルミニウム・万年筆のインク・削りたての鉛筆・木と苔・ローリエと竹・ホワイトペッパー・ヒヤシンス・レタスの汁",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "verdict": "電球のほこり、コピー機のトナー。日常の無機物の匂いを写し取った反香水。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370997xx/137099756_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://comme-des-garcons-parfum.com/products/odeur-71"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "香水の常識を外れた作品に触れたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "概念としての香りに惹かれる人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "身だしなみとして香りを選びたい人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "ODEUR 71",
+          "url": "https://comme-des-garcons-parfum.com/products/odeur-71",
+          "accessedAt": "2026-09-21",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/odeur-71",
+          "verifiedAt": "2026-09-21",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137099756%2F",
+          "verifiedAt": "2026-09-21"
+        }
+      },
+      "priceTier": "high",
+      "priceSource": "rakuten",
+      "price": "¥28,600",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24",
+      "priceValue": 28600,
+      "priceSize": "200ml",
+      "priceFetchedAt": "2026-09-24"
     }
   ]
 }
