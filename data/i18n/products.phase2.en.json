@@ -1356,6 +1356,255 @@
         ],
         "cautions": []
       }
+    },
+    "cdg-1": {
+      "nameEn": "Wonderwood Eau de Parfum",
+      "englishSlug": "wonderwood-eau-de-parfum",
+      "notes": {
+        "key": "Madagascan pepper, bergamot, Somalian incense, nutmeg, Cristalon, Cashmeran, gaiac wood, cedarwood, caraway seeds, Javanol, sandalwood, vetiver, oud (agarwood)"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Wood layered on wood. Every one of the thirteen listed materials is a wood, a resin or a spice.",
+        "recommendedFor": [
+          "People who want to push a woody scent as far as it goes",
+          "People looking for dense wood without sweetness"
+        ],
+        "notRecommendedFor": [
+          "People who prefer light, fresh scents"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-4": {
+      "nameEn": "CDG 2 Man Eau de Toilette",
+      "englishSlug": "cdg2-man-eau-de-toilette",
+      "notes": {
+        "key": "Incense, white smoke, saffron flowers, nutmeg, kumquat, fresh crinkly mint, vetiver roots, mahogany wood, leather"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "The house describes it as a scent for a worker, a man who loves his work. Incense and white smoke drift over mahogany and leather.",
+        "recommendedFor": [
+          "People looking for an incense-led woody scent",
+          "People who want a mature scent without sweetness"
+        ],
+        "notRecommendedFor": [
+          "People who want a showy presence"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-5": {
+      "nameEn": "CDG 2 Eau de Parfum",
+      "englishSlug": "cdg-2-eau-de-parfum",
+      "notes": {
+        "key": "Ink, incense, amber, labdanum, patchouli, Chinese cedarwood, new aldehydes, cumin, angelica root, vetiver, cade oil, maté absolute, magnolia, folia absolute"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Ink and incense, light and shadow. The house says it plays with complements and contrasts, reflection and opacity.",
+        "recommendedFor": [
+          "People drawn to the smell of ink",
+          "People looking for a shaded, resinous amber"
+        ],
+        "notRecommendedFor": [
+          "People who prioritise a clean impression"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-6": {
+      "nameEn": "Play Red Eau de Toilette",
+      "englishSlug": "play-red-eau-de-toilette",
+      "notes": {
+        "key": "Red mandarin, Safraleine, pink peppercorns, red cherry accord, geranium, cinnamon, osmanthus, myrrh, balsam of Tolu"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Red mandarin and a cherry accord warmed by cinnamon, closing on myrrh and balsam of Tolu.",
+        "recommendedFor": [
+          "People who like sweetness paired with spice",
+          "People who want a distinctive scent for colder months"
+        ],
+        "notRecommendedFor": [
+          "People who prioritise freshness"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-7": {
+      "nameEn": "Comme des Garçons Eau de Parfum Eau de Parfum",
+      "englishSlug": "eau-de-parfum-eau-de-parfum",
+      "notes": {
+        "key": "Labdanum, styrax, cedarwood, cardamom, cinnamon, black pepper, honey, rose, cloves, nutmeg, incense, sandalwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "The original Comme des Garçons perfume, launched in 1994. The house says it works like a medicine and behaves like a drug.",
+        "recommendedFor": [
+          "People who want to know where the house began",
+          "People who like dense spice and resin"
+        ],
+        "notRecommendedFor": [
+          "People who prefer light, fresh scents"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-8": {
+      "nameEn": "Marseille Eau de Toilette",
+      "englishSlug": "marseille-eau-de-toilette",
+      "notes": {
+        "key": "Savon de Marseille accord, neroli accord, Petalia (floral / rosy / lychee), Oranger Crystals, overdose of Ambrofix (amber / woody), Cosmone (musk / powdery)"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Marseille soap and neroli, with clean musk and amber expanded to an overdose.",
+        "recommendedFor": [
+          "People who want a soap scent with more depth",
+          "People looking for a clean-smelling fragrance"
+        ],
+        "notRecommendedFor": [
+          "People who choose fragrance for individuality"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-9": {
+      "nameEn": "Wonderoud Eau de Parfum",
+      "englishSlug": "wonderoud-eau-de-parfum",
+      "notes": {
+        "key": "Texas cedarwood fraction OrPur, oud wood, Indonesian patchouli, Australian sandalwood, Haitian vetiver, guaiac wood, Pashmino"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Built on 100% natural oud from sustainably grown Aquilaria trees in South East Asia, which the house calls the black gold of perfumers.",
+        "recommendedFor": [
+          "People who want to try genuine oud",
+          "People who value woods of stated origin"
+        ],
+        "notRecommendedFor": [
+          "People looking for something light"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-10": {
+      "nameEn": "Play Black Eau de Toilette",
+      "englishSlug": "play-black-eau-de-toilette",
+      "notes": {
+        "key": "Black pepper, pepperwood, red pepper, violet, thyme, black tea, birch tar, incense, tree moss"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Three peppers and birch tar, with incense and tree moss holding the smoke and bitterness.",
+        "recommendedFor": [
+          "People who like smoky scents",
+          "People looking for a dry, peppery fragrance"
+        ],
+        "notRecommendedFor": [
+          "People who want sweetness"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-11": {
+      "nameEn": "Monocle Yoyogi Eau de Toilette",
+      "englishSlug": "monocle-yoyogi-eau-de-toilette",
+      "notes": {
+        "key": "Cypress essence, English grass accord, wormwood essence, Roman chamomile essence, oakmoss extract, thuja essence, patchouli coeur essence, incense resinoid & incense essence, vetiver essence"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Inspired by morning runs around Yoyogi Park in Tokyo. Cypress and freshly mown grass, damp and green.",
+        "recommendedFor": [
+          "People who love the air of a park in the morning",
+          "People looking for a green scent for any season"
+        ],
+        "notRecommendedFor": [
+          "People who want something sweet and glamorous"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-12": {
+      "nameEn": "Artek Standard Eau de Parfum",
+      "englishSlug": "artek-standard-eau-de-parfum",
+      "notes": {
+        "key": "Fennel, ginger, lemon, saffron, cedarwood, musk"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "A collaboration with the Finnish furniture maker Artek. Modernist white wood with notes of rusted metal.",
+        "recommendedFor": [
+          "People interested in design and furniture",
+          "People looking for a light, modern scent"
+        ],
+        "notRecommendedFor": [
+          "People who want sweetness"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-13": {
+      "nameEn": "White Eau de Toilette",
+      "englishSlug": "white-eau-de-toilette",
+      "notes": {
+        "key": "Pomegranate, tagette absolute, pepper, coriander, cardamom, May rose, lily of the valley, cinnamon leaf, clove, nutmeg, cedar wood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "White, bright and light. It keeps some of the spice of the original Eau de Parfum and adds white flowers.",
+        "recommendedFor": [
+          "People who like white florals with spice",
+          "People who want a bright, light impression"
+        ],
+        "notRecommendedFor": [
+          "People who want something rich and dense"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-14": {
+      "nameEn": "Monocle Scent One Hinoki Eau de Toilette",
+      "englishSlug": "monocle-scent-one-hinoki-eau-de-toilette",
+      "notes": {
+        "key": "Cypress, turpentine, camphor, cedar, thyme, pine, Georgywood, incense, tree moss, vetiver"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Inspired by a still spring morning soaking in a hinoki tub at the Tawaraya inn in Kyoto, with moss and trees outside.",
+        "recommendedFor": [
+          "People who love the smell of hinoki",
+          "People who want the stillness of a Japanese interior"
+        ],
+        "notRecommendedFor": [
+          "People who want sweetness or glamour"
+        ],
+        "cautions": []
+      }
+    },
+    "cdg-15": {
+      "nameEn": "CDG DOT Eau de Parfum",
+      "englishSlug": "cdg-dot-eau-de-parfum",
+      "notes": {
+        "top": "Leafy greenness, bitter orange, pepper",
+        "mid": "Osmanthus absolute, olibanum",
+        "last": "White amber woods"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "The osmanthus tree in full: fruity blossoms, green leaves, and white amber woods for the bark.",
+        "recommendedFor": [
+          "People who love osmanthus",
+          "People looking for a fruity floral"
+        ],
+        "notRecommendedFor": [
+          "People who want something dry and sharp"
+        ],
+        "cautions": []
+      }
     }
   }
 }

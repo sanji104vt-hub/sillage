@@ -16438,6 +16438,1165 @@
       "priceValue": 28600,
       "priceSize": "200ml",
       "priceFetchedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-1",
+      "brand": "Comme des Garçons",
+      "name": "ワンダーウッド",
+      "gender": "unisex",
+      "family": "woody",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "verdict": "木の香りだけを重ね続けた一本。13種の香料がすべて木と樹脂とスパイス。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370878xx/137087898_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137087898/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "木の香りを突き詰めたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さのない重厚なウッディを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽く爽やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "WONDERWOOD",
+          "url": "https://comme-des-garcons-parfum.com/products/wonderwood",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/wonderwood",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137087898%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137087898/",
+      "_linkNumber": 13,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "マダガスカルペッパー・ベルガモット・ソマリアインセンス・ナツメグ・クリスタロン・カシュメラン・ガイアックウッド・シダーウッド・キャラウェイシード・ジャバノール・サンダルウッド・ベチバー・ウード（アガーウッド）",
+      "price": "¥24,200",
+      "priceValue": 24200,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-4",
+      "brand": "Comme des Garçons",
+      "name": "CDG 2 MAN",
+      "gender": "men",
+      "family": "woody",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "business",
+        "formal"
+      ],
+      "verdict": "働く人、仕事を愛する人のための一本。インセンスとホワイトスモークが漂う。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370932xx/137093292_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137093292/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "インセンスの効いたウッディを探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "甘さのない大人の香りが欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "華やかな存在感を求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "CDG 2 MAN",
+          "url": "https://comme-des-garcons-parfum.com/products/cdg2-man",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/cdg2-man",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137093292%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137093292/",
+      "_linkNumber": 9,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "インセンス・ホワイトスモーク・サフランフラワー・ナツメグ・キンカン・縮れミント・ベチバールート・マホガニーウッド・レザー",
+      "price": "¥24,200",
+      "priceValue": 24200,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-5",
+      "brand": "Comme des Garçons",
+      "name": "CDG 2",
+      "gender": "unisex",
+      "family": "amber",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal"
+      ],
+      "verdict": "インクとインセンス、光と影。相反するものを組み合わせて遊ぶ一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370878xx/137087899_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137087899/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "インクや墨の香りに惹かれる人"
+        },
+        {
+          "basis": "editorial",
+          "text": "陰影のあるアンバーを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "清潔感を優先する人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "CDG 2",
+          "url": "https://comme-des-garcons-parfum.com/products/cdg-2",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/cdg-2",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137087899%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137087899/",
+      "_linkNumber": 10,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "インク・インセンス・アンバー・ラブダナム・パチュリ・チャイニーズシダーウッド・ニューアルデヒド・クミン・アンジェリカルート・ベチバー・カデオイル・マテアブソリュート・マグノリア・フォリアアブソリュート",
+      "price": "¥18,700",
+      "priceValue": 18700,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-6",
+      "brand": "Comme des Garçons",
+      "name": "プレイ レッド",
+      "gender": "unisex",
+      "family": "amber",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "daily"
+      ],
+      "verdict": "赤いマンダリンとチェリー、シナモン。ミルラとトルーで温かく締める。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370883xx/137088331_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088331/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さとスパイスの組み合わせが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "秋冬に使う個性的な一本が欲しい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "爽やかさを優先する人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "PLAY RED",
+          "url": "https://comme-des-garcons-parfum.com/products/play-red",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/play-red",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137088331%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137088331/",
+      "_linkNumber": 14,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "レッドマンダリン・サフラレイン・ピンクペッパー・レッドチェリーアコード・ゼラニウム・シナモン・オスマンサス・ミルラ・トルーバルサム",
+      "price": "¥20,900",
+      "priceValue": 20900,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-7",
+      "brand": "Comme des Garçons",
+      "name": "コム デ ギャルソン オードパルファム",
+      "gender": "unisex",
+      "family": "amber",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "verdict": "1994年、ブランド最初の香水。薬のように効き、麻薬のように振る舞う香り。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370883xx/137088332_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088332/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ブランドの原点を知りたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "スパイスと樹脂の濃い香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽く爽やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "COMME DES GARÇONS EAU DE PARFUM",
+          "url": "https://comme-des-garcons-parfum.com/products/eau-de-parfum",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/eau-de-parfum",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137088332%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137088332/",
+      "_linkNumber": 15,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "ラブダナム・スチラックス・シダーウッド・カルダモン・シナモン・ブラックペッパー・ハニー・ローズ・クローブ・ナツメグ・インセンス・サンダルウッド",
+      "price": "¥18,700",
+      "priceValue": 18700,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-8",
+      "brand": "Comme des Garçons",
+      "name": "マルセイユ",
+      "gender": "unisex",
+      "family": "musk",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "verdict": "マルセイユ石けんとネロリ。清潔感をムスクとアンバーで大きく膨らませる。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370889xx/137088957_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088957/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "石けんの香りをもっと深く楽しみたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "清潔感のある香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "個性の強さで選びたい人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "MARSEILLE",
+          "url": "https://comme-des-garcons-parfum.com/products/marseille",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/marseille",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137088957%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137088957/",
+      "_linkNumber": 17,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "サボン ド マルセイユ アコード・ネロリアコード・ペタリア（フローラル／ローズ／ライチ）・オランジェクリスタル・アンブロフィックスのオーバードーズ（アンバー／ウッディ）・コスモン（ムスク／パウダリー）",
+      "price": "¥19,800",
+      "priceValue": 19800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-9",
+      "brand": "Comme des Garçons",
+      "name": "ワンダーウード",
+      "gender": "unisex",
+      "family": "woody",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "formal",
+        "date"
+      ],
+      "verdict": "東南アジアで持続的に育てた天然ウード100%。調香師の黒い黄金を主役に。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370890xx/137089073_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137089073/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "本格的なウードを試したい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "産地の明確な木の香りが好きな人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "軽快さを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "WONDEROUD",
+          "url": "https://comme-des-garcons-parfum.com/products/wonderoud",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/wonderoud",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137089073%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137089073/",
+      "_linkNumber": 19,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "テキサスシダーウッド フラクション オーピュール・ウードウッド・インドネシアパチュリ・オーストラリアサンダルウッド・ハイチベチバー・ガイアックウッド・パシュミノ",
+      "priceSource": "manual",
+      "priceSizeUnknown": true,
+      "price": "¥24,200前後",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-10",
+      "brand": "Comme des Garçons",
+      "name": "プレイ ブラック",
+      "gender": "unisex",
+      "family": "woody",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "verdict": "3種の胡椒とバーチタール。煙たさと苦味をインセンスとモスで受け止める。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370901xx/137090167_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090167/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "スモーキーな香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "胡椒の効いた辛口を探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "PLAY BLACK",
+          "url": "https://comme-des-garcons-parfum.com/products/play-black",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/play-black",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137090167%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137090167/",
+      "_linkNumber": 20,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "ブラックペッパー・ペッパーウッド・レッドペッパー・バイオレット・タイム・ブラックティー・バーチタール・インセンス・ツリーモス",
+      "price": "¥20,900",
+      "priceValue": 20900,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-11",
+      "brand": "Comme des Garçons",
+      "name": "モノクル ヨヨギ",
+      "gender": "unisex",
+      "family": "aromatic",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "sports"
+      ],
+      "verdict": "代々木公園の朝のジョギング。サイプレスと刈りたての芝の、湿った緑。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370901xx/137090168_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090168/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "朝の公園の空気が好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "季節を問わず使える緑の香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘く華やかな香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "MONOCLE YOYOGI",
+          "url": "https://comme-des-garcons-parfum.com/products/monocle-yoyogi",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/monocle-yoyogi",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137090168%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137090168/",
+      "_linkNumber": 21,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "サイプレスエッセンス・イングリッシュグラスアコード・ワームウッドエッセンス・ローマンカモミールエッセンス・オークモスエキス・ツヤエッセンス・パチュリクールエッセンス・インセンスレジノイド＆インセンスエッセンス・ベチバーエッセンス",
+      "price": "¥19,800",
+      "priceValue": 19800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-12",
+      "brand": "Comme des Garçons",
+      "name": "アルテック スタンダード",
+      "gender": "unisex",
+      "family": "aromatic",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "verdict": "北欧家具アルテックとの協業。白い木に、錆びた金属を思わせる一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370908xx/137090862_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090862/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "デザインや家具に関心のある人"
+        },
+        {
+          "basis": "editorial",
+          "text": "軽やかでモダンな香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "ARTEK STANDARD",
+          "url": "https://comme-des-garcons-parfum.com/products/artek-standard",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/artek-standard",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137090862%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137090862/",
+      "_linkNumber": 23,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "フェンネル・ジンジャー・レモン・サフラン・シダーウッド・ムスク",
+      "price": "¥19,800",
+      "priceValue": 19800,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-13",
+      "brand": "Comme des Garçons",
+      "name": "ホワイト",
+      "gender": "unisex",
+      "family": "floral",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "verdict": "白く明るく軽く。オードパルファムのスパイスを残し、白い花を加えた一本。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370925xx/137092557_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137092557/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "スパイスの効いた白い花の香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "明るく軽い印象を出したい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "濃厚な香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "WHITE",
+          "url": "https://comme-des-garcons-parfum.com/products/white",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/white",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137092557%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137092557/",
+      "_linkNumber": 24,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "ザクロ・タジェットアブソリュート・ペッパー・コリアンダー・カルダモン・メイローズ・スズラン・シナモンリーフ・クローブ・ナツメグ・シダーウッド",
+      "price": "¥20,900",
+      "priceValue": 20900,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-14",
+      "brand": "Comme des Garçons",
+      "name": "モノクル センツ ワン ヒノキ",
+      "gender": "unisex",
+      "family": "woody",
+      "seasons": [
+        "spring",
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "formal"
+      ],
+      "verdict": "京都の俵屋旅館、春の朝の檜風呂。苔と木々と湯船の檜の記憶を一本に。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370927xx/137092780_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137092780/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "檜の香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "静かな和の空気を感じたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "甘さや華やかさを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "MONOCLE SCENT ONE HINOKI",
+          "url": "https://comme-des-garcons-parfum.com/products/monocle-scent-one-hinoki",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/monocle-scent-one-hinoki",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137092780%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137092780/",
+      "_linkNumber": 26,
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "サイプレス・テレピン・カンファー・シダー・タイム・パイン・ジョージーウッド・インセンス・ツリーモス・ベチバー",
+      "price": "¥19,800",
+      "priceValue": 19800,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "cdg-15",
+      "brand": "Comme des Garçons",
+      "name": "CDG ドット",
+      "gender": "unisex",
+      "family": "floral",
+      "seasons": [
+        "autumn",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "verdict": "金木犀の花と葉と樹皮。果実のような花の香りを、緑と白い木で描く。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coolness/cabinet/coolness/1370930xx/137093018_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファン"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137093018/"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "キンモクセイの香りが好きな人"
+        },
+        {
+          "basis": "editorial",
+          "text": "果実のような花の香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "辛口の香りを求める人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Comme des Garçons Parfums",
+          "title": "CDG DOT",
+          "url": "https://comme-des-garcons-parfum.com/products/cdg-dot",
+          "accessedAt": "2026-09-24",
+          "sourceType": "official",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://comme-des-garcons-parfum.com/products/cdg-dot",
+          "verifiedAt": "2026-09-24",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137093018%2F",
+          "verifiedAt": "2026-09-24"
+        }
+      },
+      "_rakutenSourceUrl": "https://item.rakuten.co.jp/coolness/137093018/",
+      "_linkNumber": 27,
+      "top": "リーフィーグリーン・ビターオレンジ・ペッパー",
+      "mid": "オスマンサスアブソリュート・オリバナム",
+      "last": "ホワイトアンバーウッド",
+      "price": "¥24,200",
+      "priceValue": 24200,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-09-24",
+      "priceSource": "rakuten",
+      "priceTier": "high",
+      "verifiedAt": "2026-09-24",
+      "updatedAt": "2026-09-24"
     }
   ]
 }
