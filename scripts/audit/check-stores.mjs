@@ -117,7 +117,7 @@ export async function checkStores({ stores, log = () => {} }) {
       || !placeId || !decodePlaceId(placeId);
   });
   log(`  D2 place_idの形式 ${stores.length - mapBad.length}/${stores.length} OK（実在確認は Places API が必要なため未実施）`);
-  summary.push({ code: "D2", label: "place_idの形式", total: stores.length, ng: mapBad.length });
+  summary.push({ code: "D2", label: "place_id（形式のみ検査。リンク先の実在は目視確認が必要）", total: stores.length, ng: mapBad.length });
   for (const store of mapBad) {
     add("high", "D2", "Google Maps のリンクが想定の形式ではありません", {
       店舗: `${store.nameJa}（${store.city}）`,
