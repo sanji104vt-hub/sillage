@@ -350,6 +350,34 @@ for (const [label, count] of Object.entries(missing)) console.log(`${label}: ${c
 
 
 
+// build-items.mjs の BRAND_SLUG は「商品ページ → ブランドページ」のリンク先を決める表で、
+// ブランドを足しても自動では増えない。登録が漏れると、そのブランドの商品ページから
+// ブランドページへのリンクが黙って消える（エラーにならないので気づけない）。
+// 2026-09-25 に J-Scent / KITOWA / AUX PARADIS / Comme des Garçons の4ブランドが
+// 未登録のまま本番稼働していたのが見つかったので、構造的に検知する。
+{
+  const buildItems = readFileSync("build-items.mjs", "utf8");
+  const start = buildItems.indexOf("const BRAND_SLUG = {");
+  const end = buildItems.indexOf("\n};", start);
+  if (start < 0 || end < 0) {
+    errors.push("build-items.mjs の BRAND_SLUG を読み取れません");
+  } else {
+    const brandSlug = new Function("return " + buildItems.slice(buildItems.indexOf("{", start), end + 2).replace(/,(\s*})/g, "$1"))();
+    const brandNames = [...new Set(fragrances.map((item) => item.brand))];
+    const unmapped = brandNames.filter((name) => !brandSlug[name]);
+    if (unmapped.length) {
+      errors.push(`build-items.mjs の BRAND_SLUG に未登録のブランドがあります（商品ページからブランドページへのリンクが出ません）: ${unmapped.join(" / ")}`);
+    }
+    // 登録されていても、リンク先のブランドページが無ければ 404 になる。
+    const brokenPages = brandNames
+      .filter((name) => brandSlug[name] && !existsSync(`public/brand-${brandSlug[name]}.html`))
+      .map((name) => `${name} → public/brand-${brandSlug[name]}.html`);
+    if (brokenPages.length) {
+      errors.push(`BRAND_SLUG の参照先ブランドページがありません: ${brokenPages.join(" / ")}`);
+    }
+  }
+}
+
 if (ENRICHED_SLUGS.size !== fragrances.length) errors.push(`補完済み商品数が掲載数と一致しません: ${ENRICHED_SLUGS.size} / ${fragrances.length}`);
 const secondBatchItems = fragrances.filter((_, index) => SECOND_BATCH_SLUGS.has(slugs[index]));
 const brandCounts = new Map();

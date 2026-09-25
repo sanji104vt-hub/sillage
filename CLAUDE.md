@@ -50,7 +50,7 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 
 ## ブランドを1つ足すときのチェックリスト
 
-**現在の件数を固定値で持っているファイルが3つある。** 更新を忘れると
+**現在の件数やブランド名を固定値で持っているファイルが4つある。** 更新を忘れると
 バリデータが落ちるが、エラー文からは原因が分かりにくい。
 
 | ファイル | 直す場所 | 忘れるとどうなるか |
@@ -58,9 +58,16 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 | `validate-fragrances.mjs` | `ENRICHED_SLUGS` に新商品の slug を追加 | 「対象外商品に補完項目あり」で全件落ちる |
 | `validate-i18n.mjs` | 商品数とブランド数の基準値 | 「Expected current baseline of N」で落ちる |
 | `build-internal-links.mjs` | `BRAND_SLUG` にブランド名→slug を追加 | **トップのブランドタイルが生成されず**、`validate-site-routes` が「Static brand links 41 (expected 42)」で落ちる |
+| `build-items.mjs` | `BRAND_SLUG` にブランド名→slug を追加（`build-internal-links.mjs` とは別の表） | **商品ページからブランドページへのリンクが黙って消える**。以前はエラーにならず、CDG など4ブランドが気づかれないまま本番稼働していた（2026-09-25 に検査を追加） |
 
 3つ目が最も気づきにくい。ビルドは成功し、落ちるのは別のバリデータで、
 しかもメッセージはブランドタイルの話をしていない。
+
+4つ目の `BRAND_SLUG` は名前が3つ目と同じだが**別のファイルの別の表**で、
+片方だけ直しても気づけない。2026-09-25 に `validate-fragrances.mjs` へ
+「`fragrances.json` の全ブランドが `build-items.mjs` の `BRAND_SLUG` にあるか」
+「その参照先の `public/brand-*.html` が実在するか」の2つの検査を入れたので、
+今後は漏れるとバリデータが止める。
 
 **英語版にも展開するなら、`validate-i18n.mjs` の英語側の基準値がさらに2つある。**
 
@@ -75,7 +82,7 @@ node build-fragrance-assets.mjs && node build-home-data.mjs && node build-site-c
 
 1. `data/fragrances.json` に商品を追加
 2. `data/brands.json` にブランドを追加（`name` / `country` / `founded` / `tier` / `desc`）
-3. 上の表の3ファイルを更新
+3. 上の表の4ファイルを更新
 4. **意匠画像 `public/img/products/{slug}.png` を全商品分配置**
    生成スクリプトは無い。無いと `validate-fragrances.mjs` が落ちてデプロイできない
 5. **ブランドページ `public/brand-{slug}.html` を作る**

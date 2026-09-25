@@ -63,6 +63,8 @@ const BRAND_SLUG = {
   "Aesop": "aesop", "Davidoff": "davidoff", "Loewe": "loewe",
   "Ralph Lauren": "ralph-lauren",
   "Lacoste": "lacoste",
+  "J-Scent": "j-scent", "KITOWA": "kitowa", "AUX PARADIS": "aux-paradis",
+  "Comme des Garçons": "comme-des-garcons", "ISSEY MIYAKE": "issey-miyake",
 };
 
 const itemsWithSlug = PERFUMES;
