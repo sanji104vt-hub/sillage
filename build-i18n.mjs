@@ -28,6 +28,7 @@ const STORE_TYPE = {
   "multi-brand-specialist": "Niche & multi-brand specialist",
   "department-counter": "Department-store counter",
   "department-store": "Department store & beauty floor",
+  "japanese-fragrance-retailer": "Japanese fragrance retailer",
 };
 
 const esc = (value) => String(value ?? "")

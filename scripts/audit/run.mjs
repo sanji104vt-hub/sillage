@@ -66,7 +66,7 @@ const familyKeys = ["citrus", "aromatic", "floral", "fruity", "gourmand", "amber
 
 const label = weekLabel();
 console.log(`Sillage 週次監査 ${label}`);
-console.log(`対象: 商品${products.length} / ブランド${brands.length} / コラム${columnSlugs.length}\n`);
+console.log(`対象: 商品${products.length} / ブランド${brands.length} / コラム${columnSlugs.length} / 店舗${stores.length}\n`);
 
 // --- C 内部整合性（ネットワーク不要なので先に回す）
 console.log("[C] 内部整合性");
@@ -75,6 +75,10 @@ const internal = checkInternal({ products, brandCount: brands.length, columnSlug
 // --- B 死活
 console.log("\n[B] 画像とページの死活");
 const assets = await checkAssets({ site: SITE, products, brandSlugs, columnSlugs, familyKeys, log: console.log });
+
+// --- D 店舗情報の鮮度（都市記事が載せている公式URLと place_id）
+console.log("[D] 店舗情報の鮮度");
+const storeCheck = await checkStores({ stores, log: console.log });
 
 // --- A 楽天照合（1.2秒間隔・逐次。150件で約3分）
 console.log("\n[A] 楽天リンクの照合（1.2秒間隔・逐次）");
@@ -88,7 +92,7 @@ const rakuten = await checkRakuten({
 const elapsedSec = (Date.now() - started) / 1000;
 
 // --- 集計
-const findings = [...internal.findings, ...assets.findings, ...rakuten.findings];
+const findings = [...internal.findings, ...assets.findings, ...storeCheck.findings, ...rakuten.findings];
 const high = findings.filter((f) => f.level === "high");
 const medium = findings.filter((f) => f.level === "medium");
 
@@ -96,7 +100,7 @@ const report = buildReport({
   label,
   counts: { products: products.length, brands: brands.length, columns: columnSlugs.length },
   findings,
-  assetSummary: assets.summary,
+  assetSummary: [...assets.summary, ...storeCheck.summary],
   checkedRakuten: rakuten.checked,
   elapsedSec,
 });

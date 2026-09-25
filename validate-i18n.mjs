@@ -146,12 +146,19 @@ for (const brand of brandData.filter((entry) => entry.count > 0)) {
   }
 }
 
+const kyotoStores = JSON.parse(readFileSync("data/stores.json", "utf8")).stores.filter((store) => store.city === "kyoto");
 const kyoto = read("public/en/guides/perfume-shopping-kyoto/index.html");
-assert((kyoto.match(/<article class="shop"/g) || []).length === 18, "Kyoto guide must contain exactly 18 shops");
+assert((kyoto.match(/<article class="shop"/g) || []).length === kyotoStores.length, `Kyoto guide must contain exactly ${kyotoStores.length} shops`);
 assert(kyoto.includes('"@type":"Article"') && kyoto.includes('"@type":"ItemList"') && kyoto.includes('"@type":"BreadcrumbList"'), "Kyoto guide structured data incomplete");
 assert(kyoto.includes(`<link rel="alternate" hreflang="ja" href="${SITE}/columns/kyoto-fragrance-shops">`), "Kyoto guide Japanese hreflang missing");
-assert((kyoto.match(/English support<\/dt><dd>Not confirmed/g) || []).length === 18, "Kyoto English support must remain unclaimed");
-assert((kyoto.match(/Tax-free shopping<\/dt><dd>Not confirmed/g) || []).length === 18, "Kyoto tax-free support must remain unclaimed");
+// 英語対応・免税は、公式に書かれていないものを「対応あり」と書かないための検査。
+// 固定値18で持っていたが、公式が明記している店（京都岡崎 蔦屋書店の免税手続き）を
+// 足すと必ず落ちる。data/stores.json で null（＝未確認）のものだけが
+// "Not confirmed" として出ているか、という形に直す。根拠なく言い切る変更は従来どおり落ちる。
+const kyotoEnglishUnknown = kyotoStores.filter((store) => store.englishSupport === null).length;
+const kyotoTaxFreeUnknown = kyotoStores.filter((store) => store.taxFree === null).length;
+assert((kyoto.match(/English support<\/dt><dd>Not confirmed/g) || []).length === kyotoEnglishUnknown, `Kyoto English support claims do not match data: expected ${kyotoEnglishUnknown} unconfirmed`);
+assert((kyoto.match(/Tax-free shopping<\/dt><dd>Not confirmed/g) || []).length === kyotoTaxFreeUnknown, `Kyoto tax-free claims do not match data: expected ${kyotoTaxFreeUnknown} unconfirmed`);
 assert(kyoto.includes('data-column-slug="perfume-shopping-kyoto"'), "Kyoto guide analytics attributes missing");
 const kyotoJa = read("public/columns/kyoto-fragrance-shops.html");
 assert(kyotoJa.includes(`<link rel="alternate" hreflang="en" href="${SITE}/en/guides/perfume-shopping-kyoto/">`), "Japanese Kyoto guide reciprocal hreflang missing");

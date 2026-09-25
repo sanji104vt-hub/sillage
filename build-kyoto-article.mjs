@@ -21,6 +21,7 @@ const SHOPS = JSON.parse(readFileSync(join("data", "stores.json"), "utf8")).stor
     category: store.storeType === "custom-fragrance" ? "custom"
       : store.storeType === "brand-boutique" || store.storeType === "multi-brand-specialist" ? "niche"
       : store.storeType === "department-store" || store.storeType === "department-counter" ? "department"
+      : store.storeType === "japanese-fragrance-retailer" ? "japanese-scent"
       : "kyoto-original",
     address: store.addressJa,
     latitude: store.coordinates?.lat ?? null,
@@ -50,6 +51,14 @@ const shop = (slug) => SHOPS.find((s) => s.slug === slug);
 function esc(text) {
   return String(text).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#39;" }[c]));
 }
+// 本文に内部リンクを埋めるための記法。esc() で全体をエスケープしてから
+// {{link:/path|表示テキスト}} だけを <a> に戻す。こうすると本文側に生HTMLを
+// 書かずに済み、リンク先を1箇所で見渡せる。掲載の無いブランドは書かない。
+const LINK_PATTERN = /\{\{link:([^|}]+)\|([^}]+)\}\}/g;
+function linkify(escapedHtml) {
+  return String(escapedHtml).replace(LINK_PATTERN, (_, href, text) => `<a href="${href}">${text}</a>`);
+}
+
 function shopInfo(s) {
   if (!s) return "";
   const closed = s.closed ? `<span class="shop-info-item">定休：${esc(s.closed)}</span>` : "";
@@ -71,6 +80,47 @@ function multiShopInfo(slugs) {
       <span class="shop-info-item"><a href="${esc(s.google_maps_url)}" target="_blank" rel="noopener">Google Mapsで開く ↗</a></span>
     </div>`;
   }).join("");
+}
+
+// 店舗の節に添える「取り扱いブランドから探す」ブロック。
+//
+// 百貨店やセレクトショップの在庫は日々動くので、ここで約束できるのは
+// 「そのブランドを扱っている」という店舗単位の事実までで、個別の香水が
+// 棚にあるかは別問題。見出しと注記をブランド単位の表現に寄せているのは
+// そのため。根拠URLは BRAND_SOURCES に集約し、記事末尾の情報源にも出す。
+const FRAGRANCES = JSON.parse(readFileSync(join("data", "fragrances.json"), "utf8")).fragrances;
+const productName = (slug) => FRAGRANCES.find((p) => p.slug === slug)?.name || null;
+
+// ブランド表示名 → ブランドページ。掲載の無いブランドはここに書かない。
+const BRAND_PAGE = {
+  "Creed": "/brand-creed.html",
+  "Maison Margiela": "/brand-maison-margiela.html",
+  "Jo Malone": "/brand-jo-malone.html",
+  "Chanel": "/brand-chanel.html",
+  "Dior": "/brand-dior.html",
+  "Guerlain": "/brand-guerlain.html",
+  "SHIRO": "/brand-shiro.html",
+  "Le Labo": "/brand-le-labo.html",
+  "J-Scent": "/brand-j-scent.html",
+  "AUX PARADIS": "/brand-aux-paradis.html",
+};
+
+function brandPicks(groups) {
+  const rows = groups.map((group) => {
+    const page = BRAND_PAGE[group.brand];
+    if (!page) throw new Error(`ブランドページが未登録: ${group.brand}`);
+    const items = group.slugs.map((slug) => {
+      const name = productName(slug);
+      if (!name) throw new Error(`掲載の無い商品を参照しています: ${slug}`);
+      return `<a href="/items/${slug}">${esc(name)}</a>`;
+    }).join(`<span class="sep" aria-hidden="true">／</span>`);
+    return `<li><a class="pick-brand" href="${page}">${esc(group.brand)}</a><span class="pick-items">${items}</span></li>`;
+  }).join("");
+  return `<div class="brand-picks">
+      <p class="brand-picks-label">取り扱いブランドから探す</p>
+      <ul class="brand-picks-list">${rows}</ul>
+      <p class="brand-picks-note">公式のブランド一覧で取り扱いを確認したブランドです。個々の香水の在庫までは確認していないため、目当ての1本がある場合は来店前に店舗へお問い合わせください。</p>
+    </div>`;
 }
 
 // 京都中心部を映す地図。output=embed は Google Maps の伝統的な埋め込み方式で、
@@ -160,6 +210,20 @@ const EXTRA_CSS = `.shop-info{display:flex;flex-wrap:wrap;gap:8px 14px;margin:12
 .shop-map-list li .shop-addr{color:#8c8c92;font-size:12px}
 .shop-map-list li a{margin-left:auto;color:#c9b558;text-decoration:none;font:12px "Bodoni Moda",serif;letter-spacing:.5px;white-space:nowrap}
 .shop-map-list li a:hover{text-decoration:underline}
+.brand-picks{margin:14px 0 22px;padding:16px 18px;background:#131418;border:1px solid #2d2e33;border-radius:8px}
+.brand-picks-label{font:500 13px "Shippori Mincho",serif;color:#c9b558;letter-spacing:.4px;margin:0 0 10px}
+.brand-picks-list{list-style:none;padding:0;margin:0;display:grid;gap:9px}
+.brand-picks-list li{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:baseline;font-size:13px;line-height:1.7}
+.brand-picks-list .pick-brand{font:500 13.5px "Shippori Mincho",serif;color:#f0ede8;text-decoration:none;border-bottom:1px solid rgba(240,237,232,.35);min-width:104px}
+.brand-picks-list .pick-brand:hover{border-bottom-color:#f0ede8}
+.brand-picks-list .pick-items{color:#a8a6a1;font-size:12.5px}
+.brand-picks-list .pick-items a{color:#c9b558;text-decoration:none;border-bottom:1px solid rgba(201,181,88,.35)}
+.brand-picks-list .pick-items a:hover{border-bottom-color:#c9b558}
+.brand-picks-list .sep{color:#55565c;margin:0 2px}
+.brand-picks-note{font-size:11.5px;color:#8c8c92;line-height:1.75;margin:12px 0 0}
+.shop-block p a{color:#c9b558;text-decoration:none;border-bottom:1px solid rgba(201,181,88,.4)}
+.shop-block p a:hover{border-bottom-color:#c9b558}
+@media(max-width:680px){.brand-picks-list li{flex-direction:column;gap:3px}.brand-picks-list .pick-brand{min-width:0}}
 .editorial-eeat{margin:36px 0 8px;padding:18px 20px;background:#141519;border:1px solid #2d2e33;border-radius:8px;font-size:12.5px;line-height:1.9;color:#a8a6a1}
 @media(min-width:720px){.shop-map-list{grid-template-columns:1fr 1fr}}
 @media(max-width:680px){.kyoto-map-embed iframe{height:360px}.shop-map-list li{flex-direction:column;gap:4px}.shop-map-list li a{margin-left:0}}`;
@@ -231,7 +295,10 @@ const SECTIONS = [
           "新風館（Shinpuhkan）内の店舗。烏丸御池駅直結の複合施設の1階にあり、建物自体がアクセスしやすい立地です。Google Mapsのレビューでは評価4.0、口コミ148件。口コミによれば、「もう1店舗（町屋の方）より、こちらの方が確実に商品が買えて、待ち時間も短い」との声が多く見られます。",
         ],
         info: shopInfo(shop("le-labo-shinpuhkan")),
-        readerNote: "Le Laboの香りを純粋に試して買いたい方は、まずこちらへ。Santal 33のような看板商品を、混雑せずに試せる可能性が高いという口コミの傾向があります。",
+        picks: [
+          { brand: "Le Labo", slugs: ["le-labo-1", "le-labo-2"] },
+        ],
+        readerNote: "Le Laboの香りを純粋に試して買いたい方は、まずこちらへ。{{link:/items/le-labo-1|Santal 33}}のような看板商品を、混雑せずに試せる可能性が高いという口コミの傾向があります。",
       },
       {
         heading: "LE LABO KYOTO MACHIYA（中京区）",
@@ -240,6 +307,9 @@ const SECTIONS = [
           "口コミを見ると、店舗体験は賛否分かれる印象です。空間と抹茶ラテを目的にする人には最高の場所という声がある一方、「じっくり嗅ぎ比べたい」目的の場合は混雑と接客スタイルにフラストレーションを感じたという声もあります。",
         ],
         info: shopInfo(shop("le-labo-machiya")),
+        picks: [
+          { brand: "Le Labo", slugs: ["le-labo-1", "le-labo-2"] },
+        ],
         readerNote: "「体験の場としての香水店」を求める人、香水+空間+和カフェを一続きの時間として楽しみたい方に。純粋に嗅ぎ比べたい方は Shinpuhkan 店を優先すると迷いが少なそうです。",
       },
       {
@@ -262,9 +332,13 @@ const SECTIONS = [
       {
         heading: "JR京都伊勢丹「ラトリエ デ パルファム」（下京区）",
         paragraphs: [
-          "JR京都駅直結の伊勢丹2階、化粧品・フレグランスフロア内。公式ブランド一覧では、ラトリエ デ パルファムのほか、クリード、フレデリック マル、メゾン マルジェラなどの取り扱いを確認できます。",
+          "JR京都駅直結の伊勢丹2階、化粧品・フレグランスフロア内。公式ブランド一覧では、ラトリエ デ パルファムのほか、{{link:/brand-creed.html|クリード}}、フレデリック マル、{{link:/brand-maison-margiela.html|メゾン マルジェラ}}などの取り扱いを確認できます。",
         ],
         info: multiShopInfo(["jr-kyoto-isetan-latelier", "jr-kyoto-isetan"]),
+        picks: [
+          { brand: "Creed", slugs: ["creed-1", "creed-2"] },
+          { brand: "Maison Margiela", slugs: ["maison-margiela-1", "maison-margiela-2"] },
+        ],
         readerNote: "新幹線の待ち時間で立ち寄れる立地。京都駅到着から30分で香水を試せる場所として、旅行者に特に便利です。",
       },
       {
@@ -274,7 +348,13 @@ const SECTIONS = [
           "Jo Malone Londonではブランドのコロンを、ラトリエ デ パルファムでは複数ブランドを横断して試せます。同じ館内でブランド直営カウンターとセレクト売場を見比べられる点が特徴です。",
         ],
         info: multiShopInfo(["kyoto-takashimaya", "jomalone-takashimaya", "latelier-des-parfums-takashimaya"]),
-        readerNote: "Sillageに掲載中のJo Malone、Chanel、Dior、Guerlainなど、主要ブランドをまとめて確認したい方に。",
+        picks: [
+          { brand: "Jo Malone", slugs: ["jo-malone-1", "jo-malone-2"] },
+          { brand: "Chanel", slugs: ["chanel-4", "chanel-1"] },
+          { brand: "Dior", slugs: ["dior-2", "dior-1", "dior-4"] },
+          { brand: "Guerlain", slugs: ["guerlain-2", "guerlain-3"] },
+        ],
+        readerNote: "Sillageに掲載中の{{link:/brand-jo-malone.html|Jo Malone}}、{{link:/brand-chanel.html|Chanel}}、{{link:/brand-dior.html|Dior}}、{{link:/brand-guerlain.html|Guerlain}}など、主要ブランドをまとめて確認したい方に。",
       },
       {
         heading: "大丸京都店（下京区）",
@@ -282,13 +362,49 @@ const SECTIONS = [
           "四条烏丸に位置する、京都で最も歴史の長い百貨店の1つです。1階〜地下1階にコスメ・香水フロアがあり、幅広いブランドが並びます。特に近年、SHIRO 大丸京都店（1階）がフレグランス初心者に選ばれる場となっているようです。",
         ],
         info: multiShopInfo(["daimaru-kyoto", "shiro-daimaru"]),
-        readerNote: "「サボン」「ホワイトリリー」などのSHIROの香りを、Sillage掲載のニッチ香水と嗅ぎ比べたい方に。日本人の“清潔感”のコード解読の起点として面白い場所です。",
+        picks: [
+          { brand: "SHIRO", slugs: ["shiro-1", "shiro-2"] },
+        ],
+        readerNote: "「サボン」「ホワイトリリー」などの{{link:/brand-shiro.html|SHIRO}}の香りを、Sillage掲載のニッチ香水と嗅ぎ比べたい方に。日本人の“清潔感”のコード解読の起点として面白い場所です。",
+      },
+    ],
+  },
+  {
+    id: "japanese-scent",
+    title: "4. 日本の香りを持ち帰る：和のフレグランスを扱う店",
+    intro: [
+      "京都で買うなら、京都でしか買えないものを——とは限りません。日本のフレグランスブランドは百貨店の化粧品売場よりも、書店やファッションビルの一角に置かれていることが多く、探し方が変わります。ここでは、Sillageに掲載しているブランドを公式の取扱店一覧で確認できた2店を挙げます。",
+    ],
+    shops: [
+      {
+        heading: "京都岡崎 蔦屋書店（左京区）",
+        paragraphs: [
+          "平安神宮の南、ロームシアター京都のパークプラザ1階にある書店。スターバックスと一体になった大きな空間の中に、雑貨とコスメの棚があり、その一角で和の香水を扱っています。{{link:/brand-j-scent.html|J-Scent}}の公式取扱店一覧に、京都市内の店舗として掲載されています。",
+          "書店の営業は10:00〜20:00、施設自体は8:00〜22:00で年中無休です。免税手続きに対応しているため、旅行者が最後に立ち寄る先としても選びやすい場所です。",
+        ],
+        info: shopInfo(shop("kyoto-okazaki-tsutaya")),
+        picks: [
+          { brand: "J-Scent", slugs: ["j-scent-19", "j-scent-15", "j-scent-23", "j-scent-9"] },
+        ],
+        readerNote: "「ほうじ茶」「沈香」のような、日本語の名前がそのまま香りの説明になっている香水に触れたい方に。棚の前で名前を読んでから嗅ぐ、という順序が成立する数少ないブランドです。美術館と図書館に挟まれた立地なので、観光の合間に寄りやすいのも利点です。",
+      },
+      {
+        heading: "AUX PARADIS 京都ポルタ店（下京区）",
+        paragraphs: [
+          "京都駅直結の地下街・京都ポルタの西エリアにある直営店。JR京都伊勢丹とは同じ京都駅の中で、改札を出てすぐの距離にあります。{{link:/brand-aux-paradis.html|AUX PARADIS}}の公式直営店一覧に掲載されており、公式が「はかり売り」対応店としている店舗です。",
+          "営業時間は京都ポルタ西エリアの物販に準じて11:00〜20:30。新幹線や在来線の待ち時間に組み込みやすい立地です。",
+        ],
+        info: shopInfo(shop("aux-paradis-kyoto-porta")),
+        picks: [
+          { brand: "AUX PARADIS", slugs: ["aux-paradis-6", "aux-paradis-1", "aux-paradis-2"] },
+        ],
+        readerNote: "香りの系統をまだ絞れていない方に。15mLという小さい容量が基本なので、系統違いを2本試すという買い方ができます。伊勢丹で海外ブランドを一通り嗅いだあと、同じ京都駅の中で日本のブランドと比べられる位置関係です。",
       },
     ],
   },
   {
     id: "kyoto-original",
-    title: "4. 京都らしさが交わる場所：錦市場とその周辺",
+    title: "5. 京都らしさが交わる場所：錦市場とその周辺",
     intro: [
       "京都という土地固有の文脈のなかで、香水と近い体験ができる場所も紹介しておきたい。",
     ],
@@ -306,7 +422,7 @@ const SECTIONS = [
   },
   {
     id: "reflection",
-    title: "5. 京都で香水を選ぶということ",
+    title: "6. 京都で香水を選ぶということ",
     intro: [
       `京都は東京や大阪と比べて街が凝縮されています。四条烏丸から徒歩30分の範囲に、この記事で紹介した${SHOP_COUNT}店のうち半数以上が集中しています。つまり、「1日で複数の香水店を歩いて回れる街」として、実は日本で最も高密度な香水都市の1つと言えます。`,
       "そしてもう1つ、京都に固有の魅力があります。それは、香水店が「他の店との間」に存在している、ということ。",
@@ -321,13 +437,14 @@ const SECTIONS = [
 
 function sectionHtml(section, index) {
   const num = String(index).padStart(2, "0");
-  const intro = section.intro.map((p) => `<p>${esc(p)}</p>`).join("");
+  const intro = section.intro.map((p) => `<p>${linkify(esc(p))}</p>`).join("");
   const shops = section.shops.map((s) => `
     <div class="shop-block">
       <h3>${esc(s.heading)}</h3>
-      ${s.paragraphs.map((p) => `<p>${esc(p)}</p>`).join("")}
+      ${s.paragraphs.map((p) => `<p>${linkify(esc(p))}</p>`).join("")}
       ${s.info}
-      <p class="reader-note"><span class="reader-note-label">Sillageの読者に</span>${esc(s.readerNote)}</p>
+      ${s.picks ? brandPicks(s.picks) : ""}
+      <p class="reader-note"><span class="reader-note-label">Sillageの読者に</span>${linkify(esc(s.readerNote))}</p>
     </div>`).join("");
   return `<section class="text-section" id="section-${section.id}">
       <p class="section-no">${num}</p>
@@ -341,8 +458,8 @@ const tocLinks = SECTIONS.map((s, i) => `<a href="#section-${s.id}"><span>${Stri
 tocLinks;
 const tocFull = [
   ...SECTIONS.map((s, i) => `<a href="#section-${s.id}"><span>${String(i + 1).padStart(2, "0")}</span>${esc(s.title)}</a>`),
-  `<a href="#section-map"><span>06</span>地図で見る京都の香水店</a>`,
-  `<a href="#section-faq"><span>07</span>よくある質問</a>`,
+  `<a href="#section-map"><span>07</span>地図で見る京都の香水店</a>`,
+  `<a href="#section-faq"><span>08</span>よくある質問</a>`,
 ].join("");
 
 const bodySections = SECTIONS.map((s, i) => sectionHtml(s, i + 1)).join("");
@@ -371,8 +488,8 @@ const summaryTable = `<div class="table-scroll"><table class="kyoto-summary">
     </table></div>`;
 
 const mapSection = `<section class="text-section" id="section-map">
-      <p class="section-no">06</p>
-      <h2>6. 地図で見る京都の香水店</h2>
+      <p class="section-no">07</p>
+      <h2>7. 地図で見る京都の香水店</h2>
       <p>すべての店舗を1つの地図で確認できるよう、Google Maps に集約しました。京都駅から出発する場合、まず京都伊勢丹で1店、その後 徒歩or地下鉄で四条河原町エリアへ移動し、高島屋・大丸・寺町通・錦市場・河原町・新風館・下京区新明町 を反時計回りに歩けば、半日〜1日で7〜10店を巡る現実的な行程になります。</p>
       <div class="kyoto-map-embed">
         <iframe src="${MAP_EMBED}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="京都の香水店マップ（Google Maps）"></iframe>
@@ -383,7 +500,7 @@ const mapSection = `<section class="text-section" id="section-map">
     </section>`;
 
 const faqSection = `<section class="faq" id="section-faq">
-      <h2>7. よくある質問</h2>
+      <h2>8. よくある質問</h2>
       ${FAQ.map((x) => `<details><summary>${esc(x.q)}</summary><p>${esc(x.a)}</p></details>`).join("")}
     </section>`;
 
@@ -403,8 +520,16 @@ const sourcesSection = `<section class="sources">
       <h2>情報源と編集区分</h2>
       <ul class="source-list">
         <li><a href="https://maps.google.com/" target="_blank" rel="noopener noreferrer">Google Maps｜掲載${SHOP_COUNT}店舗の住所・営業時間・レビュー・評価<span>各店舗の公開情報（2026年8月確認）</span></a></li>
+        <li><a href="https://www.mistore.jp/store/kyoto/shops/beauty/cosmetics2f.html" target="_blank" rel="noopener noreferrer">ジェイアール京都伊勢丹｜化粧品 / フレグランス 取り扱いブランド<span>クリード、メゾン マルジェラ フレグランスほか（2026年9月確認）</span></a></li>
+        <li><a href="https://www.takashimaya.co.jp/kyoto/departmentstore/cosmenews/p01.html" target="_blank" rel="noopener noreferrer">京都タカシマヤ｜化粧品売場 取り扱いブランド<span>ジョー マローン ロンドン、シャネル、ディオール、ゲランほか（2026年9月確認）</span></a></li>
+        <li><a href="https://shiro-shiro.jp/ec/ext/shop/daimaru-kyoto/index.html" target="_blank" rel="noopener noreferrer">SHIRO｜大丸京都店<span>ブランド公式の店舗ページ（2026年9月確認）</span></a></li>
+        <li><a href="https://www.lelabofragrances.jp/pages/locations" target="_blank" rel="noopener noreferrer">LE LABO｜日本国内の店舗一覧<span>新風館店・町家店（2026年9月確認）</span></a></li>
+        <li><a href="https://luzfragrance.com/j-scent/storelist" target="_blank" rel="noopener noreferrer">J-Scent｜STORE LIST（取扱店舗）<span>京都岡崎 蔦屋書店の掲載を確認（2026年9月確認）</span></a></li>
+        <li><a href="https://www.auxparadis.com/shoplist.html" target="_blank" rel="noopener noreferrer">AUX PARADIS｜ショップリスト<span>京都ポルタ店の所在地・電話番号（2026年9月確認）</span></a></li>
+        <li><a href="https://store.tsite.jp/kyoto-okazaki/access/" target="_blank" rel="noopener noreferrer">京都岡崎 蔦屋書店｜アクセス・営業時間<span>住所・営業時間・免税対応（2026年9月確認）</span></a></li>
+        <li><a href="https://www.porta.co.jp/access" target="_blank" rel="noopener noreferrer">京都ポルタ｜営業時間・アクセス<span>西エリア物販の営業時間（2026年9月確認）</span></a></li>
       </ul>
-      <p class="editorial-note">店舗名・住所・営業時間・座標は上記情報源で確認しています。カテゴリ分類（カスタム調合・セレクトショップ・百貨店・京都独自）と、各店舗への「Sillageの読者に」コメントはSillage編集部の判断です。編集部は現地取材を行っておらず、Google Mapsのレビュー傾向と公開情報から特徴を整理しています。</p>
+      <p class="editorial-note">店舗名・住所・営業時間・座標は上記情報源で確認しています。「取り扱いブランドから探す」は各店の公式ブランド一覧で<strong>ブランド単位の取り扱い</strong>を確認したもので、個々の香水の在庫を保証するものではありません。カテゴリ分類（カスタム調合・セレクトショップ・百貨店・京都独自）と、各店舗への「Sillageの読者に」コメントはSillage編集部の判断です。編集部は現地取材を行っておらず、Google Mapsのレビュー傾向と公開情報から特徴を整理しています。</p>
     </section>`;
 
 const eeatNote = `<div class="editorial-eeat">

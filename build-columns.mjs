@@ -7,6 +7,10 @@ import { PROBLEM_ARTICLES } from "./data/problem-columns.mjs";
 import { BEGINNER_ARTICLES } from "./data/beginner-columns.mjs";
 import { MOTE_ARTICLES } from "./data/mote-columns.mjs";
 import { COLUMN_CATEGORIES, applyColumnTaxonomy } from "./data/column-taxonomy.mjs";
+// 京都ガイドのカードに出す店舗数。記事本体は data/stores.json から数えているので、
+// ここで固定値を持つと必ずずれる（実際 17 と 18 でずれていた）。同じ出どころから数える。
+import { storesForCity } from "./lib/store-data.mjs";
+const KYOTO_SHOP_COUNT = storesForCity("kyoto").length;
 
 const SITE_COPY = loadSiteCopy();
 const SITE = SITE_COPY.siteUrl.replace(/\/$/, "");
@@ -289,8 +293,8 @@ const EXTERNAL_COLUMNS = [
     external: true,
     category: "scene",
     tag: "KYOTO GUIDE",
-    title: "京都で香水を選ぶ：デパートから町屋、寺町までの17店ガイド",
-    description: "京都の香水店17店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。",
+    title: `京都で香水を選ぶ：デパートから町屋、寺町までの${KYOTO_SHOP_COUNT}店ガイド`,
+    description: `京都の香水店${KYOTO_SHOP_COUNT}店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。`,
   },
 ];
 const allArticles = [

@@ -21,7 +21,7 @@ const escapeHtml = (value) => String(value)
   .replaceAll('"', "&quot;")
   .replaceAll("'", "&#39;");
 
-assert(shops.length === 18, `Expected 18 Kyoto shop records; got ${shops.length}`);
+assert(shops.length === 20, `Expected 20 Kyoto shop records; got ${shops.length}`);
 assert(new Set(shops.map((shop) => shop.slug)).size === shops.length, "Kyoto shop slugs are not unique");
 assert(new Set(shops.map((shop) => shop.name)).size === shops.length, "Kyoto shop names are not unique");
 for (const shop of shops) {

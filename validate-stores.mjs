@@ -14,10 +14,10 @@ const duplicates = (values) => {
   return [...counts].filter(([, count]) => count > 1);
 };
 
-assert(storesForCity("kyoto").length === 18, `Kyoto store count changed: ${storesForCity("kyoto").length}`);
+assert(storesForCity("kyoto").length === 20, `Kyoto store count changed: ${storesForCity("kyoto").length}`);
 assert(storesForCity("tokyo").length === 27, `Tokyo store count changed: ${storesForCity("tokyo").length}`);
 assert(storesForCity("osaka").length >= 15 && storesForCity("osaka").length <= 25, `Osaka store count must be 15–25: ${storesForCity("osaka").length}`);
-assert(stores.length === 65, `Total store count changed: ${stores.length}`);
+assert(stores.length === 67, `Total store count changed: ${stores.length}`);
 assert(new Set(stores.map((store) => store.id)).size === stores.length, "Store IDs are not unique");
 assert(duplicates(stores.map((store) => store.googleMapsUrl)).length === 0, "Google Maps URLs are duplicated");
 const normalize = (value) => String(value || "").normalize("NFKC").toLowerCase().replace(/[^a-z0-9ぁ-んァ-ン一-龠]/g, "");
@@ -48,7 +48,7 @@ for (const store of stores) {
 }
 
 for (const [path, city, count] of [
-  ["public/en/guides/perfume-shopping-kyoto/index.html", "kyoto", 18],
+  ["public/en/guides/perfume-shopping-kyoto/index.html", "kyoto", storesForCity("kyoto").length],
   ["public/en/guides/perfume-shopping-tokyo/index.html", "tokyo", storesForCity("tokyo").length],
   ["public/en/guides/perfume-shopping-osaka/index.html", "osaka", storesForCity("osaka").length],
 ]) {
