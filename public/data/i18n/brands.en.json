@@ -170,6 +170,20 @@
         "Comme des Garcons",
         "COMME des GARCONS PARFUMS"
       ]
+    },
+    "ISSEY MIYAKE": {
+      "slug": "issey-miyake",
+      "nameEn": "Issey Miyake",
+      "nameJa": "イッセイ ミヤケ",
+      "country": "JP",
+      "officialSite": "https://www.isseymiyakeparfums.com/",
+      "summaryEn": "The fragrance arm of Issey Miyake’s fashion house, started in 1992. L’Eau d’Issey, released the following year, made water itself the subject of a perfume and did much to establish the aquatic family. The line is now produced by Beauté Prestige International under Puig, built around flankers of L’Eau d’Issey Pour Homme.",
+      "aliases": [
+        "イッセイ ミヤケ",
+        "イッセイミヤケ",
+        "Issey Miyake",
+        "ISSEY MIYAKE PARFUMS"
+      ]
     }
   }
 }

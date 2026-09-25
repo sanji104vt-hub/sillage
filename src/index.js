@@ -23,10 +23,7 @@ export default {
       "/items/givenchy-1.html",
       "/items/ysl-5",
       "/items/ysl-5.html",
-      "/items/issey-miyake-1",
-      "/items/issey-miyake-1.html",
       "/brand-givenchy.html",
-      "/brand-issey-miyake.html",
       // 2026-07-30 追加：楽天・公式どちらの購入リンクも無い4商品と、それに伴い掲載0本になった3ブランド。
       "/items/atelier-cologne-1",
       "/items/atelier-cologne-1.html",

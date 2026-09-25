@@ -14,9 +14,9 @@ const walkHtml = (dir) => readdirSync(dir).flatMap((name) => {
   return statSync(path).isDirectory() ? walkHtml(path) : path.endsWith(".html") ? [path] : [];
 });
 
-assert(products.length === 205, `Expected current baseline of 205 products; got ${products.length}`);
-assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 45, "Expected current baseline of 45 brands");
-assert(Object.keys(englishProducts).length >= 80 && Object.keys(englishProducts).length <= 92, `Expected 80–92 English product overlays; got ${Object.keys(englishProducts).length}`);
+assert(products.length === 210, `Expected current baseline of 210 products; got ${products.length}`);
+assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 46, "Expected current baseline of 46 brands");
+assert(Object.keys(englishProducts).length >= 85 && Object.keys(englishProducts).length <= 97, `Expected 85–97 English product overlays; got ${Object.keys(englishProducts).length}`);
 
 const routes = [];
 for (const [slug, overlay] of Object.entries(englishProducts)) {
@@ -135,7 +135,7 @@ for (const slug of Object.keys(englishProducts)) {
 }
 
 const brandData = Object.entries(englishBrands).map(([key, brand]) => ({ key, ...brand, count: products.filter((product) => product.brand === key && englishProducts[product.slug]).length }));
-assert(brandData.filter((brand) => brand.count > 0).length === 15, "English brand index should contain exactly 15 represented brands");
+assert(brandData.filter((brand) => brand.count > 0).length === 16, "English brand index should contain exactly 16 represented brands");
 for (const brand of brandData.filter((entry) => entry.count > 0)) {
   const path = `public/en/brands/${brand.slug}/index.html`;
   assert(existsSync(path) === (brand.count >= 2), `Brand detail threshold mismatch: ${brand.nameEn} (${brand.count})`);

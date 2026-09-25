@@ -17597,6 +17597,456 @@
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
       "updatedAt": "2026-09-24"
+    },
+    {
+      "slug": "issey-miyake-1",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オードトワレ",
+      "gender": "men",
+      "family": "aquatic",
+      "top": "ユズ・レモン・タンジェリン",
+      "mid": "ウォーターリリー・スパイシーノート",
+      "last": "サンダルウッド・ベチバー・アンバーアコード",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business",
+        "formal"
+      ],
+      "releaseYear": 1994,
+      "verdict": "柚子の切れ味から白檀の落ち着きへ。30年以上定番であり続ける理由は、この起伏の穏やかさにある。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12837358/imgrc0184136347.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-toilette-EIH_EDT.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "職場でも浮かない定番を一本持っておきたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "柑橘系から一歩落ち着いた香りに移りたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "誰も知らない香りを身につけたい人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Issey Miyake Parfums",
+          "title": "L'Eau d'Issey Pour Homme Eau de Toilette",
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-toilette-EIH_EDT.html",
+          "accessedAt": "2026-09-25",
+          "sourceType": "official",
+          "market": "GLOBAL"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-toilette-EIH_EDT.html",
+          "verifiedAt": "2026-09-25",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024011854%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frareu%2Fi%2F10010686%2F",
+          "verifiedAt": "2026-09-25"
+        }
+      },
+      "priceTier": "high",
+      "verifiedAt": "2026-09-25",
+      "updatedAt": "2026-09-25",
+      "price": "¥18,700",
+      "priceValue": 18700,
+      "priceSize": "125ml",
+      "priceFetchedAt": "2026-09-25",
+      "priceSource": "rakuten"
+    },
+    {
+      "slug": "issey-miyake-2",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オードパルファム",
+      "gender": "men",
+      "family": "aquatic",
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "花椒・バルサムファー・シダーウッド",
+      "seasons": [
+        "autumn",
+        "winter",
+        "spring"
+      ],
+      "scenes": [
+        "daily",
+        "date",
+        "business"
+      ],
+      "releaseYear": 2025,
+      "verdict": "同じ水でも、深いほうの水。花椒のぴりつきが水の輪郭を締め、針葉樹が奥行きを出す。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rareu/cabinet/12837358/imgrc0184115248.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-parfum-EIH_EDP.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "定番のプールオムが好きだが、もう少し残ってほしい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "水の香りに冷たさより深さを求める人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夏の日中に軽く使いたい人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Issey Miyake Parfums",
+          "title": "L'Eau d'Issey Pour Homme Eau de Parfum",
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-parfum-EIH_EDP.html",
+          "accessedAt": "2026-09-25",
+          "sourceType": "official",
+          "market": "GLOBAL"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-parfum-EIH_EDP.html",
+          "verifiedAt": "2026-09-25",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2025071712%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Frareu%2Fi%2F10016537%2F",
+          "verifiedAt": "2026-09-25"
+        }
+      },
+      "priceTier": "high",
+      "verifiedAt": "2026-09-25",
+      "updatedAt": "2026-09-25",
+      "price": "¥21,120",
+      "priceValue": 21120,
+      "priceSize": "125ml",
+      "priceFetchedAt": "2026-09-25",
+      "priceSource": "rakuten"
+    },
+    {
+      "slug": "issey-miyake-3",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オー＆シダー オードトワレ インテンス",
+      "gender": "men",
+      "family": "woody",
+      "top": "グレープフルーツ・カルダモン・サイプレス",
+      "mid": "シダーウッド・カロン",
+      "last": "ベチバー・パチョリ",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business",
+        "date"
+      ],
+      "releaseYear": 2022,
+      "verdict": "水と木をぶつける実験。カロンの透明感がシダーの乾いた強さから角を取っている。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/50_3/iss042-050_1.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette Intense",
+        "label": "オードトワレ インテンス"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-eau-and-c%C3%A8dre-eau-de-toilette-intense-EI_CEDRE.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "定番のプールオムに飽きてきた人"
+        },
+        {
+          "basis": "editorial",
+          "text": "ウッディだが重たくない香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "柑橘の爽やかさを主役にしたい人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Issey Miyake Parfums",
+          "title": "L'Eau d'Issey Pour Homme Eau & Cedre Eau de Toilette Intense",
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-eau-and-c%C3%A8dre-eau-de-toilette-intense-EI_CEDRE.html",
+          "accessedAt": "2026-09-25",
+          "sourceType": "official",
+          "market": "GLOBAL"
+        },
+        {
+          "publisher": "資生堂オンラインストア",
+          "title": "イッセイ ミヤケ ロードゥ イッセイ プールオム オー＆シダー",
+          "url": "https://thestore.shiseido.co.jp/article/8140/",
+          "accessedAt": "2026-09-25",
+          "sourceType": "authorized-distributor",
+          "market": "JP"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-eau-and-c%C3%A8dre-eau-de-toilette-intense-EI_CEDRE.html",
+          "verifiedAt": "2026-09-25",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fiss042-050%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fkousuiandco%2Fi%2F10019382%2F",
+          "verifiedAt": "2026-09-25"
+        }
+      },
+      "priceTier": "mid",
+      "verifiedAt": "2026-09-25",
+      "updatedAt": "2026-09-25",
+      "priceSource": "rakuten",
+      "price": "¥6,655",
+      "priceValue": 6655,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-25"
+    },
+    {
+      "slug": "issey-miyake-4",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム ウッド＆ウッド オードパルファム インテンス",
+      "gender": "men",
+      "family": "woody",
+      "top": "グレープフルーツ・カルダモン・エレミ",
+      "mid": "バージニアシダーウッド・サンダルウッド・アプリコット",
+      "last": "ベチバー・パチュリ・トンカビーン",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "date",
+        "formal",
+        "daily"
+      ],
+      "releaseYear": 2019,
+      "verdict": "シダーとサンダルウッドを重ね、プールオムの水を木で覆った一本。グレープフルーツが最初にだけ明るさを差す。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cinderellabeaute/cabinet/phm/19im001pfm_001.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Parfum Intense",
+        "label": "オードパルファム インテンス"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-woodandwood-eau-de-parfum-EI_WOOD.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "夜や寒い季節に使う一本を探している人"
+        },
+        {
+          "basis": "editorial",
+          "text": "木の香りをはっきり感じたい人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "プールオムのアクアティックな印象を求めている人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Issey Miyake Parfums",
+          "title": "L'Eau d'Issey Pour Homme Wood&Wood Eau de Parfum",
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-woodandwood-eau-de-parfum-EI_WOOD.html",
+          "accessedAt": "2026-09-25",
+          "sourceType": "official",
+          "market": "GLOBAL"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-woodandwood-eau-de-parfum-EI_WOOD.html",
+          "verifiedAt": "2026-09-25",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcinderellabeaute%2F19im001pfm%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fcinderellabeaute%2Fi%2F10029536%2F",
+          "verifiedAt": "2026-09-25"
+        }
+      },
+      "priceTier": "high",
+      "verifiedAt": "2026-09-25",
+      "updatedAt": "2026-09-25",
+      "priceSource": "rakuten",
+      "price": "¥16,190",
+      "priceValue": 16190,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-25"
+    },
+    {
+      "slug": "issey-miyake-5",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム ソーラー ラベンダー オードトワレ インテンス",
+      "gender": "men",
+      "family": "aromatic",
+      "top": null,
+      "mid": null,
+      "last": null,
+      "keyNotes": "ラベンダー・花椒・シダーウッド",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "releaseYear": 2023,
+      "verdict": "ラベンダーを石鹸の側ではなく、日なたの側に置いた一本。花椒の熱がその方向を決めている。",
+      "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/premoa/cabinet/pics/821/3423222106201.jpg?_ex=512x512",
+      "concentration": {
+        "value": "Eau de Toilette Intense",
+        "label": "オードトワレ インテンス"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense-LEDIPHSLEDTI.html"
+        }
+      ],
+      "recommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ラベンダーが好きだが、理容室のような香りは避けたい人"
+        },
+        {
+          "basis": "editorial",
+          "text": "春夏に使える落ち着いた香りを探している人"
+        }
+      ],
+      "notRecommendedFor": [
+        {
+          "basis": "editorial",
+          "text": "ラベンダーそのものが苦手な人"
+        }
+      ],
+      "cautions": [],
+      "sources": [
+        {
+          "publisher": "Issey Miyake Parfums",
+          "title": "L'Eau d'Issey Pour Homme Solar Lavender Eau de Toilette Intense",
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense-LEDIPHSLEDTI.html",
+          "accessedAt": "2026-09-25",
+          "sourceType": "official",
+          "market": "GLOBAL"
+        }
+      ],
+      "profile": {
+        "method": "editorial-v1",
+        "dailyToDistinctive": null,
+        "freshToSweet": null,
+        "lightToRich": null,
+        "subtleToBold": null,
+        "youthfulToMature": null
+      },
+      "purchaseLinks": {
+        "amazon": null,
+        "official": {
+          "url": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense-LEDIPHSLEDTI.html",
+          "verifiedAt": "2026-09-25",
+          "type": "product"
+        },
+        "rakuten": {
+          "type": "product",
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpremoa%2F3423222106201%2F&m=http%3A%2F%2Fm.rakuten.co.jp%2Fpremoa%2Fi%2F11149785%2F",
+          "verifiedAt": "2026-09-25"
+        }
+      },
+      "priceTier": "mid",
+      "verifiedAt": "2026-09-25",
+      "updatedAt": "2026-09-25",
+      "priceSource": "rakuten",
+      "price": "¥7,280",
+      "priceValue": 7280,
+      "priceSize": "50ml",
+      "priceFetchedAt": "2026-09-25"
     }
   ]
 }

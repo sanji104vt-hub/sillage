@@ -85,7 +85,8 @@ const KITOWA_SLUGS = new Set(["kitowa-1", "kitowa-2", "kitowa-3", "kitowa-4", "s
 const JP_BATCH3_SLUGS = new Set(["aux-paradis-1", "aux-paradis-2", "aux-paradis-3", "aux-paradis-4", "aux-paradis-5", "aux-paradis-6", "aux-paradis-7", "kitowa-5", "kitowa-6", "kitowa-7", "kitowa-8", "kitowa-9"]);
 // コム デ ギャルソン試験導入。ブランドが層を公表しないため keyNotes を持つ。
 const CDG_SLUGS = new Set(["cdg-1", "cdg-2", "cdg-3", "cdg-4", "cdg-5", "cdg-6", "cdg-7", "cdg-8", "cdg-9", "cdg-10", "cdg-11", "cdg-12", "cdg-13", "cdg-14", "cdg-15"]);
-const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS, ...CDG_SLUGS]);
+const ISSEY_SLUGS = new Set(["issey-miyake-1", "issey-miyake-2", "issey-miyake-3", "issey-miyake-4", "issey-miyake-5"]);
+const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS, ...CDG_SLUGS, ...ISSEY_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",

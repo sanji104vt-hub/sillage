@@ -36,6 +36,7 @@ const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 const BRAND_SLUG = {
   "Comme des Garçons": "comme-des-garcons",
   "Comme des Garçons": "comme-des-garcons",
+  "ISSEY MIYAKE": "issey-miyake",
   "AUX PARADIS": "aux-paradis",
   "KITOWA": "kitowa",
   "J-Scent": "j-scent",

@@ -1605,6 +1605,107 @@
         ],
         "cautions": []
       }
+    },
+    "issey-miyake-1": {
+      "nameEn": "L'Eau d'Issey Pour Homme Eau de Toilette",
+      "englishSlug": "l-eau-d-issey-pour-homme-eau-de-toilette",
+      "notes": {
+        "top": "Yuzu, lemon, tangerine",
+        "mid": "Water lily, spicy notes",
+        "last": "Sandalwood, vetiver, amber accord"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "From the cut of yuzu to the calm of sandalwood. The gentleness of that arc is why it has stayed a staple for more than thirty years.",
+        "recommendedFor": [
+          "People who want one dependable bottle that will not stand out at work",
+          "People ready to move from citrus to something a step calmer"
+        ],
+        "notRecommendedFor": [
+          "People who want to wear something nobody else recognises"
+        ],
+        "cautions": []
+      }
+    },
+    "issey-miyake-2": {
+      "nameEn": "L'Eau d'Issey Pour Homme Eau de Parfum",
+      "englishSlug": "l-eau-d-issey-pour-homme-eau-de-parfum",
+      "notes": {
+        "key": "Sichuan pepper, fir balsam, cedarwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "The same water, but the deeper kind. Sichuan pepper sharpens its outline while conifer resin gives it depth.",
+        "recommendedFor": [
+          "People who like the original Pour Homme but want it to last longer",
+          "People who look for depth rather than coolness in an aquatic scent"
+        ],
+        "notRecommendedFor": [
+          "People who want something light for daytime in summer"
+        ],
+        "cautions": []
+      }
+    },
+    "issey-miyake-3": {
+      "nameEn": "L'Eau d'Issey Pour Homme Eau & Cedre Eau de Toilette Intense",
+      "englishSlug": "l-eau-d-issey-pour-homme-eau-and-cedre-eau-de-toilette-intense",
+      "notes": {
+        "top": "Grapefruit, cardamom, cypress",
+        "mid": "Cedarwood, calone",
+        "last": "Vetiver, patchouli"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "An experiment that sets water against wood. The transparency of calone takes the hard edge off the dry cedar.",
+        "recommendedFor": [
+          "People growing tired of the standard Pour Homme",
+          "People looking for a woody scent that does not feel heavy"
+        ],
+        "notRecommendedFor": [
+          "People who want citrus freshness to lead"
+        ],
+        "cautions": []
+      }
+    },
+    "issey-miyake-4": {
+      "nameEn": "L'Eau d'Issey Pour Homme Wood&Wood Eau de Parfum Intense",
+      "englishSlug": "l-eau-d-issey-pour-homme-wood-and-wood-eau-de-parfum-intense",
+      "notes": {
+        "top": "Grapefruit, cardamom, elemi",
+        "mid": "Virginia cedarwood, sandalwood, apricot",
+        "last": "Vetiver, patchouli, tonka bean"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Cedar and sandalwood layered together, covering the water of Pour Homme with wood. Grapefruit brightens only the opening.",
+        "recommendedFor": [
+          "People looking for a bottle to wear at night or in cold weather",
+          "People who want the smell of wood to register clearly"
+        ],
+        "notRecommendedFor": [
+          "People who are after the aquatic character of Pour Homme"
+        ],
+        "cautions": []
+      }
+    },
+    "issey-miyake-5": {
+      "nameEn": "L'Eau d'Issey Pour Homme Solar Lavender Eau de Toilette Intense",
+      "englishSlug": "l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense",
+      "notes": {
+        "key": "Lavender, Sichuan pepper, cedarwood"
+      },
+      "indexReady": true,
+      "editorial": {
+        "summary": "Lavender placed on the sunlit side rather than the soap side. The heat of Sichuan pepper is what sets that direction.",
+        "recommendedFor": [
+          "People who like lavender but want to avoid a barbershop impression",
+          "People looking for a composed scent they can wear in spring and summer"
+        ],
+        "notRecommendedFor": [
+          "People who dislike lavender itself"
+        ],
+        "cautions": []
+      }
     }
   }
 }
