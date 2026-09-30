@@ -1,0 +1,5104 @@
+{
+  "scope": "Existing repository data only; no current retailer availability or additional sizes verified.",
+  "total": 210,
+  "multipleSizes": 57,
+  "singleSize": 143,
+  "noSizes": 10,
+  "needsPurchaseMapping": 92,
+  "products": [
+    {
+      "slug": "jo-malone-1",
+      "brand": "Jo Malone",
+      "name": "ライムバジル & マンダリン",
+      "concentration": "Cologne",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "acqua-di-parma-1",
+      "brand": "Acqua di Parma",
+      "name": "コロニア",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [
+        50,
+        100,
+        180
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-1",
+      "brand": "Dior",
+      "name": "オー ソバージュ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "4711-1",
+      "brand": "4711",
+      "name": "オーデコロン",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-1",
+      "brand": "Guerlain",
+      "name": "オー インペリアル",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dolce-gabbana-1",
+      "brand": "Dolce&Gabbana",
+      "name": "ライト ブルー プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.fashionsnap.com/article/2025-05-12/dolce-and-gabbana-light-blue/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.fashionsnap.com/article/2025-05-12/dolce-and-gabbana-light-blue/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "hermes-2",
+      "brand": "Hermès",
+      "name": "オー ドランジュ ヴェルト",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.hermes.com/uk/en/product/eau-d-orange-verte-eau-de-cologne-V101914V0/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "dior-2",
+      "brand": "Dior",
+      "name": "ソヴァージュ EDT",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        60,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "ck-1",
+      "brand": "Calvin Klein",
+      "name": "CK one",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.calvinklein.us/en/ck-one-gift-set/LX001954.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "montblanc-1",
+      "brand": "Montblanc",
+      "name": "レジェンド",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "azzaro-1",
+      "brand": "Azzaro",
+      "name": "プール オム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30,
+        50,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "chanel-1",
+      "brand": "Chanel",
+      "name": "アリュール オム スポーツ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "paco-rabanne-1",
+      "brand": "Paco Rabanne",
+      "name": "プール オム",
+      "concentration": null,
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.rabanne.com/ww/en/fragrance/p/paco-rabanne-pour-homme--000000000065051929",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "nautica-1",
+      "brand": "Nautica",
+      "name": "ヴォヤージュ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-2",
+      "brand": "Guerlain",
+      "name": "ヴェチバー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "chanel-2",
+      "brand": "Chanel",
+      "name": "エゴイスト プラチナム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "gucci-1",
+      "brand": "Gucci",
+      "name": "ギルティ プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        90
+      ],
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-3",
+      "brand": "Dior",
+      "name": "ソヴァージュ EDP",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        30,
+        60,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "calvin-klein-1",
+      "brand": "Calvin Klein",
+      "name": "エタニティ フォーメン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.calvinklein.us/en/men/fragrance/fragrance/eternity-eau-de-toilette-for-men/LX000145-000.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ysl-2",
+      "brand": "YSL",
+      "name": "リブレ オーデパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        30,
+        50,
+        90,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "chanel-3",
+      "brand": "Chanel",
+      "name": "チャンス オー タンドゥル",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        35,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 35,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-4",
+      "brand": "Dior",
+      "name": "ジャドール",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "gucci-2",
+      "brand": "Gucci",
+      "name": "ブルーム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "gucci-3",
+      "brand": "Gucci",
+      "name": "ギルティ アブソリュート プールオム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "gucci-4",
+      "brand": "Gucci",
+      "name": "ギルティ エリクシール ドゥ パルファム プールオム",
+      "concentration": "Parfum",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "gucci-5",
+      "brand": "Gucci",
+      "name": "ギルティ プールオム オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        90
+      ],
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "gucci-6",
+      "brand": "Gucci",
+      "name": "ギルティ ラブ エディション プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "jo-malone-2",
+      "brand": "Jo Malone",
+      "name": "イングリッシュ ペアー & フリージア",
+      "concentration": "Cologne",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "marc-jacobs-1",
+      "brand": "Marc Jacobs",
+      "name": "デイジー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "jo-malone-3",
+      "brand": "Jo Malone",
+      "name": "ピオニー & ブラッシュ スエード",
+      "concentration": "Cologne",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "versace-1",
+      "brand": "Versace",
+      "name": "エロス EDT",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-50-ml-blue/R740008-R050MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "versace-2",
+      "brand": "Versace",
+      "name": "ディラン ブルー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "azzaro-2",
+      "brand": "Azzaro",
+      "name": "クローム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "mugler-1",
+      "brand": "Mugler",
+      "name": "エンジェル",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        25,
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 25,
+          "sourceUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/M010101003.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "thierry-mugler-1",
+      "brand": "Mugler",
+      "name": "A*MEN",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "giorgio-armani-1",
+      "brand": "Giorgio Armani",
+      "name": "ストロンガー ウィズ ユー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://qui.tokyo/news/250428-emporio-armani",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://qui.tokyo/news/250428-emporio-armani",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://qui.tokyo/news/250428-emporio-armani",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "viktor-rolf-1",
+      "brand": "Viktor&Rolf",
+      "name": "スパイスボム エクストリーム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        90
+      ],
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "prada-1",
+      "brand": "Prada",
+      "name": "キャンディ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        30,
+        50,
+        80
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 80,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "carolina-herrera-1",
+      "brand": "Carolina Herrera",
+      "name": "バッドボーイ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://alokai-prod.carolinaherrera.com/es/en/editorial/fragrances-bad-boy",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ysl-3",
+      "brand": "YSL",
+      "name": "ブラック オピウム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        30,
+        50,
+        90,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "ysl-6",
+      "brand": "YSL",
+      "name": "MYSLF オーデパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        60
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-eau-de-parfum/WW-51115YSL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ysl-7",
+      "brand": "YSL",
+      "name": "MYSLF ルパルファム",
+      "concentration": "Parfum",
+      "volumesMl": [
+        60
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-le-parfum/WW-51213YSL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ysl-8",
+      "brand": "YSL",
+      "name": "MYSLF ラブソリュ",
+      "concentration": "Parfum",
+      "volumesMl": [
+        60
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-l-absolu/WW-51427YSL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ysl-9",
+      "brand": "YSL",
+      "name": "ラ ニュイ ド ロム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        60,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-margiela-1",
+      "brand": "Maison Margiela",
+      "name": "レプリカ ジャズクラブ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        10,
+        30,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-5",
+      "brand": "Dior",
+      "name": "ソヴァージュ エリクシール",
+      "concentration": "Elixir",
+      "volumesMl": [
+        60,
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "bvlgari-1",
+      "brand": "Bvlgari",
+      "name": "マン イン ブラック",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/ja-jp/product/42379",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "viktor-rolf-2",
+      "brand": "Viktor&Rolf",
+      "name": "スパイスボム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        90,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-francis-kurkdjian-1",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "バカラ ルージュ 540",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-francis-kurkdjian-2",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア ユニヴェルサリス",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-universalis-eau-de-toilette-RA130321.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-3",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アミリス プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/amyris-homme-eau-de-toilette-RA131421.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-4",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア ヴィタエ フォルテ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-vitae-cologne-forte-eau-de-parfum-10233021.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-5",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア セレスティア",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-eau-de-toilette-RA13262.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-6",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "アクア セレスティア コローニュ フォルテ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-cologne-forte-eau-de-parfum-RA12342.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-francis-kurkdjian-7",
+      "brand": "Maison Francis Kurkdjian",
+      "name": "バカラ ルージュ 540 エキストレ ドゥ パルファム",
+      "concentration": "Extrait de Parfum",
+      "volumesMl": [
+        70
+      ],
+      "sizes": [
+        {
+          "volumeMl": 70,
+          "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/baccarat-rouge-540-extrait-de-parfum-RA142321.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "versace-3",
+      "brand": "Versace",
+      "name": "エロス フレイム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "chanel-4",
+      "brand": "Chanel",
+      "name": "ブルー ドゥ シャネル EDP",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107350/bleu-de-chanel-eau-de-parfum-spray/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "tom-ford-2",
+      "brand": "Tom Ford",
+      "name": "オード ウッド",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        30,
+        50,
+        100,
+        250
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 250,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-6",
+      "brand": "Dior",
+      "name": "ファーレンハイト",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "creed-1",
+      "brand": "Creed",
+      "name": "アバントゥス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        30,
+        50,
+        100,
+        240
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 240,
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "creed-2",
+      "brand": "Creed",
+      "name": "グリーン アイリッシュ ツイード",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/green-irish-tweed",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "creed-3",
+      "brand": "Creed",
+      "name": "シルバー マウンテン ウォーター",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/silver-mountain-water",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "creed-4",
+      "brand": "Creed",
+      "name": "ヴァージン アイランド ウォーター",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/virgin-island-water",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "creed-5",
+      "brand": "Creed",
+      "name": "アバントゥス コロン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://creedboutique.com/products/aventus-cologne",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "creed-6",
+      "brand": "Creed",
+      "name": "ミレジム インペリアル",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://creedboutique.com/products/millesime-imperial",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "creed-7",
+      "brand": "Creed",
+      "name": "ボワ ドゥ ポルトガル",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://creedboutique.com/products/bois-du-portugal",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "giorgio-armani-2",
+      "brand": "Giorgio Armani",
+      "name": "アルマーニ コード",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30,
+        50,
+        75,
+        125,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "le-labo-1",
+      "brand": "Le Labo",
+      "name": "サンタル 33",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "diptyque-1",
+      "brand": "Diptyque",
+      "name": "タムダオ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "diptyque-2",
+      "brand": "Diptyque",
+      "name": "オルフェオン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        75
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "diptyque-3",
+      "brand": "Diptyque",
+      "name": "フィロシコス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        75
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "diptyque-4",
+      "brand": "Diptyque",
+      "name": "ドソン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        75
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "diptyque-5",
+      "brand": "Diptyque",
+      "name": "フルール ドゥ ポー",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        75
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "byredo-1",
+      "brand": "Byredo",
+      "name": "ジプシー ウォーター",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dunhill-1",
+      "brand": "Dunhill",
+      "name": "アイコン",
+      "concentration": null,
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "dunhill-2",
+      "brand": "Dunhill",
+      "name": "デザイア フォーメン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "prada-2",
+      "brand": "Prada",
+      "name": "ルオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "prada-3",
+      "brand": "Prada",
+      "name": "ルナロッサ カーボン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "prada-4",
+      "brand": "Prada",
+      "name": "インフュージョン ディリス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        30
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "prada-5",
+      "brand": "Prada",
+      "name": "ルナ ロッサ オーシャン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-ocean-edt-100-ml/2A1156_2D00_F0Z99_P_ML100",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "prada-6",
+      "brand": "Prada",
+      "name": "ルナ ロッサ ブラック",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-black-50-ml/2A1155_2HC5_F0Z99_P_ML050",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "prada-7",
+      "brand": "Prada",
+      "name": "ルオム インテンス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "montblanc-2",
+      "brand": "Montblanc",
+      "name": "エクスプローラー",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "jo-malone-4",
+      "brand": "Jo Malone",
+      "name": "ウッドセージ & シーソルト",
+      "concentration": "Cologne",
+      "volumesMl": [
+        30,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "jo-malone-5",
+      "brand": "Jo Malone",
+      "name": "ミルラ & トンカ",
+      "concentration": "Cologne Intense",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.jomalone.com/product/25946/43657/colognes/myrrh-tonka-cologne-intense",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "jo-malone-6",
+      "brand": "Jo Malone",
+      "name": "ポメグラネート ノアール",
+      "concentration": "Cologne",
+      "volumesMl": [
+        30,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "hugo-boss-1",
+      "brand": "Hugo Boss",
+      "name": "ボス ボトルド",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "hugo-boss-2",
+      "brand": "Hugo Boss",
+      "name": "ボス ボトルド ナイト",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.hugoboss.com/boss-bottled-night-eau-de-toilette-100ml/hbeu58004750_999.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "hugo-boss-3",
+      "brand": "Hugo Boss",
+      "name": "ボス ボトルド インフィニット",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.hugoboss.com/boss-bottled-infinite-eau-de-parfum-50ml/hbeu58079183_999.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "hugo-boss-4",
+      "brand": "Hugo Boss",
+      "name": "ボス ボトルド エリクサー インテンス",
+      "concentration": "Parfum",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "hugo-boss-5",
+      "brand": "Hugo Boss",
+      "name": "ボス ザ セント",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "hugo-boss-6",
+      "brand": "Hugo Boss",
+      "name": "ヒューゴ マン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        75,
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "dior-7",
+      "brand": "Dior",
+      "name": "ディオール オム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "tom-ford-3",
+      "brand": "Tom Ford",
+      "name": "ブラック オーキッド",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        30,
+        50,
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "tom-ford-4",
+      "brand": "Tom Ford",
+      "name": "ネロリ ポルトフィーノ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/neroli-portofino-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "tom-ford-5",
+      "brand": "Tom Ford",
+      "name": "ノワール エクストリーム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/noir-extreme-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "tom-ford-6",
+      "brand": "Tom Ford",
+      "name": "グレー ヴェチバー",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/grey-vetiver-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "tom-ford-7",
+      "brand": "Tom Ford",
+      "name": "タバコ バニラ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "aramis-1",
+      "brand": "Aramis",
+      "name": "アラミス",
+      "concentration": null,
+      "volumesMl": [
+        110
+      ],
+      "sizes": [
+        {
+          "volumeMl": 110,
+          "sourceUrl": "https://www.cosme-silkroad.co.jp/index.php/products/detail/2846",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "chanel-5",
+      "brand": "Chanel",
+      "name": "プール ムッシュ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-3",
+      "brand": "Guerlain",
+      "name": "ミツコ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        75
+      ],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-4",
+      "brand": "Guerlain",
+      "name": "ロム イデアル エクストレム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-5",
+      "brand": "Guerlain",
+      "name": "アビ ルージュ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "guerlain-6",
+      "brand": "Guerlain",
+      "name": "ゲラン オム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "chanel-6",
+      "brand": "Chanel",
+      "name": "アンテウス",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "shiro-1",
+      "brand": "SHIRO",
+      "name": "サボン オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        40
+      ],
+      "sizes": [
+        {
+          "volumeMl": 40,
+          "sourceUrl": "https://shiro-shiro.jp/item/12702.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "narciso-rodriguez-1",
+      "brand": "Narciso Rodriguez",
+      "name": "フォー ハー",
+      "concentration": null,
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.narcisorodriguezparfums.com/en/narciso-rodriguez-for-her/for-her-edt.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "le-labo-2",
+      "brand": "Le Labo",
+      "name": "アナザー 13",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15,
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-margiela-2",
+      "brand": "Maison Margiela",
+      "name": "レイジー サンデー モーニング",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-margiela-3",
+      "brand": "Maison Margiela",
+      "name": "レプリカ セーリング デイ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-margiela-4",
+      "brand": "Maison Margiela",
+      "name": "レプリカ ネバーエンディング サマー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "maison-margiela-5",
+      "brand": "Maison Margiela",
+      "name": "バイ ザ ファイヤープレイス",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        10,
+        30,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-margiela-6",
+      "brand": "Maison Margiela",
+      "name": "ビーチ ウォーク",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        10,
+        30,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "maison-margiela-7",
+      "brand": "Maison Margiela",
+      "name": "コーヒー ブレイク",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "narciso-rodriguez-2",
+      "brand": "Narciso Rodriguez",
+      "name": "フォー ヒム",
+      "concentration": null,
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "glossier-1",
+      "brand": "Glossier",
+      "name": "ユー",
+      "concentration": null,
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.glossier.com/products/glossier-you",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "bvlgari-2",
+      "brand": "Bvlgari",
+      "name": "ブルガリ プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/ja-jp/product/42539",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aesop-1",
+      "brand": "Aesop",
+      "name": "タシット",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.aesop.com/jp/c/fragrance/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "davidoff-1",
+      "brand": "Davidoff",
+      "name": "クール ウォーター",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "giorgio-armani-3",
+      "brand": "Giorgio Armani",
+      "name": "アクア ディ ジオ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "giorgio-armani-4",
+      "brand": "Giorgio Armani",
+      "name": "ストロンガー ウィズ ユー インテンスリー",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        10,
+        50,
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "paco-rabanne-3",
+      "brand": "Paco Rabanne",
+      "name": "インヴィクタス",
+      "concentration": null,
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "bvlgari-3",
+      "brand": "Bvlgari",
+      "name": "アクア プールオム",
+      "concentration": null,
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-us/products/91152-e.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "bvlgari-4",
+      "brand": "Bvlgari",
+      "name": "マン ウッド エッセンス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-ca/product/42373",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "bvlgari-5",
+      "brand": "Bvlgari",
+      "name": "マン レイン エッセンス",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        60,
+        100,
+        150
+      ],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.bulgari.com/en-ca/product/42388",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-sa/product/42389",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.bulgari.com/it-it/product/42390",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "bvlgari-6",
+      "brand": "Bvlgari",
+      "name": "マン ウッド ネロリ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/ru-ru/%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D1%8B/%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5/40389.html?ratings=true&swatches=true",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "versace-4",
+      "brand": "Versace",
+      "name": "プールオム",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/pour-homme/SET_Fragrances_PourHomme.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/pour-homme/SET_Fragrances_PourHomme.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/pour-homme/SET_Fragrances_PourHomme.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "versace-5",
+      "brand": "Versace",
+      "name": "エロス エナジー",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "versace-6",
+      "brand": "Versace",
+      "name": "エロス パルファム",
+      "concentration": "Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "acqua-di-parma-2",
+      "brand": "Acqua di Parma",
+      "name": "ブルー メディテラネオ アランチャ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        180
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "acqua-di-parma-3",
+      "brand": "Acqua di Parma",
+      "name": "コロニア インテンサ",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [
+        50,
+        100,
+        180
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "acqua-di-parma-4",
+      "brand": "Acqua di Parma",
+      "name": "コロニア クラブ",
+      "concentration": "Eau de Cologne",
+      "volumesMl": [],
+      "sizes": [],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": true,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "acqua-di-parma-5",
+      "brand": "Acqua di Parma",
+      "name": "ブルー メディテラネオ ベルガモット ディ カラブリア",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100,
+        180
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "loewe-1",
+      "brand": "Loewe",
+      "name": "001 マン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "loewe-2",
+      "brand": "Loewe",
+      "name": "エセンシア",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "loewe-3",
+      "brand": "Loewe",
+      "name": "アグア エル クラシコ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "loewe-4",
+      "brand": "Loewe",
+      "name": "アグア ドロップ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "loewe-5",
+      "brand": "Loewe",
+      "name": "ソロ ロエベ セドロ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.loewe.com/usa/en/men/fragrances/loewe-solo-cedro-eau-de-toilette-50ml/P000011X56-0000.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.perfumesloewe.com/int/en_FI/fragrances/loewe-solo/loewe-solo-cedro-100ml-LW70546.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "loewe-6",
+      "brand": "Loewe",
+      "name": "アグア デ ロエベ エル",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
+          "hasSizeSpecificPurchaseLinks": false
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-1",
+      "brand": "Ralph Lauren",
+      "name": "サファリ フォーメン",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-2",
+      "brand": "Ralph Lauren",
+      "name": "ポロ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        30
+      ],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-3",
+      "brand": "Ralph Lauren",
+      "name": "ポロ ブルー",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-4",
+      "brand": "Ralph Lauren",
+      "name": "ポロ レッド",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-5",
+      "brand": "Ralph Lauren",
+      "name": "ラルフズ クラブ",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "ralph-lauren-6",
+      "brand": "Ralph Lauren",
+      "name": "ラルフズ クラブ パルファム",
+      "concentration": "Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": null,
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "lacoste-l1212-blanc-edt-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン EDT 50mL",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC001A02-000.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "lacoste-l1212-blanc-edp-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン EDP 50mL",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC002A02.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "lacoste-l1212-blanc-eau-fraiche-edt-50",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン オーフレッシュ EDT 50mL",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/dk/lacoste/men/accessories/fragrance/LC003A02-000.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "lacoste-l1212-blanc-eau-intense-edt-100",
+      "brand": "Lacoste",
+      "name": "オーデ ラコステ L.12.12 ブラン オーインテンス EDT 100mL",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lacoste.com/id/en/sport/l.12.12-blanc-eau-intense-100ml/0100-LACLC004A01.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "lacoste-5",
+      "brand": "Lacoste",
+      "name": "L.12.12 ノワール",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50,
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-1",
+      "brand": "J-Scent",
+      "name": "ツタジュウ オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-2",
+      "brand": "J-Scent",
+      "name": "和肌 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-3",
+      "brand": "J-Scent",
+      "name": "ラムネ オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-4",
+      "brand": "J-Scent",
+      "name": "恋雨 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-5",
+      "brand": "J-Scent",
+      "name": "花街 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-6",
+      "brand": "J-Scent",
+      "name": "紙せっけん オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-7",
+      "brand": "J-Scent",
+      "name": "ヒスイ オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-8",
+      "brand": "J-Scent",
+      "name": "珈琲 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-9",
+      "brand": "J-Scent",
+      "name": "花見酒 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-10",
+      "brand": "J-Scent",
+      "name": "はちみつとレモン オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-11",
+      "brand": "J-Scent",
+      "name": "力士 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-12",
+      "brand": "J-Scent",
+      "name": "光芒 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-13",
+      "brand": "J-Scent",
+      "name": "紫陽花 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-14",
+      "brand": "J-Scent",
+      "name": "入道雲 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-15",
+      "brand": "J-Scent",
+      "name": "沈香 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-16",
+      "brand": "J-Scent",
+      "name": "月雫 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-17",
+      "brand": "J-Scent",
+      "name": "うす紅 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-18",
+      "brand": "J-Scent",
+      "name": "ハンカチーフ オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-19",
+      "brand": "J-Scent",
+      "name": "ほうじ茶 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-20",
+      "brand": "J-Scent",
+      "name": "黒革 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-21",
+      "brand": "J-Scent",
+      "name": "薄荷 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-22",
+      "brand": "J-Scent",
+      "name": "木屑 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "j-scent-23",
+      "brand": "J-Scent",
+      "name": "落雁 オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-1",
+      "brand": "KITOWA",
+      "name": "ヒノキ オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-2",
+      "brand": "KITOWA",
+      "name": "ヒバ オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-3",
+      "brand": "KITOWA",
+      "name": "モス・テンプル オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-4",
+      "brand": "KITOWA",
+      "name": "スギ オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "shiro-2",
+      "brand": "SHIRO",
+      "name": "ホワイトティー オードパルファン",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        40
+      ],
+      "sizes": [
+        {
+          "volumeMl": 40,
+          "sourceUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-1",
+      "brand": "AUX PARADIS",
+      "name": "フルール オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15,
+        30,
+        60
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "hasSizeSpecificPurchaseLinks": true
+        },
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-2",
+      "brand": "AUX PARADIS",
+      "name": "シトロン オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210105.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-3",
+      "brand": "AUX PARADIS",
+      "name": "オム オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210119.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-4",
+      "brand": "AUX PARADIS",
+      "name": "ピュア オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210121.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-5",
+      "brand": "AUX PARADIS",
+      "name": "フレーズ オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210118.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "aux-paradis-6",
+      "brand": "AUX PARADIS",
+      "name": "サボン オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210117.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "aux-paradis-7",
+      "brand": "AUX PARADIS",
+      "name": "ローズ オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        15
+      ],
+      "sizes": [
+        {
+          "volumeMl": 15,
+          "sourceUrl": "https://www.auxparadis.com/products/210104.html",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-5",
+      "brand": "KITOWA",
+      "name": "ヒノキ オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142480",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-6",
+      "brand": "KITOWA",
+      "name": "ヒバ オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142499",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-7",
+      "brand": "KITOWA",
+      "name": "クスノキ オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142527",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-8",
+      "brand": "KITOWA",
+      "name": "サンダルウッド オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "kitowa-9",
+      "brand": "KITOWA",
+      "name": "ウード オー・エクロジオン",
+      "concentration": "Eau Eclosion",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-oud",
+          "hasSizeSpecificPurchaseLinks": true
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": false
+    },
+    {
+      "slug": "cdg-2",
+      "brand": "Comme des Garçons",
+      "name": "コンクリート",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        80
+      ],
+      "sizes": [
+        {
+          "volumeMl": 80,
+          "sourceUrl": "https://comme-des-garcons-parfum.com/products/concrete",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-3",
+      "brand": "Comme des Garçons",
+      "name": "オドゥール 71",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        200
+      ],
+      "sizes": [
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://comme-des-garcons-parfum.com/products/odeur-71",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-1",
+      "brand": "Comme des Garçons",
+      "name": "ワンダーウッド",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137087898/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-4",
+      "brand": "Comme des Garçons",
+      "name": "CDG 2 MAN",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137093292/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-5",
+      "brand": "Comme des Garçons",
+      "name": "CDG 2",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137087899/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-6",
+      "brand": "Comme des Garçons",
+      "name": "プレイ レッド",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088331/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-7",
+      "brand": "Comme des Garçons",
+      "name": "コム デ ギャルソン オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088332/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-8",
+      "brand": "Comme des Garçons",
+      "name": "マルセイユ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137088957/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-9",
+      "brand": "Comme des Garçons",
+      "name": "ワンダーウード",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137089073/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-10",
+      "brand": "Comme des Garçons",
+      "name": "プレイ ブラック",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090167/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-11",
+      "brand": "Comme des Garçons",
+      "name": "モノクル ヨヨギ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090168/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-12",
+      "brand": "Comme des Garçons",
+      "name": "アルテック スタンダード",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137090862/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-13",
+      "brand": "Comme des Garçons",
+      "name": "ホワイト",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137092557/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-14",
+      "brand": "Comme des Garçons",
+      "name": "モノクル センツ ワン ヒノキ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137092780/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "cdg-15",
+      "brand": "Comme des Garçons",
+      "name": "CDG ドット",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        100
+      ],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/coolness/137093018/",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "issey-miyake-1",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オードトワレ",
+      "concentration": "Eau de Toilette",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-toilette-EIH_EDT.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "issey-miyake-2",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オードパルファム",
+      "concentration": "Eau de Parfum",
+      "volumesMl": [
+        125
+      ],
+      "sizes": [
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-parfum-EIH_EDP.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "issey-miyake-3",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム オー＆シダー オードトワレ インテンス",
+      "concentration": "Eau de Toilette Intense",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-eau-and-c%C3%A8dre-eau-de-toilette-intense-EI_CEDRE.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "issey-miyake-4",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム ウッド＆ウッド オードパルファム インテンス",
+      "concentration": "Eau de Parfum Intense",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-woodandwood-eau-de-parfum-EI_WOOD.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    },
+    {
+      "slug": "issey-miyake-5",
+      "brand": "ISSEY MIYAKE",
+      "name": "ロードゥ イッセイ プールオム ソーラー ラベンダー オードトワレ インテンス",
+      "concentration": "Eau de Toilette Intense",
+      "volumesMl": [
+        50
+      ],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense-LEDIPHSLEDTI.html",
+          "hasSizeSpecificPurchaseLinks": false
+        }
+      ],
+      "generalPurchaseShops": [
+        "official",
+        "rakuten"
+      ],
+      "needsCapacityResearch": false,
+      "needsPurchaseMapping": true
+    }
+  ]
+}

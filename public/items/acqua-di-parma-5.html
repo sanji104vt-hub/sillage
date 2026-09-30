@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/size-picker.css"><script defer src="/assets/size-picker.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -140,12 +141,13 @@ article{max-width:1060px}
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>シトラス</dd></div>
         <div><dt>香水濃度</dt><dd>オードトワレ</dd></div>
-
+        <div><dt>容量・参考価格</dt><dd>50mL / 100mL / 180mL</dd></div>
         <div><dt>主な利用シーン</dt><dd>デイリー / ビジネス / スポーツ</dd></div>
         <div><dt>主な季節</dt><dd>春 / 夏</dd></div>
 
         <div><dt>発売年</dt><dd>2010年</dd></div>
       </dl>
+      <div class="size-picker" data-size-picker><label for="bottle-size-acqua-di-parma-5">容量を選ぶ</label><select id="bottle-size-acqua-di-parma-5" data-size-select aria-describedby="bottle-size-acqua-di-parma-5-note"><option value="">すべての容量を見る</option><option value="50">50 mL</option><option value="100">100 mL</option><option value="180">180 mL</option></select><p id="bottle-size-acqua-di-parma-5-note" class="size-guidance">掲載容量は販売地域・店舗によって取扱いが異なります。商品共通の購入リンクは容量選択と連動しません。購入前に容量と濃度をご確認ください。</p><p data-size-status role="status" aria-live="polite"></p><div data-size-panel="50"><p>50 mL</p><a class="buy button buy-official" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="acqua-di-parma-5" data-volume-ml="50">海外公式サイト — 50 mL ↗</a><p class="size-guidance">海外向け（UK）。日本への配送可否は未確認です。公式ページでもこの容量を選択してください。</p><a class="size-source" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer">この容量の掲載元を確認 ↗</a></div><div data-size-panel="100"><p>100 mL</p><a class="buy button buy-official" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="acqua-di-parma-5" data-volume-ml="100">海外公式サイト — 100 mL ↗</a><p class="size-guidance">海外向け（UK）。日本への配送可否は未確認です。公式ページでもこの容量を選択してください。</p><a class="size-source" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer">この容量の掲載元を確認 ↗</a></div><div data-size-panel="180"><p>180 mL</p><a class="buy button buy-official" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="acqua-di-parma-5" data-volume-ml="180">海外公式サイト — 180 mL ↗</a><p class="size-guidance">海外向け（UK）。日本への配送可否は未確認です。公式ページでもこの容量を選択してください。</p><a class="size-source" href="https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html" target="_blank" rel="noopener noreferrer">この容量の掲載元を確認 ↗</a></div><noscript><p>JavaScriptが無効の場合も、登録済みの容量情報をすべて表示します。</p></noscript></div>
       <p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy" href="https://af.moshimo.com/af/c/click?a_id=5718841&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Facquadiparma-calabria-75ml%2F" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="acqua-di-parma-5">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div>
       <p class="updated">データ更新日：2026年8月9日</p>
       <p class="updated">情報確認日：2026年8月9日</p>
@@ -269,7 +271,7 @@ article{max-width:1060px}
 <script>
 document.addEventListener("click",function(event){
   const link=event.target.closest("a[data-purchase-shop]");
-  if(!link)return;
+  if(!link||link.closest('[data-size-picker]'))return;
   const position=link.closest(".hero-actions")?"hero":"bottom";
   if(typeof window.gtag==="function"){
     window.gtag("event","purchase_link_click",{
@@ -277,6 +279,7 @@ document.addEventListener("click",function(event){
       purchase_shop:link.dataset.purchaseShop,
       button_position:position,
       destination_url:link.href,
+      requested_volume_ml:link.dataset.requestedVolumeMl||undefined,
       transport_type:"beacon"
     });
   }

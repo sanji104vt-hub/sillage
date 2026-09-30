@@ -256,9 +256,12 @@ fragrances.forEach((item, index) => {
   if (compareCount > 3) errors.push(`類似商品が3件超: ${path}`);
   const buyLinks = [...html.matchAll(/<a class="buy[^"]*"[^>]*rel="([^"]+)"/g)];
   const purchaseCount = [item.purchaseLinks?.official?.url, item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url].filter(Boolean).length;
-  if (buyLinks.length !== purchaseCount * 2) errors.push(`購入導線数が不正: ${path} (${buyLinks.length}/${purchaseCount * 2})`);
+  // 容量別の静的もしもHTMLは原文保持のため別途 validate-size-picker で検証する。
+  const sizeLinks = (item.sizes || []).flatMap(size => Object.entries(size.purchaseLinks || {})).filter(([,link]) => !link.generatedHtml);
+  const expectedPurchaseCount = purchaseCount * 2 + sizeLinks.length;
+  if (buyLinks.length !== expectedPurchaseCount) errors.push(`購入導線数が不正: ${path} (${buyLinks.length}/${expectedPurchaseCount})`);
   if (buyLinks.some((match) => !["noopener", "noreferrer"].every((rel) => match[1].includes(rel)))) errors.push(`購入リンクrel不足: ${path}`);
-  const sponsoredCount = [item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url].filter(Boolean).length * 2;
+  const sponsoredCount = [item.purchaseLinks?.amazon?.url, item.purchaseLinks?.rakuten?.url].filter(Boolean).length * 2 + sizeLinks.filter(([shop]) => shop !== 'official').length;
   if (buyLinks.filter((match) => match[1].includes("sponsored")).length !== sponsoredCount) errors.push(`広告リンクのsponsored指定が不正: ${path}`);
   if (isEnriched && (item.sources || []).length && !html.includes('class="section sources"')) errors.push(`情報源セクションなし: ${path}`);
   if (!isEnriched && html.includes('class="section sources"')) errors.push(`対象外商品に情報源セクションあり: ${path}`);

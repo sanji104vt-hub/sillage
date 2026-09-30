@@ -1,0 +1,2471 @@
+{
+  "checkedAt": "2026-09-28T14:19:57.384Z",
+  "count": 128,
+  "results": [
+    {
+      "url": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+      "items": [
+        {
+          "slug": "jo-malone-1",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+      "redirect": false,
+      "title": "ライム バジル ＆ マンダリン コロン | ジョー マローン ロンドン Jo Malone London 公式",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+      "items": [
+        {
+          "slug": "dior-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+      "redirect": false,
+      "title": "【DIOR】 オー ソバージュ オードゥ トワレ - メンズ - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+      "items": [
+        {
+          "slug": "jo-malone-2",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+      "redirect": false,
+      "title": "イングリッシュ ぺアー ＆ フリージア コロン | ジョー マローン ロンドン Jo Malone London 公式",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+      "items": [
+        {
+          "slug": "jo-malone-3",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-3",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-3",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+      "redirect": false,
+      "title": "ピオニー ＆ ブラッシュ スエード コロン | ジョー マローン ロンドン Jo Malone London 公式",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+      "items": [
+        {
+          "slug": "acqua-di-parma-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-1",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-1",
+          "ml": 180,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+      "redirect": false,
+      "title": "Colonia EAU DE COLOGNE - Colonia | Acqua di Parma",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+      "items": [
+        {
+          "slug": "dior-2",
+          "ml": 60,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+      "redirect": false,
+      "title": "【DIOR】 ソヴァージュ オードゥ トワレ - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash",
+      "items": [
+        {
+          "slug": "4711-1",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://4711.com/products/4711-echt-kolnisch-wasser-splash",
+      "redirect": true,
+      "title": " 4711 Echt Kölnisch Wasser (Splash) ",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+      "items": [
+        {
+          "slug": "jo-malone-4",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-4",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-4",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+      "redirect": false,
+      "title": "ウッド セージ ＆ シー ソルト コロン | ジョー マローン ロンドン Jo Malone London 公式",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+      "items": [
+        {
+          "slug": "dior-3",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-3",
+          "ml": 60,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-3",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+      "redirect": false,
+      "title": "【DIOR】 ソヴァージュ オードゥ パルファン - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+      "items": [
+        {
+          "slug": "acqua-di-parma-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-2",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-2",
+          "ml": 180,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+      "redirect": false,
+      "title": "Arancia di Capri Eau de Toilette - Blu Mediterraneo | Acqua di Parma",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+      "items": [
+        {
+          "slug": "guerlain-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+      "redirect": false,
+      "title": " Les Colognes &sdot; Eau De Cologne Imp&eacute;riale &sdot; GUERLAIN ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+      "items": [
+        {
+          "slug": "dior-4",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-4",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-4",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+      "redirect": false,
+      "title": "【DIOR】 ジャドール オードゥ パルファン - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+      "items": [
+        {
+          "slug": "jo-malone-6",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "jo-malone-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+      "redirect": false,
+      "title": "ポメグラネート ノアール コロン | ジョー マローン ロンドン Jo Malone London 公式",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+      "items": [
+        {
+          "slug": "acqua-di-parma-3",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-3",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-3",
+          "ml": 180,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+      "redirect": false,
+      "title": "Colonia Intensa EAU DE COLOGNE - Colonia | Acqua di Parma",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+      "items": [
+        {
+          "slug": "dior-5",
+          "ml": 60,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-5",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-5",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+      "redirect": false,
+      "title": "Sauvage Elixir: Rare and Intoxicating Men&#x27;s Fragrance Elixir | Dior US",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+      "items": [
+        {
+          "slug": "guerlain-2",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "guerlain-2",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+      "redirect": false,
+      "title": " V&eacute;tiver De Guerlain Paris &sdot; Eau De Toilette &sdot; GUERLAIN ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+      "items": [
+        {
+          "slug": "montblanc-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+      "redirect": false,
+      "title": " Legend Eau de Toilette 100 ml - Montblanc® US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+      "items": [
+        {
+          "slug": "guerlain-3",
+          "ml": 75,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+      "redirect": false,
+      "title": "Access Denied",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+      "items": [
+        {
+          "slug": "dior-6",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+      "redirect": false,
+      "title": "【DIOR】 ファーレンハイト オードゥ トワレ - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+      "items": [
+        {
+          "slug": "acqua-di-parma-5",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-5",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "acqua-di-parma-5",
+          "ml": 180,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+      "redirect": false,
+      "title": "Bergamotto di Calabria Eau de Toilette - Blu Mediterraneo | Acqua di Parma",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+      "items": [
+        {
+          "slug": "guerlain-4",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "guerlain-4",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+      "redirect": false,
+      "title": "Access Denied",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+      "items": [
+        {
+          "slug": "guerlain-5",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "guerlain-5",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "guerlain-5",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+      "redirect": false,
+      "title": "Access Denied",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+      "items": [
+        {
+          "slug": "dior-7",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "dior-7",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+      "redirect": false,
+      "title": "【DIOR】 ディオール オム オードゥ トワレ - フレグランス",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+      "items": [
+        {
+          "slug": "guerlain-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+      "redirect": false,
+      "title": "Access Denied",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+      "items": [
+        {
+          "slug": "montblanc-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+      "redirect": false,
+      "title": " Explorer Eau de Parfum 100 ml - Montblanc® US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+      "items": [
+        {
+          "slug": "chanel-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "chanel-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+      "items": [
+        {
+          "slug": "azzaro-1",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "azzaro-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "azzaro-1",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "azzaro-1",
+          "ml": 200,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+      "redirect": false,
+      "title": "Cologne for Men ⋅ Azzaro Pour Homme ⋅ Eau de Toilette",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+      "items": [
+        {
+          "slug": "chanel-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "chanel-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+      "items": [
+        {
+          "slug": "azzaro-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "azzaro-2",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "azzaro-2",
+          "ml": 200,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+      "redirect": false,
+      "title": "Cologne Pour Homme - Azzaro Chrome - Eau de Toilette",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+      "items": [
+        {
+          "slug": "gucci-1",
+          "ml": 90,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+      "redirect": false,
+      "title": "Gucci Guilty Pour Homme, 90ml eau de toilette in eau de toilette | GUCCI® US",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+      "items": [
+        {
+          "slug": "chanel-3",
+          "ml": 35,
+          "shop": "official"
+        },
+        {
+          "slug": "chanel-3",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "chanel-3",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+      "items": [
+        {
+          "slug": "nautica-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+      "redirect": false,
+      "title": " Nautica Voyage 3.4 Oz. Eau De Toilette | Nautica ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+      "items": [
+        {
+          "slug": "ysl-2",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-2",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-2",
+          "ml": 90,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-2",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+      "items": [
+        {
+          "slug": "chanel-4",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+      "items": [
+        {
+          "slug": "ysl-3",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-3",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-3",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-3",
+          "ml": 90,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-3",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+      "items": [
+        {
+          "slug": "marc-jacobs-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+      "redirect": false,
+      "title": "Daisy Eau De Toilette | Marc Jacobs | Official Site",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+      "items": [
+        {
+          "slug": "chanel-5",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+      "items": [
+        {
+          "slug": "gucci-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+      "redirect": true,
+      "title": "Gucci Bloom 100ml eau de parfum in eau de parfum | GUCCI® US",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+      "items": [
+        {
+          "slug": "mugler-1",
+          "ml": 25,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+      "items": [
+        {
+          "slug": "chanel-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+      "items": [
+        {
+          "slug": "thierry-mugler-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+      "items": [
+        {
+          "slug": "gucci-5",
+          "ml": 90,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+      "redirect": false,
+      "title": "Gucci Guilty Pour Homme, 90ml, eau de parfum in eau de parfum | GUCCI® US",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+      "items": [
+        {
+          "slug": "prada-1",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "prada-1",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "prada-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "prada-1",
+          "ml": 80,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://alokai-prod.carolinaherrera.com/es/en/editorial/fragrances-bad-boy",
+      "items": [
+        {
+          "slug": "carolina-herrera-1",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 401,
+      "finalUrl": "https://alokai-prod.carolinaherrera.com/es/en/editorial/fragrances-bad-boy",
+      "redirect": false,
+      "title": "",
+      "classification": "manual_review",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+      "items": [
+        {
+          "slug": "prada-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+      "items": [
+        {
+          "slug": "versace-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+      "redirect": false,
+      "title": " Eros EDT 100 ml Blue | VERSACE US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+      "items": [
+        {
+          "slug": "ysl-9",
+          "ml": 60,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-9",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "ysl-9",
+          "ml": 200,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+      "items": [
+        {
+          "slug": "maison-margiela-1",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-1",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+      "items": [
+        {
+          "slug": "viktor-rolf-1",
+          "ml": 90,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+      "redirect": false,
+      "title": "Spicebomb by Viktor&amp;Rolf | Official Site",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+      "items": [
+        {
+          "slug": "maison-margiela-7",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/ja-jp/product/42379",
+      "items": [
+        {
+          "slug": "bvlgari-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/ja-jp/product/42379",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+      "items": [
+        {
+          "slug": "viktor-rolf-2",
+          "ml": 90,
+          "shop": "official"
+        },
+        {
+          "slug": "viktor-rolf-2",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+      "items": [
+        {
+          "slug": "maison-francis-kurkdjian-1",
+          "ml": 70,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+      "redirect": false,
+      "title": " Baccarat Rouge 540 Eau de Parfum 70 mL | Baccarat Japan ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+      "items": [
+        {
+          "slug": "tom-ford-2",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-2",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-2",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-2",
+          "ml": 250,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+      "redirect": false,
+      "title": "Oud Wood Eau de Parfum | TOM FORD BEAUTY",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/ja-jp/product/42539",
+      "items": [
+        {
+          "slug": "bvlgari-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/ja-jp/product/42539",
+      "redirect": false,
+      "title": "ブルガリ プールオム オードトワレ 42539 | オードトワレ | Bvlgari Official Store",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+      "items": [
+        {
+          "slug": "versace-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "versace-2",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "versace-2",
+          "ml": 200,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+      "redirect": false,
+      "title": " Dylan Blue Pour Homme ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.creedfragrance.com/p/aventus/12870029/",
+      "items": [
+        {
+          "slug": "creed-1",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "creed-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "creed-1",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "creed-1",
+          "ml": 240,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+      "redirect": false,
+      "title": "Aventus | Men&#39;s Woody Fragrance | Bergamot &amp; Birch | Creed Fragrance",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+      "items": [
+        {
+          "slug": "tom-ford-3",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-3",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-3",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-3",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "tom-ford-3",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+      "redirect": false,
+      "title": "Black Orchid Eau de Parfum | TOM FORD BEAUTY",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+      "items": [
+        {
+          "slug": "versace-3",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+      "redirect": false,
+      "title": " Eros Flame EDP 100 ml Red | VERSACE US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+      "items": [
+        {
+          "slug": "le-labo-1",
+          "ml": 15,
+          "shop": "official"
+        },
+        {
+          "slug": "le-labo-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "le-labo-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+      "redirect": false,
+      "title": " SANTAL 33｜サンタル 33 &ndash; ル ラボ 公式オンラインショップ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/en-ca/product/42373",
+      "items": [
+        {
+          "slug": "bvlgari-4",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/en-ca/product/42373",
+      "redirect": false,
+      "title": "Bvlgari Man Wood Essence Eau De Parfum 42373 | Bvlgari Official Store",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.lelabofragrances.jp/products/another-13_134",
+      "items": [
+        {
+          "slug": "le-labo-2",
+          "ml": 15,
+          "shop": "official"
+        },
+        {
+          "slug": "le-labo-2",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "le-labo-2",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+      "redirect": false,
+      "title": " ANOTHER 13｜アナザー 13 &ndash; ル ラボ 公式オンラインショップ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html",
+      "items": [
+        {
+          "slug": "diptyque-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-tam-dao-tamdao100v2",
+      "redirect": true,
+      "title": " Tam Dao (タムダオ) - オードトワレ &ndash; Diptyque Paris",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+      "items": [
+        {
+          "slug": "byredo-1",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "byredo-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+      "redirect": false,
+      "title": "ジプシー ウォーター オードパルファン 50ml｜ 森とシトラスの香り",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+      "items": [
+        {
+          "slug": "versace-5",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+      "redirect": false,
+      "title": " Eros Energy EDP 50 ml Yellow | VERSACE US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+      "items": [
+        {
+          "slug": "bvlgari-4",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+      "redirect": false,
+      "title": "Bvlgari Man Wood Essence Eau de Parfum 42374 | Bulgari",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+      "items": [
+        {
+          "slug": "hugo-boss-1",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+      "redirect": false,
+      "title": "BOSS - BOSS Bottled eau de toilette 100 ml",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+      "items": [
+        {
+          "slug": "hugo-boss-6",
+          "ml": 75,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+      "redirect": false,
+      "title": "HUGO - HUGO Man eau de toilette 75ml - 75 ml",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+      "items": [
+        {
+          "slug": "prada-7",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+      "redirect": false,
+      "title": "undefined | PRADA - España",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+      "items": [
+        {
+          "slug": "versace-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+      "redirect": false,
+      "title": " Eros Parfum 100 ml Black | VERSACE US ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/en-ca/product/42388",
+      "items": [
+        {
+          "slug": "bvlgari-5",
+          "ml": 60,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/en-ca/product/42388",
+      "redirect": false,
+      "title": "Bvlgari Man Rain Essence Eau De Parfum 42388 | Bvlgari Official Store",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+      "items": [
+        {
+          "slug": "hugo-boss-6",
+          "ml": 125,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+      "redirect": false,
+      "title": "HUGO - Eau de toilette HUGO Man, 125 ml - 125 ml",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+      "items": [
+        {
+          "slug": "maison-margiela-2",
+          "ml": 30,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+      "redirect": false,
+      "title": " レイジーサンデー モーニング オードトワレ「レプリカ」30ml ホワイト | Maison Margiela公式 ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://shiro-shiro.jp/item/12702.html",
+      "items": [
+        {
+          "slug": "shiro-1",
+          "ml": 40,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12702",
+      "redirect": true,
+      "title": "サボン オードパルファン | SHIRO 公式オンラインストア",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+      "items": [
+        {
+          "slug": "maison-margiela-5",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-5",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-5",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+      "items": [
+        {
+          "slug": "maison-margiela-6",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-6",
+          "ml": 30,
+          "shop": "official"
+        },
+        {
+          "slug": "maison-margiela-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+      "items": [
+        {
+          "slug": "shiro-2",
+          "ml": 40,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+      "redirect": false,
+      "title": "ホワイトティー オードパルファン | SHIRO 公式オンラインストア",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+      "items": [
+        {
+          "slug": "davidoff-1",
+          "ml": 125,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+      "redirect": false,
+      "title": "Cool Water Eau de Toilette - 125 ml - Fragrances | DAVIDOFF",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.glossier.com/products/glossier-you",
+      "items": [
+        {
+          "slug": "glossier-1",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.glossier.com/en-jp/products/glossier-you",
+      "redirect": true,
+      "title": "Glossier You",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+      "items": [
+        {
+          "slug": "giorgio-armani-4",
+          "ml": 10,
+          "shop": "official"
+        },
+        {
+          "slug": "giorgio-armani-4",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "giorgio-armani-4",
+          "ml": 100,
+          "shop": "official"
+        },
+        {
+          "slug": "giorgio-armani-4",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 403,
+      "finalUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+      "redirect": false,
+      "title": "Just a moment...",
+      "classification": "blocked",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/en-sa/product/42389",
+      "items": [
+        {
+          "slug": "bvlgari-5",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/en-sa/product/42389",
+      "redirect": false,
+      "title": "Bvlgari Man Rain Essence Eau De Parfum 42389 | Bvlgari Official Store",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.bulgari.com/it-it/product/42390",
+      "items": [
+        {
+          "slug": "bvlgari-5",
+          "ml": 150,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.bulgari.com/it-it/product/42390",
+      "redirect": false,
+      "title": "",
+      "classification": "ok",
+      "contentVerification": "manual_review_empty_title"
+    },
+    {
+      "url": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+      "items": [
+        {
+          "slug": "giorgio-armani-3",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+      "redirect": false,
+      "title": "アクア ディ ジオ | 【公式】ジョルジオ アルマーニ JP",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/ftk-tsutayaelectrics/s4560228465051/",
+      "items": [
+        {
+          "slug": "j-scent-1",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/ftk-tsutayaelectrics/s4560228465051/",
+      "redirect": false,
+      "title": "【楽天市場】【J-SCENT 香水】ジェイセント ツタジュウ Eau De Parfum 50mL ギフト 誕生日 プレゼント：蔦屋書店",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+      "items": [
+        {
+          "slug": "lacoste-5",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+      "redirect": false,
+      "title": "L.12.12 Noir Eau de Toilette 50ml - Men's Fragrances - New In 2026 | Lacoste",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.loewe.com/usa/en/men/fragrances/loewe-solo-cedro-eau-de-toilette-50ml/P000011X56-0000.html",
+      "items": [
+        {
+          "slug": "loewe-5",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.loewe.com/jpn/ja/%E3%83%A1%E3%83%B3%E3%82%BA/fragrances/%E3%83%AD%E3%82%A8%E3%83%99-%E3%82%BD%E3%83%AD-%E3%82%BB%E3%83%89%E3%83%AD-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-50ml/P000011X56-0000.html",
+      "redirect": true,
+      "title": " ロエベ 日本 公式サイト",
+      "classification": "redirect",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/2023111631/",
+      "items": [
+        {
+          "slug": "j-scent-2",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/2023111631/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 和肌 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://www.perfumesloewe.com/int/en_FI/fragrances/loewe-solo/loewe-solo-cedro-100ml-LW70546.html",
+      "items": [
+        {
+          "slug": "loewe-5",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.perfumesloewe.com/int/ja_JP/%E3%83%95%E3%83%AC%E3%82%B0%E3%83%A9%E3%83%B3%E3%82%B9/loewe-solo/%E3%83%AD%E3%82%A8%E3%83%99-%E3%82%BD%E3%83%AD-%E3%82%BB%E3%83%89%E3%83%AD-%E3%82%BB%E3%83%83%E3%83%88-100ml-LW70546.html",
+      "redirect": true,
+      "title": " 今すぐ購入 ロエベ ソロ セドロ セット 100ml | ロエベ パルファム ",
+      "classification": "redirect",
+      "contentVerification": "manual_review_set_title_after_locale_redirect"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120050/",
+      "items": [
+        {
+          "slug": "j-scent-3",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120050/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ ラムネ オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+      "items": [
+        {
+          "slug": "kitowa-3",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+      "redirect": false,
+      "title": "【KITOWA】EAU ECLOSION / オー・エクロジオン(モス・テンプル） ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120048/",
+      "items": [
+        {
+          "slug": "j-scent-4",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120048/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 恋雨 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120029/",
+      "items": [
+        {
+          "slug": "j-scent-5",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120029/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 花街 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+      "items": [
+        {
+          "slug": "kitowa-4",
+          "ml": 50,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+      "redirect": false,
+      "title": "【KITOWA】EAU ÉCLOSION / オー・エクロジオン(SUGI） ",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+      "items": [
+        {
+          "slug": "lacoste-5",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+      "redirect": false,
+      "title": "L.12.12 Noir Eau de Toilette 100ml - Parfums homme - Nouveautés 2026 | Lacoste",
+      "classification": "ok",
+      "contentVerification": "http_only"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120033/",
+      "items": [
+        {
+          "slug": "j-scent-6",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120033/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 紙せっけん オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120028/",
+      "items": [
+        {
+          "slug": "j-scent-7",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120028/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ ヒスイ オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120040/",
+      "items": [
+        {
+          "slug": "j-scent-8",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120040/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 珈琲 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120034/",
+      "items": [
+        {
+          "slug": "j-scent-9",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120034/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 花見酒 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
+      "items": [
+        {
+          "slug": "loewe-6",
+          "ml": 50,
+          "shop": "official"
+        },
+        {
+          "slug": "loewe-6",
+          "ml": 100,
+          "shop": "official"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://www.perfumesloewe.com/int/ja_JP/",
+      "redirect": true,
+      "title": " ロエベ パルファム | 色・香り・エモーション ",
+      "classification": "redirect",
+      "contentVerification": "fails_product_destination_redirects_to_home"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120030/",
+      "items": [
+        {
+          "slug": "j-scent-10",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120030/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ はちみつとレモン オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120031/",
+      "items": [
+        {
+          "slug": "j-scent-11",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120031/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 力士 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120027/",
+      "items": [
+        {
+          "slug": "j-scent-12",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120027/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 光芒 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120032/",
+      "items": [
+        {
+          "slug": "j-scent-13",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120032/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 紫陽花 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120002/",
+      "items": [
+        {
+          "slug": "j-scent-14",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120002/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 入道雲 オードパルファン 50ｍL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120051/",
+      "items": [
+        {
+          "slug": "j-scent-15",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120051/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 沈香 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120047/",
+      "items": [
+        {
+          "slug": "j-scent-16",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120047/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 月雫 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120026/",
+      "items": [
+        {
+          "slug": "j-scent-17",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120026/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ うす紅 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20260911024/",
+      "items": [
+        {
+          "slug": "j-scent-18",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20260911024/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ ハンカチーフ オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120036/",
+      "items": [
+        {
+          "slug": "j-scent-19",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120036/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ ほうじ茶 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120049/",
+      "items": [
+        {
+          "slug": "j-scent-20",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120049/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 黒革 オードパルファン 50mL／ オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120025/",
+      "items": [
+        {
+          "slug": "j-scent-21",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120025/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 薄荷 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120024/",
+      "items": [
+        {
+          "slug": "j-scent-22",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120024/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 木屑 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/20231120035/",
+      "items": [
+        {
+          "slug": "j-scent-23",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/20231120035/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 ジェイセント（J-Scent） Ｊ&minus;Ｓｃｅｎｔ 落雁 オードパルファン 50mL／オードパルファン：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0007/",
+      "items": [
+        {
+          "slug": "kitowa-1",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0007/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION HINOKI(オー・エクロジオン ヒノキ) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0008/",
+      "items": [
+        {
+          "slug": "kitowa-2",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0008/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION HIBA(オー・エクロジオン ヒバ) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0010/",
+      "items": [
+        {
+          "slug": "kitowa-3",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0010/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION MOSS TEMPLE(オー・エクロジオン モス・テンプル) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0009/",
+      "items": [
+        {
+          "slug": "kitowa-4",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0009/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION SUGI(オー・エクロジオン スギ) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/rareu/2024040602/",
+      "items": [
+        {
+          "slug": "aux-paradis-1",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/2024040602/",
+      "redirect": false,
+      "title": "【楽天市場】国内正規品 AUX PARADIS オゥパラディ オードパルファム 香水 フルール フレグランス 15mL：i&rsquo;vlesse",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1/",
+      "items": [
+        {
+          "slug": "aux-paradis-2",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1/",
+      "redirect": false,
+      "title": "【楽天市場】袋付き【シトロン・15ml・送料無料】AUX PARADIS (オゥパラディ) オードパルファム 母の日 プレゼント：東京ギフトガレージ",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1444/",
+      "items": [
+        {
+          "slug": "aux-paradis-3",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1444/",
+      "redirect": false,
+      "title": "【楽天市場】袋付き【オム・15ml・送料無料】AUX PARADIS (オゥパラディ) オードパルファム 母の日 プレゼント：東京ギフトガレージ",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/tokyo-giftgarage/1000180212111z/",
+      "items": [
+        {
+          "slug": "aux-paradis-4",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/1000180212111z/",
+      "redirect": false,
+      "title": "【楽天市場】袋付き【ピュア・15ml・送料無料】AUX PARADIS (オゥパラディ) オードパルファム 母の日 プレゼント：東京ギフトガレージ",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/tokyo-giftgarage/zz10001802122/",
+      "items": [
+        {
+          "slug": "aux-paradis-5",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz10001802122/",
+      "redirect": false,
+      "title": "【楽天市場】袋付き【フレーズ・15ml・送料無料】AUX PARADIS (オゥパラディ) オードパルファム 母の日 プレゼント：東京ギフトガレージ",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/emporio8888/10002660/",
+      "items": [
+        {
+          "slug": "aux-paradis-7",
+          "ml": 15,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/emporio8888/10002660/",
+      "redirect": false,
+      "title": "【楽天市場】AUX PARADIS 香水 15ml ローズ オゥパラディ フレグランス オードパルファム EDP 15ml ROSE【送料無料】【ネコポス便】 父の日 クリスマス：EMPORIO",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0013/",
+      "items": [
+        {
+          "slug": "kitowa-5",
+          "ml": 100,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0013/",
+      "redirect": false,
+      "title": "【楽天市場】100mL 【KITOWA】キトワEAU DE PARFUM HINOKI(オ&mdash;ド パルファム ヒノキ) 100mL (香水)(フレグランス)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0014/",
+      "items": [
+        {
+          "slug": "kitowa-6",
+          "ml": 100,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0014/",
+      "redirect": false,
+      "title": "【楽天市場】100mL 【KITOWA】キトワEAU DE PARFUM HIBA(オ&mdash;ド パルファム ヒバ) 100mL (香水)(フレグランス)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0015/",
+      "items": [
+        {
+          "slug": "kitowa-7",
+          "ml": 100,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0015/",
+      "redirect": false,
+      "title": "【楽天市場】100mL 【KITOWA】キトワEAU DE PARFUM KUSUNOKI(オ&mdash;ド パルファム クスノキ) 100mL (香水)(フレグランス)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0011/",
+      "items": [
+        {
+          "slug": "kitowa-8",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0011/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION SANDALWOOD(オー・エクロジオン サンダルウッド) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    },
+    {
+      "url": "https://item.rakuten.co.jp/retailer/kit-0012/",
+      "items": [
+        {
+          "slug": "kitowa-9",
+          "ml": 50,
+          "shop": "rakuten"
+        }
+      ],
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/retailer/kit-0012/",
+      "redirect": false,
+      "title": "【楽天市場】50mL 【KITOWA】キトワEAU ECLOSION OUD(オー・エクロジオン ウード) 50mL (香水)(アルコールフリー)：コスメショップ リテイラー",
+      "classification": "ok",
+      "contentVerification": "title_product_and_volume_checked"
+    }
+  ],
+  "notes": [
+    "HTTP 200 is not a product/capacity match or stock confirmation.",
+    "Affiliate click/impression endpoints were not requested; Rakuten target URLs were requested directly.",
+    "403 is blocked, not a broken link conclusion.",
+    "Some sites return locale-dependent destinations. Browser confirmed loewe-6 redirects to the Japan homepage.",
+    "Source-only URLs and unregistered capacity links are outside the 128 destination HTTP audit."
+  ]
+}

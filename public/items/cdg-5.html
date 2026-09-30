@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/size-picker.css"><script defer src="/assets/size-picker.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -143,12 +144,13 @@ article{max-width:1060px}
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>アンバー</dd></div>
         <div><dt>香水濃度</dt><dd>オードパルファン</dd></div>
-        <div><dt>容量</dt><dd>50mL</dd></div>
+        <div><dt>容量</dt><dd>50 mL</dd></div>
         <div><dt>主な利用シーン</dt><dd>デート / フォーマル</dd></div>
         <div><dt>主な季節</dt><dd>秋 / 冬</dd></div>
         <div><dt>参考価格</dt><dd>¥18,700（50ml・2026年9月時点）　ハイブランド<span class="price-note">価格は取得時点の楽天市場での実売価格です。最新の価格は各販売ページでご確認ください。</span></dd></div>
 
       </dl>
+      <div class="size-picker" data-size-picker><label for="bottle-size-cdg-5">容量を選ぶ</label><select id="bottle-size-cdg-5" data-size-select aria-describedby="bottle-size-cdg-5-note"><option value="">すべての容量を見る</option><option value="50">50 mL</option></select><p id="bottle-size-cdg-5-note" class="size-guidance">掲載容量は販売地域・店舗によって取扱いが異なります。商品共通の購入リンクは容量選択と連動しません。購入前に容量と濃度をご確認ください。</p><p data-size-status role="status" aria-live="polite"></p><div data-size-panel="50"><p>50 mL</p><p class="size-guidance">この容量に対応する購入リンクはまだ登録されていません。</p><a class="size-source" href="https://item.rakuten.co.jp/coolness/137087899/" target="_blank" rel="noopener noreferrer">この容量の掲載元を確認 ↗</a></div><noscript><p>JavaScriptが無効の場合も、登録済みの容量情報をすべて表示します。</p></noscript></div>
       <p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="buy buy-official" href="https://comme-des-garcons-parfum.com/products/cdg-2" target="_blank" rel="noopener noreferrer" data-purchase-shop="official" data-product-id="cdg-5">公式サイトで確認 <span aria-hidden="true">↗</span><span class="sr-only">（外部サイト）</span></a><a class="buy" href="https://af.moshimo.com/af/c/click?a_id=5718841&amp;p_id=54&amp;pc_id=54&amp;pl_id=616&amp;url=https%3A%2F%2Fitem.rakuten.co.jp%2Fcoolness%2F137087899%2F" target="_blank" rel="nofollow sponsored noopener noreferrer" data-purchase-shop="rakuten" data-product-id="cdg-5">楽天市場で確認 <span aria-hidden="true">↗</span><span class="sr-only">（広告・外部サイト）</span></a></div>
       <p class="updated">データ更新日：2026年9月24日</p>
       <p class="updated">情報確認日：2026年9月24日</p>
@@ -272,7 +274,7 @@ article{max-width:1060px}
 <script>
 document.addEventListener("click",function(event){
   const link=event.target.closest("a[data-purchase-shop]");
-  if(!link)return;
+  if(!link||link.closest('[data-size-picker]'))return;
   const position=link.closest(".hero-actions")?"hero":"bottom";
   if(typeof window.gtag==="function"){
     window.gtag("event","purchase_link_click",{
@@ -280,6 +282,7 @@ document.addEventListener("click",function(event){
       purchase_shop:link.dataset.purchaseShop,
       button_position:position,
       destination_url:link.href,
+      requested_volume_ml:link.dataset.requestedVolumeMl||undefined,
       transport_type:"beacon"
     });
   }

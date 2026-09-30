@@ -30,15 +30,45 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/10101/colognes/lime-basil-mandarin-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -131,15 +161,45 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 180,
-          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "volumeMl": 180,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/colonia/COLONIAEDCRP.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -234,13 +294,33 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 18480,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%AA%E3%83%BC-%E3%82%BD%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0097001.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -345,7 +425,17 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash"
+          "sourceUrl": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://4711.com/en/products/4711-echt-kolnisch-wasser-splash",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -437,7 +527,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html"
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/les-colognes-eau-de-cologne-imperiale-021766.html",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -705,11 +805,31 @@
           "volumeMl": 60,
           "referencePriceYen": 14300,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+              "volumeMl": 60,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-Y0685240.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -910,7 +1030,17 @@
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html"
+          "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1002,19 +1132,59 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 200,
-          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "volumeMl": 200,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/en/fragrances/azzaro-pour-homme/eau-de-toilette",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1110,13 +1280,33 @@
           "volumeMl": 50,
           "referencePriceYen": 14630,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 20680,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/123630/allure-homme-sport-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1280,7 +1470,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html"
+          "sourceUrl": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.nautica.com/nautica-voyage-3.4-oz.-eau-de-toilette/99350241601.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1359,11 +1559,31 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html"
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html"
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/vetiver-de-guerlain-paris-eau-de-toilette-G030486.html",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1472,13 +1692,33 @@
           "volumeMl": 50,
           "referencePriceYen": 14630,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 20680,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1570,7 +1810,17 @@
       "sizes": [
         {
           "volumeMl": 90,
-          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099"
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+              "volumeMl": 90,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-pour-homme-90ml-eau-de-toilette-p-563057999990099",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1664,15 +1914,45 @@
           "volumeMl": 30,
           "referencePriceYen": 16170,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 60,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "volumeMl": 60,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%BD%E3%83%B4%E3%82%A1%E3%83%BC%E3%82%B8%E3%83%A5-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0785220.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1842,23 +2122,73 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 90,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "volumeMl": 90,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/libre/libre-eau-de-parfum/WW-50424YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -1968,17 +2298,47 @@
           "volumeMl": 35,
           "referencePriceYen": 11770,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "volumeMl": 35,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 23870,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/126320/chance-eau-tendre-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2061,15 +2421,45 @@
           "volumeMl": 30,
           "referencePriceYen": 12430,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%82%B8%E3%83%A3%E3%83%89%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%91%E3%83%AB%E3%83%95%E3%82%A1%E3%83%B3-Y0998031.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2175,7 +2565,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099"
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-women/gucci-bloom/gucci-bloom-100ml-eau-de-parfum-p-488830999990099",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2379,7 +2779,24 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 90,
+          "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+              "volumeMl": 90,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.gucci.com/us/en/pr/beauty/fragrances/fragrances-for-men/gucci-guilty-for-men/gucci-guilty-pour-homme-90ml-eau-de-parfum-p-613748999990099",
+              "market": "US",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -2526,15 +2943,45 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/12553/colognes/english-pear-freesia-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2627,7 +3074,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html"
+          "sourceUrl": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.marcjacobs.com/us-en/daisy-eau-de-toilette-100-ml/31655513034-000.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2715,15 +3172,45 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/27028/colognes/peony-blush-suede-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2808,7 +3295,17 @@
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html"
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-100-ml-blue/R740010-R100MLS_RTU_TU_RNUL__.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -2914,15 +3411,45 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html"
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html"
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 200,
-          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html"
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "volumeMl": 200,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/dylan-blue-pour-homme/SET_Fragrances_DylanBluePourHomme.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -3015,15 +3542,45 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 200,
-          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette"
+          "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "volumeMl": 200,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.azzaro.com/fr/parfums/azzaro-chrome/eau-de-toilette",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -3099,7 +3656,17 @@
       "sizes": [
         {
           "volumeMl": 25,
-          "sourceUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html"
+          "sourceUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+              "volumeMl": 25,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.mugler.com/fragrance/angel-eau-de-parfum-perfume/3439600056655.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
@@ -3210,7 +3777,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html"
+          "sourceUrl": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.mugler.com/angel-and-a-men-fragrance-collection-/M020101024.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -3400,7 +3977,17 @@
       "sizes": [
         {
           "volumeMl": 90,
-          "sourceUrl": "https://www.viktor-rolf.com/pages/spicebomb-perfume"
+          "sourceUrl": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+              "volumeMl": 90,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.viktor-rolf.com/pages/spicebomb-perfume",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -3492,19 +4079,59 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html"
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html"
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html"
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 80,
-          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html"
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "volumeMl": 80,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.prada-beauty.com/fragrance/candy/candy-eau-de-parfum/MPL01333.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -3576,11 +4203,7 @@
       "verdict": "稲妻型ボトルのスパイシーグルマン。ココアとトンカの甘さで、遊び心ある色気を演出。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img010/fr8411061962145.jpg?_ex=512x512",
       "purchaseLinks": {
-        "official": {
-          "url": "https://alokai-prod.carolinaherrera.com/es/en/editorial/fragrances-bad-boy",
-          "verifiedAt": "2026-07-18",
-          "type": "product"
-        },
+        "official": null,
         "amazon": null,
         "rakuten": {
           "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr8411061962145%2F",
@@ -3672,23 +4295,73 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 90,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "volumeMl": 90,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html"
+          "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.yslbeauty.com/int/fragrance/fragrance-for-her/black-opium/black-opium-eau-de-parfum/WW-40701YSL.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -4003,7 +4676,56 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "verifiedAt": "2026-09-26",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "volumeMl": 60,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "verifiedAt": "2026-09-26",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 200,
+          "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+          "verifiedAt": "2026-09-26",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "volumeMl": 200,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.yslbeautyus.com/fragrance/mens-fragrances/la-nuit-de-lhomme/la-nuit-de-lhomme-eau-de-toilette-spray/426YSL.html?dwvar_426YSL_size=2.0+oz.",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -4073,15 +4795,45 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html"
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html"
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html"
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica/replica-jazz-club/MM008.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -4188,15 +4940,45 @@
       "sizes": [
         {
           "volumeMl": 60,
-          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "volumeMl": 60,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html"
+          "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/en_us/beauty/products/sauvage-elixir-Y0996460.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -4277,7 +5059,17 @@
           "volumeMl": 100,
           "referencePriceYen": 23210,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.bulgari.com/ja-jp/product/42379"
+          "sourceUrl": "https://www.bulgari.com/ja-jp/product/42379",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/ja-jp/product/42379",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.bulgari.com/ja-jp/product/42379",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -4382,11 +5174,31 @@
       "sizes": [
         {
           "volumeMl": 90,
-          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html"
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+              "volumeMl": 90,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html"
+          "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://us.viktor-rolf.com/fragrance/spicebomb-eau-de-toilette-VKR_030.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -4480,7 +5292,17 @@
           "volumeMl": 70,
           "sourceUrl": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
           "referencePriceYen": 52580,
-          "priceVerifiedAt": "2026-07-18"
+          "priceVerifiedAt": "2026-07-18",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+              "volumeMl": 70,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.baccarat.com/en_jp/fragrance/all-fragrance/perfumes/baccarat-rouge-540-eau-de-parfum-70-ml-2810839.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -5025,7 +5847,17 @@
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html"
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-flame/eros-flame-edp-100-ml-red/R741010-R100MLS_RNUL.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 200,
@@ -5116,7 +5948,17 @@
           "volumeMl": 100,
           "referencePriceYen": 24310,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/"
+          "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -5224,23 +6066,73 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 250,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "volumeMl": 250,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/oud-wood-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -5348,11 +6240,31 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%95%E3%82%A1%E3%83%BC%E3%83%AC%E3%83%B3%E3%83%8F%E3%82%A4%E3%83%88-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-F006624009.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -5432,19 +6344,59 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/"
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/"
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/"
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 240,
-          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/"
+          "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "volumeMl": 240,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.creedfragrance.com/p/aventus/12870029/",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -6104,15 +7056,45 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "volumeMl": 15,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/santal-33_144",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -6193,7 +7175,17 @@
           "volumeMl": 100,
           "referencePriceYen": 25960,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html"
+          "sourceUrl": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.diptyqueparis.com/ja_jp/p/fragrances/eaux-de-toilette/tam-dao-eau-de-toilette-100ml-1.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -6640,13 +7632,33 @@
           "volumeMl": 50,
           "referencePriceYen": 28050,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum"
+          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 39930,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum"
+          "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.byredo.com/ja_jp/p/gypsy-water-eau-de-parfum",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -6879,7 +7891,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html"
+          "sourceUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.prada-beauty.com/fragrance/lhomme-prada/lhomme-prada-eau-de-toilette/MPL01352.html",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -7278,7 +8300,24 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+          "verifiedAt": "2026-09-28",
+          "market": "ES",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.prada.com/es/es/p/lhomme-prada-intense-edp-100-ml/2A1252_2HC1_F0Z99_P_ML100",
+              "market": "ES",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7361,7 +8400,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html"
+          "sourceUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.montblanc.com/en-us/explorer-eau-de-parfum-100-ml-MB124069.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -7453,15 +8502,45 @@
       "sizes": [
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne"
+          "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/32241/colognes/wood-sage-sea-salt-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -7610,7 +8689,40 @@
         "value": "Cologne",
         "label": "コロン"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+          "verifiedAt": "2026-09-26",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+              "volumeMl": 30,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+          "verifiedAt": "2026-09-26",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -7693,7 +8805,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html"
+          "sourceUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.hugoboss.com/us/boss-bottled-eau-de-toilette-100-ml/hbna58000026_999.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -8044,7 +9166,40 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+          "verifiedAt": "2026-09-28",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+              "volumeMl": 75,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.hugoboss.com/uk/hugo-man-eau-de-toilette-75ml/hbeu58097781_999.html",
+              "market": "UK",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 125,
+          "sourceUrl": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+          "verifiedAt": "2026-09-28",
+          "market": "FR",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+              "volumeMl": 125,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.hugoboss.com/fr/eau-de-toilette-hugo-man-125-ml/hbeu58097774_999.html",
+              "market": "FR",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8127,11 +9282,31 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html"
+          "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.dior.com/ja_jp/beauty/products/%E3%83%87%E3%82%A3%E3%82%AA%E3%83%BC%E3%83%AB-%E3%82%AA%E3%83%A0-%E3%82%AA%E3%83%BC%E3%83%89%E3%82%A5-%E3%83%88%E3%83%AF%E3%83%AC-C099600156.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -8209,23 +9384,73 @@
       "sizes": [
         {
           "volumeMl": 10,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "volumeMl": 10,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 30,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 150,
-          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum"
+          "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "volumeMl": 150,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.tomfordbeauty.com/products/black-orchid-eau-de-parfum",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -8706,7 +9931,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/"
+          "sourceUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/fr/parfums/p/117460/pour-monsieur-eau-de-toilette-vaporisateur/",
+              "market": "EU",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -8787,7 +10022,17 @@
           "volumeMl": 75,
           "referencePriceYen": 21010,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html"
+          "sourceUrl": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+              "volumeMl": 75,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.guerlain.com/jp/ja-jp/p/les-legendaires-mitsouko---eau-de-parfum-024104.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -8876,7 +10121,40 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+          "verifiedAt": "2026-09-26",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+          "verifiedAt": "2026-09-26",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/uk/en-uk/p/l%E2%80%99homme-ideal-de-guerlain-paris-extreme---eau-de-parfum-G030434.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -8941,7 +10219,56 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "verifiedAt": "2026-09-26",
+          "market": "FR",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "market": "FR",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "verifiedAt": "2026-09-26",
+          "market": "FR",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "market": "FR",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+          "verifiedAt": "2026-09-26",
+          "market": "FR",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/fr/fr-fr/p/habit-rouge-de-guerlain-paris-eau-de-toilette-G030483.html",
+              "market": "FR",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -9006,7 +10333,24 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+          "verifiedAt": "2026-09-26",
+          "market": "CA",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.guerlain.com/ca/fr-ca/p/guerlain-homme-eau-de-parfum-P030492.html",
+              "market": "CA",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -9091,7 +10435,17 @@
           "volumeMl": 100,
           "sourceUrl": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
           "referencePriceYen": 20680,
-          "priceVerifiedAt": "2026-07-18"
+          "priceVerifiedAt": "2026-07-18",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.chanel.com/jp/fragrance/p/118460/antaeus-eau-de-toilette-spray/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -9171,7 +10525,17 @@
           "volumeMl": 40,
           "referencePriceYen": 4180,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://shiro-shiro.jp/item/12702.html"
+          "sourceUrl": "https://shiro-shiro.jp/item/12702.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://shiro-shiro.jp/item/12702.html",
+              "volumeMl": 40,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://shiro-shiro.jp/item/12702.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -9338,19 +10702,49 @@
           "volumeMl": 15,
           "referencePriceYen": 14080,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/another-13_134",
+              "volumeMl": 15,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 50,
           "referencePriceYen": 31350,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/another-13_134",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
           "referencePriceYen": 45650,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134"
+          "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lelabofragrances.jp/products/another-13_134",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.lelabofragrances.jp/products/another-13_134",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -9445,7 +10839,17 @@
           "volumeMl": 30,
           "referencePriceYen": 12210,
           "priceVerifiedAt": "2026-07-18",
-          "sourceUrl": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html"
+          "sourceUrl": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.maisonmargiela.com/ja-jp/%E3%83%AC%E3%82%A4%E3%82%B8%E3%83%BC%E3%82%B5%E3%83%B3%E3%83%87%E3%83%BC-%E3%83%A2%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0-%E3%82%AA%E3%83%BC%E3%83%89%E3%83%88%E3%83%AF%E3%83%AC%E3%80%8C%E3%83%AC%E3%83%97%E3%83%AA%E3%82%AB%E3%80%8D30ml-S33YX0111S12831961.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -9708,7 +11112,56 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-by-the-fireplace/MM005.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -9772,7 +11225,56 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+          "verifiedAt": "2026-09-28",
+          "market": "JP",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.jp/fragrances/eaux-de-toilette/replica-beach-walk/MM003.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -9836,7 +11338,24 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.maisonmargiela-fragrances.us/fragrances/replica-eau-de-toilette/replica-coffee-break/MM006.html",
+              "market": "US",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -9978,7 +11497,17 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.glossier.com/products/glossier-you"
+          "sourceUrl": "https://www.glossier.com/products/glossier-you",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.glossier.com/products/glossier-you",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.glossier.com/products/glossier-you",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -10074,7 +11603,17 @@
           "volumeMl": 100,
           "sourceUrl": "https://www.bulgari.com/ja-jp/product/42539",
           "referencePriceYen": 19470,
-          "priceVerifiedAt": "2026-07-18"
+          "priceVerifiedAt": "2026-07-18",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/ja-jp/product/42539",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.bulgari.com/ja-jp/product/42539",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -10257,7 +11796,17 @@
       "sizes": [
         {
           "volumeMl": 125,
-          "sourceUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml"
+          "sourceUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+              "volumeMl": 125,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.zinodavidoff.com/fragrances/cool-water-eau-de-toilette-125-ml",
+              "market": "GLOBAL",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -10335,7 +11884,17 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/"
+          "sourceUrl": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.armani.com/ja-jp/giorgio-armani/fragrances/giorgio-armani/acqua-di-gio/",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -10421,7 +11980,72 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 10,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "volumeMl": 10,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/stronger-with-you-intensely-eau-de-parfum/3614272225701.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -10628,7 +12252,40 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-ca/product/42373",
+          "verifiedAt": "2026-09-28",
+          "market": "CA",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/en-ca/product/42373",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.bulgari.com/en-ca/product/42373",
+              "market": "CA",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+          "verifiedAt": "2026-09-28",
+          "market": "International",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+              "volumeMl": 150,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.bulgari.com/en-int/fragrances/mens/bvlgari-man/42374.html",
+              "market": "International",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -10693,7 +12350,56 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://www.bulgari.com/en-ca/product/42388",
+          "verifiedAt": "2026-09-28",
+          "market": "CA",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/en-ca/product/42388",
+              "volumeMl": 60,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.bulgari.com/en-ca/product/42388",
+              "market": "CA",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/en-sa/product/42389",
+          "verifiedAt": "2026-09-28",
+          "market": "SA",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/en-sa/product/42389",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.bulgari.com/en-sa/product/42389",
+              "market": "SA",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 150,
+          "sourceUrl": "https://www.bulgari.com/it-it/product/42390",
+          "verifiedAt": "2026-09-28",
+          "market": "IT",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.bulgari.com/it-it/product/42390",
+              "volumeMl": 150,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.bulgari.com/it-it/product/42390",
+              "market": "IT",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -10760,7 +12466,12 @@
         "value": "Eau de Parfum",
         "label": "オードパルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.bulgari.com/ru-ru/%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D1%8B/%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5/40389.html?ratings=true&swatches=true"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -10934,7 +12645,24 @@
         "value": "Eau de Parfum",
         "label": "オー ド パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+          "verifiedAt": "2026-09-26",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros-energy/eros-energy-edp-50-ml-yellow/R742008-R050MLS_RNUL.html",
+              "market": "US",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -10999,7 +12727,24 @@
         "value": "Parfum",
         "label": "パルファム"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-parfum-100-ml-black/R740210-R100MLS_RNUL.html",
+              "market": "US",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -11082,15 +12827,45 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         },
         {
           "volumeMl": 180,
-          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html"
+          "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "volumeMl": 180,
+              "verifiedAt": "2026-07-18",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/arancia-di-capri/ARANCIAEDTSPRAY.html",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "recommendedFor": [
@@ -11163,7 +12938,56 @@
         "value": "Eau de Cologne",
         "label": "オーデコロン"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+          "verifiedAt": "2026-09-28",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "volumeMl": 180,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/us/colonia-intensa/INTENSAEDCRP.html?dwvar_INTENSAEDCRP_size=50ML",
+              "market": "US",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -11295,7 +13119,56 @@
         "value": "Eau de Toilette",
         "label": "オードトワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "verifiedAt": "2026-09-28",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "verifiedAt": "2026-09-28",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 180,
+          "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+          "verifiedAt": "2026-09-28",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "volumeMl": 180,
+              "verifiedAt": "2026-09-28",
+              "sourceUrl": "https://www.acquadiparma.com/en/gb/bergamotto-di-calabria/BERGAMOTTOEDTSPRAY.html",
+              "market": "UK",
+              "selectionRequired": true
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -11713,7 +13586,30 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.loewe.com/usa/en/men/fragrances/loewe-solo-cedro-eau-de-toilette-50ml/P000011X56-0000.html",
+          "verifiedAt": "2026-09-26",
+          "market": "US",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.loewe.com/usa/en/men/fragrances/loewe-solo-cedro-eau-de-toilette-50ml/P000011X56-0000.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.loewe.com/usa/en/men/fragrances/loewe-solo-cedro-eau-de-toilette-50ml/P000011X56-0000.html",
+              "market": "US",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.perfumesloewe.com/int/en_FI/fragrances/loewe-solo/loewe-solo-cedro-100ml-LW70546.html",
+          "verifiedAt": "2026-09-26",
+          "market": "FI"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -11779,7 +13675,20 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
+          "verifiedAt": "2026-09-28",
+          "market": "CO"
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
+          "verifiedAt": "2026-09-28",
+          "market": "CO"
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -12667,7 +14576,40 @@
         "value": "Eau de Toilette",
         "label": "オー ド トワレ"
       },
-      "sizes": [],
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+          "verifiedAt": "2026-09-26",
+          "market": "UK",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.lacoste.com/gb/lacoste/men/accessories/fragrance/LC005A02.html",
+              "market": "UK",
+              "selectionRequired": false
+            }
+          }
+        },
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+          "verifiedAt": "2026-09-26",
+          "market": "FR",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-26",
+              "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC005A01.html",
+              "market": "FR",
+              "selectionRequired": false
+            }
+          }
+        }
+      ],
       "recommendedFor": [
         {
           "basis": "editorial",
@@ -12753,7 +14695,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fftk-tsutayaelectrics%2Fs4560228465051%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/ftk-tsutayaelectrics/s4560228465051/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fftk-tsutayaelectrics%2Fs4560228465051%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "25c2351743b56f946433f102c156924ec1a0f6a6c7661eeb2979ca005fd43dc3"
+            }
+          }
         }
       ],
       "price": "¥4,950",
@@ -12844,7 +14797,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2023111631%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/2023111631/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2023111631%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "30fea30bfd41d4632c809c00600e78b8ea1e3f29cdc30e3d9e4993dd5bc715bb"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -12933,7 +14897,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120050%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120050/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120050%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "2846cae7e6877f6ef731b13e1d28521c98a9460e6057b83b39b02c6c5ce9aaf6"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13023,7 +14998,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120048%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120048/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120048%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "b974e8e5b7853bcd07f7c71b8f54750cc42517aae2a6780b077d301c9f9890ab"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13113,7 +15099,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120029%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120029/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120029%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "4f10b9917a7df7162ce37687c5cad93adb1df5c48120281dcc132127e223d85b"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13203,7 +15200,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120033%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120033/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120033%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "a6ce69f90106676def9ebe61a76f7655e955e75045edc87d256522566827c561"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13293,7 +15301,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120028%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120028/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120028%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "31ecb285aaca820d8ae6c1cc0d9b517599076b2528cbef5e01afcd9785114296"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13383,7 +15402,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120040%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120040/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120040%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "b4c9cc012d9ec600b2918d2ef15fe0d96b1005d8afecb4bdef5a05db2e9f56a9"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13472,7 +15502,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120034%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120034/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120034%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "be7b844634f696b58e65247c03d462497acff15e7f2253915c2e00bb2eb4f313"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13562,7 +15603,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120030%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120030/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120030%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "0b75010db09b44fd2e851d44d70f7a0faea5f7f4315f26a93e112bf10ebf19a3"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13652,7 +15704,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120031%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120031/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120031%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "2124c3498379b03323a33a862935532b81aeb93e609eaea9880bafd8465a7e2d"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13742,7 +15805,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120027%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120027/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120027%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "6ac48d953aab0264af50fb686d1871c4f9ce5009390ee98c9fdfa8cec76ed49b"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13832,7 +15906,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120032%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120032/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120032%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "9f9510a41d49c1b736475535cf8099df14e90ce6a75da74d1ee652c0fd1ba948"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -13921,7 +16006,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120002%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120002/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120002%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "0fa33a461c017a212d2c078a7328d67caf6749d1f241c8ad72a1ca366bf63ce2"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14011,7 +16107,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120051%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120051/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120051%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "6c483ba18e8e11218182889b329be983069d23191da4ce3ac864a25c36480fda"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14101,7 +16208,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120047%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120047/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120047%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "92a8370a79e32401da6bd5ea5e647db9595f7d6d568e95b27de0e3c4a243e4d9"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14191,7 +16309,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120026%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120026/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120026%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "48971c279479f1c729c35b3fc98944c6d02712cb536c6005c1c743e008c0bd02"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14281,7 +16410,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20260911024%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20260911024/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20260911024%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "6fd48ec1c6ff9037c6145b219a877f6bf3c6f048ba408f3069859c4bb8d785a9"
+            }
+          }
         }
       ],
       "price": "¥5,995",
@@ -14371,7 +16511,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120036%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120036/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120036%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "70b2cecf70121ef0ce45762792bd4cef02352c56ec36ed40b82493753851f088"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14461,7 +16612,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120049%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120049/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120049%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "5a23c98c9148f1a0640b978dae49f3f992ccf0d622d24da9af85515eb952f41d"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14551,7 +16713,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120025%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120025/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120025%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "52e5d74179dc9ac2ac24a6906f0fc346644a12e174c401abc3575142c839bd15"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14642,7 +16815,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120024%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120024/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120024%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "f6bd22e8ec119440c5164d8ae171a0b9ac7786cd6dcd30705e595e83935743be"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14732,7 +16916,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953"
+          "sourceUrl": "https://www.luz-store.com/view/news/20250228133953",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120035%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/20231120035/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F20231120035%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "a26902bfda2e724170e49e4fe39f139fc5d1f027d20f9297637843d867fcf575"
+            }
+          }
         }
       ],
       "price": "¥6,215",
@@ -14823,7 +17018,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html"
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0007%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0007/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0007%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "9f2567099a97939fb00a01b1ce76a7a41e2d32c81b1facc7877668aee6a03af5"
+            }
+          }
         }
       ],
       "price": "¥29,040",
@@ -14913,7 +17119,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html"
+          "sourceUrl": "https://prtimes.jp/main/html/rd/p/000000008.000051882.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0008%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0008/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0008%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "288496d864e7df88521f187a5554ffd6a311ab1807387c7b386b535908f98726"
+            }
+          }
         }
       ],
       "price": "¥29,040",
@@ -15004,7 +17221,26 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple"
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-20",
+              "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-moss-temple",
+              "market": "JP",
+              "selectionRequired": true
+            },
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0010%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0010/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0010%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "16f6e0bce36737671ba45784b9c77ab13c1dd1eacef22783e07fcb73f29ba67a"
+            }
+          }
         }
       ],
       "price": "¥29,040",
@@ -15094,7 +17330,26 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi"
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-20",
+              "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sugi",
+              "market": "JP",
+              "selectionRequired": true
+            },
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0009%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0009/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0009%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "f47f13a2960ffaae842f50d3c5caefc15c3d5de391a7f4c69497bcd6c819e975"
+            }
+          }
         }
       ],
       "price": "¥29,040",
@@ -15185,7 +17440,17 @@
       "sizes": [
         {
           "volumeMl": 40,
-          "sourceUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906"
+          "sourceUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+              "volumeMl": 40,
+              "verifiedAt": "2026-09-20",
+              "sourceUrl": "https://shiro-shiro.jp/ec/pro/disp/1/12906",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "price": "¥2,155",
@@ -15273,7 +17538,57 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210116.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024040602%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/rareu/2024040602/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024040602%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "a0bd84068d088096319e71d695fb9ae9d962feff297fd3be69a5bb2f7c9ce627"
+            },
+            "official": {
+              "url": "https://www.auxparadis.com/products/210116.html",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-29",
+              "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          },
+          "format": "spray"
+        },
+        {
+          "volumeMl": 30,
+          "format": "spray",
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.auxparadis.com/products/210116.html",
+              "volumeMl": 30,
+              "verifiedAt": "2026-09-29",
+              "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
+        },
+        {
+          "volumeMl": 60,
+          "format": "refill-dropper",
+          "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+          "purchaseLinks": {
+            "official": {
+              "url": "https://www.auxparadis.com/products/210116.html",
+              "volumeMl": 60,
+              "verifiedAt": "2026-09-29",
+              "sourceUrl": "https://www.auxparadis.com/products/210116.html",
+              "market": "JP",
+              "selectionRequired": true
+            }
+          }
         }
       ],
       "price": "¥4,510",
@@ -15359,7 +17674,18 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210105.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210105.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "0ed9e45c515721c30a92c25dbdbfc238871a12b5dc2d914e6d50db6fffe8b317"
+            }
+          }
         }
       ],
       "price": "¥4,498",
@@ -15446,7 +17772,18 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210119.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210119.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1444%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz1000180212111zx1444/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz1000180212111zx1444%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "2c3ea37ad5d2f7c037817e72b87e448e9223dd6d0630e308fa19aa7b5102242c"
+            }
+          }
         }
       ],
       "price": "¥4,498",
@@ -15532,7 +17869,18 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210121.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210121.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2F1000180212111z%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/1000180212111z/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2F1000180212111z%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "b38523477ace57edd44ce2ca726f288dabfc67f238e69ecabed3674715045b45"
+            }
+          }
         }
       ],
       "price": "¥4,498",
@@ -15619,7 +17967,18 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210118.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210118.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz10001802122%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/tokyo-giftgarage/zz10001802122/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Ftokyo-giftgarage%2Fzz10001802122%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "161b13a78da0f66590efbc8e02da40d3d7835ad787e6efb05c6d81935feb9255"
+            }
+          }
         }
       ],
       "price": "¥4,498",
@@ -15791,7 +18150,18 @@
       "sizes": [
         {
           "volumeMl": 15,
-          "sourceUrl": "https://www.auxparadis.com/products/210104.html"
+          "sourceUrl": "https://www.auxparadis.com/products/210104.html",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Femporio8888%2F10002660%2F",
+              "volumeMl": 15,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/emporio8888/10002660/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Femporio8888%2F10002660%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "0ccaee4aad339ec9c0ba9cb5e2ec7033c9d2812cd35c1eddbea5de7fa24da727"
+            }
+          }
         }
       ],
       "price": "¥4,580",
@@ -15878,7 +18248,18 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.kitowa.co.jp/products/147142480"
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142480",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0013%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0013/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0013%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "bedce8022e9bbb0a1ec3b1820d6f27a91d34c3fc9fe11f2f70e7153cf5af5666"
+            }
+          }
         }
       ],
       "price": "¥36,300",
@@ -15964,7 +18345,18 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.kitowa.co.jp/products/147142499"
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142499",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0014%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0014/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0014%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "183006d10756fb15f717f48fbac39c4af24d2142421db2e0642228ae601a247d"
+            }
+          }
         }
       ],
       "price": "¥36,300",
@@ -16050,7 +18442,18 @@
       "sizes": [
         {
           "volumeMl": 100,
-          "sourceUrl": "https://www.kitowa.co.jp/products/147142527"
+          "sourceUrl": "https://www.kitowa.co.jp/products/147142527",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0015%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0015/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0015%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "a2e2d7f8160b7272d5b6e023fa7d7d6305f2aa24f5fc8e2f491653fd43b7102e"
+            }
+          }
         }
       ],
       "price": "¥36,300",
@@ -16137,7 +18540,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood"
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-sandalwood",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0011%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0011/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0011%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "2ce539173e9c5b37f7b30146fc9f4992daef0c0e18c92fa09d02b7f19d74f0f5"
+            }
+          }
         }
       ],
       "price": "¥36,300",
@@ -16223,7 +18637,18 @@
       "sizes": [
         {
           "volumeMl": 50,
-          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-oud"
+          "sourceUrl": "https://www.kitowa.co.jp/products/eau-eclosion-oud",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0012%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-09-15",
+              "sourceUrl": "https://item.rakuten.co.jp/retailer/kit-0012/",
+              "market": "JP",
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fretailer%2Fkit-0012%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "b7f1f13b920d80f415b092449acf1ee7ceece80c49454448e954acc09db1e8de"
+            }
+          }
         }
       ],
       "price": "¥43,560",

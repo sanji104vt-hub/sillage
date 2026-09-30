@@ -69,7 +69,8 @@
         return;
       }
       var buy = target.closest("a.buy");
-      if (!buy) return;
+      // Capacity links are tracked once by size-picker.js, in both languages.
+      if (!buy || buy.closest('[data-size-picker]')) return;
       var isOfficial = buy.classList.contains("buy-official");
       var params = itemParamsFrom(buy);
       params.page_type = PAGE_TYPE;

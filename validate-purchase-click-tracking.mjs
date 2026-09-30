@@ -9,9 +9,9 @@ for (const product of products) {
   const html = readFileSync(join("public", "items", `${product.slug}.html`), "utf8");
   const expected = Object.entries(product.purchaseLinks || {}).filter(([, link]) => link?.url);
   for (const [shop, link] of expected) {
-    const shopMarker = new RegExp(`<a class="buy[^"]*"[^>]*data-purchase-shop="${shop}"`, "g");
+    const shopMarker = new RegExp(`<a class="buy[^"]*"[^>]*data-purchase-shop="${shop}"[^>]*>`, "g");
     const productMarker = `data-product-id="${product.slug}"`;
-    const occurrences = (html.match(shopMarker) || []).length;
+    const occurrences = (html.match(shopMarker) || []).filter(tag => !tag.includes('data-volume-ml=')).length;
     if (occurrences !== 2) errors.push(`${product.slug}: ${shop}の計測リンクが上下2箇所ではありません (${occurrences})`);
     if (!html.includes(productMarker)) errors.push(`${product.slug}: product_idがありません`);
     if ((shop === "amazon" || shop === "rakuten") && !html.includes(`rel="nofollow sponsored noopener noreferrer"`)) {

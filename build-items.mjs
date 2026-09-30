@@ -11,6 +11,7 @@ import { familyOgpUrl } from "./lib/ogp-image.mjs";
 import { loadSiteCopy } from "./lib/site-copy.mjs";
 import { MOSHIMO_AFFILIATE_OFFERS } from "./data/moshimo-affiliate-offers.mjs";
 import { englishRoute } from "./lib/i18n.mjs";
+import { renderSizePicker, sizePickerAssets, sizeLabel } from "./lib/size-picker.mjs";
 
 const homeScript = readFileSync("public/assets/home.js", "utf8");
 const SITE_COPY = loadSiteCopy();
@@ -251,7 +252,7 @@ function pageHTML(p, related, competitors, trial) {
   // どちらが今の価格か読者に判断できなくなるため、容量の一覧だけ残す。
   const hasLivePrice = p.priceSource === "rakuten" && Boolean(p.price);
   const sizeSummary = hasLivePrice
-    ? (p.sizes || []).map((size) => `${Number(size.volumeMl)}mL`).join(" / ")
+    ? (p.sizes || []).map((size) => sizeLabel(size)).join(" / ")
     : formatSizes(p.sizes);
   const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
@@ -320,6 +321,7 @@ function pageHTML(p, related, competitors, trial) {
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+${sizePickerAssets}
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -454,6 +456,7 @@ article{max-width:1060px}
         ${priceRow(p, priceTier)}
         ${p.releaseYear ? `<div><dt>発売年</dt><dd>${p.releaseYear}年</dd></div>` : ""}
       </dl>
+      ${renderSizePicker(p)}
       ${purchaseButtons ? `${hasSponsoredPurchase ? `<p class="ad-note">PR：Amazon・楽天市場へのリンクにはアフィリエイト広告を含みます。</p>` : ""}<div class="actions hero-actions">${purchaseButtons}</div>` : moshimoOffer ? `<p class="ad-note">PR：楽天市場へのリンクにはアフィリエイト広告を含みます。</p><div class="actions hero-actions"><a class="brand-link" href="#purchase-title">楽天市場の購入先を見る</a></div>` : ""}
       ${p.updatedAt ? `<p class="updated">データ更新日：${escape(formatDate(p.updatedAt))}</p>` : ""}
       ${p.verifiedAt ? `<p class="updated">情報確認日：${escape(formatDate(p.verifiedAt))}</p>` : ""}
@@ -549,7 +552,7 @@ article{max-width:1060px}
 <script>
 document.addEventListener("click",function(event){
   const link=event.target.closest("${moshimoOffer ? "a[data-purchase-shop],.moshimo-offer a[href*='af.moshimo.com']" : "a[data-purchase-shop]"}");
-  if(!link)return;
+  if(!link||link.closest('[data-size-picker]'))return;
 ${moshimoOffer ? `  const offer=link.closest(".moshimo-offer");
 ` : ""}  const position=link.closest(".hero-actions")?"hero":"bottom";
   if(typeof window.gtag==="function"){
@@ -558,6 +561,7 @@ ${moshimoOffer ? `  const offer=link.closest(".moshimo-offer");
       purchase_shop:${moshimoOffer ? "link.dataset.purchaseShop||offer?.dataset.purchaseShop" : "link.dataset.purchaseShop"},
       button_position:position,
       destination_url:link.href,
+      requested_volume_ml:link.dataset.requestedVolumeMl||undefined,
       transport_type:"beacon"
     });
   }

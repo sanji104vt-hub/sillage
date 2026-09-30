@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/size-picker.css"><script defer src="/assets/size-picker.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -146,6 +147,7 @@ article{max-width:1060px}
         <div><dt>参考価格</dt><dd>¥11,000前後　ハイブランド<span class="price-note">販売店や時期により変動します</span></dd></div>
         <div><dt>発売年</dt><dd>2007年</dd></div>
       </dl>
+      <p class="size-guidance">容量の掲載情報を確認中です。販売先で取扱容量をご確認ください。</p>
 
       <p class="updated">データ更新日：2026年7月18日</p>
       <p class="updated">情報確認日：2026年7月18日</p>
@@ -269,7 +271,7 @@ article{max-width:1060px}
 <script>
 document.addEventListener("click",function(event){
   const link=event.target.closest("a[data-purchase-shop]");
-  if(!link)return;
+  if(!link||link.closest('[data-size-picker]'))return;
   const position=link.closest(".hero-actions")?"hero":"bottom";
   if(typeof window.gtag==="function"){
     window.gtag("event","purchase_link_click",{
@@ -277,6 +279,7 @@ document.addEventListener("click",function(event){
       purchase_shop:link.dataset.purchaseShop,
       button_position:position,
       destination_url:link.href,
+      requested_volume_ml:link.dataset.requestedVolumeMl||undefined,
       transport_type:"beacon"
     });
   }
