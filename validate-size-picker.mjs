@@ -7,10 +7,10 @@ import { sizeOptions, renderSizePicker, validGeneratedHtml } from './lib/size-pi
 
 assert.deepEqual(sizeOptions({sizes:[{volumeMl:100},{volumeMl:30},{volumeMl:30},{volumeMl:-1},{volumeMl:'50'}]}),[30,100]);
 assert(!renderSizePicker({slug:'none',sizes:[]}).includes('<select'));
-const sample={slug:'test',sizes:[{volumeMl:30,sourceUrl:'https://example.com/size',purchaseLinks:{rakuten:{url:'https://example.com/offer',volumeMl:30,verifiedAt:'2026-09-25',sourceUrl:'https://example.com/size'}}},{volumeMl:75}]};
+const sample={slug:'test',sizes:[{volumeMl:30,sourceUrl:'https://example.com/size',purchaseLinks:{rakuten:{url:'https://af.moshimo.com/af/c/click?test=1',volumeMl:30,verifiedAt:'2026-09-25',sourceUrl:'https://example.com/size'}}},{volumeMl:75}]};
 assert(renderSizePicker(sample).includes('data-volume-ml="30"'));
 sample.sizes[0].purchaseLinks.rakuten.volumeMl=100;
-assert(!renderSizePicker(sample).includes('https://example.com/offer'));
+assert(!renderSizePicker(sample).includes('https://af.moshimo.com/af/c/click?test=1'));
 sample.sizes[0].sourceUrl='javascript:alert(1)';
 assert(!renderSizePicker(sample).includes('javascript:'));
 
@@ -45,7 +45,9 @@ assert.deepEqual(fleur.sizes.map(s=>s.volumeMl),[15,30,60]);
 assert.equal(fleur.sizes.find(s=>s.volumeMl===60).format,'refill-dropper');
 assert(renderSizePicker(fleur).includes('詰め替え・スポイト'));
 assert(renderSizePicker(fleur,'en').includes('refill / dropper, not a spray'));
-assert(!renderSizePicker(products.find(p=>p.slug==='jo-malone-1')).includes('PR：'));
+assert(renderSizePicker(products.find(p=>p.slug==='jo-malone-1')).includes('PR：'));
+assert(renderSizePicker(products.find(p=>p.slug==='jo-malone-1')).includes('楽天の商品ページでも'));
+assert(!renderSizePicker(products.find(p=>p.slug==='jo-malone-1')).includes('data-purchase-shop="official"'));
 const rawHtml=renderSizePicker(products.find(p=>p.slug==='j-scent-1'),'en');
 assert(rawHtml.includes('lang="ja"'));
 assert(rawHtml.includes('Check the price on Rakuten Japan'));

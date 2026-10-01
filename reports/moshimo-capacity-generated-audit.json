@@ -1,0 +1,185 @@
+{
+  "checkedAt": "2026-10-01T05:40:48.423Z",
+  "method": "Direct retailer GET; no affiliate click. Titles are evidence for review, not automatic product matches.",
+  "records": [
+    {
+      "slug": "aux-paradis-1",
+      "brand": "AUX PARADIS",
+      "name": "フルール オードパルファム",
+      "concentration": "Eau de Parfum",
+      "knownSizes": [
+        30
+      ],
+      "priceSize": "15ml",
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Femporio8888%2F10000304%2F",
+      "url": "https://item.rakuten.co.jp/emporio8888/10000304/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/emporio8888/10000304/",
+      "title": "【楽天市場】【正規ギフト箱付き】香水 30ml フルール オゥパラディ AUX PARADIS 香水 フレグランス オードパルファム EDP 30ml 【送料無料】【ネコポス便】父の日 プレゼント 母の日 クリスマス お誕生日：EMPORIO",
+      "titleVolumes": [
+        30
+      ]
+    },
+    {
+      "slug": "aux-paradis-1",
+      "brand": "AUX PARADIS",
+      "name": "フルール オードパルファム",
+      "concentration": "Eau de Parfum",
+      "knownSizes": [
+        60
+      ],
+      "priceSize": "15ml",
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Frareu%2F2024040603%2F",
+      "url": "https://item.rakuten.co.jp/rareu/2024040603/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/rareu/2024040603/",
+      "title": "【楽天市場】国内正規品 AUX PARADIS オゥパラディ オードパルファム 香水 フルール フレグランス 60ml （レフィル・スポイトタイプ）：i&rsquo;vlesse",
+      "titleVolumes": [
+        60
+      ]
+    },
+    {
+      "slug": "jo-malone-1",
+      "brand": "Jo Malone",
+      "name": "ライムバジル & マンダリン",
+      "concentration": "Cologne",
+      "knownSizes": [
+        30,
+        50,
+        100
+      ],
+      "priceSize": "30ml",
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fjomalone%2F10101l00301%2F",
+      "url": "https://item.rakuten.co.jp/jomalone/10101l00301/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/jomalone/10101l00301/",
+      "title": "【楽天市場】【ワンダフルデー ポイント10倍 1日0:00～23:59】公式｜ジョー マローン ロンドン ライム バジル ＆ マンダリン コロン 30mL 50mL 100mL ギフトボックス入り｜ジョーマローン 香水 フレグランス ギフト 送料無料 プレゼント 贈り物 おすすめ プチギフト 誕生日：ジョー マローン ロンドン 公式",
+      "titleVolumes": [
+        30,
+        50,
+        100
+      ]
+    },
+    {
+      "slug": "4711-1",
+      "brand": "4711",
+      "name": "オーデコロン",
+      "concentration": "Eau de Cologne",
+      "knownSizes": [
+        50
+      ],
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsundrug%2F4903018471144%2F",
+      "url": "https://item.rakuten.co.jp/sundrug/4903018471144/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/sundrug/4903018471144/",
+      "title": "【楽天市場】柳屋本店 4711 オーデコロン 50ml：サンドラッグe-shop",
+      "titleVolumes": [
+        50
+      ]
+    },
+    {
+      "slug": "chanel-1",
+      "brand": "Chanel",
+      "name": "アリュール オム スポーツ",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        50
+      ],
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fnet-cosmeleaf%2F3145891236200%2F",
+      "url": "https://item.rakuten.co.jp/net-cosmeleaf/3145891236200/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/net-cosmeleaf/3145891236200/",
+      "title": "【楽天市場】シャネル CHANEL アリュールオムスポーツEDT SP 50ml：コスメリーフ",
+      "titleVolumes": [
+        50
+      ]
+    },
+    {
+      "slug": "chanel-1",
+      "brand": "Chanel",
+      "name": "アリュール オム スポーツ",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        100
+      ],
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbelmo%2Ffr3145891236309%2F",
+      "url": "https://item.rakuten.co.jp/belmo/fr3145891236309/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/belmo/fr3145891236309/",
+      "title": "【楽天市場】シャネル 香水 メンズ アリュール オム スポーツ EDT・SP 100ml 送料無料 香水 フレグランス プレゼント 贈り物 ギフト ALLURE HOMME SPORT CHANEL：belmo ONLINE",
+      "titleVolumes": [
+        100
+      ]
+    },
+    {
+      "slug": "montblanc-1",
+      "brand": "Montblanc",
+      "name": "レジェンド",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        50
+      ],
+      "priceSize": "30ml",
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpremoa%2F3386460032698%2F",
+      "url": "https://item.rakuten.co.jp/premoa/3386460032698/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/premoa/3386460032698/",
+      "title": "【楽天市場】Montblanc モンブラン 香水 メンズ レジェンド オードトワレ 50ml MV-MONTBLANCLEGEND-50 フレグランス 誕生日 新生活 クリスマス ギフト プレゼント：総合通販PREMOA 楽天市場店",
+      "titleVolumes": [
+        50
+      ]
+    },
+    {
+      "slug": "montblanc-1",
+      "brand": "Montblanc",
+      "name": "レジェンド",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        100
+      ],
+      "priceSize": "30ml",
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fublanc%2Fmbl0110000007%2F",
+      "url": "https://item.rakuten.co.jp/ublanc/mbl0110000007/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/ublanc/mbl0110000007/",
+      "title": "【楽天市場】モンブラン Montblanc LEGEND レジェンド オードトワレ 100mL メンズ フレグランス：UBLANC",
+      "titleVolumes": [
+        100
+      ]
+    },
+    {
+      "slug": "versace-1",
+      "brand": "Versace",
+      "name": "エロス EDT",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        50
+      ],
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F10040857%2F",
+      "url": "https://item.rakuten.co.jp/wish/10040857/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/wish/10040857/",
+      "title": "【楽天市場】【最大P5倍・最大1500円OFFクーポン】 ヴェルサーチ VERSACE ヴェルサーチ エロス EDT SP 50ml【香水 ギフト メンズ】【人気 ブランド ギフト 誕生日 プレゼント】：香水フレグランスPARFUM de EARTH",
+      "titleVolumes": [
+        50
+      ]
+    },
+    {
+      "slug": "versace-1",
+      "brand": "Versace",
+      "name": "エロス EDT",
+      "concentration": "Eau de Toilette",
+      "knownSizes": [
+        100
+      ],
+      "affiliateUrl": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Faquabouquet%2Fver00008%2F",
+      "url": "https://item.rakuten.co.jp/aquabouquet/ver00008/",
+      "status": 200,
+      "finalUrl": "https://item.rakuten.co.jp/aquabouquet/ver00008/",
+      "title": "【楽天市場】ヴェルサーチ エロス オードトワレ 100ml 香水 メンズ VERSACE EROS EDT [9219] [3F-V] [v5i]秋用 大人 上品：アクアブーケ楽天市場店",
+      "titleVolumes": [
+        100
+      ]
+    }
+  ]
+}

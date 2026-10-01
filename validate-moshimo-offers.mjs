@@ -46,10 +46,11 @@ for (const [slug, expected] of Object.entries(EXPECTED)) {
   if (!html.includes(offer.html)) errors.push(`生成HTMLがもしも原文と一致しません: ${slug}`);
   if (html.includes("&lt;a href=&quot;//af.moshimo.com")) errors.push(`もしもHTMLが文字列表示されています: ${slug}`);
   if ((html.match(/\/af\/i\/impression\?a_id=5718841/g) || []).length !== 1) errors.push(`生成ページのインプレッション数が不正: ${slug}`);
-  if ((html.match(/\/af\/c\/click\?a_id=5718841/g) || []).length !== 3) errors.push(`生成ページのクリックリンク数が不正: ${slug}`);
+  const capacityLinks = (item.sizes || []).filter(s=>s.purchaseLinks?.rakuten && !s.purchaseLinks.rakuten.generatedHtml).length;
+  if ((html.match(/\/af\/c\/click\?a_id=5718841/g) || []).length !== 3 + capacityLinks) errors.push(`生成ページのクリックリンク数が不正: ${slug}`);
   if (!html.includes(`<img class="photo" src="${item.img}"`)) errors.push(`メイン商品画像が楽天画像ではありません: ${slug}`);
   if (!html.includes(`this.src='${item.designImage}'`)) errors.push(`メイン画像のフォールバック参照なし: ${slug}`);
-  if ((html.match(/>楽天で価格を見る /g) || []).length !== 2) errors.push(`楽天で価格を見るボタンが上下2か所にありません: ${slug}`);
+  if ((html.match(/>楽天で価格を見る /g) || []).length !== 2 + capacityLinks) errors.push(`楽天で価格を見るボタンの上下・容量別件数が不正: ${slug}`);
   const purchaseSection = html.match(/<section class="section purchase-bottom"[\s\S]*?<\/section>/)?.[0] || "";
   if (!purchaseSection.includes(offer.html)) errors.push(`もしもHTMLが購入セクション外です: ${slug}`);
   if (!purchaseSection.includes("アフィリエイト広告")) errors.push(`広告表示なし: ${slug}`);

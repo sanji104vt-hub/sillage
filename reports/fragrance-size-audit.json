@@ -1,10 +1,709 @@
 {
-  "scope": "Existing repository data only; no current retailer availability or additional sizes verified.",
+  "scope": "Recorded capacities with reviewed Moshimo/Rakuten capacity mappings. Unmapped capacities are not claimed to be unavailable.",
   "total": 210,
   "multipleSizes": 57,
   "singleSize": 143,
   "noSizes": 10,
-  "needsPurchaseMapping": 92,
+  "needsPurchaseMapping": 16,
+  "moshimoCapacityLinks": 191,
+  "unmappedMoshimoCapacities": [
+    {
+      "slug": "acqua-di-parma-1",
+      "name": "コロニア",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-1",
+      "name": "コロニア",
+      "volumeMl": 180,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-1",
+      "name": "オー ソバージュ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dolce-gabbana-1",
+      "name": "ライト ブルー プールオム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-2",
+      "name": "ソヴァージュ EDT",
+      "volumeMl": 60,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-1",
+      "name": "プール オム",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-1",
+      "name": "プール オム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-1",
+      "name": "プール オム",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "guerlain-2",
+      "name": "ヴェチバー",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "guerlain-2",
+      "name": "ヴェチバー",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "chanel-2",
+      "name": "エゴイスト プラチナム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "gucci-1",
+      "name": "ギルティ プールオム",
+      "volumeMl": 90,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-3",
+      "name": "ソヴァージュ EDP",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-3",
+      "name": "ソヴァージュ EDP",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-2",
+      "name": "リブレ オーデパルファン",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-2",
+      "name": "リブレ オーデパルファン",
+      "volumeMl": 90,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-2",
+      "name": "リブレ オーデパルファン",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "chanel-3",
+      "name": "チャンス オー タンドゥル",
+      "volumeMl": 35,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "chanel-3",
+      "name": "チャンス オー タンドゥル",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "chanel-3",
+      "name": "チャンス オー タンドゥル",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-4",
+      "name": "ジャドール",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-4",
+      "name": "ジャドール",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "jo-malone-2",
+      "name": "イングリッシュ ペアー & フリージア",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "jo-malone-2",
+      "name": "イングリッシュ ペアー & フリージア",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "jo-malone-2",
+      "name": "イングリッシュ ペアー & フリージア",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-2",
+      "name": "ディラン ブルー",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-2",
+      "name": "ディラン ブルー",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-2",
+      "name": "クローム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-2",
+      "name": "クローム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "azzaro-2",
+      "name": "クローム",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "mugler-1",
+      "name": "エンジェル",
+      "volumeMl": 25,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "mugler-1",
+      "name": "エンジェル",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-1",
+      "name": "ストロンガー ウィズ ユー",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-1",
+      "name": "ストロンガー ウィズ ユー",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "prada-1",
+      "name": "キャンディ",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "prada-1",
+      "name": "キャンディ",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "prada-1",
+      "name": "キャンディ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "carolina-herrera-1",
+      "name": "バッドボーイ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-3",
+      "name": "ブラック オピウム",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-3",
+      "name": "ブラック オピウム",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-3",
+      "name": "ブラック オピウム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-3",
+      "name": "ブラック オピウム",
+      "volumeMl": 90,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-3",
+      "name": "ブラック オピウム",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-9",
+      "name": "ラ ニュイ ド ロム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "ysl-9",
+      "name": "ラ ニュイ ド ロム",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-1",
+      "name": "レプリカ ジャズクラブ",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-1",
+      "name": "レプリカ ジャズクラブ",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-5",
+      "name": "ソヴァージュ エリクシール",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-5",
+      "name": "ソヴァージュ エリクシール",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-1",
+      "name": "マン イン ブラック",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "viktor-rolf-2",
+      "name": "スパイスボム",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-francis-kurkdjian-1",
+      "name": "バカラ ルージュ 540",
+      "volumeMl": 70,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-3",
+      "name": "エロス フレイム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-3",
+      "name": "エロス フレイム",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "tom-ford-2",
+      "name": "オード ウッド",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "tom-ford-2",
+      "name": "オード ウッド",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "tom-ford-2",
+      "name": "オード ウッド",
+      "volumeMl": 250,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "creed-1",
+      "name": "アバントゥス",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "creed-1",
+      "name": "アバントゥス",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "creed-1",
+      "name": "アバントゥス",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "creed-1",
+      "name": "アバントゥス",
+      "volumeMl": 240,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "creed-7",
+      "name": "ボワ ドゥ ポルトガル",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-2",
+      "name": "アルマーニ コード",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-2",
+      "name": "アルマーニ コード",
+      "volumeMl": 75,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-2",
+      "name": "アルマーニ コード",
+      "volumeMl": 125,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-2",
+      "name": "アルマーニ コード",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "le-labo-1",
+      "name": "サンタル 33",
+      "volumeMl": 15,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "le-labo-1",
+      "name": "サンタル 33",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "le-labo-1",
+      "name": "サンタル 33",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "byredo-1",
+      "name": "ジプシー ウォーター",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "prada-3",
+      "name": "ルナロッサ カーボン",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "jo-malone-6",
+      "name": "ポメグラネート ノアール",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "jo-malone-6",
+      "name": "ポメグラネート ノアール",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "hugo-boss-6",
+      "name": "ヒューゴ マン",
+      "volumeMl": 125,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-7",
+      "name": "ディオール オム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "dior-7",
+      "name": "ディオール オム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "tom-ford-3",
+      "name": "ブラック オーキッド",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "guerlain-4",
+      "name": "ロム イデアル エクストレム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "guerlain-5",
+      "name": "アビ ルージュ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "guerlain-5",
+      "name": "アビ ルージュ",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "shiro-1",
+      "name": "サボン オードパルファン",
+      "volumeMl": 40,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-2",
+      "name": "レイジー サンデー モーニング",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-5",
+      "name": "バイ ザ ファイヤープレイス",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-5",
+      "name": "バイ ザ ファイヤープレイス",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-6",
+      "name": "ビーチ ウォーク",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-6",
+      "name": "ビーチ ウォーク",
+      "volumeMl": 30,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "maison-margiela-7",
+      "name": "コーヒー ブレイク",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-2",
+      "name": "ブルガリ プールオム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-2",
+      "name": "ブルガリ プールオム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "davidoff-1",
+      "name": "クール ウォーター",
+      "volumeMl": 125,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-3",
+      "name": "アクア ディ ジオ",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-4",
+      "name": "ストロンガー ウィズ ユー インテンスリー",
+      "volumeMl": 10,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-4",
+      "name": "ストロンガー ウィズ ユー インテンスリー",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "giorgio-armani-4",
+      "name": "ストロンガー ウィズ ユー インテンスリー",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-4",
+      "name": "マン ウッド エッセンス",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-4",
+      "name": "マン ウッド エッセンス",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-5",
+      "name": "マン レイン エッセンス",
+      "volumeMl": 60,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "bvlgari-5",
+      "name": "マン レイン エッセンス",
+      "volumeMl": 150,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-4",
+      "name": "プールオム",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-4",
+      "name": "プールオム",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-4",
+      "name": "プールオム",
+      "volumeMl": 200,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "versace-5",
+      "name": "エロス エナジー",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-2",
+      "name": "ブルー メディテラネオ アランチャ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-2",
+      "name": "ブルー メディテラネオ アランチャ",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-2",
+      "name": "ブルー メディテラネオ アランチャ",
+      "volumeMl": 180,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-3",
+      "name": "コロニア インテンサ",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-3",
+      "name": "コロニア インテンサ",
+      "volumeMl": 180,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-5",
+      "name": "ブルー メディテラネオ ベルガモット ディ カラブリア",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-5",
+      "name": "ブルー メディテラネオ ベルガモット ディ カラブリア",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "acqua-di-parma-5",
+      "name": "ブルー メディテラネオ ベルガモット ディ カラブリア",
+      "volumeMl": 180,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "loewe-5",
+      "name": "ソロ ロエベ セドロ",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "loewe-6",
+      "name": "アグア デ ロエベ エル",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "loewe-6",
+      "name": "アグア デ ロエベ エル",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "lacoste-5",
+      "name": "L.12.12 ノワール",
+      "volumeMl": 50,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "shiro-2",
+      "name": "ホワイトティー オードパルファン",
+      "volumeMl": 40,
+      "hasMoshimoLink": false
+    },
+    {
+      "slug": "cdg-9",
+      "name": "ワンダーウード",
+      "volumeMl": 100,
+      "hasMoshimoLink": false
+    }
+  ],
   "products": [
     {
       "slug": "jo-malone-1",
@@ -159,7 +858,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.fashionsnap.com/article/2025-05-12/dolce-and-gabbana-light-blue/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 100,
@@ -172,7 +871,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "hermes-2",
@@ -186,14 +885,14 @@
         {
           "volumeMl": 200,
           "sourceUrl": "https://www.hermes.com/uk/en/product/eau-d-orange-verte-eau-de-cologne-V101914V0/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "dior-2",
@@ -235,14 +934,14 @@
         {
           "volumeMl": 200,
           "sourceUrl": "https://www.calvinklein.us/en/ck-one-gift-set/LX001954.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "montblanc-1",
@@ -258,12 +957,12 @@
         {
           "volumeMl": 30,
           "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.montblanc.com/en-us/legend-eau-de-toilette-100-ml-MB107460.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 100,
@@ -358,14 +1057,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.rabanne.com/ww/en/fragrance/p/paco-rabanne-pour-homme--000000000065051929",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "nautica-1",
@@ -513,7 +1212,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.calvinklein.us/en/men/fragrance/fragrance/eternity-eau-de-toilette-for-men/LX000145-000.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -521,7 +1220,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ysl-2",
@@ -822,7 +1521,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.versace.com/us/en/men/accessories/fragrances-body-care/eros/eros-edt-50-ml-blue/R740008-R050MLS_RNUL.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 100,
@@ -974,7 +1673,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://qui.tokyo/news/250428-emporio-armani",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 100,
@@ -986,7 +1685,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "viktor-rolf-1",
@@ -1129,14 +1828,14 @@
         {
           "volumeMl": 60,
           "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-eau-de-parfum/WW-51115YSL.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ysl-7",
@@ -1150,14 +1849,14 @@
         {
           "volumeMl": 60,
           "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-le-parfum/WW-51213YSL.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ysl-8",
@@ -1171,14 +1870,14 @@
         {
           "volumeMl": 60,
           "sourceUrl": "https://www.yslbeauty.com/int/fragrance/masculine-fragrance/myslf/myslf-l-absolu/WW-51427YSL.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ysl-9",
@@ -1365,14 +2064,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-universalis-eau-de-toilette-RA130321.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-francis-kurkdjian-3",
@@ -1386,14 +2085,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/amyris-homme-eau-de-toilette-RA131421.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-francis-kurkdjian-4",
@@ -1407,14 +2106,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-vitae-cologne-forte-eau-de-parfum-10233021.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-francis-kurkdjian-5",
@@ -1428,14 +2127,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-eau-de-toilette-RA13262.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-francis-kurkdjian-6",
@@ -1449,14 +2148,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/aqua-celestia-cologne-forte-eau-de-parfum-RA12342.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-francis-kurkdjian-7",
@@ -1470,14 +2169,14 @@
         {
           "volumeMl": 70,
           "sourceUrl": "https://www.franciskurkdjian.com/int-en/p/baccarat-rouge-540-extrait-de-parfum-RA142321.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "versace-3",
@@ -1526,7 +2225,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.chanel.com/jp/fragrance/p/107350/bleu-de-chanel-eau-de-parfum-spray/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 100,
@@ -1667,14 +2366,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://creedboutique.com/products/green-irish-tweed",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "creed-3",
@@ -1688,14 +2387,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://creedboutique.com/products/silver-mountain-water",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "creed-4",
@@ -1709,14 +2408,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://creedboutique.com/products/virgin-island-water",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "creed-5",
@@ -1730,14 +2429,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://creedboutique.com/products/aventus-cologne",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "creed-6",
@@ -1751,14 +2450,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://creedboutique.com/products/millesime-imperial",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "creed-7",
@@ -1802,7 +2501,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.giorgioarmanibeauty-usa.com/fragrances/mens-cologne/armani-code/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         },
         {
           "volumeMl": 75,
@@ -1825,7 +2524,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "le-labo-1",
@@ -1895,14 +2594,14 @@
         {
           "volumeMl": 75,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "diptyque-3",
@@ -1916,14 +2615,14 @@
         {
           "volumeMl": 75,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "diptyque-4",
@@ -1937,14 +2636,14 @@
         {
           "volumeMl": 75,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "diptyque-5",
@@ -1958,14 +2657,14 @@
         {
           "volumeMl": 75,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "byredo-1",
@@ -2076,14 +2775,14 @@
         {
           "volumeMl": 30,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "prada-5",
@@ -2097,14 +2796,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-ocean-edt-100-ml/2A1156_2D00_F0Z99_P_ML100",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "prada-6",
@@ -2118,14 +2817,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.prada.com/us/en/p/luna-rossa-black-50-ml/2A1155_2HC5_F0Z99_P_ML050",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "prada-7",
@@ -2216,14 +2915,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.jomalone.com/product/25946/43657/colognes/myrrh-tonka-cologne-intense",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "jo-malone-6",
@@ -2286,14 +2985,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.hugoboss.com/boss-bottled-night-eau-de-toilette-100ml/hbeu58004750_999.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "hugo-boss-3",
@@ -2307,14 +3006,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.hugoboss.com/boss-bottled-infinite-eau-de-parfum-50ml/hbeu58079183_999.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "hugo-boss-4",
@@ -2455,14 +3154,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.tomfordbeauty.com/products/neroli-portofino-eau-de-parfum",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "tom-ford-5",
@@ -2476,14 +3175,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.tomfordbeauty.com/products/noir-extreme-eau-de-parfum",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "tom-ford-6",
@@ -2497,14 +3196,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.tomfordbeauty.com/products/grey-vetiver-eau-de-parfum",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "tom-ford-7",
@@ -2518,14 +3217,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.tomfordbeauty.com/products/tobacco-vanille-eau-de-parfum",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "aramis-1",
@@ -2539,14 +3238,14 @@
         {
           "volumeMl": 110,
           "sourceUrl": "https://www.cosme-silkroad.co.jp/index.php/products/detail/2846",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "chanel-5",
@@ -2729,14 +3428,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.narcisorodriguezparfums.com/en/narciso-rodriguez-for-her/for-her-edt.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "le-labo-2",
@@ -2806,14 +3505,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-margiela-4",
@@ -2827,14 +3526,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "maison-margiela-5",
@@ -2996,7 +3695,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.aesop.com/jp/c/fragrance/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -3004,7 +3703,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "davidoff-1",
@@ -3114,14 +3813,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.bulgari.com/en-us/products/91152-e.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "bvlgari-4",
@@ -3195,14 +3894,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.bulgari.com/ru-ru/%D0%B0%D1%80%D0%BE%D0%BC%D0%B0%D1%82%D1%8B/%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5/40389.html?ratings=true&swatches=true",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "versace-4",
@@ -3405,14 +4104,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "loewe-2",
@@ -3426,14 +4125,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "loewe-3",
@@ -3447,14 +4146,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "loewe-4",
@@ -3468,14 +4167,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "loewe-5",
@@ -3495,7 +4194,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.perfumesloewe.com/int/en_FI/fragrances/loewe-solo/loewe-solo-cedro-100ml-LW70546.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -3543,14 +4242,14 @@
         {
           "volumeMl": 125,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ralph-lauren-2",
@@ -3564,14 +4263,14 @@
         {
           "volumeMl": 30,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ralph-lauren-3",
@@ -3585,14 +4284,14 @@
         {
           "volumeMl": 125,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ralph-lauren-4",
@@ -3606,14 +4305,14 @@
         {
           "volumeMl": 125,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ralph-lauren-5",
@@ -3627,14 +4326,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "ralph-lauren-6",
@@ -3648,14 +4347,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": null,
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "lacoste-l1212-blanc-edt-50",
@@ -3669,14 +4368,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC001A02-000.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "lacoste-l1212-blanc-edp-50",
@@ -3690,14 +4389,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.lacoste.com/fr/lacoste/homme/accessoires/parfums/LC002A02.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "lacoste-l1212-blanc-eau-fraiche-edt-50",
@@ -3711,14 +4410,14 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.lacoste.com/dk/lacoste/men/accessories/fragrance/LC003A02-000.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "lacoste-l1212-blanc-eau-intense-edt-100",
@@ -3732,14 +4431,14 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://www.lacoste.com/id/en/sport/l.12.12-blanc-eau-intense-100ml/0100-LACLC004A01.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "lacoste-5",
@@ -4518,7 +5217,7 @@
         {
           "volumeMl": 15,
           "sourceUrl": "https://www.auxparadis.com/products/210117.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4526,7 +5225,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "aux-paradis-7",
@@ -4672,7 +5371,7 @@
         {
           "volumeMl": 80,
           "sourceUrl": "https://comme-des-garcons-parfum.com/products/concrete",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4680,7 +5379,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-3",
@@ -4694,7 +5393,7 @@
         {
           "volumeMl": 200,
           "sourceUrl": "https://comme-des-garcons-parfum.com/products/odeur-71",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4702,7 +5401,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-1",
@@ -4716,7 +5415,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137087898/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4724,7 +5423,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-4",
@@ -4738,7 +5437,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137093292/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4746,7 +5445,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-5",
@@ -4760,7 +5459,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137087899/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4768,7 +5467,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-6",
@@ -4782,7 +5481,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137088331/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4790,7 +5489,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-7",
@@ -4804,7 +5503,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137088332/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4812,7 +5511,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-8",
@@ -4826,7 +5525,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137088957/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4834,7 +5533,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-9",
@@ -4870,7 +5569,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137090167/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4878,7 +5577,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-11",
@@ -4892,7 +5591,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137090168/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4900,7 +5599,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-12",
@@ -4914,7 +5613,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137090862/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4922,7 +5621,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-13",
@@ -4936,7 +5635,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137092557/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4944,7 +5643,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-14",
@@ -4958,7 +5657,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137092780/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4966,7 +5665,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "cdg-15",
@@ -4980,7 +5679,7 @@
         {
           "volumeMl": 100,
           "sourceUrl": "https://item.rakuten.co.jp/coolness/137093018/",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -4988,7 +5687,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "issey-miyake-1",
@@ -5002,7 +5701,7 @@
         {
           "volumeMl": 125,
           "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-toilette-EIH_EDT.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -5010,7 +5709,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "issey-miyake-2",
@@ -5024,7 +5723,7 @@
         {
           "volumeMl": 125,
           "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-eau-de-parfum-EIH_EDP.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -5032,7 +5731,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "issey-miyake-3",
@@ -5046,7 +5745,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-eau-and-c%C3%A8dre-eau-de-toilette-intense-EI_CEDRE.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -5054,7 +5753,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "issey-miyake-4",
@@ -5068,7 +5767,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l%E2%80%99eau-d%E2%80%99issey-pour-homme-woodandwood-eau-de-parfum-EI_WOOD.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -5076,7 +5775,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     },
     {
       "slug": "issey-miyake-5",
@@ -5090,7 +5789,7 @@
         {
           "volumeMl": 50,
           "sourceUrl": "https://www.isseymiyakeparfums.com/en/issey-miyake-l-eau-d-issey-pour-homme-solar-lavender-eau-de-toilette-intense-LEDIPHSLEDTI.html",
-          "hasSizeSpecificPurchaseLinks": false
+          "hasSizeSpecificPurchaseLinks": true
         }
       ],
       "generalPurchaseShops": [
@@ -5098,7 +5797,7 @@
         "rakuten"
       ],
       "needsCapacityResearch": false,
-      "needsPurchaseMapping": true
+      "needsPurchaseMapping": false
     }
   ]
 }
