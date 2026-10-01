@@ -57,3 +57,20 @@
 
 モンブラン「レジェンド」の商品ページで50mLと100mLを切り替え、対応する「楽天市場で価格を見る」ボタンが表示されることを確認する。
 フルールの60mLを選び、詰め替えの注意と楽天購入ボタンが出ることを確認する。
+
+## 本番反映・公開後確認
+
+- 実装コミット：`1090a8fecac1055e05383a5e0ee035faa7ecae37`。
+- mainへ通常push。既存GitHub Actions → Cloudflare Workersで公開。直接アップロードや設定変更なし。
+- デプロイ完了：2026-10-01 14:44:39 JST。
+- Actions成功：https://github.com/sanji104vt-hub/sillage/actions/runs/36821210722
+- 公開ドメイン：https://sillage.asutelu.com/
+- Worker入口：https://sillage.sanji-104vt.workers.dev/ （正規ドメインへ転送）。
+- 公開後照合：2026-10-01 14:48:37 JST。日本語210・英語85商品ページ＋関連5ファイル、合計300件すべてHTTP 200・内容一致。Gitの改行形式差（CRLF／LF）だけを正規化した比較。
+- 通常アクセスでモンブラン・シャネル・フルールの3ページも一致。キャッシュ回避クエリで全300件を照合。
+- Worker入口からの商品ページも一致。存在しない商品はHTTP 404。
+- 公開ブラウザでモンブラン100mL、フルール60mL詰め替えの選択と楽天ボタンを確認。モンブランのコンソールerror／warnなし。
+- 確認URL：https://sillage.asutelu.com/items/montblanc-1 、https://sillage.asutelu.com/items/chanel-1 、https://sillage.asutelu.com/items/aux-paradis-1
+- 再実行：`node scripts/audit-capacity-production.mjs 1090a8f`。
+- 結果：`reports/moshimo-capacity-production-check.json`。
+- ロールバックは実装コミットを通常revertし、既存Actionsで再公開する。強制push・履歴書換えはしない。

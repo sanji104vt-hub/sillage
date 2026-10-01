@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-01T05:48:37.864Z",
+  "deployedCommit": "1090a8fecac1055e05383a5e0ee035faa7ecae37",
+  "origin": "https://sillage.asutelu.com",
+  "comparison": "UTF-8 content; CRLF normalized to LF only",
+  "checked": 300,
+  "exactMatches": 300,
+  "failures": [],
+  "normal": [
+    {
+      "url": "/items/montblanc-1",
+      "status": 200,
+      "exactMatch": true
+    },
+    {
+      "url": "/items/chanel-1",
+      "status": 200,
+      "exactMatch": true
+    },
+    {
+      "url": "/items/aux-paradis-1",
+      "status": 200,
+      "exactMatch": true
+    }
+  ],
+  "worker": {
+    "status": 200,
+    "finalUrl": "https://sillage.asutelu.com/items/montblanc-1",
+    "exactMatch": true
+  },
+  "missingProductStatus": 404
+}
