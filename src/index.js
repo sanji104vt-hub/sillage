@@ -23,6 +23,11 @@ export default {
       "/items/givenchy-1.html",
       "/items/ysl-5",
       "/items/ysl-5.html",
+      // 2026-10-03 追加：アグア デ ロエベ エル。楽天に出品が1件も無く、
+      // リンクは404、香調の出典も無かったため取り下げた。
+      // ブランドページは Loewe が5商品で残るので 410 にしない。
+      "/items/loewe-6",
+      "/items/loewe-6.html",
       "/brand-givenchy.html",
       // 2026-07-30 追加：楽天・公式どちらの購入リンクも無い4商品と、それに伴い掲載0本になった3ブランド。
       "/items/atelier-cologne-1",

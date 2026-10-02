@@ -35,7 +35,7 @@ for (const lang of ['ja','en']) {
 }
 let english=0;
 const products=loadFragrances();
-for (const slug of ['loewe-6','carolina-herrera-1']) {
+for (const slug of ['carolina-herrera-1']) {
   assert(products.find(p=>p.slug===slug).sizes.every(s=>!s.purchaseLinks?.official));
 }
 assert(!products.find(p=>p.slug==='loewe-5').sizes.find(s=>s.volumeMl===100).purchaseLinks?.official);
@@ -86,7 +86,6 @@ for (const [slug, volumes] of Object.entries({
   'gucci-5': [90],
   'bvlgari-4': [100, 150],
   'bvlgari-5': [60, 100, 150],
-  'loewe-6': [50, 100],
   'hugo-boss-6': [75, 125],
   'versace-6': [100],
   'acqua-di-parma-3': [50, 100, 180],

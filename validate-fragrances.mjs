@@ -47,7 +47,7 @@ const SIXTH_BATCH_SLUGS = new Set([
   // 2026-08-09 追加：ブランドあたりの掲載本数を増やすための17商品（新規ブランドなし）
   "jo-malone-5", "jo-malone-6",
   "lacoste-5",
-  "loewe-5", "loewe-6",
+  "loewe-5",
   "maison-margiela-5", "maison-margiela-6", "maison-margiela-7",
   "prada-5", "prada-6", "prada-7",
   "versace-5", "versace-6",

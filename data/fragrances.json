@@ -8781,7 +8781,21 @@
         "amazon": null,
         "rakuten": null
       },
-      "sources": [],
+      "sources": [
+        {
+          "url": "https://www.jomalone.jp/product/25946/9900/colognes/pomegranate-noir-cologne",
+          "publisher": "Jo Malone London",
+          "title": "ポメグラネート ノアール コロン",
+          "accessedAt": "2026-10-03",
+          "supports": [
+            "concentration",
+            "sizes",
+            "notes"
+          ],
+          "market": "JP",
+          "sourceType": "official"
+        }
+      ],
       "verifiedAt": "2026-10-03",
       "updatedAt": "2026-10-03",
       "priceSource": "manual-stale",
@@ -13741,81 +13755,6 @@
       "priceSize": "100ml",
       "priceFetchedAt": "2026-10-01",
       "priceTier": "high"
-    },
-    {
-      "slug": "loewe-6",
-      "brand": "Loewe",
-      "name": "アグア デ ロエベ エル",
-      "gender": "men",
-      "family": "citrus",
-      "top": "ベルガモット・マンダリン・バジル",
-      "mid": "ジャスミン・ミント",
-      "last": "ホワイトムスク・シダー",
-      "seasons": [
-        "spring",
-        "summer"
-      ],
-      "scenes": [
-        "business",
-        "daily",
-        "sports"
-      ],
-      "releaseYear": 2012,
-      "verdict": "地中海の空気を狙ったシトラスとハーブ。掲載中のクラシックより軽く、日中向き。",
-      "img": "/img/products/loewe-6.png",
-      "concentration": {
-        "value": "Eau de Toilette",
-        "label": "オー ド トワレ"
-      },
-      "sizes": [
-        {
-          "volumeMl": 50,
-          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
-          "verifiedAt": "2026-09-28",
-          "market": "CO"
-        },
-        {
-          "volumeMl": 100,
-          "sourceUrl": "https://www.perfumesloewe.com/int/es_CO/hombre/loewe-agua/loewe-agua-el-100ml-LW68260.html",
-          "verifiedAt": "2026-09-28",
-          "market": "CO"
-        }
-      ],
-      "recommendedFor": [
-        {
-          "basis": "editorial",
-          "text": "夏の日中に惜しみなく使える一本が欲しい人"
-        },
-        {
-          "basis": "editorial",
-          "text": "香りを主張しすぎたくない人"
-        }
-      ],
-      "notRecommendedFor": [
-        {
-          "basis": "editorial",
-          "text": "長時間の持続を最優先する人"
-        }
-      ],
-      "cautions": [],
-      "profile": {
-        "method": "editorial-v1",
-        "dailyToDistinctive": null,
-        "freshToSweet": null,
-        "lightToRich": null,
-        "subtleToBold": null,
-        "youthfulToMature": null
-      },
-      "purchaseLinks": {
-        "official": null,
-        "amazon": null,
-        "rakuten": null
-      },
-      "sources": [],
-      "verifiedAt": "2026-10-03",
-      "updatedAt": "2026-10-03",
-      "priceSource": "manual-stale",
-      "needsCorrectLink": true
     },
     {
       "slug": "ralph-lauren-1",

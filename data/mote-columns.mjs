@@ -255,7 +255,7 @@ export const MOTE_ARTICLES = [
       { name: "YSL", href: "/brand-ysl.html" },
       { name: "Creed", href: "/brand-creed.html" },
     ],
-    featured: ["acqua-di-parma-1", "jo-malone-1", "loewe-6"],
+    featured: ["acqua-di-parma-1", "jo-malone-1", "loewe-3"],
   },
 
   {
