@@ -222,6 +222,17 @@ fragrances.forEach((item, index) => {
   }
   if (!item.img) missing["画像なし"]++;
   if (!item.price) missing["価格なし"]++;
+  // 参考価格も価格帯も無いと、商品ページに価格の手がかりが1つも出ない。
+  // 集計だけだと気づかずデプロイでき、実際に29商品が参考価格なしで公開され、
+  // うち8商品は価格帯も無い状態だった（2026-10-01 発見）。落ちる検査にする。
+  //
+  // 参考価格そのものは、楽天の商品名から容量が読めない等の理由で正当に
+  // 採用できないことがある（別容量の価格を出すほうが害が大きい）。そこで
+  // 「価格帯まで無い」ところを下限として止める。楽天リンクが切れていて
+  // 差し替え待ちの商品は needsCorrectLink で追跡しているので例外にする。
+  if (!item.price && !item.priceTier && !item.needsCorrectLink) {
+    errors.push(`参考価格も価格帯もありません: ${slug}（priceSource=${item.priceSource || "未設定"}）`);
+  }
   if (!item.family) missing["香調なし"]++;
   // keyNotes を持つ商品は、ブランドが3層を公表していないので欠落ではない。
   if (!item.keyNotes) {
@@ -318,7 +329,11 @@ fragrances.forEach((item, index) => {
   if (item.priceSource === "rakuten") {
     const got = Number(String(item.priceSize ?? "").match(/(\d+(?:\.\d+)?)/)?.[1]);
     const ours = (item.sizes || []).map((size) => Number(size.volumeMl));
-    if (!ours.some((n) => n === got)) errors.push(`実売価格の容量が掲載容量と不一致: ${path}`);
+    // 掲載容量を持っていない商品は、照合する相手がいない。この検査の目的は
+    // 「掲載していない容量の価格を採用してしまう」のを防ぐことなので、
+    // 掲載容量が空のときは成立しない。取得できた容量は商品ページに併記される。
+    // （sizes 自体が空なのは別の欠落で、公式から埋めるべき課題として残っている）
+    if (ours.length && !ours.some((n) => n === got)) errors.push(`実売価格の容量が掲載容量と不一致: ${path}`);
     if (item.priceSizeMismatch || item.priceSizeUnknown) {
       errors.push(`容量を採用できない印が付いたまま実売価格を採用: ${path}`);
     }

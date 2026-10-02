@@ -98,7 +98,13 @@ const priceRow = (p, priceTier) => {
     return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(priceMetaText(p))}${escape(tier)}<span class="price-note">価格は取得時点の楽天市場での実売価格です。最新の価格は各販売ページでご確認ください。</span></dd></div>`;
   }
   if (p.price && !(p.sizes || []).some((size) => size.referencePriceYen)) {
-    return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(tier)}<span class="price-note">販売店や時期により変動します</span></dd></div>`;
+    // manual-stale は「楽天APIで商品を特定できず、かつ過去に一度も実売価格を
+    // 取れていない」状態。日数で付くものではない。表示している価格は編集部の
+    // 手入力なので、実売を確認できていないことを読者にも分かるようにする。
+    const note = p.priceSource === "manual-stale"
+      ? "編集部が確認した参考値です。販売ページでの実売価格は確認できていません"
+      : "販売店や時期により変動します";
+    return `<div><dt>参考価格</dt><dd>${escape(p.price)}${escape(tier)}<span class="price-note">${note}</span></dd></div>`;
   }
   if (!p.price && priceTier) return `<div><dt>価格帯</dt><dd>${escape(priceTier)}</dd></div>`;
   return "";
@@ -254,6 +260,11 @@ function pageHTML(p, related, competitors, trial) {
   const sizeSummary = hasLivePrice
     ? (p.sizes || []).map((size) => sizeLabel(size)).join(" / ")
     : formatSizes(p.sizes);
+  // 「容量・参考価格」と名乗るのは、実際に参考価格を並べているときだけ。
+  // 実売価格も参考価格も無い商品で「・参考価格」と出すと、ラベルだけあって
+  // 中身が容量しか無い状態になる（2026-10-01 に29商品で発生していた）。
+  const hasReferencePrice = (p.sizes || []).some((size) => size.referencePriceYen);
+  const sizeFactLabel = hasLivePrice || !hasReferencePrice ? "容量" : "容量・参考価格";
   const recommendationItems = (p.recommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const notRecommendationItems = (p.notRecommendedFor || []).map((item) => `<li>${escape(item.text)}</li>`).join("");
   const cautionItems = (p.cautions || []).map((item) => `<li>${escape(item)}</li>`).join("");
@@ -450,7 +461,7 @@ article{max-width:1060px}
       <dl class="hero-facts">
         <div><dt>香調ファミリー</dt><dd>${escape(famLabel)}</dd></div>
         ${p.concentration?.label ? `<div><dt>香水濃度</dt><dd>${escape(p.concentration.label)}</dd></div>` : ""}
-        ${sizeSummary ? `<div><dt>${hasLivePrice ? "容量" : "容量・参考価格"}</dt><dd>${escape(sizeSummary)}${!hasLivePrice && (p.sizes || []).some((size) => size.referencePriceYen) ? `<span class="price-note">公式確認時の税込価格。変更される場合があります</span>` : ""}</dd></div>` : ""}
+        ${sizeSummary ? `<div><dt>${sizeFactLabel}</dt><dd>${escape(sizeSummary)}${!hasLivePrice && (p.sizes || []).some((size) => size.referencePriceYen) ? `<span class="price-note">公式確認時の税込価格。変更される場合があります</span>` : ""}</dd></div>` : ""}
         ${scenes ? `<div><dt>主な利用シーン</dt><dd>${escape(scenes)}</dd></div>` : ""}
         ${seasons ? `<div><dt>主な季節</dt><dd>${escape(seasons)}</dd></div>` : ""}
         ${priceRow(p, priceTier)}

@@ -106,7 +106,12 @@ function tierOf(value) {
 function classifySize(product, priceSize) {
   const got = mlOf(priceSize);
   const ours = (product.sizes || []).map((size) => mlOf(size.volumeMl)).filter((n) => n !== null);
-  if (got === null || !ours.length) return "unknown";   // 商品名から容量を読めない／掲載容量が無い
+  // 商品名から容量が読めない。どの容量の価格か分からないので採用しない。
+  if (got === null) return "unknown";
+  // 掲載容量を持っていない商品。矛盾する相手がいないので、取得できた容量を
+  // そのまま併記して採用する。以前はこれも "unknown" にしていたため、価格が
+  // 読めているのに参考価格が出ない商品が7件あった（2026-10-01 に修正）。
+  if (!ours.length) return "no-listed-size";
   return ours.some((n) => n === got) ? "match" : "mismatch";
 }
 
@@ -259,7 +264,7 @@ for (const product of products) {
   // 商品は特定できたが、その価格が掲載容量のものでない場合は採用しない。
   // 採用すると別容量の価格で価格帯フィルタが決まってしまう。
   const sizeVerdict = classifySize(product, size);
-  if (sizeVerdict !== "match") {
+  if (sizeVerdict !== "match" && sizeVerdict !== "no-listed-size") {
     keepManualPrice(product, prev, "manual");
     // フラグはどちらか一方だけが立つようにする（対処方法が違うため）
     if (sizeVerdict === "mismatch") product.priceSizeMismatch = true;

@@ -1,0 +1,82 @@
+name: Weekly Prices
+
+# 掲載中の全商品の参考価格を楽天APIから取り直し、サイトを再生成して push する。
+# push で deploy.yml が走るので、価格の更新はそのまま本番へ反映される。
+#
+# 週次監査（weekly-audit.yml）とは別のワークフローにしている。監査は「検知のみ・
+# data/ を書き換えない」ことを自身で検査しており、価格取得はその前提を壊すため。
+#
+# 2026-10-01 まで fetch-prices.mjs はどのワークフローからも呼ばれておらず、
+# 手で実行したときだけ更新されていた。その結果 210商品のうち93商品が
+# 2026-08-10 取得のまま（約50日前）になっていた。
+on:
+  schedule:
+    # 毎週日曜 15:00 UTC = 月曜 00:00 JST。
+    # 週次監査（月曜 00:00 UTC = 09:00 JST）より先に走らせ、監査が新しい価格を見るようにする。
+    - cron: '0 15 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-prices
+  cancel-in-progress: false
+
+jobs:
+  prices:
+    runs-on: ubuntu-latest
+    # 210商品 × 最大8リクエスト × 1.2秒間隔 ≒ 最大34分。ビルドと検証の余裕を足す。
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch prices
+        env:
+          RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
+          RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
+          # 他サイトの値が残っていて認証に失敗した事例があるため明示する
+          RAKUTEN_ORIGIN: 'https://sillage.asutelu.com/'
+        run: node scripts/fetch-prices.mjs
+
+      - name: Rebuild site
+        # 価格はトップのフィルタ・商品ページ・英語版・JSON-LDに波及する。
+        # 通し忘れると生成物とデータが食い違うので、必ず全段を回す。
+        run: |
+          node build-fragrance-assets.mjs
+          node build-home-data.mjs
+          node build-site-copy.mjs
+          node build-items.mjs
+          node build-columns.mjs
+          node build-internal-links.mjs
+          node build-kyoto-article.mjs
+          node build-i18n.mjs
+          node generate-seo.mjs
+          node enhance-static-seo.mjs
+
+      - name: Validate
+        # ここで落ちたら push しない。価格が取れずに参考価格が消えた商品があれば
+        # validate-fragrances.mjs が止めるので、壊れた状態が本番へ出ることはない。
+        run: |
+          for f in validate-*.mjs; do
+            echo "--- $f"
+            node "$f"
+          done
+
+      - name: Commit and push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/fragrances.json public/
+          if git diff --cached --quiet; then
+            echo "価格に変更なし"
+          else
+            git commit -m "chore: 週次の参考価格更新（楽天API）"
+            git push
+          fi
