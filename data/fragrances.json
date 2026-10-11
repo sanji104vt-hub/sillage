@@ -129,9 +129,8 @@
       "priceSource": "rakuten",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-01",
-      "priceIsFrom": true,
-      "priceStaleRuns": 1
+      "priceFetchedAt": "2026-10-12",
+      "priceIsFrom": true
     },
     {
       "slug": "acqua-di-parma-1",
@@ -265,7 +264,7 @@
       "priceSize": "100ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "dior-1",
@@ -285,7 +284,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥18,865",
+      "price": "¥19,558",
       "releaseYear": 1966,
       "verdict": "1966年の名作。シトラスにハーブと苔の渋みを通した、時代を超える紳士の清涼感。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/kousuiandco/cabinet/00_2/chr026-100_1.jpg?_ex=512x512",
@@ -381,11 +380,10 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 18865,
+      "priceValue": 19558,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-01",
-      "priceSource": "rakuten",
-      "priceStaleRuns": 1
+      "priceFetchedAt": "2026-10-12",
+      "priceSource": "rakuten"
     },
     {
       "slug": "4711-1",
@@ -484,8 +482,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual-stale",
-      "needsCorrectLink": true
+      "priceSource": "manual",
+      "needsCorrectLink": true,
+      "priceSizeMismatch": true
     },
     {
       "slug": "guerlain-1",
@@ -587,7 +586,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 18359,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -686,7 +685,7 @@
       "priceSource": "rakuten",
       "priceValue": 5698,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "hermes-2",
@@ -706,7 +705,7 @@
         "business"
       ],
       "priceTier": "high",
-      "price": "¥26,190",
+      "price": "¥26,110",
       "releaseYear": 1979,
       "verdict": "エルメスの伝統的コロン。緑がかった柑橘が瑞々しく、性別も世代も問わず使える清涼感。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/coscora/cabinet/03011640105.jpg?_ex=512x512",
@@ -772,9 +771,9 @@
         }
       ],
       "priceSource": "rakuten",
-      "priceValue": 26190,
+      "priceValue": 26110,
       "priceSize": "200ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "dior-2",
@@ -893,7 +892,7 @@
       "priceSource": "rakuten",
       "priceValue": 19680,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "ck-1",
@@ -1089,7 +1088,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 4763,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -1235,7 +1234,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 5368,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -1428,7 +1427,7 @@
       "priceSource": "rakuten",
       "priceValue": 6995,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "nautica-1",
@@ -1530,7 +1529,8 @@
       "priceValue": 3058,
       "priceSize": "100ml",
       "priceFetchedAt": "2026-10-05",
-      "priceSource": "rakuten"
+      "priceSource": "rakuten",
+      "priceStaleRuns": 1
     },
     {
       "slug": "guerlain-2",
@@ -1647,7 +1647,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 27500,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -1767,7 +1767,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 23381,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -1868,8 +1868,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual-stale",
-      "needsCorrectLink": true
+      "priceSource": "manual",
+      "needsCorrectLink": true,
+      "priceSizeMismatch": true
     },
     {
       "slug": "dior-3",
@@ -2001,7 +2002,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17545,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -2092,7 +2093,7 @@
       "priceSource": "rakuten",
       "priceValue": 4928,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "ysl-2",
@@ -2251,7 +2252,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13970,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2387,7 +2388,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17480,
       "priceSize": "35ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -2521,7 +2522,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 28050,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -2623,7 +2624,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13673,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -2757,7 +2758,7 @@
       "price": "¥14,795",
       "priceValue": 14795,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -2909,7 +2910,8 @@
       "priceValue": 11660,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-10-05",
-      "priceTier": "mid"
+      "priceTier": "mid",
+      "priceStaleRuns": 1
     },
     {
       "slug": "jo-malone-2",
@@ -3038,7 +3040,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 6940,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -3060,7 +3062,7 @@
         "date"
       ],
       "priceTier": "mid",
-      "price": "¥9,000前後",
+      "price": "¥10,540",
       "releaseYear": 2007,
       "verdict": "花瓶のようなボトルが象徴的。みずみずしく爽やかな白い花で、若々しい清楚さを描く。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/osharecafe/cabinet/marsn/marsn_08/marc_daisy100.jpg?_ex=512x512",
@@ -3138,7 +3140,10 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceSource": "manual-stale"
+      "priceSource": "rakuten",
+      "priceValue": 10540,
+      "priceSize": "100ml",
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "jo-malone-3",
@@ -3267,7 +3272,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -3507,7 +3512,7 @@
       "priceSource": "rakuten",
       "priceValue": 11902,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "azzaro-2",
@@ -3743,7 +3748,7 @@
       "priceValue": 14900,
       "priceSize": "50ml",
       "priceFetchedAt": "2026-08-10",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "thierry-mugler-1",
@@ -3847,7 +3852,7 @@
       "priceSource": "rakuten",
       "priceValue": 14300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "giorgio-armani-1",
@@ -3944,7 +3949,7 @@
       "priceSource": "rakuten",
       "priceValue": 14472,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "viktor-rolf-1",
@@ -3963,7 +3968,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥30,195",
+      "price": "¥30,470",
       "releaseYear": 2014,
       "verdict": "オリジナルをより甘く濃密に。タバコとバニラの大人の甘さで、冬の夜に深い印象を残す。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/belmo/cabinet/img008/fr3614270659706.jpg?_ex=512x512",
@@ -4042,9 +4047,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 30195,
+      "priceValue": 30470,
       "priceSize": "90ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -4191,7 +4196,7 @@
       "priceSource": "rakuten",
       "priceValue": 15950,
       "priceSize": "80ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "carolina-herrera-1",
@@ -4436,7 +4441,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 19800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -4509,10 +4514,10 @@
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "price": "¥17,430",
-      "priceValue": 17430,
+      "price": "¥17,380",
+      "priceValue": 17380,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -4586,7 +4591,7 @@
       "price": "¥21,384",
       "priceValue": 21384,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -4660,7 +4665,7 @@
       "price": "¥34,244",
       "priceValue": 34244,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -4777,10 +4782,10 @@
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "price": "¥15,970",
-      "priceValue": 15970,
+      "price": "¥15,920",
+      "priceValue": 15920,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -4912,7 +4917,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 12980,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -5042,7 +5047,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 26480,
       "priceSize": "60ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -5262,7 +5267,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16300,
       "priceSize": "90ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -5440,7 +5445,7 @@
       "price": "¥35,200",
       "priceValue": 35200,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5515,7 +5520,7 @@
       "price": "¥38,681",
       "priceValue": 38681,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5590,7 +5595,7 @@
       "price": "¥42,900",
       "priceValue": 42900,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5665,7 +5670,7 @@
       "price": "¥65,000",
       "priceValue": 65000,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5741,7 +5746,7 @@
       "price": "¥40,603",
       "priceValue": 40603,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5815,7 +5820,7 @@
       "price": "¥75,900",
       "priceValue": 75900,
       "priceSize": "70ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -5925,7 +5930,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 9768,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -6050,7 +6055,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16180,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -6213,7 +6218,8 @@
       "priceSize": "30ml",
       "priceFetchedAt": "2026-10-05",
       "priceSource": "rakuten",
-      "priceIsFrom": true
+      "priceIsFrom": true,
+      "priceStaleRuns": 1
     },
     {
       "slug": "dior-6",
@@ -6328,7 +6334,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 28320,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -6549,7 +6555,7 @@
       "price": "¥62,707",
       "priceValue": 62707,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -6624,7 +6630,7 @@
       "price": "¥62,707",
       "priceValue": 62707,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -6697,7 +6703,7 @@
       "price": "¥62,707",
       "priceValue": 62707,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -6774,7 +6780,7 @@
       "priceSize": "50ml",
       "priceFetchedAt": "2026-08-10",
       "priceTier": "high",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "creed-6",
@@ -6848,7 +6854,7 @@
       "price": "¥43,500",
       "priceValue": 43500,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -6922,7 +6928,7 @@
       "price": "¥49,875",
       "priceValue": 49875,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -7029,7 +7035,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 13750,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7050,7 +7056,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥34,980",
+      "price": "¥34,800",
       "releaseYear": 2011,
       "verdict": "乾いた白檀とレザーの中性的な煙。唯一無二の存在感で、性別を超えて支持される。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/rush-mall/cabinet/point/p3/0704-0705/lelabo-004_n2.jpg?_ex=512x512",
@@ -7157,9 +7163,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 34980,
+      "priceValue": 34800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7264,7 +7270,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 20845,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7352,7 +7358,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 29800,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7440,7 +7446,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 40910,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7528,7 +7534,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 33880,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7617,7 +7623,8 @@
       "priceValue": 28270,
       "priceSize": "75ml",
       "priceFetchedAt": "2026-10-05",
-      "priceSource": "rakuten"
+      "priceSource": "rakuten",
+      "priceStaleRuns": 1
     },
     {
       "slug": "byredo-1",
@@ -7868,7 +7875,7 @@
       "price": "¥5,940",
       "priceValue": 5940,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -7970,7 +7977,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 26250,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -7991,7 +7998,7 @@
         "sports"
       ],
       "priceTier": "high",
-      "price": "¥13,690",
+      "price": "¥16,130",
       "releaseYear": 2017,
       "verdict": "ラベンダーの清潔さに金属的な冷たさを重ねた現代のフゼア。汗ばむ場面でも輪郭が濁りにくい。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/lovelove/cabinet/p241129/2500000227912.jpg?_ex=512x512",
@@ -8056,9 +8063,9 @@
       ],
       "verifiedAt": "2026-08-06",
       "updatedAt": "2026-08-06",
-      "priceValue": 13690,
+      "priceValue": 16130,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -8146,7 +8153,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 14850,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -8221,7 +8228,7 @@
       "price": "¥15,796",
       "priceValue": 15796,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -8295,7 +8302,7 @@
       "price": "¥20,927",
       "priceValue": 20927,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -8381,7 +8388,7 @@
       "price": "¥28,600",
       "priceValue": 28600,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -8483,7 +8490,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 9850,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -8613,7 +8620,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 12100,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -8688,7 +8695,7 @@
       "price": "¥28,110",
       "priceValue": 28110,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -8900,7 +8907,7 @@
       "priceSource": "rakuten",
       "priceValue": 9024,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "hugo-boss-2",
@@ -8973,7 +8980,7 @@
       "price": "¥10,148",
       "priceValue": 10148,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -9045,10 +9052,10 @@
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
       "priceSource": "rakuten",
-      "price": "¥14,575",
-      "priceValue": 14575,
+      "price": "¥14,850",
+      "priceValue": 14850,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9117,7 +9124,7 @@
       "price": "¥20,460",
       "priceValue": 20460,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9186,7 +9193,7 @@
       "price": "¥9,983",
       "priceValue": 9983,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -9289,7 +9296,7 @@
       "price": "¥10,376",
       "priceValue": 10376,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -9424,8 +9431,8 @@
         "formal",
         "date"
       ],
-      "priceTier": "mid",
-      "price": "¥6,980〜",
+      "priceTier": "high",
+      "price": "¥12,980〜",
       "releaseYear": 2006,
       "verdict": "土と黒い花の濃密なシプレ。拡散が強く一滴で十分。冬の夜、印象を残したい場面の切り札。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/cosmelink/cabinet/04191347/1059000055-1_cp.jpg?_ex=512x512",
@@ -9562,9 +9569,9 @@
       },
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
-      "priceValue": 6980,
+      "priceValue": 12980,
       "priceSize": "10ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -9640,7 +9647,7 @@
       "price": "¥44,625",
       "priceValue": 44625,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9714,7 +9721,7 @@
       "price": "¥24,872",
       "priceValue": 24872,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9787,10 +9794,10 @@
       "verifiedAt": "2026-08-09",
       "updatedAt": "2026-08-09",
       "priceSource": "rakuten",
-      "price": "¥35,680",
-      "priceValue": 35680,
+      "price": "¥35,570",
+      "priceValue": 35570,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9864,7 +9871,7 @@
       "price": "¥57,767",
       "priceValue": 57767,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -9939,7 +9946,7 @@
       "priceSource": "rakuten",
       "priceValue": 13500,
       "priceSize": "110ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "chanel-5",
@@ -10040,7 +10047,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 24640,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -10146,7 +10153,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 17920,
       "priceSize": "75ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -10248,7 +10255,7 @@
       "price": "¥17,600",
       "priceValue": 17600,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -10366,7 +10373,7 @@
       "price": "¥17,704",
       "priceValue": 17704,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -10452,7 +10459,7 @@
       "price": "¥18,150",
       "priceValue": 18150,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -10556,7 +10563,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 22480,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -10680,7 +10687,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥12,375",
+      "price": "¥12,966",
       "releaseYear": 2003,
       "verdict": "上質なムスクの官能。肌に溶けるような色気で、世界的に支持されるムスクの代表作。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/besba/cabinet/s20/nrz-022.jpg?_ex=512x512",
@@ -10731,9 +10738,9 @@
       "verifiedAt": "2026-07-18",
       "updatedAt": "2026-07-18",
       "priceSource": "rakuten",
-      "priceValue": 12375,
+      "priceValue": 12966,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "le-labo-2",
@@ -10869,7 +10876,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 16200,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceIsFrom": true
     },
@@ -11061,7 +11068,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 14300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -11149,7 +11156,7 @@
       "updatedAt": "2026-08-06",
       "priceValue": 23518,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -11267,7 +11274,7 @@
       "price": "¥10,203",
       "priceValue": 10203,
       "priceSize": "30ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -11384,7 +11391,7 @@
       "price": "¥26,037",
       "priceValue": 26037,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -11469,7 +11476,7 @@
       "price": "¥12,780",
       "priceValue": 12780,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -11629,7 +11636,7 @@
       "updatedAt": "2026-07-18",
       "priceValue": 20410,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -11829,7 +11836,7 @@
       "priceSize": "50ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "davidoff-1",
@@ -12032,7 +12039,7 @@
       "priceSize": "100ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "giorgio-armani-4",
@@ -12162,10 +12169,10 @@
       "verifiedAt": "2026-08-10",
       "updatedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "price": "¥16,150",
-      "priceValue": 16150,
+      "price": "¥16,100",
+      "priceValue": 16100,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -12235,7 +12242,7 @@
       "needsCorrectLink": true,
       "priceValue": 13200,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "bvlgari-3",
@@ -12308,7 +12315,7 @@
       "priceSource": "rakuten",
       "priceValue": 14120,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "bvlgari-4",
@@ -12528,7 +12535,7 @@
       "priceSize": "100ml",
       "priceFetchedAt": "2026-10-01",
       "priceTier": "high",
-      "priceStaleRuns": 1
+      "priceStaleRuns": 2
     },
     {
       "slug": "bvlgari-6",
@@ -12603,7 +12610,7 @@
       "price": "¥11,726",
       "priceValue": 11726,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -13124,7 +13131,7 @@
       "price": "¥12,034",
       "priceValue": 12034,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -13194,7 +13201,7 @@
       "price": "¥21,793",
       "priceValue": 21793,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -13400,8 +13407,7 @@
       "priceSource": "rakuten",
       "priceValue": 16780,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-01",
-      "priceStaleRuns": 1
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "loewe-2",
@@ -13488,7 +13494,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 18800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -13661,7 +13667,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 30412,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -13754,7 +13760,7 @@
       "price": "¥19,500",
       "priceValue": 19500,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "high"
     },
     {
@@ -13844,7 +13850,7 @@
       "priceSize": "125ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "ralph-lauren-2",
@@ -13933,7 +13939,7 @@
       "priceSize": "30ml",
       "priceFetchedAt": "2026-08-10",
       "priceSource": "rakuten",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "ralph-lauren-3",
@@ -14022,7 +14028,7 @@
       "priceSize": "125ml",
       "priceFetchedAt": "2026-08-09",
       "priceSource": "rakuten",
-      "priceStaleRuns": 6
+      "priceStaleRuns": 7
     },
     {
       "slug": "ralph-lauren-4",
@@ -14109,7 +14115,7 @@
       "updatedAt": "2026-08-04",
       "priceValue": 9966,
       "priceSize": "125ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -14130,7 +14136,7 @@
         "daily"
       ],
       "priceTier": "high",
-      "price": "¥17,325",
+      "price": "¥17,600",
       "releaseYear": 2021,
       "verdict": "ラベンダーとベチバー、パチュリが折り重なるモダンなウッディ・アロマティック。社交的な夜のシーンで映える。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img044/fr3605971512612.jpg?_ex=512x512",
@@ -14195,9 +14201,9 @@
       ],
       "verifiedAt": "2026-08-04",
       "updatedAt": "2026-08-04",
-      "priceValue": 17325,
+      "priceValue": 17600,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -14218,7 +14224,7 @@
         "formal"
       ],
       "priceTier": "high",
-      "price": "¥23,375",
+      "price": "¥23,650",
       "releaseYear": 2022,
       "verdict": "EDP版よりマンダリンとベチバーの奥行きが深まったパルファム。長時間持続する濃密なラルフズクラブを求める人に。",
       "img": "https://thumbnail.image.rakuten.co.jp/@0_mall/beautyfactory-belmo/cabinet/img047/fr3605972698780.jpg?_ex=512x512",
@@ -14283,9 +14289,9 @@
       ],
       "verifiedAt": "2026-08-04",
       "updatedAt": "2026-08-04",
-      "priceValue": 23375,
+      "priceValue": 23650,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -14355,7 +14361,7 @@
       "price": "¥7,343",
       "priceValue": 7343,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -14426,7 +14432,7 @@
       "price": "¥7,618",
       "priceValue": 7618,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -14507,7 +14513,7 @@
       "price": "¥7,068",
       "priceValue": 7068,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "mid"
     },
@@ -14578,7 +14584,7 @@
       "price": "¥13,999",
       "priceValue": 13999,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high"
     },
@@ -14682,7 +14688,7 @@
       "price": "¥10,230",
       "priceValue": 10230,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceTier": "mid"
     },
     {
@@ -14784,7 +14790,7 @@
       },
       "priceValue": 4950,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-2",
@@ -14886,7 +14892,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-3",
@@ -14986,7 +14992,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-4",
@@ -15087,7 +15093,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-5",
@@ -15188,7 +15194,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-6",
@@ -15289,7 +15295,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-7",
@@ -15390,7 +15396,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-8",
@@ -15491,7 +15497,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-9",
@@ -15591,7 +15597,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-10",
@@ -15692,7 +15698,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-11",
@@ -15793,7 +15799,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-12",
@@ -15894,7 +15900,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-13",
@@ -15995,7 +16001,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-14",
@@ -16095,7 +16101,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-15",
@@ -16196,7 +16202,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-16",
@@ -16297,7 +16303,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-17",
@@ -16398,7 +16404,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-18",
@@ -16499,7 +16505,7 @@
       },
       "priceValue": 5995,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-19",
@@ -16600,7 +16606,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-20",
@@ -16701,7 +16707,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-21",
@@ -16802,7 +16808,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-22",
@@ -16904,7 +16910,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "j-scent-23",
@@ -17005,7 +17011,7 @@
       },
       "priceValue": 6215,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-1",
@@ -17107,7 +17113,7 @@
       },
       "priceValue": 29040,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-2",
@@ -17208,7 +17214,7 @@
       },
       "priceValue": 29040,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-3",
@@ -17318,7 +17324,7 @@
       },
       "priceValue": 29040,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-4",
@@ -17427,7 +17433,7 @@
       },
       "priceValue": 29040,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "shiro-2",
@@ -17662,7 +17668,7 @@
       },
       "priceValue": 4400,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-2",
@@ -17759,7 +17765,7 @@
       },
       "priceValue": 4498,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-3",
@@ -17857,7 +17863,7 @@
       },
       "priceValue": 4498,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-4",
@@ -17954,7 +17960,7 @@
       },
       "priceValue": 4498,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-5",
@@ -18052,7 +18058,7 @@
       },
       "priceValue": 4498,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-6",
@@ -18138,7 +18144,7 @@
       },
       "priceValue": 4510,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "aux-paradis-7",
@@ -18235,7 +18241,7 @@
       },
       "priceValue": 4580,
       "priceSize": "15ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-5",
@@ -18333,7 +18339,7 @@
       },
       "priceValue": 36300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-6",
@@ -18430,7 +18436,7 @@
       },
       "priceValue": 36300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-7",
@@ -18527,7 +18533,7 @@
       },
       "priceValue": 36300,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-8",
@@ -18625,7 +18631,7 @@
       },
       "priceValue": 36300,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "kitowa-9",
@@ -18722,7 +18728,7 @@
       },
       "priceValue": 43560,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "cdg-2",
@@ -18810,7 +18816,7 @@
       "updatedAt": "2026-09-24",
       "priceValue": 30800,
       "priceSize": "80ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "cdg-3",
@@ -18896,7 +18902,7 @@
       "updatedAt": "2026-09-24",
       "priceValue": 28600,
       "priceSize": "200ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "cdg-1",
@@ -18981,7 +18987,7 @@
       "price": "¥24,200",
       "priceValue": 24200,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19076,7 +19082,7 @@
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
       "updatedAt": "2026-09-24",
-      "priceStaleRuns": 2
+      "priceStaleRuns": 3
     },
     {
       "slug": "cdg-5",
@@ -19161,7 +19167,7 @@
       "price": "¥18,700",
       "priceValue": 18700,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19250,7 +19256,7 @@
       "price": "¥20,900",
       "priceValue": 20900,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19339,7 +19345,7 @@
       "price": "¥18,700",
       "priceValue": 18700,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19429,7 +19435,7 @@
       "price": "¥19,800",
       "priceValue": 19800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19604,7 +19610,7 @@
       "price": "¥20,900",
       "priceValue": 20900,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19695,7 +19701,7 @@
       "price": "¥19,800",
       "priceValue": 19800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19785,7 +19791,7 @@
       "price": "¥19,800",
       "priceValue": 19800,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19874,7 +19880,7 @@
       "price": "¥20,900",
       "priceValue": 20900,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -19964,7 +19970,7 @@
       "price": "¥19,800",
       "priceValue": 19800,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -20052,7 +20058,7 @@
       "price": "¥24,200",
       "priceValue": 24200,
       "priceSize": "100ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten",
       "priceTier": "high",
       "verifiedAt": "2026-09-24",
@@ -20143,7 +20149,7 @@
       "price": "¥18,700",
       "priceValue": 18700,
       "priceSize": "125ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -20233,7 +20239,7 @@
       "price": "¥21,120",
       "priceValue": 21120,
       "priceSize": "125ml",
-      "priceFetchedAt": "2026-10-05",
+      "priceFetchedAt": "2026-10-12",
       "priceSource": "rakuten"
     },
     {
@@ -20330,7 +20336,7 @@
       "price": "¥6,655",
       "priceValue": 6655,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "issey-miyake-4",
@@ -20418,7 +20424,7 @@
       "price": "¥16,190",
       "priceValue": 16190,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     },
     {
       "slug": "issey-miyake-5",
@@ -20506,7 +20512,7 @@
       "price": "¥7,280",
       "priceValue": 7280,
       "priceSize": "50ml",
-      "priceFetchedAt": "2026-10-05"
+      "priceFetchedAt": "2026-10-12"
     }
   ]
 }
