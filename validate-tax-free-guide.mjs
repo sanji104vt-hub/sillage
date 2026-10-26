@@ -13,7 +13,16 @@ assert(taxFreePeriods.refund.customsConfirmationWithinDays === 90, "90-day rule 
 assert(taxFreeSources.length >= 4, "Official tax-free sources are incomplete");
 assert(taxFreeSources.every((source) => source.sourceType === "official" && /^https:\/\//.test(source.url)), "Tax-free source must be an official HTTPS URL");
 assert(html.includes("Until October 31, 2026") && html.includes("From November 1, 2026"), "Both 2026 procedure periods must be visible");
-assert(html.includes("within 90 days of purchase"), "90-day departure rule is not visible");
+assert(html.includes("within 90 days of purchase"), "90-day customs-confirmation rule is not visible");
+assert(taxFreeVerifiedAt === "2026-10-26", "Official procedures must use the actual verification date");
+assert(!/scheduled|planned refund flow/i.test(html), "Confirmed reform must not be described as tentative");
+assert(html.includes("not to receiving your refund"), "90-day confirmation deadline must not be presented as a refund deadline");
+for (const airport of ["Narita", "Haneda", "Kansai", "Chubu", "Fukuoka", "New Chitose", "Naha"]) assert(html.includes(airport), `Visit Japan Web airport missing: ${airport}`);
+assert(html.includes("Visit Japan Web") && html.includes("procedure-specific wireless LAN") && html.includes("before security"), "Visit Japan Web location and connection restrictions missing");
+assert(html.includes("green means no inspection is required") && html.includes("red means you must take the goods"), "Green/red customs instructions missing");
+assert(html.includes("none of the items in that transaction") && html.includes("even one tax-free item is missing"), "Receipt-level confirmation warning missing");
+assert(html.includes("immediate cash refund at the airport is not guaranteed"), "Refund delivery must not be guaranteed");
+assert(taxFreeSources.some((source) => source.url === "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html" && source.accessedAt === taxFreeVerifiedAt), "Current official traveler procedure source missing");
 assert(html.includes("Tax-free eligibility and aviation rules are separate"), "Perfume aviation disclaimer missing");
 assert(html.includes("Sillage does not promise that perfume can be shipped internationally"), "International shipping non-promise missing");
 assert(html.includes(`Last verified: ${new Intl.DateTimeFormat("en-GB", { dateStyle: "medium", timeZone: "Asia/Tokyo" }).format(new Date(`${taxFreeVerifiedAt}T00:00:00+09:00`))}`), "Last verified date missing");
@@ -64,7 +73,7 @@ assert(html.includes("The category itself disappears"), "Category removal missin
 // 別送の禁止は2025-04-01から施行済み。改正のうちこれだけが先行している。
 assert(taxFreeSeparateShipmentFrom === "2025-04-01", "Separate-shipment exclusion date must stay 2025-04-01");
 assert(html.includes("This change is already in force"), "Separate-shipment rule must be marked as already in force");
-assert(html.includes("Scheduled changes to Japan's tax-free procedure"), "Comparison table missing");
+assert(html.includes("Confirmed changes to Japan's tax-free procedure"), "Comparison table missing");
 assert(taxFreeAirportSteps.length >= 4, "Airport procedure needs at least 4 steps");
 assert(html.includes("before you check your baggage with the airline"), "Baggage check-in warning missing");
 assert(html.includes("Tax-free is not duty-free"), "Tax-free vs duty-free section missing");
@@ -72,6 +81,9 @@ assert(html.includes("Tax-free is not duty-free"), "Tax-free vs duty-free sectio
 assert(taxFreeFaq.length >= 5, "FAQPage needs at least 5 questions");
 assert(html.includes('"@type":"FAQPage"'), "FAQPage structured data missing");
 for (const entry of taxFreeFaq) assert(html.includes(entry.q.replaceAll("&", "&amp;")), `FAQ question missing from body: ${entry.q}`);
+const structuredData = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((match) => JSON.parse(match[1]));
+const faq = structuredData.find((entry) => entry["@type"] === "FAQPage");
+assert(JSON.stringify(faq?.mainEntity.map((entry) => ({ q: entry.name, a: entry.acceptedAnswer.text }))) === JSON.stringify(taxFreeFaq), "FAQ structured data must match the source questions and answers");
 
 const bodyText = html.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 assert(bodyText.length >= 5000, `Tax-free guide is too short for the topic: ${bodyText.length} characters (needs 5000)`);

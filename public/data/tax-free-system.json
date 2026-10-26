@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "verifiedAt": "2026-09-02",
+  "verifiedAt": "2026-10-26",
   "currentVersion": "pre-refund",
   "changesAt": "2026-11-01",
   "periods": {
@@ -15,6 +15,14 @@
     }
   },
   "sources": [
+    {
+      "publisher": "Japan Tourism Agency",
+      "title": "Refund Method: Traveler Procedures and Official Multilingual Leaflets",
+      "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html",
+      "sourceType": "official",
+      "supports": ["effective-date", "90-day-rule", "customs-confirmation", "visit-japan-web", "receipt-level-confirmation", "refund-method"],
+      "accessedAt": "2026-10-26"
+    },
     {
       "publisher": "Japan National Tourism Organization",
       "title": "Japan's Tax Exemption",
@@ -121,21 +129,23 @@
       "refund": "Removed"
     },
     {
-      "item": "Deadline to leave Japan",
+      "item": "Export / customs-confirmation deadline",
       "preRefund": "Consumables must be exported unopened. NTA guidance refers to a 30-day pledge made at the time of purchase.",
-      "refund": "Within 90 days of purchase"
+      "refund": "Complete customs confirmation at departure within 90 days of purchase; export the goods without delay afterwards"
     }
   ],
   "airportSteps": [
     "Arrive at the airport with extra time. Customs confirmation cannot be rushed.",
-    "Go to customs before you check your baggage with the airline if the perfume will travel in a checked bag. Once the bag is checked in, the goods can no longer be presented.",
-    "Present the tax-free goods and the required travel documents for customs confirmation.",
-    "Receive the refund through the method stated by the participating business."
+    "Complete customs confirmation before you check your baggage with the airline and before security. Keep all tax-free goods with you, including perfume packed in a suitcase; checked bags cannot be retrieved for this procedure.",
+    "Present your passport at a tax-free procedure kiosk or electronic terminal. At Narita, Haneda, Kansai, Chubu, Fukuoka, New Chitose and Naha airports, Visit Japan Web is an alternative in designated international-departure lobby areas connected to the procedure-specific wireless LAN before security.",
+    "Follow the result: green means no inspection is required and customs confirmation is complete; red means you must take the goods to the customs inspection area and complete inspection.",
+    "Complete customs confirmation within 90 days of purchase and before boarding procedures. For a domestic-to-international connection, use your final departure airport from Japan. Export the confirmed goods without delay.",
+    "After customs confirmation, receive the refund from the store or its refund operator under the terms given at purchase. Refund methods, timing and any fees vary; an immediate cash refund at the airport is not guaranteed."
   ],
   "faq": [
     {
       "q": "When does the Japan tax-free system change?",
-      "a": "The refund method is scheduled to start on 1 November 2026. Purchases made through 31 October 2026 follow the current procedure."
+      "a": "The refund method starts for purchases made from 1 November 2026. Purchases made through 31 October 2026 follow the current procedure."
     },
     {
       "q": "Do I pay consumption tax at the store?",
@@ -143,19 +153,27 @@
     },
     {
       "q": "Where do I get the refund?",
-      "a": "After customs confirms the goods are leaving Japan, the refund is provided through the participating business's stated method. The method and timing differ by retailer or refund operator, so confirm at the point of purchase."
+      "a": "After customs confirmation, the store or its refund operator provides the refund. Methods, timing and any handling fees vary. Confirm the terms at purchase; an immediate cash refund at the airport is not guaranteed."
     },
     {
       "q": "Is perfume a consumable item?",
-      "a": "Fragrance is treated as a consumable under the tax-free system. The ¥500,000 cap on consumables is scheduled to be removed on 1 November 2026."
+      "a": "Fragrance is treated as a consumable through 31 October 2026. From 1 November 2026, the distinction between general goods and consumables and the ¥500,000 consumables cap are removed."
     },
     {
       "q": "What happens if I use the product in Japan?",
       "a": "Customs confirmation requires that the goods are being taken out of Japan. Removing the special packaging requirement does not mean the product may be consumed in Japan before departure."
     },
     {
-      "q": "How long do I have to leave Japan after buying?",
-      "a": "Under the refund method, you must leave Japan within 90 days of purchase. Long-stay visitors such as students may not meet this condition."
+      "q": "What does the 90-day deadline apply to?",
+      "a": "For purchases from 1 November 2026, complete customs confirmation at departure within 90 days of purchase, then export the goods without delay. This is not a deadline for receiving the refund. Eligibility also depends on your visitor status; confirm it with the store."
+    },
+    {
+      "q": "Can I use Visit Japan Web at every airport?",
+      "a": "No. It is available for this procedure at Narita, Haneda, Kansai, Chubu, Fukuoka, New Chitose and Naha, in designated international-departure lobby areas connected to the procedure-specific wireless LAN before security. Follow the official instructions; tax-free procedure terminals are also available."
+    },
+    {
+      "q": "What if one item on a receipt is missing?",
+      "a": "Customs confirmation is performed per purchase transaction (receipt). If you do not have even one tax-free item included in that transaction, none of its items can receive customs confirmation or a refund. Keep every item together and available for inspection."
     },
     {
       "q": "Is tax-free the same as duty-free?",
