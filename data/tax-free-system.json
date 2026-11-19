@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
-  "verifiedAt": "2026-10-26",
-  "currentVersion": "pre-refund",
+  "verifiedAt": "2026-11-19",
+  "currentVersion": "refund",
   "changesAt": "2026-11-01",
   "periods": {
     "preRefund": {
@@ -21,7 +21,7 @@
       "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00021.html",
       "sourceType": "official",
       "supports": ["effective-date", "90-day-rule", "customs-confirmation", "visit-japan-web", "receipt-level-confirmation", "refund-method"],
-      "accessedAt": "2026-10-26"
+      "accessedAt": "2026-11-19"
     },
     {
       "publisher": "Japan National Tourism Organization",
@@ -161,7 +161,7 @@
     },
     {
       "q": "What happens if I use the product in Japan?",
-      "a": "Customs confirmation requires that the goods are being taken out of Japan. Removing the special packaging requirement does not mean the product may be consumed in Japan before departure."
+      "a": "From 1 November 2026, if you consume all or part of the perfume in Japan, you cannot receive customs confirmation or a refund. Do not use a tax-free procedure terminal; tell a customs officer. A missing item also prevents a refund for the other tax-free items on the same receipt."
     },
     {
       "q": "What does the 90-day deadline apply to?",
@@ -169,7 +169,7 @@
     },
     {
       "q": "Can I use Visit Japan Web at every airport?",
-      "a": "No. It is available for this procedure at Narita, Haneda, Kansai, Chubu, Fukuoka, New Chitose and Naha, in designated international-departure lobby areas connected to the procedure-specific wireless LAN before security. Follow the official instructions; tax-free procedure terminals are also available."
+      "a": "No. It is available for this procedure at Narita, Haneda, Kansai, Chubu, Fukuoka, New Chitose and Naha, in designated international-departure lobby areas connected to the procedure-specific wireless LAN before security. Online users must have Temporary Visitor, Diplomat or Official status of residence; Japanese nationals cannot use this online procedure. Follow the official terminal instructions if you cannot use the online route."
     },
     {
       "q": "What if one item on a receipt is missing?",
