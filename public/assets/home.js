@@ -1224,9 +1224,9 @@ function showQuizResult(){
 
   const top=scores[0];
   const resultItems=[
-    {role:"第一候補",className:"primary",product:recommendation.primary,reason:"回答した香調・シーン・季節・価格帯が最も多く重なる候補"},
-    {role:"控えめな代替",className:"calm",product:recommendation.calm,reason:"同じ回答条件を保ちつつ、日常・仕事や軽快な香調を優先した候補"},
-    {role:"個性的な代替",className:"distinctive",product:recommendation.distinctive,reason:"同じ回答条件を保ちつつ、デート・フォーマルや輪郭のある香調を優先した候補"},
+    {role:"第一候補",className:"primary",product:recommendation.primary,reason:"回答した香調・シーン・季節・価格帯への一致を重み付けして選んだ候補"},
+    {role:"別候補 A",className:"calm",product:recommendation.calm,reason:"シトラス・ムスク・アクアティック・アロマティックの分類を優先し、普段使い・仕事の属性を加味した候補。香りの強さの判定ではありません"},
+    {role:"別候補 B",className:"distinctive",product:recommendation.distinctive,reason:"シプレ・アンバー・グルマン・フルーティ・フローラルの分類を優先し、デート・フォーマルの属性を加味した候補。個性の強さの判定ではありません"},
   ];
   const resultCard=({role,className,product,reason})=>`<article class="quiz-product ${className}">
     <p class="quiz-role">${role}</p>
@@ -1314,8 +1314,8 @@ function drawKasoShareCard(result){
   ctx.fillStyle="#a8a8ae"; ctx.font="18px sans-serif";
   ctx.fillText(result.primary.brand,64,404);
   ctx.fillStyle="#c4889c"; ctx.font="16px sans-serif";
-  ctx.fillText(`控えめな代替：${result.calm.name}`,64,455);
-  ctx.fillText(`個性的な代替：${result.distinctive.name}`,64,490);
+  ctx.fillText(`別候補 A：${result.calm.name}`,64,455);
+  ctx.fillText(`別候補 B：${result.distinctive.name}`,64,490);
 
   ctx.fillStyle="#67676d"; ctx.font="14px sans-serif";
   ctx.fillText("sillage.asutelu.com", 64, 580);
@@ -1354,7 +1354,7 @@ function openShareCard(result){
   target.getContext("2d").drawImage(cvs,0,0);
   const dataUrl=cvs.toDataURL("image/png");
   back.querySelector("#shareDownload").href=dataUrl;
-  const text=encodeURIComponent(`香水診断の第一候補は「${result.primary.name}」でした。\n控えめな代替：${result.calm.name}\n個性的な代替：${result.distinctive.name}\n#Sillage #香水診断`);
+  const text=encodeURIComponent(`香水診断の第一候補は「${result.primary.name}」でした。\n別候補 A：${result.calm.name}\n別候補 B：${result.distinctive.name}\n#Sillage #香水診断`);
   const url=encodeURIComponent("https://sillage.asutelu.com/");
   back.querySelector("#shareTweet").href=`https://twitter.com/intent/tweet?text=${text}&url=${url}`;
   back.classList.add("open");

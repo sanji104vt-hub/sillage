@@ -39,10 +39,10 @@ for (const family of families) {
           throw new Error(`${family}/${scene}/${season}/${price}: 推薦商品が重複しています`);
         }
         if (!quietFamilies.has(result.calm.family)) {
-          throw new Error(`${family}/${scene}/${season}/${price}: 控えめな代替の香調が基準外です`);
+          throw new Error(`${family}/${scene}/${season}/${price}: 別候補 Aの香調が基準外です`);
         }
         if (!distinctiveFamilies.has(result.distinctive.family)) {
-          throw new Error(`${family}/${scene}/${season}/${price}: 個性的な代替の香調が基準外です`);
+          throw new Error(`${family}/${scene}/${season}/${price}: 別候補 Bの香調が基準外です`);
         }
         cases++;
       }
@@ -60,7 +60,7 @@ if (recommendationScriptIndex < 0 || recommendationScriptIndex > homeScriptIndex
   throw new Error("商品推薦スクリプトがhome.jsより先に読み込まれていません");
 }
 if (!fragment.includes("あなたに合う香水診断")) throw new Error("診断見出しが商品推薦向けではありません");
-for (const role of ["第一候補", "控えめな代替", "個性的な代替"]) {
+for (const role of ["第一候補", "別候補 A", "別候補 B"]) {
   if (!homeScript.includes(role)) throw new Error(`診断結果に「${role}」がありません`);
 }
 if (!homeScript.includes("ブランド傾向")) throw new Error("従来のブランド診断が補助結果として残っていません");
