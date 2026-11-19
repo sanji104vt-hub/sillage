@@ -97,7 +97,7 @@ if (existsSync("public/data/home-data.js")) {
     }
   }
 }
-if (!top.includes('<script src="/data/home-data.js"></script>')) errors.push("home-data.js not loaded from index.html");
+if (!top.includes('<script defer src="/data/home-data.js"></script>')) errors.push("home-data.js must load with defer before home.js");
 if (!homeScript.includes("window.SILLAGE_FRAGRANCES")) errors.push("home.js does not read synchronous fragrance data");
 if (!homeScript.includes("window.SILLAGE_BRANDS")) errors.push("home.js does not read synchronous brand data");
 

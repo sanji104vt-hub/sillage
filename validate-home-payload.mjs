@@ -1,0 +1,23 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { runInNewContext } from "node:vm";
+
+const source = JSON.parse(readFileSync("public/data/fragrances.json", "utf8"));
+const brands = JSON.parse(readFileSync("public/data/brands.json", "utf8"));
+const script = readFileSync("public/data/home-data.js", "utf8");
+const window = {};
+runInNewContext(script, { window });
+const expected = source.map(({ sizes, sources, ...product }) => product);
+assert.equal(JSON.stringify(window.SILLAGE_FRAGRANCES), JSON.stringify(expected), "Homepage fields or product order changed");
+assert.equal(JSON.stringify(window.SILLAGE_BRANDS), JSON.stringify(brands), "Brand data changed");
+const home = readFileSync("public/index.html", "utf8");
+const tags = [...home.matchAll(/<script\b[^>]*src="([^"]+)"[^>]*>/g)];
+const dataIndex = tags.findIndex((tag) => tag[1] === "/data/home-data.js");
+const appIndex = tags.findIndex((tag) => tag[1] === "/assets/home.js");
+assert(dataIndex >= 0 && dataIndex < appIndex, "Data must execute before home.js");
+assert(/\bdefer\b/.test(tags[dataIndex][0]) && /\bdefer\b/.test(tags[appIndex][0]), "Both scripts must use ordered defer");
+assert(!/\basync\b/.test(tags[dataIndex][0]) && !/\basync\b/.test(tags[appIndex][0]), "Async would break data order");
+const app = readFileSync("public/assets/home.js", "utf8");
+assert(!/\.(?:sizes|sources)\b|\[['"](?:sizes|sources)['"]\]/.test(app), "Excluded fields are now used by home.js; update the projection");
+assert(home.includes("G-60BQRQWB5M") && home.includes('name="google-site-verification"'), "Protected tags missing");
+console.log(`Homepage payload OK: ${expected.length} products, ${brands.length} brands; ${(Buffer.byteLength(script) / 1024).toFixed(1)} KiB; order and fields preserved`);

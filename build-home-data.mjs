@@ -1,6 +1,6 @@
-// ホームで使う香水・ブランドを、同期的に読み込める classic script として出力する。
-// fetch の完了を待たずに PERFUMES / BRANDS が確定するため、
-// 遅延読み込みのトリガー漏れでコンテンツが消える事故が起きない。
+// ホーム用のデータを生成する。容量と出典の詳細は商品ページ側に残し、
+// ホームで未使用の大きな配列だけを配信対象から外す。
+// index.htmlではhome.jsより先にdeferで実行し、HTML解析を止めない。
 import { readFileSync, writeFileSync } from "node:fs";
 
 const OUT = "public/data/home-data.js";
@@ -18,10 +18,11 @@ if (!Array.isArray(brands) || brands.length !== sourceBrands.length) {
   throw new Error(`brands が data/brands.json と一致しません (配信 ${Array.isArray(brands) ? brands.length : typeof brands} / ソース ${sourceBrands.length})`);
 }
 
+const homeFragrances = fragrances.map(({ sizes, sources, ...product }) => product);
 const body = `/* 自動生成: build-home-data.mjs。直接編集しないこと。 */
-window.SILLAGE_FRAGRANCES=${JSON.stringify(fragrances)};
+window.SILLAGE_FRAGRANCES=${JSON.stringify(homeFragrances)};
 window.SILLAGE_BRANDS=${JSON.stringify(brands)};
 `;
 
 writeFileSync(OUT, body, "utf8");
-console.log(`Wrote ${OUT} (${fragrances.length} fragrances, ${brands.length} brands, ${(body.length / 1024).toFixed(1)}KB)`);
+console.log(`Wrote ${OUT} (${fragrances.length} fragrances, ${brands.length} brands, ${(Buffer.byteLength(body) / 1024).toFixed(1)} KiB UTF-8)`);
