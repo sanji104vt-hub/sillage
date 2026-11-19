@@ -83,6 +83,13 @@ export default {
     }
 
     // Canonical URL redirects: prevent duplicate indexing of physical HTML files.
+    // Historical column-list entry reported by Search Console; the current list lives at /guides.html.
+    if (path === "/columns" || path === "/columns/") {
+      const u = new URL(request.url);
+      u.pathname = "/guides.html";
+      return Response.redirect(u.toString(), 301);
+    }
+
     if (path === "/index.html") {
       const u = new URL(request.url);
       u.pathname = "/";
@@ -192,6 +199,11 @@ export default {
 
     const m = path.match(/^\/columns\/([A-Za-z0-9][A-Za-z0-9-]*)\/?$/);
     if (m) {
+      if (path.endsWith("/")) {
+        const u = new URL(request.url);
+        u.pathname = `/columns/${m[1]}`;
+        return Response.redirect(u.toString(), 301);
+      }
       const u = new URL(request.url);
       u.pathname = `/columns/${m[1]}.html`;
       return env.ASSETS.fetch(new Request(u, request));
@@ -199,6 +211,11 @@ export default {
 
     const mi = path.match(/^\/items\/([A-Za-z0-9][A-Za-z0-9-]*)\/?$/);
     if (mi) {
+      if (path.endsWith("/")) {
+        const u = new URL(request.url);
+        u.pathname = `/items/${mi[1]}`;
+        return Response.redirect(u.toString(), 301);
+      }
       const u = new URL(request.url);
       u.pathname = `/items/${mi[1]}.html`;
       return env.ASSETS.fetch(new Request(u, request));
