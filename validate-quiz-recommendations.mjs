@@ -64,5 +64,7 @@ for (const role of ["第一候補", "別候補 A", "別候補 B"]) {
   if (!homeScript.includes(role)) throw new Error(`診断結果に「${role}」がありません`);
 }
 if (!homeScript.includes("ブランド傾向")) throw new Error("従来のブランド診断が補助結果として残っていません");
+if (homeScript.includes('q:"香りの強さの理想は？"') || !homeScript.includes('q:"気になる香りの系統は？"')) throw new Error("質問は実測していない強さではなく香調を尋ねる必要があります");
+if (!homeScript.includes("購入価格の上限指定ではありません")) throw new Error("価格帯マッチングと購入予算の違いが説明されていません");
 
 console.log(`Quiz recommendations valid: ${cases} attribute combinations, 3 unique products each`);

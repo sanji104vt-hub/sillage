@@ -1152,10 +1152,10 @@ const QUIZ = [
     {jp:"秋・冬",en:"autumn/winter",w:{fam:{woody:2,amber:2,gourmand:1,chypre:1},season:{autumn:2,winter:2}}},
     {jp:"一年中",en:"all year",     w:{fam:{musk:1,woody:1,aromatic:1,citrus:1},season:{spring:1,summer:1,autumn:1,winter:1}}},
   ]},
-  {q:"香りの強さの理想は？", opts:[
-    {jp:"そっと纏う、肌に寄り添う",en:"subtle",w:{fam:{musk:3,citrus:2,aromatic:1}}},
-    {jp:"適度に香る、ほどよく",en:"balanced",  w:{fam:{woody:2,aromatic:2,floral:1,fruity:1}}},
-    {jp:"印象を残す、濃密に",  en:"intense",  w:{fam:{amber:3,gourmand:2,chypre:2}}},
+  {q:"気になる香りの系統は？", opts:[
+    {jp:"ムスク・柑橘・ハーブ",en:"musk / citrus / herbs",w:{fam:{musk:3,citrus:2,aromatic:1}}},
+    {jp:"ウッド・ハーブ・花・果実",en:"woods / herbs / flowers / fruit",w:{fam:{woody:2,aromatic:2,floral:1,fruity:1}}},
+    {jp:"アンバー・グルマン・シプレ",en:"amber / gourmand / chypre",w:{fam:{amber:3,gourmand:2,chypre:2}}},
   ]},
   {q:"あなたの好む世界観は？", opts:[
     {jp:"古典的・伝統的",en:"classic",w:{tier:{luxury:3},country:{FR:2,IT:1,UK:1}}},
@@ -1245,7 +1245,7 @@ function showQuizResult(){
     <div class="quiz-result show">
       <h3>あなたへの香りの提案</h3>
       <p class="quiz-type">${FAM[recommendation.primary.family].ja}を軸に選びました</p>
-      <p class="quiz-type-note">回答と掲載中全商品の既存属性を照合した3候補です。価格・濃度・使う場面を比べて、最後は肌で試してください。</p>
+      <p class="quiz-type-note">回答と掲載中全商品の既存属性を照合した3候補です。予算は価格帯分類への重み付けであり、購入価格の上限指定ではありません。容量ごとの最新価格・濃度・使う場面を比べて、最後は肌で試してください。</p>
       <div class="quiz-products">
         ${resultItems.map(resultCard).join("")}
       </div>
