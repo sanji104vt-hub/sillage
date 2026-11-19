@@ -460,7 +460,9 @@ if (process.argv.includes("--tax-free-only")) {
   // Keep the existing post-build icon tags when rebuilding this guide alone.
   const existing = readFileSync(path, "utf8");
   const icons = existing.match(/<(?:link\b[^>]*rel="(?:icon|apple-touch-icon|manifest)"[^>]*|meta\b[^>]*name="theme-color"[^>]*)>/g) || [];
-  const html = renderTaxFreeGuide().replace("<!-- Google tag", `${icons.join("\n")}\n<!-- Google tag`);
+  const generated = renderTaxFreeGuide();
+  const missingIcons = [...new Set(icons)].filter((tag) => !generated.includes(tag));
+  const html = generated.replace("<!-- Google tag", `${missingIcons.join("\n")}\n<!-- Google tag`);
   write(path, html);
   write("public/data/tax-free-system.json", readFileSync("data/tax-free-system.json", "utf8"));
   console.log("Generated tax-free guide only; other pages unchanged.");
