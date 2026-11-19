@@ -3,6 +3,17 @@
     const select = picker.querySelector('[data-size-select]');
     const status = picker.querySelector('[data-size-status]');
     const en = document.documentElement.lang === 'en';
+    const generalRetail = [...document.querySelectorAll('a[data-purchase-shop], .moshimo-offer[data-purchase-shop]')]
+      .filter(element => !picker.contains(element) && ['rakuten', 'amazon'].includes(element.dataset.purchaseShop));
+    const bottomAreas = [...document.querySelectorAll('.purchase-bottom')];
+    const returnLinks = bottomAreas.map(area => {
+      const link = document.createElement('a');
+      link.href = '#' + select.id;
+      link.className = 'buy size-return-link';
+      link.hidden = true;
+      area.appendChild(link);
+      return link;
+    });
     picker.addEventListener('click', event => {
       const link=event.target.closest('a[data-purchase-shop], .size-affiliate a');
       if (!link || typeof window.gtag !== 'function') return;
@@ -20,7 +31,12 @@
     select.addEventListener('change', () => {
       const size = select.value;
       picker.querySelectorAll('[data-size-panel]').forEach(panel => { panel.hidden = !!size && panel.dataset.sizePanel !== size; });
-      status.textContent = size ? (en ? `Selected: ${size} mL. Confirm this size on the retailer’s page.` : `${size} mLを選択中。販売先でこの容量をご確認ください。`) : '';
+      generalRetail.forEach(element => { element.toggleAttribute('data-size-unmatched', !!size); });
+      returnLinks.forEach(link => {
+        link.hidden = !size;
+        link.textContent = en ? `Review purchase options for ${size} mL` : `${size} mLの購入先を確認する`;
+      });
+      status.textContent = size ? (en ? `Selected: ${size} mL. Only registered links for this size are shown. General retailer links are hidden; confirm concentration and size on the retailer’s page.` : `${size} mLを選択中。この容量に登録済みの購入リンクだけを表示しています。容量未指定の販売店リンクは非表示です。販売先でも濃度と容量をご確認ください。`) : '';
       document.querySelectorAll('a[data-purchase-shop]').forEach(link => {
         if (size) link.dataset.requestedVolumeMl = size;
         else delete link.dataset.requestedVolumeMl;

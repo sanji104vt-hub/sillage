@@ -2,3 +2,4 @@
 .size-picker [data-size-panel]{padding:16px 0;border-top:1px solid #303137}.size-picker [data-size-panel] p{margin:0 0 8px}.size-picker .size-guidance{margin:12px 0}.size-picker .size-source{color:#c9b558;font-size:12px;text-underline-offset:4px;overflow-wrap:anywhere}.size-picker a:focus-visible{outline:2px solid #c9b558;outline-offset:4px}
 .size-affiliate>a{display:inline-block;padding:14px 18px;min-height:44px;box-sizing:border-box;color:#e6e2d9;background:#26251f;border:1px solid #77715e;text-decoration:none;font-size:14px;max-width:100%;overflow-wrap:anywhere}.size-affiliate>img{width:1px!important;height:1px!important}.size-picker .buy{margin:6px 0;max-width:100%;box-sizing:border-box;overflow-wrap:anywhere}
 .size-affiliate>a img{max-width:100%;height:auto}
+[data-size-unmatched],.size-return-link[hidden]{display:none!important}
