@@ -3,6 +3,14 @@ import { loadFragrances } from "./lib/fragrance-data.mjs";
 
 const fragrances = loadFragrances();
 const bySlug = new Map(fragrances.map((fragrance) => [fragrance.slug, fragrance]));
+for (const [a, b] of [["chanel-4", "dior-2"], ["le-labo-1", "byredo-1"], ["aesop-1", "hermes-2"]]) {
+  for (const [slug, partner] of [[a, b], [b, a]]) {
+    const html = readFileSync(`public/items/${slug}.html`, "utf8");
+    if (html.match(/data-competitor="([^"]+)"/)?.[1] !== partner || !html.includes('data-curated-comparison')) throw new Error(`Curated comparison missing: ${slug}`);
+    for (const id of [slug, partner]) if (!html.includes(bySlug.get(id).recommendedFor[0].text)) throw new Error(`Existing editorial basis missing: ${slug}/${id}`);
+    if (!html.includes("販売数・人気順や実測評価ではありません")) throw new Error(`Comparison limitations missing: ${slug}`);
+  }
+}
 
 for (const fragrance of fragrances) {
   const html = readFileSync(`public/items/${fragrance.slug}.html`, "utf8");

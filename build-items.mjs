@@ -128,6 +128,14 @@ function uniqueRelated(p, all) {
   return result.slice(0, 3);
 }
 
+// Editorial starting pairs, not popularity or sales rankings.
+const curatedPairs = [
+  ["chanel-4", "dior-2"],
+  ["le-labo-1", "byredo-1"],
+  ["aesop-1", "hermes-2"],
+];
+const curatedPartner = new Map(curatedPairs.flatMap(([a, b]) => [[a, b], [b, a]]));
+
 function directCompetitors(p, all) {
   const scored = all
     .filter((candidate) => candidate.slug !== p.slug)
@@ -145,7 +153,10 @@ function directCompetitors(p, all) {
     .sort((a, b) => b.score - a.score || a.index - b.index);
   const differentBrands = scored.filter(({ candidate }) => candidate.brand !== p.brand);
   const pool = differentBrands.length >= 2 ? differentBrands : scored;
-  return pool.slice(0, 2).map(({ candidate }) => candidate);
+  const partnerSlug = curatedPartner.get(p.slug);
+  const partner = partnerSlug ? all.find((candidate) => candidate.slug === partnerSlug) : null;
+  if (partnerSlug && !partner) throw new Error(`Curated comparison missing: ${partnerSlug}`);
+  return [...(partner ? [partner] : []), ...pool.map(({ candidate }) => candidate).filter((candidate) => candidate.slug !== partnerSlug)].slice(0, 2);
 }
 
 function comparisonLabel(p, candidate) {
@@ -304,6 +315,7 @@ function pageHTML(p, related, competitors, trial) {
     return `<section class="direct-pair" aria-labelledby="${pairId}" data-competitor="${escape(candidate.slug)}">
       <p class="direct-relation">${escape(comparisonReason(p, candidate))}</p>
       <h3 class="direct-title" id="${pairId}"><span>${escape(p.name)}</span><i>vs</i><a href="/items/${candidate.slug}">${escape(candidate.name)}</a></h3>
+      ${curatedPartner.get(p.slug) === candidate.slug ? `<div class="direct-choice" data-curated-comparison aria-label="選び分けの目安"><p><b>${escape(p.name)}を検討する目安</b><span>${escape(p.recommendedFor?.[0]?.text || p.top || p.keyNotes)}</span></p><p><b>${escape(candidate.name)}を検討する目安</b><span>${escape(candidate.recommendedFor?.[0]?.text || candidate.top || candidate.keyNotes)}</span></p></div><p class="compare-method">Sillageの編集整理です。既存のおすすめ条件を比較しており、販売数・人気順や実測評価ではありません。濃度だけで香りの強さ・持続の優劣は判断していません。</p>` : ""}
       <table class="direct-table">
         <thead><tr><th scope="col">比較軸</th><th scope="col">${escape(p.brand)}<small>${escape(p.name)}</small></th><th scope="col">${escape(candidate.brand)}<small>${escape(candidate.name)}</small></th></tr></thead>
         <tbody>${rows.map((row) => `<tr><th scope="row">${escape(row.label)}</th><td>${escape(row.current)}</td><td>${escape(row.other)}</td></tr>`).join("")}</tbody>
@@ -587,18 +599,29 @@ if (!existsSync("public/items")) mkdirSync("public/items", { recursive: true });
 
 let totalSize = 0;
 let maxSize = 0;
+let generatedCount = 0;
 for (const p of itemsWithSlug) {
+  if (process.argv.includes("--curated-comparisons-only") && !curatedPartner.has(p.slug)) continue;
   // 同ブランド → 同香調 → 共通シーンの順で、根拠のある候補を最大3本。
   const related = uniqueRelated(p, itemsWithSlug);
   const competitors = directCompetitors(p, itemsWithSlug);
   const trial = TRIALS.get(p.slug) || null;
   const html = pageHTML(p, related, competitors, trial).replace(/[ \t]+$/gm, "");
   const path = `public/items/${p.slug}.html`;
-  writeFileSync(path, html);
+  if (process.argv.includes("--curated-comparisons-only")) {
+    const start = '<section class="section" aria-labelledby="direct-compare-title">';
+    const end = '<section class="section" aria-labelledby="compare-title">';
+    const current = readFileSync(path, "utf8");
+    const a = current.indexOf(start), b = current.indexOf(end, a);
+    const c = html.indexOf(start), d = html.indexOf(end, c);
+    if ([a, b, c, d].some((index) => index < 0)) throw new Error(`Comparison section boundaries missing: ${p.slug}`);
+    writeFileSync(path, current.slice(0, a) + html.slice(c, d) + current.slice(b));
+  } else writeFileSync(path, html);
   totalSize += html.length;
+  generatedCount++;
   if (html.length > maxSize) maxSize = html.length;
 }
 
-console.log(`Generated ${itemsWithSlug.length} item pages`);
-console.log(`Avg size: ${Math.round(totalSize / itemsWithSlug.length)} bytes`);
+console.log(`Generated ${generatedCount} item pages${process.argv.includes("--curated-comparisons-only") ? " (comparison sections only)" : ""}`);
+console.log(`Avg size: ${Math.round(totalSize / generatedCount)} bytes`);
 console.log(`Max size: ${maxSize} bytes (${(maxSize / 1024).toFixed(1)}KB)`);
