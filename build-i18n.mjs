@@ -278,7 +278,7 @@ const beforeYouGo = () => guideCta(
   [
     ["/en/fragrances/", `Browse ${localizedProducts.length} fragrances with Japanese retail prices`],
     ["/en/brands/", "Browse brands available in Japan"],
-    ["/en/guides/tax-free-perfume-shopping-japan/", "Tax-free rules changing 1 November 2026"],
+    ["/en/guides/tax-free-perfume-shopping-japan/", "Japan’s tax-free refund method from 1 November 2026"],
   ],
 );
 

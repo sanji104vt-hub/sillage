@@ -7,6 +7,12 @@ const assert = (condition, message) => { if (!condition) errors.push(message); }
 const html = existsSync(path) ? readFileSync(path, "utf8") : "";
 
 assert(Boolean(html), `Generated tax-free guide missing: ${path}`);
+for (const city of ["tokyo", "kyoto", "osaka"]) {
+  const cityPath = `public/en/guides/perfume-shopping-${city}/index.html`;
+  const cityHtml = readFileSync(cityPath, "utf8");
+  assert(cityHtml.includes('href="/en/guides/tax-free-perfume-shopping-japan/">Japan’s tax-free refund method from 1 November 2026</a>'), `${city}: current refund-method CTA missing`);
+  assert(!/Tax-free rules changing 1 November 2026/i.test(cityHtml), `${city}: obsolete future-tense CTA remains`);
+}
 assert(taxFreePeriods.preRefund.until === "2026-10-31", "Current-system end date changed");
 assert(taxFreePeriods.refund.from === "2026-11-01", "Refund-method start date changed");
 assert(taxFreePeriods.refund.customsConfirmationWithinDays === 90, "90-day rule missing from data");
