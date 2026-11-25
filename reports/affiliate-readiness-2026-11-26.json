@@ -1,0 +1,936 @@
+{
+  "reviewDate": "2026-11-26",
+  "checkedAt": "2026-11-25T16:07:58.074Z",
+  "scope": "Local HTML plus ordinary public GET",
+  "summary": {
+    "articles": 38,
+    "uniqueTitles": 38,
+    "uniqueDescriptions": 38,
+    "linkedFromIndex": 38,
+    "recentStructuredDates": 5,
+    "dateMismatches": [
+      "age-and-perfume",
+      "business-fragrance",
+      "concentration-guide",
+      "does-mote-fragrance-exist",
+      "first-fragrance",
+      "fragrance-moments",
+      "how-many-sprays",
+      "how-to-wear-for-good-impression",
+      "how-to-wear",
+      "kyoto-fragrance-shops",
+      "make-perfume-last-longer",
+      "office-perfume-amount",
+      "perfume-bottle-size",
+      "perfume-decanting",
+      "perfume-discoloration",
+      "perfume-expiration",
+      "perfume-on-clothes",
+      "perfume-storage",
+      "scents-women-prefer",
+      "summer-perfume-strong",
+      "too-much-perfume",
+      "where-to-apply-perfume",
+      "why-cant-smell-own-perfume"
+    ],
+    "liveChecked": 43,
+    "failures": []
+  },
+  "contactReceipt": "User confirmed receipt of the production test email in this chat; no new test sent by this audit.",
+  "amazonDisclosure": {
+    "status": "unresolved_before_approval",
+    "note": "No claim of approved Amazon partnership or Amazon earnings has been added. Confirm the required pre-approval disclosure wording with Moshimo before treating this condition as satisfied."
+  },
+  "unverified": [
+    "Exact site URL registered with Moshimo",
+    "Denial reason",
+    "Applicant account/ownership details",
+    "Amazon approval",
+    "Image licensing for every asset",
+    "Originality judged by Amazon/Moshimo"
+  ],
+  "cautions": [
+    "209 product pages are not counted as 209 independent articles.",
+    "Recent markup is not proof of actual recent editorial work; dates were not changed to meet a threshold.",
+    "Passing these checks does not guarantee approval.",
+    "Date mismatches are recorded for a separate source-level review; this audit does not rewrite article dates."
+  ],
+  "pages": [
+    {
+      "slug": "aesop-vs-diptyque",
+      "url": "https://sillage.asutelu.com/columns/aesop-vs-diptyque",
+      "title": "アエソップとディプティック、ナチュラル系ニッチの本流｜Sillage（シヤージュ）",
+      "description": "アエソップとディプティックの香水を、植物感・芸術性・日常性・静けさで図解比較。ナチュラル系ニッチの選び分けを解説。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/aesop-vs-diptyque",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/aesop-vs-diptyque",
+        "checkedAt": "2026-11-25T16:07:44.410Z"
+      }
+    },
+    {
+      "slug": "age-and-perfume",
+      "url": "https://sillage.asutelu.com/columns/age-and-perfume",
+      "title": "「30代だからこの香り」という選び方は必要？｜Sillage（シヤージュ）",
+      "description": "年齢別の香水選びに迷う人へ。年代を唯一の基準にせず、場面・距離・好み・服装から自分に合う香りを選ぶ方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/age-and-perfume",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-24T15:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/age-and-perfume",
+        "checkedAt": "2026-11-25T16:07:44.714Z"
+      }
+    },
+    {
+      "slug": "blotter-vs-skin",
+      "url": "https://sillage.asutelu.com/columns/blotter-vs-skin",
+      "title": "香水を試すなら紙と肌のどちら？比較条件と役割の違い｜Sillage（シヤージュ）",
+      "description": "ムエットと肌では何を確認でき、何を判断できないのか。紙・肌・経過時間の比較条件と限界を整理し、店頭の行動手順とは分けて解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/blotter-vs-skin",
+      "structuredModified": "2026-11-19T12:00:00+09:00",
+      "visibleModified": "2026-11-19T12:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": true,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/blotter-vs-skin",
+        "checkedAt": "2026-11-25T16:07:45.030Z"
+      }
+    },
+    {
+      "slug": "business-fragrance",
+      "url": "https://sillage.asutelu.com/columns/business-fragrance",
+      "title": "職場の香水は何プッシュ？迷惑にならない選び方とつけ方｜Sillage（シヤージュ）",
+      "description": "職場で香水を使う時の量、香調、つける場所を整理。会議や商談など距離が近い場面で、周囲へ配慮する判断方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/business-fragrance",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/business-fragrance",
+        "checkedAt": "2026-11-25T16:07:45.341Z"
+      }
+    },
+    {
+      "slug": "bvlgari-vs-versace",
+      "url": "https://sillage.asutelu.com/columns/bvlgari-vs-versace",
+      "title": "ブルガリとヴェルサーチ、イタリア二大ブランドの香水比較｜Sillage（シヤージュ）",
+      "description": "ブルガリとヴェルサーチのメンズ香水を、清潔感・華やかさ・仕事・デート適性で図解比較。年代や場面に合う選び方を解説。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/bvlgari-vs-versace",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/bvlgari-vs-versace",
+        "checkedAt": "2026-11-25T16:07:45.757Z"
+      }
+    },
+    {
+      "slug": "chanel-vs-dior",
+      "url": "https://sillage.asutelu.com/columns/chanel-vs-dior",
+      "title": "シャネルとディオール、パリ二大メゾンの違い｜Sillage（シヤージュ）",
+      "description": "シャネルとディオールのメンズ香水を、清潔感・存在感・日常性・個性で図解比較。どちらが自分に合うか具体的に分かります。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/chanel-vs-dior",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/chanel-vs-dior",
+        "checkedAt": "2026-11-25T16:07:46.062Z"
+      }
+    },
+    {
+      "slug": "concentration-guide",
+      "url": "https://sillage.asutelu.com/columns/concentration-guide",
+      "title": "EDT・EDP・パルファムの違い｜濃度だけで選ばない香水入門｜Sillage（シヤージュ）",
+      "description": "オードトワレ、オードパルファム、パルファムの違いを図解。持続時間・広がり方・季節・職場での選び方を初心者向けに解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/concentration-guide",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/concentration-guide",
+        "checkedAt": "2026-11-25T16:07:46.359Z"
+      }
+    },
+    {
+      "slug": "does-mote-fragrance-exist",
+      "url": "https://sillage.asutelu.com/columns/does-mote-fragrance-exist",
+      "title": "「モテる香水」は本当に存在するのか｜女性調査から読み解く｜Sillage（シヤージュ）",
+      "description": "女性100人・200人規模の調査データから、「モテる香水」という言葉の実態を検証。最も支持されたのは香水ではなく柔軟剤の匂いでした。嫌われない条件と、選ぶ順序を整理します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/does-mote-fragrance-exist",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-08-11",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/does-mote-fragrance-exist",
+        "checkedAt": "2026-11-25T16:07:46.544Z"
+      }
+    },
+    {
+      "slug": "first-fragrance",
+      "url": "https://sillage.asutelu.com/columns/first-fragrance",
+      "title": "香水初心者の一本目｜失敗しない5ステップ｜Sillage（シヤージュ）",
+      "description": "初めての香水を選ぶ5ステップを図解。予算・場面・香調・試香・購入サイズまで、店頭で迷わない順番が分かります。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/first-fragrance",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/first-fragrance",
+        "checkedAt": "2026-11-25T16:07:46.924Z"
+      }
+    },
+    {
+      "slug": "fragrance-moments",
+      "url": "https://sillage.asutelu.com/columns/fragrance-moments",
+      "title": "香りが効く瞬間｜デート、食事、別れ際の場面別設計｜Sillage（シヤージュ）",
+      "description": "香水は一日中効いているわけではありません。効く瞬間があります。到着時、隣に座る時間、食事、別れ際、そして翌日。場面ごとの役割と量を整理します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/fragrance-moments",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-08-11",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/fragrance-moments",
+        "checkedAt": "2026-11-25T16:07:47.232Z"
+      }
+    },
+    {
+      "slug": "hermes-vs-acquadiparma",
+      "url": "https://sillage.asutelu.com/columns/hermes-vs-acquadiparma",
+      "title": "エルメスとアクア ディ パルマ、老舗の上品さの違い｜Sillage（シヤージュ）",
+      "description": "エルメスとアクア ディ パルマの香水を、品格・明るさ・仕事適性・季節で図解比較。大人のメンズ香水の選び方を解説。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/hermes-vs-acquadiparma",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/hermes-vs-acquadiparma",
+        "checkedAt": "2026-11-25T16:07:47.663Z"
+      }
+    },
+    {
+      "slug": "how-many-sprays",
+      "url": "https://sillage.asutelu.com/columns/how-many-sprays",
+      "title": "香水は何プッシュが正解？濃度・場所・場面別の目安｜Sillage（シヤージュ）",
+      "description": "香水を何プッシュつけるか迷う初心者へ。濃度、つける位置、職場・屋外などの場面別に、少量から調整する目安を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/how-many-sprays",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/how-many-sprays",
+        "checkedAt": "2026-11-25T16:07:48.045Z"
+      }
+    },
+    {
+      "slug": "how-to-test-perfume",
+      "url": "https://sillage.asutelu.com/columns/how-to-test-perfume",
+      "title": "香水を店頭で試す方法｜来店前から購入前までのチェックリスト｜Sillage（シヤージュ）",
+      "description": "初めての香水売場へ持っていける行動チェックリスト。用途と予算の伝え方、試す順番、名前と時刻のメモ、店外での確認までを整理します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/how-to-test-perfume",
+      "structuredModified": "2026-11-19T12:00:00+09:00",
+      "visibleModified": "2026-11-19T12:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": true,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/how-to-test-perfume",
+        "checkedAt": "2026-11-25T16:07:48.474Z"
+      }
+    },
+    {
+      "slug": "how-to-wear-for-good-impression",
+      "url": "https://sillage.asutelu.com/columns/how-to-wear-for-good-impression",
+      "title": "つけ方でほとんど決まる｜距離から逆算する香水の量と位置｜Sillage（シヤージュ）",
+      "description": "香水への否定的な反応の大半は「強すぎる」ことに向けられています。すれ違う距離から触れる距離まで、四つの間合いごとに適量と位置を設計する方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/how-to-wear-for-good-impression",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-08-11",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/how-to-wear-for-good-impression",
+        "checkedAt": "2026-11-25T16:07:48.799Z"
+      }
+    },
+    {
+      "slug": "how-to-wear",
+      "url": "https://sillage.asutelu.com/columns/how-to-wear",
+      "title": "香水の正しいつけ方｜量・場所・タイミングの基本｜Sillage（シヤージュ）",
+      "description": "香水の量、つける場所、タイミングを身体図で解説。手首・首・腰の違いと、周囲へ配慮しながら使う基本が分かります。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/how-to-wear",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/how-to-wear",
+        "checkedAt": "2026-11-25T16:07:49.132Z"
+      }
+    },
+    {
+      "slug": "kyoto-fragrance-shops",
+      "url": "https://sillage.asutelu.com/columns/kyoto-fragrance-shops",
+      "title": "京都で香水を選ぶ：デパートから町屋、寺町までの21店ガイド｜Sillage（シヤージュ）",
+      "description": "京都の香水店21店を、カスタム調合・セレクトショップ・百貨店・和の香りに分けてSillage編集部がキュレーション。地図と実測データつき。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/kyoto-fragrance-shops",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-08-01T09:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/kyoto-fragrance-shops",
+        "checkedAt": "2026-11-25T16:07:49.288Z"
+      }
+    },
+    {
+      "slug": "lelabo-vs-jomalone",
+      "url": "https://sillage.asutelu.com/columns/lelabo-vs-jomalone",
+      "title": "ル ラボとジョー マローン、現代ニッチの2大スター｜Sillage（シヤージュ）",
+      "description": "ル ラボとジョー マローンを、個性・重ねづけ・日常性・ギフト適性で図解比較。初めてのニッチ香水選びを分かりやすく解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/lelabo-vs-jomalone",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/lelabo-vs-jomalone",
+        "checkedAt": "2026-11-25T16:07:49.601Z"
+      }
+    },
+    {
+      "slug": "make-perfume-last-longer",
+      "url": "https://sillage.asutelu.com/columns/make-perfume-last-longer",
+      "title": "香水がすぐ消えるのはなぜ？長持ちさせる7つの方法｜Sillage（シヤージュ）",
+      "description": "香水がすぐ消えたように感じる理由を、嗅覚の慣れ、肌の乾燥、量、位置、保管から整理。無理につけ足さず香りを保つ方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/make-perfume-last-longer",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/make-perfume-last-longer",
+        "checkedAt": "2026-11-25T16:07:49.888Z"
+      }
+    },
+    {
+      "slug": "margiela-vs-byredo",
+      "url": "https://sillage.asutelu.com/columns/margiela-vs-byredo",
+      "title": "マルジェラとバイレード、モダンニッチの新世代｜Sillage（シヤージュ）",
+      "description": "メゾン マルジェラとバイレードを、物語性・日常性・個性・SNS映えで図解比較。現代ニッチ香水の選び方を解説。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/margiela-vs-byredo",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/margiela-vs-byredo",
+        "checkedAt": "2026-11-25T16:07:50.357Z"
+      }
+    },
+    {
+      "slug": "notes-pyramid",
+      "url": "https://sillage.asutelu.com/columns/notes-pyramid",
+      "title": "トップ・ミドル・ラストの読み方｜Sillage（シヤージュ）",
+      "description": "香水のトップノート・ミドルノート・ラストノートを時間軸の図で解説。試香で失敗しない待ち時間と香調表の読み方が分かります。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/notes-pyramid",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/notes-pyramid",
+        "checkedAt": "2026-11-25T16:07:50.820Z"
+      }
+    },
+    {
+      "slug": "office-perfume-amount",
+      "url": "https://sillage.asutelu.com/columns/office-perfume-amount",
+      "title": "職場で香水が迷惑にならない量とつけ方｜Sillage（シヤージュ）",
+      "description": "職場で香水を使う時の量、場所、つける時間を解説。会議室や飲食を伴う場面でも周囲へ配慮しやすい確認手順をまとめます。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/office-perfume-amount",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-24T15:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/office-perfume-amount",
+        "checkedAt": "2026-11-25T16:07:51.109Z"
+      }
+    },
+    {
+      "slug": "perfume-bottle-size",
+      "url": "https://sillage.asutelu.com/columns/perfume-bottle-size",
+      "title": "香水初心者は何mLを買う？10・30・50・100mLの選び方｜Sillage（シヤージュ）",
+      "description": "香水初心者が容量で迷った時の選び方を解説。10・30・50・100mLを、試香状況、使用場面、予算、持ち運びから比較します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-bottle-size",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-bottle-size",
+        "checkedAt": "2026-11-25T16:07:51.448Z"
+      }
+    },
+    {
+      "slug": "perfume-decanting",
+      "url": "https://sillage.asutelu.com/columns/perfume-decanting",
+      "title": "アトマイザーへの香水の移し方｜漏れ・劣化を防ぐ注意点｜Sillage（シヤージュ）",
+      "description": "香水をアトマイザーへ移す際の衛生、容器、ラベル、漏れ対策を解説。持ち運び前に確認したい手順をまとめます。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-decanting",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-decanting",
+        "checkedAt": "2026-11-25T16:07:51.735Z"
+      }
+    },
+    {
+      "slug": "perfume-discoloration",
+      "url": "https://sillage.asutelu.com/columns/perfume-discoloration",
+      "title": "香水が変色したら使える？確認したいサイン｜Sillage（シヤージュ）",
+      "description": "香水の色が変わった時に確認したい、匂い・濁り・沈殿・保管状況を整理。使用を続ける前の安全な判断手順を紹介します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-discoloration",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-24T15:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-discoloration",
+        "checkedAt": "2026-11-25T16:07:52.025Z"
+      }
+    },
+    {
+      "slug": "perfume-expiration",
+      "url": "https://sillage.asutelu.com/columns/perfume-expiration",
+      "title": "香水の使用期限は何年？開封後の目安と劣化の見分け方｜Sillage（シヤージュ）",
+      "description": "香水の使用期限を一律の年数で決めず、製品表示、開封時期、保管状況、色・濁り・におい・容器の変化から確認する方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-expiration",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-expiration",
+        "checkedAt": "2026-11-25T16:07:52.332Z"
+      }
+    },
+    {
+      "slug": "perfume-gift-guide",
+      "url": "https://sillage.asutelu.com/columns/perfume-gift-guide",
+      "title": "香水をプレゼントする時の選び方｜失敗しにくい7つの確認｜Sillage（シヤージュ）",
+      "description": "香水をプレゼントする前に確認したい、好み、愛用品の正式名称、濃度、容量、生活環境、交換条件、試香方法を初心者向けに解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-gift-guide",
+      "structuredModified": "2026-11-19T12:00:00+09:00",
+      "visibleModified": "2026-11-19T12:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": true,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-gift-guide",
+        "checkedAt": "2026-11-25T16:07:52.630Z"
+      }
+    },
+    {
+      "slug": "perfume-gift-mistakes",
+      "url": "https://sillage.asutelu.com/columns/perfume-gift-mistakes",
+      "title": "香水ギフトの買い間違いを防ぐ｜濃度・容量・限定版の確認｜Sillage（シヤージュ）",
+      "description": "買う香水が決まった後の仕様確認。EDT・EDP、容量、スプレーとリフィル、限定版、販売ページの選択肢を照合し、別の商品を注文する失敗を防ぎます。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-gift-mistakes",
+      "structuredModified": "2026-11-19T12:00:00+09:00",
+      "visibleModified": "2026-11-19T12:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": true,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-gift-mistakes",
+        "checkedAt": "2026-11-25T16:07:53.030Z"
+      }
+    },
+    {
+      "slug": "perfume-on-clothes",
+      "url": "https://sillage.asutelu.com/columns/perfume-on-clothes",
+      "title": "香水を服につけてもいい？シミ・変色・香り方の注意点｜Sillage（シヤージュ）",
+      "description": "香水を服につける前に確認したい、シミ・変色・香り残りの注意点を解説。肌につける場合との違いと慎重な試し方を紹介します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-on-clothes",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-on-clothes",
+        "checkedAt": "2026-11-25T16:07:53.331Z"
+      }
+    },
+    {
+      "slug": "perfume-storage",
+      "url": "https://sillage.asutelu.com/columns/perfume-storage",
+      "title": "香水の正しい保存方法｜冷蔵庫・洗面所・窓際は大丈夫？｜Sillage（シヤージュ）",
+      "description": "香水を保管する場所の選び方を解説。冷蔵庫・洗面所・窓際を比較し、直射日光、高温多湿、温度変化を避ける基本をまとめます。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-storage",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-storage",
+        "checkedAt": "2026-11-25T16:07:53.651Z"
+      }
+    },
+    {
+      "slug": "perfume-store-comparison",
+      "url": "https://sillage.asutelu.com/columns/perfume-store-comparison",
+      "title": "店頭で2本の香水を比較する順番｜条件をそろえる試香メモ｜Sillage（シヤージュ）",
+      "description": "候補が2本まで決まった人へ。同じ条件で試すための記録項目、左右と時刻の対応、店外での再確認を整理します。初めての来店準備とは分けた比較ガイドです。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/perfume-store-comparison",
+      "structuredModified": "2026-11-19T12:00:00+09:00",
+      "visibleModified": "2026-11-19T12:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": true,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/perfume-store-comparison",
+        "checkedAt": "2026-11-25T16:07:53.952Z"
+      }
+    },
+    {
+      "slug": "scents-women-prefer",
+      "url": "https://sillage.asutelu.com/columns/scents-women-prefer",
+      "title": "女性が好む男性の香り｜系統別に見る印象と受け入れられ方｜Sillage（シヤージュ）",
+      "description": "シトラス、ムスク、ウッディ、グルマン。10の香調系統が相手にどう届くかを、複数の女性向け調査をもとに整理。外れにくい系統と、当たれば強い系統の違いを解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/scents-women-prefer",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-08-11",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/scents-women-prefer",
+        "checkedAt": "2026-11-25T16:07:54.275Z"
+      }
+    },
+    {
+      "slug": "season-scene-map",
+      "url": "https://sillage.asutelu.com/columns/season-scene-map",
+      "title": "季節×シーンで選ぶメンズ香水マップ｜Sillage（シヤージュ）",
+      "description": "春夏秋冬と仕事・デート・休日の組み合わせから、失敗しにくい香調を図解。シトラス、ウッディ、ムスク、アンバーの使い分けが分かります。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/season-scene-map",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/season-scene-map",
+        "checkedAt": "2026-11-25T16:07:54.582Z"
+      }
+    },
+    {
+      "slug": "summer-perfume-strong",
+      "url": "https://sillage.asutelu.com/columns/summer-perfume-strong",
+      "title": "夏に香水が強く感じる理由と選び方｜Sillage（シヤージュ）",
+      "description": "夏に香水が強く感じやすい理由を、気温・湿度・汗・距離から整理。量とつける場所を調整し、暑い日にも使いやすくする方法を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/summer-perfume-strong",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-24T15:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/summer-perfume-strong",
+        "checkedAt": "2026-11-25T16:07:54.998Z"
+      }
+    },
+    {
+      "slug": "tomford-vs-creed",
+      "url": "https://sillage.asutelu.com/columns/tomford-vs-creed",
+      "title": "トム フォードとクリード、高級メンズの頂点を比較｜Sillage（シヤージュ）",
+      "description": "トム フォードとクリードのメンズ香水を、存在感・クラシックさ・夜向き・日常性で図解比較。高価格帯で後悔しない選び方を解説。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/tomford-vs-creed",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/tomford-vs-creed",
+        "checkedAt": "2026-11-25T16:07:55.281Z"
+      }
+    },
+    {
+      "slug": "too-much-perfume",
+      "url": "https://sillage.asutelu.com/columns/too-much-perfume",
+      "title": "香水をつけすぎた時の落とし方｜外出前・外出先の対処法｜Sillage（シヤージュ）",
+      "description": "香水をつけすぎた時に、肌・服・室内で香りを弱める手順を整理。外出前と外出先に分け、周囲へ広げず対処する方法を紹介します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/too-much-perfume",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/too-much-perfume",
+        "checkedAt": "2026-11-25T16:07:55.580Z"
+      }
+    },
+    {
+      "slug": "where-to-apply-perfume",
+      "url": "https://sillage.asutelu.com/columns/where-to-apply-perfume",
+      "title": "香水はどこにつける？手首・首・腰・服の違い｜Sillage（シヤージュ）",
+      "description": "香水をつける場所で迷う人へ。手首・首・腰・膝裏・服の違いを、香りの距離と場面から比較し、初心者向けの選び方を解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/where-to-apply-perfume",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/where-to-apply-perfume",
+        "checkedAt": "2026-11-25T16:07:55.968Z"
+      }
+    },
+    {
+      "slug": "why-cant-smell-own-perfume",
+      "url": "https://sillage.asutelu.com/columns/why-cant-smell-own-perfume",
+      "title": "香水の匂いが自分で分からない理由｜つけ足す前に知る嗅覚順応｜Sillage（シヤージュ）",
+      "description": "つけた香水を自分だけ感じにくくなる理由と、つけ足しを防ぐ確認方法を解説。嗅覚の慣れと香りの変化を分けて考えます。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/why-cant-smell-own-perfume",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-25T12:00:00+09:00",
+      "datesAgree": false,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/why-cant-smell-own-perfume",
+        "checkedAt": "2026-11-25T16:07:56.289Z"
+      }
+    },
+    {
+      "slug": "why-margiela-replica",
+      "url": "https://sillage.asutelu.com/columns/why-margiela-replica",
+      "title": "なぜマルジェラのレプリカは人気なのか｜Sillage（シヤージュ）",
+      "description": "メゾン マルジェラ「レプリカ」が人気の理由を、ネーミング・記憶・香り・SNS・ギフトの5要素から図解して解説します。",
+      "listed": true,
+      "h1": 1,
+      "noindex": false,
+      "canonical": "https://sillage.asutelu.com/columns/why-margiela-replica",
+      "structuredModified": "2026-07-16T22:00:00+09:00",
+      "visibleModified": "2026-07-16T22:00:00+09:00",
+      "datesAgree": true,
+      "recentlyModifiedInMarkup": false,
+      "sourceSectionPresent": true,
+      "editorBylinePresent": true,
+      "note": "Markup checks do not establish originality, source accuracy, image rights or actual editorial work.",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/columns/why-margiela-replica",
+        "checkedAt": "2026-11-25T16:07:56.610Z"
+      }
+    },
+    {
+      "url": "https://sillage.asutelu.com/",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/",
+        "checkedAt": "2026-11-25T16:07:56.778Z"
+      }
+    },
+    {
+      "url": "https://sillage.asutelu.com/guides.html",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/guides.html",
+        "checkedAt": "2026-11-25T16:07:56.945Z"
+      }
+    },
+    {
+      "url": "https://sillage.asutelu.com/about.html",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/about.html",
+        "checkedAt": "2026-11-25T16:07:57.405Z"
+      }
+    },
+    {
+      "url": "https://sillage.asutelu.com/privacy.html",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/privacy.html",
+        "checkedAt": "2026-11-25T16:07:57.812Z"
+      }
+    },
+    {
+      "url": "https://sillage.asutelu.com/contact.html",
+      "live": {
+        "status": 200,
+        "canonical": "https://sillage.asutelu.com/contact.html",
+        "checkedAt": "2026-11-25T16:07:57.964Z"
+      }
+    }
+  ]
+}
