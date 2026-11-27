@@ -28,5 +28,25 @@
     "consoleErrorsObserved":0
   },
   "knownBaselineIssues":{"missingPrice":6,"missingScenes":4,"missingSeasons":4,"missingPurchaseLinks":2},
-  "deployment":"pending normal main push and GitHub Actions verification"
+  "deployment": {
+    "method":"main push → existing GitHub Actions → Cloudflare Workers",
+    "contentCommit":"1936e492ae8ffef3a532d0c7951d54fb90264796",
+    "actions":"https://github.com/sanji104vt-hub/sillage/actions/runs/46031336569",
+    "result":"success",
+    "completedAt":"2026-11-28T01:11:08+09:00",
+    "url":"https://sillage.asutelu.com/"
+  },
+  "productionAudit": {
+    "newProductsHttp200":23,
+    "newBrandsHttp200":4,
+    "publishedCatalogueCount":232,
+    "canonicalH1ProductBreadcrumb":"passed for all 23 new products",
+    "originalGeneratedHtml":"exact in all 23 public HTML documents",
+    "unknownProductHttpStatus":404,
+    "workerRedirectHttpStatus":301,
+    "cacheBypassProductPages":2,
+    "homepageBytesObserved":148373,
+    "liveBrowser":"Chloé Nomade at 375px: actual photo loaded, no horizontal overflow, 50mL selection and source disclosure work; HTTPS affiliate destination; no console errors observed",
+    "purchaseClick":"not executed"
+  }
 }
