@@ -124,6 +124,8 @@ for (const path of files.filter((p) => relative(PUBLIC, p).replaceAll("\\", "/")
 let changed = 0;
 for (const path of files) {
   const rel = relative(PUBLIC, path).replaceAll("\\", "/");
+  // Product rebuilds must not reset unrelated column modification dates.
+  if (process.argv.includes('--items-only') && !rel.startsWith('items/')) continue;
   if (rel === "index.html") continue;
   // partials/ はページ本体ではなく差し込み用の断片。head を持たないので対象外。
   if (rel.startsWith("partials/")) continue;

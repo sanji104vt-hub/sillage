@@ -49,6 +49,7 @@ const TYPED_PURCHASE_LABEL_SLUGS = new Set([
 
 // ブランド名 → ブランドスラッグ(brand-*.htmlのファイル名部分)
 const BRAND_SLUG = {
+  "Elizabeth Arden": "elizabeth-arden", "Lanvin": "lanvin", "Chloé": "chloe", "Penhaligon's": "penhaligon-s",
   "Jo Malone": "jo-malone", "Acqua di Parma": "acqua-di-parma", "Dior": "dior",
   "Hermès": "hermes", "4711": "4711", "Atelier Cologne": "atelier-cologne",
   "Guerlain": "guerlain", "無印良品": "muji", "Dolce&Gabbana": "dolce-gabbana", "Montblanc": "montblanc", "Azzaro": "azzaro", "Chanel": "chanel",

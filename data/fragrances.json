@@ -20526,6 +20526,2300 @@
       "priceSize": "50ml",
       "priceFetchedAt": "2026-10-12",
       "priceStaleRuns": 5
+    },
+    {
+      "slug": "hermes-h24-edt",
+      "brand": "Hermès",
+      "name": "H24 EDT",
+      "gender": "men",
+      "family": "aromatic",
+      "keyNotes": "クラリセージ・スイセン・ローズウッド・スクラレン",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "mid",
+      "price": "¥8,283",
+      "priceSource": "rakuten",
+      "priceValue": 8283,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "クラリセージ、スイセン、ローズウッド、スクラレンを公表。H24 EDPとは濃度だけでなく、公表されている主な素材の違いから比較したい。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/50/her056-050_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/page-her056-050/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-her056-050%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/page-her056-050/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-her056-050%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "3a5c6a9f026ab520e99331bbb7f28033e39892421043d2c7bd7782afc576cb5b"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-トワレ-《h24》-V101563V0/",
+          "publisher": "Hermès",
+          "title": "Hermès H24 EDT — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/page-her056-050/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "エルメス HERMES H24 オードトワレ EDT SP 50ml 【香水】【激安セール】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-トワレ-《h24》-V101563V0/",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpage-her056-050%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "hermes-h24-edp",
+      "brand": "Hermès",
+      "name": "H24",
+      "gender": "men",
+      "family": "aromatic",
+      "keyNotes": "セージ・モス・スクラレン",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥10,606",
+      "priceSource": "rakuten",
+      "priceValue": 10606,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "セージ、モス、スクラレンという公式説明の軸を持つH24。EDTのスイセンやローズウッドの構成と並べ、試香して選ぶための候補。",
+      "img": "https://shop.r10s.jp/besba/cabinet/s22/hms-469.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/besba/hms-469/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fhms-469%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/besba/hms-469/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fhms-469%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "edbc285717bcde54f118ab281cd09cd3e9eb437742f157b26b4ad6be86876775"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-パルファム-《h24》-V108422V0/",
+          "publisher": "Hermès",
+          "title": "Hermès H24 — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/besba/hms-469/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "送料無料 エルメス H24 EDP オードパルファム SP 50ml 香水 HERMES：ベスバ 楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-パルファム-《h24》-V108422V0/",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fhms-469%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "hermes-terre-edt",
+      "brand": "Hermès",
+      "name": "テール ドゥ エルメス EDT",
+      "gender": "men",
+      "family": "woody",
+      "keyNotes": "グレープフルーツ・シダー・シレックス（火打石）",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "business",
+        "formal"
+      ],
+      "priceTier": "mid",
+      "price": "¥8,360",
+      "priceSource": "rakuten",
+      "priceValue": 8360,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "グレープフルーツとシダーに、火打石を思わせる要素を組み合わせた構成。H24の植物的な素材との違いを、同じブランド内で比較できる。",
+      "img": "https://shop.r10s.jp/per-bestone/cabinet/item06/he050-003.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/per-bestone/he050-003/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fhe050-003%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/per-bestone/he050-003/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fhe050-003%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "1f4f0be8ab27a67924cfc0e9b138989605fbe4508c8c3d90c7a5c79eb1cf13d5"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-トワレ-《テール-ドゥ-エルメス》-V107189V0/",
+          "publisher": "Hermès",
+          "title": "Hermès テール ドゥ エルメス EDT — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/per-bestone/he050-003/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "エルメス テール ドゥ エルメス オードトワレ EDT SP 50ml HERMES 香水・フレグランス [9610/0041]送料無料：コスメ・香水のベストワン",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.hermes.com/jp/ja/product/オー-ド-トワレ-《テール-ドゥ-エルメス》-V107189V0/",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fhe050-003%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "byredo-blanche-edp",
+      "brand": "Byredo",
+      "name": "ブランシュ",
+      "gender": "unisex",
+      "family": "musk",
+      "top": "アルデヒド・ローズセンティフォリア",
+      "mid": "ピオニー・バイオレット",
+      "last": "ムスク・サンダルウッド",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥25,014",
+      "priceSource": "rakuten",
+      "priceValue": 25014,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "アルデヒドとローズから、ピオニー、バイオレット、ムスクへ。ジプシー ウォーターのウッディな構成に対し、花とムスクを軸に比べたい。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/50/byr002-050_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/byr002-050/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fbyr002-050%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/byr002-050/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fbyr002-050%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "f4eedccfd0975c459c2a965f801b7e97c0093ebf0e83ef8b5ced08e9e10007a1"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.byredo.com/ja_jp/p/blanche-eau-de-parfum",
+          "publisher": "Byredo",
+          "title": "Byredo ブランシュ — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/byr002-050/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "バイレード BYREDO オードパルファン ブランシュ EDP SP 50ml 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.byredo.com/ja_jp/p/blanche-eau-de-parfum",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fbyr002-050%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "byredo-mojave-ghost-edp",
+      "brand": "Byredo",
+      "name": "モハーヴェ ゴースト",
+      "gender": "unisex",
+      "family": "woody",
+      "top": "アンブレット・ネスベリー",
+      "mid": "マグノリア・サンダルウッド・バイオレット",
+      "last": "シダーウッド・ムスク・ベチバー",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥23,870",
+      "priceSource": "rakuten",
+      "priceValue": 23870,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "アンブレットとネスベリーに、マグノリアやサンダルウッドを重ねる構成。ブランシュとはトップの素材も異なり、花と木の組み合わせを比較する入口になる。",
+      "img": "https://shop.r10s.jp/pureco/cabinet/prc-s-863000/prc-s-8637290733.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/pureco/prc-s-8637290733/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpureco%2Fprc-s-8637290733%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/pureco/prc-s-8637290733/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpureco%2Fprc-s-8637290733%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "d4c29546e1da334d96df42bf819e1dedd4936526f76856f9b8cec90a15908615"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.byredo.com/ja_jp/p/mojave-ghost-eau-de-parfum?sku=0065204854",
+          "publisher": "Byredo",
+          "title": "Byredo モハーヴェ ゴースト — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/pureco/prc-s-8637290733/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "バイレード BYREDO モハーヴェ ゴースト EDP SP 50ml：プレコハウス",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.byredo.com/ja_jp/p/mojave-ghost-eau-de-parfum?sku=0065204854",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpureco%2Fprc-s-8637290733%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "le-labo-bergamote-22-edp",
+      "brand": "Le Labo",
+      "name": "ベルガモット 22",
+      "gender": "unisex",
+      "family": "citrus",
+      "keyNotes": "ベルガモット・プチグレイン・グレープフルーツ・アンバー・ムスク・ベチバー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥46,800",
+      "priceSource": "rakuten",
+      "priceValue": 46800,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ベルガモット、プチグレイン、グレープフルーツに、アンバー、ムスク、ベチバーを合わせる構成。サンタル33と同じブランドでも、主役の素材を分けて選びたい。",
+      "img": "https://shop.r10s.jp/mimori/cabinet/point2/0842185115229.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/mimori/0842185115229/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmimori%2F0842185115229%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/mimori/0842185115229/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmimori%2F0842185115229%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "772d390b46e573d9746587b65bb68d07bdd8926b7c4f755c94ff6a0e44965bd9"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.lelabofragrances.jp/products/bergamote-22_135",
+          "publisher": "Le Labo",
+          "title": "Le Labo ベルガモット 22 — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/mimori/0842185115229/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "★ポイント10倍・割引クーポン★LE LABO ル ラボ ベルガモット22 オードパルファム 100ml【宅配便送料無料】：Mimori cosme",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.lelabofragrances.jp/products/bergamote-22_135",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fmimori%2F0842185115229%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "prada-luna-rossa-edt",
+      "brand": "Prada",
+      "name": "ルナロッサ EDT",
+      "gender": "men",
+      "family": "aromatic",
+      "keyNotes": "ラベンダー・スペアミント・アンバーアコード",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "business",
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥11,580",
+      "priceSource": "rakuten",
+      "priceValue": 11580,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ラベンダーとスペアミント、アンバーアコードが公表されるルナロッサのオリジナル。カーボンやオーシャンとは別作品として、中心となる素材を比較したい。",
+      "img": "https://shop.r10s.jp/a-price/cabinet/pics/1087/3614273478755.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/a-price/3614273478755/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F3614273478755%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/a-price/3614273478755/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F3614273478755%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "37297e5493e59826e729545f177dc8303ff591b1f4fd0fd039e31ac7ec5f5618"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://jp.pradabeauty.com/fragrance/men-s-fragrance/luna-rossa-eau-de-toilette/MPL01360.html",
+          "publisher": "Prada",
+          "title": "Prada ルナロッサ EDT — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/a-price/3614273478755/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "PRADA プラダ 香水 メンズ ルナロッサ オードトワレ 100mL PR-LUNAROSSAETSP-100 フレグランス 誕生日 新生活 クリスマス プレゼント ギフト：XPRICE楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://jp.pradabeauty.com/fragrance/men-s-fragrance/luna-rossa-eau-de-toilette/MPL01360.html",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fa-price%2F3614273478755%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "ysl-y-men-edt",
+      "brand": "YSL",
+      "name": "Y メン EDT",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ベルガモット・ジンジャー・アルデヒド・オリバナム",
+      "mid": "ラベンダー・ゼラニウム・クラリセージ",
+      "last": "アンバーグリス・シダーウッド・バニラ",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "high",
+      "price": "¥10,274",
+      "priceSource": "rakuten",
+      "priceValue": 10274,
+      "priceSize": "60mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ベルガモットやジンジャーから、ラベンダー、クラリセージ、シダーウッドへ。MYSLFやラ ニュイ ド ロムとはシリーズを分けて比較する候補。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/60/ysl037-060_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/ysl037-060/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fysl037-060%2F",
+              "volumeMl": 60,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/ysl037-060/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fysl037-060%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "db67b009af793d90e57f47eda809c1dad3fda16c9acc5f4a3f8f5ca6b61c332d"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.yslb.jp/fragrance/fragrance-for-him/y-eau-de-toilette/JP-30011YSL.html",
+          "publisher": "YSL",
+          "title": "YSL Y メン EDT — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/ysl037-060/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "イヴ サンローラン YVES SAINT LAURENT YSL Y MEN メン オーデトワレ EDT SP 60ml 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.yslb.jp/fragrance/fragrance-for-him/y-eau-de-toilette/JP-30011YSL.html",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fysl037-060%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "lacoste-original-edp",
+      "brand": "Lacoste",
+      "name": "オリジナル",
+      "gender": "men",
+      "family": "aromatic",
+      "top": "ベルガモット・ピンクペッパー・カルダモン",
+      "mid": "ラベンダー・クラリセージ",
+      "last": "サンダルウッド・パチョリ・アンバー・トンカビーン",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "price": "¥6,479",
+      "priceSource": "rakuten",
+      "priceValue": 6479,
+      "priceSize": "60mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ベルガモットとスパイスからラベンダー、クラリセージへ進み、ウッドとトンカにつながる構成。L.12.12 ブランとは別シリーズとして選ぶ。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/60/lac035-060_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 60,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/lac035-060/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flac035-060%2F",
+              "volumeMl": 60,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/lac035-060/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flac035-060%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "0d2bf7e68fa536bd632d2743105d159438bdbe3a471a30cd6f1ce9b846432eea"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://latelierdesparfums.jp/products/lacoste-original-edp-spray",
+          "publisher": "Lacoste",
+          "title": "Lacoste オリジナル — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/lac035-060/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "ラコステ LACOSTE ラコステ オリジナル オードパルファム EDP SP 60ml 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://latelierdesparfums.jp/products/lacoste-original-edp-spray",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flac035-060%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "diptyque-oyedo-edt",
+      "brand": "Diptyque",
+      "name": "オイエド",
+      "gender": "unisex",
+      "family": "citrus",
+      "keyNotes": "ユズ・グリーンマンダリン・タイム・フランボワーズ",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥19,525",
+      "priceSource": "rakuten",
+      "priceValue": 19525,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ユズ、グリーンマンダリン、タイム、フランボワーズを公表。花主体のオー ローズと対比して、柑橘とハーブを入口にする選び方ができる。",
+      "img": "https://shop.r10s.jp/besba/cabinet/s21/dte-117.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/besba/dte-117/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fdte-117%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/besba/dte-117/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fdte-117%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "e1078270d44b04b3d51d56acf8e52cf6afe1a65e46eda3e3e3de612f07d81343"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-oyedo-oyedo100v3",
+          "publisher": "Diptyque",
+          "title": "Diptyque オイエド — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/besba/dte-117/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "送料無料 ディプティック オイエド EDT オードトワレ SP 100ml 香水 【営業日13時まで当日発送】：ベスバ 楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-oyedo-oyedo100v3",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Fdte-117%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "diptyque-eau-rose-edp",
+      "brand": "Diptyque",
+      "name": "オー ローズ",
+      "gender": "unisex",
+      "family": "floral",
+      "keyNotes": "ダマスクローズ・センティフォリアローズ・カモミール・ライチ・アーティチョーク",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥27,005",
+      "priceSource": "rakuten",
+      "priceValue": 27005,
+      "priceSize": "75mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "二種のローズにカモミール、ライチ、アーティチョークを組み合わせるEDP。オー ローズのEDTと濃度だけで同一視せず、素材構成も確かめたい。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/75/dip032-075_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 75,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/dip032-075/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fdip032-075%2F",
+              "volumeMl": 75,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/dip032-075/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fdip032-075%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "4538509e7d1e6995284e85326ee3578a8c4b9eb2f97353b3039846b58af54f53"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-parfum-eau-rose-rosep75c",
+          "publisher": "Diptyque",
+          "title": "Diptyque オー ローズ — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/dip032-075/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "ディプティック diptyque オードパルファン オー ローズ EDP SP 75ml 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-parfum-eau-rose-rosep75c",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fdip032-075%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "diptyque-leau-papier-edt",
+      "brand": "Diptyque",
+      "name": "ローパピエ",
+      "gender": "unisex",
+      "family": "musk",
+      "keyNotes": "ホワイトムスク・ミモザ・ブロンドウッドアコード・ライススチームアコード",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥18,290",
+      "priceSource": "rakuten",
+      "priceValue": 18290,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ホワイトムスク、ミモザ、ブロンドウッド、ライススチームのアコードを公表。柑橘主体のオイエドとは別の軸で、ムスクと穀物を思わせる要素を比べたい。",
+      "img": "https://shop.r10s.jp/sunbrand-select/cabinet/fragrance/diplepaedt50.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/sunbrand-select/diplepaedt50/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Fdiplepaedt50%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/sunbrand-select/diplepaedt50/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Fdiplepaedt50%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "4f8fee82f39b2566a7d4c45d227378cb057ffa859012d34311e0503b2beb00c2"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-eau-papier-papier100",
+          "publisher": "Diptyque",
+          "title": "Diptyque ローパピエ — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/sunbrand-select/diplepaedt50/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "ディプティック diptyque ローパピエ オードトワレ 50ml EDT 香水 レディース メンズ：s-select",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://jp.diptyqueparis.com/ja-jp/products/eau-de-toilette-eau-papier-papier100",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fsunbrand-select%2Fdiplepaedt50%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "4711-portugal-edt",
+      "brand": "4711",
+      "name": "ポーチュガル",
+      "gender": "men",
+      "family": "citrus",
+      "keyNotes": "オレンジ・スパイシーウッディ",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "petit",
+      "price": "¥4,565",
+      "priceSource": "rakuten",
+      "priceValue": 4565,
+      "priceSize": "80mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "オレンジとスパイシーウッディという公式の説明を入口にする一本。4711 オーデコロンとは名称も濃度も分けて比較する。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/80/zet003-080_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 80,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/zet003-080/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fzet003-080%2F",
+              "volumeMl": 80,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/zet003-080/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fzet003-080%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "d3e88db9f314a277bc91f1d23e09af1f07e1dc3fafdea0479368146c47dcbe55"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://4711.com/en/products/4711-portugal-eau-de-toilette",
+          "publisher": "4711",
+          "title": "4711 ポーチュガル — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/zet003-080/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "4711 ポーチュガル オードトワレ ナチュラルスプレー EDT SP 80ml 国内正規品 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://4711.com/en/products/4711-portugal-eau-de-toilette",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fzet003-080%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "carolina-herrera-212-men-edt",
+      "brand": "Carolina Herrera",
+      "name": "212 メン",
+      "gender": "men",
+      "family": "woody",
+      "keyNotes": "シトラスリーフ・ガーデニアペタル・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "mid",
+      "price": "¥5,250",
+      "priceSource": "rakuten",
+      "priceValue": 5250,
+      "priceSize": "30mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "シトラスリーフ、ガーデニアペタル、サンダルウッドが公表される212 メン。バッドボーイとは別ラインとして、花とウッドの組み合わせを確認したい。",
+      "img": "https://shop.r10s.jp/benavi/cabinet/04/he0004sm_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://item.rakuten.co.jp/benavi/he0004sm/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbenavi%2Fhe0004sm%2F",
+              "volumeMl": 30,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/benavi/he0004sm/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbenavi%2Fhe0004sm%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "21db959fb9a5f02343d33338c426c1d26b29f0885a1fbb0bb2f9b9f5537085e1"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.carolinaherrera.com/uk/en/p-fragrance/212-nyc-men?sku=000000000065114529",
+          "publisher": "Carolina Herrera",
+          "title": "Carolina Herrera 212 メン — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/benavi/he0004sm/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "キャロライナ ヘレラ CAROLINA HERRERA 212 メン オードトワレ 30ml EDT SP 香水 フレグランス 送料無料【香水 フレグランス 人気 ブランド ギフト 誕生日 プレゼント】：コスメ＆ジュエリー 美ナビ",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.carolinaherrera.com/uk/en/p-fragrance/212-nyc-men?sku=000000000065114529",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbenavi%2Fhe0004sm%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "versace-man-eau-fraiche-edt",
+      "brand": "Versace",
+      "name": "マン オー フレッシュ",
+      "gender": "men",
+      "family": "aquatic",
+      "top": "ホワイトレモン・ローズウッド・カランボラ",
+      "mid": "タラゴン・シダーリーフ・クラリセージ",
+      "last": "ムスク・アンバー・シカモアウッド",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "high",
+      "price": "¥10,120",
+      "priceSource": "rakuten",
+      "priceValue": 10120,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ホワイトレモンやカランボラから、ハーブ、ムスクとウッドへつながる構成。ディラン ブルーやエロスとは、果実とハーブの組み合わせを分けて比較できる。",
+      "img": "https://shop.r10s.jp/wish/cabinet/earth010/vr024_100.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/wish/753919/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F753919%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/wish/753919/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F753919%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "9cfa164c623aa9d1eb603bc028c609bf49d8c227b0e5bbaf6711d42c58dae0e7"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.versace.com/row/en/men/accessories/fragrances-body-care/eau-fraiche/eau-fraiche-edt-100-ml/R500010-R100MLS_RNUL.html",
+          "publisher": "Versace",
+          "title": "Versace マン オー フレッシュ — 公式商品情報",
+          "accessedAt": "2026-10-16",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/wish/753919/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "【最大1500円OFFクーポン】 ヴェルサーチ VERSACE ヴェルサーチ マン オーフレッシュ EDT SP 100ml【香水 メンズ】【人気 ブランド ギフト 誕生日 プレゼント】：香水フレグランスPARFUM de EARTH",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-16",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.versace.com/row/en/men/accessories/fragrances-body-care/eau-fraiche/eau-fraiche-edt-100-ml/R500010-R100MLS_RNUL.html",
+          "verifiedAt": "2026-10-16",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fwish%2F753919%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "chanel-allure-homme-edt",
+      "brand": "Chanel",
+      "name": "アリュール オム",
+      "gender": "men",
+      "family": "amber",
+      "keyNotes": "マンダリン・コリアンダー・セダー・トンカ・ラブダナム・ブラックペッパー",
+      "seasons": [
+        "autumn",
+        "winter"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥15,940",
+      "priceSource": "rakuten",
+      "priceValue": 15940,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "マンダリン、コリアンダー、セダー、トンカなどを公表するアリュール オム。アリュール オム スポーツではないオリジナルを探すときの比較候補。",
+      "img": "https://shop.r10s.jp/osharecafe/cabinet/product_osk/fr_images/6001546.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/osharecafe/10002821/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10002821%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/osharecafe/10002821/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10002821%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "230ce03448cbf70940aff0598ed7c422b252046e0dbbeead79f665c4445475be"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chanel.com/jp/fragrance/p/121450/allure-homme-eau-de-toilette-spray/",
+          "publisher": "Chanel",
+          "title": "Chanel アリュール オム — 公式商品情報",
+          "accessedAt": "2026-10-11",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/osharecafe/10002821/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "シャネル アリュールオムEDT 50ml SP(オードトワレ)【香水】【宅配便送料無料】(6001546)：おしゃれcafe楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-11",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.chanel.com/jp/fragrance/p/121450/allure-homme-eau-de-toilette-spray/",
+          "verifiedAt": "2026-10-11",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fosharecafe%2F10002821%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "creed-himalaya-edp",
+      "brand": "Creed",
+      "name": "ヒマラヤ",
+      "gender": "men",
+      "family": "woody",
+      "top": "レモン・マンダリン・ベルガモット",
+      "mid": "ガンパウダー・ジュニパーベリー・ナツメグ・ペッパー・ラベンダー・ジャスミン",
+      "last": "サンダルウッド・ベチバー・シダーウッド",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "business"
+      ],
+      "priceTier": "high",
+      "price": "¥37,275",
+      "priceSource": "rakuten",
+      "priceValue": 37275,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "柑橘からガンパウダーやジュニパー、スパイスへ進み、ウッドにつながる構成。アバントゥスとは主な素材の違いから比べたい。",
+      "img": "https://shop.r10s.jp/diogreco/cabinet/07135627/compass1589420592.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/diogreco/creed-himalayaedp-50ml/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fcreed-himalayaedp-50ml%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/diogreco/creed-himalayaedp-50ml/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fcreed-himalayaedp-50ml%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "fdab59b3bfecbf521ed26ac38a1a909b86dd4be9659472ee9c0370af49d9789d"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://creedfragrance.jp/products/himalaya",
+          "publisher": "Creed",
+          "title": "Creed ヒマラヤ — 公式商品情報",
+          "accessedAt": "2026-10-11",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/diogreco/creed-himalayaedp-50ml/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "CREED クリード ヒマラヤ オー ド パルファム Himalaya EDP 50ml：DIO GRECO",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-10-11",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://creedfragrance.jp/products/himalaya",
+          "verifiedAt": "2026-10-11",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fdiogreco%2Fcreed-himalayaedp-50ml%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "elizabeth-arden-white-tea-edt",
+      "brand": "Elizabeth Arden",
+      "name": "ホワイトティー オードトワレ",
+      "gender": "women",
+      "family": "musk",
+      "top": "イタリアンマンダリン・クラリセージ・シーブリーズアコード・ホワイトファーン",
+      "mid": "ホワイトティー・マテ・ホワイトアイリス・ターキッシュローズ・サプカイアアコード",
+      "last": "マドラスウッド・アンブレットシード・トンカビーン・アンバーマックス・ムスク",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily"
+      ],
+      "priceTier": "mid",
+      "price": "¥5,180",
+      "priceSource": "rakuten",
+      "priceValue": 5180,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ホワイトティーとアイリスを、ウッドやムスクでつなぐ構成。グリーンティーとの比較では、柑橘だけでなく花と余韻の違いを試したい。",
+      "img": "https://shop.r10s.jp/premoa/cabinet/pics/735/0085805557331.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/premoa/0085805557331/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpremoa%2F0085805557331%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/premoa/0085805557331/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpremoa%2F0085805557331%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "8605892dad6c7b726e93450c65c5cd3482bb110e375859de13f1f82fac330515"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.elizabetharden.com/products/elizabeth-arden-white-tea-eau-de-toilette-spray",
+          "publisher": "Elizabeth Arden",
+          "title": "Elizabeth Arden ホワイトティー オードトワレ — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/premoa/0085805557331/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "エリザベスアーデン ELIZABETH ARDEN 香水 レディース ホワイトティー オードトワレ 100mL ED-WHITETEAETSP-100 フレグランス 誕生日 新生活 クリスマス ギフト プレゼント 贈り物：総合通販PREMOA 楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.elizabetharden.com/products/elizabeth-arden-white-tea-eau-de-toilette-spray",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fpremoa%2F0085805557331%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "lanvin-eclat-darpege-edp",
+      "brand": "Lanvin",
+      "name": "エクラ ドゥ アルページュ オードパルファム",
+      "gender": "women",
+      "family": "floral",
+      "top": "シチリアンレモン・ライラック",
+      "mid": "グリーンティーリーフ・ピーチブロッサム",
+      "last": "ホワイトムスク・レバノンシダー",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "petit",
+      "price": "¥3,784",
+      "priceSource": "rakuten",
+      "priceValue": 3784,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ライラックとピーチの花に、茶葉とホワイトムスクを合わせた構成。ジャンヌ ランバンの果実主体の入口と、花の種類を比べると選びやすい。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/50_2/lav003-050_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/lav003-050/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flav003-050%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/lav003-050/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flav003-050%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "69d8214f8b63d9bb50522264d81eaf963e78ce4bed5ba2ada0fb9df6c5a9ce74"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.interparfums.fr/en/lanvin-eclat-darpege-2/",
+          "publisher": "Lanvin",
+          "title": "Lanvin エクラ ドゥ アルページュ オードパルファム — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/lav003-050/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "ランバン LANVIN エクラ ドゥ アルページュ オードパルファム EDP SP 50ml 【香水】【当日出荷_休止中】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.interparfums.fr/en/lanvin-eclat-darpege-2/",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Flav003-050%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "lanvin-jeanne-edp",
+      "brand": "Lanvin",
+      "name": "ジャンヌ ランバン オードパルファム",
+      "gender": "women",
+      "family": "fruity",
+      "top": "ワイルドブラックベリー・ペアネクター",
+      "mid": "ラズベリー・ホワイトフリージア",
+      "last": "ムスク・サンダルウッド",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "price": "¥5,724",
+      "priceSource": "rakuten",
+      "priceValue": 5724,
+      "priceSize": "100mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ブラックベリーや洋梨からフリージアへつながる構成。花を中心にしたエクラ ドゥ アルページュに対し、果実の要素も選択軸に入れたい人の比較候補。",
+      "img": "https://shop.r10s.jp/besba/cabinet/s2/lvn-007.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 100,
+          "sourceUrl": "https://item.rakuten.co.jp/besba/lvn-007/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Flvn-007%2F",
+              "volumeMl": 100,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/besba/lvn-007/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Flvn-007%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "62ad7807afa62afd2f3075e5dc3bff664ea1906e2016213e57928bd680c7e4ed"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.interparfumsinc.com/products/jeanne-lanvin",
+          "publisher": "Lanvin",
+          "title": "Lanvin ジャンヌ ランバン オードパルファム — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/besba/lvn-007/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "送料無料 ランバン ジャンヌ ランバン EDP オードパルファム SP 100ml 香水 LANVIN：ベスバ 楽天市場店",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.interparfumsinc.com/products/jeanne-lanvin",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fbesba%2Flvn-007%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "chloe-eau-de-parfum",
+      "brand": "Chloé",
+      "name": "クロエ オードパルファム",
+      "gender": "women",
+      "family": "floral",
+      "top": "ピオニー",
+      "mid": "ローズペタル・マグノリア",
+      "last": "シダー・アンバーグリス",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "price": "¥8,930",
+      "priceSource": "rakuten",
+      "priceValue": 8930,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ピオニーからローズへ進み、シダーとアンバーグリスにつながる構成。ノマドとは主役の花とベースが違うため、ブランド名だけで選ばず二本を試したい。",
+      "img": "https://shop.r10s.jp/per-bestone/cabinet/item05/chl050-001.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/per-bestone/chl050-001/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-001%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/per-bestone/chl050-001/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-001%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "cdba8964f78f3ae95754d170c512dd9f33f594bf8c796fded8dfac02b75edb53"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chloe.com/en-us/p/fragrances/eau-de-parfum/CHCA64980408.html",
+          "publisher": "Chloé",
+          "title": "Chloé クロエ オードパルファム — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/per-bestone/chl050-001/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "送料無料 クロエ クロエ オードパルファム EDP SP 50ml[1888/2347] CHLOE：コスメ・香水のベストワン",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.chloe.com/en-us/p/fragrances/eau-de-parfum/CHCA64980408.html",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-001%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "chloe-nomade-edp",
+      "brand": "Chloé",
+      "name": "ノマド オードパルファム",
+      "gender": "women",
+      "family": "chypre",
+      "top": "ミラベルプラム",
+      "mid": "フリージア",
+      "last": "オークモス",
+      "seasons": [
+        "spring",
+        "autumn"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "mid",
+      "price": "¥9,690",
+      "priceSource": "rakuten",
+      "priceValue": 9690,
+      "priceSize": "50mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ミラベル、フリージア、オークモスという三つの軸を公表する作品。クロエのローズ主体の香りとは、苔を含むベースの方向で比較できる。",
+      "img": "https://shop.r10s.jp/per-bestone/cabinet/item05/chl050-019.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Parfum",
+        "label": "オードパルファム"
+      },
+      "sizes": [
+        {
+          "volumeMl": 50,
+          "sourceUrl": "https://item.rakuten.co.jp/per-bestone/chl050-019/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-019%2F",
+              "volumeMl": 50,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/per-bestone/chl050-019/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-019%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "305fb50f6edb96cb5970491e134312f56af0b2610c6329a51350e9c427b82728"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://www.chloe.com/en-us/p/fragrances/eau-de-parfum/CHCA64994090.html",
+          "publisher": "Chloé",
+          "title": "Chloé ノマド オードパルファム — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "GLOBAL",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/per-bestone/chl050-019/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "送料無料 クロエ ノマド オードパルファム EDP 50ml[1565] CHLOE：コスメ・香水のベストワン",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://www.chloe.com/en-us/p/fragrances/eau-de-parfum/CHCA64994090.html",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fper-bestone%2Fchl050-019%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
+    },
+    {
+      "slug": "penhaligons-luna-edt",
+      "brand": "Penhaligon's",
+      "name": "ルナ オードトワレ",
+      "gender": "unisex",
+      "family": "floral",
+      "top": "ビターオレンジ",
+      "mid": "ジュニパーベリー・ローズ・ジャスミン",
+      "last": "ウッディノート",
+      "seasons": [
+        "spring",
+        "summer"
+      ],
+      "scenes": [
+        "daily",
+        "date"
+      ],
+      "priceTier": "high",
+      "price": "¥16,720",
+      "priceSource": "rakuten",
+      "priceValue": 16720,
+      "priceSize": "30mL",
+      "priceFetchedAt": "2026-11-28",
+      "priceIsFrom": false,
+      "verdict": "ビターオレンジからジュニパーベリーと花々へ、最後はウッディ調へ移る構成。柑橘と花のどちらも比較の入口にできる作品。",
+      "img": "https://shop.r10s.jp/kousuiandco/cabinet/30/pen048-030_1.jpg",
+      "designImage": "/img/products/catalogue-fallback.svg",
+      "concentration": {
+        "value": "Eau de Toilette",
+        "label": "オードトワレ"
+      },
+      "sizes": [
+        {
+          "volumeMl": 30,
+          "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/pen048-030/",
+          "purchaseLinks": {
+            "rakuten": {
+              "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpen048-030%2F",
+              "volumeMl": 30,
+              "verifiedAt": "2026-11-28",
+              "sourceUrl": "https://item.rakuten.co.jp/kousuiandco/pen048-030/",
+              "selectionRequired": false,
+              "generatedHtml": "<a href=\"//af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpen048-030%2F\" rel=\"nofollow\" referrerpolicy=\"no-referrer-when-downgrade\" attributionsrc>楽天市場で価格を見る</a><img src=\"//i.moshimo.com/af/i/impression?a_id=5718841&p_id=54&pc_id=54&pl_id=616\" width=\"1\" height=\"1\" style=\"border:none;\" alt=\"\" loading=\"lazy\">",
+              "generatedHtmlSha256": "bb4a49678d53950f9ff970fb46da6e52b826d60776d5a4ddcee98d4585b92728"
+            }
+          }
+        }
+      ],
+      "recommendedFor": [],
+      "notRecommendedFor": [],
+      "cautions": [],
+      "profile": {
+        "method": "editorial-v1",
+        "lightToRich": null,
+        "freshToSweet": null,
+        "subtleToBold": null,
+        "dailyToDistinctive": null,
+        "youthfulToMature": null
+      },
+      "sources": [
+        {
+          "url": "https://latelierdesparfums.jp/products/luna-edt-spray",
+          "publisher": "Penhaligon's",
+          "title": "Penhaligon's ルナ オードトワレ — 公式商品情報",
+          "accessedAt": "2026-11-28",
+          "sourceType": "official",
+          "market": "JP",
+          "supports": [
+            "notes",
+            "concentration"
+          ]
+        },
+        {
+          "url": "https://item.rakuten.co.jp/kousuiandco/pen048-030/",
+          "publisher": "楽天市場 掲載販売店",
+          "title": "ペンハリガン PENHALIGON'S ルナ オードトワレ EDT SP 30ml 【香水】【当日出荷_休止中】【送料無料】【割引クーポンあり】：香水カンパニー",
+          "accessedAt": "2026-11-28",
+          "sourceType": "major-retailer",
+          "market": "JP",
+          "supports": [
+            "sizes",
+            "price"
+          ]
+        }
+      ],
+      "verifiedAt": "2026-11-28",
+      "updatedAt": "2026-11-28",
+      "purchaseLinks": {
+        "official": {
+          "url": "https://latelierdesparfums.jp/products/luna-edt-spray",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        },
+        "amazon": null,
+        "rakuten": {
+          "url": "https://af.moshimo.com/af/c/click?a_id=5718841&p_id=54&pc_id=54&pl_id=616&url=https%3A%2F%2Fitem.rakuten.co.jp%2Fkousuiandco%2Fpen048-030%2F",
+          "verifiedAt": "2026-11-28",
+          "type": "product"
+        }
+      }
     }
   ]
 }

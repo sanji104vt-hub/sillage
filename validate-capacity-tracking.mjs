@@ -14,12 +14,12 @@ for (const lang of ['ja', 'en']) {
     const status = {textContent:''};
     const panel = {hidden:false, dataset:{sizePanel:'100'}};
     const body = {dataset:{itemName:'Test',itemBrand:'Test brand'}, getAttribute:() => ''};
-    const picker = {addEventListener:(_, fn) => {click = fn;}, querySelector:q => q === '[data-size-select]' ? select : status, querySelectorAll:() => [panel]};
+    const picker = {contains:() => true, addEventListener:(_, fn) => {click = fn;}, querySelector:q => q === '[data-size-select]' ? select : status, querySelectorAll:() => [panel]};
     const raw = shop === 'rakuten';
     const offer = {dataset:{productId:'test-1',volumeMl:'100'}};
     const link = {href:'https://example.com/product',dataset:raw ? {} : {productId:'test-1',volumeMl:'100',purchaseShop:shop},classList:{contains:() => shop==='official'},closest:q => q==='[data-size-picker]' ? picker : q==='.size-affiliate' && raw ? offer : null};
     const target = {closest:q => q==='a[data-store-link]' ? null : q==='a.buy' && raw ? null : link};
-    const document = {body,documentElement:{lang},querySelector:() => body,querySelectorAll:q => q==='[data-size-picker]' ? [picker] : raw ? [] : [link],addEventListener:(name,fn) => {if(name==='click')documentListeners.push(fn);}};
+    const document = {body,documentElement:{lang},querySelector:() => body,querySelectorAll:q => q==='[data-size-picker]' ? [picker] : q==='.purchase-bottom' ? [] : raw ? [] : [link],addEventListener:(name,fn) => {if(name==='click')documentListeners.push(fn);}};
     const window = {gtag:(...args) => events.push(args)};
     const context = {document,window,location:{pathname:lang==='ja'?'/items/test-1':'/en/fragrances/test/test/'}};
     runInNewContext(readFileSync('public/assets/size-picker.js','utf8'),context);

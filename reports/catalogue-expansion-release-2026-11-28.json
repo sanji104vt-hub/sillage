@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-28",
+  "baselineCommit": "54764ae5731f39e50d0c6489f18bc27ed2fc4216",
+  "productsBefore": 209,
+  "productsAfter": 232,
+  "brandsBefore": 46,
+  "brandsAfter": 50,
+  "addedComposition": {"men": 11, "unisex": 7, "women": 5},
+  "newBrands": [
+    {"name":"Elizabeth Arden","foundationSource":"https://www.elizabetharden.com/pages/about-us"},
+    {"name":"Lanvin","foundationSource":"https://www.interparfums.fr/fr/lanvin/"},
+    {"name":"Chloé","foundationSource":"https://www.chloe.com/en-us/maison/history.html"},
+    {"name":"Penhaligon's","foundationSource":"https://www.penhaligons.com/uk/en/our-founder"}
+  ],
+  "selectionPolicy": "既存ブランドの代表作不足を補い、女性向けと実売1万円未満の商品も追加。現行公式ノートを再現できないアザロ2件、在庫切れ、404、確認済み公式価格超えは保留。",
+  "preservation": {"original209DataAndOrder":"deepEqual passed", "originalAffiliateLinks":"unchanged", "englishProducts":85, "ga4AndGsc":"retained", "profileValues":"null only", "originalGeneratedHtml":"retained verbatim with 1x1 pixel and SHA256"},
+  "sourceDates": "公式ノートは記録済みの確認日を保持。一部公式ページの403を2026-11-28の確認成功と扱わない。実売価格・在庫・容量・写真は2026-11-28に再確認。",
+  "browserChecks": {
+    "environment":"in-app Chromium; not physical devices or Safari",
+    "widths":[375,768,1024,1440],
+    "pages":["/items/lanvin-eclat-darpege-edp","/items/hermes-h24-edp","/items/elizabeth-arden-white-tea-edt","/brand-penhaligon-s.html"],
+    "horizontalOverflow":false,
+    "productPhotos":"loaded",
+    "capacitySelect":"50 mL selected; matching original affiliate link visible",
+    "sourcesDisclosure":"opened",
+    "filters":"women + petit returned Lanvin; reset returned full catalogue",
+    "affiliateClick":"not performed to avoid self-referral",
+    "consoleErrorsObserved":0
+  },
+  "knownBaselineIssues":{"missingPrice":6,"missingScenes":4,"missingSeasons":4,"missingPurchaseLinks":2},
+  "deployment":"pending normal main push and GitHub Actions verification"
+}

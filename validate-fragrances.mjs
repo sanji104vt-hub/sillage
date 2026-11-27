@@ -86,11 +86,13 @@ const JP_BATCH3_SLUGS = new Set(["aux-paradis-1", "aux-paradis-2", "aux-paradis-
 // コム デ ギャルソン試験導入。ブランドが層を公表しないため keyNotes を持つ。
 const CDG_SLUGS = new Set(["cdg-1", "cdg-2", "cdg-3", "cdg-4", "cdg-5", "cdg-6", "cdg-7", "cdg-8", "cdg-9", "cdg-10", "cdg-11", "cdg-12", "cdg-13", "cdg-14", "cdg-15"]);
 const ISSEY_SLUGS = new Set(["issey-miyake-1", "issey-miyake-2", "issey-miyake-3", "issey-miyake-4", "issey-miyake-5"]);
+const EXPANSION_SLUGS = JSON.parse(readFileSync('data/catalogue-expansion-selection-2026-11.json', 'utf8')).map(p => p.slug);
 const ENRICHED_SLUGS = new Set([...PILOT_SLUGS, ...SECOND_BATCH_SLUGS, ...THIRD_BATCH_SLUGS, ...FOURTH_BATCH_SLUGS, ...FIFTH_BATCH_SLUGS, ...SIXTH_BATCH_SLUGS, ...SEVENTH_BATCH_SLUGS, ...EIGHTH_BATCH_SLUGS, ...JSCENT_SLUGS, ...KITOWA_SLUGS, ...JP_BATCH3_SLUGS, ...CDG_SLUGS, ...ISSEY_SLUGS]);
 const ENRICHMENT_FIELDS = [
   "concentration", "sizes", "recommendedFor", "notRecommendedFor", "cautions",
   "profile", "sources", "verifiedAt", "updatedAt",
 ];
+for (const slug of EXPANSION_SLUGS) ENRICHED_SLUGS.add(slug);
 const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 const today = new Intl.DateTimeFormat("en-CA", {
   timeZone: "Asia/Tokyo", year: "numeric", month: "2-digit", day: "2-digit",

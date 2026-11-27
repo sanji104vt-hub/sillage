@@ -34,6 +34,7 @@ const FAM = Object.fromEntries(FAMILIES.map((f) => [f.key, f]));
 
 // ブランド名 → slug (brand-*.html のスラッグ部)
 const BRAND_SLUG = {
+  "Elizabeth Arden": "elizabeth-arden", "Lanvin": "lanvin", "Chloé": "chloe", "Penhaligon's": "penhaligon-s",
   "Comme des Garçons": "comme-des-garcons",
   "Comme des Garçons": "comme-des-garcons",
   "ISSEY MIYAKE": "issey-miyake",
@@ -262,8 +263,8 @@ function buildColumnIndex() {
 </section>`;
 }
 
-const brandIndexBlock = `${START1}\n${buildBrandIndex()}\n${END1}`;
-const familyItemsBlock = `${START2}\n${buildFamilyItems()}\n${END2}`;
+const brandIndexBlock = `${START1}\n${buildBrandIndex().replace(/>\s+</g, '><')}\n${END1}`;
+const familyItemsBlock = `${START2}\n${buildFamilyItems().replace(/>\s+</g, '><')}\n${END2}`;
 const columnIndexBlock = `${START3}\n${buildColumnIndex()}\n${END3}`;
 
 let out = html;

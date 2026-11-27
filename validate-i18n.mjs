@@ -14,8 +14,8 @@ const walkHtml = (dir) => readdirSync(dir).flatMap((name) => {
   return statSync(path).isDirectory() ? walkHtml(path) : path.endsWith(".html") ? [path] : [];
 });
 
-assert(products.length === 209, `Expected current baseline of 209 products; got ${products.length}`);
-assert(JSON.parse(readFileSync("data/brands.json", "utf8")).length === 46, "Expected current baseline of 46 brands");
+assert(JSON.parse(read('public/data/fragrances.json')).length === products.length, 'Japanese published catalogue count must match source data');
+assert(JSON.parse(read('public/data/brands.json')).length === JSON.parse(read('data/brands.json')).length, 'Japanese published brand count must match source data');
 assert(Object.keys(englishProducts).length >= 85 && Object.keys(englishProducts).length <= 97, `Expected 85–97 English product overlays; got ${Object.keys(englishProducts).length}`);
 
 const routes = [];

@@ -1,0 +1,172 @@
+{
+  "checkedAt": "2026-11-28",
+  "baselineCount": 209,
+  "count": 232,
+  "brands": 50,
+  "editorialBasis": "香調分類・シーン・季節・見立ては公表ノートを基にした編集上の案内。実使用レビュー・性能評価ではない。",
+  "datePolicy": "公式ノートは記録済み確認日を保持。再取得403を最新確認として扱わない。楽天の価格・在庫は2026-11-28に再確認。",
+  "added": [
+    {
+      "id": "prior-hermes-h24-edt",
+      "slug": "hermes-h24-edt",
+      "brand": "Hermès"
+    },
+    {
+      "id": "bulk-c955d30f5270",
+      "slug": "hermes-h24-edp",
+      "brand": "Hermès"
+    },
+    {
+      "id": "prior-hermes-terre-edt",
+      "slug": "hermes-terre-edt",
+      "brand": "Hermès"
+    },
+    {
+      "id": "bulk-0ee36f05556f",
+      "slug": "byredo-blanche-edp",
+      "brand": "Byredo"
+    },
+    {
+      "id": "prior-byredo-mojave",
+      "slug": "byredo-mojave-ghost-edp",
+      "brand": "Byredo"
+    },
+    {
+      "id": "prior-le-labo-bergamote22",
+      "slug": "le-labo-bergamote-22-edp",
+      "brand": "Le Labo"
+    },
+    {
+      "id": "prior-prada-luna-rossa",
+      "slug": "prada-luna-rossa-edt",
+      "brand": "Prada"
+    },
+    {
+      "id": "prior-ysl-y-edt",
+      "slug": "ysl-y-men-edt",
+      "brand": "YSL"
+    },
+    {
+      "id": "bulk-cde47b06a14f",
+      "slug": "lacoste-original-edp",
+      "brand": "Lacoste"
+    },
+    {
+      "id": "bulk-9dfa07cbaf07",
+      "slug": "diptyque-oyedo-edt",
+      "brand": "Diptyque"
+    },
+    {
+      "id": "bulk-18e5857b841a",
+      "slug": "diptyque-eau-rose-edp",
+      "brand": "Diptyque"
+    },
+    {
+      "id": "bulk-980e9ca2057c",
+      "slug": "diptyque-leau-papier-edt",
+      "brand": "Diptyque"
+    },
+    {
+      "id": "bulk-e0ae28eb6473",
+      "slug": "4711-portugal-edt",
+      "brand": "4711"
+    },
+    {
+      "id": "bulk-35e1a58965d5",
+      "slug": "carolina-herrera-212-men-edt",
+      "brand": "Carolina Herrera"
+    },
+    {
+      "id": "bulk-bda379c42267",
+      "slug": "versace-man-eau-fraiche-edt",
+      "brand": "Versace"
+    },
+    {
+      "id": "chanel-allure-homme",
+      "slug": "chanel-allure-homme-edt",
+      "brand": "Chanel"
+    },
+    {
+      "id": "creed-himalaya",
+      "slug": "creed-himalaya-edp",
+      "brand": "Creed"
+    },
+    {
+      "id": "ea-white-tea",
+      "slug": "elizabeth-arden-white-tea-edt",
+      "brand": "Elizabeth Arden"
+    },
+    {
+      "id": "lanvin-eclat",
+      "slug": "lanvin-eclat-darpege-edp",
+      "brand": "Lanvin"
+    },
+    {
+      "id": "lanvin-jeanne",
+      "slug": "lanvin-jeanne-edp",
+      "brand": "Lanvin"
+    },
+    {
+      "id": "chloe-signature",
+      "slug": "chloe-eau-de-parfum",
+      "brand": "Chloé"
+    },
+    {
+      "id": "chloe-nomade",
+      "slug": "chloe-nomade-edp",
+      "brand": "Chloé"
+    },
+    {
+      "id": "penhaligons-luna",
+      "slug": "penhaligons-luna-edt",
+      "brand": "Penhaligon's"
+    }
+  ],
+  "held": [
+    {
+      "id": "prior-byredo-bal-dafrique",
+      "name": "バル ダフリック",
+      "reason": "選定出品が在庫切れ"
+    },
+    {
+      "id": "prior-le-labo-the-noir29",
+      "name": "テ ノワール 29",
+      "reason": "選定出品が在庫切れ"
+    },
+    {
+      "id": "bulk-27e524102dce",
+      "name": "ウォンテッド",
+      "reason": "現在の公式URLで該当濃度のノートを再現できない／一般ページへ移動"
+    },
+    {
+      "id": "bulk-93200555d977",
+      "name": "ウォンテッド バイ ナイト",
+      "reason": "現在の公式URLで該当濃度のノートを再現できない／一般ページへ移動"
+    },
+    {
+      "id": "ysl-y-edp",
+      "name": "Y メン EDP",
+      "reason": "選定出品が在庫切れ"
+    },
+    {
+      "id": "ysl-lhomme",
+      "name": "ロム",
+      "reason": "販売ページ404"
+    },
+    {
+      "id": "ea-green-tea",
+      "name": "グリーンティー セントスプレー",
+      "reason": "選定出品が在庫切れ"
+    },
+    {
+      "id": "aesop-marrakech",
+      "name": "マラケッシュ インテンス オードパルファム",
+      "reason": "選定出品が在庫切れ"
+    },
+    {
+      "id": "shiro-white-lily",
+      "name": "ホワイトリリー オードパルファン",
+      "reason": "確認済み公式参考価格を超える出品"
+    }
+  ]
+}
